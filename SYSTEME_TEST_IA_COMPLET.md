@@ -1,4 +1,4 @@
-# ✅ SYSTÈME DE TESTS IA COMPLET - CRÉÉ !
+ssa# ✅ SYSTÈME DE TESTS IA COMPLET - CRÉÉ !s
 
 ## 📦 Fichiers créés
 
