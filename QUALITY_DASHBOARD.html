@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏆 KOF Ultimate - Dashboard Qualité Esport</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #fff;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .score-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            text-align: center;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .score-display {
+            font-size: 6em;
+            font-weight: bold;
+            margin: 20px 0;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+
+        .score-low { color: #ff4444; }
+        .score-medium { color: #ffaa00; }
+        .score-good { color: #44ff44; }
+        .score-excellent { color: #00ffff; }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .metric-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .metric-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .metric-title {
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+
+        .metric-icon {
+            font-size: 2em;
+        }
+
+        .metric-value {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .metric-description {
+            opacity: 0.8;
+            font-size: 0.9em;
+        }
+
+        .bug-list {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 10px;
+        }
+
+        .bug-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border-left: 3px solid;
+        }
+
+        .bug-critical { border-color: #ff4444; }
+        .bug-major { border-color: #ffaa00; }
+        .bug-minor { border-color: #ffff44; }
+
+        .action-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-success {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            color: white;
+        }
+
+        .btn-warning {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+            margin: 5px;
+        }
+
+        .status-running {
+            background: #44ff44;
+            color: #000;
+        }
+
+        .status-stopped {
+            background: #ff4444;
+            color: #fff;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 30px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            overflow: hidden;
+            margin: 15px 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            transition: width 0.5s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .live-indicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: #44ff44;
+            border-radius: 50%;
+            margin-right: 8px;
+            animation: pulse 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏆 KOF ULTIMATE ONLINE</h1>
+            <p class="subtitle">Dashboard Qualité Esport - Monitoring en Temps Réel</p>
+        </header>
+
+        <div class="score-card">
+            <h2>Score Qualité Actuel</h2>
+            <div class="score-display score-low" id="mainScore">2.0/20</div>
+            <p>Objectif: <strong>18+/20</strong> pour niveau esport</p>
+
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressBar" style="width: 10%">10%</div>
+            </div>
+
+            <div style="margin-top: 20px;">
+                <span class="live-indicator"></span>
+                <span>Tests IA en cours</span>
+            </div>
+        </div>
+
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-header">
+                    <span class="metric-title">Bugs Critiques</span>
+                    <span class="metric-icon">🔴</span>
+                </div>
+                <div class="metric-value" id="criticalBugs">?</div>
+                <div class="metric-description">Bloquants esport (multijoueur, crashs)</div>
+                <div class="bug-list" id="criticalList">
+                    <div class="bug-item bug-critical">🔴 Système multijoueur non fonctionnel</div>
+                    <div class="bug-item bug-critical">🔴 Portraits manquants / mal alignés</div>
+                    <div class="bug-item bug-critical">🔴 Icônes personnages désynchronisées</div>
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-header">
+                    <span class="metric-title">Bugs Majeurs</span>
+                    <span class="metric-icon">🟠</span>
+                </div>
+                <div class="metric-value" id="majorBugs">?</div>
+                <div class="metric-description">Impactent gameplay et compétitif</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-header">
+                    <span class="metric-title">Tests Effectués</span>
+                    <span class="metric-icon">🧪</span>
+                </div>
+                <div class="metric-value" id="testsCount">0</div>
+                <div class="metric-description">Matchs IA joués pour détecter bugs</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-header">
+                    <span class="metric-title">Roster</span>
+                    <span class="metric-icon">👥</span>
+                </div>
+                <div class="metric-value" id="rosterCount">1</div>
+                <div class="metric-description">Personnages disponibles (min 20 pour esport)</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-header">
+                    <span class="metric-title">Crashs Détectés</span>
+                    <span class="metric-icon">💥</span>
+                </div>
+                <div class="metric-value" id="crashCount">0</div>
+                <div class="metric-description">Plantages durant les tests</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-header">
+                    <span class="metric-title">Statut IA</span>
+                    <span class="metric-icon">🤖</span>
+                </div>
+                <div class="metric-value">
+                    <span class="status-badge status-stopped" id="aiStatus">ARRÊTÉ</span>
+                </div>
+                <div class="metric-description">Testeurs IA permanents</div>
+            </div>
+        </div>
+
+        <div class="score-card">
+            <h2>🎯 Actions Prioritaires</h2>
+            <div class="action-buttons">
+                <button class="btn btn-primary" onclick="launchBugHunter()">
+                    🚀 Lancer Bug Hunter 24/7
+                </button>
+                <button class="btn btn-warning" onclick="fixMultiplayer()">
+                    🌐 Réparer Multijoueur
+                </button>
+                <button class="btn btn-warning" onclick="fixPortraits()">
+                    🎨 Réparer Portraits/Icônes
+                </button>
+                <button class="btn btn-success" onclick="refreshDashboard()">
+                    🔄 Actualiser
+                </button>
+            </div>
+        </div>
+
+        <div class="score-card">
+            <h2>📊 Progression vers Niveau Esport</h2>
+            <div style="text-align: left; padding: 20px;">
+                <h3>✅ Phase 1: Élimination bugs critiques (Actuelle: 2/20)</h3>
+                <ul style="line-height: 2;">
+                    <li>❌ Réparer système multijoueur complet</li>
+                    <li>❌ Corriger tous les portraits et icônes</li>
+                    <li>❌ Éliminer tous les crashs</li>
+                    <li>❌ Augmenter roster à 20+ personnages</li>
+                </ul>
+
+                <h3 style="margin-top: 20px;">🎯 Phase 2: Qualité compétitive (Objectif: 15/20)</h3>
+                <ul style="line-height: 2;">
+                    <li>⏳ Tests automatisés 24/7</li>
+                    <li>⏳ Validation complète de tous les fichiers</li>
+                    <li>⏳ Optimisation performances</li>
+                    <li>⏳ Système de ranking fonctionnel</li>
+                </ul>
+
+                <h3 style="margin-top: 20px;">🏆 Phase 3: Excellence esport (Objectif: 18+/20)</h3>
+                <ul style="line-height: 2;">
+                    <li>⏳ Netcode optimisé (rollback)</li>
+                    <li>⏳ Matchmaking intelligent</li>
+                    <li>⏳ Replays et spectateur</li>
+                    <li>⏳ Système de tournois</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function launchBugHunter() {
+            alert('Lancement Bug Hunter 24/7...\n\nExécutez: LAUNCH_BUG_HUNTER_24_7.bat');
+            // Dans un vrai système, cela lancerait le script Python
+        }
+
+        function fixMultiplayer() {
+            alert('Réparation système multijoueur...\n\nExécutez: python FIX_MULTIPLAYER.py');
+        }
+
+        function fixPortraits() {
+            alert('Réparation portraits et icônes...\n\nExécutez: python FIX_PORTRAITS_AND_ICONS.py');
+        }
+
+        function refreshDashboard() {
+            // Simule chargement des données
+            location.reload();
+        }
+
+        // Simule mise à jour en temps réel
+        function updateMetrics() {
+            // Dans un vrai système, cela chargerait les données depuis les rapports JSON
+            const scoreElement = document.getElementById('mainScore');
+            const progressBar = document.getElementById('progressBar');
+
+            // Exemple de progression simulée
+            let currentScore = 2.0;
+            // currentScore serait chargé depuis BUG_REPORTS/*.json
+        }
+
+        // Mise à jour toutes les 5 secondes
+        setInterval(updateMetrics, 5000);
+        updateMetrics();
+    </script>
+</body>
+</html>
