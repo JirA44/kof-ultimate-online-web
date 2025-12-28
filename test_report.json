@@ -1,0 +1,133 @@
+{
+  "timestamp": "2025-12-27T13:30:21.509709",
+  "passed": 25,
+  "failed": 0,
+  "success_rate": 100.0,
+  "results": [
+    {
+      "status": "PASS",
+      "name": "Ikemen_GO.exe exists",
+      "details": ""
+    },
+    {
+      "status": "PASS",
+      "name": "data folder exists",
+      "details": ""
+    },
+    {
+      "status": "PASS",
+      "name": "chars folder exists",
+      "details": ""
+    },
+    {
+      "status": "PASS",
+      "name": "stages folder exists",
+      "details": ""
+    },
+    {
+      "status": "PASS",
+      "name": "system.def exists",
+      "details": ""
+    },
+    {
+      "status": "PASS",
+      "name": "Roster file exists",
+      "details": "select_final.def"
+    },
+    {
+      "status": "PASS",
+      "name": "Roster has characters",
+      "details": "75 characters"
+    },
+    {
+      "status": "PASS",
+      "name": "system.def points to valid roster",
+      "details": "select_final.def"
+    },
+    {
+      "status": "PASS",
+      "name": "Character folders exist",
+      "details": "190 folders"
+    },
+    {
+      "status": "PASS",
+      "name": "Characters have DEF files",
+      "details": "20/20 checked"
+    },
+    {
+      "status": "PASS",
+      "name": "Stage DEF files exist",
+      "details": "31 stages"
+    },
+    {
+      "status": "PASS",
+      "name": "Main stage exists",
+      "details": ""
+    },
+    {
+      "status": "PASS",
+      "name": "config.json is valid JSON",
+      "details": ""
+    },
+    {
+      "status": "PASS",
+      "name": "Debug mode off",
+      "details": ""
+    },
+    {
+      "status": "PASS",
+      "name": "Lobby file: KOF_ONLINE_FIREBASE.html",
+      "details": ""
+    },
+    {
+      "status": "PASS",
+      "name": "Firebase integration",
+      "details": ""
+    },
+    {
+      "status": "PASS",
+      "name": "KOF_LAUNCHER.py exists",
+      "details": ""
+    },
+    {
+      "status": "PASS",
+      "name": "INSTALL_AND_PLAY.bat exists",
+      "details": ""
+    },
+    {
+      "status": "PASS",
+      "name": "PLAY_KOF.bat exists",
+      "details": ""
+    },
+    {
+      "status": "PASS",
+      "name": "AUTO_FIX_ALL.py exists",
+      "details": ""
+    },
+    {
+      "status": "PASS",
+      "name": "DEEP_FIX_CHARS.py exists",
+      "details": ""
+    },
+    {
+      "status": "PASS",
+      "name": "FIX_FLYAWAY.py exists",
+      "details": ""
+    },
+    {
+      "status": "PASS",
+      "name": "Game launches without crash",
+      "details": ""
+    },
+    {
+      "status": "PASS",
+      "name": "Launcher config exists",
+      "details": ""
+    },
+    {
+      "status": "PASS",
+      "name": "Matchmaking enabled",
+      "details": ""
+    }
+  ]
+}

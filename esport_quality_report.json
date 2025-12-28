@@ -1,0 +1,16 @@
+{
+  "quality_score": 20.0,
+  "critical_bugs": [
+    "1 portraits manquants/corrompus"
+  ],
+  "major_bugs": [],
+  "minor_bugs": [],
+  "roster_count": 190,
+  "crash_count": 0,
+  "tests_run": 167,
+  "multiplayer_status": "FONCTIONNEL",
+  "portrait_issues": 1,
+  "icon_issues": 0,
+  "ai_status": "STOPPED",
+  "last_update": "2025-11-07T02:24:22.996149"
+}

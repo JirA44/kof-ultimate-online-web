@@ -1,0 +1,1188 @@
+{
+  "timestamp": "2025-12-27T05:52:29.666008",
+  "total_tested": 89,
+  "combat_ready": 76,
+  "characters": [
+    {
+      "name": "03-A-Kyo LV2",
+      "score": 88,
+      "total_states": 634,
+      "attacks": 312,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 1",
+        "Air states without physics: 2",
+        "Air states without physics: 1"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "ABYSS'Mega's",
+      "score": 94,
+      "total_states": 163,
+      "attacks": 50,
+      "problems": [
+        "Air states without physics: 3"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "ALBA MEIRA KOF XI -MI2",
+      "score": 61,
+      "total_states": 186,
+      "attacks": 144,
+      "problems": [
+        "Air states without physics: 1",
+        "Air states without physics: 1",
+        "Missing idle state (0)",
+        "Missing walk states",
+        "Missing guard states",
+        "Missing hit reaction states",
+        "Missing getup states"
+      ],
+      "combat_ready": false
+    },
+    {
+      "name": "Aika",
+      "score": 92,
+      "total_states": 298,
+      "attacks": 118,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 2"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Aika_MK",
+      "score": 80,
+      "total_states": 378,
+      "attacks": 138,
+      "problems": [
+        "Air states without physics: 1",
+        "Air states without physics: 2",
+        "Air states without physics: 2",
+        "Air states without physics: 1",
+        "Air states without physics: 2",
+        "Air states without physics: 2"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Akira_Kazakami",
+      "score": 60,
+      "total_states": 134,
+      "attacks": 40,
+      "problems": [
+        "Missing idle state (0)",
+        "Missing walk states",
+        "Missing jump states",
+        "Missing guard states",
+        "Missing hit reaction states",
+        "Missing getup states"
+      ],
+      "combat_ready": false
+    },
+    {
+      "name": "Alfred_WLS",
+      "score": 50,
+      "total_states": 0,
+      "attacks": 0,
+      "problems": [
+        "Missing idle state (0)",
+        "Missing walk states",
+        "Missing jump states",
+        "Missing guard states",
+        "Missing hit reaction states",
+        "Missing getup states",
+        "Very few attacks: 0"
+      ],
+      "combat_ready": false
+    },
+    {
+      "name": "Andy-ROTD",
+      "score": 76,
+      "total_states": 462,
+      "attacks": 178,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 2",
+        "Air states without physics: 2",
+        "Air states without physics: 2",
+        "Air states without physics: 2",
+        "Air states without physics: 2"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Aner Rolange KOFM",
+      "score": 84,
+      "total_states": 768,
+      "attacks": 290,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 2",
+        "Air states without physics: 2",
+        "Air states without physics: 2"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "AngusPurple-KOFM",
+      "score": 80,
+      "total_states": 466,
+      "attacks": 96,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 5",
+        "Air states without physics: 3"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Another Scarlet",
+      "score": 92,
+      "total_states": 286,
+      "attacks": 60,
+      "problems": [
+        "Air states without physics: 1",
+        "Air states without physics: 1",
+        "Air states without physics: 2"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Athena",
+      "score": 84,
+      "total_states": 314,
+      "attacks": 98,
+      "problems": [
+        "Air states without physics: 1",
+        "Air states without physics: 1",
+        "Air states without physics: 2",
+        "Air states without physics: 1",
+        "Air states without physics: 1",
+        "Air states without physics: 2"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Athena-Heidern",
+      "score": 76,
+      "total_states": 608,
+      "attacks": 96,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 4",
+        "Air states without physics: 2",
+        "Air states without physics: 4"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Athena_XI",
+      "score": 92,
+      "total_states": 294,
+      "attacks": 90,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 2"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Balto-KOFM",
+      "score": 84,
+      "total_states": 502,
+      "attacks": 168,
+      "problems": [
+        "Air states without physics: 1",
+        "Air states without physics: 3",
+        "Air states without physics: 1",
+        "Air states without physics: 3"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Beast Yeorin QS",
+      "score": 60,
+      "total_states": 800,
+      "attacks": 218,
+      "problems": [
+        "Air states without physics: 4",
+        "Air states without physics: 4",
+        "Air states without physics: 2",
+        "Air states without physics: 4",
+        "Air states without physics: 4",
+        "Air states without physics: 2"
+      ],
+      "combat_ready": false
+    },
+    {
+      "name": "BlackPrincess_Tohka",
+      "score": 88,
+      "total_states": 504,
+      "attacks": 60,
+      "problems": [
+        "Air states without physics: 1",
+        "Air states without physics: 2",
+        "Air states without physics: 1",
+        "Air states without physics: 2"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "C.Kyo.Blood-KOFM",
+      "score": 88,
+      "total_states": 283,
+      "attacks": 52,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 4"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Carlin.Blood-CKOFM",
+      "score": 88,
+      "total_states": 206,
+      "attacks": 34,
+      "problems": [
+        "Air states without physics: 4",
+        "Air states without physics: 2"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Caser.Yashiro",
+      "score": 86,
+      "total_states": 174,
+      "attacks": 2,
+      "problems": [
+        "Air states without physics: 2",
+        "Very few attacks: 2"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Chaos-CKOFM",
+      "score": 72,
+      "total_states": 950,
+      "attacks": 318,
+      "problems": [
+        "Air states without physics: 1",
+        "Air states without physics: 3",
+        "Air states without physics: 1",
+        "Air states without physics: 2",
+        "Air states without physics: 1",
+        "Air states without physics: 3",
+        "Air states without physics: 1",
+        "Air states without physics: 2"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Chobi-Hige",
+      "score": 72,
+      "total_states": 774,
+      "attacks": 350,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 2",
+        "Air states without physics: 1",
+        "Air states without physics: 2",
+        "Air states without physics: 2",
+        "Air states without physics: 2",
+        "Air states without physics: 1",
+        "Air states without physics: 2"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Choi_XI",
+      "score": 76,
+      "total_states": 462,
+      "attacks": 122,
+      "problems": [
+        "Air states without physics: 1",
+        "Air states without physics: 2",
+        "Air states without physics: 1",
+        "Air states without physics: 2",
+        "Air states without physics: 1",
+        "Air states without physics: 2",
+        "Air states without physics: 1",
+        "Air states without physics: 2"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Clone Blood Rugal",
+      "score": 70,
+      "total_states": 358,
+      "attacks": 0,
+      "problems": [
+        "Air states without physics: 4",
+        "Air states without physics: 1",
+        "Air states without physics: 4",
+        "Air states without physics: 1",
+        "Very few attacks: 0"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Clone Zero",
+      "score": 92,
+      "total_states": 406,
+      "attacks": 354,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 2"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Cruelty Sula UM",
+      "score": 56,
+      "total_states": 802,
+      "attacks": 88,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 4",
+        "Air states without physics: 4",
+        "Air states without physics: 1",
+        "Air states without physics: 2",
+        "Air states without physics: 4",
+        "Air states without physics: 4",
+        "Air states without physics: 1"
+      ],
+      "combat_ready": false
+    },
+    {
+      "name": "D=Rockula",
+      "score": 86,
+      "total_states": 61,
+      "attacks": 0,
+      "problems": [
+        "Air states without physics: 2",
+        "Very few attacks: 0"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "DF-Sula",
+      "score": 84,
+      "total_states": 624,
+      "attacks": 324,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 2",
+        "Air states without physics: 2",
+        "Air states without physics: 2"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "DG.Rugal-KOFM",
+      "score": 62,
+      "total_states": 442,
+      "attacks": 0,
+      "problems": [
+        "Air states without physics: 4",
+        "Air states without physics: 2",
+        "Air states without physics: 1",
+        "Air states without physics: 4",
+        "Air states without physics: 2",
+        "Air states without physics: 1",
+        "Very few attacks: 0"
+      ],
+      "combat_ready": false
+    },
+    {
+      "name": "Delirus",
+      "score": 64,
+      "total_states": 618,
+      "attacks": 130,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 3",
+        "Air states without physics: 1",
+        "Air states without physics: 3",
+        "Air states without physics: 2",
+        "Air states without physics: 3",
+        "Air states without physics: 1",
+        "Air states without physics: 3"
+      ],
+      "combat_ready": false
+    },
+    {
+      "name": "Dual-flame_Magaki",
+      "score": 88,
+      "total_states": 566,
+      "attacks": 178,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 1",
+        "Air states without physics: 2",
+        "Air states without physics: 1"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Duester",
+      "score": 76,
+      "total_states": 366,
+      "attacks": 128,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 2",
+        "Air states without physics: 2",
+        "Air states without physics: 2",
+        "Air states without physics: 2",
+        "Air states without physics: 2"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Essence of Darkness",
+      "score": 76,
+      "total_states": 496,
+      "attacks": 36,
+      "problems": [
+        "Air states without physics: 6",
+        "Air states without physics: 6"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Eve",
+      "score": 84,
+      "total_states": 594,
+      "attacks": 210,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 2",
+        "Air states without physics: 2",
+        "Air states without physics: 2"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Felix_THird",
+      "score": 76,
+      "total_states": 604,
+      "attacks": 170,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 2",
+        "Air states without physics: 2",
+        "Air states without physics: 2",
+        "Air states without physics: 2",
+        "Air states without physics: 2"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Final Sachiel WF",
+      "score": 80,
+      "total_states": 598,
+      "attacks": 126,
+      "problems": [
+        "Air states without physics: 4",
+        "Air states without physics: 1",
+        "Air states without physics: 4",
+        "Air states without physics: 1"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Final-IGNIZ",
+      "score": 92,
+      "total_states": 474,
+      "attacks": 118,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 2"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Final-OriginalZero",
+      "score": 88,
+      "total_states": 286,
+      "attacks": 200,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 1",
+        "Air states without physics: 2",
+        "Air states without physics: 1"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Flamme(S)",
+      "score": 90,
+      "total_states": 229,
+      "attacks": 92,
+      "problems": [
+        "Air states without physics: 3",
+        "Air states without physics: 1",
+        "Air states without physics: 1"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Geese-KOFM",
+      "score": 72,
+      "total_states": 564,
+      "attacks": 176,
+      "problems": [
+        "Air states without physics: 5",
+        "Air states without physics: 2",
+        "Air states without physics: 5",
+        "Air states without physics: 2"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "God_Wind",
+      "score": 82,
+      "total_states": 102,
+      "attacks": 0,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 2",
+        "Very few attacks: 0"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Goktore-CKOFM",
+      "score": 68,
+      "total_states": 788,
+      "attacks": 246,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 6",
+        "Air states without physics: 2",
+        "Air states without physics: 6"
+      ],
+      "combat_ready": false
+    },
+    {
+      "name": "HIEL-KOFM",
+      "score": 80,
+      "total_states": 187,
+      "attacks": 101,
+      "problems": [
+        "Missing walk states",
+        "Missing guard states",
+        "Missing hit reaction states"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Hiel_SP",
+      "score": 80,
+      "total_states": 564,
+      "attacks": 226,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 3",
+        "Air states without physics: 2",
+        "Air states without physics: 3"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Hiyoi",
+      "score": 94,
+      "total_states": 139,
+      "attacks": 34,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 1"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Infernal_Wind",
+      "score": 50,
+      "total_states": 0,
+      "attacks": 0,
+      "problems": [
+        "Missing idle state (0)",
+        "Missing walk states",
+        "Missing jump states",
+        "Missing guard states",
+        "Missing hit reaction states",
+        "Missing getup states",
+        "Very few attacks: 0"
+      ],
+      "combat_ready": false
+    },
+    {
+      "name": "K9999_KOF",
+      "score": 76,
+      "total_states": 512,
+      "attacks": 248,
+      "problems": [
+        "Air states without physics: 1",
+        "Air states without physics: 2",
+        "Air states without physics: 3",
+        "Air states without physics: 1",
+        "Air states without physics: 2",
+        "Air states without physics: 3"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Kasim_LV2-CKOFM[v0.40]",
+      "score": 49,
+      "total_states": 730,
+      "attacks": 220,
+      "problems": [
+        "Air states without physics: 1",
+        "Air states without physics: 2",
+        "Air states without physics: 1",
+        "Air states without physics: 1",
+        "Air states without physics: 2",
+        "Air states without physics: 1",
+        "Missing idle state (0)",
+        "Missing walk states",
+        "Missing guard states",
+        "Missing hit reaction states",
+        "Missing getup states"
+      ],
+      "combat_ready": false
+    },
+    {
+      "name": "Kasumi-KOFM",
+      "score": 80,
+      "total_states": 476,
+      "attacks": 96,
+      "problems": [
+        "Air states without physics: 4",
+        "Air states without physics: 1",
+        "Air states without physics: 4",
+        "Air states without physics: 1"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Kotone",
+      "score": 96,
+      "total_states": 134,
+      "attacks": 30,
+      "problems": [
+        "Air states without physics: 2"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Kyaga-KOFM",
+      "score": 92,
+      "total_states": 197,
+      "attacks": 43,
+      "problems": [
+        "Air states without physics: 3",
+        "Air states without physics: 1"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "LUMIEL",
+      "score": 90,
+      "total_states": 301,
+      "attacks": 51,
+      "problems": [
+        "Air states without physics: 5"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Lord-Goenitz",
+      "score": 72,
+      "total_states": 838,
+      "attacks": 172,
+      "problems": [
+        "Air states without physics: 4",
+        "Air states without physics: 1",
+        "Air states without physics: 2",
+        "Air states without physics: 4",
+        "Air states without physics: 1",
+        "Air states without physics: 2"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Maryl",
+      "score": 76,
+      "total_states": 686,
+      "attacks": 74,
+      "problems": [
+        "Air states without physics: 4",
+        "Air states without physics: 1",
+        "Air states without physics: 1",
+        "Air states without physics: 4",
+        "Air states without physics: 1",
+        "Air states without physics: 1"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "NeoDio KOFM",
+      "score": 92,
+      "total_states": 356,
+      "attacks": 158,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 2"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "NeoGeegus KOFM",
+      "score": 76,
+      "total_states": 660,
+      "attacks": 240,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 4",
+        "Air states without physics: 2",
+        "Air states without physics: 4"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Nero",
+      "score": 72,
+      "total_states": 646,
+      "attacks": 274,
+      "problems": [
+        "Air states without physics: 4",
+        "Air states without physics: 2",
+        "Air states without physics: 1",
+        "Air states without physics: 4",
+        "Air states without physics: 2",
+        "Air states without physics: 1"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "New_Kyouki",
+      "score": 76,
+      "total_states": 82,
+      "attacks": 19,
+      "problems": [
+        "Air states without physics: 1",
+        "Air states without physics: 1",
+        "Missing idle state (0)",
+        "Missing guard states",
+        "Missing getup states"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Olivia",
+      "score": 82,
+      "total_states": 333,
+      "attacks": 142,
+      "problems": [
+        "Air states without physics: 4",
+        "Air states without physics: 1",
+        "Air states without physics: 4"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Original Psyqhical",
+      "score": 84,
+      "total_states": 406,
+      "attacks": 14,
+      "problems": [
+        "Air states without physics: 4",
+        "Air states without physics: 4"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Orochi.Yamazaki-CKOFM",
+      "score": 86,
+      "total_states": 302,
+      "attacks": 52,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 5"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Psyche_42-1.1",
+      "score": 90,
+      "total_states": 370,
+      "attacks": 103,
+      "problems": [
+        "Air states without physics: 3",
+        "Air states without physics: 1",
+        "Air states without physics: 1"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Psyche_57-1.1",
+      "score": 90,
+      "total_states": 426,
+      "attacks": 158,
+      "problems": [
+        "Air states without physics: 3",
+        "Air states without physics: 2"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "R.S.P",
+      "score": 50,
+      "total_states": 0,
+      "attacks": 0,
+      "problems": [
+        "Missing idle state (0)",
+        "Missing walk states",
+        "Missing jump states",
+        "Missing guard states",
+        "Missing hit reaction states",
+        "Missing getup states",
+        "Very few attacks: 0"
+      ],
+      "combat_ready": false
+    },
+    {
+      "name": "Raika",
+      "score": 90,
+      "total_states": 153,
+      "attacks": 30,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 2",
+        "Air states without physics: 1"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Rinne-RH",
+      "score": 74,
+      "total_states": 222,
+      "attacks": 0,
+      "problems": [
+        "Air states without physics: 4",
+        "Air states without physics: 4",
+        "Very few attacks: 0"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Rocken",
+      "score": 80,
+      "total_states": 152,
+      "attacks": 65,
+      "problems": [
+        "Missing guard states",
+        "Missing hit reaction states",
+        "Missing getup states"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "S_Infezione",
+      "score": 88,
+      "total_states": 324,
+      "attacks": 110,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 1",
+        "Air states without physics: 2",
+        "Air states without physics: 1"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Samael",
+      "score": 86,
+      "total_states": 261,
+      "attacks": 97,
+      "problems": [
+        "Air states without physics: 4",
+        "Air states without physics: 1",
+        "Air states without physics: 1",
+        "Air states without physics: 1"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "ThunderMiss.Shermie",
+      "score": 94,
+      "total_states": 283,
+      "attacks": 97,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 1"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "True Iori X_KOF",
+      "score": 68,
+      "total_states": 776,
+      "attacks": 366,
+      "problems": [
+        "Air states without physics: 3",
+        "Air states without physics: 3",
+        "Air states without physics: 2",
+        "Air states without physics: 3",
+        "Air states without physics: 3",
+        "Air states without physics: 2"
+      ],
+      "combat_ready": false
+    },
+    {
+      "name": "VladRose",
+      "score": 88,
+      "total_states": 160,
+      "attacks": 25,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 3",
+        "Air states without physics: 1"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "WhirlWind-Goenitz",
+      "score": 80,
+      "total_states": 544,
+      "attacks": 234,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 1",
+        "Air states without physics: 2",
+        "Air states without physics: 2",
+        "Air states without physics: 1",
+        "Air states without physics: 2"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Yamazaki.Blood",
+      "score": 88,
+      "total_states": 275,
+      "attacks": 46,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 4"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Yuno-KOFM",
+      "score": 81,
+      "total_states": 370,
+      "attacks": 192,
+      "problems": [
+        "Air states without physics: 1",
+        "Air states without physics: 1",
+        "Missing guard states",
+        "Missing hit reaction states"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Yuri_SV",
+      "score": 83,
+      "total_states": 162,
+      "attacks": 40,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 4",
+        "Missing walk states"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "Zerozuchi_Boss",
+      "score": 72,
+      "total_states": 788,
+      "attacks": 370,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 2",
+        "Air states without physics: 2",
+        "Air states without physics: 1",
+        "Air states without physics: 2",
+        "Air states without physics: 2",
+        "Air states without physics: 2",
+        "Air states without physics: 1"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "_ArchiMurderer",
+      "score": 84,
+      "total_states": 312,
+      "attacks": 22,
+      "problems": [
+        "Air states without physics: 4",
+        "Air states without physics: 4"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "asura-kofa",
+      "score": 92,
+      "total_states": 262,
+      "attacks": 110,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 2"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "billy",
+      "score": 71,
+      "total_states": 498,
+      "attacks": 340,
+      "problems": [
+        "Air states without physics: 1",
+        "Air states without physics: 1",
+        "Missing walk states",
+        "Missing guard states",
+        "Missing hit reaction states",
+        "Missing getup states"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "boss-orochi",
+      "score": 84,
+      "total_states": 496,
+      "attacks": 178,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 1",
+        "Air states without physics: 1",
+        "Air states without physics: 2",
+        "Air states without physics: 1",
+        "Air states without physics: 1"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "ccijhun",
+      "score": 75,
+      "total_states": 165,
+      "attacks": 73,
+      "problems": [
+        "Missing walk states",
+        "Missing guard states",
+        "Missing hit reaction states",
+        "Missing getup states"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "ccishermie",
+      "score": 88,
+      "total_states": 500,
+      "attacks": 92,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 1",
+        "Air states without physics: 2",
+        "Air states without physics: 1"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "clone benimaru",
+      "score": 53,
+      "total_states": 674,
+      "attacks": 258,
+      "problems": [
+        "Air states without physics: 6",
+        "Air states without physics: 2",
+        "Air states without physics: 6",
+        "Air states without physics: 2",
+        "Missing walk states",
+        "Missing guard states",
+        "Missing getup states"
+      ],
+      "combat_ready": false
+    },
+    {
+      "name": "dr-yang-kofa",
+      "score": 88,
+      "total_states": 492,
+      "attacks": 160,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 1",
+        "Air states without physics: 2",
+        "Air states without physics: 1"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "final-goenitz",
+      "score": 92,
+      "total_states": 566,
+      "attacks": 178,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 2"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "heraclius",
+      "score": 76,
+      "total_states": 518,
+      "attacks": 102,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 1",
+        "Air states without physics: 1",
+        "Air states without physics: 2",
+        "Air states without physics: 2",
+        "Air states without physics: 1",
+        "Air states without physics: 1",
+        "Air states without physics: 2"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "meteoricmarisa",
+      "score": 88,
+      "total_states": 630,
+      "attacks": 128,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 1",
+        "Air states without physics: 2",
+        "Air states without physics: 1"
+      ],
+      "combat_ready": true
+    },
+    {
+      "name": "orochi-iori",
+      "score": 84,
+      "total_states": 382,
+      "attacks": 154,
+      "problems": [
+        "Air states without physics: 2",
+        "Air states without physics: 2",
+        "Air states without physics: 2",
+        "Air states without physics: 2"
+      ],
+      "combat_ready": true
+    }
+  ]
+}

@@ -2057,3 +2057,56 @@ value = 190
 type = ChangeState
 trigger1 = 1
 value = 0
+
+;-------------------------------------------------------------------------------
+; Walk Backwards (fallback)
+[Statedef 21]
+type = S
+physics = S
+sprpriority = 0
+
+[State 21, Anim]
+type = ChangeAnim
+trigger1 = Anim != 21
+value = ifelse(SelfAnimExist(21), 21, 20)
+
+[State 21, Velocity]
+type = VelSet
+trigger1 = 1
+x = const(velocity.walk.back.x)
+
+;-------------------------------------------------------------------------------
+; Stand guard hit low (fallback)
+[Statedef 34]
+type = S
+movetype = H
+physics = S
+
+[State 34, Anim]
+type = ChangeAnim
+trigger1 = Time = 0
+value = ifelse(SelfAnimExist(34), 34, 150)
+
+[State 34, End]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+;-------------------------------------------------------------------------------
+; Stand guard hit overhead (fallback)
+[Statedef 35]
+type = S
+movetype = H
+physics = S
+
+[State 35, Anim]
+type = ChangeAnim
+trigger1 = Time = 0
+value = ifelse(SelfAnimExist(35), 35, 150)
+
+[State 35, End]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1

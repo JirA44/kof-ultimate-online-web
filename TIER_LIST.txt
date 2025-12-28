@@ -1,0 +1,118 @@
+================================================================================
+         KOF ULTIMATE ONLINE - CHARACTER POWER RANKING
+================================================================================
+
+
+[S] GOD TIER (64 characters)
+------------------------------------------------------------
+  100.0 - 03-A-Kyo LV2
+  100.0 - ABYSS'Mega's
+  100.0 - Aner Rolange KOFM
+  100.0 - Athena
+  100.0 - Balto-KOFM
+  100.0 - Beast Yeorin QS
+  100.0 - BlackPrincess_Tohka
+  100.0 - Chaos-CKOFM
+  100.0 - Chobi-Hige
+  100.0 - Clone Zero
+  100.0 - Cruelty Sula UM
+  100.0 - DF-Sula
+  100.0 - Delirus
+  100.0 - Eve
+  100.0 - Felix_THird
+  100.0 - Final Sachiel WF
+  100.0 - Geese-KOFM
+  100.0 - Goktore-CKOFM
+  100.0 - HIEL-KOFM
+  100.0 - Hiel_SP
+  100.0 - K9999_KOF
+  100.0 - Kasim_LV2-CKOFM[v0.40]
+  100.0 - Kasumi-KOFM
+  100.0 - NeoGeegus KOFM
+  100.0 - Nero
+  100.0 - Olivia
+  100.0 - Psyche_57-1.1
+  100.0 - True Iori X_KOF
+  100.0 - Yuno-KOFM
+  100.0 - Zerozuchi_Boss
+  100.0 - billy
+  100.0 - clone benimaru
+  100.0 - dr-yang-kofa
+  100.0 - heraclius
+   99.8 - Samael
+   99.1 - Hiyoi
+   98.9 - boss-orochi
+   98.6 - Lord-Goenitz
+   98.5 - _ArchiMurderer
+   97.5 - VladRose
+   97.2 - Psyche_42-1.1
+   96.1 - C.Kyo.Blood-KOFM
+   95.9 - Final-IGNIZ
+   95.8 - NeoDio KOFM
+   94.1 - final-goenitz
+   93.0 - LUMIEL
+   92.7 - Rocken
+   91.8 - S_Infezione
+   91.6 - Kyaga-KOFM
+   91.4 - Flamme(S)
+   90.9 - Dual-flame_Magaki
+   89.9 - meteoricmarisa
+   89.8 - AngusPurple-KOFM
+   89.7 - ccijhun
+   88.8 - New_Kyouki
+   88.0 - Aika
+   87.7 - WhirlWind-Goenitz
+   87.4 - Essence of Darkness
+   86.8 - ThunderMiss.Shermie
+   86.7 - Maryl
+   86.7 - Original Psyqhical
+   86.0 - Final-OriginalZero
+   85.5 - ALBA MEIRA KOF XI -MI2
+   85.0 - Athena_XI
+
+[A] TOP TIER (13 characters)
+------------------------------------------------------------
+   84.0 - Aika_MK
+   83.4 - Kotone
+   82.7 - Akira_Kazakami
+   82.7 - Another Scarlet
+   82.7 - asura-kofa
+   82.1 - Athena-Heidern
+   81.8 - Choi_XI
+   80.3 - ccishermie
+   79.9 - Orochi.Yamazaki-CKOFM
+   79.6 - Yamazaki.Blood
+   78.8 - Andy-ROTD
+   76.7 - Raika
+   76.0 - orochi-iori
+
+[B] HIGH TIER (2 characters)
+------------------------------------------------------------
+   74.2 - Carlin.Blood-CKOFM
+   68.1 - Caser.Yashiro
+
+[C] MID TIER (3 characters)
+------------------------------------------------------------
+   63.2 - Yuri_SV
+   62.0 - Duester
+   55.1 - Clone Blood Rugal
+
+[D] LOW TIER (7 characters)
+------------------------------------------------------------
+   54.3 - DG.Rugal-KOFM
+   50.2 - D=Rockula
+   50.0 - Alfred_WLS
+   50.0 - God_Wind
+   50.0 - Infernal_Wind
+   50.0 - R.S.P
+   50.0 - Rinne-RH
+
+================================================================================
+LEGEND:
+  S = God Tier (85-100) - Extremely powerful, boss-level
+  A = Top Tier (75-84) - Very strong, tournament viable
+  B = High Tier (65-74) - Strong, competitive
+  C = Mid Tier (55-64) - Balanced, average
+  D = Low Tier (45-54) - Below average
+  F = Bottom (0-44) - Weak
+================================================================================

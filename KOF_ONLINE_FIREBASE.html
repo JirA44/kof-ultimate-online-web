@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOF Ultimate Online - Lobby</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        header { text-align: center; padding: 20px 0; border-bottom: 2px solid #e94560; }
+        h1 {
+            font-size: 2.5em;
+            background: linear-gradient(90deg, #e94560, #ff6b6b, #ffd93d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            padding: 20px;
+            border: 1px solid rgba(255,255,255,0.1);
+            margin: 20px 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: linear-gradient(90deg, #e94560, #ff6b6b);
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .btn:hover { transform: scale(1.05); }
+        .btn-green { background: linear-gradient(90deg, #00b894, #00cec9); }
+        .btn-blue { background: linear-gradient(90deg, #0984e3, #74b9ff); }
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            background: rgba(0,0,0,0.3);
+            color: #fff;
+            margin: 10px 0;
+        }
+        .error { color: #e94560; margin: 10px 0; }
+        .success { color: #00b894; margin: 10px 0; }
+        .grid { display: grid; grid-template-columns: 1fr 2fr 1fr; gap: 20px; }
+        .player-item {
+            display: flex; align-items: center; padding: 10px;
+            background: rgba(0,0,0,0.2); border-radius: 10px; margin: 5px 0;
+        }
+        .player-item.bot { border-left: 3px solid #00b894; }
+        .elo { color: #ffd93d; font-weight: bold; margin-left: auto; }
+        .hidden { display: none; }
+        #loading { text-align: center; padding: 50px; }
+        .spinner {
+            width: 50px; height: 50px; border: 4px solid #333;
+            border-top-color: #e94560; border-radius: 50%;
+            animation: spin 1s linear infinite; margin: 20px auto;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .tabs { display: flex; margin-bottom: 20px; }
+        .tab { flex: 1; padding: 10px; text-align: center; cursor: pointer; background: #333; }
+        .tab.active { background: #e94560; }
+        .tab:first-child { border-radius: 10px 0 0 10px; }
+        .tab:last-child { border-radius: 0 10px 10px 0; }
+        .modal {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.8); display: flex; align-items: center;
+            justify-content: center; z-index: 1000;
+        }
+        .modal-content {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            border-radius: 20px; padding: 30px; max-width: 500px; width: 90%;
+            border: 2px solid #e94560; position: relative;
+        }
+        .modal-close {
+            position: absolute; top: 10px; right: 15px; font-size: 1.8em;
+            cursor: pointer; color: #888; z-index: 1002;
+            background: transparent; border: none; padding: 5px 10px;
+        }
+        .modal-close:hover { color: #e94560; }
+        .modal-backdrop {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.8); z-index: 998;
+        }
+        .modal-content { z-index: 1000; position: relative; }
+        .player-item { cursor: pointer; transition: all 0.2s; }
+        .player-item:hover { background: rgba(233,69,96,0.3); transform: translateX(5px); }
+        .history-item {
+            display: flex; justify-content: space-between; padding: 8px 12px;
+            background: rgba(0,0,0,0.3); border-radius: 8px; margin: 5px 0;
+            font-size: 0.9em;
+        }
+        .history-win { border-left: 3px solid #00b894; }
+        .history-loss { border-left: 3px solid #e17055; }
+        .my-profile { cursor: pointer; transition: all 0.3s; }
+        .my-profile:hover { transform: scale(1.02); box-shadow: 0 0 20px rgba(233,69,96,0.5); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>KOF ULTIMATE ONLINE</h1>
+            <p style="color: #888;">Matchmaking ELO - Firebase Cloud</p>
+        </header>
+
+        <!-- Loading -->
+        <div id="loading">
+            <div class="spinner"></div>
+            <p>Connexion au serveur...</p>
+        </div>
+
+        <!-- Setup Firebase -->
+        <div id="setupScreen" class="card hidden" style="max-width: 600px; margin: 50px auto; text-align: center;">
+            <h2>Configuration Firebase</h2>
+            <p style="color: #888; margin: 20px 0;">
+                Pour utiliser le matchmaking en ligne, vous devez configurer Firebase.
+            </p>
+            <div style="text-align: left; background: #000; padding: 15px; border-radius: 10px; margin: 20px 0;">
+                <p style="color: #00b894; margin-bottom: 10px;">1. Allez sur <a href="https://console.firebase.google.com" target="_blank" style="color: #74b9ff;">Firebase Console</a></p>
+                <p style="color: #00b894; margin-bottom: 10px;">2. Créez un projet "KOF-Ultimate-Online"</p>
+                <p style="color: #00b894; margin-bottom: 10px;">3. Activez Authentication (Email/Password)</p>
+                <p style="color: #00b894; margin-bottom: 10px;">4. Créez une Realtime Database</p>
+                <p style="color: #00b894; margin-bottom: 10px;">5. Copiez votre config Firebase ci-dessous:</p>
+            </div>
+            <textarea id="firebaseConfig" placeholder='{"apiKey": "...", "authDomain": "...", ...}'
+                style="width: 100%; height: 150px; background: #111; color: #0f0; padding: 10px; border-radius: 10px; font-family: monospace;"></textarea>
+            <button class="btn btn-green" onclick="saveFirebaseConfig()" style="margin-top: 15px;">Sauvegarder Configuration</button>
+            <p id="setupError" class="error hidden"></p>
+        </div>
+
+        <!-- Login Screen -->
+        <div id="loginScreen" class="card hidden" style="max-width: 400px; margin: 50px auto;">
+            <div class="tabs">
+                <div class="tab active" onclick="showTab('login')">Connexion</div>
+                <div class="tab" onclick="showTab('register')">Inscription</div>
+            </div>
+
+            <div id="loginForm">
+                <input type="email" id="loginEmail" placeholder="Email">
+                <input type="password" id="loginPassword" placeholder="Mot de passe">
+                <button class="btn" onclick="login()" style="width: 100%;">SE CONNECTER</button>
+                <p id="loginError" class="error hidden"></p>
+            </div>
+
+            <div id="registerForm" class="hidden">
+                <input type="text" id="regUsername" placeholder="Pseudo (affiché en jeu)" maxlength="20">
+                <input type="email" id="regEmail" placeholder="Email">
+                <input type="password" id="regPassword" placeholder="Mot de passe (min 6 car.)">
+                <button class="btn btn-green" onclick="register()" style="width: 100%;">CRÉER MON COMPTE</button>
+                <p id="regError" class="error hidden"></p>
+                <p id="regSuccess" class="success hidden"></p>
+            </div>
+        </div>
+
+        <!-- Main Interface -->
+        <div id="mainInterface" class="hidden">
+            <div class="grid">
+                <!-- Left: Online Players -->
+                <div class="card">
+                    <h3>🟢 En ligne (<span id="onlineCount">0</span>)</h3>
+                    <div id="playerList" style="max-height: 400px; overflow-y: auto;"></div>
+                </div>
+
+                <!-- Center: Profile -->
+                <div class="card my-profile" style="text-align: center;" onclick="viewProfile(currentUser.uid)">
+                    <div style="font-size: 3em;" id="myRankEmoji">🔹</div>
+                    <h2 id="myUsername">Player</h2>
+                    <div style="font-size: 2em; color: #ffd93d;" id="myElo">1000</div>
+                    <div style="color: #888;" id="myRank">Bronze</div>
+                    <div style="display: flex; justify-content: center; gap: 30px; margin: 20px 0;">
+                        <div><span style="color: #00b894; font-size: 1.5em;" id="myWins">0</span><br>Victoires</div>
+                        <div><span style="color: #e17055; font-size: 1.5em;" id="myLosses">0</span><br>Défaites</div>
+                    </div>
+                    <button class="btn btn-green" id="btnSearch" onclick="searchMatch()">🔍 CHERCHER UN MATCH</button>
+                    <button class="btn" id="btnCancel" onclick="cancelSearch()" class="hidden">✖ ANNULER</button>
+                    <div id="searchingStatus" class="hidden" style="margin-top: 20px;">
+                        <div class="spinner"></div>
+                        <p>Recherche d'adversaire...</p>
+                    </div>
+                    <br><br>
+                    <button class="btn btn-blue" onclick="launchGame()">🎮 LANCER LE JEU</button>
+                    <br><br>
+                    <button class="btn" onclick="logout()" style="background: #666;">🚪 Déconnexion</button>
+                </div>
+
+                <!-- Right: Leaderboard -->
+                <div class="card">
+                    <h3>🏆 Classement</h3>
+                    <div id="leaderboard" style="max-height: 400px; overflow-y: auto;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Profile Modal -->
+        <div id="profileModal" class="modal hidden">
+            <div class="modal-backdrop" id="modalBackdrop"></div>
+            <div class="modal-content">
+                <button type="button" class="modal-close" id="btnCloseProfile">✕</button>
+                <div style="text-align: center;">
+                    <div style="font-size: 4em;" id="profileEmoji">🔹</div>
+                    <h2 id="profileUsername">Player</h2>
+                    <div style="font-size: 2.5em; color: #ffd93d;" id="profileElo">1000</div>
+                    <div style="color: #888; font-size: 1.2em;" id="profileRank">Bronze</div>
+                </div>
+
+                <div style="display: flex; justify-content: space-around; margin: 25px 0; text-align: center;">
+                    <div>
+                        <div style="font-size: 2em; color: #00b894;" id="profileWins">0</div>
+                        <div style="color: #888;">Victoires</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 2em; color: #e17055;" id="profileLosses">0</div>
+                        <div style="color: #888;">Défaites</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 2em; color: #74b9ff;" id="profileWinrate">0%</div>
+                        <div style="color: #888;">Winrate</div>
+                    </div>
+                </div>
+
+                <div style="display: flex; justify-content: space-around; margin: 20px 0; text-align: center;">
+                    <div>
+                        <div style="font-size: 1.5em; color: #ffd93d;" id="profileStreak">0</div>
+                        <div style="color: #888;">Série actuelle</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 1.5em; color: #fd79a8;" id="profileBestStreak">0</div>
+                        <div style="color: #888;">Meilleure série</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 1.5em; color: #a29bfe;" id="profileMatches">0</div>
+                        <div style="color: #888;">Matchs joués</div>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 20px; border-top: 1px solid #444; padding-top: 15px;">📜 Historique des matchs</h3>
+                <div id="profileHistory" style="max-height: 200px; overflow-y: auto; margin-top: 10px;"></div>
+
+                <div id="profileActions" style="margin-top: 20px; text-align: center;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+
+    <script>
+        // ============================================
+        // CONFIGURATION FIREBASE (KOF Ultimate Online)
+        // ============================================
+        const firebaseConfig = {
+            apiKey: "AIzaSyAkLvfbFEZ4kAXxq2vAabLSFEZHPjMquec",
+            authDomain: "kof-ultimate-online.firebaseapp.com",
+            databaseURL: "https://kof-ultimate-online-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "kof-ultimate-online",
+            storageBucket: "kof-ultimate-online.firebasestorage.app",
+            messagingSenderId: "577046883380",
+            appId: "1:577046883380:web:fe4c6375fa65d7735f6e61"
+        };
+
+        let db = null;
+        let auth = null;
+        let currentUser = null;
+        let userData = null;
+        let searchInterval = null;
+
+        const RANKS = [
+            { min: 2400, name: 'Légende', emoji: '👑' },
+            { min: 2200, name: 'GrandMaster', emoji: '🏆' },
+            { min: 2000, name: 'Master', emoji: '💎' },
+            { min: 1800, name: 'Diamond', emoji: '💠' },
+            { min: 1600, name: 'Platinum', emoji: '🥇' },
+            { min: 1400, name: 'Gold', emoji: '🥈' },
+            { min: 1200, name: 'Silver', emoji: '🥉' },
+            { min: 1000, name: 'Bronze', emoji: '🔸' },
+            { min: 0, name: 'Débutant', emoji: '🔹' }
+        ];
+
+        function getRank(elo) {
+            for (let r of RANKS) {
+                if (elo >= r.min) return r;
+            }
+            return RANKS[RANKS.length - 1];
+        }
+
+        // ============================================
+        // INITIALIZATION
+        // ============================================
+        function init() {
+            // Utilise directement la config Firebase hardcodée
+            initFirebase(firebaseConfig);
+        }
+
+        function initFirebase(config) {
+            try {
+                firebase.initializeApp(config);
+                auth = firebase.auth();
+                db = firebase.database();
+
+                // Init bots
+                initBots();
+
+                // Listen for auth changes
+                auth.onAuthStateChanged(user => {
+                    document.getElementById('loading').classList.add('hidden');
+
+                    if (user) {
+                        currentUser = user;
+                        loadUserData();
+                    } else {
+                        document.getElementById('loginScreen').classList.remove('hidden');
+                    }
+                });
+            } catch (e) {
+                document.getElementById('loading').classList.add('hidden');
+                alert('Erreur Firebase: ' + e.message);
+            }
+        }
+
+        function initBots() {
+            const bots = [
+                { id: 'cpu_legende', username: '🤖 CPU-Légende', elo: 2400, difficulty: 'legendary' },
+                { id: 'cpu_master', username: '🤖 CPU-Master', elo: 2000, difficulty: 'master' },
+                { id: 'cpu_expert', username: '🤖 CPU-Expert', elo: 1700, difficulty: 'expert' },
+                { id: 'cpu_normal', username: '🤖 CPU-Normal', elo: 1400, difficulty: 'normal' },
+                { id: 'cpu_easy', username: '🤖 CPU-Easy', elo: 1100, difficulty: 'easy' },
+                { id: 'cpu_debutant', username: '🤖 CPU-Débutant', elo: 800, difficulty: 'beginner' }
+            ];
+
+            bots.forEach(bot => {
+                db.ref('players/' + bot.id).set({
+                    username: bot.username,
+                    elo: bot.elo,
+                    wins: 100,
+                    losses: 20,
+                    isBot: true,
+                    difficulty: bot.difficulty,
+                    online: true
+                });
+            });
+        }
+
+        // ============================================
+        // AUTH
+        // ============================================
+        function showTab(tab) {
+            document.getElementById('loginForm').classList.toggle('hidden', tab !== 'login');
+            document.getElementById('registerForm').classList.toggle('hidden', tab !== 'register');
+            document.querySelectorAll('.tab').forEach((t, i) => {
+                t.classList.toggle('active', (i === 0 && tab === 'login') || (i === 1 && tab === 'register'));
+            });
+        }
+
+        async function register() {
+            const username = document.getElementById('regUsername').value.trim();
+            const email = document.getElementById('regEmail').value.trim();
+            const password = document.getElementById('regPassword').value;
+            const errorEl = document.getElementById('regError');
+            const successEl = document.getElementById('regSuccess');
+
+            errorEl.classList.add('hidden');
+            successEl.classList.add('hidden');
+
+            if (username.length < 3) {
+                errorEl.textContent = 'Pseudo trop court (min 3)';
+                errorEl.classList.remove('hidden');
+                return;
+            }
+
+            try {
+                const cred = await auth.createUserWithEmailAndPassword(email, password);
+
+                // Create player profile
+                await db.ref('players/' + cred.user.uid).set({
+                    username: username,
+                    email: email,
+                    elo: 1000,
+                    wins: 0,
+                    losses: 0,
+                    matches: 0,
+                    streak: 0,
+                    bestStreak: 0,
+                    isBot: false,
+                    online: true,
+                    createdAt: Date.now()
+                });
+
+                successEl.textContent = 'Compte créé!';
+                successEl.classList.remove('hidden');
+
+            } catch (e) {
+                errorEl.textContent = e.message;
+                errorEl.classList.remove('hidden');
+            }
+        }
+
+        async function login() {
+            const email = document.getElementById('loginEmail').value.trim();
+            const password = document.getElementById('loginPassword').value;
+            const errorEl = document.getElementById('loginError');
+
+            errorEl.classList.add('hidden');
+
+            try {
+                await auth.signInWithEmailAndPassword(email, password);
+            } catch (e) {
+                errorEl.textContent = e.message;
+                errorEl.classList.remove('hidden');
+            }
+        }
+
+        function logout() {
+            if (currentUser) {
+                db.ref('players/' + currentUser.uid + '/online').set(false);
+                db.ref('matchmaking/' + currentUser.uid).remove();
+            }
+            auth.signOut();
+            location.reload();
+        }
+
+        // ============================================
+        // USER DATA
+        // ============================================
+        function loadUserData() {
+            db.ref('players/' + currentUser.uid).on('value', snapshot => {
+                userData = snapshot.val();
+                if (userData) {
+                    // Set online
+                    db.ref('players/' + currentUser.uid + '/online').set(true);
+                    db.ref('players/' + currentUser.uid + '/lastSeen').set(Date.now());
+
+                    // Update UI
+                    updateProfile();
+
+                    // Show main interface
+                    document.getElementById('loginScreen').classList.add('hidden');
+                    document.getElementById('mainInterface').classList.remove('hidden');
+
+                    // Load players & leaderboard
+                    loadOnlinePlayers();
+                    loadLeaderboard();
+                }
+            });
+        }
+
+        function updateProfile() {
+            const rank = getRank(userData.elo);
+            document.getElementById('myUsername').textContent = userData.username;
+            document.getElementById('myElo').textContent = userData.elo;
+            document.getElementById('myRank').textContent = rank.name;
+            document.getElementById('myRankEmoji').textContent = rank.emoji;
+            document.getElementById('myWins').textContent = userData.wins || 0;
+            document.getElementById('myLosses').textContent = userData.losses || 0;
+        }
+
+        // ============================================
+        // PLAYERS
+        // ============================================
+        function loadOnlinePlayers() {
+            db.ref('players').orderByChild('online').equalTo(true).on('value', snapshot => {
+                const players = [];
+                snapshot.forEach(child => {
+                    const p = child.val();
+                    p.id = child.key;
+                    if (child.key !== currentUser.uid) {
+                        players.push(p);
+                    }
+                });
+
+                // Sort: bots first, then by ELO
+                players.sort((a, b) => {
+                    if (a.isBot && !b.isBot) return -1;
+                    if (!a.isBot && b.isBot) return 1;
+                    return b.elo - a.elo;
+                });
+
+                document.getElementById('onlineCount').textContent = players.length;
+
+                const list = document.getElementById('playerList');
+                list.innerHTML = players.map(p => {
+                    const rank = getRank(p.elo);
+                    const btnClass = p.isBot ? 'btn-green' : 'btn';
+                    const btnText = p.isBot ? '⚡ JOUER' : '⚔️ Défier';
+                    return `
+                        <div class="player-item ${p.isBot ? 'bot' : ''}" onclick="viewProfile('${p.id}')">
+                            <span style="margin-right: 10px;">${rank.emoji}</span>
+                            <div>
+                                <div>${p.username}</div>
+                                <div style="font-size: 0.8em; color: #888;">${rank.name}</div>
+                            </div>
+                            <span class="elo">${p.elo}</span>
+                            <button class="btn ${btnClass}" style="margin-left: 10px; padding: 5px 10px;" onclick="event.stopPropagation(); challenge('${p.id}', ${p.isBot})">
+                                ${btnText}
+                            </button>
+                        </div>
+                    `;
+                }).join('');
+            });
+        }
+
+        function loadLeaderboard() {
+            db.ref('players').orderByChild('elo').limitToLast(20).on('value', snapshot => {
+                const players = [];
+                snapshot.forEach(child => {
+                    const p = child.val();
+                    p.id = child.key;
+                    if (!p.isBot) players.push(p);
+                });
+                players.sort((a, b) => b.elo - a.elo);
+
+                const lb = document.getElementById('leaderboard');
+                lb.innerHTML = players.map((p, i) => {
+                    const rank = getRank(p.elo);
+                    const posColor = i === 0 ? '#ffd700' : i === 1 ? '#c0c0c0' : i === 2 ? '#cd7f32' : '#888';
+                    return `
+                        <div class="player-item" onclick="viewProfile('${p.id}')">
+                            <span style="color: ${posColor}; width: 25px; font-weight: bold;">${i + 1}</span>
+                            <span style="margin-right: 10px;">${rank.emoji}</span>
+                            <span style="flex: 1;">${p.username}</span>
+                            <span class="elo">${p.elo}</span>
+                        </div>
+                    `;
+                }).join('');
+            });
+        }
+
+                // ============================================
+        // MATCHMAKING PROGRESSIF
+        // Cherche d'abord niveau exact, puis elargit
+        // ============================================
+        let searchStartTime = 0;
+        let currentSearchRange = 0;
+
+        function calculateSearchRange(waitSeconds) {
+            // 0-5s: +/-25 ELO | 5-10s: +/-50 | 10-20s: +/-100
+            // 20-30s: +/-150 | 30-45s: +/-250 | 45-60s: +/-400 | 60s+: +/-600
+            if (waitSeconds < 5) return 25;
+            if (waitSeconds < 10) return 50;
+            if (waitSeconds < 20) return 100;
+            if (waitSeconds < 30) return 150;
+            if (waitSeconds < 45) return 250;
+            if (waitSeconds < 60) return 400;
+            return 600;
+        }
+
+        function updateSearchStatus() {
+            if (!searchStartTime) return;
+            const waitSeconds = Math.floor((Date.now() - searchStartTime) / 1000);
+            currentSearchRange = calculateSearchRange(waitSeconds);
+            const statusEl = document.getElementById('searchingStatus');
+            if (statusEl) {
+                let rangeText = '', color = '#00b894';
+                if (currentSearchRange <= 25) { rangeText = '🎯 Niveau exact (+/-25 ELO)'; color = '#00b894'; }
+                else if (currentSearchRange <= 50) { rangeText = '🔍 Niveau proche (+/-50 ELO)'; color = '#00cec9'; }
+                else if (currentSearchRange <= 100) { rangeText = '🔎 Niveau similaire (+/-100 ELO)'; color = '#74b9ff'; }
+                else if (currentSearchRange <= 150) { rangeText = '🌐 Recherche elargie (+/-150 ELO)'; color = '#a29bfe'; }
+                else if (currentSearchRange <= 250) { rangeText = '🌍 Recherche large (+/-250 ELO)'; color = '#ffd93d'; }
+                else if (currentSearchRange <= 400) { rangeText = '🌏 Recherche tres large (+/-400 ELO)'; color = '#fdcb6e'; }
+                else { rangeText = '🌌 Tous niveaux (+/-600 ELO)'; color = '#e94560'; }
+                statusEl.innerHTML = '<div style="text-align:center;"><div class="loading-spinner"></div><div style="margin-top:10px;color:'+color+';font-weight:bold;">'+rangeText+'</div><div style="color:#888;font-size:0.9em;margin-top:5px;">Recherche depuis '+waitSeconds+'s...</div><div style="margin-top:8px;background:rgba(0,0,0,0.3);border-radius:10px;padding:3px;width:200px;margin:8px auto;"><div style="width:'+Math.min(waitSeconds/60*100,100)+'%;height:6px;background:linear-gradient(90deg,#00b894,#74b9ff,#ffd93d,#e94560);border-radius:4px;"></div></div></div>';
+            }
+            if (searchStartTime) setTimeout(updateSearchStatus, 1000);
+        }
+
+        function searchMatch() {
+            document.getElementById('btnSearch').classList.add('hidden');
+            document.getElementById('btnCancel').classList.remove('hidden');
+            document.getElementById('searchingStatus').classList.remove('hidden');
+            searchStartTime = Date.now();
+            currentSearchRange = 25;
+            db.ref('matchmaking/' + currentUser.uid).set({
+                username: userData.username,
+                elo: userData.elo,
+                since: Date.now()
+            });
+            db.ref('matches/' + currentUser.uid).on('value', snapshot => {
+                const match = snapshot.val();
+                if (match) {
+                    cancelSearch();
+                    showMatch(match);
+                    db.ref('matches/' + currentUser.uid).remove();
+                }
+            });
+            searchInterval = setInterval(tryFindMatch, 1500);
+            updateSearchStatus();
+        }
+
+        function tryFindMatch() {
+            db.ref('matchmaking').once('value', snapshot => {
+                const queue = [];
+                snapshot.forEach(child => {
+                    if (child.key !== currentUser.uid) {
+                        queue.push({ id: child.key, ...child.val() });
+                    }
+                });
+                const myElo = userData.elo;
+                const waitSeconds = (Date.now() - searchStartTime) / 1000;
+                const range = calculateSearchRange(waitSeconds);
+                queue.sort((a, b) => Math.abs(myElo - a.elo) - Math.abs(myElo - b.elo));
+                for (const opp of queue) {
+                    const eloDiff = Math.abs(myElo - opp.elo);
+                    if (eloDiff <= range) {
+                        db.ref('matchmaking/' + currentUser.uid).remove();
+                        db.ref('matchmaking/' + opp.id).remove();
+                        db.ref('matches/' + opp.id).set({
+                            opponent: userData.username,
+                            opponentElo: userData.elo
+                        });
+                        cancelSearch();
+                        showMatch({ opponent: opp.username, opponentElo: opp.elo, eloDiff: eloDiff });
+                        return;
+                    }
+                }
+            });
+        });
+
+                        cancelSearch();
+                        showMatch({ opponent: opp.username, opponentElo: opp.elo });
+                        return;
+                    }
+                }
+            });
+        }
+
+        function cancelSearch() {
+            clearInterval(searchInterval);
+            db.ref('matchmaking/' + currentUser.uid).remove();
+            document.getElementById('btnSearch').classList.remove('hidden');
+            document.getElementById('btnCancel').classList.add('hidden');
+            document.getElementById('searchingStatus').classList.add('hidden');
+        }
+
+        function challenge(playerId, isBot) {
+            db.ref('players/' + playerId).once('value', snapshot => {
+                const opp = snapshot.val();
+                if (isBot) {
+                    // Bot auto-accepts
+                    showMatch({ opponent: opp.username, opponentElo: opp.elo, isBot: true });
+                } else {
+                    // Send challenge (simplified - just match directly for demo)
+                    showMatch({ opponent: opp.username, opponentElo: opp.elo });
+                }
+            });
+        }
+
+        function showMatch(match) {
+            alert(`⚔️ MATCH TROUVÉ!\n\n${userData.username} (${userData.elo})\n  VS\n${match.opponent} (${match.opponentElo})\n\nLancez le jeu et affrontez-vous!`);
+        }
+
+        function launchGame() {
+            alert('Pour lancer le jeu:\n\n1. Ouvrez: D:\\KOF Ultimate Online\\Ikemen_GO.exe\n2. NETWORK → HOST GAME ou JOIN GAME');
+        }
+
+        // ============================================
+        // PROFILE VIEWING
+        // ============================================
+        function viewProfile(playerId) {
+            db.ref('players/' + playerId).once('value', snapshot => {
+                const player = snapshot.val();
+                if (!player) return;
+
+                const rank = getRank(player.elo);
+                const winrate = (player.wins + player.losses) > 0
+                    ? Math.round((player.wins / (player.wins + player.losses)) * 100)
+                    : 0;
+
+                document.getElementById('profileEmoji').textContent = rank.emoji;
+                document.getElementById('profileUsername').textContent = player.username;
+                document.getElementById('profileElo').textContent = player.elo;
+                document.getElementById('profileRank').textContent = rank.name;
+                document.getElementById('profileWins').textContent = player.wins || 0;
+                document.getElementById('profileLosses').textContent = player.losses || 0;
+                document.getElementById('profileWinrate').textContent = winrate + '%';
+                document.getElementById('profileStreak').textContent = player.streak || 0;
+                document.getElementById('profileBestStreak').textContent = player.bestStreak || 0;
+                document.getElementById('profileMatches').textContent = player.matches || 0;
+
+                // Load match history
+                loadMatchHistory(playerId);
+
+                // Show actions (challenge button if not self)
+                const actionsEl = document.getElementById('profileActions');
+                if (playerId !== currentUser.uid && !player.isBot) {
+                    actionsEl.innerHTML = `<button class="btn" onclick="closeProfile(); challenge('${playerId}', false);">⚔️ Défier</button>`;
+                } else if (player.isBot) {
+                    actionsEl.innerHTML = `<button class="btn btn-green" onclick="closeProfile(); challenge('${playerId}', true);">⚡ Jouer contre ce bot</button>`;
+                } else {
+                    actionsEl.innerHTML = '<span style="color: #888;">C\'est votre profil</span>';
+                }
+
+                openProfile();
+            });
+        }
+
+        function closeProfile() {
+            console.log('closeProfile called');
+            const modal = document.getElementById('profileModal');
+            if (modal) {
+                modal.classList.add('hidden');
+                modal.style.display = 'none';
+            }
+        }
+
+        function openProfile() {
+            const modal = document.getElementById('profileModal');
+            if (modal) {
+                modal.classList.remove('hidden');
+                modal.style.display = 'flex';
+            }
+        }
+
+        // Setup modal close handlers after DOM loads
+        function setupModalHandlers() {
+            const closeBtn = document.getElementById('btnCloseProfile');
+            const backdrop = document.getElementById('modalBackdrop');
+
+            if (closeBtn) {
+                closeBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    closeProfile();
+                });
+            }
+
+            if (backdrop) {
+                backdrop.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    closeProfile();
+                });
+            }
+
+            // ESC key to close
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    closeProfile();
+                }
+            });
+        }
+
+        function loadMatchHistory(playerId) {
+            const historyEl = document.getElementById('profileHistory');
+            historyEl.innerHTML = '<div style="color: #888; text-align: center;">Chargement...</div>';
+
+            db.ref('matchHistory/' + playerId).orderByChild('timestamp').limitToLast(10).once('value', snapshot => {
+                const matches = [];
+                snapshot.forEach(child => {
+                    matches.push(child.val());
+                });
+                matches.reverse(); // Most recent first
+
+                if (matches.length === 0) {
+                    historyEl.innerHTML = '<div style="color: #888; text-align: center;">Aucun match enregistré</div>';
+                    return;
+                }
+
+                historyEl.innerHTML = matches.map(m => {
+                    const isWin = m.result === 'win';
+                    const date = new Date(m.timestamp).toLocaleDateString('fr-FR');
+                    const eloChange = m.eloChange > 0 ? `+${m.eloChange}` : m.eloChange;
+                    const eloColor = m.eloChange > 0 ? '#00b894' : '#e17055';
+                    return `
+                        <div class="history-item ${isWin ? 'history-win' : 'history-loss'}">
+                            <span>${isWin ? '✅' : '❌'} vs ${m.opponent}</span>
+                            <span style="color: ${eloColor};">${eloChange} ELO</span>
+                            <span style="color: #888;">${date}</span>
+                        </div>
+                    `;
+                }).join('');
+            });
+        }
+
+        // Record a match result (call this after a real match)
+        function recordMatch(winnerId, loserId) {
+            const K = 32;
+
+            Promise.all([
+                db.ref('players/' + winnerId).once('value'),
+                db.ref('players/' + loserId).once('value')
+            ]).then(([winnerSnap, loserSnap]) => {
+                const winner = winnerSnap.val();
+                const loser = loserSnap.val();
+
+                // ELO calculation
+                const expected = 1 / (1 + Math.pow(10, (loser.elo - winner.elo) / 400));
+                const winnerGain = Math.round(K * (1 - expected));
+                const loserLoss = Math.round(K * expected);
+
+                // Update winner
+                db.ref('players/' + winnerId).update({
+                    elo: winner.elo + winnerGain,
+                    wins: (winner.wins || 0) + 1,
+                    matches: (winner.matches || 0) + 1,
+                    streak: (winner.streak || 0) + 1,
+                    bestStreak: Math.max((winner.bestStreak || 0), (winner.streak || 0) + 1)
+                });
+
+                // Update loser
+                db.ref('players/' + loserId).update({
+                    elo: Math.max(100, loser.elo - loserLoss),
+                    losses: (loser.losses || 0) + 1,
+                    matches: (loser.matches || 0) + 1,
+                    streak: 0
+                });
+
+                // Record history for winner
+                db.ref('matchHistory/' + winnerId).push({
+                    opponent: loser.username,
+                    result: 'win',
+                    eloChange: winnerGain,
+                    timestamp: Date.now()
+                });
+
+                // Record history for loser
+                db.ref('matchHistory/' + loserId).push({
+                    opponent: winner.username,
+                    result: 'loss',
+                    eloChange: -loserLoss,
+                    timestamp: Date.now()
+                });
+            });
+        }
+
+        // ============================================
+        // INIT
+        // ============================================
+        window.onload = function() {
+            setupModalHandlers();
+            init();
+        };
+    </script>
+</body>
+</html>

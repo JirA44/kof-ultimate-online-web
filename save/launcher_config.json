@@ -1,0 +1,11 @@
+{
+  "online_ready": true,
+  "last_check": "2025-12-27T06:06:20.512337",
+  "version": "1.0.0",
+  "characters": 188,
+  "matchmaking": {
+    "enabled": true,
+    "port": 7500,
+    "lobby_url": "KOF_ONLINE_FIREBASE.html"
+  }
+}

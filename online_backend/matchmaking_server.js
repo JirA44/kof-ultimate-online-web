@@ -169,6 +169,10 @@ wss.on('connection', (ws, req) => {
                     handleChatMessage(ws, data);
                     break;
 
+                case 'accept_match':
+                    handleAcceptMatch(ws, data);
+                    break;
+
                 case 'ping':
                     ws.send(JSON.stringify({ type: 'pong', timestamp: Date.now() }));
                     break;
@@ -269,6 +273,71 @@ wss.on('connection', (ws, req) => {
                 type: 'left_queue',
                 message: 'Sortie de la file d\'attente'
             }));
+        }
+    }
+
+    function handleAcceptMatch(ws, data) {
+        const { playerId, matchId } = data;
+        const match = activeMatches.get(matchId);
+
+        if (!match) {
+            return ws.send(JSON.stringify({ type: 'error', message: 'Match non trouvé' }));
+        }
+
+        // Track acceptation
+        if (!match.accepted) {
+            match.accepted = {};
+        }
+        match.accepted[playerId] = true;
+
+        console.log(`✅ ${playerId} a accepté le match ${matchId}`);
+
+        // Check if both players accepted
+        const p1Accepted = match.accepted[match.player1.playerId];
+        const p2Accepted = match.accepted[match.player2.playerId];
+
+        if (p1Accepted && p2Accepted) {
+            match.status = 'starting';
+
+            // Get game server info
+            const gameServerPort = 3102;
+
+            // Notify both players to start the game
+            sendToPlayer(match.player1.playerId, {
+                type: 'match_start',
+                matchId: matchId,
+                opponent: {
+                    id: match.player2.playerId,
+                    username: match.player2.username,
+                    elo: match.player2.elo
+                },
+                isPlayer1: true,
+                gameServer: `ws://localhost:${gameServerPort}`
+            });
+
+            sendToPlayer(match.player2.playerId, {
+                type: 'match_start',
+                matchId: matchId,
+                opponent: {
+                    id: match.player1.playerId,
+                    username: match.player1.username,
+                    elo: match.player1.elo
+                },
+                isPlayer1: false,
+                gameServer: `ws://localhost:${gameServerPort}`
+            });
+
+            console.log(`🎮 Match ${matchId} démarré: ${match.player1.username} vs ${match.player2.username}`);
+        } else {
+            // Notify the other player that opponent is ready
+            const otherPlayerId = playerId === match.player1.playerId
+                ? match.player2.playerId
+                : match.player1.playerId;
+
+            sendToPlayer(otherPlayerId, {
+                type: 'opponent_ready',
+                matchId: matchId
+            });
         }
     }
 

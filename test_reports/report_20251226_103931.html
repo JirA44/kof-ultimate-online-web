@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOF Ultimate Online - Rapport de Test</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #eee;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #ff6b6b, #ffd93d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .subtitle { text-align: center; color: #888; margin-bottom: 30px; }
+        .score-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+        .score-value {
+            font-size: 4em;
+            font-weight: bold;
+            color: white;
+        }
+        .score-label { font-size: 1.2em; color: rgba(255,255,255,0.8); }
+        .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 20px; }
+        .card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .card h2 {
+            color: #ffd93d;
+            margin-bottom: 20px;
+            font-size: 1.4em;
+        }
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .stat-label { color: #aaa; }
+        .stat-value { font-weight: bold; }
+        .stat-value.good { color: #4ade80; }
+        .stat-value.warning { color: #fbbf24; }
+        .stat-value.bad { color: #f87171; }
+        .progress-bar {
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            height: 20px;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #4ade80, #22c55e);
+            border-radius: 10px;
+            transition: width 0.5s ease;
+        }
+        .badge {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+        .badge.excellent { background: #22c55e; }
+        .badge.good { background: #3b82f6; }
+        .badge.ok { background: #f59e0b; }
+        .badge.bad { background: #ef4444; }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>KOF ULTIMATE ONLINE</h1>
+        <p class="subtitle">Rapport de Test Complet - 2025-12-26 10:39:31</p>
+
+        <div class="score-card">
+            <div class="score-value">86%</div>
+            <div class="score-label">Score Global</div>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <h2>🎮 Personnages</h2>
+                <div class="stat-row">
+                    <span class="stat-label">Total</span>
+                    <span class="stat-value">190</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Jouables</span>
+                    <span class="stat-value good">137</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Non-jouables</span>
+                    <span class="stat-value bad">53</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Score</span>
+                    <span class="stat-value">72.1%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 72.10526315789474%"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>🌐 Reseau</h2>
+                <div class="stat-row">
+                    <span class="stat-label">IP Locale</span>
+                    <span class="stat-value">192.168.1.20</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Latence moyenne</span>
+                    <span class="stat-value good">12.0ms</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Jitter</span>
+                    <span class="stat-value">1.2ms</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Perte paquets</span>
+                    <span class="stat-value good">0.0%</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Type NAT</span>
+                    <span class="stat-value">Open/Moderate</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Qualite</span>
+                    <span class="badge excellent">EXCELLENT</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>🎯 Jeu</h2>
+                <div class="stat-row">
+                    <span class="stat-label">Ikemen GO</span>
+                    <span class="stat-value good">Installe</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Stabilite</span>
+                    <span class="stat-value good">Stable</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Mode Online</span>
+                    <span class="stat-value good">Disponible</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>✅ Capacites</h2>
+                <div class="stat-row">
+                    <span class="stat-label">Heberger (Host)</span>
+                    <span class="stat-value good">Oui</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Rejoindre (Join)</span>
+                    <span class="stat-value good">Oui</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Rollback Netcode</span>
+                    <span class="stat-value">Supporte (Ikemen GO)</span>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Genere automatiquement par KOF Ultimate Online Test System v2.0</p>
+            <p>2025-12-26 10:39:31</p>
+        </footer>
+    </div>
+</body>
+</html>

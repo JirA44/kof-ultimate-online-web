@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-12-26T10:39:31.331439",
+  "characters": {
+    "total": 190,
+    "playable": 137,
+    "broken": 53,
+    "score": 72.10526315789474
+  },
+  "network": {
+    "success": true,
+    "avg_ping": 11.99583000052371,
+    "avg_jitter": 1.1953408430947157,
+    "avg_loss": 0.0,
+    "quality": "EXCELLENT",
+    "nat_type": "Open/Moderate",
+    "local_ip": "192.168.1.20"
+  },
+  "game": {
+    "launch_ok": true,
+    "stable": true
+  }
+}

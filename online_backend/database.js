@@ -136,14 +136,17 @@ class Database {
 
     createPlayer(username, email, passwordHash, callback) {
         const sql = `INSERT INTO players (username, email, password_hash, display_name) VALUES (?, ?, ?, ?)`;
-        this.db.run(sql, [username, email, passwordHash, username], function(err) {
+        const db = this.db; // Save reference for callback
+        db.run(sql, [username, email, passwordHash, username], function(err) {
             if (err) {
                 callback(err, null);
             } else {
                 // Créer les stats par défaut
+                const playerId = this.lastID;
                 const statsSQL = `INSERT INTO player_stats (player_id) VALUES (?)`;
-                this.db.run(statsSQL, [this.lastID]);
-                callback(null, { id: this.lastID, username });
+                db.run(statsSQL, [playerId], () => {
+                    callback(null, { id: playerId, username });
+                });
             }
         });
     }

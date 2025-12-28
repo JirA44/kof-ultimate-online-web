@@ -1,0 +1,706 @@
+{
+  "repairs": [
+    {
+      "timestamp": "2025-11-07T02:26:11.445463",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Kartis.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.463386",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Kasim_LV2-CKOFM[v0.40].png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.474682",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Kasumi-KOFM.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.480243",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Kei.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.487954",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Kevenoce.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.500711",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Keyser-Aunthmer.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.508136",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Kotone.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.519297",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Kyaga-KOFM.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.526914",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Kychiel.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.532968",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: LUMIEL.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.544179",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Lane.Blood-CKOFM.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.561389",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Littledevil-Phoenix.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.573714",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Lord-Goenitz.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.580024",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Magnus.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.593968",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Mai Phoenix XI.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.600160",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Maltet.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.609586",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Maryl.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.621713",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Matam.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.634683",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Meld_Boss.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.641922",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: N-Zeroko.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.649409",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Nao-MX 1.0.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.658800",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: NeoDio KOFM.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.669610",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: NeoGeegus KOFM.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.675725",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Nero.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.688007",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: New_Kyouki.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.694187",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Noa_MK.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.705701",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Nox Bernstein.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.718141",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: O.Zero-Prominence.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.727212",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Olivia.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.746517",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Original Psyqhical.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.758179",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Orochi Kyo WF.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.769699",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Orochi Leona-KOFM.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.781583",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Orochi-EV1.55.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.808300",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Orochi.Yamazaki-CKOFM.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.819066",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: P-LEONA_ELEMENT.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.834085",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Psyche_42-1.1.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.846103",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Psyche_57-1.1.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.852753",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: R.S.P.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.862906",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Raika.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.880811",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Raisen.blood-KOFM.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.887776",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Rayno.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.896882",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Reas-KOFM.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.904835",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Reyna.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.912440",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Rinne-RH.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.919352",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Rocken.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.924694",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Rose.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.936372",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Rozwel S.K (LEGIT).png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.943786",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Rugal7th.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.952837",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Ryuji.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.963327",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: S_Infezione.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.972752",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Samael.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.980388",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Sasin.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:11.992382",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Shadow-Dancer.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.009291",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Sonic Vanesa.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.025085",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Spiritland Lords.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.037785",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Tenrou_Kunagi.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.057739",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: ThunderMiss.Shermie.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.069874",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Titan_KOF.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.084202",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: True Iori X_KOF.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.100698",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Unfailed Gustab.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.120520",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Unleashesd God Kula.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.134019",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Valmar Rugal.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.141487",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Viper.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.151864",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: VladRose.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.166474",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Voltage Zeroko-Pre.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.174737",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: WatchTV.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.190164",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: WhirlWind-Goenitz.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.206293",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: White DeathRaGeroous Version.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.221995",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Wild.O.Yashiro.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.233700",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Wind_MMXIX.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.241594",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Xion-V.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.259601",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Yamazaki.Blood.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.269319",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Yukida.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.276996",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Yuno-KOFM.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.286282",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Yuri_SV.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.298317",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: Zerozuchi_Boss.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.309027",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: _ArchiMurderer.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.314768",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: ai.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.322248",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: akuma.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.333652",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: asura-kofa.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.342640",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: baiyi.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.349665",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: billy.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.353939",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: bob.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.366002",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: boss-orochi.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.378104",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: ccihinako.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.389124",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: ccijhun.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.400862",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: cciking.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.414146",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: ccishermie.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.428980",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: clone benimaru.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.439579",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: dr-yang-kofa.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.455684",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: final-goenitz.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.464953",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: god_orochi.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.478051",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: heraclius.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.485043",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: kfm.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.502316",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: meteoricmarisa.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.516848",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: mizore-kofmLV2.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.526835",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: orochi-iori.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.537924",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: orochi-kyoko.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.549393",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: robo-kyo-kofa.png",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-11-07T02:26:12.557933",
+      "cycle": 1,
+      "error_type": "PORTRAIT",
+      "description": "Portrait créé: vandals.png",
+      "status": "SUCCESS"
+    }
+  ],
+  "total_fixed": 194,
+  "last_update": "2025-12-23T00:43:52.040165"
+}

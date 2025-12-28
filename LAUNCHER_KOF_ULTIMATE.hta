@@ -1,0 +1,331 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>KOF Ultimate Online - Launcher</title>
+    <HTA:APPLICATION
+        ID="KOFLauncher"
+        APPLICATIONNAME="KOF Ultimate Online"
+        BORDER="thin"
+        BORDERSTYLE="normal"
+        CAPTION="yes"
+        CONTEXTMENU="no"
+        INNERBORDER="no"
+        MAXIMIZEBUTTON="no"
+        MINIMIZEBUTTON="yes"
+        SCROLL="no"
+        SELECTION="no"
+        SHOWINTASKBAR="yes"
+        SINGLEINSTANCE="yes"
+        SYSMENU="yes"
+        VERSION="2.5"
+        WINDOWSTATE="normal"
+    />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+            background: #0a0015;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .bg-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #0a0015;
+            background: -webkit-linear-gradient(135deg, #000000 0%, #1a0033 50%, #2a0055 100%);
+            background: linear-gradient(135deg, #000000 0%, #1a0033 50%, #2a0055 100%);
+        }
+
+        .main-container {
+            position: relative;
+            z-index: 10;
+            width: 100%;
+            height: 100%;
+        }
+
+        .header {
+            background: rgba(0,0,0,0.7);
+            padding: 25px;
+            text-align: center;
+            border-bottom: 3px solid #00ccff;
+        }
+
+        .logo-title {
+            font-size: 48px;
+            font-weight: bold;
+            color: #00ffff;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            text-shadow: 0 0 20px #00ffff, 0 0 40px #ff0080;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #ff0080;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-top: 8px;
+        }
+
+        .stats-bar {
+            background: rgba(0,0,0,0.5);
+            padding: 12px 20px;
+            text-align: center;
+            border-bottom: 2px solid #333;
+        }
+
+        .stat-item {
+            display: inline-block;
+            margin: 0 30px;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #00ffff;
+        }
+
+        .stat-label {
+            font-size: 10px;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .content {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .main-play-button {
+            width: 350px;
+            height: 90px;
+            background: #ff0066;
+            background: -webkit-linear-gradient(135deg, #ff0080 0%, #ff3366 100%);
+            background: linear-gradient(135deg, #ff0080 0%, #ff3366 100%);
+            border: 3px solid #ff6699;
+            border-radius: 45px;
+            font-size: 28px;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+            color: #fff;
+            text-transform: uppercase;
+            cursor: pointer;
+            letter-spacing: 4px;
+            margin-bottom: 30px;
+        }
+
+        .main-play-button:hover {
+            background: #ff3399;
+            border-color: #ffaacc;
+        }
+
+        .action-grid {
+            margin-top: 20px;
+        }
+
+        .action-button {
+            display: inline-block;
+            width: 180px;
+            height: 100px;
+            background: rgba(0,0,0,0.6);
+            border: 2px solid #00ccff;
+            border-radius: 12px;
+            margin: 8px;
+            cursor: pointer;
+            vertical-align: top;
+            padding-top: 20px;
+        }
+
+        .action-button:hover {
+            background: rgba(0,100,150,0.4);
+            border-color: #00ffff;
+        }
+
+        .action-icon {
+            font-size: 28px;
+            color: #00ffff;
+            margin-bottom: 8px;
+        }
+
+        .action-title {
+            font-size: 12px;
+            font-weight: bold;
+            color: #00ffff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.9);
+            padding: 10px 20px;
+            border-top: 2px solid #333;
+        }
+
+        .version {
+            float: left;
+            font-size: 11px;
+            color: #666;
+        }
+
+        .status {
+            float: right;
+            font-size: 12px;
+            color: #00ff00;
+        }
+
+        .status-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: #00ff00;
+            border-radius: 50%;
+            margin-right: 6px;
+        }
+
+        .loading-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.95);
+            z-index: 1000;
+            display: none;
+            text-align: center;
+            padding-top: 200px;
+        }
+
+        .loading-text {
+            font-size: 24px;
+            color: #00ffff;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-top: 30px;
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-container"></div>
+
+    <div class="main-container">
+        <div class="header">
+            <div class="logo-title">KOF ULTIMATE</div>
+            <div class="subtitle">The King of Fighters - Ultimate Edition</div>
+        </div>
+
+        <div class="stats-bar">
+            <div class="stat-item">
+                <div class="stat-value">150+</div>
+                <div class="stat-label">Characters</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">30+</div>
+                <div class="stat-label">Stages</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">ONLINE</div>
+                <div class="stat-label">Multiplayer</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">HD</div>
+                <div class="stat-label">Quality</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <button class="main-play-button" onclick="launchGame()">
+                &#9658; PLAY
+            </button>
+
+            <div class="action-grid">
+                <div class="action-button" onclick="launchGame()">
+                    <div class="action-icon">&#9733;</div>
+                    <div class="action-title">Training</div>
+                </div>
+                <div class="action-button" onclick="launchGame()">
+                    <div class="action-icon">&#9876;</div>
+                    <div class="action-title">Versus</div>
+                </div>
+                <div class="action-button" onclick="launchGame()">
+                    <div class="action-icon">&#9654;</div>
+                    <div class="action-title">Arcade</div>
+                </div>
+                <div class="action-button" onclick="launchGame()">
+                    <div class="action-icon">&#9881;</div>
+                    <div class="action-title">Options</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer clearfix">
+            <div class="version">KOF Ultimate Online v2.5 | Ikemen GO Engine</div>
+            <div class="status">
+                <span class="status-dot"></span>
+                Ready to Play
+            </div>
+        </div>
+    </div>
+
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-text">LAUNCHING GAME...</div>
+    </div>
+
+    <script type="text/vbscript">
+        Dim shell
+        Set shell = CreateObject("WScript.Shell")
+
+        Sub LaunchGameVBS()
+            On Error Resume Next
+            shell.CurrentDirectory = "D:\KOF Ultimate Online\Ikemen_GO"
+            shell.Run "Ikemen_GO.exe", 1, False
+        End Sub
+    </script>
+
+    <script type="text/javascript">
+        window.resizeTo(900, 600);
+        var sw = screen.availWidth;
+        var sh = screen.availHeight;
+        window.moveTo((sw - 900) / 2, (sh - 600) / 2);
+
+        function showLoading() {
+            document.getElementById('loadingOverlay').style.display = 'block';
+        }
+
+        function hideLoading() {
+            document.getElementById('loadingOverlay').style.display = 'none';
+        }
+
+        function launchGame() {
+            showLoading();
+            window.setTimeout(function() {
+                LaunchGameVBS();
+                window.setTimeout(function() {
+                    hideLoading();
+                }, 500);
+            }, 800);
+        }
+    </script>
+</body>
+</html>

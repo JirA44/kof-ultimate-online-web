@@ -1,0 +1,48 @@
+================================================================================
+  KOF ULTIMATE ONLINE - RAPPORT DE TEST MULTIJOUEUR
+================================================================================
+
+Date: 2025-12-26 10:28:26
+Nombre de tests: 6
+
+--------------------------------------------------------------------------------
+RESULTATS DETAILLES
+--------------------------------------------------------------------------------
+
+Test #1:
+  Duree: 10.21s
+  Erreurs: 0
+  CRASH DETECTE!
+
+Test #2:
+  Duree: 10.29s
+  Erreurs: 0
+  CRASH DETECTE!
+
+Test #3:
+  Duree: 10.30s
+  Erreurs: 0
+  CRASH DETECTE!
+
+Test #Demarrage rapide (5s):
+  Duree: 5.18s
+  Erreurs: 0
+
+Test #Session courte (10s):
+  Duree: 10.22s
+  Erreurs: 0
+
+Test #Session normale (20s):
+  Duree: 20.32s
+  Erreurs: 0
+
+--------------------------------------------------------------------------------
+RESUME
+--------------------------------------------------------------------------------
+
+Total erreurs: 0
+Tests reussis: 6/6
+
+EXCELLENT! Aucune erreur detectee
+
+================================================================================

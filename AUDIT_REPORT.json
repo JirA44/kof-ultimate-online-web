@@ -1,0 +1,356 @@
+{
+  "date": "2025-12-23T00:49:20.706221",
+  "system_files": {
+    "data/common.const": {
+      "exists": true,
+      "size": 10791,
+      "status": "OK",
+      "critical": true
+    },
+    "data/common.air": {
+      "exists": true,
+      "size": 0,
+      "status": "EMPTY",
+      "critical": true
+    },
+    "data/common.cmd": {
+      "exists": true,
+      "size": 377,
+      "status": "OK",
+      "critical": true
+    },
+    "data/common.snd": {
+      "exists": true,
+      "size": 72705,
+      "status": "OK",
+      "critical": true
+    },
+    "data/common1.cns": {
+      "exists": true,
+      "size": 43199,
+      "status": "OK",
+      "critical": false
+    },
+    "data/system.def": {
+      "exists": true,
+      "size": 28491,
+      "status": "OK",
+      "critical": true
+    },
+    "data/select.def": {
+      "exists": true,
+      "size": 10956,
+      "status": "OK",
+      "critical": true
+    },
+    "data/fight.def": {
+      "exists": true,
+      "size": 24405,
+      "status": "OK",
+      "critical": true
+    }
+  },
+  "characters": {
+    "total": 190,
+    "working": 149,
+    "broken": [
+      {
+        "name": "ABYSS'Mega's",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "AngusPurple-KOFM",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "Another Scarlet",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "Arctic Emperor",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "BLAKE V3-1.1",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "BW-Meiling",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "C.Kyo.Blood-KOFM",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "Carlin.Blood-CKOFM",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "Caser.Yashiro",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "ccijhun",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "D=Rockula",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "Error Zero",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "Flamme(S)",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "HIEL-KOFM",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "Hiyoi",
+        "issues": [
+          "Invalid stcommon reference",
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "Kartis",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "Kasim_LV2-CKOFM[v0.40]",
+        "issues": [
+          "No .def file",
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "Kevenoce",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "Keyser-Aunthmer",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "Kotone",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "Kyaga-KOFM",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "Lane.Blood-CKOFM",
+        "issues": [
+          "No .def file",
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "Littledevil-Phoenix",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "LUMIEL",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "New_Kyouki",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "Noa_MK",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "Olivia",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "Orochi.Yamazaki-CKOFM",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "R.S.P",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "Raika",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "Rinne-RH",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "Rocken",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "Samael",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "Sasin",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "Sonic Vanesa",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "Tenrou_Kunagi",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "ThunderMiss.Shermie",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "VladRose",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "Voltage Zeroko-Pre",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "Yamazaki.Blood",
+        "issues": [
+          "No sprite file"
+        ]
+      },
+      {
+        "name": "Yuri_SV",
+        "issues": [
+          "No sprite file"
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "stages": {
+    "total": 31,
+    "working": 25,
+    "broken": [
+      {
+        "name": "space_binary.def",
+        "issues": [
+          "Missing .sff file"
+        ]
+      },
+      {
+        "name": "space_deep.def",
+        "issues": [
+          "Missing .sff file"
+        ]
+      },
+      {
+        "name": "space_galaxy.def",
+        "issues": [
+          "Missing .sff file"
+        ]
+      },
+      {
+        "name": "space_nebula_purple.def",
+        "issues": [
+          "Missing .sff file"
+        ]
+      },
+      {
+        "name": "space_planet.def",
+        "issues": [
+          "Missing .sff file"
+        ]
+      },
+      {
+        "name": "space_void.def",
+        "issues": [
+          "Missing .sff file"
+        ]
+      }
+    ]
+  },
+  "critical_bugs": [
+    "Fichier manquant: data/common.air"
+  ],
+  "warnings": [],
+  "score": 68
+}

@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Auto Repair - Dashboard 24/7</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            color: #eaeaea;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: rgba(22, 33, 62, 0.8);
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid rgba(102, 126, 234, 0.2);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .stat-card h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .stat-value {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            color: #a0a0a0;
+            font-size: 0.9em;
+        }
+
+        .status-indicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+            animation: pulse 2s infinite;
+        }
+
+        .status-active {
+            background: #00ff88;
+            box-shadow: 0 0 10px #00ff88;
+        }
+
+        .status-inactive {
+            background: #ff4444;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .repair-log {
+            background: rgba(22, 33, 62, 0.8);
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid rgba(102, 126, 234, 0.2);
+            margin-bottom: 20px;
+        }
+
+        .repair-log h2 {
+            margin-bottom: 20px;
+            color: #667eea;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .log-entry {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: rgba(15, 12, 41, 0.6);
+            border-left: 4px solid #667eea;
+            border-radius: 6px;
+            transition: all 0.3s;
+        }
+
+        .log-entry:hover {
+            background: rgba(15, 12, 41, 0.9);
+            transform: translateX(5px);
+        }
+
+        .log-entry.success {
+            border-left-color: #00ff88;
+        }
+
+        .log-entry.error {
+            border-left-color: #ff4444;
+        }
+
+        .log-time {
+            color: #667eea;
+            font-size: 0.85em;
+            margin-bottom: 5px;
+        }
+
+        .log-type {
+            display: inline-block;
+            padding: 4px 12px;
+            background: rgba(102, 126, 234, 0.3);
+            border-radius: 12px;
+            font-size: 0.8em;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .log-description {
+            margin-top: 8px;
+            color: #d0d0d0;
+        }
+
+        .chart-container {
+            background: rgba(22, 33, 62, 0.8);
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid rgba(102, 126, 234, 0.2);
+            margin-bottom: 20px;
+        }
+
+        .chart-container h2 {
+            margin-bottom: 20px;
+            color: #667eea;
+        }
+
+        .bar-chart {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .bar-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .bar-label {
+            min-width: 120px;
+            font-size: 0.9em;
+        }
+
+        .bar-track {
+            flex: 1;
+            height: 30px;
+            background: rgba(15, 12, 41, 0.6);
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            transition: width 1s ease-out;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 10px;
+            color: white;
+            font-weight: bold;
+            font-size: 0.85em;
+        }
+
+        .actions {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+
+        .btn-secondary {
+            background: rgba(102, 126, 234, 0.2);
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(102, 126, 234, 0.3);
+        }
+
+        .refresh-indicator {
+            text-align: center;
+            color: #a0a0a0;
+            font-size: 0.9em;
+            margin: 20px 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #a0a0a0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 AI Auto Repair Dashboard</h1>
+            <p>Système de Réparation Automatique 24/7</p>
+        </header>
+
+        <div class="actions">
+            <button class="btn btn-primary" onclick="refreshData()">🔄 Rafraîchir</button>
+            <button class="btn btn-secondary" onclick="clearLog()">🗑️ Vider le Log</button>
+            <a href="GUIDE_AI_AUTO_REPAIR_SYSTEM.md" class="btn btn-secondary">📖 Guide</a>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Statut Système</h3>
+                <div class="stat-value">
+                    <span class="status-indicator status-active"></span>
+                    <span id="system-status">ACTIF</span>
+                </div>
+                <div class="stat-label">Surveillance permanente</div>
+            </div>
+
+            <div class="stat-card">
+                <h3>Cycles Effectués</h3>
+                <div class="stat-value" id="total-cycles">-</div>
+                <div class="stat-label">Scans complets</div>
+            </div>
+
+            <div class="stat-card">
+                <h3>Erreurs Corrigées</h3>
+                <div class="stat-value" id="total-fixed">-</div>
+                <div class="stat-label">Depuis le démarrage</div>
+            </div>
+
+            <div class="stat-card">
+                <h3>Dernière Mise à Jour</h3>
+                <div class="stat-value" style="font-size: 1.5em;" id="last-update">-</div>
+                <div class="stat-label">Horodatage</div>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <h2>📊 Répartition des Réparations</h2>
+            <div class="bar-chart" id="repair-chart">
+                <div class="bar-item">
+                    <div class="bar-label">Portraits</div>
+                    <div class="bar-track">
+                        <div class="bar-fill" style="width: 0%;" id="bar-portraits">0</div>
+                    </div>
+                </div>
+                <div class="bar-item">
+                    <div class="bar-label">Répertoires</div>
+                    <div class="bar-track">
+                        <div class="bar-fill" style="width: 0%;" id="bar-directories">0</div>
+                    </div>
+                </div>
+                <div class="bar-item">
+                    <div class="bar-label">Réseau</div>
+                    <div class="bar-track">
+                        <div class="bar-fill" style="width: 0%;" id="bar-network">0</div>
+                    </div>
+                </div>
+                <div class="bar-item">
+                    <div class="bar-label">Corrompus</div>
+                    <div class="bar-track">
+                        <div class="bar-fill" style="width: 0%;" id="bar-corrupted">0</div>
+                    </div>
+                </div>
+                <div class="bar-item">
+                    <div class="bar-label">Permissions</div>
+                    <div class="bar-track">
+                        <div class="bar-fill" style="width: 0%;" id="bar-permissions">0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="repair-log">
+            <h2>📝 Journal des Réparations (100 dernières)</h2>
+            <div id="log-container">
+                <div class="log-entry">
+                    <div class="log-time">Chargement des données...</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="refresh-indicator">
+            <p>🔄 Rafraîchissement automatique toutes les 30 secondes</p>
+            <p id="next-refresh">Prochain: dans 30s</p>
+        </div>
+
+        <footer>
+            <p>🤖 AI Auto Repair System - KOF Ultimate Online Esport Suite</p>
+            <p>© 2025 - Système de réparation automatique intelligent</p>
+        </footer>
+    </div>
+
+    <script>
+        let refreshInterval;
+        let countdownInterval;
+        let nextRefresh = 30;
+
+        // Charger les données du log
+        async function loadData() {
+            try {
+                const response = await fetch('ai_repair_log.json');
+                if (!response.ok) {
+                    console.warn('Log file not found, using demo data');
+                    showDemoData();
+                    return;
+                }
+
+                const data = await response.json();
+                updateStats(data);
+                updateChart(data);
+                updateLog(data);
+            } catch (error) {
+                console.error('Error loading data:', error);
+                showDemoData();
+            }
+        }
+
+        // Afficher données de démo
+        function showDemoData() {
+            document.getElementById('total-cycles').textContent = '0';
+            document.getElementById('total-fixed').textContent = '0';
+            document.getElementById('last-update').textContent = 'N/A';
+            document.getElementById('system-status').textContent = 'EN ATTENTE';
+
+            const logContainer = document.getElementById('log-container');
+            logContainer.innerHTML = `
+                <div class="log-entry">
+                    <div class="log-time">Aucune donnée disponible</div>
+                    <div class="log-description">
+                        Lancez le système avec <code>LAUNCH_AI_AUTO_REPAIR_24_7.bat</code> ou <code>START_AI_REPAIR_SILENT.bat</code>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Mettre à jour les stats
+        function updateStats(data) {
+            const repairs = data.repairs || [];
+            const totalFixed = data.total_fixed || 0;
+            const lastUpdate = data.last_update || 'N/A';
+
+            // Compter les cycles uniques
+            const cycles = new Set(repairs.map(r => r.cycle)).size;
+
+            document.getElementById('total-cycles').textContent = cycles;
+            document.getElementById('total-fixed').textContent = totalFixed;
+
+            if (lastUpdate !== 'N/A') {
+                const date = new Date(lastUpdate);
+                document.getElementById('last-update').textContent = date.toLocaleTimeString('fr-FR');
+            } else {
+                document.getElementById('last-update').textContent = 'N/A';
+            }
+
+            // Statut
+            document.getElementById('system-status').textContent = totalFixed > 0 ? 'ACTIF' : 'EN ATTENTE';
+        }
+
+        // Mettre à jour le graphique
+        function updateChart(data) {
+            const repairs = data.repairs || [];
+
+            // Compter par type
+            const counts = {
+                PORTRAIT: 0,
+                DIRECTORY: 0,
+                NETWORK: 0,
+                CORRUPTED: 0,
+                PERMISSIONS: 0
+            };
+
+            repairs.forEach(repair => {
+                if (repair.status === 'SUCCESS' && counts.hasOwnProperty(repair.error_type)) {
+                    counts[repair.error_type]++;
+                }
+            });
+
+            const total = Math.max(Object.values(counts).reduce((a, b) => a + b, 0), 1);
+
+            // Mettre à jour les barres
+            updateBar('bar-portraits', counts.PORTRAIT, total);
+            updateBar('bar-directories', counts.DIRECTORY, total);
+            updateBar('bar-network', counts.NETWORK, total);
+            updateBar('bar-corrupted', counts.CORRUPTED, total);
+            updateBar('bar-permissions', counts.PERMISSIONS, total);
+        }
+
+        function updateBar(id, value, total) {
+            const element = document.getElementById(id);
+            const percentage = (value / total) * 100;
+            element.style.width = percentage + '%';
+            element.textContent = value;
+        }
+
+        // Mettre à jour le log
+        function updateLog(data) {
+            const repairs = data.repairs || [];
+            const logContainer = document.getElementById('log-container');
+
+            if (repairs.length === 0) {
+                logContainer.innerHTML = `
+                    <div class="log-entry">
+                        <div class="log-time">Aucune réparation enregistrée</div>
+                    </div>
+                `;
+                return;
+            }
+
+            // Afficher les 100 dernières, inversées (plus récentes en premier)
+            const recentRepairs = repairs.slice(-100).reverse();
+
+            logContainer.innerHTML = recentRepairs.map(repair => {
+                const date = new Date(repair.timestamp);
+                const time = date.toLocaleTimeString('fr-FR');
+                const statusClass = repair.status === 'SUCCESS' ? 'success' : 'error';
+
+                return `
+                    <div class="log-entry ${statusClass}">
+                        <div class="log-time">${time} - Cycle #${repair.cycle}</div>
+                        <div>
+                            <span class="log-type">${repair.error_type}</span>
+                            <span class="log-description">${repair.description}</span>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Rafraîchir les données
+        function refreshData() {
+            loadData();
+            resetCountdown();
+        }
+
+        // Vider le log
+        function clearLog() {
+            if (confirm('Voulez-vous vraiment vider le journal des réparations?')) {
+                // En réalité, on ne peut pas supprimer le fichier depuis le navigateur
+                // Mais on peut afficher un message
+                alert('Pour vider le log, supprimez le fichier "ai_repair_log.json" manuellement.');
+            }
+        }
+
+        // Compte à rebours
+        function startCountdown() {
+            countdownInterval = setInterval(() => {
+                nextRefresh--;
+                document.getElementById('next-refresh').textContent = `Prochain: dans ${nextRefresh}s`;
+
+                if (nextRefresh <= 0) {
+                    resetCountdown();
+                }
+            }, 1000);
+        }
+
+        function resetCountdown() {
+            nextRefresh = 30;
+            clearInterval(countdownInterval);
+            startCountdown();
+        }
+
+        // Initialisation
+        document.addEventListener('DOMContentLoaded', () => {
+            loadData();
+
+            // Rafraîchissement automatique toutes les 30 secondes
+            refreshInterval = setInterval(loadData, 30000);
+
+            // Compte à rebours
+            startCountdown();
+        });
+    </script>
+</body>
+</html>

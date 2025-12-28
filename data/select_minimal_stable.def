@@ -1,0 +1,24 @@
+; KOF ULTIMATE ONLINE - ROSTER MINIMAL STABLE
+; Seulement 10 personnages testés et stables
+; Pour jeu en ligne sans bugs
+
+[Characters]
+; === PERSONNAGES STABLES CONFIRMÉS ===
+Kei, stages/Abyss-Rugal-Palace.def
+Ash, stages/Abyss-Rugal-Palace.def
+Athena, stages/Abyss-Rugal-Palace.def
+billy, stages/Abyss-Rugal-Palace.def
+Clone Zero, stages/Abyss-Rugal-Palace.def
+Cronus, stages/Abyss-Rugal-Palace.def
+GARS, stages/Abyss-Rugal-Palace.def
+heraclius, stages/Abyss-Rugal-Palace.def
+Nero, stages/Abyss-Rugal-Palace.def
+Rocken, stages/Abyss-Rugal-Palace.def
+
+[ExtraStages]
+stages/Abyss-Rugal-Palace.def
+stages/Darkness.def
+stages/RED.def
+
+[Options]
+arcade.maxmatches = 6,1,1,0,0,0,0,0,0,0

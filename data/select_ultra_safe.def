@@ -1,0 +1,186 @@
+; ╔══════════════════════════════════════════════════════════════════════════╗
+; ║           KOF ULTIMATE ONLINE - ROSTER CERTIFIÉ QA                       ║
+; ╠══════════════════════════════════════════════════════════════════════════╣
+; ║  Généré le: 2025-12-27 05:00:17                                    ║
+; ║  Personnages certifiés: 156                                             ║
+; ║  Stages certifiés: 25                                                   ║
+; ╚══════════════════════════════════════════════════════════════════════════╝
+
+[Characters]
+
+; === TIER S (Score 90-100) - Qualité Exceptionnelle ===
+; RETIRÉ (BUG): A-Angel, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Aika, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Aika_MK, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Akari, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Akiha Yagami, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): akuma, stages/Abyss-Rugal-Palace.def
+Alfred_WLS, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Alou_AKOF, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Amoumi-KOFM, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Andy-ROTD, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Anette-KOFM, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): AngusPurple-KOFM, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Ash, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Athena Asamiya MI KOFM, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Athena-Heidern, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Balto-KOFM, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Beast Yeorin QS, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Benimaru-Nikaido-STAR, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): billy, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Boss Gustab M, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Business_Vanessa-KOFM, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Carlin.Blood-CKOFM, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): ccijhun, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): cciking, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): ccishermie, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Chalice, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Chaos-CKOFM, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Choi_XI, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): clone benimaru, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Clone Blood Rugal, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Clone Zero, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Cronus, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Cruelty Sula UM, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): D.Yashiro.Rhythm(Dusk)1.x, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): D=Rockula, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Daisu, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): dr-yang-kofa, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Duester, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Eputh Blood-KOFM, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Eve, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Final Zeroko B, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): final-goenitz, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Flamme(S), stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): GARS, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Geese-KOFM, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): heraclius, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): HIEL-KOFM, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Hiel_SP, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Hunter_U6746, stages/Abyss-Rugal-Palace.def
+Infernal_Wind, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): K9999_KOF, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Kasim_LV2-CKOFM[v0.40], stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Kasumi-KOFM, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Kei, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Kyaga-KOFM, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Magnus, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Mai Phoenix XI, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Maryl, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Meld_Boss, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): meteoricmarisa, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): N-Zeroko, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Nero, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Nox Bernstein, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Orochi Leona-KOFM, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Orochi-EV1.55, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): orochi-iori, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Orochi.Yamazaki-CKOFM, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Raisen.blood-KOFM, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Rayno, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Reas-KOFM, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): robo-kyo-kofa, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Rocken, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): S_Infezione, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): ThunderMiss.Shermie, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Titan_KOF, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Unfailed Gustab, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): WhirlWind-Goenitz, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Wild.O.Yashiro, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Wind_MMXIX, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Yamazaki.Blood, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Yukida, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Yuri_SV, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Zerozuchi_Boss, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): 03-A-Kyo LV2, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): _ArchiMurderer, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Akiha Yagami1, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): ALBA MEIRA KOF XI -MI2, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): asura-kofa, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Athena, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Athena_XI, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): BlackPrincess_Tohka, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): boss-orochi, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): C.Kyo.Blood-KOFM, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Delirus, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): DG.Rugal-KOFM, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): god_orochi, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): God_Wind, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Goktore-CKOFM, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Kotone, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Kychiel, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Matam, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Orochi Kyo WF, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): orochi-kyoko, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Psyche_57-1.1, stages/Abyss-Rugal-Palace.def
+R.S.P, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Sonic Vanesa, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Tenrou_Kunagi, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): True Iori X_KOF, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Aileen, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Lord-Goenitz, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Rinne-RH, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Rose, stages/Abyss-Rugal-Palace.def
+
+; === TIER A (Score 80-89) - Très Bonne Qualité ===
+; RETIRÉ (BUG): Alter Kyo, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Aner Rolange KOFM, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Another Scarlet, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): BLAKE V3-1.1, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Chobi-Hige, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): D_DisciplineGirl, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Daiki_Final(Prototype), stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): DF-Sula, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Dual-flame_Magaki, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Element Ash, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Element-Adel, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Error Zero, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Fang, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Final Goeniko, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Final Sachiel WF, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Final-IGNIZ, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Final-OriginalZero, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): GOD_ADEL(2012-01-28 Trial), stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Hiyoi, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Kaori Yumiko, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Kartis, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): NeoDio KOFM, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): NeoGeegus KOFM, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): New_Kyouki, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Original Psyqhical, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): P-LEONA_ELEMENT, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Psyche_42-1.1, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Viper, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Voltage Zeroko-Pre, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Xion-V, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Yuno-KOFM, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): ABYSS'Mega's, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): bob, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Drakyola, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Essence of Darkness, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Felix_THird, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Raika, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Rozwel S.K (LEGIT), stages/Abyss-Rugal-Palace.def
+
+; === TIER B (Score 70-79) - Bonne Qualité ===
+; RETIRÉ (BUG): Garnet 1.1, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Reyna, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Akira_Kazakami, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Graves, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): Unleashesd God Kula, stages/Abyss-Rugal-Palace.def
+; RETIRÉ (BUG): VladRose, stages/Abyss-Rugal-Palace.def
+
+[ExtraStages]
+stages/Abyss-Rugal-Palace.def
+stages/Anime Blu.def
+stages/Anubis.def
+stages/Basque Palace.def
+stages/BLACK SON DROTIME.def
+stages/Black wall.def
+stages/clones lab destroyed.def
+stages/DARK SAID RUGAL S .def
+stages/Darkness.def
+stages/DROBLOOD R 2.0.def
+
+[Options]
+arcade.maxmatches = 6,1,1,0,0,0,0,0,0,0

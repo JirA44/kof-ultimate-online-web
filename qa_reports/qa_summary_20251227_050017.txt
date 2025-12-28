@@ -1,0 +1,51 @@
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    RAPPORT QA - KOF ULTIMATE ONLINE                          ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  Date: 2025-12-27T05:00:17.911521                                          ║
+║  Status: ✅ PRÊT POUR ONLINE!                                               ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  PERSONNAGES                                                                 ║
+║    Total testé: 189                                                        ║
+║    Certifiés: 156                                                          ║
+║    Taux de certification: 82.5%                                                    ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  STAGES                                                                      ║
+║    Total testé: 31                                                         ║
+║    Certifiés: 25                                                           ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  SCORE GLOBAL: 83/100                                                        ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  RECOMMANDATIONS:                                                            ║
+║    💡 25 personnages facilement corrigeables                               ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+PERSONNAGES NON CERTIFIÉS À CORRIGER:
+  - Akiha Orochi: ❌ Sprite trop gros: 98.4MB (max 80MB)
+  - Akiha Yagami DK: ❌ Sprite trop gros: 104.3MB (max 80MB)
+  - Arctic Emperor: ❌ Sprite trop gros: 125.2MB (max 80MB)
+  - baiyi: ❌ Sprite trop gros: 131.5MB (max 80MB)
+  - BW-Meiling: ❌ Sprite trop gros: 101.0MB (max 80MB)
+  - Caser.Yashiro: ❌ Sprite trop gros: 98.6MB (max 80MB)
+  - ccihinako: ❌ Fichier CMD manquant, ❌ Fichier CNS manquant, ❌ Fichier SFF/Sprite manquant, ❌ Fichier AIR/Animation manquant
+  - Dragondomainlords: ❌ Sprite trop gros: 133.1MB (max 80MB)
+  - Element Scarlet: ❌ Sprite trop gros: 83.7MB (max 80MB)
+  - Final Adel: ❌ Sprite trop gros: 104.7MB (max 80MB)
+  - Kaneda-KOFM: ❌ Fichier CMD manquant, ❌ Fichier CNS manquant, ❌ Fichier SFF/Sprite manquant, ❌ Fichier AIR/Animation manquant
+  - Kevenoce: ❌ Sprite trop gros: 81.2MB (max 80MB)
+  - Keyser-Aunthmer: ❌ Sprite trop gros: 127.5MB (max 80MB)
+  - kfm: ❌ Fichier CMD manquant, ❌ Fichier CNS manquant, ❌ Fichier SFF/Sprite manquant, ❌ Fichier AIR/Animation manquant
+  - Lane.Blood-CKOFM: ❌ Pas de fichier .def
+  - Littledevil-Phoenix: ❌ Sprite trop gros: 123.4MB (max 80MB)
+  - LUMIEL: ❌ Sprite trop gros: 101.0MB (max 80MB)
+  - Maltet: ❌ Fichier CMD manquant, ❌ Fichier CNS manquant, ❌ Fichier SFF/Sprite manquant, ❌ Fichier AIR/Animation manquant
+  - mizore-kofmLV2: ❌ Fichier CMD manquant, ❌ Fichier CNS manquant, ❌ Fichier SFF/Sprite manquant, ❌ Fichier AIR/Animation manquant
+  - Nao-MX 1.0: ❌ Fichier CMD manquant, ❌ Fichier CNS manquant, ❌ Fichier SFF/Sprite manquant, ❌ Fichier AIR/Animation manquant
+  - Noa_MK: ❌ Sprite trop gros: 323.0MB (max 80MB)
+  - O.Zero-Prominence: ❌ Sprite trop gros: 125.3MB (max 80MB)
+  - Olivia: ❌ Sprite trop gros: 97.6MB (max 80MB)
+  - Rugal7th: ❌ Sprite trop gros: 80.1MB (max 80MB)
+  - Ryuji: ❌ Fichier CMD manquant, ❌ Fichier CNS manquant, ❌ Fichier SFF/Sprite manquant, ❌ Fichier AIR/Animation manquant
+  - Samael: ❌ Sprite trop gros: 87.0MB (max 80MB)
+  - Sasin: ❌ Sprite trop gros: 117.2MB (max 80MB)
+  - Shadow-Dancer

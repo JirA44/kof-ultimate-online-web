@@ -1,0 +1,344 @@
+{
+  "test_date": "2025-12-23T06:36:48.314241",
+  "version": "KOF Ultimate Online v2.0",
+  "tests": {
+    "Fichiers Système": [
+      {
+        "name": "Configuration système (data/system.def)",
+        "passed": true,
+        "warning": false,
+        "details": "28,491 bytes"
+      },
+      {
+        "name": "Sélection personnages (data/select.def)",
+        "passed": true,
+        "warning": false,
+        "details": "11,568 bytes"
+      },
+      {
+        "name": "Configuration combat (data/fight.def)",
+        "passed": true,
+        "warning": false,
+        "details": "24,405 bytes"
+      },
+      {
+        "name": "Constantes communes (data/common.const)",
+        "passed": true,
+        "warning": false,
+        "details": "10,791 bytes"
+      },
+      {
+        "name": "Animations communes (data/common.air)",
+        "passed": true,
+        "warning": false,
+        "details": "163 bytes"
+      },
+      {
+        "name": "Commandes communes (data/common.cmd)",
+        "passed": true,
+        "warning": false,
+        "details": "377 bytes"
+      },
+      {
+        "name": "Sons communs (data/common.snd)",
+        "passed": true,
+        "warning": false,
+        "details": "72,705 bytes"
+      },
+      {
+        "name": "États communs (data/common1.cns)",
+        "passed": true,
+        "warning": false,
+        "details": "43,199 bytes"
+      },
+      {
+        "name": "Fonctions ZSS (data/functions.zss)",
+        "passed": true,
+        "warning": false,
+        "details": "7,835 bytes"
+      },
+      {
+        "name": "Actions ZSS (data/action.zss)",
+        "passed": true,
+        "warning": false,
+        "details": "2,821 bytes"
+      },
+      {
+        "name": "Système dizzy (data/dizzy.zss)",
+        "passed": true,
+        "warning": false,
+        "details": "14,945 bytes"
+      },
+      {
+        "name": "Guard break (data/guardbreak.zss)",
+        "passed": true,
+        "warning": false,
+        "details": "6,190 bytes"
+      },
+      {
+        "name": "Système score (data/score.zss)",
+        "passed": true,
+        "warning": false,
+        "details": "4,412 bytes"
+      },
+      {
+        "name": "Mode tag (data/tag.zss)",
+        "passed": true,
+        "warning": false,
+        "details": "11,559 bytes"
+      },
+      {
+        "name": "Mode training (data/training.zss)",
+        "passed": true,
+        "warning": false,
+        "details": "7,229 bytes"
+      },
+      {
+        "name": "Exécutable jeu (Ikemen_GO.exe)",
+        "passed": true,
+        "warning": false,
+        "details": "24,848,403 bytes"
+      }
+    ],
+    "Personnages": [
+      {
+        "name": "Total personnages",
+        "passed": true,
+        "warning": false,
+        "details": "190 détectés"
+      },
+      {
+        "name": "Personnages fonctionnels",
+        "passed": false,
+        "warning": false,
+        "details": "118/190 (62.1%)"
+      },
+      {
+        "name": "Perso: ABYSS'Mega's",
+        "passed": false,
+        "warning": false,
+        "details": "Pas de sprites (.sff), Pas d'animations (.air), Pas de commandes (.cmd)"
+      },
+      {
+        "name": "Perso: Aileen",
+        "passed": false,
+        "warning": false,
+        "details": "Section [Info] manquante, Section [Files] manquante, Section [Info] manquante, Section [Files] manquante"
+      },
+      {
+        "name": "Perso: Akiha Orochi",
+        "passed": false,
+        "warning": false,
+        "details": "Section [Info] manquante, Section [Files] manquante, Section [Info] manquante, Section [Files] manquante"
+      },
+      {
+        "name": "Perso: Akiha Yagami1",
+        "passed": false,
+        "warning": false,
+        "details": "Section [Info] manquante, Section [Files] manquante, Section [Info] manquante, Section [Files] manquante"
+      },
+      {
+        "name": "Perso: Akira_Kazakami",
+        "passed": false,
+        "warning": false,
+        "details": "Pas de commandes (.cmd)"
+      },
+      {
+        "name": "Perso: ALBA MEIRA KOF XI -MI2",
+        "passed": false,
+        "warning": false,
+        "details": "Section [Info] manquante, Section [Files] manquante"
+      },
+      {
+        "name": "Perso: Alfred_WLS",
+        "passed": false,
+        "warning": false,
+        "details": "Pas d'états (.cns)"
+      },
+      {
+        "name": "Perso: Anette-KOFM",
+        "passed": false,
+        "warning": false,
+        "details": "Section [Info] manquante, Section [Files] manquante, Section [Info] manquante, Section [Files] manquante"
+      },
+      {
+        "name": "Perso: AngusPurple-KOFM",
+        "passed": false,
+        "warning": false,
+        "details": "Pas de sprites (.sff), Pas d'animations (.air), Pas d'états (.cns), Pas de commandes (.cmd)"
+      },
+      {
+        "name": "Perso: Another Scarlet",
+        "passed": false,
+        "warning": false,
+        "details": "Pas de sprites (.sff), Pas d'animations (.air), Pas d'états (.cns)"
+      },
+      {
+        "name": "Perso: Arctic Emperor",
+        "passed": false,
+        "warning": false,
+        "details": "Section [Info] manquante, Section [Files] manquante, Pas de sprites (.sff), Pas de commandes (.cmd)"
+      },
+      {
+        "name": "Perso: Ash",
+        "passed": false,
+        "warning": false,
+        "details": "Section [Info] manquante, Section [Files] manquante"
+      },
+      {
+        "name": "Perso: Athena Asamiya MI KOFM",
+        "passed": false,
+        "warning": false,
+        "details": "Section [Info] manquante, Section [Files] manquante"
+      },
+      {
+        "name": "Perso: Beast Yeorin QS",
+        "passed": false,
+        "warning": false,
+        "details": "Pas de commandes (.cmd)"
+      },
+      {
+        "name": "Perso: billy",
+        "passed": false,
+        "warning": false,
+        "details": "Section [Info] manquante, Section [Files] manquante"
+      }
+    ],
+    "Stages": [
+      {
+        "name": "Total stages",
+        "passed": true,
+        "warning": false,
+        "details": "31 détectés"
+      },
+      {
+        "name": "Stages fonctionnels",
+        "passed": true,
+        "warning": false,
+        "details": "25/31"
+      }
+    ],
+    "Configuration": [
+      {
+        "name": "Personnages actifs",
+        "passed": true,
+        "warning": false,
+        "details": "112 personnages"
+      },
+      {
+        "name": "Stages actifs",
+        "passed": true,
+        "warning": false,
+        "details": "23 stages"
+      }
+    ],
+    "Audio": [
+      {
+        "name": "Fichiers audio",
+        "passed": true,
+        "warning": false,
+        "details": "5 fichiers"
+      },
+      {
+        "name": "common.snd",
+        "passed": true,
+        "warning": false,
+        "details": "72,705 bytes"
+      }
+    ],
+    "Polices": [
+      {
+        "name": "Fichiers police",
+        "passed": true,
+        "warning": false,
+        "details": "11 polices"
+      }
+    ],
+    "Sauvegarde": [
+      {
+        "name": "config.json",
+        "passed": true,
+        "warning": false,
+        "details": "JSON valide"
+      },
+      {
+        "name": "Config: Difficulty",
+        "passed": true,
+        "warning": false,
+        "details": ""
+      },
+      {
+        "name": "Config: VolumeMaster",
+        "passed": true,
+        "warning": false,
+        "details": ""
+      },
+      {
+        "name": "Config: KeyConfig",
+        "passed": true,
+        "warning": false,
+        "details": ""
+      },
+      {
+        "name": "Config: ListenPort",
+        "passed": true,
+        "warning": false,
+        "details": ""
+      },
+      {
+        "name": "Système replay",
+        "passed": true,
+        "warning": false,
+        "details": "0 replays"
+      }
+    ],
+    "Netplay": [
+      {
+        "name": "Port configuré",
+        "passed": true,
+        "warning": false,
+        "details": "Port 7500"
+      },
+      {
+        "name": "Menu Netplay",
+        "passed": true,
+        "warning": false,
+        "details": ""
+      }
+    ],
+    "Intégration": [
+      {
+        "name": "Cohérence select.def/chars",
+        "passed": true,
+        "warning": false,
+        "details": ""
+      }
+    ],
+    "Performance": [
+      {
+        "name": "Taille assets",
+        "passed": false,
+        "warning": false,
+        "details": "9991.5 MB"
+      },
+      {
+        "name": "RAM estimée",
+        "passed": false,
+        "warning": false,
+        "details": "2997 MB"
+      }
+    ]
+  },
+  "summary": {
+    "total_tests": 51,
+    "passed": 33,
+    "failed": 18,
+    "warnings": 0,
+    "score": 64,
+    "status": "CORRECTIONS MAJEURES REQUISES"
+  },
+  "critical_issues": [
+    "Seulement 62.1% des personnages sont fonctionnels"
+  ],
+  "recommendations": []
+}

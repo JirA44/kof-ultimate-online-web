@@ -9,6 +9,7 @@ snd = Fight.snd
 font1 = data/fonts/Font black .fnt 
 font2 = data/fonts/Time.fnt
 font3 = data/fonts/Combo.fnt
+font8 = font/f-6x9.def
 fightfx.sff = fightfx.sff
 fightfx.air = fightfx.air
 common.snd = common.snd

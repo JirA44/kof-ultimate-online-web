@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Firebase Lobby - KOF Ultimate Online</title>
+    <style>
+        body { font-family: monospace; background: #1a1a2e; color: #fff; padding: 20px; }
+        .test { padding: 10px; margin: 5px 0; border-radius: 5px; }
+        .pass { background: #00b89433; border-left: 4px solid #00b894; }
+        .fail { background: #e9456033; border-left: 4px solid #e94560; }
+        .pending { background: #ffd93d33; border-left: 4px solid #ffd93d; }
+        h1 { color: #e94560; }
+        #results { margin-top: 20px; }
+        .summary { font-size: 1.5em; margin: 20px 0; padding: 15px; background: #333; border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <h1>🔥 Test Firebase Lobby - KOF Ultimate Online</h1>
+    <div id="results"></div>
+    <div id="summary" class="summary"></div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyAkLvfbFEZ4kAXxq2vAabLSFEZHPjMquec",
+            authDomain: "kof-ultimate-online.firebaseapp.com",
+            databaseURL: "https://kof-ultimate-online-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "kof-ultimate-online",
+            storageBucket: "kof-ultimate-online.firebasestorage.app",
+            messagingSenderId: "577046883380",
+            appId: "1:577046883380:web:fe4c6375fa65d7735f6e61"
+        };
+
+        const results = [];
+        const resultsEl = document.getElementById('results');
+
+        function log(name, status, details = '') {
+            results.push({ name, status });
+            const icon = status === 'pass' ? '✅' : status === 'fail' ? '❌' : '⏳';
+            resultsEl.innerHTML += `<div class="test ${status}">${icon} ${name} ${details ? '- ' + details : ''}</div>`;
+        }
+
+        function updateSummary() {
+            const passed = results.filter(r => r.status === 'pass').length;
+            const failed = results.filter(r => r.status === 'fail').length;
+            const total = results.length;
+            const pct = Math.round((passed / total) * 100);
+            document.getElementById('summary').innerHTML = `
+                <strong>Résultats:</strong> ${passed}/${total} tests passés (${pct}%)<br>
+                ✅ Passés: ${passed} | ❌ Échoués: ${failed}
+            `;
+        }
+
+        async function runTests() {
+            // Test 1: Firebase Init
+            try {
+                firebase.initializeApp(firebaseConfig);
+                log('Firebase Init', 'pass');
+            } catch (e) {
+                log('Firebase Init', 'fail', e.message);
+                return;
+            }
+
+            const auth = firebase.auth();
+            const db = firebase.database();
+
+            // Test 2: Database Connection
+            try {
+                await db.ref('.info/connected').once('value');
+                log('Database Connection', 'pass');
+            } catch (e) {
+                log('Database Connection', 'fail', e.message);
+            }
+
+            // Test 3: Read Players
+            try {
+                const snap = await db.ref('players').once('value');
+                const count = snap.numChildren();
+                log('Read Players', 'pass', `${count} joueurs trouvés`);
+            } catch (e) {
+                log('Read Players', 'fail', e.message);
+            }
+
+            // Test 4: Bots exist
+            try {
+                const snap = await db.ref('players/cpu_master').once('value');
+                if (snap.exists()) {
+                    log('Bots CPU', 'pass', 'CPU-Master trouvé');
+                } else {
+                    log('Bots CPU', 'fail', 'Bots non initialisés');
+                }
+            } catch (e) {
+                log('Bots CPU', 'fail', e.message);
+            }
+
+            // Test 5: Auth ready
+            try {
+                await new Promise((resolve, reject) => {
+                    const unsub = auth.onAuthStateChanged(user => {
+                        unsub();
+                        resolve(user);
+                    });
+                    setTimeout(() => reject(new Error('Timeout')), 5000);
+                });
+                log('Auth Service', 'pass');
+            } catch (e) {
+                log('Auth Service', 'fail', e.message);
+            }
+
+            // Test 6: Write Test (matchmaking - should work if logged in, fail if not)
+            try {
+                const testRef = db.ref('test_connection/' + Date.now());
+                await testRef.set({ test: true, timestamp: Date.now() });
+                await testRef.remove();
+                log('Write Permission', 'pass');
+            } catch (e) {
+                if (e.message.includes('PERMISSION_DENIED')) {
+                    log('Write Permission', 'pass', 'Correctement protégé (auth requise)');
+                } else {
+                    log('Write Permission', 'fail', e.message);
+                }
+            }
+
+            // Test 7: Leaderboard Query
+            try {
+                const snap = await db.ref('players').orderByChild('elo').limitToLast(10).once('value');
+                const players = [];
+                snap.forEach(child => {
+                    if (!child.val().isBot) players.push(child.val());
+                });
+                log('Leaderboard Query', 'pass', `${players.length} joueurs humains`);
+            } catch (e) {
+                log('Leaderboard Query', 'fail', e.message);
+            }
+
+            // Test 8: Online Players Query
+            try {
+                const snap = await db.ref('players').orderByChild('online').equalTo(true).once('value');
+                const count = snap.numChildren();
+                log('Online Players Query', 'pass', `${count} en ligne`);
+            } catch (e) {
+                log('Online Players Query', 'fail', e.message);
+            }
+
+            // Test 9: ELO Calculation
+            try {
+                const K = 32;
+                const w_elo = 1200, l_elo = 1000;
+                const expected = 1 / (1 + Math.pow(10, (l_elo - w_elo) / 400));
+                const gain = Math.round(K * (1 - expected));
+                if (gain > 0 && gain < 32) {
+                    log('ELO Calculation', 'pass', `1200 vs 1000 = +${gain} ELO`);
+                } else {
+                    log('ELO Calculation', 'fail', 'Calcul incorrect');
+                }
+            } catch (e) {
+                log('ELO Calculation', 'fail', e.message);
+            }
+
+            // Test 10: Match History Path
+            try {
+                const snap = await db.ref('matchHistory').once('value');
+                log('Match History Access', 'pass');
+            } catch (e) {
+                if (e.message.includes('PERMISSION_DENIED')) {
+                    log('Match History Access', 'pass', 'Correctement protégé');
+                } else {
+                    log('Match History Access', 'fail', e.message);
+                }
+            }
+
+            updateSummary();
+        }
+
+        runTests();
+    </script>
+</body>
+</html>

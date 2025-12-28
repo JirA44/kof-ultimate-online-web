@@ -1,0 +1,155 @@
+{
+  "RUGAL_BOSS": {
+    "name": "RUGAL_BOSS",
+    "elo": 2459,
+    "wins": 90,
+    "losses": 12,
+    "matches": 101,
+    "streak": 9,
+    "best": 15
+  },
+  "Kyo_Master": {
+    "name": "Kyo_Master",
+    "elo": 2257,
+    "wins": 156,
+    "losses": 35,
+    "matches": 190,
+    "streak": 0,
+    "best": 12
+  },
+  "Iori_Flame": {
+    "name": "Iori_Flame",
+    "elo": 2150,
+    "wins": 134,
+    "losses": 45,
+    "matches": 179,
+    "streak": 3,
+    "best": 11
+  },
+  "Terry_Wolf": {
+    "name": "Terry_Wolf",
+    "elo": 2050,
+    "wins": 98,
+    "losses": 42,
+    "matches": 140,
+    "streak": 4,
+    "best": 9
+  },
+  "Mai_Ninja": {
+    "name": "Mai_Ninja",
+    "elo": 1907,
+    "wins": 87,
+    "losses": 52,
+    "matches": 138,
+    "streak": 0,
+    "best": 8
+  },
+  "K_Prime": {
+    "name": "K_Prime",
+    "elo": 1882,
+    "wins": 78,
+    "losses": 48,
+    "matches": 124,
+    "streak": 3,
+    "best": 7
+  },
+  "Athena_PSI": {
+    "name": "Athena_PSI",
+    "elo": 1761,
+    "wins": 65,
+    "losses": 44,
+    "matches": 108,
+    "streak": 0,
+    "best": 6
+  },
+  "Ryo_Dragon": {
+    "name": "Ryo_Dragon",
+    "elo": 1640,
+    "wins": 54,
+    "losses": 39,
+    "matches": 92,
+    "streak": 0,
+    "best": 5
+  },
+  "Leona_Blade": {
+    "name": "Leona_Blade",
+    "elo": 1542,
+    "wins": 44,
+    "losses": 35,
+    "matches": 78,
+    "streak": 2,
+    "best": 4
+  },
+  "Clark_Throw": {
+    "name": "Clark_Throw",
+    "elo": 1420,
+    "wins": 38,
+    "losses": 32,
+    "matches": 70,
+    "streak": 0,
+    "best": 4
+  },
+  "Ralf_Power": {
+    "name": "Ralf_Power",
+    "elo": 1325,
+    "wins": 33,
+    "losses": 33,
+    "matches": 62,
+    "streak": 0,
+    "best": 3
+  },
+  "Joe_Kick": {
+    "name": "Joe_Kick",
+    "elo": 1319,
+    "wins": 31,
+    "losses": 29,
+    "matches": 56,
+    "streak": 3,
+    "best": 3
+  },
+  "Andy_Speed": {
+    "name": "Andy_Speed",
+    "elo": 1180,
+    "wins": 22,
+    "losses": 25,
+    "matches": 47,
+    "streak": 0,
+    "best": 2
+  },
+  "King_Style": {
+    "name": "King_Style",
+    "elo": 1101,
+    "wins": 19,
+    "losses": 23,
+    "matches": 40,
+    "streak": 1,
+    "best": 2
+  },
+  "Yuri_Cute": {
+    "name": "Yuri_Cute",
+    "elo": 1050,
+    "wins": 15,
+    "losses": 18,
+    "matches": 33,
+    "streak": 0,
+    "best": 2
+  },
+  "Fighter_Hugo": {
+    "name": "Fighter_Hugo",
+    "elo": 1215,
+    "wins": 11,
+    "losses": 5,
+    "matches": 16,
+    "streak": 3,
+    "best": 4
+  },
+  "Warrior_Alex": {
+    "name": "Warrior_Alex",
+    "elo": 1166,
+    "wins": 9,
+    "losses": 8,
+    "matches": 15,
+    "streak": 0,
+    "best": 3
+  }
+}

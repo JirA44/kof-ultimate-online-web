@@ -117,7 +117,7 @@
   "TurnsRecoveryBase": 0,
   "TurnsRecoveryBonus": 20,
   "VolumeBgm": 80,
-  "VolumeMaster": 80,
+  "VolumeMaster": 0,
   "VolumeSfx": 80,
   "VRetrace": 1,
   "WavChannels": 32,

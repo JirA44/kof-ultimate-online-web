@@ -1,0 +1,12 @@
+; KOF ULTIMATE ONLINE - TEST ROSTER
+; Un seul personnage pour tester la stabilité du jeu
+
+[Characters]
+kfm, stages/Abyss-Rugal-Palace.def
+kfm, stages/Abyss-Rugal-Palace.def
+
+[ExtraStages]
+stages/Abyss-Rugal-Palace.def
+
+[Options]
+arcade.maxmatches = 1,0,0,0,0,0,0,0,0,0

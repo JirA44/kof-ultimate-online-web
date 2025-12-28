@@ -11,13 +11,14 @@ spr = system.sff
 snd = system.snd
 logo.storyboard = Loading.def
 intro.storyboard =                    
-select = select.def
+select = select_final.def
 fight  = fight.def
-font1  = font/FONT MENU.fnt
-font3  = font/Menu-Medium.fnt
-font4 = data/fonts/Combo.fnt
-font7  = data/fonts/Names.fnt
-font8  = data/fonts/Menu Black .fnt
+font1  = font/f-6x9.def
+font2  = font/f-6x9.def
+font3  = font/f-6x9.def
+font4 = font/f-4x6.def
+font7  = font/f-6x9.def
+font8  = font/f-6x9.def
 ;----------------------------
 [Music]
 title.bgm = data/musica/MENU SCREEN.mp3
@@ -26,11 +27,11 @@ title.bgm.loop = 1
 title.bgm.loopstart = 
 title.bgm.loopend = 
   ;Music to play at char select screen.
-select.bgm = data/musica/SELECT SCREEN.mp3
-select.bgm.volume = 100
-select.bgm.loop = 1
-select.bgm.loopstart =
-select.bgm.loopend = 
+select = select_final.def
+select = select_final.def
+select = select_final.def
+select = select_final.def
+select = select_final.def
   ;Music to play at versus screen.
 vs.bgm = data/musica/VS SCREEN.mp3
 vs.bgm.volume = 100
@@ -79,7 +80,6 @@ cancel.snd =100,2
 ;Title background definition
 [TitleBGdef]
 bgclearcolor = 0,0,0
-
 [TitleBG 0]
 type = anim
 actionno = 2
@@ -125,15 +125,15 @@ alpha = 150,256
 [Select Info]
 fadeout.time = 15
 
-rows = 4
-columns = 7
+rows = 13
+columns = 20
 wrapping = 1
-pos = 70,160
+pos = 12,77
 showemptyboxes = 0
 moveoveremptyboxes = 0
 
-cell.size = 32,32
-cell.spacing = 2
+cell.size = 31,31
+cell.spacing = 0
 cell.bg.spr =
 cell.random.anim = 173
 cell.random.switchtime = 5
@@ -160,7 +160,7 @@ cancel.snd = 100,2
 
 portrait.spr = 9000,0
 portrait.offset = 0,0
-portrait.scale = 0.32,0.32
+portrait.scale = 0.5,0.5
 
 p1.face.offset = 18,13
 p1.face.scale = 1.5,1.5
@@ -218,7 +218,6 @@ p2.teammenu.done.snd = 100,1
 ;-----------------------
 [SelectBGdef]
 bgclearcolor = 0,0,0
-
 [SelectBG 0]
 type = anim
 actionno = 2
@@ -377,7 +376,7 @@ mask = 1
 ;Demo mode definition
 [Demo Mode]
 enabled = 1
-select.enabled = 1
+select = select_final.def
 vsscreen.enabled = 1
 title.waittime = 2600
 fight.endtime = 2500
@@ -439,8 +438,7 @@ winquote.textwrap = w
 ;-----------------------
 ;Victory screen background
 [VictoryBGdef]
-bgclearcolor = 10,20,75
-
+bgclearcolor = 0,0,0
 [VictoryBG 0]
 type = anim
 actionno = 4
