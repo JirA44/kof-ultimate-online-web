@@ -4,7 +4,7 @@ compatibility_date = "2024-01-01"
 
 # Account ID - À remplacer par votre Account ID Cloudflare
 # Trouvez-le sur: https://dash.cloudflare.com/ → Workers → Overview
-account_id = "YOUR_ACCOUNT_ID"
+account_id = "1209814ac1cca58a68de2bca6fe2e5ef"
 
 # Routes - Domaine personnalisé (optionnel)
 # routes = [
