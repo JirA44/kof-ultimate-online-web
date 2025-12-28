@@ -22,6 +22,20 @@ local STATE_FILE = SAVE_DIR .. "online_state.json"
 local LOBBIES_FILE = SAVE_DIR .. "lobbies.json"
 local COMMAND_FILE = SAVE_DIR .. "online_command.json"
 local PROFILE_FILE = SAVE_DIR .. "player_profile.json"
+local LOBBY_HTML = "KOF_BATTLENET_LOBBY.html"
+
+-- Open Battle.net Lobby in browser
+local function openBattleNetLobby()
+    local os_name = package.config:sub(1,1)
+    local cmd
+    if os_name == "\\" then
+        cmd = 'start "" "' .. LOBBY_HTML .. '"'
+    else
+        cmd = 'xdg-open "' .. LOBBY_HTML .. '" 2>/dev/null || open "' .. LOBBY_HTML .. '"'
+    end
+    os.execute(cmd)
+    print("[KOF Online] Battle.net Lobby opened!")
+end
 
 local REFRESH_INTERVAL = 30  -- Refresh state every 30 frames (~0.5 sec)
 local frameCounter = 0
@@ -165,44 +179,35 @@ function battlenet.setupMenus()
     end
 
     -- Override netplay menu items for Battle.net experience
+    -- Opens the full Battle.net Lobby interface
 
-    -- Quick Match
+    -- Quick Match - Opens Battle.net Lobby
     main.t_itemname['serverhost'] = function(t, item)
-        if battlenet.state.connected then
-            if battlenet.state.inQueue then
-                battlenet.cancelQueue()
-            else
-                battlenet.quickMatch()
-            end
-        else
-            print("[KOF Online] Not connected to server!")
-        end
+        openBattleNetLobby()
         return nil  -- Stay on menu
     end
 
-    -- Join Lobby / Browse Games
+    -- Join Lobby / Browse Games - Opens Battle.net Lobby
     main.t_itemname['serverjoin'] = function(t, item)
-        if battlenet.state.connected then
-            battlenet.refreshLobbies()
-            -- TODO: Show lobby list overlay
-            print("[KOF Online] Lobbies: " .. battlenet.state.lobbiesCount)
-        end
+        openBattleNetLobby()
         return nil
     end
 
-    -- Netplay Versus - Quick Match
+    -- Netplay Versus - Opens Battle.net Lobby
     main.t_itemname['netplayversus'] = function(t, item)
-        if battlenet.state.connected then
-            battlenet.quickMatch()
-            -- Check for match
-            if battlenet.checkForMatch() then
-                main.txt_mainSelect:update({text = "Online Versus"})
-                setGameMode('netplayversus')
-                return start.f_selectMenu
-            end
-        else
-            print("[KOF Online] Connecting to server...")
-        end
+        openBattleNetLobby()
+        return nil
+    end
+
+    -- Netplay Team Co-op - Opens Battle.net Lobby
+    main.t_itemname['netplayteamcoop'] = function(t, item)
+        openBattleNetLobby()
+        return nil
+    end
+
+    -- Netplay Survival - Opens Battle.net Lobby
+    main.t_itemname['netplaysurvivalcoop'] = function(t, item)
+        openBattleNetLobby()
         return nil
     end
 

@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOF Ultimate Online - Battle.net</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        .header {
+            background: rgba(0,0,0,0.5);
+            border-bottom: 2px solid #e94560;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #e94560;
+            text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+        }
+
+        .player-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #e94560, #0f3460);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            border: 2px solid #e94560;
+        }
+
+        .player-details h3 {
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        .elo-badge {
+            background: linear-gradient(90deg, #ffd700, #ff8c00);
+            color: #000;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        /* Status Bar */
+        .status-bar {
+            background: rgba(0,0,0,0.3);
+            padding: 10px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .status-indicator {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #4ade80;
+            animation: pulse 2s infinite;
+        }
+
+        .status-dot.offline { background: #ef4444; animation: none; }
+        .status-dot.searching { background: #fbbf24; }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        /* Main Content */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Action Buttons */
+        .action-panel {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .action-btn {
+            background: linear-gradient(180deg, rgba(233, 69, 96, 0.2) 0%, rgba(233, 69, 96, 0.1) 100%);
+            border: 2px solid #e94560;
+            border-radius: 10px;
+            padding: 25px 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .action-btn:hover {
+            background: linear-gradient(180deg, rgba(233, 69, 96, 0.4) 0%, rgba(233, 69, 96, 0.2) 100%);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(233, 69, 96, 0.3);
+        }
+
+        .action-btn.active {
+            background: linear-gradient(180deg, #e94560 0%, #c73659 100%);
+        }
+
+        .action-btn .icon {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .action-btn h3 {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .action-btn p {
+            font-size: 12px;
+            opacity: 0.7;
+        }
+
+        /* Lobbies List */
+        .lobbies-panel {
+            background: rgba(0,0,0,0.3);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .panel-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .panel-header h2 {
+            font-size: 18px;
+        }
+
+        .refresh-btn {
+            background: none;
+            border: 1px solid rgba(255,255,255,0.3);
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .refresh-btn:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .lobby-list {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .lobby-item {
+            background: rgba(255,255,255,0.05);
+            border-radius: 8px;
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .lobby-item:hover {
+            background: rgba(233, 69, 96, 0.2);
+        }
+
+        .lobby-info h4 {
+            margin-bottom: 3px;
+        }
+
+        .lobby-info span {
+            font-size: 12px;
+            opacity: 0.7;
+        }
+
+        .join-btn {
+            background: #e94560;
+            border: none;
+            color: #fff;
+            padding: 8px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .join-btn:hover {
+            background: #c73659;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Online Players */
+        .online-panel {
+            background: rgba(0,0,0,0.3);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .player-list {
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .player-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .player-item:last-child {
+            border-bottom: none;
+        }
+
+        .player-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #e94560, #0f3460);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+
+        .player-name {
+            flex: 1;
+        }
+
+        .player-elo {
+            font-size: 12px;
+            color: #ffd700;
+        }
+
+        /* Stats Panel */
+        .stats-panel {
+            background: rgba(0,0,0,0.3);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .stat-row:last-child {
+            border-bottom: none;
+        }
+
+        .stat-label {
+            opacity: 0.7;
+        }
+
+        .stat-value {
+            font-weight: bold;
+            color: #4ade80;
+        }
+
+        /* Queue Overlay */
+        .queue-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .queue-overlay.active {
+            display: flex;
+        }
+
+        .queue-spinner {
+            width: 80px;
+            height: 80px;
+            border: 4px solid rgba(233, 69, 96, 0.3);
+            border-top-color: #e94560;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .queue-text {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .queue-time {
+            font-size: 18px;
+            opacity: 0.7;
+        }
+
+        .cancel-queue-btn {
+            margin-top: 30px;
+            background: transparent;
+            border: 2px solid #e94560;
+            color: #e94560;
+            padding: 12px 40px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+
+        .cancel-queue-btn:hover {
+            background: #e94560;
+            color: #fff;
+        }
+
+        /* Match Found Overlay */
+        .match-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.95);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .match-overlay.active {
+            display: flex;
+        }
+
+        .match-found-text {
+            font-size: 48px;
+            color: #e94560;
+            text-shadow: 0 0 30px rgba(233, 69, 96, 0.5);
+            animation: matchPulse 1s ease-in-out infinite;
+        }
+
+        @keyframes matchPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .vs-container {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            margin-top: 40px;
+        }
+
+        .player-card {
+            text-align: center;
+        }
+
+        .player-card .avatar {
+            width: 100px;
+            height: 100px;
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .vs-text {
+            font-size: 36px;
+            color: #e94560;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.5);
+            padding: 10px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .footer-left {
+            font-size: 12px;
+            opacity: 0.5;
+        }
+
+        .back-btn {
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.3);
+            color: #fff;
+            padding: 8px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .back-btn:hover {
+            background: rgba(255,255,255,0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">⚔️ KOF ULTIMATE ONLINE</div>
+        <div class="player-info">
+            <div class="player-details">
+                <h3 id="playerName">Chargement...</h3>
+                <span class="elo-badge" id="playerElo">ELO: ---</span>
+            </div>
+            <div class="avatar" id="playerAvatar">👤</div>
+        </div>
+    </div>
+
+    <!-- Status Bar -->
+    <div class="status-bar">
+        <div class="status-indicator">
+            <div class="status-dot" id="statusDot"></div>
+            <span id="statusText">Connexion...</span>
+        </div>
+        <div>
+            <span id="onlineCount">0</span> joueurs en ligne
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="main-content">
+            <div class="left-panel">
+                <!-- Action Buttons -->
+                <div class="action-panel">
+                    <div class="action-btn" onclick="quickMatch()">
+                        <div class="icon">⚡</div>
+                        <h3>QUICK MATCH</h3>
+                        <p>Trouver un adversaire</p>
+                    </div>
+                    <div class="action-btn" onclick="rankedMatch()">
+                        <div class="icon">🏆</div>
+                        <h3>CLASSÉ</h3>
+                        <p>Match ELO</p>
+                    </div>
+                    <div class="action-btn" onclick="createLobby()">
+                        <div class="icon">🏠</div>
+                        <h3>CRÉER PARTIE</h3>
+                        <p>Héberger une partie</p>
+                    </div>
+                    <div class="action-btn" onclick="showProfile()">
+                        <div class="icon">👤</div>
+                        <h3>PROFIL</h3>
+                        <p>Voir mes stats</p>
+                    </div>
+                </div>
+
+                <!-- Lobbies -->
+                <div class="lobbies-panel">
+                    <div class="panel-header">
+                        <h2>🎮 Parties en cours</h2>
+                        <button class="refresh-btn" onclick="refreshLobbies()">🔄 Actualiser</button>
+                    </div>
+                    <div class="lobby-list" id="lobbyList">
+                        <div class="lobby-item">
+                            <div class="lobby-info">
+                                <h4>Salle de JirA44</h4>
+                                <span>1/2 joueurs • Versus</span>
+                            </div>
+                            <button class="join-btn">Rejoindre</button>
+                        </div>
+                        <div class="lobby-item">
+                            <div class="lobby-info">
+                                <h4>Tournament Room</h4>
+                                <span>4/8 joueurs • Tournoi</span>
+                            </div>
+                            <button class="join-btn">Rejoindre</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Online Players -->
+                <div class="online-panel">
+                    <div class="panel-header">
+                        <h2>👥 En ligne</h2>
+                    </div>
+                    <div class="player-list" id="playerList">
+                        <div class="player-item">
+                            <div class="player-avatar">🎮</div>
+                            <div class="player-name">Player1</div>
+                            <div class="player-elo">1800</div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-avatar">🎮</div>
+                            <div class="player-name">Player2</div>
+                            <div class="player-elo">1500</div>
+                        </div>
+                        <div class="player-item">
+                            <div class="player-avatar">🎮</div>
+                            <div class="player-name">Player3</div>
+                            <div class="player-elo">1200</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats -->
+                <div class="stats-panel">
+                    <div class="panel-header">
+                        <h2>📊 Mes Stats</h2>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Victoires</span>
+                        <span class="stat-value" id="statWins">0</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Défaites</span>
+                        <span class="stat-value" id="statLosses">0</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Winrate</span>
+                        <span class="stat-value" id="statWinrate">0%</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Rang</span>
+                        <span class="stat-value" id="statRank">Bronze</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Queue Overlay -->
+    <div class="queue-overlay" id="queueOverlay">
+        <div class="queue-spinner"></div>
+        <div class="queue-text">Recherche d'adversaire...</div>
+        <div class="queue-time" id="queueTime">00:00</div>
+        <button class="cancel-queue-btn" onclick="cancelQueue()">Annuler</button>
+    </div>
+
+    <!-- Match Found Overlay -->
+    <div class="match-overlay" id="matchOverlay">
+        <div class="match-found-text">MATCH TROUVÉ!</div>
+        <div class="vs-container">
+            <div class="player-card">
+                <div class="avatar">👤</div>
+                <h3 id="matchPlayer1">Toi</h3>
+                <span id="matchElo1">ELO: 1500</span>
+            </div>
+            <div class="vs-text">VS</div>
+            <div class="player-card">
+                <div class="avatar">👤</div>
+                <h3 id="matchPlayer2">Adversaire</h3>
+                <span id="matchElo2">ELO: 1520</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-left">KOF Ultimate Online v3.0 - Battle.net Edition</div>
+        <button class="back-btn" onclick="goBack()">⬅️ Retour au jeu</button>
+    </div>
+
+    <script>
+        // ==================== CONNECTION ====================
+        let ws = null;
+        let playerId = localStorage.getItem('kof_playerId') || generateId();
+        let playerName = localStorage.getItem('kof_playerName') || 'Player';
+        let elo = parseInt(localStorage.getItem('kof_elo')) || 1000;
+        let inQueue = false;
+        let queueStartTime = null;
+        let queueTimer = null;
+
+        localStorage.setItem('kof_playerId', playerId);
+
+        function generateId() {
+            return 'kof_' + Math.random().toString(36).substring(2, 15);
+        }
+
+        function connect() {
+            ws = new WebSocket('ws://localhost:3101');
+
+            ws.onopen = () => {
+                console.log('Connected to matchmaking server');
+                updateStatus('online', 'Connecté');
+                register();
+            };
+
+            ws.onmessage = (event) => {
+                const msg = JSON.parse(event.data);
+                handleMessage(msg);
+            };
+
+            ws.onclose = () => {
+                console.log('Disconnected');
+                updateStatus('offline', 'Déconnecté');
+                setTimeout(connect, 3000);
+            };
+
+            ws.onerror = (err) => {
+                console.error('WebSocket error:', err);
+            };
+        }
+
+        function register() {
+            send({
+                type: 'register',
+                playerId: playerId,
+                username: playerName,
+                elo: elo
+            });
+        }
+
+        function send(msg) {
+            if (ws && ws.readyState === WebSocket.OPEN) {
+                ws.send(JSON.stringify(msg));
+            }
+        }
+
+        // ==================== MESSAGE HANDLERS ====================
+        function handleMessage(msg) {
+            console.log('Message:', msg.type, msg);
+
+            switch (msg.type) {
+                case 'registered':
+                    updatePlayerInfo();
+                    break;
+
+                case 'searching':
+                    showQueueOverlay();
+                    break;
+
+                case 'left_queue':
+                    hideQueueOverlay();
+                    break;
+
+                case 'match_found':
+                    showMatchFound(msg);
+                    break;
+
+                case 'match_start':
+                    launchGame(msg);
+                    break;
+
+                case 'player_online':
+                    addOnlinePlayer(msg.player);
+                    break;
+
+                case 'player_offline':
+                    removeOnlinePlayer(msg.playerId);
+                    break;
+            }
+        }
+
+        // ==================== UI UPDATES ====================
+        function updateStatus(status, text) {
+            document.getElementById('statusDot').className = 'status-dot ' + status;
+            document.getElementById('statusText').textContent = text;
+        }
+
+        function updatePlayerInfo() {
+            document.getElementById('playerName').textContent = playerName;
+            document.getElementById('playerElo').textContent = 'ELO: ' + elo;
+            document.getElementById('playerAvatar').textContent = playerName.charAt(0).toUpperCase();
+        }
+
+        function showQueueOverlay() {
+            inQueue = true;
+            queueStartTime = Date.now();
+            document.getElementById('queueOverlay').classList.add('active');
+            updateStatus('searching', 'En recherche...');
+
+            queueTimer = setInterval(() => {
+                const elapsed = Math.floor((Date.now() - queueStartTime) / 1000);
+                const mins = Math.floor(elapsed / 60).toString().padStart(2, '0');
+                const secs = (elapsed % 60).toString().padStart(2, '0');
+                document.getElementById('queueTime').textContent = mins + ':' + secs;
+            }, 1000);
+        }
+
+        function hideQueueOverlay() {
+            inQueue = false;
+            document.getElementById('queueOverlay').classList.remove('active');
+            updateStatus('online', 'Connecté');
+            if (queueTimer) clearInterval(queueTimer);
+        }
+
+        function showMatchFound(msg) {
+            hideQueueOverlay();
+            document.getElementById('matchPlayer1').textContent = playerName;
+            document.getElementById('matchElo1').textContent = 'ELO: ' + elo;
+            document.getElementById('matchPlayer2').textContent = msg.opponent.username || 'Adversaire';
+            document.getElementById('matchElo2').textContent = 'ELO: ' + (msg.opponent.elo || '???');
+            document.getElementById('matchOverlay').classList.add('active');
+
+            // Auto accept after 3 seconds
+            setTimeout(() => {
+                send({
+                    type: 'accept_match',
+                    playerId: playerId,
+                    matchId: msg.matchId
+                });
+            }, 2000);
+        }
+
+        function launchGame(msg) {
+            // Write match info to file for Ikemen
+            const matchInfo = {
+                opponent: msg.opponent,
+                isPlayer1: msg.isPlayer1,
+                timestamp: Date.now()
+            };
+
+            // Store in localStorage for the game to read
+            localStorage.setItem('kof_current_match', JSON.stringify(matchInfo));
+
+            alert('Match trouvé! Retourne dans le jeu pour commencer.');
+            document.getElementById('matchOverlay').classList.remove('active');
+        }
+
+        // ==================== ACTIONS ====================
+        function quickMatch() {
+            if (!inQueue) {
+                send({
+                    type: 'join_matchmaking',
+                    playerId: playerId,
+                    elo: elo,
+                    mode: 'quick'
+                });
+            }
+        }
+
+        function rankedMatch() {
+            if (!inQueue) {
+                send({
+                    type: 'join_matchmaking',
+                    playerId: playerId,
+                    elo: elo,
+                    mode: 'ranked'
+                });
+            }
+        }
+
+        function cancelQueue() {
+            send({
+                type: 'leave_matchmaking',
+                playerId: playerId
+            });
+            hideQueueOverlay();
+        }
+
+        function createLobby() {
+            const name = prompt('Nom de la partie:', playerName + "'s Game");
+            if (name) {
+                send({
+                    type: 'create_room',
+                    playerId: playerId,
+                    roomName: name,
+                    maxPlayers: 2,
+                    mode: '1v1'
+                });
+            }
+        }
+
+        function refreshLobbies() {
+            send({ type: 'get_rooms' });
+        }
+
+        function showProfile() {
+            alert('Profil:\n\nNom: ' + playerName + '\nELO: ' + elo + '\nRang: ' + getRank(elo));
+        }
+
+        function getRank(elo) {
+            if (elo >= 2000) return 'Diamant';
+            if (elo >= 1800) return 'Platine';
+            if (elo >= 1600) return 'Or';
+            if (elo >= 1400) return 'Argent';
+            if (elo >= 1200) return 'Bronze';
+            return 'Fer';
+        }
+
+        function goBack() {
+            window.close();
+        }
+
+        // ==================== INIT ====================
+        updatePlayerInfo();
+        connect();
+
+        // Ask for name if first time
+        if (!localStorage.getItem('kof_playerName')) {
+            const name = prompt('Bienvenue! Entre ton pseudo:');
+            if (name) {
+                playerName = name;
+                localStorage.setItem('kof_playerName', name);
+                updatePlayerInfo();
+            }
+        }
+    </script>
+</body>
+</html>
