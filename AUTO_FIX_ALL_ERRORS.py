@@ -15,7 +15,7 @@ class KOFAutoFixer:
     """Système de réparation automatique"""
 
     def __init__(self):
-        self.base_path = Path(r"D:\KOF Ultimate Online kofuo")
+        self.base_path = Path(r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo kofuo")
         self.fixes_applied = 0
         self.errors_fixed = []
 

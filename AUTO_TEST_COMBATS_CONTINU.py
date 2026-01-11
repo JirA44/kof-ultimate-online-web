@@ -15,7 +15,7 @@ import pyautogui
 import psutil
 
 # Configuration
-GAME_EXE = r"D:\KOF Ultimate Online\KOF_Ultimate_Online.exe"
+GAME_EXE = r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo\KOF_Ultimate_Online.exe"
 LOG_FILE = "auto_test_combats.log"
 RESULTS_FILE = "test_combats_results.json"
 TEST_DURATION = 30  # Secondes par combat

@@ -204,7 +204,7 @@ class AIPlayer:
         print("=" * 70)
 
 def main():
-    game_dir = r"D:\KOF Ultimate Online"
+    game_dir = r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo"
     ai = AIPlayer(game_dir)
     ai.play_full_session()
 

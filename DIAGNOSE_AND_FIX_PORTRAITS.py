@@ -14,7 +14,7 @@ from datetime import datetime
 
 class PortraitDiagnostic:
     def __init__(self):
-        self.base_path = Path(r"D:\KOF Ultimate Online")
+        self.base_path = Path(r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo")
         self.system_def = self.base_path / "data" / "system.def"
         self.issues = []
         self.fixes = []

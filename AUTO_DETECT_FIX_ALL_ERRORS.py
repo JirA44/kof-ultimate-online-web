@@ -17,14 +17,14 @@ class UniversalErrorDetectorFixer:
     """Détecteur et correcteur universel d'erreurs"""
 
     def __init__(self):
-        self.game_dir = Path(r"D:\KOF Ultimate Online kofuo")
-        self.correct_game_dir = r"D:\KOF Ultimate Online kofuo"
+        self.game_dir = Path(r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo")
+        self.correct_game_dir = r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo"
         self.wrong_paths = [
-            r"D:\KOF Ultimate Online Online Online Online",
-            r"D:\KOF Ultimate Online Online Online",
-            r"D:\KOF Ultimate Online Online",
-            r"D:/KOF Ultimate Online",
-            r"D:\KOF Ultimate Online",
+            r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo",
+            r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo",
+            r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo",
+            r"D:/KOF Ultimate Online kofuo kofuo kofuo kofuo kofuo kofuo",
+            r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo",
             "D:\\KOF Ultimate",
         ]
 

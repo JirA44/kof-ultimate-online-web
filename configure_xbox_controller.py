@@ -5,7 +5,7 @@ Configure directement en modifiant les lignes du fichier
 
 from pathlib import Path
 
-CONFIG_FILE = Path("D:/KOF Ultimate Online/data/mugen.cfg")
+CONFIG_FILE = Path("D:/KOF Ultimate Online kofuo/data/mugen.cfg")
 
 def configure_xbox():
     """Configure la manette Xbox"""

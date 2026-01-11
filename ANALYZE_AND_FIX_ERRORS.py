@@ -13,7 +13,7 @@ def main():
     print("🔍 ANALYSE ET RÉPARATION DES ERREURS")
     print("="*70)
 
-    base_path = Path(r"D:\KOF Ultimate Online")
+    base_path = Path(r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo")
     error_file = base_path / "PASTE_ERROR_HERE.txt"
 
     if not error_file.exists():

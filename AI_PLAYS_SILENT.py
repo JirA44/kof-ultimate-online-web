@@ -152,7 +152,7 @@ class SilentAIPlayer:
             self.press_key('return', 0.5)
 
 def main():
-    game_dir = r"D:\KOF Ultimate Online"
+    game_dir = r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo"
     ai = SilentAIPlayer(game_dir)
 
     # Silence total

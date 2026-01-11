@@ -17,7 +17,7 @@ class InfiniteAutoTester:
     """Teste le jeu en boucle infinie avec clics automatiques"""
 
     def __init__(self):
-        self.game_dir = Path(r"D:\KOF Ultimate Online Online Online")
+        self.game_dir = Path(r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo")
         self.exe_path = self.game_dir / "KOF_Ultimate_Online.exe"
         self.process = None
         self.window_handle = None

@@ -11,7 +11,7 @@ from datetime import datetime
 
 class AIBugDiagnostic:
     def __init__(self):
-        self.base_dir = Path(r'D:\KOF Ultimate Online Online Online Online')
+        self.base_dir = Path(r'D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo')
         self.bugs_found = []
         self.fixes_applied = []
 
@@ -122,8 +122,8 @@ class AIBugDiagnostic:
             if 'KOF_Ultimate_Online.exe' in content:
                 wrong_paths_found.append(f'{filename}: "KOF_Ultimate_Online.exe"')
 
-            if 'D:/KOF Ultimate Online"' in content and 'D:/KOF Ultimate Online' not in content:
-                wrong_paths_found.append(f'{filename}: "D:/KOF Ultimate Online"')
+            if 'D:/KOF Ultimate Online kofuo kofuo kofuo kofuo kofuo kofuo"' in content and 'D:/KOF Ultimate Online kofuo kofuo kofuo kofuo kofuo kofuo' not in content:
+                wrong_paths_found.append(f'{filename}: "D:/KOF Ultimate Online kofuo kofuo kofuo kofuo kofuo kofuo"')
 
         if wrong_paths_found:
             for path_issue in wrong_paths_found:

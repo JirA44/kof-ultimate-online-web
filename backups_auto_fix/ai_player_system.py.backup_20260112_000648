@@ -1,0 +1,470 @@
+"""
+KOF Ultimate - AI Player System
+Système d'IA qui peut jouer, explorer et s'auto-améliorer
+"""
+
+import os
+import json
+import time
+import pyautogui
+import threading
+import random
+from datetime import datetime
+from anthropic import Anthropic
+from PIL import Image, ImageGrab
+import keyboard
+import logging
+
+# Configuration du logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('ai_player.log'),
+        logging.StreamHandler()
+    ]
+)
+
+class AIPlayerProfile:
+    """Profil d'un joueur IA avec apprentissage"""
+
+    def __init__(self, name="Claude_AI_Player"):
+        self.name = name
+        self.profile_file = f"profiles/{name}.json"
+        self.stats = {
+            "games_played": 0,
+            "wins": 0,
+            "losses": 0,
+            "draws": 0,
+            "favorite_characters": [],
+            "learned_combos": [],
+            "bugs_found": [],
+            "menu_paths_explored": []
+        }
+        self.load_profile()
+
+    def load_profile(self):
+        """Charge le profil depuis le fichier"""
+        if os.path.exists(self.profile_file):
+            with open(self.profile_file, 'r') as f:
+                self.stats = json.load(f)
+        else:
+            os.makedirs('profiles', exist_ok=True)
+            self.save_profile()
+
+    def save_profile(self):
+        """Sauvegarde le profil"""
+        with open(self.profile_file, 'w') as f:
+            json.dump(self.stats, jsonf, indent=2)
+
+    def update_stats(self, result, character=None, combo=None):
+        """Met à jour les statistiques"""
+        self.stats["games_played"] += 1
+        if result == "win":
+            self.stats["wins"] += 1
+        elif result == "loss":
+            self.stats["losses"] += 1
+        else:
+            self.stats["draws"] += 1
+
+        if character and character not in self.stats["favorite_characters"]:
+            self.stats["favorite_characters"].append(character)
+
+        if combo and combo not in self.stats["learned_combos"]:
+            self.stats["learned_combos"].append(combo)
+
+        self.save_profile()
+
+
+class GameVisionAI:
+    """IA de vision pour analyser l'écran du jeu"""
+
+    def __init__(self, api_key):
+        self.client = Anthropic(api_key=api_key)
+        self.last_screenshot = None
+
+    def capture_screen(self):
+        """Capture l'écran du jeu"""
+        screenshot = ImageGrab.grab()
+        screenshot.save("temp_screenshot.png")
+        self.last_screenshot = "temp_screenshot.png"
+        return screenshot
+
+    def analyze_screen(self, prompt="Analyse this KOF game screen"):
+        """Analyse l'écran avec Claude Vision"""
+        if not self.last_screenshot:
+            self.capture_screen()
+
+        try:
+            with open(self.last_screenshot, 'rb') as img_file:
+                import base64
+                img_data = base64.b64encode(img_file.read()).decode()
+
+            message = self.client.messages.create(
+                model="claude-sonnet-4-5-20250929",
+                max_tokens=1024,
+                messages=[{
+                    "role": "user",
+                    "content": [
+                        {
+                            "type": "image",
+                            "source": {
+                                "type": "base64",
+                                "media_type": "image/png",
+                                "data": img_data
+                            }
+                        },
+                        {
+                            "type": "text",
+                            "text": prompt
+                        }
+                    ]
+                }]
+            )
+
+            return message.content[0].text
+        except Exception as e:
+            logging.error(f"Error analyzing screen: {e}")
+            return None
+
+
+class AIGameController:
+    """Contrôleur IA pour jouer au jeu"""
+
+    def __init__(self, vision_ai, profile):
+        self.vision = vision_ai
+        self.profile = profile
+        self.is_playing = False
+        self.current_mode = None
+
+        # Mapping des contrôles Ikemen GO
+        self.controls = {
+            "up": "w",
+            "down": "s",
+            "left": "a",
+            "right": "d",
+            "punch_light": "j",
+            "punch_medium": "k",
+            "punch_heavy": "l",
+            "kick_light": "u",
+            "kick_medium": "i",
+            "kick_heavy": "o",
+            "start": "return",
+            "select": "backspace"
+        }
+
+    def press_key(self, action, duration=0.1):
+        """Simule une pression de touche"""
+        if action in self.controls:
+            keyboard.press(self.controls[action])
+            time.sleep(duration)
+            keyboard.release(self.controls[action])
+
+    def perform_combo(self, combo_sequence):
+        """Exécute un combo"""
+        for action in combo_sequence:
+            self.press_key(action, 0.05)
+            time.sleep(0.1)
+
+    def navigate_menu(self, target_option):
+        """Navigue dans les menus"""
+        logging.info(f"Navigating to: {target_option}")
+
+        # Capture et analyse le menu actuel
+        self.vision.capture_screen()
+        menu_analysis = self.vision.analyze_screen(
+            f"What menu options are visible? Where is '{target_option}'?"
+        )
+
+        logging.info(f"Menu analysis: {menu_analysis}")
+
+        # Navigation intelligente basée sur l'analyse
+        if "down" in menu_analysis.lower():
+            for _ in range(3):
+                self.press_key("down")
+                time.sleep(0.3)
+        elif "up" in menu_analysis.lower():
+            for _ in range(3):
+                self.press_key("up")
+                time.sleep(0.3)
+
+        self.press_key("start")
+        time.sleep(0.5)
+
+    def explore_multiplayer(self):
+        """Explore le mode multijoueur"""
+        logging.info("Starting multiplayer exploration...")
+
+        # Navigue vers le mode multijoueur
+        self.navigate_menu("Versus")
+        time.sleep(1)
+
+        # Sélectionne un personnage aléatoire pour P1
+        self.select_random_character()
+
+        # Configure P2 (contrôlé par l'IA aussi)
+        time.sleep(1)
+        self.select_random_character()
+
+        # Lance le match
+        self.press_key("start")
+        time.sleep(2)
+
+        # Joue le match
+        self.play_match_ai_vs_ai()
+
+    def select_random_character(self):
+        """Sélectionne un personnage aléatoire"""
+        # Mouvements aléatoires sur l'écran de sélection
+        directions = ["up", "down", "left", "right"]
+        for _ in range(random.randint(2, 5)):
+            self.press_key(random.choice(directions))
+            time.sleep(0.2)
+
+        # Confirme la sélection
+        self.press_key("punch_light")
+        time.sleep(0.5)
+
+    def play_match_ai_vs_ai(self):
+        """Joue un match IA vs IA"""
+        logging.info("Starting AI vs AI match...")
+        self.is_playing = True
+
+        # Stratégies de combat
+        combos = [
+            ["punch_light", "punch_light", "punch_heavy"],
+            ["kick_light", "kick_medium", "punch_heavy"],
+            ["down", "right", "punch_heavy"],  # Hadouken-like
+            ["right", "down", "kick_heavy"],   # Shoryuken-like
+        ]
+
+        match_duration = 90  # 90 secondes max
+        start_time = time.time()
+
+        while self.is_playing and (time.time() - start_time) < match_duration:
+            # Analyse la situation
+            self.vision.capture_screen()
+            situation = self.vision.analyze_screen(
+                "Analyze the fight: health bars, positions, who is winning?"
+            )
+
+            logging.info(f"Fight analysis: {situation}")
+
+            # Décide de l'action
+            action_type = random.choice(["combo", "move", "block", "jump"])
+
+            if action_type == "combo":
+                combo = random.choice(combos)
+                self.perform_combo(combo)
+                self.profile.update_stats("playing", combo=str(combo))
+
+            elif action_type == "move":
+                direction = random.choice(["left", "right"])
+                self.press_key(direction, 0.3)
+
+            elif action_type == "block":
+                self.press_key("left", 0.5)
+
+            elif action_type == "jump":
+                self.press_key("up", 0.2)
+                time.sleep(0.3)
+                self.press_key(random.choice(["punch_heavy", "kick_heavy"]))
+
+            time.sleep(random.uniform(0.5, 1.5))
+
+            # Vérifie si le match est terminé
+            if "K.O." in situation or "WIN" in situation:
+                logging.info("Match finished!")
+                self.is_playing = False
+
+                if "YOU WIN" in situation or "PLAYER 1 WIN" in situation:
+                    self.profile.update_stats("win")
+                else:
+                    self.profile.update_stats("loss")
+                break
+
+        logging.info("Match complete. Returning to menu...")
+        time.sleep(3)
+        self.press_key("start")
+
+    def auto_improve(self):
+        """Système d'auto-amélioration basé sur les statistiques"""
+        logging.info("Analyzing performance for improvements...")
+
+        win_rate = (self.profile.stats["wins"] /
+                   max(self.profile.stats["games_played"], 1)) * 100
+
+        logging.info(f"Current win rate: {win_rate:.2f}%")
+
+        # Demande à Claude des suggestions d'amélioration
+        improvement_prompt = f"""
+        Voici mes statistiques de jeu:
+        - Parties jouées: {self.profile.stats['games_played']}
+        - Victoires: {self.profile.stats['wins']}
+        - Défaites: {self.profile.stats['losses']}
+        - Taux de victoire: {win_rate:.2f}%
+        - Combos appris: {len(self.profile.stats['learned_combos'])}
+
+        Suggère 3 améliorations concrètes pour ma stratégie de jeu KOF.
+        """
+
+        try:
+            message = self.vision.client.messages.create(
+                model="claude-sonnet-4-5-20250929",
+                max_tokens=1024,
+                messages=[{"role": "user", "content": improvement_prompt}]
+            )
+
+            suggestions = message.content[0].text
+            logging.info(f"Improvement suggestions:\n{suggestions}")
+
+            # Sauvegarde les suggestions
+            with open("ai_improvements.log", "a") as f:
+                f.write(f"\n\n=== {datetime.now()} ===\n")
+                f.write(suggestions)
+
+        except Exception as e:
+            logging.error(f"Error getting improvements: {e}")
+
+    def detect_bugs(self):
+        """Détecte les bugs dans le jeu"""
+        logging.info("Scanning for bugs...")
+
+        self.vision.capture_screen()
+        bug_analysis = self.vision.analyze_screen(
+            """Analyse this game screen for potential bugs:
+            - Graphical glitches
+            - UI problems
+            - Incorrect text
+            - Missing elements
+            - Performance issues
+            Report any anomalies found."""
+        )
+
+        if bug_analysis and any(keyword in bug_analysis.lower()
+                               for keyword in ["bug", "glitch", "error", "problem", "issue"]):
+            logging.warning(f"Potential bug detected: {bug_analysis}")
+
+            bug_report = {
+                "timestamp": datetime.now().isoformat(),
+                "description": bug_analysis,
+                "screenshot": self.vision.last_screenshot
+            }
+
+            self.profile.stats["bugs_found"].append(bug_report)
+            self.profile.save_profile()
+
+            # Sauvegarde le rapport de bug
+            with open("bug_reports.json", "a") as f:
+                json.dump(bug_report, f, indent=2)
+                f.write("\n")
+
+
+class AIPlayerManager:
+    """Gestionnaire principal du joueur IA"""
+
+    def __init__(self, api_key):
+        self.profile = AIPlayerProfile()
+        self.vision = GameVisionAI(api_key)
+        self.controller = AIGameController(self.vision, self.profile)
+        self.is_running = False
+
+    def start_exploration_session(self, duration_minutes=30):
+        """Lance une session d'exploration automatique"""
+        logging.info(f"Starting {duration_minutes} minute exploration session...")
+        self.is_running = True
+
+        end_time = time.time() + (duration_minutes * 60)
+
+        while self.is_running and time.time() < end_time:
+            try:
+                # Explore le multijoueur
+                logging.info("=== Exploring Multiplayer Mode ===")
+                self.controller.explore_multiplayer()
+                time.sleep(5)
+
+                # Détecte les bugs
+                self.controller.detect_bugs()
+                time.sleep(2)
+
+                # Auto-amélioration tous les 5 matchs
+                if self.profile.stats["games_played"] % 5 == 0:
+                    self.controller.auto_improve()
+
+                # Pause entre les sessions
+                time.sleep(10)
+
+            except KeyboardInterrupt:
+                logging.info("Session interrupted by user")
+                break
+            except Exception as e:
+                logging.error(f"Error during exploration: {e}")
+                time.sleep(5)
+
+        logging.info("Exploration session complete!")
+        self.print_session_summary()
+
+    def print_session_summary(self):
+        """Affiche un résumé de la session"""
+        stats = self.profile.stats
+        print("\n" + "="*50)
+        print("SESSION SUMMARY")
+        print("="*50)
+        print(f"Total Games: {stats['games_played']}")
+        print(f"Wins: {stats['wins']}")
+        print(f"Losses: {stats['losses']}")
+        print(f"Win Rate: {(stats['wins']/max(stats['games_played'],1)*100):.2f}%")
+        print(f"Combos Learned: {len(stats['learned_combos'])}")
+        print(f"Bugs Found: {len(stats['bugs_found'])}")
+        print("="*50 + "\n")
+
+
+def main():
+    """Point d'entrée principal"""
+    print("""
+╔══════════════════════════════════════════════════════╗
+║         KOF ULTIMATE - AI PLAYER SYSTEM              ║
+║                                                      ║
+║  Système d'IA autonome qui peut:                    ║
+║  • Jouer au jeu automatiquement                     ║
+║  • Explorer tous les menus                          ║
+║  • Tester le mode multijoueur                       ║
+║  • Détecter les bugs                                ║
+║  • S'auto-améliorer                                 ║
+╚══════════════════════════════════════════════════════╝
+    """)
+
+    # Récupère la clé API
+    api_key = os.getenv("ANTHROPIC_API_KEY")
+    if not api_key:
+        print("⚠️  ANTHROPIC_API_KEY not found in environment!")
+        api_key = input("Enter your Anthropic API key: ").strip()
+
+    # Crée le gestionnaire IA
+    manager = AIPlayerManager(api_key)
+
+    print("\nOptions:")
+    print("1. Start auto-exploration (30 min)")
+    print("2. Start auto-exploration (60 min)")
+    print("3. Play single match")
+    print("4. View profile stats")
+    print("5. Detect bugs only")
+
+    choice = input("\nChoose an option (1-5): ").strip()
+
+    if choice == "1":
+        manager.start_exploration_session(30)
+    elif choice == "2":
+        manager.start_exploration_session(60)
+    elif choice == "3":
+        manager.controller.explore_multiplayer()
+    elif choice == "4":
+        print(json.dumps(manager.profile.stats, indent=2))
+    elif choice == "5":
+        manager.controller.detect_bugs()
+    else:
+        print("Invalid choice!")
+
+
+if __name__ == "__main__":
+    main()

@@ -13,7 +13,7 @@ from datetime import datetime
 
 class VisualBugFixer:
     def __init__(self):
-        self.base_path = Path(r"D:\KOF Ultimate Online")
+        self.base_path = Path(r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo")
         self.chars_path = self.base_path / "chars"
         self.stages_path = self.base_path / "stages"
         self.data_path = self.base_path / "data"

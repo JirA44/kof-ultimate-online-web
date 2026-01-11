@@ -715,7 +715,7 @@ Plus d'infos: Consultez GUIDE_BATTLENET.md
 
     def launch_game(self):
         """Lance le jeu - FONCTIONNE!"""
-        game_path = Path("D:/KOF Ultimate Online/KOF_Ultimate_Online.exe")
+        game_path = Path("D:/KOF Ultimate Online kofuo/KOF_Ultimate_Online.exe")
 
         if game_path.exists():
             try:

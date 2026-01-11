@@ -16,7 +16,7 @@ class PortraitFixer:
     """Réparateur automatique de portraits"""
 
     def __init__(self):
-        self.base_path = Path(r"D:\KOF Ultimate Online")
+        self.base_path = Path(r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo")
         self.chars_path = self.base_path / "chars"
         self.backup_path = self.base_path / "portraits_backup"
         self.fixed_count = 0

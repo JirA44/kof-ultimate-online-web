@@ -14,7 +14,7 @@ class MultiplayerFixer:
     """Réparateur système multijoueur"""
 
     def __init__(self):
-        self.base_path = Path(r"D:\KOF Ultimate Online")
+        self.base_path = Path(r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo")
         self.data_path = self.base_path / "data"
         self.mugen_cfg = self.data_path / "mugen.cfg"
         self.backup_path = self.base_path / "config_backup"

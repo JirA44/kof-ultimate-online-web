@@ -16,7 +16,7 @@ class EsportAutoFixer:
     """Réparateur automatique complet pour niveau esport"""
 
     def __init__(self):
-        self.base_path = Path(r"D:\KOF Ultimate Online")
+        self.base_path = Path(r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo")
         self.scripts = {
             "portraits": self.base_path / "AUTO_FIX_PORTRAITS.py",
             "multiplayer": self.base_path / "AUTO_FIX_MULTIPLAYER.py",

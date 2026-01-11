@@ -30,7 +30,7 @@ class BugDetector:
     """Détecteur automatique de bugs Mugen"""
 
     def __init__(self):
-        self.game_dir = Path("D:/KOF Ultimate Online")
+        self.game_dir = Path("D:/KOF Ultimate Online kofuo")
         self.chars_dir = self.game_dir / "chars"
         self.select_def = self.game_dir / "data" / "select.def"
         self.mugen_log = self.game_dir / "mugen.log"

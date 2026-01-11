@@ -27,7 +27,7 @@ import obsws_python as obs
 from PIL import Image
 import pyautogui
 
-BASE_DIR = Path(r"D:\KOF Ultimate Online kofuo")
+BASE_DIR = Path(r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo kofuo")
 STAGES_DIR = BASE_DIR / "stages"
 OUTPUT_DIR = BASE_DIR / "stage_previews"
 IKEMEN_EXE = BASE_DIR / "Ikemen_GO.exe"

@@ -12,7 +12,7 @@ import re
 from pathlib import Path
 from datetime import datetime
 
-game_dir = Path(r"D:\KOF Ultimate Online Online Online")
+game_dir = Path(r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo")
 log_file = game_dir / "mugen.log"
 
 class KOFValidator:

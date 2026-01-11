@@ -11,7 +11,7 @@ import shutil
 from datetime import datetime
 import json
 
-GAME_DIR = r"D:\KOF Ultimate Online"
+GAME_DIR = r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo"
 LOG_FILE = "auto_repair.log"
 REPAIR_REPORT = "repair_report.json"
 

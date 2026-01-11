@@ -213,7 +213,7 @@ class AirErrorFixer:
         print("\n✅ CORRECTION AUTOMATIQUE TERMINÉE!\n")
 
 def main():
-    game_dir = r"D:\KOF Ultimate Online"
+    game_dir = r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo"
     fixer = AirErrorFixer(game_dir)
     fixer.fix_all()
 

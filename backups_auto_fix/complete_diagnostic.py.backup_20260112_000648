@@ -1,0 +1,297 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+KOF ULTIMATE - Diagnostic Complet Automatique
+Vérifie TOUT sans avoir besoin de lancer le jeu
+"""
+
+import os
+from pathlib import Path
+import struct
+
+class Colors:
+    GREEN = '\033[92m'
+    RED = '\033[91m'
+    YELLOW = '\033[93m'
+    CYAN = '\033[96m'
+    MAGENTA = '\033[95m'
+    BOLD = '\033[1m'
+    RESET = '\033[0m'
+
+def check_file_exists(path, name):
+    """Vérifie qu'un fichier existe"""
+    if os.path.exists(path):
+        size = os.path.getsize(path) / (1024 * 1024)  # MB
+        print(f"{Colors.GREEN}  ✓ {name}: {size:.2f} MB{Colors.RESET}")
+        return True
+    else:
+        print(f"{Colors.RED}  ✗ {name}: INTROUVABLE{Colors.RESET}")
+        return False
+
+def check_system_def():
+    """Vérifie system.def"""
+    print(f"\n{Colors.CYAN}{Colors.BOLD}1. VÉRIFICATION system.def{Colors.RESET}")
+    print(f"{Colors.CYAN}{'='*80}{Colors.RESET}\n")
+
+    system_def = Path(r"D:\KOF Ultimate Online Online Online\data\system.def")
+
+    if not system_def.exists():
+        print(f"{Colors.RED}✗ system.def INTROUVABLE!{Colors.RESET}")
+        return False
+
+    with open(system_def, 'r', encoding='utf-8', errors='ignore') as f:
+        content = f.read()
+
+    issues = []
+
+    # Vérifier TitleBGdef
+    if "[TitleBGdef]" in content:
+        print(f"{Colors.GREEN}  ✓ [TitleBGdef] trouvé{Colors.RESET}")
+
+        # Vérifier bgclearcolor
+        if "bgclearcolor = 0,0,0" in content:
+            print(f"{Colors.GREEN}  ✓ bgclearcolor = 0,0,0 (fond noir){Colors.RESET}")
+        else:
+            print(f"{Colors.YELLOW}  ⚠ bgclearcolor n'est pas 0,0,0{Colors.RESET}")
+
+    # Vérifier TitleBG avec animations
+    titlebg_found = False
+    for line in content.split('\n'):
+        if '[TitleBG' in line and 'def' not in line.lower():
+            titlebg_found = True
+
+    if titlebg_found:
+        print(f"{Colors.GREEN}  ✓ [TitleBG] sections trouvées{Colors.RESET}")
+
+        # Vérifier type = anim
+        if "type = anim" in content:
+            print(f"{Colors.GREEN}  ✓ type = anim détecté{Colors.RESET}")
+        else:
+            print(f"{Colors.RED}  ✗ type = anim MANQUANT! (fond sera statique){Colors.RESET}")
+            issues.append("TitleBG n'utilise pas 'type = anim'")
+
+        # Vérifier actionno
+        if "actionno = 4" in content:
+            print(f"{Colors.GREEN}  ✓ actionno = 4 trouvé{Colors.RESET}")
+        else:
+            print(f"{Colors.RED}  ✗ actionno = 4 MANQUANT!{Colors.RESET}")
+            issues.append("actionno = 4 manquant")
+
+        if "actionno = 5" in content:
+            print(f"{Colors.GREEN}  ✓ actionno = 5 trouvé{Colors.RESET}")
+        else:
+            print(f"{Colors.YELLOW}  ⚠ actionno = 5 manquant{Colors.RESET}")
+
+    # Vérifier [Begin Action 4]
+    if "[Begin Action 4]" in content:
+        print(f"{Colors.GREEN}  ✓ [Begin Action 4] défini{Colors.RESET}")
+    else:
+        print(f"{Colors.RED}  ✗ [Begin Action 4] MANQUANT!{Colors.RESET}")
+        issues.append("[Begin Action 4] n'existe pas")
+
+    # Vérifier option multijoueur
+    if 'menu.itemname.netplay' in content and 'MULTIJOUEUR EN LIGNE' in content:
+        print(f"{Colors.GREEN}  ✓ Option 'MULTIJOUEUR EN LIGNE' trouvée{Colors.RESET}")
+    else:
+        print(f"{Colors.RED}  ✗ Option 'MULTIJOUEUR EN LIGNE' MANQUANTE!{Colors.RESET}")
+        issues.append("Option multijoueur manquante")
+
+    if issues:
+        print(f"\n{Colors.RED}Issues détectées:{Colors.RESET}")
+        for issue in issues:
+            print(f"  - {issue}")
+        return False
+    else:
+        print(f"\n{Colors.GREEN}✓ system.def OK{Colors.RESET}")
+        return True
+
+def check_sprite_file():
+    """Vérifie que system.sff existe et contient des données"""
+    print(f"\n{Colors.CYAN}{Colors.BOLD}2. VÉRIFICATION system.sff (SPRITES){Colors.RESET}")
+    print(f"{Colors.CYAN}{'='*80}{Colors.RESET}\n")
+
+    sff_file = Path(r"D:\KOF Ultimate Online Online Online\data\system.sff")
+
+    if not sff_file.exists():
+        print(f"{Colors.RED}✗ system.sff INTROUVABLE!{Colors.RESET}")
+        return False
+
+    size = os.path.getsize(sff_file) / (1024 * 1024)
+    print(f"{Colors.GREEN}  ✓ system.sff trouvé: {size:.2f} MB{Colors.RESET}")
+
+    # Lire l'en-tête SFF
+    try:
+        with open(sff_file, 'rb') as f:
+            # Lire signature (12 bytes)
+            signature = f.read(12)
+
+            if signature[:8] == b'ElecbyteSpr':
+                print(f"{Colors.GREEN}  ✓ Format SFF valide (ElecbyteSpr){Colors.RESET}")
+
+                # Lire nombre de sprites
+                f.seek(12)
+                num_images = struct.unpack('<I', f.read(4))[0]
+                print(f"{Colors.GREEN}  ✓ Nombre de sprites: {num_images}{Colors.RESET}")
+
+                if num_images > 0:
+                    print(f"{Colors.GREEN}  ✓ Fichier contient des sprites{Colors.RESET}")
+                    return True
+                else:
+                    print(f"{Colors.RED}  ✗ Aucun sprite dans le fichier!{Colors.RESET}")
+                    return False
+            else:
+                print(f"{Colors.RED}  ✗ Format SFF invalide!{Colors.RESET}")
+                return False
+
+    except Exception as e:
+        print(f"{Colors.RED}  ✗ Erreur lecture SFF: {e}{Colors.RESET}")
+        return False
+
+def check_select_def():
+    """Vérifie select.def et compte les erreurs x/x.def"""
+    print(f"\n{Colors.CYAN}{Colors.BOLD}3. VÉRIFICATION select.def{Colors.RESET}")
+    print(f"{Colors.CYAN}{'='*80}{Colors.RESET}\n")
+
+    select_def = Path(r"D:\KOF Ultimate Online Online Online\data\select.def")
+
+    if not select_def.exists():
+        print(f"{Colors.RED}✗ select.def INTROUVABLE!{Colors.RESET}")
+        return False
+
+    with open(select_def, 'r', encoding='utf-8', errors='ignore') as f:
+        lines = f.readlines()
+
+    x_def_count = 0
+    valid_chars = 0
+
+    for line in lines:
+        line = line.strip()
+        if line and not line.startswith(';') and not line.startswith('['):
+            if 'x/x.def' in line.lower():
+                x_def_count += 1
+            elif line:
+                valid_chars += 1
+
+    print(f"  Personnages valides: {valid_chars}")
+    print(f"  Entrées x/x.def (à nettoyer): {x_def_count}")
+
+    if x_def_count > 0:
+        print(f"\n{Colors.YELLOW}  ⚠ {x_def_count} entrées x/x.def causent des erreurs dans les logs{Colors.RESET}")
+        print(f"{Colors.YELLOW}  Ces entrées doivent être supprimées ou commentées{Colors.RESET}")
+        return False
+    else:
+        print(f"\n{Colors.GREEN}  ✓ select.def OK{Colors.RESET}")
+        return True
+
+def check_essential_files():
+    """Vérifie les fichiers essentiels"""
+    print(f"\n{Colors.CYAN}{Colors.BOLD}4. FICHIERS ESSENTIELS{Colors.RESET}")
+    print(f"{Colors.CYAN}{'='*80}{Colors.RESET}\n")
+
+    game_dir = Path(r"D:\KOF Ultimate Online Online Online")
+
+    files = [
+        (game_dir / "KOF_Ultimate_Online.exe", "Exécutable du jeu"),
+        (game_dir / "data" / "system.def", "Configuration système"),
+        (game_dir / "data" / "system.sff", "Sprites système"),
+        (game_dir / "data" / "system.snd", "Sons système"),
+        (game_dir / "data" / "select.def", "Écran de sélection"),
+        (game_dir / "data" / "fight.def", "Configuration combats"),
+    ]
+
+    all_ok = True
+    for file_path, name in files:
+        if not check_file_exists(file_path, name):
+            all_ok = False
+
+    return all_ok
+
+def generate_fix_script():
+    """Génère un script pour corriger les problèmes"""
+    print(f"\n{Colors.CYAN}{Colors.BOLD}5. GÉNÉRATION SCRIPT DE CORRECTION{Colors.RESET}")
+    print(f"{Colors.CYAN}{'='*80}{Colors.RESET}\n")
+
+    fix_script = r'''@echo off
+chcp 65001 > nul
+echo ====================================
+echo  KOF ULTIMATE - AUTO-FIX
+echo ====================================
+echo.
+
+echo 1. Nettoyage des logs...
+if exist "D:\KOF Ultimate Online Online Online\mugen.log" del "D:\KOF Ultimate Online Online Online\mugen.log"
+echo    ✓ Logs nettoyés
+
+echo.
+echo 2. Vérification des fichiers...
+python "D:\KOF Ultimate Online Online Online\complete_diagnostic.py"
+
+echo.
+echo 3. Lancement du jeu...
+cd /d "D:\KOF Ultimate Online Online Online"
+start "" "KOF_Ultimate_Online.exe"
+
+echo.
+echo ✓ Jeu lancé!
+pause
+'''
+
+    fix_path = Path(r"D:\KOF Ultimate Online Online Online\AUTO_FIX.bat")
+    with open(fix_path, 'w', encoding='utf-8') as f:
+        f.write(fix_script)
+
+    print(f"{Colors.GREEN}  ✓ Script généré: AUTO_FIX.bat{Colors.RESET}")
+    print(f"{Colors.CYAN}  Tu peux double-cliquer dessus pour lancer le jeu avec diagnostic{Colors.RESET}")
+
+def main():
+    print(f"\n{Colors.MAGENTA}{Colors.BOLD}{'='*80}{Colors.RESET}")
+    print(f"{Colors.MAGENTA}{Colors.BOLD}{'KOF ULTIMATE - DIAGNOSTIC COMPLET AUTOMATIQUE':^80}{Colors.RESET}")
+    print(f"{Colors.MAGENTA}{Colors.BOLD}{'='*80}{Colors.RESET}\n")
+
+    results = {
+        'system_def': check_system_def(),
+        'sprite_file': check_sprite_file(),
+        'select_def': check_select_def(),
+        'essential_files': check_essential_files()
+    }
+
+    generate_fix_script()
+
+    # Rapport final
+    print(f"\n{Colors.MAGENTA}{Colors.BOLD}{'='*80}{Colors.RESET}")
+    print(f"{Colors.MAGENTA}{Colors.BOLD}{'RAPPORT FINAL':^80}{Colors.RESET}")
+    print(f"{Colors.MAGENTA}{Colors.BOLD}{'='*80}{Colors.RESET}\n")
+
+    passed = sum(results.values())
+    total = len(results)
+
+    print(f"  Tests réussis: {passed}/{total}")
+
+    if passed == total:
+        print(f"\n{Colors.GREEN}{Colors.BOLD}  ✓ EXCELLENT! Tous les tests sont OK{Colors.RESET}")
+        print(f"\n{Colors.CYAN}  Le jeu devrait fonctionner correctement.{Colors.RESET}")
+        print(f"{Colors.CYAN}  Lance AUTO_FIX.bat pour démarrer le jeu.{Colors.RESET}")
+    else:
+        print(f"\n{Colors.RED}{Colors.BOLD}  ✗ PROBLÈMES DÉTECTÉS{Colors.RESET}")
+        print(f"\n{Colors.YELLOW}  Problèmes à corriger:{Colors.RESET}")
+
+        if not results['system_def']:
+            print(f"    - system.def: Animations ou option multijoueur manquantes")
+        if not results['sprite_file']:
+            print(f"    - system.sff: Fichier de sprites invalide ou manquant")
+        if not results['select_def']:
+            print(f"    - select.def: Entrées x/x.def à nettoyer")
+        if not results['essential_files']:
+            print(f"    - Fichiers essentiels manquants")
+
+    print()
+
+if __name__ == '__main__':
+    try:
+        main()
+    except KeyboardInterrupt:
+        print(f"\n\n{Colors.YELLOW}Interruption par l'utilisateur{Colors.RESET}")
+    except Exception as e:
+        print(f"\n{Colors.RED}Erreur: {e}{Colors.RESET}")
+        import traceback
+        traceback.print_exc()

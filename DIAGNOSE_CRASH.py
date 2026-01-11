@@ -116,7 +116,7 @@ def main():
     print("🔍 DIAGNOSTIC COMPLET - RECHERCHE DE LA CAUSE DU CRASH")
     print("="*80)
 
-    base_path = Path(r"D:\KOF Ultimate Online")
+    base_path = Path(r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo")
     select_def = base_path / "data" / "select.def"
 
     # Lire select.def

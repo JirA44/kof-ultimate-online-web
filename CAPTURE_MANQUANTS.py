@@ -5,7 +5,7 @@ Capture les 26 stages manquants - Guide etape par etape
 import os
 from pathlib import Path
 
-BASE_DIR = Path(r"D:\KOF Ultimate Online kofuo")
+BASE_DIR = Path(r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo kofuo")
 STAGES_DIR = BASE_DIR / "stages"
 OUTPUT_DIR = BASE_DIR / "stage_previews"
 

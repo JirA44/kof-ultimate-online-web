@@ -16,7 +16,7 @@ import threading
 
 class AutoTestRunner:
     def __init__(self):
-        self.base_path = Path(r"D:\KOF Ultimate Online")
+        self.base_path = Path(r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo")
         self.game_exe = self.base_path / "KOF_Ultimate_Online.exe"
         self.logs_path = self.base_path / "logs"
         self.running = True

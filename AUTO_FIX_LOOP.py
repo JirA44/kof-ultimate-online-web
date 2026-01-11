@@ -17,7 +17,7 @@ import shutil
 
 class AutoFixer:
     def __init__(self):
-        self.base_path = Path(r"D:\KOF Ultimate Online")
+        self.base_path = Path(r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo")
         self.log_file = self.base_path / "mugen.log"
         self.errors_fixed = []
 

@@ -6,8 +6,8 @@ Script pour vérifier quels personnages ont des portraits (9000,0 et 9000,1)
 import os
 import re
 
-CHARS_DIR = r"D:\KOF Ultimate Online\chars"
-SELECT_DEF = r"D:\KOF Ultimate Online\data\select.def"
+CHARS_DIR = r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo\chars"
+SELECT_DEF = r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo\data\select.def"
 
 def read_select_def():
     """Lit le select.def et extrait la liste des personnages"""
@@ -103,7 +103,7 @@ def main():
         print()
 
     # Sauvegarder un rapport
-    report_path = r"D:\KOF Ultimate Online\PORTRAIT_REPORT.txt"
+    report_path = r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo\PORTRAIT_REPORT.txt"
     with open(report_path, 'w', encoding='utf-8') as f:
         f.write("=== RAPPORT PORTRAITS KOF ULTIMATE ===\n\n")
         f.write(f"Total personnages: {len(chars)}\n")

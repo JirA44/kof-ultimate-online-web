@@ -18,7 +18,7 @@ class AIGamepadConfigurator:
     """IA qui configure automatiquement la manette"""
 
     def __init__(self):
-        self.config_path = Path("D:/KOF Ultimate Online/data/mugen.cfg")
+        self.config_path = Path("D:/KOF Ultimate Online kofuo/data/mugen.cfg")
         self.joystick = None
 
     def detect_gamepad(self):

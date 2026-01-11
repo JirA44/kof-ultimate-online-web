@@ -21,7 +21,7 @@ class GamepadNavigatorAI:
     """IA qui navigue dans le jeu avec la manette"""
 
     def __init__(self):
-        self.log_file = Path("D:/KOF Ultimate Online/ai_gamepad_navigation.log")
+        self.log_file = Path("D:/KOF Ultimate Online kofuo/ai_gamepad_navigation.log")
         self.joystick = None
         self.problems = []
         self.actions = []
@@ -240,7 +240,7 @@ class GamepadNavigatorAI:
             "problems": self.problems
         }
 
-        report_file = Path("D:/KOF Ultimate Online/ai_gamepad_report.json")
+        report_file = Path("D:/KOF Ultimate Online kofuo/ai_gamepad_report.json")
         with open(report_file, 'w', encoding='utf-8') as f:
             json.dump(report, f, indent=2, ensure_ascii=False)
 

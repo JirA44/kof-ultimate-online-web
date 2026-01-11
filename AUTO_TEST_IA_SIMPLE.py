@@ -14,8 +14,8 @@ from datetime import datetime
 import psutil
 
 # Configuration
-GAME_EXE = r"D:\KOF Ultimate Online\KOF_Ultimate_Online.exe"
-GAME_DIR = r"D:\KOF Ultimate Online"
+GAME_EXE = r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo\KOF_Ultimate_Online.exe"
+GAME_DIR = r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo"
 LOG_FILE = "auto_test_ia_simple.log"
 RESULTS_FILE = "test_ia_simple_results.json"
 COMBAT_DURATION = 45  # Durée avant de tuer le jeu

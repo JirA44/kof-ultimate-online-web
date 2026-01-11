@@ -13,7 +13,7 @@ class InstallationChecker:
     """IA qui vérifie l'intégralité de l'installation"""
 
     def __init__(self):
-        self.base_path = Path("D:/KOF Ultimate Online")
+        self.base_path = Path("D:/KOF Ultimate Online kofuo")
         self.problems = []
         self.warnings = []
         self.checks_passed = []

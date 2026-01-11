@@ -11,7 +11,7 @@ import re
 def analyze_select_def():
     """Analyse select.def pour compter les personnages et détecter les problèmes"""
 
-    select_file = Path(r"D:\KOF Ultimate Online\data\select.def")
+    select_file = Path(r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo\data\select.def")
 
     if not select_file.exists():
         print(f"❌ {select_file} n'existe pas!")
@@ -49,7 +49,7 @@ def analyze_select_def():
 def analyze_system_def():
     """Analyse system.def pour la configuration actuelle"""
 
-    system_file = Path(r"D:\KOF Ultimate Online\data\system.def")
+    system_file = Path(r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo\data\system.def")
 
     with open(system_file, 'r', encoding='utf-8', errors='ignore') as f:
         content = f.read()

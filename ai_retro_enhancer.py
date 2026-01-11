@@ -269,7 +269,7 @@ def print_header():
 def main():
     print_header()
 
-    base_dir = Path(r"D:\KOF Ultimate Online Online Online")
+    base_dir = Path(r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo")
     chars_dir = base_dir / "chars"
 
     if not chars_dir.exists():

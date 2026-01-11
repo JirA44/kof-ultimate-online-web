@@ -12,7 +12,7 @@ import psutil
 from pathlib import Path
 from datetime import datetime
 
-BASE_DIR = Path(r"D:\KOF Ultimate Online")
+BASE_DIR = Path(r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo")
 GAME_EXE = BASE_DIR / "Ikemen_GO.exe"
 DATA_DIR = BASE_DIR / "data"
 CHARS_DIR = BASE_DIR / "chars"

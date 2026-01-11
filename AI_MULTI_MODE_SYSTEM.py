@@ -394,7 +394,7 @@ def main():
     print("  🤖 SYSTÈME IA MULTI-MODES AUTONOME")
     print("="*60 + "\n")
 
-    game_dir = r"D:\KOF Ultimate Online"
+    game_dir = r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo"
 
     # Paramètres
     player_id = 1

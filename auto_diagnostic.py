@@ -7,7 +7,7 @@ import re
 from pathlib import Path
 
 class KOFDiagnostic:
-    def __init__(self, base_dir=r"D:\KOF Ultimate Online Online Online"):
+    def __init__(self, base_dir=r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo"):
         self.base_dir = Path(base_dir)
         self.errors = []
         self.warnings = []

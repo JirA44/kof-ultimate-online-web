@@ -19,7 +19,7 @@ import signal
 
 class AutoGameTester:
     def __init__(self):
-        self.base_path = Path(r"D:\KOF Ultimate Online")
+        self.base_path = Path(r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo")
         self.game_exe = self.base_path / "KOF_Ultimate_Online.exe"
 
         # Chercher l'exe

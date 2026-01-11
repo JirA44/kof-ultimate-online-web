@@ -11,7 +11,7 @@ from pathlib import Path
 
 class PortraitChecker:
     def __init__(self):
-        self.base_path = Path(r"D:\KOF Ultimate Online")
+        self.base_path = Path(r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo")
         self.chars_path = self.base_path / "chars"
         self.select_def = self.base_path / "data" / "select.def"
 

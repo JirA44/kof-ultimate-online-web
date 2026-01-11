@@ -19,7 +19,7 @@ class CharacterDashboard:
         self.root.geometry("1400x900")
         self.root.configure(bg='#0a0e27')
 
-        self.game_dir = Path(r"D:\KOF Ultimate Online Online Online")
+        self.game_dir = Path(r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo")
         self.chars_dir = self.game_dir / "chars"
         self.characters = []
 

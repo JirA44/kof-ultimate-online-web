@@ -1,969 +1,915 @@
-[14:45:11] [INFO] 
+[00:06:42] [INFO] 
 
 🎯 VÉRIFICATION EXÉCUTABLES
-[14:45:11] [INFO] ======================================================================
-[14:45:11] [INFO] ✅ KOF_Ultimate_Online.exe: Trouvé
-[14:45:11] [INFO] ✅ KOF_Ultimate_Online.exe: Trouvé
-[14:45:11] [INFO] ✅ KOF_Ultimate_Online.exe: Trouvé
-[14:45:11] [INFO] 
+[00:06:42] [INFO] ======================================================================
+[00:06:42] [INFO] ✅ KOF_Ultimate_Online.exe: Trouvé
+[00:06:42] [INFO] ✅ KOF_Ultimate_Online.exe: Trouvé
+[00:06:42] [INFO] ✅ KOF_Ultimate_Online.exe: Trouvé
+[00:06:42] [INFO] 
 ✓ Exécutable principal: KOF_Ultimate_Online.exe
-[14:45:11] [INFO] 
+[00:06:42] [INFO] 
 
 🎮 VÉRIFICATION CONFIGURATION MUGEN
-[14:45:11] [INFO] ======================================================================
-[14:45:11] [INFO] ✅ system.def: Présent
-[14:45:11] [INFO] ✅ select.def: Présent
-[14:45:11] [INFO]    📊 0 personnages configurés
-[14:45:11] [INFO] ✅ mugen.cfg: Présent
-[14:45:11] [INFO] 
+[00:06:42] [INFO] ======================================================================
+[00:06:42] [INFO] ✅ system.def: Présent
+[00:06:42] [INFO] ✅ select.def: Présent
+[00:06:42] [INFO]    📊 0 personnages configurés
+[00:06:42] [INFO] ✅ mugen.cfg: Présent
+[00:06:42] [INFO] 
 
 📦 VÉRIFICATION PACKAGES PYTHON
-[14:45:11] [INFO] ======================================================================
-[14:45:11] [INFO] ✅ tkinter: Installé
-[14:45:12] [INFO] ✅ pyautogui: Installé
-[14:45:12] [INFO] ✅ Pillow: Installé
-[14:45:12] [INFO] ✅ pywin32: Installé
-[14:45:12] [INFO] ✅ psutil: Installé
-[14:45:12] [INFO] 
+[00:06:42] [INFO] ======================================================================
+[00:06:42] [ERROR] ❌ tkinter: MANQUANT!
+[00:06:44] [INFO] ✅ pyautogui: Installé
+[00:06:44] [INFO] ✅ Pillow: Installé
+[00:06:44] [INFO] ✅ pywin32: Installé
+[00:06:44] [INFO] ✅ psutil: Installé
+[00:06:44] [INFO] 
+⚠️  Pour installer les packages manquants:
+[00:06:44] [INFO]    pip install tkinter
+[00:06:44] [INFO] 
 🔍 SCAN DE TOUS LES FICHIERS PYTHON
-[14:45:12] [INFO] ======================================================================
-[14:45:12] [INFO] 
-📁 103 fichiers Python trouvés
-[14:45:12] [INFO] 
-[14:45:12] [INFO] ⚠️  advanced_menu_tester.py: 3 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  ai_bug_diagnostic.py: 4 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  ai_gamepad_configurator.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  ai_gamepad_navigator.py: 1 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  ai_installation_checker.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ✅ ai_netplay_opponent.py: OK
-[14:45:12] [INFO] ⚠️  ai_player_system.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  ai_retro_enhancer.py: 4 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  ai_select_def_generator.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  ai_vs_ai_match.py: 5 erreur(s) détectée(s)
-[14:45:12] [INFO] ✅ AUTOCHECK_SYSTEM.py: OK
-[14:45:12] [INFO] ⚠️  auto_check_and_launch.py: 3 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  auto_clicker_kof.py: 3 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  AUTO_DETECT_FIX_ALL_ERRORS.py: 5 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  auto_diagnostic.py: 3 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  AUTO_FIX_CORRUPTED_FILES.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ✅ AUTO_FIX_ERRORS.py: OK
-[14:45:12] [INFO] ⚠️  AUTO_FIX_FROM_LOG.py: 3 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  AUTO_LAUNCHER.py: 1 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  auto_matchmaking_test.py: 1 erreur(s) détectée(s)
-[14:45:12] [INFO] ✅ auto_repair_system.py: OK
-[14:45:12] [INFO] ✅ auto_setup_complete.py: OK
-[14:45:12] [INFO] ⚠️  auto_test_infinite.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ✅ auto_test_system.py: OK
-[14:45:12] [INFO] ⚠️  AUTO_VALIDATOR_COMPLETE.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  character_balancer.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  character_dashboard.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  complete_diagnostic.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  COMPLETE_ERROR_REPORTER.py: 3 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  COMPLETE_GAME_TESTER.py: 3 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  configure_xbox_controller.py: 1 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  continuous_visual_tester.py: 4 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  create_menu_animation.py: 1 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  DEEP_ERROR_DETECTOR.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  dev_live_window.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  enhance_sprites_batch.py: 3 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  explore_all_with_ai.py: 3 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  fix_ai_control.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  FIX_ALL_AIR_ADVANCED.py: 3 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  FIX_ALL_AIR_CLSN.py: 3 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  fix_all_air_files.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  fix_all_animation_errors.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  fix_all_clsn_comprehensive.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  FIX_ALL_LAUNCHERS.py: 3 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  fix_all_visual.py: 3 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  fix_clsn_regroup_FINAL.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  fix_collision_spaces.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  FIX_CRITICAL_AIR_ERRORS.py: 3 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  fix_cursor_animations.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  FIX_DUPLICATE_PATHS_EMERGENCY.py: 3 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  fix_eve_air_complete.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ✅ FIX_EXE_NAMES.py: OK
-[14:45:12] [INFO] ⚠️  fix_game.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  fix_mugen_config.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  FIX_REMAINING_ERRORS.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  FIX_RUGAL_AIR.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  gamepad_auto_config.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  gamepad_hotplug_monitor.py: 1 erreur(s) détectée(s)
-[14:45:12] [INFO] ✅ gamepad_to_keyboard_mapper.py: OK
-[14:45:12] [INFO] ✅ game_monitor.py: OK
-[14:45:12] [INFO] ⚠️  generate_character_sheets.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ✅ generate_final_report.py: OK
-[14:45:12] [INFO] ⚠️  generate_fixed_visualizer.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ✅ generate_full_select.py: OK
-[14:45:12] [INFO] ⚠️  generate_select_def.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  graphics_launcher.py: 3 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  IA_EXPLORER.py: 3 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  ia_navigator_simple.py: 3 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  ia_test_all_chars.py: 3 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  integrate_backgrounds.py: 1 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  INTERACTIVE_LAUNCHER_TESTER.py: 3 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  launcher.py: 3 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  launcher_ai_navigator.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  launcher_auto_diagnostic.py: 4 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  LAUNCHER_ERROR_TESTER.py: 3 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  launcher_modern.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  LAUNCHER_ULTIMATE.py: 1 erreur(s) détectée(s)
-[14:45:12] [INFO] ✅ LAUNCHER_ULTIMATE_V2.py: OK
-[14:45:12] [INFO] ⚠️  launcher_windowed.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  launcher_with_profiles.py: 1 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  launch_with_gamepad_detection.py: 3 erreur(s) détectée(s)
-[14:45:12] [INFO] ✅ matchmaking_client.py: OK
-[14:45:12] [INFO] ✅ matchmaking_server.py: OK
-[14:45:12] [INFO] ⚠️  multiplayer_menu.py: 4 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  multiplayer_test_system.py: 3 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  online_bot_match_system.py: 3 erreur(s) détectée(s)
-[14:45:12] [INFO] ✅ online_multiplayer_menu.py: OK
-[14:45:12] [INFO] ⚠️  player_profile_system.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  prepare_chars_upload.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  realtime_error_monitor.py: 3 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  setup_ikemen_go.py: 6 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  simple_game_tester.py: 3 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  test_all_characters.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  test_all_launchers.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ✅ test_gamepad_interactive.py: OK
-[14:45:12] [INFO] ⚠️  test_gamepad_in_game.py: 1 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  test_gamepad_nav.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  test_title_animation.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  UNIVERSAL_ERROR_SCANNER.py: 2 erreur(s) détectée(s)
-[14:45:12] [INFO] ✅ verify_game.py: OK
-[14:45:12] [INFO] ⚠️  virtual_players_session.py: 6 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  visual_inspector.py: 3 erreur(s) détectée(s)
-[14:45:12] [INFO] ⚠️  visual_test_automated.py: 4 erreur(s) détectée(s)
-[14:45:12] [INFO] 
+[00:06:44] [INFO] ======================================================================
+[00:06:44] [INFO] 
+📁 253 fichiers Python trouvés
+[00:06:44] [INFO] 
+[00:06:44] [INFO] ⚠️  ACTIVATE_ALL_CHARS.py: 2 erreur(s) détectée(s)
+[00:06:44] [INFO] ✅ ADVANCED_CHAR_TESTER.py: OK
+[00:06:44] [INFO] ⚠️  advanced_menu_tester.py: 5 erreur(s) détectée(s)
+[00:06:44] [INFO] ⚠️  AI_AUTO_REPAIR_SYSTEM.py: 4 erreur(s) détectée(s)
+[00:06:44] [INFO] ⚠️  ai_bug_diagnostic.py: 7 erreur(s) détectée(s)
+[00:06:44] [INFO] ⚠️  ai_gamepad_configurator.py: 2 erreur(s) détectée(s)
+[00:06:44] [INFO] ⚠️  ai_gamepad_navigator.py: 1 erreur(s) détectée(s)
+[00:06:44] [INFO] ⚠️  ai_installation_checker.py: 2 erreur(s) détectée(s)
+[00:06:44] [INFO] ⚠️  AI_MULTI_MODE_SYSTEM.py: 2 erreur(s) détectée(s)
+[00:06:44] [INFO] ✅ ai_netplay_opponent.py: OK
+[00:06:44] [INFO] ⚠️  AI_PERMANENT_BUG_HUNTER.py: 1 erreur(s) détectée(s)
+[00:06:44] [INFO] ⚠️  ai_player_system.py: 2 erreur(s) détectée(s)
+[00:06:44] [INFO] ⚠️  AI_PLAYS_LIVE.py: 2 erreur(s) détectée(s)
+[00:06:44] [INFO] ⚠️  AI_PLAYS_SILENT.py: 2 erreur(s) détectée(s)
+[00:06:44] [INFO] ⚠️  ai_retro_enhancer.py: 6 erreur(s) détectée(s)
+[00:06:44] [INFO] ⚠️  ai_select_def_generator.py: 2 erreur(s) détectée(s)
+[00:06:44] [INFO] ⚠️  AI_TESTERS_ADVANCED.py: 1 erreur(s) détectée(s)
+[00:06:44] [INFO] ⚠️  ai_vs_ai_match.py: 7 erreur(s) détectée(s)
+[00:06:44] [INFO] ⚠️  ANALYZE_AND_FIX_ERRORS.py: 3 erreur(s) détectée(s)
+[00:06:44] [INFO] ⚠️  ANALYZE_CHAR_SELECT.py: 2 erreur(s) détectée(s)
+[00:06:44] [INFO] ✅ apply_mini_window_config.py: OK
+[00:06:44] [INFO] ⚠️  APPLY_OPTIMAL_CHAR_SELECT.py: 2 erreur(s) détectée(s)
+[00:06:44] [INFO] ✅ AUTOCHECK_SYSTEM.py: OK
+[00:06:44] [INFO] ✅ AUTONOMOUS_GAME_HEALER.py: OK
+[00:06:44] [INFO] ✅ AUTO_ACTIVATE_ALL_THEN_FIX.py: OK
+[00:06:45] [INFO] ⚠️  AUTO_BUG_DETECTOR.py: 2 erreur(s) détectée(s)
+[00:06:45] [INFO] ✅ AUTO_CALCULATE_GRID.py: OK
+[00:06:45] [INFO] ⚠️  AUTO_CAPTURE_STAGES.py: 3 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  AUTO_CLEAN_BROKEN_CONTENT.py: 1 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  auto_clicker_kof.py: 5 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  auto_combat_new_maps.py: 1 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  AUTO_DETECT_FIX_ALL_ERRORS.py: 9 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  auto_diagnostic.py: 5 erreur(s) détectée(s)
+[00:06:45] [INFO] ✅ AUTO_FIX_ALL.py: OK
+[00:06:45] [INFO] ⚠️  AUTO_FIX_ALL_AIR_ERRORS.py: 2 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  AUTO_FIX_ALL_ERRORS.py: 2 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  AUTO_FIX_ALL_ESPORT.py: 3 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  AUTO_FIX_CORRUPTED_FILES.py: 4 erreur(s) détectée(s)
+[00:06:45] [INFO] ✅ AUTO_FIX_ERRORS.py: OK
+[00:06:45] [INFO] ⚠️  AUTO_FIX_FROM_LOG.py: 5 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  AUTO_FIX_LOOP.py: 3 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  AUTO_FIX_MULTIPLAYER.py: 3 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  AUTO_FIX_PORTRAITS.py: 4 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  AUTO_FIX_VISUAL_BUGS.py: 2 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  auto_matchmaking_test.py: 1 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  AUTO_REPAIR_CHARACTERS_ADVANCED.py: 1 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  auto_repair_system.py: 2 erreur(s) détectée(s)
+[00:06:45] [INFO] ✅ auto_setup_complete.py: OK
+[00:06:45] [INFO] ⚠️  AUTO_TEST_ALL_CHARS.py: 3 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  AUTO_TEST_AND_FIX.py: 4 erreur(s) détectée(s)
+[00:06:45] [INFO] ✅ AUTO_TEST_CHARS.py: OK
+[00:06:45] [INFO] ⚠️  AUTO_TEST_COMBATS_CONTINU.py: 3 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  AUTO_TEST_IA_SIMPLE.py: 3 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  AUTO_TEST_IA_VS_IA.py: 4 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  auto_test_infinite.py: 4 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  AUTO_TEST_MINI_WINDOWS.py: 2 erreur(s) détectée(s)
+[00:06:45] [INFO] ✅ auto_test_system.py: OK
+[00:06:45] [INFO] ⚠️  AUTO_VALIDATOR_COMPLETE.py: 4 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  BATTLENET_CLIENT.py: 1 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  battlenet_interface.py: 1 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  battlenet_interface_FONCTIONNEL.py: 3 erreur(s) détectée(s)
+[00:06:45] [INFO] ✅ BATTLENET_SERVER.py: OK
+[00:06:45] [INFO] ⚠️  CAPTURE_MANQUANTS.py: 3 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  CAPTURE_STAGES_OBS.py: 4 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  character_balancer.py: 5 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  character_dashboard.py: 5 erreur(s) détectée(s)
+[00:06:45] [INFO] ✅ CHAR_VALIDATOR.py: OK
+[00:06:45] [INFO] ⚠️  CHECK_MISSING_PORTRAITS.py: 2 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  check_portraits.py: 2 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  COMBAT_CRASH_TESTER.py: 1 erreur(s) détectée(s)
+[00:06:45] [INFO] ✅ COMBAT_SIMULATOR.py: OK
+[00:06:45] [INFO] ⚠️  complete_diagnostic.py: 4 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  COMPLETE_ERROR_REPORTER.py: 5 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  COMPLETE_GAME_TESTER.py: 5 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  configure_xbox_controller.py: 1 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  continuous_visual_tester.py: 6 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  create_menu_animation.py: 1 erreur(s) détectée(s)
+[00:06:45] [INFO] ✅ CREATE_PACKAGE.py: OK
+[00:06:45] [INFO] ⚠️  CUSTOMIZE_THEME.py: 1 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  DEEP_ERROR_DETECTOR.py: 4 erreur(s) détectée(s)
+[00:06:45] [INFO] ⚠️  DEEP_FIX_CHARS.py: 1 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  DETECT_ALL_VISUAL_BUGS.py: 2 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  dev_live_window.py: 5 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  DIAGNOSE_AND_FIX_PORTRAITS.py: 3 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  DIAGNOSE_CRASH.py: 3 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  DIAGNOSE_MENU.py: 2 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  DIAGNOSTIC_CRASH_VS.py: 1 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  DIAGNOSTIC_JOUABILITE.py: 2 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  DIAGNOSTIC_PRO_COMPLET.py: 2 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  DIAGNOSTIC_RAPIDE.py: 1 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  DISABLE_MORE_CHARS.py: 2 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  enhance_sprites_batch.py: 5 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  ESPORT_QUALITY_MONITOR.py: 2 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  explore_all_with_ai.py: 5 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  extract_portraits_from_sff.py: 4 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  EXTRACT_SFF_IMAGES.py: 4 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  EXTRACT_STAGE_PREVIEWS.py: 2 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  FIND_ALL_ERRORS.py: 2 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  find_all_portraits.py: 2 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  FIND_AND_FIX_ALL_ERRORS.py: 2 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  find_bad_chars.py: 2 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  FIX_ADVANCED_CRASH.py: 2 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  FIX_AIR_ERRORS.py: 2 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  FIX_AI_AUTOPLAY.py: 2 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  fix_ai_control.py: 2 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  FIX_ALL_AIR_ADVANCED.py: 5 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  FIX_ALL_AIR_CLSN.py: 5 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  fix_all_air_files.py: 4 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  fix_all_animation_errors.py: 4 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  fix_all_chars.py: 1 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  FIX_ALL_CLSN_AND_STORYBOARDS.py: 3 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  FIX_ALL_CLSN_COMPLETE.py: 3 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  fix_all_clsn_comprehensive.py: 4 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  FIX_ALL_STAGES.py: 2 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  fix_all_visual.py: 5 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  fix_broken_chars.py: 1 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  FIX_CHARACTER_GRID.py: 1 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  FIX_CHARACTER_SELECT_LAYOUT.py: 3 erreur(s) détectée(s)
+[00:06:46] [INFO] ✅ fix_chars.py: OK
+[00:06:46] [INFO] ⚠️  fix_clsn_regroup_FINAL.py: 4 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  fix_clsn_zero.py: 2 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  fix_collision_spaces.py: 4 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  FIX_COMMON1_CNS.py: 3 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  FIX_CRASH_ON_LOAD.py: 2 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  FIX_CRASH_SELECT_DEF.py: 1 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  FIX_CRITICAL_AIR_ERRORS.py: 5 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  fix_cursor_animations.py: 4 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  FIX_DUPLICATE_PATHS_EMERGENCY.py: 6 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  fix_eve_air_complete.py: 4 erreur(s) détectée(s)
+[00:06:46] [INFO] ✅ FIX_EXE_NAMES.py: OK
+[00:06:46] [INFO] ✅ FIX_FLYAWAY.py: OK
+[00:06:46] [INFO] ⚠️  fix_game.py: 4 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  fix_ikemen_links.py: 3 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  FIX_MISSING_SFF_PATHS.py: 2 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  fix_mugen_config.py: 4 erreur(s) détectée(s)
+[00:06:46] [INFO] ✅ FIX_MULTIPLAYER.py: OK
+[00:06:46] [INFO] ⚠️  FIX_PORTRAITS_AND_ICONS.py: 1 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  FIX_PORTRAITS_AUTO.py: 2 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  fix_portraits_complete.py: 3 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  FIX_REMAINING_ERRORS.py: 4 erreur(s) détectée(s)
+[00:06:46] [INFO] ⚠️  FIX_RUGAL_AIR.py: 4 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  FIX_SELECT_INTELLIGENT.py: 2 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  FIX_SELECT_SCREEN_PORTRAITS.py: 4 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  force_mini_window_config.py: 2 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  full_audit.py: 1 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  full_player_experience_tester.py: 2 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  FULL_QA_TEST.py: 1 erreur(s) détectée(s)
+[00:06:47] [INFO] ✅ FULL_TEST.py: OK
+[00:06:47] [INFO] ⚠️  gamepad_auto_config.py: 2 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  gamepad_hotplug_monitor.py: 1 erreur(s) détectée(s)
+[00:06:47] [INFO] ✅ gamepad_to_keyboard_mapper.py: OK
+[00:06:47] [INFO] ✅ game_monitor.py: OK
+[00:06:47] [INFO] ⚠️  generate_character_sheets.py: 4 erreur(s) détectée(s)
+[00:06:47] [INFO] ✅ generate_final_report.py: OK
+[00:06:47] [INFO] ⚠️  generate_fixed_visualizer.py: 4 erreur(s) détectée(s)
+[00:06:47] [INFO] ✅ generate_full_select.py: OK
+[00:06:47] [INFO] ⚠️  GENERATE_PORTRAITS_FOR_ENCYCLOPEDIA.py: 2 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  generate_select_def.py: 4 erreur(s) détectée(s)
+[00:06:47] [INFO] ✅ GENERATE_ULTRA_STABLE.py: OK
+[00:06:47] [INFO] ⚠️  IA_EXPLORER.py: 5 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  ia_navigator_simple.py: 5 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  ia_test_all_chars.py: 5 erreur(s) détectée(s)
+[00:06:47] [INFO] ✅ IKEMEN_CHECKER.py: OK
+[00:06:47] [INFO] ⚠️  integrate_backgrounds.py: 1 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  KOFUO_LAUNCHER_ULTIMATE.py: 2 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  KOF_LAUNCHER.py: 1 erreur(s) détectée(s)
+[00:06:47] [INFO] ✅ KOF_SERVER.py: OK
+[00:06:47] [INFO] ⚠️  KOF_ULTIMATE_PRO_LAUNCHER.py: 1 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  launcher_auto_diagnostic.py: 2 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  LAUNCHER_DASHBOARD.py: 1 erreur(s) détectée(s)
+[00:06:47] [INFO] ✅ live_reporter.py: OK
+[00:06:47] [INFO] ⚠️  manage_missing_chars.py: 1 erreur(s) détectée(s)
+[00:06:47] [INFO] ✅ matchmaking_client.py: OK
+[00:06:47] [INFO] ⚠️  matchmaking_elo.py: 1 erreur(s) détectée(s)
+[00:06:47] [INFO] ✅ matchmaking_server.py: OK
+[00:06:47] [INFO] ⚠️  matchmaking_server_pro.py: 1 erreur(s) détectée(s)
+[00:06:47] [INFO] ✅ matchmaking_server_simulator.py: OK
+[00:06:47] [INFO] ✅ ml_continuous_improver.py: OK
+[00:06:47] [INFO] ✅ ml_improvement_system.py: OK
+[00:06:47] [INFO] ⚠️  mmr_leaderboard_system.py: 2 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  MONITEUR_TESTS_REALTIME.py: 1 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  multiplayer_menu.py: 5 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  multiplayer_test_system.py: 5 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  online_bot_match_system.py: 5 erreur(s) détectée(s)
+[00:06:47] [INFO] ✅ online_bridge.py: OK
+[00:06:47] [INFO] ⚠️  online_multiplayer_menu.py: 1 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  PLAYABILITY_TEST.py: 1 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  player_profile_system.py: 2 erreur(s) détectée(s)
+[00:06:47] [INFO] ✅ POWER_RANKING.py: OK
+[00:06:47] [INFO] ⚠️  prepare_chars_upload.py: 4 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  PROFILE_MANAGER.py: 3 erreur(s) détectée(s)
+[00:06:47] [INFO] ✅ QA_PROFESSIONAL_TESTER.py: OK
+[00:06:47] [INFO] ⚠️  realtime_error_monitor.py: 5 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  REALTIME_ERROR_MONITOR_AND_FIX.py: 2 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  REBUILD_SELECT.py: 1 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  REMOVE_BROKEN_PORTRAITS.py: 3 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  reorganize_launchers.py: 2 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  RUN_FULL_TEST.py: 2 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  SCAN_AND_FIX_CLSN_ERRORS.py: 2 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  SCREENSHOT_ALL_STAGES.py: 4 erreur(s) détectée(s)
+[00:06:47] [INFO] ✅ server_accounts.py: OK
+[00:06:47] [INFO] ⚠️  setup_ikemen_go.py: 2 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  simple_game_tester.py: 5 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  SIMULATEUR_JOUEURS_REELS.py: 1 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  sort_and_find_portraits.py: 2 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  STANDARDIZE_PORTRAITS.py: 4 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  team_matchmaking_system.py: 2 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  TEST_ALL_CHARACTERS.py: 3 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  TEST_ALL_CHARACTERS_VS.py: 3 erreur(s) détectée(s)
+[00:06:47] [INFO] ✅ test_all_modes.py: OK
+[00:06:47] [INFO] ✅ test_all_options.py: OK
+[00:06:47] [INFO] ⚠️  TEST_ANTI_CRASH.py: 2 erreur(s) détectée(s)
+[00:06:47] [INFO] ✅ TEST_AUTO_AVEC_FOCUS.py: OK
+[00:06:47] [INFO] ⚠️  TEST_AUTO_SANS_CLAVIER.py: 3 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  test_avec_screenshots.py: 1 erreur(s) détectée(s)
+[00:06:47] [INFO] ✅ test_chars_stability.py: OK
+[00:06:47] [INFO] ⚠️  TEST_COMPLET_JOUABILITE.py: 1 erreur(s) détectée(s)
+[00:06:47] [INFO] ✅ test_continu_autonome.py: OK
+[00:06:47] [INFO] ✅ test_gamepad_interactive.py: OK
+[00:06:47] [INFO] ⚠️  test_gamepad_in_game.py: 1 erreur(s) détectée(s)
+[00:06:47] [INFO] ✅ TEST_GAMEPAD_MENU_NAVIGATION.py: OK
+[00:06:47] [INFO] ⚠️  test_gamepad_nav.py: 4 erreur(s) détectée(s)
+[00:06:47] [INFO] ✅ TEST_GAMEPLAY_BUGS.py: OK
+[00:06:47] [INFO] ⚠️  TEST_GAMEPLAY_COMPLET.py: 2 erreur(s) détectée(s)
+[00:06:47] [INFO] ✅ test_input_injection.py: OK
+[00:06:47] [INFO] ⚠️  TEST_JOUEUR_DEBUTANT.py: 3 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  TEST_MANUAL_SIMPLE.py: 1 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  TEST_MANUEL_GUIDE.py: 1 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  TEST_MATCHMAKING_INTELLIGENT.py: 2 erreur(s) détectée(s)
+[00:06:47] [INFO] ✅ test_online_effective.py: OK
+[00:06:47] [INFO] ✅ test_online_lobby.py: OK
+[00:06:47] [INFO] ✅ test_online_options.py: OK
+[00:06:47] [INFO] ⚠️  TEST_QUICK_SAMPLE.py: 2 erreur(s) détectée(s)
+[00:06:47] [INFO] ✅ test_random_chars.py: OK
+[00:06:47] [INFO] ⚠️  test_random_fights.py: 3 erreur(s) détectée(s)
+[00:06:47] [INFO] ✅ TEST_RAPIDE_UN_JOUEUR.py: OK
+[00:06:47] [INFO] ⚠️  TEST_REAL_VS.py: 3 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  TEST_REPORT_GENERATOR.py: 3 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  test_title_animation.py: 4 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  TEST_VIRTUAL_PLAYER_QUICK.py: 3 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  train_ai_continuous.py: 2 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  UNIVERSAL_ERROR_SCANNER.py: 4 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  validate_all_chars.py: 1 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  VERIFIER_INSTALLATION.py: 2 erreur(s) détectée(s)
+[00:06:47] [INFO] ✅ verify_game.py: OK
+[00:06:47] [INFO] ⚠️  VERIFY_SELECT_SCREEN.py: 3 erreur(s) détectée(s)
+[00:06:47] [INFO] ✅ virtual_players_ai.py: OK
+[00:06:47] [INFO] ⚠️  VIRTUAL_PLAYERS_CONTINUOUS.py: 3 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  virtual_players_session.py: 5 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  visualiseur_rapports.py: 1 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  visual_inspector.py: 6 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  VISUAL_SELECT_SCREEN_CHECKER.py: 2 erreur(s) détectée(s)
+[00:06:47] [INFO] ⚠️  visual_test_automated.py: 6 erreur(s) détectée(s)
+[00:06:47] [INFO] 
 
 🔧 CORRECTION AUTOMATIQUE DES ERREURS
-[14:45:12] [INFO] ======================================================================
-[14:45:12] [INFO] 
+[00:06:47] [INFO] ======================================================================
+[00:06:47] [INFO] 
+📝 Correction: ACTIVATE_ALL_CHARS.py
+[00:06:47] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:47] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:47] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:47] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:47] [INFO]   📝 Fichier modifié: ACTIVATE_ALL_CHARS.py
+[00:06:47] [INFO] 
 📝 Correction: advanced_menu_tester.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: advanced_menu_tester.py
-[14:45:12] [INFO] 
+[00:06:47] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online Online Online → D:\KOF Ultimate Online kofuo
+[00:06:47] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:47] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:47] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:47] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:47] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:47] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:47] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:47] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:47] [INFO]   📝 Fichier modifié: advanced_menu_tester.py
+[00:06:47] [INFO] 
+📝 Correction: AI_AUTO_REPAIR_SYSTEM.py
+[00:06:47] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:47] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:47] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:47] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:47] [INFO]   📝 Fichier modifié: AI_AUTO_REPAIR_SYSTEM.py
+[00:06:47] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:47] [INFO]      • 5 blocs except trop larges
+[00:06:47] [INFO]        → Spécifier les exceptions à capturer
+[00:06:47] [INFO] 
 📝 Correction: ai_bug_diagnostic.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: ai_bug_diagnostic.py
-[14:45:12] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:12] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:12] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:12] [INFO] 
+[00:06:47] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online Online Online Online → D:\KOF Ultimate Online kofuo
+[00:06:47] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online kofuo
+[00:06:47] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:47] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:47] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online kofuo
+[00:06:47] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:47] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [ERROR] ❌ Erreur correction ai_bug_diagnostic.py: [Errno 22] Invalid argument
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • input() peut bloquer l'exécution automatique
+[00:06:48] [INFO]        → Remplacer par une alternative non-bloquante
+[00:06:48] [INFO] 
 📝 Correction: ai_gamepad_configurator.py
-[14:45:12] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online
-[14:45:12] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:12] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:12] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:12] [INFO] 
+[00:06:48] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: ai_gamepad_configurator.py
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • input() peut bloquer l'exécution automatique
+[00:06:48] [INFO]        → Remplacer par une alternative non-bloquante
+[00:06:48] [INFO] 
 📝 Correction: ai_gamepad_navigator.py
-[14:45:12] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online
-[14:45:12] [INFO] 
+[00:06:48] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: ai_gamepad_navigator.py
+[00:06:48] [INFO] 
 📝 Correction: ai_installation_checker.py
-[14:45:12] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online
-[14:45:12] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:12] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:12] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:12] [INFO] 
+[00:06:48] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: ai_installation_checker.py
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • input() peut bloquer l'exécution automatique
+[00:06:48] [INFO]        → Remplacer par une alternative non-bloquante
+[00:06:48] [INFO] 
+📝 Correction: AI_MULTI_MODE_SYSTEM.py
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: AI_MULTI_MODE_SYSTEM.py
+[00:06:48] [INFO] 
+📝 Correction: AI_PERMANENT_BUG_HUNTER.py
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • Exécutable introuvable: mugen.exe
+[00:06:48] [INFO]        → Vérifier le chemin ou télécharger le fichier
+[00:06:48] [INFO] 
 📝 Correction: ai_player_system.py
-[14:45:12] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:12] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:12] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:12] [INFO] 
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • input() peut bloquer l'exécution automatique
+[00:06:48] [INFO]        → Remplacer par une alternative non-bloquante
+[00:06:48] [INFO] 
+📝 Correction: AI_PLAYS_LIVE.py
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: AI_PLAYS_LIVE.py
+[00:06:48] [INFO] 
+📝 Correction: AI_PLAYS_SILENT.py
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: AI_PLAYS_SILENT.py
+[00:06:48] [INFO] 
 📝 Correction: ai_retro_enhancer.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: ai_retro_enhancer.py
-[14:45:12] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:12] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:12] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:12] [INFO] 
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online Online Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: ai_retro_enhancer.py
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • input() peut bloquer l'exécution automatique
+[00:06:48] [INFO]        → Remplacer par une alternative non-bloquante
+[00:06:48] [INFO] 
 📝 Correction: ai_select_def_generator.py
-[14:45:12] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online
-[14:45:12] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:12] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:12] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:12] [INFO] 
+[00:06:48] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: ai_select_def_generator.py
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • input() peut bloquer l'exécution automatique
+[00:06:48] [INFO]        → Remplacer par une alternative non-bloquante
+[00:06:48] [INFO] 
+📝 Correction: AI_TESTERS_ADVANCED.py
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • Exécutable introuvable: mugen.exe
+[00:06:48] [INFO]        → Vérifier le chemin ou télécharger le fichier
+[00:06:48] [INFO] 
 📝 Correction: ai_vs_ai_match.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: ai_vs_ai_match.py
-[14:45:12] [INFO]   ⚠️  2 erreur(s) nécessitent une correction manuelle:
-[14:45:12] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:12] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:12] [INFO]      • 7 blocs except trop larges
-[14:45:12] [INFO]        → Spécifier les exceptions à capturer
-[14:45:12] [INFO] 
-📝 Correction: auto_check_and_launch.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: auto_check_and_launch.py
-[14:45:12] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:12] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:12] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:12] [INFO] 
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online Online Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: ai_vs_ai_match.py
+[00:06:48] [INFO]   ⚠️  2 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • input() peut bloquer l'exécution automatique
+[00:06:48] [INFO]        → Remplacer par une alternative non-bloquante
+[00:06:48] [INFO]      • 7 blocs except trop larges
+[00:06:48] [INFO]        → Spécifier les exceptions à capturer
+[00:06:48] [INFO] 
+📝 Correction: ANALYZE_AND_FIX_ERRORS.py
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: ANALYZE_AND_FIX_ERRORS.py
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • input() peut bloquer l'exécution automatique
+[00:06:48] [INFO]        → Remplacer par une alternative non-bloquante
+[00:06:48] [INFO] 
+📝 Correction: ANALYZE_CHAR_SELECT.py
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: ANALYZE_CHAR_SELECT.py
+[00:06:48] [INFO] 
+📝 Correction: APPLY_OPTIMAL_CHAR_SELECT.py
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [ERROR] ❌ Erreur correction APPLY_OPTIMAL_CHAR_SELECT.py: [Errno 22] Invalid argument
+[00:06:48] [INFO] 
+📝 Correction: AUTO_BUG_DETECTOR.py
+[00:06:48] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: AUTO_BUG_DETECTOR.py
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • 5 blocs except trop larges
+[00:06:48] [INFO]        → Spécifier les exceptions à capturer
+[00:06:48] [INFO] 
+📝 Correction: AUTO_CAPTURE_STAGES.py
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: AUTO_CAPTURE_STAGES.py
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • input() peut bloquer l'exécution automatique
+[00:06:48] [INFO]        → Remplacer par une alternative non-bloquante
+[00:06:48] [INFO] 
+📝 Correction: AUTO_CLEAN_BROKEN_CONTENT.py
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • input() peut bloquer l'exécution automatique
+[00:06:48] [INFO]        → Remplacer par une alternative non-bloquante
+[00:06:48] [INFO] 
 📝 Correction: auto_clicker_kof.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: auto_clicker_kof.py
-[14:45:12] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:12] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:12] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:12] [INFO] 
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online Online Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: auto_clicker_kof.py
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • input() peut bloquer l'exécution automatique
+[00:06:48] [INFO]        → Remplacer par une alternative non-bloquante
+[00:06:48] [INFO] 
+📝 Correction: auto_combat_new_maps.py
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • input() peut bloquer l'exécution automatique
+[00:06:48] [INFO]        → Remplacer par une alternative non-bloquante
+[00:06:48] [INFO] 
 📝 Correction: AUTO_DETECT_FIX_ALL_ERRORS.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: AUTO_DETECT_FIX_ALL_ERRORS.py
-[14:45:12] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:12] [INFO]      • 4 blocs except trop larges
-[14:45:12] [INFO]        → Spécifier les exceptions à capturer
-[14:45:12] [INFO] 
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online Online Online Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online Online Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: AUTO_DETECT_FIX_ALL_ERRORS.py
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • 4 blocs except trop larges
+[00:06:48] [INFO]        → Spécifier les exceptions à capturer
+[00:06:48] [INFO] 
 📝 Correction: auto_diagnostic.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: auto_diagnostic.py
-[14:45:12] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:12] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:12] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:12] [INFO] 
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online Online Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: auto_diagnostic.py
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • input() peut bloquer l'exécution automatique
+[00:06:48] [INFO]        → Remplacer par une alternative non-bloquante
+[00:06:48] [INFO] 
+📝 Correction: AUTO_FIX_ALL_AIR_ERRORS.py
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: AUTO_FIX_ALL_AIR_ERRORS.py
+[00:06:48] [INFO] 
+📝 Correction: AUTO_FIX_ALL_ERRORS.py
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: AUTO_FIX_ALL_ERRORS.py
+[00:06:48] [INFO] 
+📝 Correction: AUTO_FIX_ALL_ESPORT.py
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: AUTO_FIX_ALL_ESPORT.py
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • input() peut bloquer l'exécution automatique
+[00:06:48] [INFO]        → Remplacer par une alternative non-bloquante
+[00:06:48] [INFO] 
 📝 Correction: AUTO_FIX_CORRUPTED_FILES.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: AUTO_FIX_CORRUPTED_FILES.py
-[14:45:12] [INFO] 
+[00:06:48] [ERROR] ❌ Erreur correction AUTO_FIX_CORRUPTED_FILES.py: [Errno 22] Invalid argument
+[00:06:48] [INFO] 
 📝 Correction: AUTO_FIX_FROM_LOG.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: AUTO_FIX_FROM_LOG.py
-[14:45:12] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:12] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:12] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:12] [INFO] 
-📝 Correction: AUTO_LAUNCHER.py
-[14:45:12] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:12] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:12] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:12] [INFO] 
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online Online Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: AUTO_FIX_FROM_LOG.py
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • input() peut bloquer l'exécution automatique
+[00:06:48] [INFO]        → Remplacer par une alternative non-bloquante
+[00:06:48] [INFO] 
+📝 Correction: AUTO_FIX_LOOP.py
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: AUTO_FIX_LOOP.py
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • input() peut bloquer l'exécution automatique
+[00:06:48] [INFO]        → Remplacer par une alternative non-bloquante
+[00:06:48] [INFO] 
+📝 Correction: AUTO_FIX_MULTIPLAYER.py
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: AUTO_FIX_MULTIPLAYER.py
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • input() peut bloquer l'exécution automatique
+[00:06:48] [INFO]        → Remplacer par une alternative non-bloquante
+[00:06:48] [INFO] 
+📝 Correction: AUTO_FIX_PORTRAITS.py
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: AUTO_FIX_PORTRAITS.py
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • input() peut bloquer l'exécution automatique
+[00:06:48] [INFO]        → Remplacer par une alternative non-bloquante
+[00:06:48] [INFO] 
+📝 Correction: AUTO_FIX_VISUAL_BUGS.py
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: AUTO_FIX_VISUAL_BUGS.py
+[00:06:48] [INFO] 
 📝 Correction: auto_matchmaking_test.py
-[14:45:12] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:12] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:12] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:12] [INFO] 
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • input() peut bloquer l'exécution automatique
+[00:06:48] [INFO]        → Remplacer par une alternative non-bloquante
+[00:06:48] [INFO] 
+📝 Correction: AUTO_REPAIR_CHARACTERS_ADVANCED.py
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • input() peut bloquer l'exécution automatique
+[00:06:48] [INFO]        → Remplacer par une alternative non-bloquante
+[00:06:48] [INFO] 
+📝 Correction: auto_repair_system.py
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: auto_repair_system.py
+[00:06:48] [INFO] 
+📝 Correction: AUTO_TEST_ALL_CHARS.py
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: AUTO_TEST_ALL_CHARS.py
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • input() peut bloquer l'exécution automatique
+[00:06:48] [INFO]        → Remplacer par une alternative non-bloquante
+[00:06:48] [INFO] 
+📝 Correction: AUTO_TEST_AND_FIX.py
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: AUTO_TEST_AND_FIX.py
+[00:06:48] [INFO]   ⚠️  2 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • Exécutable introuvable: *.exe
+[00:06:48] [INFO]        → Vérifier le chemin ou télécharger le fichier
+[00:06:48] [INFO]      • input() peut bloquer l'exécution automatique
+[00:06:48] [INFO]        → Remplacer par une alternative non-bloquante
+[00:06:48] [INFO] 
+📝 Correction: AUTO_TEST_COMBATS_CONTINU.py
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: AUTO_TEST_COMBATS_CONTINU.py
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • Exécutable introuvable: D:\KOF Ultimate Online\KOF_Ultimate_Online.exe
+[00:06:48] [INFO]        → Vérifier le chemin ou télécharger le fichier
+[00:06:48] [INFO] 
+📝 Correction: AUTO_TEST_IA_SIMPLE.py
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: AUTO_TEST_IA_SIMPLE.py
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • Exécutable introuvable: D:\KOF Ultimate Online\KOF_Ultimate_Online.exe
+[00:06:48] [INFO]        → Vérifier le chemin ou télécharger le fichier
+[00:06:48] [INFO] 
+📝 Correction: AUTO_TEST_IA_VS_IA.py
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [ERROR] ❌ Erreur correction AUTO_TEST_IA_VS_IA.py: [Errno 22] Invalid argument
+[00:06:48] [INFO]   ⚠️  2 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • Exécutable introuvable: D:\KOF Ultimate Online\KOF_Ultimate_Online.exe
+[00:06:48] [INFO]        → Vérifier le chemin ou télécharger le fichier
+[00:06:48] [INFO]      • Exécutable introuvable: mugen.exe
+[00:06:48] [INFO]        → Vérifier le chemin ou télécharger le fichier
+[00:06:48] [INFO] 
 📝 Correction: auto_test_infinite.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: auto_test_infinite.py
-[14:45:12] [INFO] 
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online Online Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: auto_test_infinite.py
+[00:06:48] [INFO] 
+📝 Correction: AUTO_TEST_MINI_WINDOWS.py
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: AUTO_TEST_MINI_WINDOWS.py
+[00:06:48] [INFO] 
 📝 Correction: AUTO_VALIDATOR_COMPLETE.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: AUTO_VALIDATOR_COMPLETE.py
-[14:45:12] [INFO] 
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online Online Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: AUTO_VALIDATOR_COMPLETE.py
+[00:06:48] [INFO] 
+📝 Correction: BATTLENET_CLIENT.py
+[00:06:48] [INFO] 
+📝 Correction: battlenet_interface.py
+[00:06:48] [INFO] 
+📝 Correction: battlenet_interface_FONCTIONNEL.py
+[00:06:48] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: battlenet_interface_FONCTIONNEL.py
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • Exécutable introuvable: D:/KOF Ultimate Online/KOF_Ultimate_Online.exe
+[00:06:48] [INFO]        → Vérifier le chemin ou télécharger le fichier
+[00:06:48] [INFO] 
+📝 Correction: CAPTURE_MANQUANTS.py
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: CAPTURE_MANQUANTS.py
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • input() peut bloquer l'exécution automatique
+[00:06:48] [INFO]        → Remplacer par une alternative non-bloquante
+[00:06:48] [INFO] 
+📝 Correction: CAPTURE_STAGES_OBS.py
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: CAPTURE_STAGES_OBS.py
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • input() peut bloquer l'exécution automatique
+[00:06:48] [INFO]        → Remplacer par une alternative non-bloquante
+[00:06:48] [INFO] 
 📝 Correction: character_balancer.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: character_balancer.py
-[14:45:12] [INFO] 
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online Online Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: character_balancer.py
+[00:06:48] [INFO] 
 📝 Correction: character_dashboard.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: character_dashboard.py
-[14:45:12] [INFO] 
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online Online Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: character_dashboard.py
+[00:06:48] [INFO] 
+📝 Correction: CHECK_MISSING_PORTRAITS.py
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: CHECK_MISSING_PORTRAITS.py
+[00:06:48] [INFO] 
+📝 Correction: check_portraits.py
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: check_portraits.py
+[00:06:48] [INFO] 
+📝 Correction: COMBAT_CRASH_TESTER.py
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • input() peut bloquer l'exécution automatique
+[00:06:48] [INFO]        → Remplacer par une alternative non-bloquante
+[00:06:48] [INFO] 
 📝 Correction: complete_diagnostic.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: complete_diagnostic.py
-[14:45:12] [INFO] 
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online Online Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [ERROR] ❌ Erreur correction complete_diagnostic.py: [Errno 22] Invalid argument
+[00:06:48] [INFO] 
 📝 Correction: COMPLETE_ERROR_REPORTER.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: COMPLETE_ERROR_REPORTER.py
-[14:45:12] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:12] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:12] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:12] [INFO] 
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online Online Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: COMPLETE_ERROR_REPORTER.py
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • input() peut bloquer l'exécution automatique
+[00:06:48] [INFO]        → Remplacer par une alternative non-bloquante
+[00:06:48] [INFO] 
 📝 Correction: COMPLETE_GAME_TESTER.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: COMPLETE_GAME_TESTER.py
-[14:45:12] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:12] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:12] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:12] [INFO] 
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online Online Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: COMPLETE_GAME_TESTER.py
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • input() peut bloquer l'exécution automatique
+[00:06:48] [INFO]        → Remplacer par une alternative non-bloquante
+[00:06:48] [INFO] 
 📝 Correction: configure_xbox_controller.py
-[14:45:12] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online
-[14:45:12] [INFO] 
+[00:06:48] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: configure_xbox_controller.py
+[00:06:48] [INFO] 
 📝 Correction: continuous_visual_tester.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: continuous_visual_tester.py
-[14:45:12] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:12] [INFO]      • 4 blocs except trop larges
-[14:45:12] [INFO]        → Spécifier les exceptions à capturer
-[14:45:12] [INFO] 
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online Online Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: continuous_visual_tester.py
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • 4 blocs except trop larges
+[00:06:48] [INFO]        → Spécifier les exceptions à capturer
+[00:06:48] [INFO] 
 📝 Correction: create_menu_animation.py
-[14:45:12] [INFO] 
+[00:06:48] [INFO] 
+📝 Correction: CUSTOMIZE_THEME.py
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • input() peut bloquer l'exécution automatique
+[00:06:48] [INFO]        → Remplacer par une alternative non-bloquante
+[00:06:48] [INFO] 
 📝 Correction: DEEP_ERROR_DETECTOR.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: DEEP_ERROR_DETECTOR.py
-[14:45:12] [INFO] 
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online Online Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: DEEP_ERROR_DETECTOR.py
+[00:06:48] [INFO] 
+📝 Correction: DEEP_FIX_CHARS.py
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • 9 blocs except trop larges
+[00:06:48] [INFO]        → Spécifier les exceptions à capturer
+[00:06:48] [INFO] 
+📝 Correction: DETECT_ALL_VISUAL_BUGS.py
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: DETECT_ALL_VISUAL_BUGS.py
+[00:06:48] [INFO] 
 📝 Correction: dev_live_window.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: dev_live_window.py
-[14:45:12] [INFO] 
-📝 Correction: enhance_sprites_batch.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: enhance_sprites_batch.py
-[14:45:12] [INFO] 
-📝 Correction: explore_all_with_ai.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: explore_all_with_ai.py
-[14:45:12] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:12] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:12] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:12] [INFO] 
-📝 Correction: fix_ai_control.py
-[14:45:12] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online
-[14:45:12] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:12] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:12] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:12] [INFO] 
-📝 Correction: FIX_ALL_AIR_ADVANCED.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: FIX_ALL_AIR_ADVANCED.py
-[14:45:12] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:12] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:12] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:12] [INFO] 
-📝 Correction: FIX_ALL_AIR_CLSN.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: FIX_ALL_AIR_CLSN.py
-[14:45:12] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:12] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:12] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:12] [INFO] 
-📝 Correction: fix_all_air_files.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: fix_all_air_files.py
-[14:45:12] [INFO] 
-📝 Correction: fix_all_animation_errors.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: fix_all_animation_errors.py
-[14:45:12] [INFO] 
-📝 Correction: fix_all_clsn_comprehensive.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: fix_all_clsn_comprehensive.py
-[14:45:12] [INFO] 
-📝 Correction: FIX_ALL_LAUNCHERS.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: FIX_ALL_LAUNCHERS.py
-[14:45:12] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:12] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:12] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:12] [INFO] 
-📝 Correction: fix_all_visual.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: fix_all_visual.py
-[14:45:12] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:12] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:12] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:12] [INFO] 
-📝 Correction: fix_clsn_regroup_FINAL.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: fix_clsn_regroup_FINAL.py
-[14:45:12] [INFO] 
-📝 Correction: fix_collision_spaces.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: fix_collision_spaces.py
-[14:45:12] [INFO] 
-📝 Correction: FIX_CRITICAL_AIR_ERRORS.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: FIX_CRITICAL_AIR_ERRORS.py
-[14:45:12] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:12] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:12] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:12] [INFO] 
-📝 Correction: fix_cursor_animations.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: fix_cursor_animations.py
-[14:45:12] [INFO] 
-📝 Correction: FIX_DUPLICATE_PATHS_EMERGENCY.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: FIX_DUPLICATE_PATHS_EMERGENCY.py
-[14:45:12] [INFO] 
-📝 Correction: fix_eve_air_complete.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: fix_eve_air_complete.py
-[14:45:12] [INFO] 
-📝 Correction: fix_game.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: fix_game.py
-[14:45:12] [INFO] 
-📝 Correction: fix_mugen_config.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: fix_mugen_config.py
-[14:45:12] [INFO] 
-📝 Correction: FIX_REMAINING_ERRORS.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: FIX_REMAINING_ERRORS.py
-[14:45:12] [INFO] 
-📝 Correction: FIX_RUGAL_AIR.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: FIX_RUGAL_AIR.py
-[14:45:12] [INFO] 
-📝 Correction: gamepad_auto_config.py
-[14:45:12] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online
-[14:45:12] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:12] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:12] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:12] [INFO] 
-📝 Correction: gamepad_hotplug_monitor.py
-[14:45:12] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online
-[14:45:12] [INFO] 
-📝 Correction: generate_character_sheets.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: generate_character_sheets.py
-[14:45:12] [INFO] 
-📝 Correction: generate_fixed_visualizer.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: generate_fixed_visualizer.py
-[14:45:12] [INFO] 
-📝 Correction: generate_select_def.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: generate_select_def.py
-[14:45:12] [INFO] 
-📝 Correction: graphics_launcher.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: graphics_launcher.py
-[14:45:12] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:12] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:12] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:12] [INFO] 
-📝 Correction: IA_EXPLORER.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: IA_EXPLORER.py
-[14:45:12] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:12] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:12] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:12] [INFO] 
-📝 Correction: ia_navigator_simple.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: ia_navigator_simple.py
-[14:45:12] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:12] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:12] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:12] [INFO] 
-📝 Correction: ia_test_all_chars.py
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:12] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:12] [INFO]   📝 Fichier modifié: ia_test_all_chars.py
-[14:45:12] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:12] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:12] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:12] [INFO] 
-📝 Correction: integrate_backgrounds.py
-[14:45:13] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online
-[14:45:13] [INFO] 
-📝 Correction: INTERACTIVE_LAUNCHER_TESTER.py
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   📝 Fichier modifié: INTERACTIVE_LAUNCHER_TESTER.py
-[14:45:13] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:13] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:13] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:13] [INFO] 
-📝 Correction: launcher.py
-[14:45:13] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online
-[14:45:13] [INFO]   ⚠️  2 erreur(s) nécessitent une correction manuelle:
-[14:45:13] [INFO]      • Exécutable introuvable: D:/KOF Ultimate Online/Ikemen_GO.exe
-[14:45:13] [INFO]        → Vérifier le chemin ou télécharger le fichier
-[14:45:13] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:13] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:13] [INFO] 
-📝 Correction: launcher_ai_navigator.py
-[14:45:13] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online
-[14:45:13] [INFO] 
-📝 Correction: launcher_auto_diagnostic.py
-[14:45:13] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online
-[14:45:13] [INFO]   ⚠️  3 erreur(s) nécessitent une correction manuelle:
-[14:45:13] [INFO]      • Exécutable introuvable: Ikemen_GO.exe
-[14:45:13] [INFO]        → Vérifier le chemin ou télécharger le fichier
-[14:45:13] [INFO]      • Exécutable introuvable: Ikemen_GO.exe
-[14:45:13] [INFO]        → Vérifier le chemin ou télécharger le fichier
-[14:45:13] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:13] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:13] [INFO] 
-📝 Correction: LAUNCHER_ERROR_TESTER.py
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   📝 Fichier modifié: LAUNCHER_ERROR_TESTER.py
-[14:45:13] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:13] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:13] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:13] [INFO] 
-📝 Correction: launcher_modern.py
-[14:45:13] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:13] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:13] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:13] [INFO] 
-📝 Correction: LAUNCHER_ULTIMATE.py
-[14:45:13] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:13] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:13] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:13] [INFO] 
-📝 Correction: launcher_windowed.py
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   📝 Fichier modifié: launcher_windowed.py
-[14:45:13] [INFO] 
-📝 Correction: launcher_with_profiles.py
-[14:45:13] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online
-[14:45:13] [INFO] 
-📝 Correction: launch_with_gamepad_detection.py
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   📝 Fichier modifié: launch_with_gamepad_detection.py
-[14:45:13] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:13] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:13] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:13] [INFO] 
-📝 Correction: multiplayer_menu.py
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   📝 Fichier modifié: multiplayer_menu.py
-[14:45:13] [INFO]   ⚠️  2 erreur(s) nécessitent une correction manuelle:
-[14:45:13] [INFO]      • Exécutable introuvable: Ikemen_GO.exe
-[14:45:13] [INFO]        → Vérifier le chemin ou télécharger le fichier
-[14:45:13] [INFO]      • Exécutable introuvable: Ikemen_GO.exe
-[14:45:13] [INFO]        → Vérifier le chemin ou télécharger le fichier
-[14:45:13] [INFO] 
-📝 Correction: multiplayer_test_system.py
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   📝 Fichier modifié: multiplayer_test_system.py
-[14:45:13] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:13] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:13] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:13] [INFO] 
-📝 Correction: online_bot_match_system.py
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   📝 Fichier modifié: online_bot_match_system.py
-[14:45:13] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:13] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:13] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:13] [INFO] 
-📝 Correction: player_profile_system.py
-[14:45:13] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online
-[14:45:13] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:13] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:13] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:13] [INFO] 
-📝 Correction: prepare_chars_upload.py
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   📝 Fichier modifié: prepare_chars_upload.py
-[14:45:13] [INFO] 
-📝 Correction: realtime_error_monitor.py
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   📝 Fichier modifié: realtime_error_monitor.py
-[14:45:13] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:13] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:13] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:13] [INFO] 
-📝 Correction: setup_ikemen_go.py
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   📝 Fichier modifié: setup_ikemen_go.py
-[14:45:13] [INFO]   ⚠️  4 erreur(s) nécessitent une correction manuelle:
-[14:45:13] [INFO]      • Exécutable introuvable: Ikemen_GO.exe
-[14:45:13] [INFO]        → Vérifier le chemin ou télécharger le fichier
-[14:45:13] [INFO]      • Exécutable introuvable: Ikemen_GO.exe
-[14:45:13] [INFO]        → Vérifier le chemin ou télécharger le fichier
-[14:45:13] [INFO]      • Exécutable introuvable: Ikemen_GO.exe
-[14:45:13] [INFO]        → Vérifier le chemin ou télécharger le fichier
-[14:45:13] [INFO]      • Exécutable introuvable: Ikemen_GO.exe
-[14:45:13] [INFO]        → Vérifier le chemin ou télécharger le fichier
-[14:45:13] [INFO] 
-📝 Correction: simple_game_tester.py
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   📝 Fichier modifié: simple_game_tester.py
-[14:45:13] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:13] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:13] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:13] [INFO] 
-📝 Correction: test_all_characters.py
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   📝 Fichier modifié: test_all_characters.py
-[14:45:13] [INFO] 
-📝 Correction: test_all_launchers.py
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   📝 Fichier modifié: test_all_launchers.py
-[14:45:13] [INFO] 
-📝 Correction: test_gamepad_in_game.py
-[14:45:13] [INFO]   ✓ Corrigé: D:/KOF Ultimate Online → D:/KOF Ultimate Online
-[14:45:13] [INFO] 
-📝 Correction: test_gamepad_nav.py
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   📝 Fichier modifié: test_gamepad_nav.py
-[14:45:13] [INFO] 
-📝 Correction: test_title_animation.py
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   📝 Fichier modifié: test_title_animation.py
-[14:45:13] [INFO] 
-📝 Correction: UNIVERSAL_ERROR_SCANNER.py
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   📝 Fichier modifié: UNIVERSAL_ERROR_SCANNER.py
-[14:45:13] [INFO] 
-📝 Correction: virtual_players_session.py
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   📝 Fichier modifié: virtual_players_session.py
-[14:45:13] [INFO]   ⚠️  3 erreur(s) nécessitent une correction manuelle:
-[14:45:13] [INFO]      • Exécutable introuvable: Ikemen_GO.exe
-[14:45:13] [INFO]        → Vérifier le chemin ou télécharger le fichier
-[14:45:13] [INFO]      • input() peut bloquer l'exécution automatique
-[14:45:13] [INFO]        → Remplacer par une alternative non-bloquante
-[14:45:13] [INFO]      • 6 blocs except trop larges
-[14:45:13] [INFO]        → Spécifier les exceptions à capturer
-[14:45:13] [INFO] 
-📝 Correction: visual_inspector.py
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   📝 Fichier modifié: visual_inspector.py
-[14:45:13] [INFO] 
-📝 Correction: visual_test_automated.py
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online
-[14:45:13] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online
-[14:45:13] [INFO]   📝 Fichier modifié: visual_test_automated.py
-[14:45:13] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
-[14:45:13] [INFO]      • 4 blocs except trop larges
-[14:45:13] [INFO]        → Spécifier les exceptions à capturer
-[14:45:13] [INFO] 
-
-📦 INSTALLATION PACKAGES MANQUANTS
-[14:45:13] [INFO] ======================================================================
-[14:45:13] [INFO] ✅ Tous les packages sont déjà installés!
-[14:45:13] [INFO] 
-
-======================================================================
-[14:45:13] [INFO] 📊 RAPPORT FINAL
-[14:45:13] [INFO] ======================================================================
-[14:45:13] [INFO] 
-📁 Fichiers scannés: 103
-[14:45:13] [INFO] 🔧 Fichiers corrigés: 65
-[14:45:13] [INFO] ⚠️  Erreurs détectées: 216
-[14:45:13] [INFO] ✅ Corrections appliquées: 83
-[14:45:13] [INFO] 
-📋 DÉTAILS DES ERREURS:
-[14:45:13] [INFO] 
-  WRONG_PATH: 148 occurrence(s)
-[14:45:13] [INFO]     • advanced_menu_tester.py: Chemin incorrect 'D:\KOF Ultimate Online' trouvé 1 fois
-[14:45:13] [INFO]     • advanced_menu_tester.py: Chemin incorrect 'D:\KOF Ultimate' trouvé 1 fois
-[14:45:13] [INFO]     • ai_bug_diagnostic.py: Chemin incorrect 'D:\KOF Ultimate Online' trouvé 1 fois
-[14:45:13] [INFO]     • ai_bug_diagnostic.py: Chemin incorrect 'D:/KOF Ultimate Online' trouvé 3 fois
-[14:45:13] [INFO]     • ai_bug_diagnostic.py: Chemin incorrect 'D:\KOF Ultimate' trouvé 1 fois
-[14:45:13] [INFO]     ... et 143 autre(s)
-[14:45:13] [INFO] 
-  MISSING_PACKAGE: 13 occurrence(s)
-[14:45:13] [INFO]     • advanced_menu_tester.py: Package 'Pillow' manquant
-[14:45:13] [INFO]     • ai_player_system.py: Package 'Pillow' manquant
-[14:45:13] [INFO]     • ai_retro_enhancer.py: Package 'Pillow' manquant
-[14:45:13] [INFO]     • ai_vs_ai_match.py: Package 'Pillow' manquant
-[14:45:13] [INFO]     • AUTO_DETECT_FIX_ALL_ERRORS.py: Package 'Pillow' manquant
-[14:45:13] [INFO]     ... et 8 autre(s)
-[14:45:13] [INFO] 
-  BLOCKING_INPUT: 40 occurrence(s)
-[14:45:13] [INFO]     • ai_bug_diagnostic.py: input() peut bloquer l'exécution automatique
-[14:45:13] [INFO]     • ai_gamepad_configurator.py: input() peut bloquer l'exécution automatique
-[14:45:13] [INFO]     • ai_installation_checker.py: input() peut bloquer l'exécution automatique
-[14:45:13] [INFO]     • ai_player_system.py: input() peut bloquer l'exécution automatique
-[14:45:13] [INFO]     • ai_retro_enhancer.py: input() peut bloquer l'exécution automatique
-[14:45:13] [INFO]     ... et 35 autre(s)
-[14:45:13] [INFO] 
-  TOO_BROAD_EXCEPT: 5 occurrence(s)
-[14:45:13] [INFO]     • ai_vs_ai_match.py: 7 blocs except trop larges
-[14:45:13] [INFO]     • AUTO_DETECT_FIX_ALL_ERRORS.py: 4 blocs except trop larges
-[14:45:13] [INFO]     • continuous_visual_tester.py: 4 blocs except trop larges
-[14:45:13] [INFO]     • virtual_players_session.py: 6 blocs except trop larges
-[14:45:13] [INFO]     • visual_test_automated.py: 4 blocs except trop larges
-[14:45:13] [INFO] 
-  MISSING_EXE: 10 occurrence(s)
-[14:45:13] [INFO]     • launcher.py: Exécutable introuvable: D:/KOF Ultimate Online/Ikemen_GO.exe
-[14:45:13] [INFO]     • launcher_auto_diagnostic.py: Exécutable introuvable: Ikemen_GO.exe
-[14:45:13] [INFO]     • launcher_auto_diagnostic.py: Exécutable introuvable: Ikemen_GO.exe
-[14:45:13] [INFO]     • multiplayer_menu.py: Exécutable introuvable: Ikemen_GO.exe
-[14:45:13] [INFO]     • multiplayer_menu.py: Exécutable introuvable: Ikemen_GO.exe
-[14:45:13] [INFO]     ... et 5 autre(s)
-[14:45:13] [INFO] 
-✅ CORRECTIONS APPLIQUÉES:
-[14:45:13] [INFO]   • advanced_menu_tester.py: 4 correction(s)
-[14:45:13] [INFO]   • ai_bug_diagnostic.py: 9 correction(s)
-[14:45:13] [INFO]   • ai_gamepad_configurator.py: 1 correction(s)
-[14:45:13] [INFO]   • ai_gamepad_navigator.py: 1 correction(s)
-[14:45:13] [INFO]   • ai_installation_checker.py: 1 correction(s)
-[14:45:13] [INFO]   • ai_player_system.py: 0 correction(s)
-[14:45:13] [INFO]   • ai_retro_enhancer.py: 4 correction(s)
-[14:45:13] [INFO]   • ai_select_def_generator.py: 1 correction(s)
-[14:45:13] [INFO]   • ai_vs_ai_match.py: 4 correction(s)
-[14:45:13] [INFO]   • auto_check_and_launch.py: 4 correction(s)
-[14:45:13] [INFO]   • auto_clicker_kof.py: 4 correction(s)
-[14:45:13] [INFO]   • AUTO_DETECT_FIX_ALL_ERRORS.py: 9 correction(s)
-[14:45:13] [INFO]   • auto_diagnostic.py: 4 correction(s)
-[14:45:13] [INFO]   • AUTO_FIX_CORRUPTED_FILES.py: 4 correction(s)
-[14:45:13] [INFO]   • AUTO_FIX_FROM_LOG.py: 4 correction(s)
-[14:45:13] [INFO]   • auto_test_infinite.py: 4 correction(s)
-[14:45:13] [INFO]   • AUTO_VALIDATOR_COMPLETE.py: 4 correction(s)
-[14:45:13] [INFO]   • character_balancer.py: 4 correction(s)
-[14:45:13] [INFO]   • character_dashboard.py: 4 correction(s)
-[14:45:13] [INFO]   • complete_diagnostic.py: 4 correction(s)
-[14:45:13] [INFO]   • COMPLETE_ERROR_REPORTER.py: 4 correction(s)
-[14:45:13] [INFO]   • COMPLETE_GAME_TESTER.py: 4 correction(s)
-[14:45:13] [INFO]   • configure_xbox_controller.py: 1 correction(s)
-[14:45:13] [INFO]   • continuous_visual_tester.py: 4 correction(s)
-[14:45:13] [INFO]   • create_menu_animation.py: 0 correction(s)
-[14:45:13] [INFO]   • DEEP_ERROR_DETECTOR.py: 4 correction(s)
-[14:45:13] [INFO]   • dev_live_window.py: 4 correction(s)
-[14:45:13] [INFO]   • enhance_sprites_batch.py: 4 correction(s)
-[14:45:13] [INFO]   • explore_all_with_ai.py: 4 correction(s)
-[14:45:13] [INFO]   • fix_ai_control.py: 1 correction(s)
-[14:45:13] [INFO]   • FIX_ALL_AIR_ADVANCED.py: 4 correction(s)
-[14:45:13] [INFO]   • FIX_ALL_AIR_CLSN.py: 4 correction(s)
-[14:45:13] [INFO]   • fix_all_air_files.py: 4 correction(s)
-[14:45:13] [INFO]   • fix_all_animation_errors.py: 4 correction(s)
-[14:45:13] [INFO]   • fix_all_clsn_comprehensive.py: 4 correction(s)
-[14:45:13] [INFO]   • FIX_ALL_LAUNCHERS.py: 4 correction(s)
-[14:45:13] [INFO]   • fix_all_visual.py: 4 correction(s)
-[14:45:13] [INFO]   • fix_clsn_regroup_FINAL.py: 4 correction(s)
-[14:45:13] [INFO]   • fix_collision_spaces.py: 4 correction(s)
-[14:45:13] [INFO]   • FIX_CRITICAL_AIR_ERRORS.py: 4 correction(s)
-[14:45:13] [INFO]   • fix_cursor_animations.py: 4 correction(s)
-[14:45:13] [INFO]   • FIX_DUPLICATE_PATHS_EMERGENCY.py: 9 correction(s)
-[14:45:13] [INFO]   • fix_eve_air_complete.py: 4 correction(s)
-[14:45:13] [INFO]   • fix_game.py: 4 correction(s)
-[14:45:13] [INFO]   • fix_mugen_config.py: 4 correction(s)
-[14:45:13] [INFO]   • FIX_REMAINING_ERRORS.py: 4 correction(s)
-[14:45:13] [INFO]   • FIX_RUGAL_AIR.py: 4 correction(s)
-[14:45:13] [INFO]   • gamepad_auto_config.py: 1 correction(s)
-[14:45:13] [INFO]   • gamepad_hotplug_monitor.py: 1 correction(s)
-[14:45:13] [INFO]   • generate_character_sheets.py: 4 correction(s)
-[14:45:13] [INFO]   • generate_fixed_visualizer.py: 4 correction(s)
-[14:45:13] [INFO]   • generate_select_def.py: 4 correction(s)
-[14:45:13] [INFO]   • graphics_launcher.py: 4 correction(s)
-[14:45:13] [INFO]   • IA_EXPLORER.py: 4 correction(s)
-[14:45:13] [INFO]   • ia_navigator_simple.py: 4 correction(s)
-[14:45:13] [INFO]   • ia_test_all_chars.py: 4 correction(s)
-[14:45:13] [INFO]   • integrate_backgrounds.py: 1 correction(s)
-[14:45:13] [INFO]   • INTERACTIVE_LAUNCHER_TESTER.py: 4 correction(s)
-[14:45:13] [INFO]   • launcher.py: 1 correction(s)
-[14:45:13] [INFO]   • launcher_ai_navigator.py: 1 correction(s)
-[14:45:13] [INFO]   • launcher_auto_diagnostic.py: 1 correction(s)
-[14:45:13] [INFO]   • LAUNCHER_ERROR_TESTER.py: 4 correction(s)
-[14:45:13] [INFO]   • launcher_modern.py: 0 correction(s)
-[14:45:13] [INFO]   • launcher_windowed.py: 4 correction(s)
-[14:45:13] [INFO]   • launcher_with_profiles.py: 1 correction(s)
-[14:45:13] [INFO]   • launch_with_gamepad_detection.py: 4 correction(s)
-[14:45:13] [INFO]   • multiplayer_menu.py: 4 correction(s)
-[14:45:13] [INFO]   • multiplayer_test_system.py: 4 correction(s)
-[14:45:13] [INFO]   • online_bot_match_system.py: 4 correction(s)
-[14:45:13] [INFO]   • player_profile_system.py: 1 correction(s)
-[14:45:13] [INFO]   • prepare_chars_upload.py: 4 correction(s)
-[14:45:13] [INFO]   • realtime_error_monitor.py: 4 correction(s)
-[14:45:13] [INFO]   • setup_ikemen_go.py: 4 correction(s)
-[14:45:13] [INFO]   • simple_game_tester.py: 4 correction(s)
-[14:45:13] [INFO]   • test_all_characters.py: 4 correction(s)
-[14:45:13] [INFO]   • test_all_launchers.py: 4 correction(s)
-[14:45:13] [INFO]   • test_gamepad_in_game.py: 1 correction(s)
-[14:45:13] [INFO]   • test_gamepad_nav.py: 4 correction(s)
-[14:45:13] [INFO]   • test_title_animation.py: 4 correction(s)
-[14:45:13] [INFO]   • UNIVERSAL_ERROR_SCANNER.py: 4 correction(s)
-[14:45:13] [INFO]   • virtual_players_session.py: 4 correction(s)
-[14:45:13] [INFO]   • visual_inspector.py: 4 correction(s)
-[14:45:13] [INFO]   • visual_test_automated.py: 4 correction(s)
-[14:45:13] [INFO] 
-💾 Backups: D:\KOF Ultimate Online\backups_auto_fix
-[14:45:13] [INFO] 📄 Rapport complet: D:\KOF Ultimate Online\AUTO_FIX_REPORT.txt
-[14:45:13] [INFO] 
-======================================================================
-[14:45:13] [INFO] ✅ CORRECTIONS APPLIQUÉES - Relancez pour vérifier
-[14:45:13] [INFO] ======================================================================
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online Online Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: dev_live_window.py
+[00:06:48] [INFO] 
+📝 Correction: DIAGNOSE_AND_FIX_PORTRAITS.py
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: DIAGNOSE_AND_FIX_PORTRAITS.py
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • input() peut bloquer l'exécution automatique
+[00:06:48] [INFO]        → Remplacer par une alternative non-bloquante
+[00:06:48] [INFO] 
+📝 Correction: DIAGNOSE_CRASH.py
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate Online → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   ✓ Corrigé: D:\KOF Ultimate → D:\KOF Ultimate Online kofuo
+[00:06:48] [INFO]   📝 Fichier modifié: DIAGNOSE_CRASH.py
+[00:06:48] [INFO]   ⚠️  1 erreur(s) nécessitent une correction manuelle:
+[00:06:48] [INFO]      • input() peut bloquer l'exécution automatique
+[00:06:48] [INFO]        → Remplacer par une alternative non-bloquante

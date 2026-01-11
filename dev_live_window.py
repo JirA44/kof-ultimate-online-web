@@ -45,7 +45,7 @@ class DevWindow:
 
         self.game_process = None
         self.observer = None
-        self.game_path = Path(r"D:\KOF Ultimate Online Online Online")
+        self.game_path = Path(r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo Online kofuo kofuo")
 
         self.setup_ui()
         self.start_monitoring()

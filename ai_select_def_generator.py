@@ -223,16 +223,16 @@ if __name__ == "__main__":
     # Générer pour Ikemen GO
     print("\n>>> Génération pour IKEMEN GO")
     generator_ikemen = SelectDefGenerator(
-        chars_path="D:/KOF Ultimate Online/Ikemen_GO/chars",
-        output_path="D:/KOF Ultimate Online/Ikemen_GO/data/select.def"
+        chars_path="D:/KOF Ultimate Online kofuo/Ikemen_GO/chars",
+        output_path="D:/KOF Ultimate Online kofuo/Ikemen_GO/data/select.def"
     )
     generator_ikemen.run(mode)
 
     # Optionnel: Générer aussi pour MUGEN
     print("\n>>> Génération pour M.U.G.E.N")
     generator_mugen = SelectDefGenerator(
-        chars_path="D:/KOF Ultimate Online/chars",
-        output_path="D:/KOF Ultimate Online/data/select.def"
+        chars_path="D:/KOF Ultimate Online kofuo/chars",
+        output_path="D:/KOF Ultimate Online kofuo/data/select.def"
     )
     generator_mugen.run(mode)
 

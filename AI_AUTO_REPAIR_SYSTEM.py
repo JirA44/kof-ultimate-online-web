@@ -19,7 +19,7 @@ class AIAutoRepairSystem:
     """Système IA de réparation automatique permanent"""
 
     def __init__(self):
-        self.base_path = Path(r"D:\KOF Ultimate Online kofuo")
+        self.base_path = Path(r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo kofuo")
         self.data_path = self.base_path / "data"
         self.chars_path = self.data_path / "chars"
         self.mugen_cfg = self.base_path / "data" / "mugen1.1.cfg"

@@ -8,8 +8,8 @@ import os
 import shutil
 from datetime import datetime
 
-SELECT_PATH = r"D:\KOF Ultimate Online\data\select.def"
-BACKUP_PATH = f"D:\KOF Ultimate Online\data\select.def.backup_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+SELECT_PATH = r"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo\data\select.def"
+BACKUP_PATH = f"D:\KOF Ultimate Online kofuo Online kofuo kofuo Online kofuo\data\select.def.backup_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
 
 # Backup
 shutil.copy2(SELECT_PATH, BACKUP_PATH)
