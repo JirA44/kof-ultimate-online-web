@@ -1,0 +1,15 @@
+{
+  "match_id": "1767003648_9920",
+  "player1": "Salt_Shaker",
+  "player2": "Button_Masher_X",
+  "player1_char": "Mai",
+  "player2_char": "Clark",
+  "winner": "Button_Masher_X",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T11:20:48.127929",
+  "duration_seconds": 0,
+  "elo_change_p1": -14,
+  "elo_change_p2": 14
+}

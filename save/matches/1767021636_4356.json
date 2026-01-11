@@ -1,0 +1,15 @@
+{
+  "match_id": "1767021636_4356",
+  "player1": "Arcade_Warrior",
+  "player2": "FatalFury_Pro",
+  "player1_char": "Mature",
+  "player2_char": "Kula",
+  "winner": "FatalFury_Pro",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T16:20:36.374793",
+  "duration_seconds": 0,
+  "elo_change_p1": -12,
+  "elo_change_p2": 12
+}

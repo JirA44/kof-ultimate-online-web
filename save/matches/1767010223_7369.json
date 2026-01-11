@@ -1,0 +1,15 @@
+{
+  "match_id": "1767010223_7369",
+  "player1": "Perfect_KO",
+  "player2": "Hype_Beast_99",
+  "player1_char": "Yashiro",
+  "player2_char": "Yashiro",
+  "winner": "Perfect_KO",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T13:10:23.771825",
+  "duration_seconds": 0,
+  "elo_change_p1": 26,
+  "elo_change_p2": -26
+}

@@ -1,0 +1,28 @@
+{
+  "match_id": "1766979823_6590",
+  "player1": "Rage_Quitter_0",
+  "player2": "Money_Match",
+  "player1_char": "Shermie",
+  "player2_char": "Vice",
+  "winner": "Money_Match",
+  "rounds": [
+    {
+      "winner": "Rage_Quitter_0",
+      "perfect": false
+    },
+    {
+      "winner": "Money_Match",
+      "perfect": false
+    },
+    {
+      "winner": "Money_Match",
+      "perfect": false
+    }
+  ],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T04:43:43.174148",
+  "duration_seconds": 0,
+  "elo_change_p1": -17,
+  "elo_change_p2": 17
+}

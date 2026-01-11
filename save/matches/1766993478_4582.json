@@ -1,0 +1,15 @@
+{
+  "match_id": "1766993478_4582",
+  "player1": "Rage_Quitter_0",
+  "player2": "SNK_Champion",
+  "player1_char": "Benimaru",
+  "player2_char": "Orochi",
+  "winner": "SNK_Champion",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T08:31:18.913177",
+  "duration_seconds": 0,
+  "elo_change_p1": -16,
+  "elo_change_p2": 16
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767092384_5583",
+  "player1": "Mix_Up_Master",
+  "player2": "Money_Match",
+  "player1_char": "Elisabeth",
+  "player2_char": "Terry",
+  "winner": "Mix_Up_Master",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-30T11:59:44.385053",
+  "duration_seconds": 0,
+  "elo_change_p1": 18,
+  "elo_change_p2": -18
+}

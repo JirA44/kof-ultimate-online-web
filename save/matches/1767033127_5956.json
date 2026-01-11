@@ -1,0 +1,15 @@
+{
+  "match_id": "1767033127_5956",
+  "player1": "KOF_Legend",
+  "player2": "GG_EZ_Player",
+  "player1_char": "Vanessa",
+  "player2_char": "King",
+  "winner": "GG_EZ_Player",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T19:32:07.224380",
+  "duration_seconds": 0,
+  "elo_change_p1": -4,
+  "elo_change_p2": 4
+}

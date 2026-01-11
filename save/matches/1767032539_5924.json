@@ -1,0 +1,15 @@
+{
+  "match_id": "1767032539_5924",
+  "player1": "Clutch_King",
+  "player2": "GG_EZ_Player",
+  "player1_char": "Billy",
+  "player2_char": "Mature",
+  "winner": "GG_EZ_Player",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T19:22:19.850723",
+  "duration_seconds": 0,
+  "elo_change_p1": -11,
+  "elo_change_p2": 11
+}

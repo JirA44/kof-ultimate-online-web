@@ -1,0 +1,15 @@
+{
+  "match_id": "1766999684_9228",
+  "player1": "FGC_Veteran",
+  "player2": "Ranked_Slayer",
+  "player1_char": "Angel",
+  "player2_char": "Angel",
+  "winner": "Ranked_Slayer",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T10:14:44.674364",
+  "duration_seconds": 0,
+  "elo_change_p1": -12,
+  "elo_change_p2": 12
+}

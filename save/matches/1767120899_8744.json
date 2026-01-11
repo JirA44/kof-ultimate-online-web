@@ -1,0 +1,15 @@
+{
+  "match_id": "1767120899_8744",
+  "player1": "EVO_Ready",
+  "player2": "Rush_Down_King",
+  "player1_char": "Goro",
+  "player2_char": "Chizuru",
+  "winner": "Rush_Down_King",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T19:54:59.840883",
+  "duration_seconds": 0,
+  "elo_change_p1": -5,
+  "elo_change_p2": 5
+}

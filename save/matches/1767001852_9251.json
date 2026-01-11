@@ -1,0 +1,15 @@
+{
+  "match_id": "1767001852_9251",
+  "player1": "Combo_Breaker",
+  "player2": "Rush_Down_King",
+  "player1_char": "Shen",
+  "player2_char": "Duo Lon",
+  "winner": "Rush_Down_King",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T10:50:52.332989",
+  "duration_seconds": 0,
+  "elo_change_p1": -10,
+  "elo_change_p2": 10
+}

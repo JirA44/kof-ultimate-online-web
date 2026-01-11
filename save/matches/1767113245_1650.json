@@ -1,0 +1,15 @@
+{
+  "match_id": "1767113245_1650",
+  "player1": "ShadowKing_X",
+  "player2": "Money_Match",
+  "player1_char": "Shingo",
+  "player2_char": "Angel",
+  "winner": "Money_Match",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T17:47:25.852682",
+  "duration_seconds": 0,
+  "elo_change_p1": -10,
+  "elo_change_p2": 10
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767024206_9391",
+  "player1": "Rage_Quitter_0",
+  "player2": "Zoner_Elite",
+  "player1_char": "Vice",
+  "player2_char": "Shen",
+  "winner": "Rage_Quitter_0",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T17:03:26.422568",
+  "duration_seconds": 0,
+  "elo_change_p1": 22,
+  "elo_change_p2": -22
+}

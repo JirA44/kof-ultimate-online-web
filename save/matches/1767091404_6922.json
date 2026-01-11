@@ -1,0 +1,15 @@
+{
+  "match_id": "1767091404_6922",
+  "player1": "EVO_Ready",
+  "player2": "Salt_Shaker",
+  "player1_char": "Duo Lon",
+  "player2_char": "Athena",
+  "winner": "EVO_Ready",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T11:43:24.827072",
+  "duration_seconds": 0,
+  "elo_change_p1": 17,
+  "elo_change_p2": -17
+}

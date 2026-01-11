@@ -1,0 +1,15 @@
+{
+  "match_id": "1767063809_5276",
+  "player1": "Online_Warrior",
+  "player2": "SNK_Champion",
+  "player1_char": "Duo Lon",
+  "player2_char": "Yuri",
+  "winner": "SNK_Champion",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T04:03:29.049165",
+  "duration_seconds": 0,
+  "elo_change_p1": -8,
+  "elo_change_p2": 8
+}

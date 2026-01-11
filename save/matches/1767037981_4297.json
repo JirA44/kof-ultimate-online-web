@@ -1,0 +1,15 @@
+{
+  "match_id": "1767037981_4297",
+  "player1": "Training_Mode",
+  "player2": "Money_Match",
+  "player1_char": "Ramon",
+  "player2_char": "Chizuru",
+  "winner": "Money_Match",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T20:53:01.553928",
+  "duration_seconds": 0,
+  "elo_change_p1": -6,
+  "elo_change_p2": 6
+}

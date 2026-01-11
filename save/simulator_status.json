@@ -1,0 +1,160 @@
+{
+  "players_online": 25,
+  "queue_ranked": 1,
+  "queue_casual": 1,
+  "active_matches": 10,
+  "total_matches": 11227,
+  "recent_activity": [
+    {
+      "timestamp": "21:03:09",
+      "type": "match_found",
+      "message": "Combo_Breaker: MATCH_FOUND vs SNK_Champion (Iori) [CASUAL]"
+    },
+    {
+      "timestamp": "21:03:09",
+      "type": "match_win",
+      "message": "Tournament_Ace: MATCH_WIN defeated Stream_Monster (2-1) [CASUAL]"
+    },
+    {
+      "timestamp": "21:03:09",
+      "type": "chat",
+      "message": "Tournament_Ace: CHAT \"Well played!\""
+    },
+    {
+      "timestamp": "21:03:10",
+      "type": "chat",
+      "message": "Button_Masher_X: CHAT \"Looking for 1v1\""
+    },
+    {
+      "timestamp": "21:03:11",
+      "type": "chat",
+      "message": "Stream_Monster: CHAT \"Love this community\""
+    },
+    {
+      "timestamp": "21:03:11",
+      "type": "chat",
+      "message": "ShadowKing_X: CHAT \"Nice combos!\""
+    },
+    {
+      "timestamp": "21:03:14",
+      "type": "chat",
+      "message": "Tournament_Ace: CHAT \"My execution was off\""
+    },
+    {
+      "timestamp": "21:03:14",
+      "type": "chat",
+      "message": "Button_Masher_X: CHAT \"Frame data check\""
+    },
+    {
+      "timestamp": "21:03:16",
+      "type": "queue_casual",
+      "message": "Stream_Monster: QUEUE_CASUAL Searching for casual match"
+    },
+    {
+      "timestamp": "21:03:18",
+      "type": "queue_casual",
+      "message": "Tournament_Ace: QUEUE_CASUAL Searching for casual match"
+    },
+    {
+      "timestamp": "21:03:18",
+      "type": "match_found",
+      "message": "Stream_Monster: MATCH_FOUND vs Tournament_Ace (Chris) [CASUAL]"
+    },
+    {
+      "timestamp": "21:03:18",
+      "type": "match_found",
+      "message": "Tournament_Ace: MATCH_FOUND vs Stream_Monster (Ryo) [CASUAL]"
+    },
+    {
+      "timestamp": "21:03:19",
+      "type": "match_win",
+      "message": "First_To_10: MATCH_WIN defeated Mix_Up_Master (2-0) [+13 ELO]"
+    },
+    {
+      "timestamp": "21:03:19",
+      "type": "chat",
+      "message": "First_To_10: CHAT \"That was close!\""
+    },
+    {
+      "timestamp": "21:03:20",
+      "type": "chat",
+      "message": "Button_Masher_X: CHAT \"K' gang\""
+    },
+    {
+      "timestamp": "21:03:20",
+      "type": "view_profile",
+      "message": "ShadowKing_X: VIEW_PROFILE Viewed ShadowKing_X's profile (ELO:1195 4W/5L)"
+    },
+    {
+      "timestamp": "21:03:21",
+      "type": "queue_ranked",
+      "message": "First_To_10: QUEUE_RANKED Searching for ranked match (ELO: 1184)"
+    },
+    {
+      "timestamp": "21:03:21",
+      "type": "match_found",
+      "message": "First_To_10: MATCH_FOUND vs Pro_Player_One (Maxima) [RANKED]"
+    },
+    {
+      "timestamp": "21:03:21",
+      "type": "match_found",
+      "message": "Pro_Player_One: MATCH_FOUND vs First_To_10 (Chizuru) [RANKED]"
+    },
+    {
+      "timestamp": "21:03:22",
+      "type": "queue_casual",
+      "message": "Mix_Up_Master: QUEUE_CASUAL Searching for casual match"
+    },
+    {
+      "timestamp": "21:03:25",
+      "type": "chat",
+      "message": "Button_Masher_X: CHAT \"Frame data check\""
+    },
+    {
+      "timestamp": "21:03:28",
+      "type": "queue_casual",
+      "message": "ShadowKing_X: QUEUE_CASUAL Searching for casual match"
+    },
+    {
+      "timestamp": "21:03:28",
+      "type": "match_found",
+      "message": "Mix_Up_Master: MATCH_FOUND vs ShadowKing_X (Geese) [CASUAL]"
+    },
+    {
+      "timestamp": "21:03:28",
+      "type": "match_found",
+      "message": "ShadowKing_X: MATCH_FOUND vs Mix_Up_Master (Iori) [CASUAL]"
+    },
+    {
+      "timestamp": "21:03:31",
+      "type": "match_win",
+      "message": "LocalPlayer: MATCH_WIN defeated Rush_Down_King (2-0) [CASUAL]"
+    },
+    {
+      "timestamp": "21:03:32",
+      "type": "view_profile",
+      "message": "Button_Masher_X: VIEW_PROFILE Viewed LocalPlayer's profile (ELO:1200 0W/0L)"
+    },
+    {
+      "timestamp": "21:03:32",
+      "type": "queue_ranked",
+      "message": "LocalPlayer: QUEUE_RANKED Searching for ranked match (ELO: 1200)"
+    },
+    {
+      "timestamp": "21:03:37",
+      "type": "queue_casual",
+      "message": "Rush_Down_King: QUEUE_CASUAL Searching for casual match"
+    },
+    {
+      "timestamp": "21:03:38",
+      "type": "match_win",
+      "message": "Perfect_KO: MATCH_WIN defeated Comeback_Kid (2-1) [CASUAL]"
+    },
+    {
+      "timestamp": "21:03:38",
+      "type": "chat",
+      "message": "Perfect_KO: CHAT \"Rematch?\""
+    }
+  ],
+  "last_updated": "2025-12-30T21:03:38.851668"
+}

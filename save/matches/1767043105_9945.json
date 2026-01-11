@@ -1,0 +1,15 @@
+{
+  "match_id": "1767043105_9945",
+  "player1": "Frame_Perfect",
+  "player2": "Ranked_Slayer",
+  "player1_char": "Mature",
+  "player2_char": "Shermie",
+  "winner": "Ranked_Slayer",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T22:18:25.057037",
+  "duration_seconds": 0,
+  "elo_change_p1": -11,
+  "elo_change_p2": 11
+}

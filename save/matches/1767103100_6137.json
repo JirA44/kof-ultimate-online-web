@@ -1,0 +1,15 @@
+{
+  "match_id": "1767103100_6137",
+  "player1": "First_To_10",
+  "player2": "DragonFist_99",
+  "player1_char": "Shermie",
+  "player2_char": "Rugal",
+  "winner": "DragonFist_99",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T14:58:20.878856",
+  "duration_seconds": 0,
+  "elo_change_p1": -4,
+  "elo_change_p2": 4
+}

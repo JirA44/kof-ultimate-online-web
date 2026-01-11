@@ -1,0 +1,15 @@
+{
+  "match_id": "1767109044_4030",
+  "player1": "Salt_Shaker",
+  "player2": "SNK_Champion",
+  "player1_char": "Ramon",
+  "player2_char": "Geese",
+  "winner": "Salt_Shaker",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-30T16:37:24.184371",
+  "duration_seconds": 0,
+  "elo_change_p1": 21,
+  "elo_change_p2": -21
+}

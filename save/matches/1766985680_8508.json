@@ -1,0 +1,15 @@
+{
+  "match_id": "1766985680_8508",
+  "player1": "Mix_Up_Master",
+  "player2": "Rush_Down_King",
+  "player1_char": "Chizuru",
+  "player2_char": "Shingo",
+  "winner": "Rush_Down_King",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T06:21:20.244575",
+  "duration_seconds": 0,
+  "elo_change_p1": -11,
+  "elo_change_p2": 11
+}

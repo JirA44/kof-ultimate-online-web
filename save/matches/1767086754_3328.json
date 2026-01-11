@@ -1,0 +1,15 @@
+{
+  "match_id": "1767086754_3328",
+  "player1": "Arcade_Warrior",
+  "player2": "Perfect_KO",
+  "player1_char": "Ralf",
+  "player2_char": "Orochi",
+  "winner": "Arcade_Warrior",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-30T10:25:54.471015",
+  "duration_seconds": 0,
+  "elo_change_p1": 21,
+  "elo_change_p2": -21
+}

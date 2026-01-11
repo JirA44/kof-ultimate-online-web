@@ -1,0 +1,204 @@
+; IKEMEN GO - ROSTER AUTO-TESTE
+; Genere le 2025-12-28 21:46
+; 20 personnages stables
+; 170 crashes exclus
+
+[Characters]
+03-A-Kyo LV2, stages/Abyss-Rugal-Palace.def
+A-Angel, stages/Abyss-Rugal-Palace.def
+ABYSS'Mega's, stages/Abyss-Rugal-Palace.def
+ALBA MEIRA KOF XI -MI2, stages/Abyss-Rugal-Palace.def
+Aika, stages/Abyss-Rugal-Palace.def
+Aika_MK, stages/Abyss-Rugal-Palace.def
+Aileen, stages/Abyss-Rugal-Palace.def
+Akari, stages/Abyss-Rugal-Palace.def
+Akiha Orochi, stages/Abyss-Rugal-Palace.def
+Akiha Yagami, stages/Abyss-Rugal-Palace.def
+Akiha Yagami DK, stages/Abyss-Rugal-Palace.def
+Akiha Yagami1, stages/Abyss-Rugal-Palace.def
+Akira_Kazakami, stages/Abyss-Rugal-Palace.def
+Alfred_WLS, stages/Abyss-Rugal-Palace.def
+Alou_AKOF, stages/Abyss-Rugal-Palace.def
+Alter Kyo, stages/Abyss-Rugal-Palace.def
+Amoumi-KOFM, stages/Abyss-Rugal-Palace.def
+Andy-ROTD, stages/Abyss-Rugal-Palace.def
+Aner Rolange KOFM, stages/Abyss-Rugal-Palace.def
+Anette-KOFM, stages/Abyss-Rugal-Palace.def
+
+; === CRASHES ===
+; AngusPurple-KOFM - CRASH
+; Another Scarlet - CRASH
+; Arctic Emperor - CRASH
+; Ash - CRASH
+; Athena - CRASH
+; Athena Asamiya MI KOFM - CRASH
+; Athena-Heidern - CRASH
+; Athena_XI - CRASH
+; BLAKE V3-1.1 - CRASH
+; BW-Meiling - CRASH
+; Balto-KOFM - CRASH
+; Beast Yeorin QS - CRASH
+; Benimaru-Nikaido-STAR - CRASH
+; BlackPrincess_Tohka - CRASH
+; Boss Gustab M - CRASH
+; Business_Vanessa-KOFM - CRASH
+; C.Kyo.Blood-KOFM - CRASH
+; Carlin.Blood-CKOFM - CRASH
+; Caser.Yashiro - CRASH
+; Chalice - CRASH
+; Chaos-CKOFM - CRASH
+; Chobi-Hige - CRASH
+; Choi_XI - CRASH
+; Clone Blood Rugal - CRASH
+; Clone Zero - CRASH
+; Cronus - CRASH
+; Cruelty Sula UM - CRASH
+; D.Yashiro.Rhythm(Dusk)1.x - CRASH
+; D=Rockula - CRASH
+; DF-Sula - CRASH
+; DG.Rugal-KOFM - CRASH
+; D_DisciplineGirl - CRASH
+; Daiki_Final(Prototype) - CRASH
+; Daisu - CRASH
+; Delirus - CRASH
+; Dragondomainlords - CRASH
+; Drakyola - CRASH
+; Dual-flame_Magaki - CRASH
+; Duester - CRASH
+; Element Ash - CRASH
+; Element Scarlet - CRASH
+; Element-Adel - CRASH
+; Eputh Blood-KOFM - CRASH
+; Error Zero - CRASH
+; Essence of Darkness - CRASH
+; Eve - CRASH
+; Fang - CRASH
+; Felix_THird - CRASH
+; Final Adel - CRASH
+; Final Goeniko - CRASH
+; Final Sachiel WF - CRASH
+; Final Zeroko B - CRASH
+; Final-IGNIZ - CRASH
+; Final-OriginalZero - CRASH
+; Flamme(S) - CRASH
+; GARS - CRASH
+; GOD_ADEL(2012-01-28 Trial) - CRASH
+; Garnet 1.1 - CRASH
+; Geese-KOFM - CRASH
+; God_Wind - CRASH
+; Goktore-CKOFM - CRASH
+; Graves - CRASH
+; HIEL-KOFM - CRASH
+; Hiel_SP - CRASH
+; Hiyoi - CRASH
+; Hunter_U6746 - CRASH
+; Infernal_Wind - CRASH
+; K9999_KOF - CRASH
+; Kaneda-KOFM - CRASH
+; Kaori Yumiko - CRASH
+; Kartis - CRASH
+; Kasim_LV2-CKOFM[v0.40] - CRASH
+; Kasumi-KOFM - CRASH
+; Kei - CRASH
+; Kevenoce - CRASH
+; Keyser-Aunthmer - CRASH
+; Kotone - CRASH
+; Kyaga-KOFM - CRASH
+; Kychiel - CRASH
+; LUMIEL - CRASH
+; Lane.Blood-CKOFM - CRASH
+; Littledevil-Phoenix - CRASH
+; Lord-Goenitz - CRASH
+; Magnus - CRASH
+; Mai Phoenix XI - CRASH
+; Maltet - CRASH
+; Maryl - CRASH
+; Matam - CRASH
+; Meld_Boss - CRASH
+; N-Zeroko - CRASH
+; Nao-MX 1.0 - CRASH
+; NeoDio KOFM - CRASH
+; NeoGeegus KOFM - CRASH
+; Nero - CRASH
+; New_Kyouki - CRASH
+; Noa_MK - CRASH
+; Nox Bernstein - CRASH
+; O.Zero-Prominence - CRASH
+; Olivia - CRASH
+; Original Psyqhical - CRASH
+; Orochi Kyo WF - CRASH
+; Orochi Leona-KOFM - CRASH
+; Orochi-EV1.55 - CRASH
+; Orochi.Yamazaki-CKOFM - CRASH
+; P-LEONA_ELEMENT - CRASH
+; Psyche_42-1.1 - CRASH
+; Psyche_57-1.1 - CRASH
+; R.S.P - CRASH
+; Raika - CRASH
+; Raisen.blood-KOFM - CRASH
+; Rayno - CRASH
+; Reas-KOFM - CRASH
+; Reyna - CRASH
+; Rinne-RH - CRASH
+; Rocken - CRASH
+; Rose - CRASH
+; Rozwel S.K (LEGIT) - CRASH
+; Rugal7th - CRASH
+; Ryuji - CRASH
+; S_Infezione - CRASH
+; Samael - CRASH
+; Sasin - CRASH
+; Shadow-Dancer - CRASH
+; Sonic Vanesa - CRASH
+; Spiritland Lords - CRASH
+; Tenrou_Kunagi - CRASH
+; ThunderMiss.Shermie - CRASH
+; Titan_KOF - CRASH
+; True Iori X_KOF - CRASH
+; Unfailed Gustab - CRASH
+; Unleashesd God Kula - CRASH
+; Valmar Rugal - CRASH
+; Viper - CRASH
+; VladRose - CRASH
+; Voltage Zeroko-Pre - CRASH
+; WatchTV - CRASH
+; WhirlWind-Goenitz - CRASH
+; White DeathRaGeroous Version - CRASH
+; Wild.O.Yashiro - CRASH
+; Wind_MMXIX - CRASH
+; Xion-V - CRASH
+; Yamazaki.Blood - CRASH
+; Yukida - CRASH
+; Yuno-KOFM - CRASH
+; Yuri_SV - CRASH
+; Zerozuchi_Boss - CRASH
+; _ArchiMurderer - CRASH
+; ai - CRASH
+; akuma - CRASH
+; asura-kofa - CRASH
+; baiyi - CRASH
+; billy - CRASH
+; bob - CRASH
+; boss-orochi - CRASH
+; ccihinako - CRASH
+; ccijhun - CRASH
+; cciking - CRASH
+; ccishermie - CRASH
+; clone benimaru - CRASH
+; dr-yang-kofa - CRASH
+; final-goenitz - CRASH
+; god_orochi - CRASH
+; heraclius - CRASH
+; kfm - CRASH
+; meteoricmarisa - CRASH
+; mizore-kofmLV2 - CRASH
+; orochi-iori - CRASH
+; orochi-kyoko - CRASH
+; robo-kyo-kofa - CRASH
+; vandals - CRASH
+
+[ExtraStages]
+stages/Abyss-Rugal-Palace.def
+
+[Options]
+arcade.maxmatches = 10,0,0,0,0,0,0,0,0,0

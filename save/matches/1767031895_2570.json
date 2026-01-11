@@ -1,0 +1,15 @@
+{
+  "match_id": "1767031895_2570",
+  "player1": "Hype_Beast_99",
+  "player2": "Pro_Player_One",
+  "player1_char": "Geese",
+  "player2_char": "Clark",
+  "winner": "Pro_Player_One",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T19:11:35.076137",
+  "duration_seconds": 0,
+  "elo_change_p1": -15,
+  "elo_change_p2": 15
+}

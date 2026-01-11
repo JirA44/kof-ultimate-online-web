@@ -1,0 +1,15 @@
+{
+  "match_id": "1766990807_3640",
+  "player1": "First_To_10",
+  "player2": "Comeback_Kid",
+  "player1_char": "Kyo",
+  "player2_char": "Yashiro",
+  "winner": "Comeback_Kid",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T07:46:47.646943",
+  "duration_seconds": 0,
+  "elo_change_p1": -8,
+  "elo_change_p2": 8
+}

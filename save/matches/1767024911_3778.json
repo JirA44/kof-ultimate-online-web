@@ -1,0 +1,15 @@
+{
+  "match_id": "1767024911_3778",
+  "player1": "Mix_Up_Master",
+  "player2": "Frame_Perfect",
+  "player1_char": "Terry",
+  "player2_char": "Blue Mary",
+  "winner": "Mix_Up_Master",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T17:15:11.627565",
+  "duration_seconds": 0,
+  "elo_change_p1": 19,
+  "elo_change_p2": -19
+}

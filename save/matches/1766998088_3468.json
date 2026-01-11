@@ -1,0 +1,15 @@
+{
+  "match_id": "1766998088_3468",
+  "player1": "FGC_Veteran",
+  "player2": "Ranked_Slayer",
+  "player1_char": "Shen",
+  "player2_char": "Athena",
+  "winner": "Ranked_Slayer",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T09:48:08.821184",
+  "duration_seconds": 0,
+  "elo_change_p1": -13,
+  "elo_change_p2": 13
+}

@@ -1,44 +1,121 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Génère un select.def avec TOUS les personnages installés dans chars/
+Génère un select.def avec TOUS les personnages valides
 """
 
 import os
+from pathlib import Path
+import shutil
 
-def generate_full_select_def():
-    """Génère un select.def avec tous les personnages"""
+GAME_PATH = Path(__file__).parent
+CHARS_PATH = GAME_PATH / "chars"
+STAGES_PATH = GAME_PATH / "stages"
+SELECT_PATH = GAME_PATH / "data" / "select.def"
 
-    chars_dir = "chars"
-    output_file = "data/select.def"
+def get_valid_chars():
+    """Get all characters that have required files"""
+    valid = []
+    invalid = []
 
-    # Lister tous les dossiers dans chars/
-    all_chars = []
-    for item in os.listdir(chars_dir):
-        char_path = os.path.join(chars_dir, item)
-        if os.path.isdir(char_path):
-            # Vérifier qu'il y a un fichier .def dans le dossier
-            def_files = [f for f in os.listdir(char_path) if f.endswith('.def')]
-            if def_files:
-                all_chars.append(item)
+    for char_dir in CHARS_PATH.iterdir():
+        if not char_dir.is_dir():
+            continue
 
-    all_chars.sort()
+        char_name = char_dir.name
 
-    print(f"✓ {len(all_chars)} personnages trouvés dans chars/")
+        # Skip disabled chars
+        if "_DISABLED" in char_name or char_name.startswith("."):
+            invalid.append((char_name, "disabled"))
+            continue
 
-    # Générer le select.def
-    with open(output_file, 'w', encoding='utf-8') as f:
-        f.write(f";Auto-généré - {len(all_chars)} personnages\n")
-        f.write("[Characters]\n")
-        for char in all_chars:
-            f.write(f"{char}\n")
-        f.write("\n[ExtraStages]\n\n")
-        f.write("[Options]\n")
-        f.write("arcade.maxmatches = 1,1,1,0,0,0,0,0,0,0\n")
-        f.write("team.maxmatches = 1,1,1,1,0,0,0,0,0,0\n")
+        # Check for .def file
+        def_files = list(char_dir.glob("*.def"))
+        if not def_files:
+            invalid.append((char_name, "no .def"))
+            continue
 
-    print(f"✓ Fichier généré: {output_file}")
-    print(f"✓ {len(all_chars)} personnages ajoutés")
+        # Check for _DISABLED_NO_SPRITES marker
+        if (char_dir / "_DISABLED_NO_SPRITES").exists():
+            invalid.append((char_name, "no sprites marker"))
+            continue
+
+        # Check for .sff file (sprites)
+        sff_files = list(char_dir.glob("*.sff"))
+        if not sff_files:
+            # Check in subdirectories
+            sff_files = list(char_dir.rglob("*.sff"))
+
+        if not sff_files:
+            invalid.append((char_name, "no .sff"))
+            continue
+
+        valid.append(char_name)
+
+    return valid, invalid
+
+def get_valid_stages():
+    """Get all valid stages"""
+    stages = []
+    for stage_file in STAGES_PATH.glob("*.def"):
+        stages.append(stage_file.stem)
+    return stages
+
+def generate_select_def(chars, stages):
+    """Generate the select.def content"""
+    content = []
+    content.append("; ================================================")
+    content.append("; KOF ULTIMATE ONLINE - FULL ROSTER")
+    content.append(f"; Auto-generated with {len(chars)} characters")
+    content.append("; ================================================")
+    content.append("")
+    content.append("[Characters]")
+
+    # Add all valid characters
+    for i, char in enumerate(sorted(chars)):
+        stage = stages[i % len(stages)] if stages else "stage0"
+        content.append(f"{char}, stages/{stage}.def")
+
+    content.append("")
+    content.append("[ExtraStages]")
+    for stage in stages[:20]:
+        content.append(f"stages/{stage}.def")
+
+    content.append("")
+    content.append("[Options]")
+    content.append("arcade.maxmatches = 6,0,0,0,0,0,0,0,0,0")
+    content.append("team.maxsimul = 4")
+    content.append("")
+
+    return "\n".join(content)
 
 if __name__ == "__main__":
-    generate_full_select_def()
+    print("Scanning characters...")
+    valid_chars, invalid_chars = get_valid_chars()
+
+    print(f"\n✅ Valid characters: {len(valid_chars)}")
+    print(f"❌ Invalid characters: {len(invalid_chars)}")
+
+    if invalid_chars:
+        print("\nInvalid characters:")
+        for name, reason in invalid_chars[:15]:
+            print(f"  - {name}: {reason}")
+        if len(invalid_chars) > 15:
+            print(f"  ... and {len(invalid_chars) - 15} more")
+
+    print("\nScanning stages...")
+    stages = get_valid_stages()
+    print(f"✅ Valid stages: {len(stages)}")
+
+    # Backup current select.def
+    if SELECT_PATH.exists():
+        backup_path = SELECT_PATH.with_suffix(".def.backup_before_full")
+        shutil.copy2(SELECT_PATH, backup_path)
+        print(f"\n📦 Backup saved: {backup_path}")
+
+    # Generate new select.def
+    content = generate_select_def(valid_chars, stages)
+    SELECT_PATH.write_text(content, encoding='utf-8')
+
+    print(f"\n✅ Generated new select.def with {len(valid_chars)} characters!")
+    print(f"   Path: {SELECT_PATH}")

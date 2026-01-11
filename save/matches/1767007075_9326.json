@@ -1,0 +1,15 @@
+{
+  "match_id": "1767007075_9326",
+  "player1": "DragonFist_99",
+  "player2": "Pro_Player_One",
+  "player1_char": "Athena",
+  "player2_char": "K'",
+  "winner": "Pro_Player_One",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T12:17:55.423247",
+  "duration_seconds": 0,
+  "elo_change_p1": -10,
+  "elo_change_p2": 10
+}

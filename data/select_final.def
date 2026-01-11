@@ -1,93 +1,46 @@
-; ╔══════════════════════════════════════════════════════════════════════════╗
-; ║           KOF ULTIMATE ONLINE - FINAL ROSTER                             ║
-; ╠══════════════════════════════════════════════════════════════════════════╣
-; ║  Generated: 2025-12-27 05:52:52                                    ║
-; ║  Combat-tested characters: 76                                           ║
-; ║  All characters tested for stability and combat readiness               ║
-; ╚══════════════════════════════════════════════════════════════════════════╝
+; ================================================
+; KOF ULTIMATE ONLINE - STABLE ROSTER
+; Auto-tested: 2025-12-28
+; 21 characters verified crash-free
+; ================================================
 
 [Characters]
-03-A-Kyo LV2, stages/Abyss-Rugal-Palace.def
-ABYSS'Mega's, stages/Abyss-Rugal-Palace.def
-Aika, stages/Abyss-Rugal-Palace.def
-Aika_MK, stages/Abyss-Rugal-Palace.def
-Andy-ROTD, stages/Abyss-Rugal-Palace.def
-Aner Rolange KOFM, stages/Abyss-Rugal-Palace.def
-AngusPurple-KOFM, stages/Abyss-Rugal-Palace.def
-Athena, stages/Abyss-Rugal-Palace.def
-Athena-Heidern, stages/Abyss-Rugal-Palace.def
-Athena_XI, stages/Abyss-Rugal-Palace.def
-Balto-KOFM, stages/Abyss-Rugal-Palace.def
-BlackPrincess_Tohka, stages/Abyss-Rugal-Palace.def
-C.Kyo.Blood-KOFM, stages/Abyss-Rugal-Palace.def
-Carlin.Blood-CKOFM, stages/Abyss-Rugal-Palace.def
-Caser.Yashiro, stages/Abyss-Rugal-Palace.def
-Chaos-CKOFM, stages/Abyss-Rugal-Palace.def
-Chobi-Hige, stages/Abyss-Rugal-Palace.def
-Choi_XI, stages/Abyss-Rugal-Palace.def
-Clone Blood Rugal, stages/Abyss-Rugal-Palace.def
-Clone Zero, stages/Abyss-Rugal-Palace.def
-D=Rockula, stages/Abyss-Rugal-Palace.def
-DF-Sula, stages/Abyss-Rugal-Palace.def
-Dual-flame_Magaki, stages/Abyss-Rugal-Palace.def
-Duester, stages/Abyss-Rugal-Palace.def
-Essence of Darkness, stages/Abyss-Rugal-Palace.def
-Eve, stages/Abyss-Rugal-Palace.def
-Felix_THird, stages/Abyss-Rugal-Palace.def
-Final Sachiel WF, stages/Abyss-Rugal-Palace.def
-Final-IGNIZ, stages/Abyss-Rugal-Palace.def
-Final-OriginalZero, stages/Abyss-Rugal-Palace.def
-Flamme(S), stages/Abyss-Rugal-Palace.def
-Geese-KOFM, stages/Abyss-Rugal-Palace.def
-God_Wind, stages/Abyss-Rugal-Palace.def
-HIEL-KOFM, stages/Abyss-Rugal-Palace.def
-Hiel_SP, stages/Abyss-Rugal-Palace.def
-Hiyoi, stages/Abyss-Rugal-Palace.def
-K9999_KOF, stages/Abyss-Rugal-Palace.def
-Kasumi-KOFM, stages/Abyss-Rugal-Palace.def
-Kotone, stages/Abyss-Rugal-Palace.def
-Kyaga-KOFM, stages/Abyss-Rugal-Palace.def
-LUMIEL, stages/Abyss-Rugal-Palace.def
-Lord-Goenitz, stages/Abyss-Rugal-Palace.def
-Maryl, stages/Abyss-Rugal-Palace.def
-NeoDio KOFM, stages/Abyss-Rugal-Palace.def
-NeoGeegus KOFM, stages/Abyss-Rugal-Palace.def
-New_Kyouki, stages/Abyss-Rugal-Palace.def
-Olivia, stages/Abyss-Rugal-Palace.def
-Original Psyqhical, stages/Abyss-Rugal-Palace.def
-Orochi.Yamazaki-CKOFM, stages/Abyss-Rugal-Palace.def
-Psyche_42-1.1, stages/Abyss-Rugal-Palace.def
-Psyche_57-1.1, stages/Abyss-Rugal-Palace.def
-Raika, stages/Abyss-Rugal-Palace.def
-Rinne-RH, stages/Abyss-Rugal-Palace.def
-Rocken, stages/Abyss-Rugal-Palace.def
-S_Infezione, stages/Abyss-Rugal-Palace.def
-Samael, stages/Abyss-Rugal-Palace.def
-ThunderMiss.Shermie, stages/Abyss-Rugal-Palace.def
-VladRose, stages/Abyss-Rugal-Palace.def
-WhirlWind-Goenitz, stages/Abyss-Rugal-Palace.def
-Yamazaki.Blood, stages/Abyss-Rugal-Palace.def
-Yuno-KOFM, stages/Abyss-Rugal-Palace.def
-Yuri_SV, stages/Abyss-Rugal-Palace.def
-Zerozuchi_Boss, stages/Abyss-Rugal-Palace.def
-_ArchiMurderer, stages/Abyss-Rugal-Palace.def
-asura-kofa, stages/Abyss-Rugal-Palace.def
-billy, stages/Abyss-Rugal-Palace.def
-boss-orochi, stages/Abyss-Rugal-Palace.def
-ccijhun, stages/Abyss-Rugal-Palace.def
-ccishermie, stages/Abyss-Rugal-Palace.def
-dr-yang-kofa, stages/Abyss-Rugal-Palace.def
-final-goenitz, stages/Abyss-Rugal-Palace.def
-heraclius, stages/Abyss-Rugal-Palace.def
-meteoricmarisa, stages/Abyss-Rugal-Palace.def
-orochi-iori, stages/Abyss-Rugal-Palace.def
+; === MAIN ROSTER (21 STABLE) ===
+asura-kofa, stages/Galaxy BG.def
+baiyi, stages/Moon recidence.def
+billy, stages/Red_Cliff.def
+bob, stages/Exagon Force.def
+boss-orochi, stages/Darkness.def
+ccihinako, stages/Anime Blu.def
+ccijhun, stages/Basque Palace.def
+cciking, stages/space_galaxy.def
+ccishermie, stages/space_nebula_purple.def
+clone benimaru, stages/space_deep.def
+dr-yang-kofa, stages/clones lab destroyed.def
+final-goenitz, stages/The Will Of Hades S .def
+god_orochi, stages/Abyss-Rugal-Palace.def
+heraclius, stages/Anubis.def
+kfm, stages/Far from here.def
+meteoricmarisa, stages/space_planet.def
+mizore-kofmLV2, stages/Moon of dark wall.def
+orochi-iori, stages/forest infernal fire.def
+orochi-kyoko, stages/light kyouki.def
+robo-kyo-kofa, stages/BLACK SON DROTIME.def
+vandals, stages/xX-Hell-Dark-Xx.def
 
 [ExtraStages]
 stages/Abyss-Rugal-Palace.def
-stages/Darkness.def
-stages/RED.def
 stages/Galaxy BG.def
+stages/Darkness.def
+stages/space_galaxy.def
+stages/The Will Of Hades S .def
 stages/Moon recidence.def
+stages/forest infernal fire.def
+stages/Anubis.def
+stages/Red_Cliff.def
+stages/Exagon Force.def
 
 [Options]
-arcade.maxmatches = 6,1,1,0,0,0,0,0,0,0
+; Arcade mode - 6 matches
+arcade.maxmatches = 6,0,0,0,0,0,0,0,0,0
+team.maxsimul = 4

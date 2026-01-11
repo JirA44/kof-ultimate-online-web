@@ -1,0 +1,15 @@
+{
+  "match_id": "1767064178_3485",
+  "player1": "Training_Mode",
+  "player2": "Rush_Down_King",
+  "player1_char": "Mature",
+  "player2_char": "Yuri",
+  "winner": "Rush_Down_King",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T04:09:38.329295",
+  "duration_seconds": 0,
+  "elo_change_p1": -3,
+  "elo_change_p2": 3
+}

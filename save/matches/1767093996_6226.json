@@ -1,0 +1,15 @@
+{
+  "match_id": "1767093996_6226",
+  "player1": "Perfect_KO",
+  "player2": "Zoner_Elite",
+  "player1_char": "Athena",
+  "player2_char": "Blue Mary",
+  "winner": "Zoner_Elite",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T12:26:36.102091",
+  "duration_seconds": 0,
+  "elo_change_p1": -7,
+  "elo_change_p2": 7
+}

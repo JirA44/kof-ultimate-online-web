@@ -1,0 +1,15 @@
+{
+  "match_id": "1767111475_5782",
+  "player1": "First_To_10",
+  "player2": "Ranked_Slayer",
+  "player1_char": "Elisabeth",
+  "player2_char": "Mature",
+  "winner": "Ranked_Slayer",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T17:17:55.910716",
+  "duration_seconds": 0,
+  "elo_change_p1": -7,
+  "elo_change_p2": 7
+}

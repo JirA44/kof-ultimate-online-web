@@ -1,0 +1,15 @@
+{
+  "match_id": "1767109248_9683",
+  "player1": "Arcade_Warrior",
+  "player2": "Tournament_Ace",
+  "player1_char": "Shingo",
+  "player2_char": "Shingo",
+  "winner": "Tournament_Ace",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T16:40:48.524070",
+  "duration_seconds": 0,
+  "elo_change_p1": -2,
+  "elo_change_p2": 2
+}

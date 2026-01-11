@@ -1,0 +1,15 @@
+{
+  "match_id": "1767066285_6714",
+  "player1": "Clutch_King",
+  "player2": "Grappler_God",
+  "player1_char": "Athena",
+  "player2_char": "Shermie",
+  "winner": "Grappler_God",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T04:44:45.940995",
+  "duration_seconds": 0,
+  "elo_change_p1": -5,
+  "elo_change_p2": 5
+}

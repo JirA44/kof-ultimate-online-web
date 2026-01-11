@@ -1,0 +1,15 @@
+{
+  "match_id": "1767036128_7334",
+  "player1": "Online_Warrior",
+  "player2": "Grappler_God",
+  "player1_char": "Leona",
+  "player2_char": "Clark",
+  "winner": "Grappler_God",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T20:22:08.215079",
+  "duration_seconds": 0,
+  "elo_change_p1": -10,
+  "elo_change_p2": 10
+}

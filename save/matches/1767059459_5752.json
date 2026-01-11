@@ -1,0 +1,15 @@
+{
+  "match_id": "1767059459_5752",
+  "player1": "Arcade_Warrior",
+  "player2": "Mix_Up_Master",
+  "player1_char": "Chizuru",
+  "player2_char": "Robert",
+  "winner": "Mix_Up_Master",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T02:50:59.096876",
+  "duration_seconds": 0,
+  "elo_change_p1": -15,
+  "elo_change_p2": 15
+}

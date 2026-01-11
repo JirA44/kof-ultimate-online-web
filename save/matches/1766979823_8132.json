@@ -1,0 +1,28 @@
+{
+  "match_id": "1766979823_8132",
+  "player1": "DragonFist_99",
+  "player2": "Perfect_KO",
+  "player1_char": "Yuri",
+  "player2_char": "Mai",
+  "winner": "DragonFist_99",
+  "rounds": [
+    {
+      "winner": "Perfect_KO",
+      "perfect": false
+    },
+    {
+      "winner": "DragonFist_99",
+      "perfect": false
+    },
+    {
+      "winner": "DragonFist_99",
+      "perfect": false
+    }
+  ],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T04:43:43.107833",
+  "duration_seconds": 0,
+  "elo_change_p1": 17,
+  "elo_change_p2": -17
+}

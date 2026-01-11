@@ -1,0 +1,15 @@
+{
+  "match_id": "1767011447_3543",
+  "player1": "Zoner_Elite",
+  "player2": "Mix_Up_Master",
+  "player1_char": "Kensou",
+  "player2_char": "Yuri",
+  "winner": "Zoner_Elite",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T13:30:47.209134",
+  "duration_seconds": 0,
+  "elo_change_p1": 17,
+  "elo_change_p2": -17
+}

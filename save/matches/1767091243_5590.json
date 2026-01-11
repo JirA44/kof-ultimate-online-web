@@ -1,0 +1,15 @@
+{
+  "match_id": "1767091243_5590",
+  "player1": "Combo_Breaker",
+  "player2": "NeoGeo_Master",
+  "player1_char": "Orochi",
+  "player2_char": "Angel",
+  "winner": "NeoGeo_Master",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T11:40:43.740513",
+  "duration_seconds": 0,
+  "elo_change_p1": -10,
+  "elo_change_p2": 10
+}

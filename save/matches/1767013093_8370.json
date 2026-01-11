@@ -1,0 +1,15 @@
+{
+  "match_id": "1767013093_8370",
+  "player1": "Combo_Breaker",
+  "player2": "Mix_Up_Master",
+  "player1_char": "Clark",
+  "player2_char": "Kyo",
+  "winner": "Combo_Breaker",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T13:58:13.373513",
+  "duration_seconds": 0,
+  "elo_change_p1": 19,
+  "elo_change_p2": -19
+}

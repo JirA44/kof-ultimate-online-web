@@ -1,0 +1,15 @@
+{
+  "match_id": "1767115693_1920",
+  "player1": "First_To_10",
+  "player2": "GG_EZ_Player",
+  "player1_char": "Kensou",
+  "player2_char": "Angel",
+  "winner": "First_To_10",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-30T18:28:13.483922",
+  "duration_seconds": 0,
+  "elo_change_p1": 26,
+  "elo_change_p2": -26
+}

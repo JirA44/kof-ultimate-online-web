@@ -1,0 +1,15 @@
+{
+  "match_id": "1766994911_5959",
+  "player1": "NeoGeo_Master",
+  "player2": "Button_Masher_X",
+  "player1_char": "Ralf",
+  "player2_char": "Leona",
+  "winner": "NeoGeo_Master",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T08:55:11.489479",
+  "duration_seconds": 0,
+  "elo_change_p1": 16,
+  "elo_change_p2": -16
+}

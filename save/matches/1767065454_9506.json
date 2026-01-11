@@ -1,0 +1,15 @@
+{
+  "match_id": "1767065454_9506",
+  "player1": "Comeback_Kid",
+  "player2": "Perfect_KO",
+  "player1_char": "Terry",
+  "player2_char": "Kensou",
+  "winner": "Perfect_KO",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T04:30:54.258451",
+  "duration_seconds": 0,
+  "elo_change_p1": -12,
+  "elo_change_p2": 12
+}

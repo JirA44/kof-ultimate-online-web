@@ -1,0 +1,15 @@
+{
+  "match_id": "1767109582_5431",
+  "player1": "Money_Match",
+  "player2": "NeoGeo_Master",
+  "player1_char": "Geese",
+  "player2_char": "Terry",
+  "winner": "NeoGeo_Master",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T16:46:22.771557",
+  "duration_seconds": 0,
+  "elo_change_p1": -4,
+  "elo_change_p2": 4
+}

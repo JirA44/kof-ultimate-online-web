@@ -1,0 +1,15 @@
+{
+  "match_id": "1767073901_7728",
+  "player1": "Casual_Fighter",
+  "player2": "Rage_Quitter_0",
+  "player1_char": "Yamazaki",
+  "player2_char": "Orochi",
+  "winner": "Rage_Quitter_0",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T06:51:41.498524",
+  "duration_seconds": 0,
+  "elo_change_p1": -13,
+  "elo_change_p2": 13
+}

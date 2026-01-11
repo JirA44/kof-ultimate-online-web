@@ -1,1 +1,8 @@
-{}
+{
+  "modes": {
+    "netplayversus": {
+      "playtime": 0
+    }
+  },
+  "playtime": 0
+}

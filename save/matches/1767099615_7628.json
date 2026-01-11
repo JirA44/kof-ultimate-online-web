@@ -1,0 +1,15 @@
+{
+  "match_id": "1767099615_7628",
+  "player1": "Frame_Perfect",
+  "player2": "Tournament_Ace",
+  "player1_char": "Benimaru",
+  "player2_char": "Geese",
+  "winner": "Tournament_Ace",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T14:00:15.044600",
+  "duration_seconds": 0,
+  "elo_change_p1": -8,
+  "elo_change_p2": 8
+}

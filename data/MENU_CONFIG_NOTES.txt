@@ -1,0 +1,163 @@
+===============================================
+KOF ULTIMATE ONLINE - NOTES DE CONFIGURATION MENU
+===============================================
+Derniere mise a jour: 2025-12-29
+
+===============================================
+CONFIGURATION MENU PRINCIPAL (system.def)
+===============================================
+
+=== MENU GRAPHIQUE (original) ===
+Position centree: menu.pos = 475,240
+Police graphique:
+  menu.item.font =           (vide = invisible quand non selectionne)
+  menu.item.active.font = 8  (font 8 = Menu Black .fnt)
+  menu.item.spacing = 0, 0   (tous les elements empiles)
+
+Caracteres disponibles dans Menu Black .fnt:
+  A = ARCADE
+  B = VS MODE
+  C = TEAM ARCADE
+  D = TEAM VS
+  E = TEAM CO-OP
+  F = SURVIVAL
+  G = SURVIVAL CO-OP
+  H = TRAINING (affiche "practice")
+  I = WATCH
+  J = OPTIONS
+  K = EXIT
+  L = NON DISPONIBLE (pas d'image)
+
+=== MENU TEXTE (avec ONLINE fonctionnel) ===
+Position: menu.pos = 320,140
+Police texte:
+  menu.item.font = 3,0,0
+  menu.item.active.font = 3,0,0, 255,220,0  (jaune)
+  menu.item.spacing = 0, 25
+
+Tous les elements en texte complet:
+  menu.itemname.arcade = "ARCADE"
+  menu.itemname.versus = "VS MODE"
+  menu.itemname.netplay = "ONLINE"
+  etc.
+
+===============================================
+STRUCTURE DE LA POLICE Menu Black .fnt
+===============================================
+
+Format: Elecbyte FNT v256
+Createur: Z - CharCAD - www.zcharcad.kit.net
+Taille: 427226 octets
+
+Structure interne:
+- Header Elecbyte (0-72)
+- Donnees PCX (72 - 426910) = image 8192 x 480 pixels
+- Section [Def] (426910+)
+- Section [Map] (427086+)
+
+Section [Map] - mapping des caracteres:
+  A 0 640      (offset X, largeur)
+  B 640 640
+  C 1280 640
+  D 1920 640
+  E 2560 640
+  F 3200 640
+  G 3840 640
+  H 4480 640
+  I 5120 640
+  J 5760 640
+  K 6400 640
+  (L 7040 640) - peut etre ajoute mais pas d'image
+
+Chaque caractere = 640 pixels de large, 480 pixels de haut
+Image PCX = 8192 pixels de large (espace pour ~12 caracteres)
+
+===============================================
+PROBLEME NETPLAY/ONLINE
+===============================================
+
+La police graphique "Menu Black .fnt" n'a que les caracteres A-K.
+Le caractere "L" peut etre ajoute au mapping mais sans image,
+IKEMEN l'ignore completement.
+
+SOLUTIONS:
+1. Utiliser le menu TEXTE (fonctionne, moins joli)
+2. Modifier la police avec Fighter Factory 3:
+   - Telecharger: https://fighterfactory.virtualltek.com/
+   - Ouvrir Menu Black .fnt
+   - Ajouter caractere L avec image "ONLINE"
+   - Sauvegarder
+
+Script disponible: tools/add_online_character.py
+  - Ajoute L au mapping de la police
+  - Ne cree PAS l'image (juste le mapping)
+
+===============================================
+FICHIERS IMPORTANTS
+===============================================
+
+Configuration:
+- data/system.def : Configuration principale du menu
+- save/config.json : Configuration du jeu (640x480)
+
+Polices:
+- data/fonts/Menu Black .fnt : Police graphique menu (427KB)
+- font/f-6x9.fnt : Police texte standard (font 3)
+
+Sprites:
+- data/system.sff : Sprites du systeme (17MB)
+
+Scripts:
+- external/script/motif.lua : Logique du menu
+- external/script/main.lua : Logique principale
+
+Outils crees:
+- tools/font_analyzer.py : Analyse structure police FNT
+- tools/font_editor.py : Editeur police (analyse)
+- tools/add_online_character.py : Ajoute L au mapping
+
+===============================================
+BACKUPS
+===============================================
+
+Polices:
+- data/fonts/Menu Black .fnt.backup_* (plusieurs)
+
+System.def:
+- data/system.def.backup_before_perfect
+- data/system.def.backup_final
+- data/system.def.backup
+
+===============================================
+RESOLUTION ET CENTRAGE
+===============================================
+
+Resolution du jeu: 640 x 480
+Centre theorique: 320, 240
+Centre reel menu graphique: 475, 240 (offset du aux graphiques)
+Centre menu texte: 320, 140
+
+Note: Le menu graphique necessite un offset car les sprites
+ne sont pas centres dans leur cadre.
+
+===============================================
+PROBLEMES CONNUS
+===============================================
+
+1. Personnage "Vandals" - erreur dans vandals.cns ligne 4622
+   Cause: "damage: Invalid data"
+   Solution: Corriger le fichier ou retirer le personnage
+
+2. Mode demo automatique peut crasher si personnages bugues
+
+3. Menu graphique ne peut pas afficher ONLINE sans modification
+   de la police Menu Black .fnt
+
+===============================================
+CONFIGURATION ACTUELLE (2025-12-29)
+===============================================
+
+Menu: TEXTE (avec ONLINE fonctionnel)
+Position: 320,140
+ONLINE: Visible et fonctionnel
+Sous-menu netplay: HOST GAME, JOIN GAME, BACK

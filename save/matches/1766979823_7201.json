@@ -1,0 +1,24 @@
+{
+  "match_id": "1766979823_7201",
+  "player1": "Ranked_Slayer",
+  "player2": "Casual_Fighter",
+  "player1_char": "Duo Lon",
+  "player2_char": "Vice",
+  "winner": "Casual_Fighter",
+  "rounds": [
+    {
+      "winner": "Casual_Fighter",
+      "perfect": false
+    },
+    {
+      "winner": "Casual_Fighter",
+      "perfect": false
+    }
+  ],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T04:43:43.369057",
+  "duration_seconds": 0,
+  "elo_change_p1": -19,
+  "elo_change_p2": 19
+}

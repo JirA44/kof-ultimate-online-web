@@ -1,0 +1,15 @@
+{
+  "match_id": "1767050502_4689",
+  "player1": "Perfect_KO",
+  "player2": "DragonFist_99",
+  "player1_char": "Iori",
+  "player2_char": "Duo Lon",
+  "winner": "DragonFist_99",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T00:21:42.496307",
+  "duration_seconds": 0,
+  "elo_change_p1": -10,
+  "elo_change_p2": 10
+}

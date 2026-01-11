@@ -1,0 +1,15 @@
+{
+  "match_id": "1767035559_8990",
+  "player1": "SNK_Champion",
+  "player2": "Combo_Breaker",
+  "player1_char": "Vanessa",
+  "player2_char": "Elisabeth",
+  "winner": "Combo_Breaker",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T20:12:39.466549",
+  "duration_seconds": 0,
+  "elo_change_p1": -7,
+  "elo_change_p2": 7
+}

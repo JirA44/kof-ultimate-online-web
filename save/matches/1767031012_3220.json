@@ -1,0 +1,15 @@
+{
+  "match_id": "1767031012_3220",
+  "player1": "FatalFury_Pro",
+  "player2": "Hype_Beast_99",
+  "player1_char": "Angel",
+  "player2_char": "Maxima",
+  "winner": "FatalFury_Pro",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T18:56:52.980445",
+  "duration_seconds": 0,
+  "elo_change_p1": 19,
+  "elo_change_p2": -19
+}

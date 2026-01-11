@@ -1,0 +1,15 @@
+{
+  "match_id": "1767005089_6779",
+  "player1": "GG_EZ_Player",
+  "player2": "ShadowKing_X",
+  "player1_char": "Angel",
+  "player2_char": "Vanessa",
+  "winner": "GG_EZ_Player",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T11:44:49.336065",
+  "duration_seconds": 0,
+  "elo_change_p1": 22,
+  "elo_change_p2": -22
+}

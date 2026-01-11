@@ -1,0 +1,15 @@
+{
+  "match_id": "1767017758_6809",
+  "player1": "SNK_Champion",
+  "player2": "Salt_Shaker",
+  "player1_char": "Iori",
+  "player2_char": "Ash",
+  "winner": "SNK_Champion",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T15:15:58.591873",
+  "duration_seconds": 0,
+  "elo_change_p1": 16,
+  "elo_change_p2": -16
+}

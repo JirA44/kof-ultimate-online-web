@@ -1,0 +1,15 @@
+{
+  "match_id": "1767099047_2139",
+  "player1": "Training_Mode",
+  "player2": "DragonFist_99",
+  "player1_char": "Yamazaki",
+  "player2_char": "Kyo",
+  "winner": "DragonFist_99",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T13:50:47.825528",
+  "duration_seconds": 0,
+  "elo_change_p1": -1,
+  "elo_change_p2": 1
+}

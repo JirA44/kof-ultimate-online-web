@@ -1,0 +1,15 @@
+{
+  "match_id": "1767111057_7802",
+  "player1": "Ranked_Slayer",
+  "player2": "Stream_Monster",
+  "player1_char": "Kyo",
+  "player2_char": "Yuri",
+  "winner": "Ranked_Slayer",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T17:10:57.931157",
+  "duration_seconds": 0,
+  "elo_change_p1": 16,
+  "elo_change_p2": -16
+}

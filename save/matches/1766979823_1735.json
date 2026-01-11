@@ -1,0 +1,28 @@
+{
+  "match_id": "1766979823_1735",
+  "player1": "Rush_Down_King",
+  "player2": "Perfect_KO",
+  "player1_char": "Clark",
+  "player2_char": "Robert",
+  "winner": "Perfect_KO",
+  "rounds": [
+    {
+      "winner": "Rush_Down_King",
+      "perfect": false
+    },
+    {
+      "winner": "Perfect_KO",
+      "perfect": false
+    },
+    {
+      "winner": "Perfect_KO",
+      "perfect": false
+    }
+  ],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T04:43:43.250530",
+  "duration_seconds": 0,
+  "elo_change_p1": -19,
+  "elo_change_p2": 19
+}

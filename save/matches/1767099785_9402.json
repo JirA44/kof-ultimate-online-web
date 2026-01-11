@@ -1,0 +1,15 @@
+{
+  "match_id": "1767099785_9402",
+  "player1": "Pro_Player_One",
+  "player2": "Rage_Quitter_0",
+  "player1_char": "Mai",
+  "player2_char": "Vanessa",
+  "winner": "Rage_Quitter_0",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T14:03:05.705333",
+  "duration_seconds": 0,
+  "elo_change_p1": -7,
+  "elo_change_p2": 7
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767068871_3127",
+  "player1": "Mix_Up_Master",
+  "player2": "Grappler_God",
+  "player1_char": "Blue Mary",
+  "player2_char": "Mai",
+  "winner": "Mix_Up_Master",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T05:27:51.094985",
+  "duration_seconds": 0,
+  "elo_change_p1": 17,
+  "elo_change_p2": -17
+}

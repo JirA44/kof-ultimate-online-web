@@ -1,0 +1,15 @@
+{
+  "match_id": "1766997223_5541",
+  "player1": "Online_Warrior",
+  "player2": "Training_Mode",
+  "player1_char": "Mai",
+  "player2_char": "Elisabeth",
+  "winner": "Online_Warrior",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T09:33:43.418294",
+  "duration_seconds": 0,
+  "elo_change_p1": 18,
+  "elo_change_p2": -18
+}

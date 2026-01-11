@@ -1,0 +1,15 @@
+{
+  "match_id": "1767056375_9314",
+  "player1": "Training_Mode",
+  "player2": "FatalFury_Pro",
+  "player1_char": "Blue Mary",
+  "player2_char": "Shingo",
+  "winner": "FatalFury_Pro",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T01:59:35.310248",
+  "duration_seconds": 0,
+  "elo_change_p1": -8,
+  "elo_change_p2": 8
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1766987585_2436",
+  "player1": "Perfect_KO",
+  "player2": "Rush_Down_King",
+  "player1_char": "Mai",
+  "player2_char": "Ralf",
+  "winner": "Rush_Down_King",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T06:53:05.775278",
+  "duration_seconds": 0,
+  "elo_change_p1": -12,
+  "elo_change_p2": 12
+}

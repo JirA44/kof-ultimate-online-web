@@ -1,0 +1,15 @@
+{
+  "match_id": "1767005127_1626",
+  "player1": "Salt_Shaker",
+  "player2": "Money_Match",
+  "player1_char": "Duo Lon",
+  "player2_char": "Ramon",
+  "winner": "Money_Match",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T11:45:27.647567",
+  "duration_seconds": 0,
+  "elo_change_p1": -13,
+  "elo_change_p2": 13
+}

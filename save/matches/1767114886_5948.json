@@ -1,0 +1,15 @@
+{
+  "match_id": "1767114886_5948",
+  "player1": "First_To_10",
+  "player2": "Money_Match",
+  "player1_char": "Vanessa",
+  "player2_char": "Vice",
+  "winner": "Money_Match",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T18:14:46.043345",
+  "duration_seconds": 0,
+  "elo_change_p1": -12,
+  "elo_change_p2": 12
+}

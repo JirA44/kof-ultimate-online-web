@@ -1,0 +1,15 @@
+{
+  "match_id": "1767002919_4510",
+  "player1": "First_To_10",
+  "player2": "Clutch_King",
+  "player1_char": "Ramon",
+  "player2_char": "Kula",
+  "winner": "Clutch_King",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T11:08:39.773003",
+  "duration_seconds": 0,
+  "elo_change_p1": -9,
+  "elo_change_p2": 9
+}

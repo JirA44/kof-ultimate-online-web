@@ -1,0 +1,28 @@
+{
+  "match_id": "1766979823_7306",
+  "player1": "Grappler_God",
+  "player2": "Salt_Shaker",
+  "player1_char": "Shermie",
+  "player2_char": "Ash",
+  "winner": "Salt_Shaker",
+  "rounds": [
+    {
+      "winner": "Salt_Shaker",
+      "perfect": false
+    },
+    {
+      "winner": "Grappler_God",
+      "perfect": false
+    },
+    {
+      "winner": "Salt_Shaker",
+      "perfect": false
+    }
+  ],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T04:43:43.377727",
+  "duration_seconds": 0,
+  "elo_change_p1": -17,
+  "elo_change_p2": 17
+}

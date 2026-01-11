@@ -1,0 +1,15 @@
+{
+  "match_id": "1767044207_4736",
+  "player1": "Comeback_Kid",
+  "player2": "Salt_Shaker",
+  "player1_char": "Duo Lon",
+  "player2_char": "Whip",
+  "winner": "Salt_Shaker",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T22:36:47.709487",
+  "duration_seconds": 0,
+  "elo_change_p1": -10,
+  "elo_change_p2": 10
+}

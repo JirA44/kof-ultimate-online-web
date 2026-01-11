@@ -1,0 +1,15 @@
+{
+  "match_id": "1767096883_3886",
+  "player1": "Money_Match",
+  "player2": "Button_Masher_X",
+  "player1_char": "Yuri",
+  "player2_char": "Goro",
+  "winner": "Button_Masher_X",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T13:14:43.451232",
+  "duration_seconds": 0,
+  "elo_change_p1": -6,
+  "elo_change_p2": 6
+}

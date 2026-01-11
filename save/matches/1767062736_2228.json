@@ -1,0 +1,15 @@
+{
+  "match_id": "1767062736_2228",
+  "player1": "Comeback_Kid",
+  "player2": "Casual_Fighter",
+  "player1_char": "Elisabeth",
+  "player2_char": "Benimaru",
+  "winner": "Casual_Fighter",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T03:45:36.494293",
+  "duration_seconds": 0,
+  "elo_change_p1": -8,
+  "elo_change_p2": 8
+}

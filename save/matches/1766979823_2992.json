@@ -1,0 +1,28 @@
+{
+  "match_id": "1766979823_2992",
+  "player1": "Rush_Down_King",
+  "player2": "FGC_Veteran",
+  "player1_char": "Billy",
+  "player2_char": "Kensou",
+  "winner": "Rush_Down_King",
+  "rounds": [
+    {
+      "winner": "FGC_Veteran",
+      "perfect": false
+    },
+    {
+      "winner": "Rush_Down_King",
+      "perfect": false
+    },
+    {
+      "winner": "Rush_Down_King",
+      "perfect": true
+    }
+  ],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T04:43:43.154192",
+  "duration_seconds": 0,
+  "elo_change_p1": 16,
+  "elo_change_p2": -16
+}

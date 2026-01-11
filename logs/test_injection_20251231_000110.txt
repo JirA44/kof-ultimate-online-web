@@ -1,0 +1,8 @@
+TEST AVEC INJECTION D'INPUTS - KOF ULTIMATE ONLINE
+============================================================
+
+Date: 2025-12-31 00:01:10
+Durée: 103.4s
+Problèmes: 0
+
+✅ Aucun problème détecté

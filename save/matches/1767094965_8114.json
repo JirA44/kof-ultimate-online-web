@@ -1,0 +1,15 @@
+{
+  "match_id": "1767094965_8114",
+  "player1": "EVO_Ready",
+  "player2": "ShadowKing_X",
+  "player1_char": "Ramon",
+  "player2_char": "Shen",
+  "winner": "ShadowKing_X",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T12:42:45.399534",
+  "duration_seconds": 0,
+  "elo_change_p1": -10,
+  "elo_change_p2": 10
+}

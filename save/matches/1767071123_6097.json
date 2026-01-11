@@ -1,0 +1,15 @@
+{
+  "match_id": "1767071123_6097",
+  "player1": "Rage_Quitter_0",
+  "player2": "Money_Match",
+  "player1_char": "Maxima",
+  "player2_char": "Goro",
+  "winner": "Rage_Quitter_0",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T06:05:23.391163",
+  "duration_seconds": 0,
+  "elo_change_p1": 20,
+  "elo_change_p2": -20
+}

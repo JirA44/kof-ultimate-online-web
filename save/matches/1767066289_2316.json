@@ -1,0 +1,15 @@
+{
+  "match_id": "1767066289_2316",
+  "player1": "GG_EZ_Player",
+  "player2": "Casual_Fighter",
+  "player1_char": "Chizuru",
+  "player2_char": "Vice",
+  "winner": "GG_EZ_Player",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T04:44:49.973446",
+  "duration_seconds": 0,
+  "elo_change_p1": 18,
+  "elo_change_p2": -18
+}

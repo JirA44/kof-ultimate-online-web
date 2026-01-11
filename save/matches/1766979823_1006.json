@@ -1,0 +1,28 @@
+{
+  "match_id": "1766979823_1006",
+  "player1": "Button_Masher_X",
+  "player2": "EVO_Ready",
+  "player1_char": "Yamazaki",
+  "player2_char": "Yuri",
+  "winner": "EVO_Ready",
+  "rounds": [
+    {
+      "winner": "Button_Masher_X",
+      "perfect": false
+    },
+    {
+      "winner": "EVO_Ready",
+      "perfect": false
+    },
+    {
+      "winner": "EVO_Ready",
+      "perfect": false
+    }
+  ],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T04:43:43.240356",
+  "duration_seconds": 0,
+  "elo_change_p1": -15,
+  "elo_change_p2": 15
+}

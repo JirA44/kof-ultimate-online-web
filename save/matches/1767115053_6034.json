@@ -1,0 +1,15 @@
+{
+  "match_id": "1767115053_6034",
+  "player1": "FatalFury_Pro",
+  "player2": "GG_EZ_Player",
+  "player1_char": "Vanessa",
+  "player2_char": "Vice",
+  "winner": "FatalFury_Pro",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-30T18:17:33.238156",
+  "duration_seconds": 0,
+  "elo_change_p1": 26,
+  "elo_change_p2": -26
+}

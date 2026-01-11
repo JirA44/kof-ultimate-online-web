@@ -1,0 +1,15 @@
+{
+  "match_id": "1767083723_3528",
+  "player1": "GG_EZ_Player",
+  "player2": "DragonFist_99",
+  "player1_char": "Mature",
+  "player2_char": "Vanessa",
+  "winner": "DragonFist_99",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T09:35:23.902952",
+  "duration_seconds": 0,
+  "elo_change_p1": -5,
+  "elo_change_p2": 5
+}

@@ -1,0 +1,203 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║              AI DOCUMENTATION - GUIDE DES PERSONNAGES                        ║
+║                     KOF Ultimate Online                                      ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                      FICHIERS DE SÉLECTION                                    │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+data/select_final.def      ★ FICHIER ACTIF (21 personnages)
+data/select_tested.def     → 50 personnages testés stables
+data/select_full.def       → Liste complète (190 personnages)
+data/select_backup.def     → Sauvegarde
+data/select_minimal.def    → Configuration minimale sûre
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                      FORMAT SELECT.DEF                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+[Characters]
+; Format: chemin/personnage.def, stage, order, music
+chars/Kyo/Kyo.def, stages/KOF_Stadium.def, order=1
+chars/Iori/Iori.def, random
+chars/Athena/Athena.def, stages/Temple.def, order=2, music=chars/Athena/theme.mp3
+
+PARAMÈTRES:
+- chemin.def    → Chemin vers le fichier définition du personnage
+- stage         → Stage associé (ou "random")
+- order=N       → Ordre d'apparition dans l'arcade (1-10)
+- music=path    → Musique personnalisée
+
+[ExtraStages]
+; Stages additionnels
+stages/Beach.def
+stages/City.def
+
+[Options]
+; Configuration
+arcade.maxmatches = 10,0,0,0,0,0,0,0,0,0
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                      STRUCTURE D'UN PERSONNAGE                                │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+chars/[NomPersonnage]/
+├── [name].def           ★ Fichier définition principal
+├── [name].sff           → Sprites (images) - TAILLE CRITIQUE
+├── [name].air           → Animations (référence les sprites)
+├── [name].cmd           → Commandes et combos
+├── [name].cns           → États (State) et comportements
+├── [name].snd           → Sons du personnage
+├── [name]-0.sff         → Palette alternative
+└── [name]-X.act         → Palettes de couleurs
+
+FICHIER .DEF:
+[Info]
+name = "Kyo Kusanagi"
+displayname = "KYO"
+author = "AuthorName"
+versiondate = 01,01,2020
+mugenversion = 1.1
+
+[Files]
+sprite = kyo.sff
+anim = kyo.air
+cmd = kyo.cmd
+cns = kyo.cns
+sound = kyo.snd
+
+[Arcade]
+intro.storyboard = intro.def
+ending.storyboard = ending.def
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                      PERSONNAGES STABLES (172/190)                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Les personnages suivants ont été testés et sont stables:
+
+✅ RECOMMANDÉS (sprites <50MB):
+   03-A-Kyo LV2, Ash, Athena, Athena_XI, billy, bob, Clone Zero,
+   Cronus, Element Ash, Final Goeniko, final-goenitz, Geese-KOFM,
+   god_orochi, kfm, Lord-Goenitz, Orochi-EV1.55, orochi-iori...
+
+⚠️ MOYENS (sprites 50-100MB):
+   (Fonctionnent mais peuvent ralentir le chargement)
+
+❌ INSTABLES (sprites >100MB) - À ÉVITER:
+   - Akiha Yagami DK: 104.3MB
+   - Arctic Emperor: 125.2MB
+   - baiyi: 131.5MB
+   - BW-Meiling: 101.0MB
+   - Dragondomainlords: 133.1MB
+   - Final Adel: 104.7MB
+   - Keyser-Aunthmer: 127.5MB
+   - Lane.Blood-CKOFM: Pas de fichier .def
+   - Littledevil-Phoenix: 123.4MB
+   - LUMIEL: 101.0MB
+   - Noa_MK: ???
+   - O.Zero-Prominence: ???
+   - Sasin: ???
+   - Shadow-Dancer: ???
+   - Spiritland Lords: ???
+   - Valmar Rugal: ???
+   - White DeathRaGeroous: ???
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                      AJOUTER UN PERSONNAGE                                    │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+1. COPIER LE DOSSIER:
+   Copier le dossier du personnage dans chars/
+   Ex: chars/NouveauPerso/
+
+2. VÉRIFIER LA STRUCTURE:
+   - NouveauPerso.def existe
+   - NouveauPerso.sff < 100MB
+   - Fichiers .air, .cmd, .cns présents
+
+3. AJOUTER DANS SELECT.DEF:
+   Éditer data/select_final.def
+   Ajouter: chars/NouveauPerso/NouveauPerso.def
+
+4. TESTER:
+   python test_chars_stability.py
+
+5. SI ERREUR:
+   - Vérifier syntaxe du .def
+   - Vérifier que .sff n'est pas corrompu
+   - Essayer avec un stage différent
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                      RETIRER UN PERSONNAGE                                    │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+1. Éditer data/select_final.def
+2. Commenter ou supprimer la ligne:
+   ; chars/PersonnageARetirer/PersonnageARetirer.def
+3. Le dossier peut rester dans chars/ (ne sera pas chargé)
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                      GRILLE DE SÉLECTION                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Configuration dans data/system.def [Select Info]:
+
+rows = 13           → 13 lignes
+columns = 20        → 20 colonnes
+cell.size = 31,31   → Taille d'une case (pixels)
+cell.spacing = 0    → Espacement entre cases
+
+CAPACITÉ MAXIMALE: 13 × 20 = 260 personnages
+
+Position dans la grille:
+- L'ordre dans select.def = ordre dans la grille
+- Gauche à droite, haut en bas
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                      COMMANDES UTILES                                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+# Lister tous les personnages
+ls chars/
+
+# Vérifier la taille des sprites
+du -sh chars/*/\*.sff | sort -h
+
+# Tester la stabilité
+python test_chars_stability.py
+
+# Compter les personnages actifs
+grep -c "^chars/" data/select_final.def
+
+# Générer une liste optimisée
+python generate_select_def.py
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                      DÉPANNAGE                                                │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+ERREUR: "Character not found"
+→ Vérifier le chemin dans select.def
+→ Vérifier que le fichier .def existe
+
+ERREUR: "Error loading sprites"
+→ Fichier .sff corrompu ou trop gros
+→ Essayer de réduire la taille
+
+ERREUR: "Animation not found"
+→ Fichier .air manquant ou incomplet
+→ Vérifier les références dans le .air
+
+CRASH AU CHARGEMENT:
+→ Personnage probablement trop lourd (>100MB)
+→ Retirer de select.def et tester
+
+JEU LENT:
+→ Trop de personnages chargés
+→ Utiliser select_tested.def (50 chars max)
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                         FIN DU GUIDE                                         ║
+╚══════════════════════════════════════════════════════════════════════════════╝

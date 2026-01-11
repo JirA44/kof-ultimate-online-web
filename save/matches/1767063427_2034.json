@@ -1,0 +1,15 @@
+{
+  "match_id": "1767063427_2034",
+  "player1": "Tournament_Ace",
+  "player2": "DragonFist_99",
+  "player1_char": "Kensou",
+  "player2_char": "Duo Lon",
+  "winner": "DragonFist_99",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T03:57:07.554846",
+  "duration_seconds": 0,
+  "elo_change_p1": -11,
+  "elo_change_p2": 11
+}

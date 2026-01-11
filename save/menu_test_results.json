@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-29T16:20:04.854504",
+  "tests": [
+    {
+      "path": "Online > Rankings",
+      "status": "passed"
+    },
+    {
+      "path": "Online > My Profile",
+      "status": "passed"
+    },
+    {
+      "path": "Online > Live Lobby",
+      "status": "passed"
+    },
+    {
+      "path": "Lobby > Find Ranked",
+      "status": "passed"
+    },
+    {
+      "path": "Lobby > Find Casual",
+      "status": "passed"
+    },
+    {
+      "path": "Lobby > Train AI",
+      "status": "passed"
+    },
+    {
+      "path": "Rankings > Scroll",
+      "status": "passed"
+    }
+  ],
+  "crashes": [],
+  "passed": 7,
+  "failed": 0
+}

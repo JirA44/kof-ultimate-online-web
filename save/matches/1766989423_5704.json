@@ -1,0 +1,15 @@
+{
+  "match_id": "1766989423_5704",
+  "player1": "Grappler_God",
+  "player2": "ShadowKing_X",
+  "player1_char": "Benimaru",
+  "player2_char": "Angel",
+  "winner": "ShadowKing_X",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T07:23:43.021728",
+  "duration_seconds": 0,
+  "elo_change_p1": -15,
+  "elo_change_p2": 15
+}

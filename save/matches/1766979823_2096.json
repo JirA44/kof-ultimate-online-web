@@ -1,0 +1,28 @@
+{
+  "match_id": "1766979823_2096",
+  "player1": "Mix_Up_Master",
+  "player2": "Combo_Breaker",
+  "player1_char": "Rugal",
+  "player2_char": "Geese",
+  "winner": "Combo_Breaker",
+  "rounds": [
+    {
+      "winner": "Combo_Breaker",
+      "perfect": false
+    },
+    {
+      "winner": "Mix_Up_Master",
+      "perfect": true
+    },
+    {
+      "winner": "Combo_Breaker",
+      "perfect": false
+    }
+  ],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T04:43:43.290303",
+  "duration_seconds": 0,
+  "elo_change_p1": -14,
+  "elo_change_p2": 14
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767102725_2183",
+  "player1": "Casual_Fighter",
+  "player2": "Button_Masher_X",
+  "player1_char": "Kensou",
+  "player2_char": "Yamazaki",
+  "winner": "Button_Masher_X",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T14:52:05.376291",
+  "duration_seconds": 0,
+  "elo_change_p1": -7,
+  "elo_change_p2": 7
+}

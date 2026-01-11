@@ -1,0 +1,15 @@
+{
+  "match_id": "1767003983_5810",
+  "player1": "Training_Mode",
+  "player2": "Frame_Perfect",
+  "player1_char": "Athena",
+  "player2_char": "Mai",
+  "winner": "Frame_Perfect",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T11:26:23.087426",
+  "duration_seconds": 0,
+  "elo_change_p1": -12,
+  "elo_change_p2": 12
+}

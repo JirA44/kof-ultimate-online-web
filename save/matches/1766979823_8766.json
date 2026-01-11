@@ -1,0 +1,24 @@
+{
+  "match_id": "1766979823_8766",
+  "player1": "Money_Match",
+  "player2": "Online_Warrior",
+  "player1_char": "Geese",
+  "player2_char": "Terry",
+  "winner": "Money_Match",
+  "rounds": [
+    {
+      "winner": "Money_Match",
+      "perfect": false
+    },
+    {
+      "winner": "Money_Match",
+      "perfect": false
+    }
+  ],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T04:43:43.398245",
+  "duration_seconds": 0,
+  "elo_change_p1": 10,
+  "elo_change_p2": -10
+}

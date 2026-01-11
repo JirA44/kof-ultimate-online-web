@@ -1,0 +1,15 @@
+{
+  "match_id": "1767005234_1220",
+  "player1": "Salt_Shaker",
+  "player2": "Grappler_God",
+  "player1_char": "Maxima",
+  "player2_char": "Rugal",
+  "winner": "Salt_Shaker",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T11:47:14.504698",
+  "duration_seconds": 0,
+  "elo_change_p1": 17,
+  "elo_change_p2": -17
+}

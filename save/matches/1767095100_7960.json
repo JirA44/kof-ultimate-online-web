@@ -1,0 +1,15 @@
+{
+  "match_id": "1767095100_7960",
+  "player1": "Mix_Up_Master",
+  "player2": "FGC_Veteran",
+  "player1_char": "Blue Mary",
+  "player2_char": "Mai",
+  "winner": "Mix_Up_Master",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-30T12:45:00.145463",
+  "duration_seconds": 0,
+  "elo_change_p1": 17,
+  "elo_change_p2": -17
+}

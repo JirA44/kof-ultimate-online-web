@@ -1,0 +1,15 @@
+{
+  "match_id": "1767057790_2181",
+  "player1": "NeoGeo_Master",
+  "player2": "Ranked_Slayer",
+  "player1_char": "Orochi",
+  "player2_char": "Shingo",
+  "winner": "NeoGeo_Master",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-30T02:23:10.783265",
+  "duration_seconds": 0,
+  "elo_change_p1": 18,
+  "elo_change_p2": -18
+}

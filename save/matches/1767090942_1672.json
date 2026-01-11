@@ -1,0 +1,15 @@
+{
+  "match_id": "1767090942_1672",
+  "player1": "EVO_Ready",
+  "player2": "Online_Warrior",
+  "player1_char": "Benimaru",
+  "player2_char": "Mai",
+  "winner": "Online_Warrior",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T11:35:42.910252",
+  "duration_seconds": 0,
+  "elo_change_p1": -13,
+  "elo_change_p2": 13
+}

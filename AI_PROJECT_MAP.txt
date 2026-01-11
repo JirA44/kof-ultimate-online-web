@@ -1,0 +1,261 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    AI DOCUMENTATION - KOF ULTIMATE ONLINE                    ║
+║                     Last Updated: December 2024                              ║
+║                     Health Score: 90.5% EXCELLENT                            ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                           PROJECT OVERVIEW                                    │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Ce projet est un jeu de combat style King of Fighters (KOF) basé sur le moteur
+MUGEN/Ikemen GO avec un système multijoueur en ligne personnalisé (Battle.net).
+
+EXÉCUTABLE PRINCIPAL: Ikemen_GO.exe (ou Ikemen_GO_x64.exe)
+DOSSIER RACINE: D:\KOF Ultimate Online\
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                      STRUCTURE DES DOSSIERS                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+D:\KOF Ultimate Online\
+├── data\                    # Configuration principale du jeu
+│   ├── system.def          # ★ FICHIER CLÉ: menus, écrans, animations
+│   ├── system.sff          # Sprites système (16 MB)
+│   ├── system.snd          # Sons système
+│   ├── select_final.def    # ★ Liste personnages actifs (21 chars)
+│   ├── fight.def           # Configuration des combats
+│   ├── mugen.cfg           # Configuration globale (résolution, touches)
+│   ├── font\               # Polices d'affichage
+│   └── musica\             # Musiques de fond (MP3)
+│
+├── chars\                   # 190 personnages disponibles
+│   └── [NomPersonnage]\    # Chaque perso a son dossier
+│       ├── [name].def      # Définition du personnage
+│       ├── [name].sff      # Sprites
+│       ├── [name].air      # Animations
+│       ├── [name].cmd      # Commandes/combos
+│       └── [name].cns      # États et comportements
+│
+├── stages\                  # 31 arènes de combat
+│   └── [stage].def         # Définition de chaque stage
+│
+├── online_backend\          # ★ SERVEUR MULTIJOUEUR
+│   ├── matchmaking_server.js  # WebSocket ws://localhost:3101
+│   ├── api_server.js          # API REST
+│   ├── battlenet_client.js    # Client côté jeu
+│   ├── database.js            # Gestion données joueurs
+│   ├── test_connection.js     # Test connexion
+│   ├── test_match.js          # Test matchmaking
+│   ├── full_test.js           # Test 8 joueurs
+│   └── stress_test.js         # Test 20 joueurs
+│
+├── ai_tools\                # Outils IA
+│   └── launcher_ai_navigator.py
+│
+├── dev_tools\               # Outils développement
+│   └── test_all_launchers.py
+│
+└── launchers_archive\       # Anciens launchers (archivés)
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                      FICHIER: data/system.def                                 │
+│                      (MENU PRINCIPAL ET ÉCRANS)                               │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+CE QUE L'UTILISATEUR VOIT À L'ÉCRAN:
+- Menu principal avec options animées
+- Fond noir avec animations lumineuses
+- Musique "MENU SCREEN.mp3"
+
+SECTIONS IMPORTANTES:
+
+[Info] (lignes 2-7)
+  → Métadonnées: nom "KOF DM BLACK", auteur "DROLLDIAMOND"
+  → Résolution: 640x480
+
+[Files] (lignes 9-21)
+  → spr = system.sff (sprites)
+  → snd = system.snd (sons)
+  → select = select_final.def (personnages)
+  → fight = fight.def (combat)
+
+[Music] (lignes 23-46)
+  → title.bgm = data/musica/MENU SCREEN.mp3
+  → vs.bgm = data/musica/VS SCREEN.mp3
+  → victory.bgm = data/musica/SELECT SCREEN.mp3
+
+[Title Info] (lignes 49-83) ★ MENU PRINCIPAL
+  → menu.pos = 321,240 (position centrale)
+  → Options affichées:
+    - A = "ARCADE" (mode solo)
+    - B = "VS MODE" (2 joueurs local)
+    - C = "TEAM ARCADE"
+    - D = "TEAM VERSUS"
+    - E = "TEAM CO-OP"
+    - F = "SURVIVAL"
+    - G = "SURVIVAL CO-OP"
+    - H = "TRAINING"
+    - I = "WATCH" (spectateur)
+    - J = "OPTIONS"
+    - K = "EXIT"
+    - L = "MULTIJOUEUR EN LIGNE" ★ BATTLE.NET
+
+[Sous-menu MULTIJOUEUR] (lignes 67-70)
+  → netplay_serverhost = "QUICK MATCH"    # Matchmaking rapide
+  → netplay_serverjoin = "LOBBIES"        # Salles personnalisées
+  → netplay_netplayversus = "RANKED 1v1"  # Matchs classés ELO
+  → netplay_back = "RETOUR"               # Retour menu
+
+[Select Info] (lignes 130-199)
+  → Grille: 13 rows × 20 columns
+  → cell.size = 31,31 pixels
+  → Curseur P1: animation 170 (rouge pulsant)
+  → Curseur P2: animation 171 (bleu pulsant)
+
+[VS Screen] (lignes 282-306)
+  → Affiche portraits des 2 combattants
+  → Temps d'affichage: 800 frames
+  → Musique: VS SCREEN.mp3
+
+[Begin Action X] (lignes 505+)
+  → Définitions d'animations
+  → Référencent sprites dans system.sff
+  → Format: sprite_group,sprite_no, x,y, duration, flip, trans, scale
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                      FICHIER: data/select_final.def                           │
+│                      (LISTE DES PERSONNAGES)                                  │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+FORMAT:
+[Characters]
+chars/NomPersonnage/NomPersonnage.def, stages/stage.def, order=1, music=path
+
+PERSONNAGES STABLES TESTÉS: 172/190
+PERSONNAGES INSTABLES (sprites >100MB): 17
+  - Akiha Yagami DK, Arctic Emperor, baiyi, BW-Meiling...
+
+POUR AJOUTER UN PERSONNAGE:
+1. Copier dossier dans chars/
+2. Ajouter ligne dans select_final.def
+3. Tester avec: python test_chars_stability.py
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                      SERVEUR MULTIJOUEUR                                      │
+│                      (online_backend/)                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+ARCHITECTURE:
+┌─────────────┐     WebSocket      ┌──────────────────────┐
+│ Jeu Client  │◄──────────────────►│ matchmaking_server.js │
+│ (Ikemen GO) │     :3101          │    (Node.js)          │
+└─────────────┘                    └──────────────────────┘
+       │                                    │
+       │ HTTP/REST                          │
+       ▼                                    ▼
+┌─────────────────┐               ┌─────────────────┐
+│ api_server.js   │               │ database.js     │
+│ (login, stats)  │               │ (SQLite/JSON)   │
+└─────────────────┘               └─────────────────┘
+
+COMMANDES WEBSOCKET:
+- register: { playerId, username }
+- find_match: { playerId, mode: "quick"|"ranked" }
+- create_room: { name, password, maxPlayers }
+- join_room: { roomId, password }
+- leave_queue: { playerId }
+- chat: { roomId, message }
+
+ÉVÉNEMENTS SERVEUR:
+- registered: Connexion confirmée
+- searching: En file d'attente
+- match_found: Match trouvé { opponent, elo }
+- room_created: Salle créée { roomId }
+- game_start: Début du combat
+
+DÉMARRER LE SERVEUR:
+cd online_backend && node matchmaking_server.js
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                      TESTS AUTOMATISÉS                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+TEST PRINCIPAL (santé globale):
+python auto_test_system.py
+→ Score: 90.5% EXCELLENT
+→ Vérifie: config, assets, personnages, stages, scripts
+
+TEST PERSONNAGES:
+python test_chars_stability.py
+→ 172/190 personnages stables
+→ Génère: data/select_tested.def (50 chars safe)
+
+TESTS SERVEUR MULTIJOUEUR:
+cd online_backend
+node test_connection.js    # Test connexion WebSocket
+node test_match.js         # Test matchmaking 2 joueurs
+node full_test.js          # Test 8 joueurs simultanés
+node stress_test.js        # Test 20 joueurs (stress)
+
+RÉSULTATS ATTENDUS:
+✓ Connexion WebSocket établie
+✓ Enregistrement réussi
+✓ File d'attente fonctionnelle
+✓ Matchs trouvés
+✓ Salles créées
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                      COMMANDES RAPIDES                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+LANCER LE JEU:
+cd "D:\KOF Ultimate Online" && ./Ikemen_GO.exe
+
+LANCER SERVEUR MULTI:
+cd "D:\KOF Ultimate Online\online_backend" && node matchmaking_server.js
+
+TESTER TOUT:
+python auto_test_system.py && python test_chars_stability.py
+
+VÉRIFIER PERSONNAGES:
+python test_chars_stability.py
+
+STRESS TEST:
+cd online_backend && node stress_test.js
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                      PROBLÈMES CONNUS                                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+⚠ 17 personnages instables (sprites >100MB) - exclus de select_tested.def
+⚠ Fichiers optionnels manquants: launcher_modern.py, launcher_ai_navigator.py
+⚠ Certains tests nécessitent: pip install pyautogui pywin32
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                      POUR MODIFIER                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+AJOUTER OPTION MENU:
+→ Éditer data/system.def section [Title Info]
+→ Ajouter: menu.itemname.X = "TEXTE"
+
+CHANGER MUSIQUE:
+→ Éditer data/system.def section [Music]
+→ Modifier: title.bgm = data/musica/NOUVEAU.mp3
+
+AJOUTER PERSONNAGE:
+→ Copier dossier dans chars/
+→ Ajouter ligne dans data/select_final.def
+
+MODIFIER RÉSOLUTION:
+→ Éditer data/mugen.cfg
+→ Changer: GameWidth, GameHeight
+
+MODIFIER ANIMATIONS:
+→ Éditer data/system.def sections [Begin Action X]
+→ Référencer sprites dans system.sff (binaire)
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                         FIN DE LA DOCUMENTATION                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝

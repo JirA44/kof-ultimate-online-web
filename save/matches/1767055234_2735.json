@@ -1,0 +1,15 @@
+{
+  "match_id": "1767055234_2735",
+  "player1": "Perfect_KO",
+  "player2": "Frame_Perfect",
+  "player1_char": "Kyo",
+  "player2_char": "Blue Mary",
+  "winner": "Perfect_KO",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T01:40:34.465210",
+  "duration_seconds": 0,
+  "elo_change_p1": 21,
+  "elo_change_p2": -21
+}

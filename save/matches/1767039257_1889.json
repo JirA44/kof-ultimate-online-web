@@ -1,0 +1,15 @@
+{
+  "match_id": "1767039257_1889",
+  "player1": "Arcade_Warrior",
+  "player2": "Comeback_Kid",
+  "player1_char": "Whip",
+  "player2_char": "Chizuru",
+  "winner": "Arcade_Warrior",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T21:14:17.510878",
+  "duration_seconds": 0,
+  "elo_change_p1": 18,
+  "elo_change_p2": -18
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767022302_3857",
+  "player1": "NeoGeo_Master",
+  "player2": "Pro_Player_One",
+  "player1_char": "Yashiro",
+  "player2_char": "Shermie",
+  "winner": "NeoGeo_Master",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T16:31:42.191727",
+  "duration_seconds": 0,
+  "elo_change_p1": 20,
+  "elo_change_p2": -20
+}

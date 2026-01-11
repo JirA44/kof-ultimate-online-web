@@ -1,0 +1,15 @@
+{
+  "match_id": "1767098081_2490",
+  "player1": "KOF_Legend",
+  "player2": "Pro_Player_One",
+  "player1_char": "Yashiro",
+  "player2_char": "Yamazaki",
+  "winner": "Pro_Player_One",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T13:34:41.078904",
+  "duration_seconds": 0,
+  "elo_change_p1": -4,
+  "elo_change_p2": 4
+}

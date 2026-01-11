@@ -1,0 +1,15 @@
+{
+  "match_id": "1767070263_5437",
+  "player1": "Training_Mode",
+  "player2": "Online_Warrior",
+  "player1_char": "Chizuru",
+  "player2_char": "Yashiro",
+  "winner": "Training_Mode",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T05:51:03.102813",
+  "duration_seconds": 0,
+  "elo_change_p1": 19,
+  "elo_change_p2": -19
+}

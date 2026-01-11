@@ -1,0 +1,15 @@
+{
+  "match_id": "1767021918_6367",
+  "player1": "Salt_Shaker",
+  "player2": "DragonFist_99",
+  "player1_char": "Geese",
+  "player2_char": "Blue Mary",
+  "winner": "Salt_Shaker",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T16:25:18.902619",
+  "duration_seconds": 0,
+  "elo_change_p1": 25,
+  "elo_change_p2": -25
+}

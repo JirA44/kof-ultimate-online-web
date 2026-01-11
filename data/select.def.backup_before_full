@@ -1,0 +1,44 @@
+; ================================================
+; KOF ULTIMATE ONLINE - STABLE ROSTER
+; Auto-tested: 2025-12-28
+; 21 characters verified crash-free
+; ================================================
+
+[Characters]
+; === MAIN ROSTER ===
+asura-kofa, stages/Galaxy BG.def
+baiyi, stages/Moon recidence.def
+billy, stages/Red_Cliff.def
+bob, stages/Exagon Force.def
+boss-orochi, stages/Darkness.def
+ccihinako, stages/Anime Blu.def
+ccijhun, stages/Basque Palace.def
+cciking, stages/space_galaxy.def
+ccishermie, stages/space_nebula_purple.def
+clone benimaru, stages/space_deep.def
+dr-yang-kofa, stages/clones lab destroyed.def
+final-goenitz, stages/The Will Of Hades S .def
+god_orochi, stages/Abyss-Rugal-Palace.def
+heraclius, stages/Anubis.def
+kfm, stages/Far from here.def
+meteoricmarisa, stages/space_planet.def
+mizore-kofmLV2, stages/Moon of dark wall.def
+orochi-iori, stages/forest infernal fire.def
+orochi-kyoko, stages/light kyouki.def
+robo-kyo-kofa, stages/BLACK SON DROTIME.def
+vandals, stages/xX-Hell-Dark-Xx.def
+
+[ExtraStages]
+stages/Abyss-Rugal-Palace.def
+stages/Galaxy BG.def
+stages/Darkness.def
+stages/space_galaxy.def
+stages/The Will Of Hades S .def
+stages/Moon recidence.def
+stages/forest infernal fire.def
+stages/Anubis.def
+
+[Options]
+; Arcade mode settings
+arcade.maxmatches = 6,0,0,0,0,0,0,0,0,0
+team.maxsimul = 4

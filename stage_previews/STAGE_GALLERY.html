@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>KOF - Stages Gallery</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #1a1a2e; color: #fff; padding: 20px; }
+        h1 { text-align: center; color: #e94560; margin-bottom: 20px; }
+        .info { text-align: center; margin-bottom: 20px; color: #888; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 15px; }
+        .card {
+            background: #16213e;
+            border: 2px solid #333;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .card:hover { border-color: #e94560; transform: scale(1.02); }
+        .card.remove { border-color: #ef4444; opacity: 0.6; }
+        .card.remove::after {
+            content: "❌ RETIRER";
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(239,68,68,0.9);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .card { position: relative; }
+        .card img { width: 100%; height: 180px; object-fit: cover; }
+        .card .name { padding: 10px; font-weight: bold; }
+        .card .size { padding: 0 10px 10px; font-size: 12px; color: #888; }
+        .summary {
+            position: fixed; bottom: 20px; right: 20px;
+            background: #0f0f1a; border: 2px solid #e94560;
+            padding: 15px; border-radius: 10px;
+        }
+        .summary button {
+            margin-top: 10px; width: 100%; padding: 10px;
+            background: #e94560; color: #fff; border: none;
+            border-radius: 5px; cursor: pointer; font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎮 STAGES - Clique pour marquer à retirer</h1>
+    <p class="info">31 stages - Clique sur ceux à supprimer puis 'Exporter'</p>
+    <div class="gallery">
+
+        <div class="card" data-name="Abyss-Rugal-Palace.def" onclick="toggle(this)">
+            <img src="Abyss-Rugal-Palace.png" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 200%22><rect fill=%22%231a1a2e%22 width=%22400%22 height=%22200%22/><text x=%22200%22 y=%22100%22 fill=%22%23e94560%22 text-anchor=%22middle%22>Abyss-Rugal-Palace</text></svg>'">
+            <div class="name">Abyss-Rugal-Palace</div>
+            <div class="size">9.3 MB</div>
+        </div>
+
+        <div class="card" data-name="Anime Blu.def" onclick="toggle(this)">
+            <img src="Anime Blu.png" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 200%22><rect fill=%22%231a1a2e%22 width=%22400%22 height=%22200%22/><text x=%22200%22 y=%22100%22 fill=%22%23e94560%22 text-anchor=%22middle%22>Anime Blu</text></svg>'">
+            <div class="name">Anime Blu</div>
+            <div class="size">0.6 MB</div>
+        </div>
+
+        <div class="card" data-name="Anubis.def" onclick="toggle(this)">
+            <img src="Anubis.png" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 200%22><rect fill=%22%231a1a2e%22 width=%22400%22 height=%22200%22/><text x=%22200%22 y=%22100%22 fill=%22%23e94560%22 text-anchor=%22middle%22>Anubis</text></svg>'">
+            <div class="name">Anubis</div>
+            <div class="size">2.4 MB</div>
+        </div>
+
+        <div class="card" data-name="Basque Palace.def" onclick="toggle(this)">
+            <img src="Basque Palace.png" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 200%22><rect fill=%22%231a1a2e%22 width=%22400%22 height=%22200%22/><text x=%22200%22 y=%22100%22 fill=%22%23e94560%22 text-anchor=%22middle%22>Basque Palace</text></svg>'">
+            <div class="name">Basque Palace</div>
+            <div class="size">2.6 MB</div>
+        </div>
+
+        <div class="card" data-name="BLACK SON DROTIME.def" onclick="toggle(this)">
+            <img src="BLACK SON DROTIME.png" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 200%22><rect fill=%22%231a1a2e%22 width=%22400%22 height=%22200%22/><text x=%22200%22 y=%22100%22 fill=%22%23e94560%22 text-anchor=%22middle%22>BLACK SON DROTIME</text></svg>'">
+            <div class="name">BLACK SON DROTIME</div>
+            <div class="size">0.7 MB</div>
+        </div>
+
+        <div class="card" data-name="Black wall.def" onclick="toggle(this)">
+            <img src="Black wall.png" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 200%22><rect fill=%22%231a1a2e%22 width=%22400%22 height=%22200%22/><text x=%22200%22 y=%22100%22 fill=%22%23e94560%22 text-anchor=%22middle%22>Black wall</text></svg>'">
+            <div class="name">Black wall</div>
+            <div class="size">1.8 MB</div>
+        </div>
+
+        <div class="card" data-name="clones lab destroyed.def" onclick="toggle(this)">
+            <img src="clones lab destroyed.png" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 200%22><rect fill=%22%231a1a2e%22 width=%22400%22 height=%22200%22/><text x=%22200%22 y=%22100%22 fill=%22%23e94560%22 text-anchor=%22middle%22>clones lab destroyed</text></svg>'">
+            <div class="name">clones lab destroyed</div>
+            <div class="size">1.1 MB</div>
+        </div>
+
+        <div class="card" data-name="DARK SAID RUGAL S .def" onclick="toggle(this)">
+            <img src="DARK SAID RUGAL S .png" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 200%22><rect fill=%22%231a1a2e%22 width=%22400%22 height=%22200%22/><text x=%22200%22 y=%22100%22 fill=%22%23e94560%22 text-anchor=%22middle%22>DARK SAID RUGAL S </text></svg>'">
+            <div class="name">DARK SAID RUGAL S </div>
+            <div class="size">0.6 MB</div>
+        </div>
+
+        <div class="card" data-name="Darkness.def" onclick="toggle(this)">
+            <img src="Darkness.png" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 200%22><rect fill=%22%231a1a2e%22 width=%22400%22 height=%22200%22/><text x=%22200%22 y=%22100%22 fill=%22%23e94560%22 text-anchor=%22middle%22>Darkness</text></svg>'">
+            <div class="name">Darkness</div>
+            <div class="size">3.5 MB</div>
+        </div>
+
+        <div class="card" data-name="DROBLOOD R 2.0.def" onclick="toggle(this)">
+            <img src="DROBLOOD R 2.0.png" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 200%22><rect fill=%22%231a1a2e%22 width=%22400%22 height=%22200%22/><text x=%22200%22 y=%22100%22 fill=%22%23e94560%22 text-anchor=%22middle%22>DROBLOOD R 2.0</text></svg>'">
+            <div class="name">DROBLOOD R 2.0</div>
+            <div class="size">2.1 MB</div>
+        </div>
+
+        <div class="card" data-name="Exagon Force.def" onclick="toggle(this)">
+            <img src="Exagon Force.png" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 200%22><rect fill=%22%231a1a2e%22 width=%22400%22 height=%22200%22/><text x=%22200%22 y=%22100%22 fill=%22%23e94560%22 text-anchor=%22middle%22>Exagon Force</text></svg>'">
+            <div class="name">Exagon Force</div>
+            <div class="size">0.0 MB</div>
+        </div>
+
+        <div class="card" data-name="Far from here.def" onclick="toggle(this)">
+            <img src="Far from here.png" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 200%22><rect fill=%22%231a1a2e%22 width=%22400%22 height=%22200%22/><text x=%22200%22 y=%22100%22 fill=%22%23e94560%22 text-anchor=%22middle%22>Far from here</text></svg>'">
+            <div class="name">Far from here</div>
+            <div class="size">5.2 MB</div>
+        </div>
+
+        <div class="card" data-name="forest infernal fire.def" onclick="toggle(this)">
+            <img src="forest infernal fire.png" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 200%22><rect fill=%22%231a1a2e%22 width=%22400%22 height=%22200%22/><text x=%22200%22 y=%22100%22 fill=%22%23e94560%22 text-anchor=%22middle%22>forest infernal fire</text></svg>'">
+            <div class="name">forest infernal fire</div>
+            <div class="size">0.9 MB</div>
+        </div>
+
+        <div class="card" data-name="Galaxy BG.def" onclick="toggle(this)">
+            <img src="Galaxy BG.png" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 200%22><rect fill=%22%231a1a2e%22 width=%22400%22 height=%22200%22/><text x=%22200%22 y=%22100%22 fill=%22%23e94560%22 text-anchor=%22middle%22>Galaxy BG</text></svg>'">
+            <div class="name">Galaxy BG</div>
+            <div class="size">0.4 MB</div>
+        </div>
+
+        <div class="card" data-name="light kyouki.def" onclick="toggle(this)">
+            <img src="light kyouki.png" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 200%22><rect fill=%22%231a1a2e%22 width=%22400%22 height=%22200%22/><text x=%22200%22 y=%22100%22 fill=%22%23e94560%22 text-anchor=%22middle%22>light kyouki</text></svg>'">
+            <div class="name">light kyouki</div>
+            <div class="size">11.5 MB</div>
+        </div>
+
+        <div class="card" data-name="Moon of dark wall.def" onclick="toggle(this)">
+            <img src="Moon of dark wall.png" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 200%22><rect fill=%22%231a1a2e%22 width=%22400%22 height=%22200%22/><text x=%22200%22 y=%22100%22 fill=%22%23e94560%22 text-anchor=%22middle%22>Moon of dark wall</text></svg>'">
+            <div class="name">Moon of dark wall</div>
+            <div class="size">1.0 MB</div>
+        </div>
+
+        <div class="card" data-name="Moon recidence.def" onclick="toggle(this)">
+            <img src="Moon recidence.png" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 200%22><rect fill=%22%231a1a2e%22 width=%22400%22 height=%22200%22/><text x=%22200%22 y=%22100%22 fill=%22%23e94560%22 text-anchor=%22middle%22>Moon recidence</text></svg>'">
+            <div class="name">Moon recidence</div>
+            <div class="size">0.9 MB</div>
+        </div>
+
+        <div class="card" data-name="O.DB DRORANGE BLACK.def" onclick="toggle(this)">
+            <img src="O.DB DRORANGE BLACK.png" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 200%22><rect fill=%22%231a1a2e%22 width=%22400%22 height=%22200%22/><text x=%22200%22 y=%22100%22 fill=%22%23e94560%22 text-anchor=%22middle%22>O.DB DRORANGE BLACK</text></svg>'">
+            <div class="name">O.DB DRORANGE BLACK</div>
+            <div class="size">1.4 MB</div>
+        </div>
+
+        <div class="card" data-name="Palece Mistery R.def" onclick="toggle(this)">
+            <img src="Palece Mistery R.png" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 200%22><rect fill=%22%231a1a2e%22 width=%22400%22 height=%22200%22/><text x=%22200%22 y=%22100%22 fill=%22%23e94560%22 text-anchor=%22middle%22>Palece Mistery R</text></svg>'">
+            <div class="name">Palece Mistery R</div>
+            <div class="size">0.2 MB</div>
+        </div>
+
+        <div class="card" data-name="RED.def" onclick="toggle(this)">
+            <img src="RED.png" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 200%22><rect fill=%22%231a1a2e%22 width=%22400%22 height=%22200%22/><text x=%22200%22 y=%22100%22 fill=%22%23e94560%22 text-anchor=%22middle%22>RED</text></svg>'">
+            <div class="name">RED</div>
+            <div class="size">4.1 MB</div>
+        </div>
+
+        <div class="card" data-name="Red_Cliff.def" onclick="toggle(this)">
+            <img src="Red_Cliff.png" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 200%22><rect fill=%22%231a1a2e%22 width=%22400%22 height=%22200%22/><text x=%22200%22 y=%22100%22 fill=%22%23e94560%22 text-anchor=%22middle%22>Red_Cliff</text></svg>'">
+            <div class="name">Red_Cliff</div>
+            <div class="size">9.6 MB</div>
+        </div>
+
+        <div class="card" data-name="space_binary.def" onclick="toggle(this)">
+            <img src="space_binary.png" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 200%22><rect fill=%22%231a1a2e%22 width=%22400%22 height=%22200%22/><text x=%22200%22 y=%22100%22 fill=%22%23e94560%22 text-anchor=%22middle%22>space_binary</text></svg>'">
+            <div class="name">space_binary</div>
+            <div class="size">0.0 MB</div>
+        </div>
+
+        <div class="card" data-name="space_deep.def" onclick="toggle(this)">
+            <img src="space_deep.png" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 200%22><rect fill=%22%231a1a2e%22 width=%22400%22 height=%22200%22/><text x=%22200%22 y=%22100%22 fill=%22%23e94560%22 text-anchor=%22middle%22>space_deep</text></svg>'">
+            <div class="name">space_deep</div>
+            <div class="size">0.0 MB</div>
+        </div>
+
+        <div class="card" data-name="space_galaxy.def" onclick="toggle(this)">
+            <img src="space_galaxy.png" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 200%22><rect fill=%22%231a1a2e%22 width=%22400%22 height=%22200%22/><text x=%22200%22 y=%22100%22 fill=%22%23e94560%22 text-anchor=%22middle%22>space_galaxy</text></svg>'">
+            <div class="name">space_galaxy</div>
+            <div class="size">0.0 MB</div>
+        </div>
+
+        <div class="card" data-name="space_nebula_purple.def" onclick="toggle(this)">
+            <img src="space_nebula_purple.png" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 200%22><rect fill=%22%231a1a2e%22 width=%22400%22 height=%22200%22/><text x=%22200%22 y=%22100%22 fill=%22%23e94560%22 text-anchor=%22middle%22>space_nebula_purple</text></svg>'">
+            <div class="name">space_nebula_purple</div>
+            <div class="size">0.0 MB</div>
+        </div>
+
+        <div class="card" data-name="space_planet.def" onclick="toggle(this)">
+            <img src="space_planet.png" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 200%22><rect fill=%22%231a1a2e%22 width=%22400%22 height=%22200%22/><text x=%22200%22 y=%22100%22 fill=%22%23e94560%22 text-anchor=%22middle%22>space_planet</text></svg>'">
+            <div class="name">space_planet</div>
+            <div class="size">0.0 MB</div>
+        </div>
+
+        <div class="card" data-name="space_void.def" onclick="toggle(this)">
+            <img src="space_void.png" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 200%22><rect fill=%22%231a1a2e%22 width=%22400%22 height=%22200%22/><text x=%22200%22 y=%22100%22 fill=%22%23e94560%22 text-anchor=%22middle%22>space_void</text></svg>'">
+            <div class="name">space_void</div>
+            <div class="size">0.0 MB</div>
+        </div>
+
+        <div class="card" data-name="The Will Of Hades S .def" onclick="toggle(this)">
+            <img src="The Will Of Hades S .png" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 200%22><rect fill=%22%231a1a2e%22 width=%22400%22 height=%22200%22/><text x=%22200%22 y=%22100%22 fill=%22%23e94560%22 text-anchor=%22middle%22>The Will Of Hades S </text></svg>'">
+            <div class="name">The Will Of Hades S </div>
+            <div class="size">2.4 MB</div>
+        </div>
+
+        <div class="card" data-name="TIME INGCODNITA.def" onclick="toggle(this)">
+            <img src="TIME INGCODNITA.png" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 200%22><rect fill=%22%231a1a2e%22 width=%22400%22 height=%22200%22/><text x=%22200%22 y=%22100%22 fill=%22%23e94560%22 text-anchor=%22middle%22>TIME INGCODNITA</text></svg>'">
+            <div class="name">TIME INGCODNITA</div>
+            <div class="size">2.3 MB</div>
+        </div>
+
+        <div class="card" data-name="Wall of paintings.def" onclick="toggle(this)">
+            <img src="Wall of paintings.png" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 200%22><rect fill=%22%231a1a2e%22 width=%22400%22 height=%22200%22/><text x=%22200%22 y=%22100%22 fill=%22%23e94560%22 text-anchor=%22middle%22>Wall of paintings</text></svg>'">
+            <div class="name">Wall of paintings</div>
+            <div class="size">1.1 MB</div>
+        </div>
+
+        <div class="card" data-name="xX-Hell-Dark-Xx.def" onclick="toggle(this)">
+            <img src="xX-Hell-Dark-Xx.png" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 200%22><rect fill=%22%231a1a2e%22 width=%22400%22 height=%22200%22/><text x=%22200%22 y=%22100%22 fill=%22%23e94560%22 text-anchor=%22middle%22>xX-Hell-Dark-Xx</text></svg>'">
+            <div class="name">xX-Hell-Dark-Xx</div>
+            <div class="size">1.9 MB</div>
+        </div>
+
+    </div>
+    <div class="summary">
+        <div>A retirer: <span id="count" style="color:#ef4444">0</span></div>
+        <button onclick="exportList()">📋 Exporter la liste</button>
+    </div>
+    <script>
+        let toRemove = new Set();
+        function toggle(el) {
+            const name = el.dataset.name;
+            if (toRemove.has(name)) {
+                toRemove.delete(name);
+                el.classList.remove('remove');
+            } else {
+                toRemove.add(name);
+                el.classList.add('remove');
+            }
+            document.getElementById('count').textContent = toRemove.size;
+        }
+        function exportList() {
+            const list = Array.from(toRemove);
+            if (list.length === 0) {
+                alert('Aucun stage selectionne!');
+                return;
+            }
+            navigator.clipboard.writeText(list.join('\n'));
+            alert('Copie! ' + list.length + ' stages:\n\n' + list.join('\n'));
+        }
+    </script>
+</body>
+</html>

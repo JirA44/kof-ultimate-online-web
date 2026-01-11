@@ -1,0 +1,15 @@
+{
+  "match_id": "1767004843_4802",
+  "player1": "Pro_Player_One",
+  "player2": "Zoner_Elite",
+  "player1_char": "Billy",
+  "player2_char": "Terry",
+  "winner": "Pro_Player_One",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T11:40:43.209417",
+  "duration_seconds": 0,
+  "elo_change_p1": 16,
+  "elo_change_p2": -16
+}

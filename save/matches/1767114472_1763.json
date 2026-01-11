@@ -1,0 +1,15 @@
+{
+  "match_id": "1767114472_1763",
+  "player1": "SNK_Champion",
+  "player2": "Tournament_Ace",
+  "player1_char": "Shen",
+  "player2_char": "King",
+  "winner": "SNK_Champion",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T18:07:52.283871",
+  "duration_seconds": 0,
+  "elo_change_p1": 27,
+  "elo_change_p2": -27
+}

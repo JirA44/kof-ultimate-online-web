@@ -1,0 +1,24 @@
+{
+  "match_id": "1766979823_3691",
+  "player1": "Mix_Up_Master",
+  "player2": "Money_Match",
+  "player1_char": "Ash",
+  "player2_char": "Mature",
+  "winner": "Money_Match",
+  "rounds": [
+    {
+      "winner": "Money_Match",
+      "perfect": false
+    },
+    {
+      "winner": "Money_Match",
+      "perfect": false
+    }
+  ],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T04:43:43.213164",
+  "duration_seconds": 0,
+  "elo_change_p1": -15,
+  "elo_change_p2": 15
+}

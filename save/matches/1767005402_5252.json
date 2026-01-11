@@ -1,0 +1,15 @@
+{
+  "match_id": "1767005402_5252",
+  "player1": "Training_Mode",
+  "player2": "Rage_Quitter_0",
+  "player1_char": "Athena",
+  "player2_char": "Athena",
+  "winner": "Training_Mode",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T11:50:02.937231",
+  "duration_seconds": 0,
+  "elo_change_p1": 19,
+  "elo_change_p2": -19
+}

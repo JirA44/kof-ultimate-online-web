@@ -1,0 +1,15 @@
+{
+  "match_id": "1767081939_7346",
+  "player1": "Ranked_Slayer",
+  "player2": "NeoGeo_Master",
+  "player1_char": "Billy",
+  "player2_char": "Ramon",
+  "winner": "Ranked_Slayer",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T09:05:39.630415",
+  "duration_seconds": 0,
+  "elo_change_p1": 22,
+  "elo_change_p2": -22
+}

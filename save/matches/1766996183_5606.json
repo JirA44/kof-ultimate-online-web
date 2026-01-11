@@ -1,0 +1,15 @@
+{
+  "match_id": "1766996183_5606",
+  "player1": "FGC_Veteran",
+  "player2": "Comeback_Kid",
+  "player1_char": "K'",
+  "player2_char": "Vanessa",
+  "winner": "Comeback_Kid",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T09:16:23.665649",
+  "duration_seconds": 0,
+  "elo_change_p1": -12,
+  "elo_change_p2": 12
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767098512_1453",
+  "player1": "Online_Warrior",
+  "player2": "Ranked_Slayer",
+  "player1_char": "Billy",
+  "player2_char": "Ramon",
+  "winner": "Online_Warrior",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-30T13:41:52.981803",
+  "duration_seconds": 0,
+  "elo_change_p1": 25,
+  "elo_change_p2": -25
+}

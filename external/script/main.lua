@@ -13,6 +13,50 @@ if main.flags['-stats'] == nil then main.flags['-stats'] = 'save/stats.json' end
 --One-time load of the json routines
 json = (loadfile 'external/script/json.lua')()
 
+--Load KOF Ultimate Online system
+local onlineOK, onlineErr = pcall(function()
+    online = (loadfile 'external/script/online_system.lua')()
+end)
+if onlineOK then
+    print("[KOF Ultimate Online] Online system loaded successfully")
+else
+    print("[KOF Ultimate Online] Warning: Could not load online system: " .. tostring(onlineErr))
+    online = nil
+end
+
+--Load Leaderboard Screen
+local lbOK, lbErr = pcall(function()
+    leaderboard_screen = (loadfile 'external/script/leaderboard_screen.lua')()
+end)
+if lbOK then
+    print("[KOF Ultimate Online] Leaderboard screen loaded successfully")
+else
+    print("[KOF Ultimate Online] Warning: Could not load leaderboard screen: " .. tostring(lbErr))
+    leaderboard_screen = nil
+end
+
+--Load Profile Screen
+local profOK, profErr = pcall(function()
+    profile_screen = (loadfile 'external/script/profile_screen.lua')()
+end)
+if profOK then
+    print("[KOF Ultimate Online] Profile screen loaded successfully")
+else
+    print("[KOF Ultimate Online] Warning: Could not load profile screen: " .. tostring(profErr))
+    profile_screen = nil
+end
+
+--Load Live Lobby Screen
+local lobbyOK, lobbyErr = pcall(function()
+    live_lobby = (loadfile 'external/script/live_lobby_screen.lua')()
+end)
+if lobbyOK then
+    print("[KOF Ultimate Online] Live lobby screen loaded successfully")
+else
+    print("[KOF Ultimate Online] Warning: Could not load live lobby screen: " .. tostring(lobbyErr))
+    live_lobby = nil
+end
+
 --;===========================================================
 --; COMMON FUNCTIONS
 --;===========================================================
@@ -3007,6 +3051,134 @@ main.t_itemname = {
 }
 main.t_itemname.teamarcade = main.t_itemname.arcade
 main.t_itemname.teamversus = main.t_itemname.versus
+
+--LEADERBOARD (KOF Ultimate Online)
+main.t_itemname['rankings'] = function()
+	if leaderboard_screen then
+		leaderboard_screen.open()
+		main.f_bgReset(motif.titlebgdef.bg)
+		main.f_fadeReset('fadein', motif.title_info)
+		local txt = text:create({font = "font/f-6x9.fnt", bank = 0, align = -1, text = "", x = 480, y = 20, scaleX = 1, scaleY = 1, r = 255, g = 255, b = 255})
+		local startTime = os.clock()
+		while leaderboard_screen.isActive() do
+			main.f_cmdInput()
+			if os.clock() - startTime > 0.15 then
+				for i = 1, #main.t_cmd do
+					leaderboard_screen.handleInput(main.t_cmd[i])
+				end
+			end
+			clearColor(motif.titlebgdef.bgclearcolor[1], motif.titlebgdef.bgclearcolor[2], motif.titlebgdef.bgclearcolor[3])
+			bgDraw(motif.titlebgdef.bg, false)
+			local displayText = leaderboard_screen.getDisplayText() or ""
+			local lines = {}
+			for line in displayText:gmatch("[^\n]+") do
+				table.insert(lines, line)
+			end
+			for i, line in ipairs(lines) do
+				txt:update({text = line, y = 25 + (i-1) * 14})
+				txt:draw()
+			end
+			bgDraw(motif.titlebgdef.bg, true)
+			main.f_cmdBufReset()
+			main.f_refresh()
+		end
+		main.f_fadeReset('fadein', motif.title_info)
+	end
+	return nil
+end
+
+--MY PROFILE (KOF Ultimate Online)
+main.t_itemname['profile'] = function()
+	if profile_screen then
+		profile_screen.open("LocalPlayer")
+		main.f_bgReset(motif.titlebgdef.bg)
+		main.f_fadeReset('fadein', motif.title_info)
+		local txt = text:create({font = "font/f-6x9.fnt", bank = 0, align = -1, text = "", x = 480, y = 20, scaleX = 1, scaleY = 1, r = 255, g = 255, b = 255})
+		local startTime = os.clock()
+		while profile_screen.isActive() do
+			main.f_cmdInput()
+			if os.clock() - startTime > 0.15 then
+				for i = 1, #main.t_cmd do
+					profile_screen.handleInput(main.t_cmd[i])
+				end
+			end
+			clearColor(motif.titlebgdef.bgclearcolor[1], motif.titlebgdef.bgclearcolor[2], motif.titlebgdef.bgclearcolor[3])
+			bgDraw(motif.titlebgdef.bg, false)
+			local displayText = profile_screen.getDisplayText() or ""
+			local lines = {}
+			for line in displayText:gmatch("[^\n]+") do
+				table.insert(lines, line)
+			end
+			for i, line in ipairs(lines) do
+				txt:update({text = line, y = 25 + (i-1) * 14})
+				txt:draw()
+			end
+			bgDraw(motif.titlebgdef.bg, true)
+			main.f_cmdBufReset()
+			main.f_refresh()
+		end
+		main.f_fadeReset('fadein', motif.title_info)
+	end
+	return nil
+end
+
+--LIVE LOBBY (KOF Ultimate Online)
+main.t_itemname['lobby'] = function()
+	if live_lobby then
+		live_lobby.open()
+		main.f_bgReset(motif.titlebgdef.bg)
+		main.f_fadeReset('fadein', motif.title_info)
+		local txt = text:create({font = "font/f-6x9.fnt", bank = 0, align = -1, text = "", x = 480, y = 15, scaleX = 1, scaleY = 1, r = 255, g = 255, b = 255})
+		local startTime = os.clock()
+		while live_lobby.isActive() do
+			main.f_cmdInput()
+			live_lobby.update()
+			if os.clock() - startTime > 0.15 then
+				for i = 1, #main.t_cmd do
+					live_lobby.handleInput(main.t_cmd[i])
+				end
+			end
+			clearColor(motif.titlebgdef.bgclearcolor[1], motif.titlebgdef.bgclearcolor[2], motif.titlebgdef.bgclearcolor[3])
+			bgDraw(motif.titlebgdef.bg, false)
+			-- Utiliser l'UI graphique moderne si disponible
+			if live_lobby.draw then
+				live_lobby.draw()
+			else
+				-- Fallback sur le texte ASCII
+				local displayText = live_lobby.getDisplayText() or ""
+				local lines = {}
+				for line in displayText:gmatch("[^\n]+") do
+					table.insert(lines, line)
+				end
+				for i, line in ipairs(lines) do
+					txt:update({text = line, y = 18 + (i-1) * 13})
+					txt:draw()
+				end
+			end
+			bgDraw(motif.titlebgdef.bg, true)
+			main.f_cmdBufReset()
+			main.f_refresh()
+		end
+		main.f_fadeReset('fadein', motif.title_info)
+		-- Vérifier si le lobby veut lancer un mode de jeu
+		if live_lobby and live_lobby.nextAction then
+			local action = live_lobby.nextAction
+			live_lobby.nextAction = nil
+			if action == "training" then
+				-- Lancer le mode Training
+				return main.t_itemname['training']()
+			elseif action == "versus" then
+				-- Lancer le mode Versus
+				return main.t_itemname['versus']()
+			elseif action == "leaderboard" then
+				-- Ouvrir le Leaderboard
+				return main.t_itemname['rankings']()
+			end
+		end
+	end
+	return nil
+end
+
 if main.debugLog then main.f_printTable(main.t_itemname, 'debug/t_mainItemname.txt') end
 
 function main.f_deleteIP(item, t)

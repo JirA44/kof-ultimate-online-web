@@ -1,0 +1,15 @@
+{
+  "match_id": "1767055495_4150",
+  "player1": "First_To_10",
+  "player2": "Stream_Monster",
+  "player1_char": "Shen",
+  "player2_char": "Athena",
+  "winner": "Stream_Monster",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T01:44:55.669743",
+  "duration_seconds": 0,
+  "elo_change_p1": -10,
+  "elo_change_p2": 10
+}

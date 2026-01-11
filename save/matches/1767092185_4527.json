@@ -1,0 +1,15 @@
+{
+  "match_id": "1767092185_4527",
+  "player1": "Clutch_King",
+  "player2": "Rage_Quitter_0",
+  "player1_char": "King",
+  "player2_char": "Leona",
+  "winner": "Rage_Quitter_0",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T11:56:25.071980",
+  "duration_seconds": 0,
+  "elo_change_p1": -2,
+  "elo_change_p2": 2
+}

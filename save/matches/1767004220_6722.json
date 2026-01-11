@@ -1,0 +1,15 @@
+{
+  "match_id": "1767004220_6722",
+  "player1": "Training_Mode",
+  "player2": "Rage_Quitter_0",
+  "player1_char": "Ryo",
+  "player2_char": "Mature",
+  "winner": "Training_Mode",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T11:30:20.907341",
+  "duration_seconds": 0,
+  "elo_change_p1": 21,
+  "elo_change_p2": -21
+}

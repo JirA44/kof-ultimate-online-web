@@ -1,0 +1,15 @@
+{
+  "match_id": "1767117679_6932",
+  "player1": "NeoGeo_Master",
+  "player2": "DragonFist_99",
+  "player1_char": "Leona",
+  "player2_char": "Goro",
+  "winner": "NeoGeo_Master",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-30T19:01:19.340553",
+  "duration_seconds": 0,
+  "elo_change_p1": 17,
+  "elo_change_p2": -17
+}

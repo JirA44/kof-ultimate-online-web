@@ -1,0 +1,15 @@
+{
+  "match_id": "1767116813_4833",
+  "player1": "Frame_Perfect",
+  "player2": "Combo_Breaker",
+  "player1_char": "Yashiro",
+  "player2_char": "Mai",
+  "winner": "Combo_Breaker",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T18:46:53.727104",
+  "duration_seconds": 0,
+  "elo_change_p1": -7,
+  "elo_change_p2": 7
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1766999271_8140",
+  "player1": "Perfect_KO",
+  "player2": "Rage_Quitter_0",
+  "player1_char": "Chris",
+  "player2_char": "Mature",
+  "winner": "Rage_Quitter_0",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T10:07:51.135535",
+  "duration_seconds": 0,
+  "elo_change_p1": -15,
+  "elo_change_p2": 15
+}

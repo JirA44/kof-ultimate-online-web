@@ -1,0 +1,15 @@
+{
+  "match_id": "1767066324_7509",
+  "player1": "FGC_Veteran",
+  "player2": "Grappler_God",
+  "player1_char": "Terry",
+  "player2_char": "Ryo",
+  "winner": "FGC_Veteran",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T04:45:24.309857",
+  "duration_seconds": 0,
+  "elo_change_p1": 18,
+  "elo_change_p2": -18
+}

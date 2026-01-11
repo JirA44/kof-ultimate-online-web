@@ -1,0 +1,15 @@
+{
+  "match_id": "1767069362_5344",
+  "player1": "Tournament_Ace",
+  "player2": "FGC_Veteran",
+  "player1_char": "Yamazaki",
+  "player2_char": "Billy",
+  "winner": "FGC_Veteran",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T05:36:02.346695",
+  "duration_seconds": 0,
+  "elo_change_p1": -14,
+  "elo_change_p2": 14
+}

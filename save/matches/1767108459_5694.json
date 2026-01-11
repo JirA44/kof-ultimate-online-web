@@ -1,0 +1,15 @@
+{
+  "match_id": "1767108459_5694",
+  "player1": "KOF_Legend",
+  "player2": "Training_Mode",
+  "player1_char": "Yamazaki",
+  "player2_char": "K'",
+  "winner": "Training_Mode",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T16:27:39.975172",
+  "duration_seconds": 0,
+  "elo_change_p1": -15,
+  "elo_change_p2": 15
+}

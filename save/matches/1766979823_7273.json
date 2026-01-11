@@ -1,0 +1,28 @@
+{
+  "match_id": "1766979823_7273",
+  "player1": "Money_Match",
+  "player2": "SNK_Champion",
+  "player1_char": "K'",
+  "player2_char": "King",
+  "winner": "Money_Match",
+  "rounds": [
+    {
+      "winner": "Money_Match",
+      "perfect": false
+    },
+    {
+      "winner": "SNK_Champion",
+      "perfect": false
+    },
+    {
+      "winner": "Money_Match",
+      "perfect": false
+    }
+  ],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T04:43:43.384248",
+  "duration_seconds": 0,
+  "elo_change_p1": 13,
+  "elo_change_p2": -13
+}

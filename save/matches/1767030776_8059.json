@@ -1,0 +1,15 @@
+{
+  "match_id": "1767030776_8059",
+  "player1": "First_To_10",
+  "player2": "Mix_Up_Master",
+  "player1_char": "Yuri",
+  "player2_char": "Duo Lon",
+  "winner": "First_To_10",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T18:52:56.931325",
+  "duration_seconds": 0,
+  "elo_change_p1": 21,
+  "elo_change_p2": -21
+}

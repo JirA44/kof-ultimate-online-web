@@ -1,0 +1,15 @@
+{
+  "match_id": "1767003269_5345",
+  "player1": "Casual_Fighter",
+  "player2": "SNK_Champion",
+  "player1_char": "Iori",
+  "player2_char": "Yashiro",
+  "winner": "SNK_Champion",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T11:14:29.951556",
+  "duration_seconds": 0,
+  "elo_change_p1": -12,
+  "elo_change_p2": 12
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1766987160_9698",
+  "player1": "FatalFury_Pro",
+  "player2": "SNK_Champion",
+  "player1_char": "Shen",
+  "player2_char": "Maxima",
+  "winner": "FatalFury_Pro",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T06:46:00.797984",
+  "duration_seconds": 0,
+  "elo_change_p1": 19,
+  "elo_change_p2": -19
+}

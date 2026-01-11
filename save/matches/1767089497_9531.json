@@ -1,0 +1,15 @@
+{
+  "match_id": "1767089497_9531",
+  "player1": "Online_Warrior",
+  "player2": "Hype_Beast_99",
+  "player1_char": "Chris",
+  "player2_char": "K'",
+  "winner": "Online_Warrior",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-30T11:11:37.910725",
+  "duration_seconds": 0,
+  "elo_change_p1": 27,
+  "elo_change_p2": -27
+}

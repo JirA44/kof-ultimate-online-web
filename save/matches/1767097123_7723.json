@@ -1,0 +1,15 @@
+{
+  "match_id": "1767097123_7723",
+  "player1": "Training_Mode",
+  "player2": "Rush_Down_King",
+  "player1_char": "Athena",
+  "player2_char": "Kensou",
+  "winner": "Rush_Down_King",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T13:18:43.779583",
+  "duration_seconds": 0,
+  "elo_change_p1": -1,
+  "elo_change_p2": 1
+}

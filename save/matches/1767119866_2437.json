@@ -1,0 +1,15 @@
+{
+  "match_id": "1767119866_2437",
+  "player1": "SNK_Champion",
+  "player2": "Money_Match",
+  "player1_char": "Chizuru",
+  "player2_char": "Ralf",
+  "winner": "SNK_Champion",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-30T19:37:46.000330",
+  "duration_seconds": 0,
+  "elo_change_p1": 16,
+  "elo_change_p2": -16
+}

@@ -1,0 +1,24 @@
+{
+  "match_id": "1766979823_6792",
+  "player1": "KOF_Legend",
+  "player2": "Perfect_KO",
+  "player1_char": "Duo Lon",
+  "player2_char": "Shermie",
+  "winner": "KOF_Legend",
+  "rounds": [
+    {
+      "winner": "KOF_Legend",
+      "perfect": false
+    },
+    {
+      "winner": "KOF_Legend",
+      "perfect": false
+    }
+  ],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T04:43:43.138351",
+  "duration_seconds": 0,
+  "elo_change_p1": 16,
+  "elo_change_p2": -16
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1766992122_6021",
+  "player1": "First_To_10",
+  "player2": "Combo_Breaker",
+  "player1_char": "Billy",
+  "player2_char": "Duo Lon",
+  "winner": "Combo_Breaker",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T08:08:42.615378",
+  "duration_seconds": 0,
+  "elo_change_p1": -10,
+  "elo_change_p2": 10
+}

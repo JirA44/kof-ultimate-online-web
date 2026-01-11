@@ -1,0 +1,15 @@
+{
+  "match_id": "1767122515_1863",
+  "player1": "Zoner_Elite",
+  "player2": "NeoGeo_Master",
+  "player1_char": "Yamazaki",
+  "player2_char": "Rugal",
+  "winner": "NeoGeo_Master",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T20:21:55.000700",
+  "duration_seconds": 0,
+  "elo_change_p1": -11,
+  "elo_change_p2": 11
+}

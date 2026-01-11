@@ -1,0 +1,15 @@
+{
+  "match_id": "1767107360_5564",
+  "player1": "Perfect_KO",
+  "player2": "GG_EZ_Player",
+  "player1_char": "Chris",
+  "player2_char": "Kensou",
+  "winner": "GG_EZ_Player",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T16:09:20.628733",
+  "duration_seconds": 0,
+  "elo_change_p1": -6,
+  "elo_change_p2": 6
+}

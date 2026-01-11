@@ -1,0 +1,15 @@
+{
+  "match_id": "1767108266_6625",
+  "player1": "Rage_Quitter_0",
+  "player2": "NeoGeo_Master",
+  "player1_char": "Kyo",
+  "player2_char": "Angel",
+  "winner": "NeoGeo_Master",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T16:24:26.696614",
+  "duration_seconds": 0,
+  "elo_change_p1": -10,
+  "elo_change_p2": 10
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767025299_1693",
+  "player1": "Grappler_God",
+  "player2": "GG_EZ_Player",
+  "player1_char": "Iori",
+  "player2_char": "Leona",
+  "winner": "Grappler_God",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T17:21:39.088324",
+  "duration_seconds": 0,
+  "elo_change_p1": 18,
+  "elo_change_p2": -18
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1766986363_4722",
+  "player1": "Frame_Perfect",
+  "player2": "Money_Match",
+  "player1_char": "Ryo",
+  "player2_char": "K'",
+  "winner": "Money_Match",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T06:32:43.258312",
+  "duration_seconds": 0,
+  "elo_change_p1": -12,
+  "elo_change_p2": 12
+}

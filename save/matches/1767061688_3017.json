@@ -1,0 +1,15 @@
+{
+  "match_id": "1767061688_3017",
+  "player1": "EVO_Ready",
+  "player2": "DragonFist_99",
+  "player1_char": "Blue Mary",
+  "player2_char": "Vice",
+  "winner": "DragonFist_99",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T03:28:08.343808",
+  "duration_seconds": 0,
+  "elo_change_p1": -4,
+  "elo_change_p2": 4
+}

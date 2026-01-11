@@ -1,0 +1,3162 @@
+{
+  "scan_date": "2025-12-31T19:02:21.419934",
+  "total_chars": 150,
+  "ok": [
+    "Alou_AKOF"
+  ],
+  "warning": [
+    "03-A-Kyo LV2",
+    "_ArchiMurderer",
+    "A-Angel",
+    "ai",
+    "Aika",
+    "Aika_MK",
+    "Aileen",
+    "Akari",
+    "Akiha Orochi",
+    "Akiha Yagami",
+    "Akiha Yagami DK",
+    "Akiha Yagami1",
+    "Akira_Kazakami",
+    "akuma",
+    "ALBA MEIRA KOF XI -MI2",
+    "Alter Kyo",
+    "Amoumi-KOFM",
+    "Andy-ROTD",
+    "Aner Rolange KOFM",
+    "Anette-KOFM",
+    "Ash",
+    "asura-kofa",
+    "Athena",
+    "Athena Asamiya MI KOFM",
+    "Athena-Heidern",
+    "Athena_XI",
+    "baiyi",
+    "Balto-KOFM",
+    "Beast Yeorin QS",
+    "Benimaru-Nikaido-STAR",
+    "billy",
+    "BlackPrincess_Tohka",
+    "bob",
+    "Boss Gustab M",
+    "boss-orochi",
+    "Business_Vanessa-KOFM",
+    "ccishermie",
+    "Chalice",
+    "Chaos-CKOFM",
+    "Chobi-Hige",
+    "Choi_XI",
+    "clone benimaru",
+    "Clone Blood Rugal",
+    "Clone Zero",
+    "Cronus",
+    "Cruelty Sula UM",
+    "D.Yashiro.Rhythm(Dusk)1.x",
+    "D_DisciplineGirl",
+    "Daiki_Final(Prototype)",
+    "Daisu",
+    "Delirus",
+    "DF-Sula",
+    "DG.Rugal-KOFM",
+    "dr-yang-kofa",
+    "Dragondomainlords",
+    "Drakyola",
+    "Dual-flame_Magaki",
+    "Duester",
+    "Element Ash",
+    "Element Scarlet",
+    "Element-Adel",
+    "Eputh Blood-KOFM",
+    "Essence of Darkness",
+    "Eve",
+    "Fang",
+    "Felix_THird",
+    "Final Adel",
+    "Final Goeniko",
+    "Final Sachiel WF",
+    "Final Zeroko B",
+    "final-goenitz",
+    "Final-IGNIZ",
+    "Final-OriginalZero",
+    "Garnet 1.1",
+    "GARS",
+    "Geese-KOFM",
+    "GOD_ADEL(2012-01-28 Trial)",
+    "god_orochi",
+    "God_Wind",
+    "Goktore-CKOFM",
+    "Graves",
+    "heraclius",
+    "Hiel_SP",
+    "Hunter_U6746",
+    "K9999_KOF",
+    "Kaneda-KOFM",
+    "Kaori Yumiko",
+    "Kasumi-KOFM",
+    "Kei",
+    "kfm",
+    "Kychiel",
+    "Lord-Goenitz",
+    "Magnus",
+    "Mai Phoenix XI",
+    "Maltet",
+    "Maryl",
+    "Matam",
+    "Meld_Boss",
+    "meteoricmarisa",
+    "mizore-kofmLV2",
+    "N-Zeroko",
+    "Nao-MX 1.0",
+    "NeoDio KOFM",
+    "NeoGeegus KOFM",
+    "Nero",
+    "Nox Bernstein",
+    "O.Zero-Prominence",
+    "Original Psyqhical",
+    "Orochi Kyo WF",
+    "Orochi Leona-KOFM",
+    "Orochi-EV1.55",
+    "orochi-iori",
+    "orochi-kyoko",
+    "P-LEONA_ELEMENT",
+    "Raisen.blood-KOFM",
+    "Rayno",
+    "Reas-KOFM",
+    "Reyna",
+    "robo-kyo-kofa",
+    "Rose",
+    "Rozwel S.K (LEGIT)",
+    "Rugal7th",
+    "Ryuji",
+    "S_Infezione",
+    "Shadow-Dancer",
+    "Spiritland Lords",
+    "Titan_KOF",
+    "True Iori X_KOF",
+    "Unfailed Gustab",
+    "Unleashesd God Kula",
+    "Valmar Rugal",
+    "vandals",
+    "Viper",
+    "WatchTV",
+    "WhirlWind-Goenitz",
+    "White DeathRaGeroous Version",
+    "Wild.O.Yashiro",
+    "Wind_MMXIX",
+    "Xion-V",
+    "Yukida",
+    "Yuno-KOFM",
+    "Zerozuchi_Boss"
+  ],
+  "broken": [
+    "Alfred_WLS",
+    "ccihinako",
+    "ccijhun",
+    "cciking",
+    "Infernal_Wind",
+    "Psyche_42-1.1",
+    "Psyche_57-1.1"
+  ],
+  "details": {
+    "03-A-Kyo LV2": {
+      "name": "03-A-Kyo LV2",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "03-A-Kyo LV2.def",
+        "sff": "Kyo-XI.sff",
+        "air": "Kyo-XI.air",
+        "cns": "common1.cns",
+        "cmd": "Kyo-XI.cmd",
+        "snd": "Kyo-XI.snd"
+      },
+      "stats": {
+        "animations": 419,
+        "states": 337
+      }
+    },
+    "_ArchiMurderer": {
+      "name": "_ArchiMurderer",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "_ArchiMurderer.def",
+        "sff": "kain.sff",
+        "air": "kain.air",
+        "cns": "common1.cns",
+        "cmd": "kain.cmd",
+        "snd": "kain.snd"
+      },
+      "stats": {
+        "animations": 366,
+        "states": 1035
+      }
+    },
+    "A-Angel": {
+      "name": "A-Angel",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "A-Angel.def",
+        "sff": "A-Angel.sff",
+        "air": "A-Angel.air",
+        "cns": "A-Angel-2-3.cns",
+        "cmd": "A-Angel.cmd",
+        "snd": "A-Angel.snd"
+      },
+      "stats": {
+        "animations": 212,
+        "states": 18
+      }
+    },
+    "ai": {
+      "name": "ai",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "ai.def",
+        "sff": "ngbc_ai.sff",
+        "air": "ngbc_ai.air",
+        "cns": "common1.cns",
+        "cmd": "ngbc_ai.cmd",
+        "snd": "ngbc_ai.snd"
+      },
+      "stats": {
+        "animations": 300,
+        "states": 334
+      }
+    },
+    "Aika": {
+      "name": "Aika",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Aika.def",
+        "sff": "aika.sff",
+        "air": "aika.air",
+        "cns": "aika.cns",
+        "cmd": "aika.cmd",
+        "snd": "aika.snd"
+      },
+      "stats": {
+        "animations": 207,
+        "states": 720
+      }
+    },
+    "Aika_MK": {
+      "name": "Aika_MK",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Aika_MK.def",
+        "sff": "Aika_MK.sff",
+        "air": "Aika_MK.air",
+        "cns": "Aika_MK-H.cns",
+        "cmd": "Aika_MK.cmd",
+        "snd": "Aika_MK.snd"
+      },
+      "stats": {
+        "animations": 247,
+        "states": 292
+      }
+    },
+    "Aileen": {
+      "name": "Aileen",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Aileen.def",
+        "sff": "Aileen.sff",
+        "air": "Aileen.air",
+        "cns": "Aileen.cns",
+        "cmd": "Aileen.cmd",
+        "snd": "Aileen.SND"
+      },
+      "stats": {
+        "animations": 421,
+        "states": 104
+      }
+    },
+    "Akari": {
+      "name": "Akari",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Akari.def",
+        "sff": "akari.sff",
+        "air": "akari.air",
+        "cns": "akari.cns",
+        "cmd": "akari.cmd",
+        "snd": "akari.snd"
+      },
+      "stats": {
+        "animations": 236,
+        "states": 1129
+      }
+    },
+    "Akiha Orochi": {
+      "name": "Akiha Orochi",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Akiha Orochi.def",
+        "sff": "Oroch_iakiha.sff",
+        "air": "Oroch_iakiha.air",
+        "cns": "common1.cns",
+        "cmd": "Oroch_iakiha.cmd",
+        "snd": "Oroch_iakiha.snd"
+      },
+      "stats": {
+        "animations": 771,
+        "states": 1083
+      }
+    },
+    "Akiha Yagami": {
+      "name": "Akiha Yagami",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Akiha Yagami.def",
+        "sff": "Akiha Yagami.sff",
+        "air": "Akiha Yagami.air",
+        "cns": "Akiha Yagami.cns",
+        "cmd": "Akiha Yagami.cmd",
+        "snd": "Akiha Yagami.snd"
+      },
+      "stats": {
+        "animations": 317,
+        "states": 78
+      }
+    },
+    "Akiha Yagami DK": {
+      "name": "Akiha Yagami DK",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Akiha Yagami DK.def",
+        "sff": "Akiha Yagami.sff",
+        "air": "Akiha Yagami.air",
+        "cns": "Akiha Yagami Anticheap.cns",
+        "cmd": "Akiha Yagami.cmd",
+        "snd": "Akiha Yagami.snd"
+      },
+      "stats": {
+        "animations": 1031,
+        "states": 968
+      }
+    },
+    "Akiha Yagami1": {
+      "name": "Akiha Yagami1",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Akiha Yagami1.def",
+        "sff": "Akiha Yagami.sff",
+        "air": "Akiha Yagami.air",
+        "cns": "Akiha-Yagami-2-3.cns",
+        "cmd": "Akiha-Yagami.cmd",
+        "snd": "Akiha Yagami.snd"
+      },
+      "stats": {
+        "animations": 360,
+        "states": 95
+      }
+    },
+    "Akira_Kazakami": {
+      "name": "Akira_Kazakami",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "CLSN mal formatees detectees",
+        "Anim invalide",
+        "Fichier .cmd manquant (peut utiliser celui par defaut)"
+      ],
+      "files": {
+        "def": "Akira_Kazakami.def",
+        "sff": "Naomi-KOFM.sff",
+        "air": "Naomi-KOFM.air",
+        "cns": "Attacks.cns",
+        "snd": "Naomi-KOFM.snd"
+      },
+      "stats": {
+        "animations": 325,
+        "states": 894
+      }
+    },
+    "akuma": {
+      "name": "akuma",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "akuma.def",
+        "sff": "Gouki.sff",
+        "air": "Gouki.air",
+        "cns": "4-button.cns",
+        "cmd": "4-button.cmd",
+        "snd": "Gouki.snd"
+      },
+      "stats": {
+        "animations": 370,
+        "states": 596
+      }
+    },
+    "ALBA MEIRA KOF XI -MI2": {
+      "name": "ALBA MEIRA KOF XI -MI2",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "ALBA MEIRA KOF XI -MI2.def",
+        "sff": "alba.sff",
+        "air": "Alba.air",
+        "cns": "Alba.cns",
+        "cmd": "Alba.cmd",
+        "snd": "Alba.snd"
+      },
+      "stats": {
+        "animations": 263,
+        "states": 809
+      }
+    },
+    "Alfred_WLS": {
+      "name": "Alfred_WLS",
+      "status": "broken",
+      "issues": [
+        "Fichier .cns/.cns.zss manquant"
+      ],
+      "warnings": [],
+      "files": {
+        "def": "Alfred_WLS.def",
+        "sff": "sprite.sff",
+        "air": "animation.air",
+        "cmd": "command.cmd",
+        "snd": "sound.snd"
+      },
+      "stats": {
+        "animations": 659
+      }
+    },
+    "Alou_AKOF": {
+      "name": "Alou_AKOF",
+      "status": "ok",
+      "issues": [],
+      "warnings": [],
+      "files": {
+        "def": "Alou_AKOF.def",
+        "sff": "Aru.sff",
+        "air": "aru.air",
+        "cns": "Aru-2-3-b.cns",
+        "cmd": "Aru.cmd",
+        "snd": "Aru.snd"
+      },
+      "stats": {
+        "animations": 214,
+        "states": 73
+      }
+    },
+    "Alter Kyo": {
+      "name": "Alter Kyo",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Alter Kyo.def",
+        "sff": "Alter-Kyo.sff",
+        "air": "Alter-Kyo.air",
+        "cns": "Alter-Kyo-2-3.cns",
+        "cmd": "Alter-Kyo.cmd",
+        "snd": "Alter-Kyo.snd"
+      },
+      "stats": {
+        "animations": 967,
+        "states": 205
+      }
+    },
+    "Amoumi-KOFM": {
+      "name": "Amoumi-KOFM",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Amoumi-KOFM.def",
+        "sff": "Sinobu-KOFM.sff",
+        "air": "Sinobu-KOFM.air",
+        "cns": "common1.cns",
+        "cmd": "Sinobu-KOFM.cmd",
+        "snd": "Sinobu-KOFM.snd"
+      },
+      "stats": {
+        "animations": 219,
+        "states": 334
+      }
+    },
+    "Andy-ROTD": {
+      "name": "Andy-ROTD",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Andy-ROTD.def",
+        "sff": "Andy-ROTD.sff",
+        "air": "Andy-ROTD.air",
+        "cns": "Andy-ROTD-C.cns",
+        "cmd": "Andy-ROTD.cmd",
+        "snd": "Andy-ROTD.snd"
+      },
+      "stats": {
+        "animations": 225,
+        "states": 210
+      }
+    },
+    "Aner Rolange KOFM": {
+      "name": "Aner Rolange KOFM",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Aner Rolange KOFM.def",
+        "sff": "Aner_Rolange.sff",
+        "air": "Aner_Rolange.air",
+        "cns": "Aner_Rolange-h-L2-L3.cns",
+        "cmd": "Aner_Rolange.cmd",
+        "snd": "Aner_Rolange.snd"
+      },
+      "stats": {
+        "animations": 441,
+        "states": 283
+      }
+    },
+    "Anette-KOFM": {
+      "name": "Anette-KOFM",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Anette-KOFM.def",
+        "sff": "Anette-KOFM.sff",
+        "air": "Anette-KOFM.air",
+        "cns": "Anette-KOFM-2-3.cns",
+        "cmd": "Anette-KOFM.cmd",
+        "snd": "Anette-KOFM.snd"
+      },
+      "stats": {
+        "animations": 382,
+        "states": 161
+      }
+    },
+    "Ash": {
+      "name": "Ash",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Ash.def",
+        "sff": "Ash.sff",
+        "air": "Ash.air",
+        "cns": "Ash-2-3.cns",
+        "cmd": "Ash.cmd",
+        "snd": "Ash.snd"
+      },
+      "stats": {
+        "animations": 264,
+        "states": 70
+      }
+    },
+    "asura-kofa": {
+      "name": "asura-kofa",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "asura-kofa.def",
+        "sff": "asura_nbc.sff",
+        "air": "asura_nbc.air",
+        "cns": "asura_nbc.cns",
+        "cmd": "asura_nbc.cmd",
+        "snd": "asura_nbc.snd"
+      },
+      "stats": {
+        "animations": 201,
+        "states": 353
+      }
+    },
+    "Athena": {
+      "name": "Athena",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Athena.def",
+        "sff": "Athena.sff",
+        "air": "Athena.air",
+        "cns": "Athena-2-3.cns",
+        "cmd": "Athena.cmd",
+        "snd": "Athena.snd"
+      },
+      "stats": {
+        "animations": 155,
+        "states": 68
+      }
+    },
+    "Athena Asamiya MI KOFM": {
+      "name": "Athena Asamiya MI KOFM",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Athena Asamiya MI KOFM.def",
+        "sff": "Athena Asamiya.sff",
+        "air": "Athena Asamiya.air",
+        "cns": "Athena Asamiya-C.cns",
+        "cmd": "Athena Asamiya.cmd",
+        "snd": "Athena Asamiya.snd"
+      },
+      "stats": {
+        "animations": 195,
+        "states": 100
+      }
+    },
+    "Athena-Heidern": {
+      "name": "Athena-Heidern",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Athena-Heidern.def",
+        "sff": "Athena-Heidern.sff",
+        "air": "Athena-Heidern.air",
+        "cns": "Athena-Heidern-2-3.cns",
+        "cmd": "Athena-Heidern.cmd",
+        "snd": "Athena-Heidern.snd"
+      },
+      "stats": {
+        "animations": 349,
+        "states": 239
+      }
+    },
+    "Athena_XI": {
+      "name": "Athena_XI",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Athena_XI.def",
+        "sff": "Athena_XI.sff",
+        "air": "Athena_XI.air",
+        "cns": "Athena_XI.cns",
+        "cmd": "Athena_XI.cmd",
+        "snd": "Athena_XI.snd"
+      },
+      "stats": {
+        "animations": 208,
+        "states": 318
+      }
+    },
+    "baiyi": {
+      "name": "baiyi",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "baiyi.def",
+        "sff": "baiyi.sff",
+        "air": "baiyi.air",
+        "cns": "baiyi.cns",
+        "cmd": "baiyi.cmd",
+        "snd": "baiyi.snd"
+      },
+      "stats": {
+        "animations": 494,
+        "states": 183
+      }
+    },
+    "Balto-KOFM": {
+      "name": "Balto-KOFM",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "CLSN mal formatees detectees",
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Balto-KOFM.def",
+        "sff": "Balto.sff",
+        "air": "Balto.air",
+        "cns": "Balto-2-3-b.cns",
+        "cmd": "Balto.cmd",
+        "snd": "Balto.snd"
+      },
+      "stats": {
+        "animations": 243,
+        "states": 108
+      }
+    },
+    "Beast Yeorin QS": {
+      "name": "Beast Yeorin QS",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide",
+        "Fichier .cmd manquant (peut utiliser celui par defaut)"
+      ],
+      "files": {
+        "def": "Beast Yeorin QS.def",
+        "sff": "Lee_Yeorin.sff",
+        "air": "Lee_Yeorin.air",
+        "cns": "AI.cns",
+        "snd": "Lee_Yeorin.snd"
+      },
+      "stats": {
+        "animations": 433,
+        "states": 27
+      }
+    },
+    "Benimaru-Nikaido-STAR": {
+      "name": "Benimaru-Nikaido-STAR",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "CLSN mal formatees detectees",
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Benimaru-Nikaido-STAR.def",
+        "sff": "Benimaru-Nikaido.sff",
+        "air": "Benimaru-Nikaido.air",
+        "cns": "AI_Helper.cns",
+        "cmd": "Benimaru-Nikaido.cmd",
+        "snd": "Benimaru-Nikaido.snd"
+      },
+      "stats": {
+        "animations": 370,
+        "states": 165
+      }
+    },
+    "billy": {
+      "name": "billy",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "CLSN mal formatees detectees",
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "billy.def",
+        "sff": "billy.sff",
+        "air": "billy.air",
+        "cns": "billy.cns",
+        "cmd": "billy.cmd",
+        "snd": "BILLY.SND"
+      },
+      "stats": {
+        "animations": 163,
+        "states": 689
+      }
+    },
+    "BlackPrincess_Tohka": {
+      "name": "BlackPrincess_Tohka",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "BlackPrincess_Tohka.def",
+        "sff": "BlackPrincess_Tohka.sff",
+        "air": "BlackPrincess_Tohka.air",
+        "cns": "BlackPrincess_Tohka.cns",
+        "cmd": "BlackPrincess_Tohka.cmd",
+        "snd": "BlackPrincess_Tohka.snd"
+      },
+      "stats": {
+        "animations": 301,
+        "states": 1111
+      }
+    },
+    "bob": {
+      "name": "bob",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "bob.def",
+        "sff": "bob.sff",
+        "air": "bob.air",
+        "cns": "1zjxxAI.cns",
+        "cmd": "bob.cmd",
+        "snd": "bob.snd"
+      },
+      "stats": {
+        "animations": 368,
+        "states": 1436
+      }
+    },
+    "Boss Gustab M": {
+      "name": "Boss Gustab M",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Boss Gustab M.def",
+        "sff": "Gustab-Munchausen.sff",
+        "air": "Gustab-Munchausen.air",
+        "cns": "common1.cns",
+        "cmd": "Gustab-Munchausen.cmd",
+        "snd": "Gustab-Munchausen.snd"
+      },
+      "stats": {
+        "animations": 243,
+        "states": 334
+      }
+    },
+    "boss-orochi": {
+      "name": "boss-orochi",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide",
+        "Fichier .cmd manquant (peut utiliser celui par defaut)"
+      ],
+      "files": {
+        "def": "boss-orochi.def",
+        "sff": "Orochi-98-UM.sff",
+        "air": "Orochi-98-UM.air",
+        "cns": "common1.cns",
+        "snd": "Orochi-98-UM.snd"
+      },
+      "stats": {
+        "animations": 365,
+        "states": 334
+      }
+    },
+    "Business_Vanessa-KOFM": {
+      "name": "Business_Vanessa-KOFM",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Business_Vanessa-KOFM.def",
+        "sff": "Business_Vanessa.sff",
+        "air": "Business_Vanessa.air",
+        "cns": "Business_Vanessa.cns",
+        "cmd": "Vanessa.cmd",
+        "snd": "Business_Vanessa.snd"
+      },
+      "stats": {
+        "animations": 209,
+        "states": 43
+      }
+    },
+    "ccihinako": {
+      "name": "ccihinako",
+      "status": "broken",
+      "issues": [
+        "Fichier .air manquant",
+        "Fichier .cns/.cns.zss manquant"
+      ],
+      "warnings": [
+        "Fichier .cmd manquant (peut utiliser celui par defaut)"
+      ],
+      "files": {
+        "def": "ccihinako.def",
+        "sff": "girls.sff"
+      },
+      "stats": {}
+    },
+    "ccijhun": {
+      "name": "ccijhun",
+      "status": "broken",
+      "issues": [
+        "Fichier .sff manquant",
+        "Fichier .air manquant",
+        "Fichier .cns/.cns.zss manquant"
+      ],
+      "warnings": [
+        "Fichier .cmd manquant (peut utiliser celui par defaut)"
+      ],
+      "files": {
+        "def": "ccijhun.def"
+      },
+      "stats": {}
+    },
+    "cciking": {
+      "name": "cciking",
+      "status": "broken",
+      "issues": [
+        "Fichier .air manquant",
+        "Fichier .cns/.cns.zss manquant"
+      ],
+      "warnings": [
+        "Fichier .cmd manquant (peut utiliser celui par defaut)"
+      ],
+      "files": {
+        "def": "cciking.def",
+        "sff": "female.sff"
+      },
+      "stats": {}
+    },
+    "ccishermie": {
+      "name": "ccishermie",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "ccishermie.def",
+        "sff": "shermie.sff",
+        "air": "shermie.air",
+        "cns": "attacks.cns",
+        "cmd": "shermie.cmd",
+        "snd": "shermie.snd"
+      },
+      "stats": {
+        "animations": 455,
+        "states": 144
+      }
+    },
+    "Chalice": {
+      "name": "Chalice",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Chalice.def",
+        "sff": "Chalice.sff",
+        "air": "Chalice.air",
+        "cns": "Chalice-2-3.cns",
+        "cmd": "Chalice(win).cmd",
+        "snd": "Chalice.snd"
+      },
+      "stats": {
+        "animations": 320,
+        "states": 135
+      }
+    },
+    "Chaos-CKOFM": {
+      "name": "Chaos-CKOFM",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Chaos-CKOFM.def",
+        "sff": "Chaos.sff",
+        "air": "Chaos.air",
+        "cns": "Chaos-2-3.cns",
+        "cmd": "Chaos.cmd",
+        "snd": "Chaos.snd"
+      },
+      "stats": {
+        "animations": 605,
+        "states": 746
+      }
+    },
+    "Chobi-Hige": {
+      "name": "Chobi-Hige",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Chobi-Hige.def",
+        "sff": "chobi.sff",
+        "air": "chobi.air",
+        "cns": "chobi-common.cns",
+        "cmd": "chobi.cmd",
+        "snd": "chobi.snd"
+      },
+      "stats": {
+        "animations": 384,
+        "states": 363
+      }
+    },
+    "Choi_XI": {
+      "name": "Choi_XI",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Choi_XI.def",
+        "sff": "choi.sff",
+        "air": "choi.air",
+        "cns": "choi-H.cns",
+        "cmd": "choi.cmd",
+        "snd": "choi.snd"
+      },
+      "stats": {
+        "animations": 302,
+        "states": 338
+      }
+    },
+    "clone benimaru": {
+      "name": "clone benimaru",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide",
+        "Fichier .cmd manquant (peut utiliser celui par defaut)"
+      ],
+      "files": {
+        "def": "clone benimaru.def",
+        "sff": "benimaru.sff",
+        "air": "benimaru.air",
+        "cns": "-2-3.cns",
+        "snd": "benimaru.snd"
+      },
+      "stats": {
+        "animations": 447,
+        "states": 166
+      }
+    },
+    "Clone Blood Rugal": {
+      "name": "Clone Blood Rugal",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Clone Blood Rugal.def",
+        "sff": "Rugal-KOFM.sff",
+        "air": "Rugal-KOFM.air",
+        "cns": "common1.cns",
+        "cmd": "Rugal-KOFM.cmd",
+        "snd": "Rugal-KOFM.snd"
+      },
+      "stats": {
+        "animations": 513,
+        "states": 1024
+      }
+    },
+    "Clone Zero": {
+      "name": "Clone Zero",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Clone Zero.def",
+        "sff": "Zero.sff",
+        "air": "Zero.air",
+        "cns": "common1.cns",
+        "cmd": "Zero-NoAI.cmd",
+        "snd": "Zero.snd"
+      },
+      "stats": {
+        "animations": 213,
+        "states": 334
+      }
+    },
+    "Cronus": {
+      "name": "Cronus",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide",
+        "Fichier .cmd manquant (peut utiliser celui par defaut)"
+      ],
+      "files": {
+        "def": "Cronus.def",
+        "sff": "Cronus.sff",
+        "air": "Cronus.air",
+        "cns": "common1.cns",
+        "snd": "Cronus.snd"
+      },
+      "stats": {
+        "animations": 359,
+        "states": 334
+      }
+    },
+    "Cruelty Sula UM": {
+      "name": "Cruelty Sula UM",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "CLSN mal formatees detectees",
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Cruelty Sula UM.def",
+        "sff": "1.sff",
+        "air": "Sula.air",
+        "cns": "common1.cns",
+        "cmd": "Sula.cmd",
+        "snd": "Sula.snd"
+      },
+      "stats": {
+        "animations": 339,
+        "states": 334
+      }
+    },
+    "D.Yashiro.Rhythm(Dusk)1.x": {
+      "name": "D.Yashiro.Rhythm(Dusk)1.x",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "D.Yashiro.Rhythm(Dusk)1.x.def",
+        "sff": "D.Yashiro.Rhythm.sff",
+        "air": "D.Yashiro.Rhythm.air",
+        "cns": "A2.cns",
+        "cmd": "D.Yashiro.Rhythm.cmd",
+        "snd": "D.Yashiro.Rhythm.snd"
+      },
+      "stats": {
+        "animations": 538,
+        "states": 135
+      }
+    },
+    "D_DisciplineGirl": {
+      "name": "D_DisciplineGirl",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "CLSN mal formatees detectees",
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "D_DisciplineGirl.def",
+        "sff": "Orie_Harada.sff",
+        "air": "Orie_Harada.air",
+        "cns": "Armor.cns",
+        "cmd": "Orie_Harada.cmd",
+        "snd": "Orie_Harada.snd"
+      },
+      "stats": {
+        "animations": 194,
+        "states": 15
+      }
+    },
+    "Daiki_Final(Prototype)": {
+      "name": "Daiki_Final(Prototype)",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Daiki_Final(Prototype).def",
+        "sff": "D-Daiki.sff",
+        "air": "D-Daiki.air",
+        "cns": "common1.cns",
+        "cmd": "D-Daiki.cmd",
+        "snd": "D-Daiki.snd"
+      },
+      "stats": {
+        "animations": 740,
+        "states": 1041
+      }
+    },
+    "Daisu": {
+      "name": "Daisu",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Daisu.def",
+        "sff": "Daisu.sff",
+        "air": "Daisu.air",
+        "cns": "common1.cns",
+        "cmd": "Daisu.cmd",
+        "snd": "Daisu.snd"
+      },
+      "stats": {
+        "animations": 265,
+        "states": 334
+      }
+    },
+    "Delirus": {
+      "name": "Delirus",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Delirus.def",
+        "sff": "Delirus.sff",
+        "air": "Delirus.air",
+        "cns": "common1.cns",
+        "cmd": "Delirus.cmd",
+        "snd": "Delirus.snd"
+      },
+      "stats": {
+        "animations": 377,
+        "states": 341
+      }
+    },
+    "DF-Sula": {
+      "name": "DF-Sula",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "CLSN mal formatees detectees"
+      ],
+      "files": {
+        "def": "DF-Sula.def",
+        "sff": "DF-sula.sff",
+        "air": "DF-sula.air",
+        "cns": "AI.cns",
+        "cmd": "DF-sula.cmd",
+        "snd": "DF-sula.snd"
+      },
+      "stats": {
+        "animations": 428,
+        "states": 38
+      }
+    },
+    "DG.Rugal-KOFM": {
+      "name": "DG.Rugal-KOFM",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "CLSN mal formatees detectees",
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "DG.Rugal-KOFM.def",
+        "sff": "Rugal-KOFM.sff",
+        "air": "Rugal-KOFM.air",
+        "cns": "com.cns",
+        "cmd": "Rugal-KOFM.cmd",
+        "snd": "Rugal-KOFM.snd"
+      },
+      "stats": {
+        "animations": 465,
+        "states": 1017
+      }
+    },
+    "dr-yang-kofa": {
+      "name": "dr-yang-kofa",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "dr-yang-kofa.def",
+        "sff": "Dr.Yang.sff",
+        "air": "Dr.Yang.air",
+        "cns": "common1.cns",
+        "cmd": "Dr.Yang.cmd",
+        "snd": "Dr.Yang.snd"
+      },
+      "stats": {
+        "animations": 333,
+        "states": 334
+      }
+    },
+    "Dragondomainlords": {
+      "name": "Dragondomainlords",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Dragondomainlords.def",
+        "sff": "Dragondomainlords.sff",
+        "air": "Dragondomainlords.air",
+        "cns": "Dragondomainlords.cns",
+        "cmd": "Dragondomainlords.cmd",
+        "snd": "Dragondomainlords.snd"
+      },
+      "stats": {
+        "animations": 606,
+        "states": 361
+      }
+    },
+    "Drakyola": {
+      "name": "Drakyola",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Drakyola.def",
+        "sff": "Drakyola.sff",
+        "air": "Drakyola.air",
+        "cns": "Beast 'H.cns",
+        "cmd": "Drakyola.cmd",
+        "snd": "Drakyola.snd"
+      },
+      "stats": {
+        "animations": 731,
+        "states": 290
+      }
+    },
+    "Dual-flame_Magaki": {
+      "name": "Dual-flame_Magaki",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Dual-flame_Magaki.def",
+        "sff": "magaki.sff",
+        "air": "magaki.air",
+        "cns": "common1.cns",
+        "cmd": "magaki.cmd",
+        "snd": "magaki.snd"
+      },
+      "stats": {
+        "animations": 348,
+        "states": 334
+      }
+    },
+    "Duester": {
+      "name": "Duester",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Duester.def",
+        "sff": "Duester.sff",
+        "air": "Duester.air",
+        "cns": "common1.cns",
+        "cmd": "Duester.cmd",
+        "snd": "Duester.snd"
+      },
+      "stats": {
+        "animations": 288,
+        "states": 334
+      }
+    },
+    "Element Ash": {
+      "name": "Element Ash",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "CLSN mal formatees detectees",
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Element Ash.def",
+        "sff": "Element.sff",
+        "air": "Element.air",
+        "cns": "common1.cns",
+        "cmd": "Element.cmd",
+        "snd": "Element.snd"
+      },
+      "stats": {
+        "animations": 649,
+        "states": 1035
+      }
+    },
+    "Element Scarlet": {
+      "name": "Element Scarlet",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "CLSN mal formatees detectees",
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Element Scarlet.def",
+        "sff": "Element.sff",
+        "air": "Element.air",
+        "cns": "common1.cns",
+        "cmd": "Element.cmd",
+        "snd": "Element.snd"
+      },
+      "stats": {
+        "animations": 639,
+        "states": 1035
+      }
+    },
+    "Element-Adel": {
+      "name": "Element-Adel",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Element-Adel.def",
+        "sff": "Element.sff",
+        "air": "Element.air",
+        "cns": "common1.cns",
+        "cmd": "Element.cmd",
+        "snd": "Element.snd"
+      },
+      "stats": {
+        "animations": 417,
+        "states": 1035
+      }
+    },
+    "Eputh Blood-KOFM": {
+      "name": "Eputh Blood-KOFM",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Erreur lecture .cns: [Errno 13] Permission denied: 'chars\\\\Eputh Blood-KOFM\\\\blood.cns'"
+      ],
+      "files": {
+        "def": "Eputh Blood-KOFM.def",
+        "sff": "blood.sff",
+        "air": "Ember Eputh.air",
+        "cns": "blood.cns",
+        "cmd": "Ember Eputh.cmd",
+        "snd": "Ember Eputh.snd"
+      },
+      "stats": {
+        "animations": 452,
+        "states": 0
+      }
+    },
+    "Essence of Darkness": {
+      "name": "Essence of Darkness",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Essence of Darkness.def",
+        "sff": "EoD.sff",
+        "air": "EoD.air",
+        "cns": "common1.cns",
+        "cmd": "EoD.cmd",
+        "snd": "EoD.snd"
+      },
+      "stats": {
+        "animations": 250,
+        "states": 1091
+      }
+    },
+    "Eve": {
+      "name": "Eve",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Eve.def",
+        "sff": "Eve.sff",
+        "air": "Eve.air",
+        "cns": "common1.cns",
+        "cmd": "Eve.cmd",
+        "snd": "Eve.snd"
+      },
+      "stats": {
+        "animations": 376,
+        "states": 334
+      }
+    },
+    "Fang": {
+      "name": "Fang",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Fang.def",
+        "sff": "Fang.sff",
+        "air": "Fang.air",
+        "cns": "common1.cns",
+        "cmd": "Fang(win).cmd",
+        "snd": "Fang.snd"
+      },
+      "stats": {
+        "animations": 347,
+        "states": 334
+      }
+    },
+    "Felix_THird": {
+      "name": "Felix_THird",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Felix_THird.def",
+        "sff": "Felix.sff",
+        "air": "Felix.air",
+        "cns": "common1.cns",
+        "cmd": "Felix.cmd",
+        "snd": "Felix.snd"
+      },
+      "stats": {
+        "animations": 485,
+        "states": 334
+      }
+    },
+    "Final Adel": {
+      "name": "Final Adel",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Final Adel.def",
+        "sff": "Final Adel.sff",
+        "air": "Final Adel.air",
+        "cns": "common1.cns",
+        "cmd": "Final Adel.cmd",
+        "snd": "Final Adel.snd"
+      },
+      "stats": {
+        "animations": 547,
+        "states": 334
+      }
+    },
+    "Final Goeniko": {
+      "name": "Final Goeniko",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Final Goeniko.def",
+        "sff": "Final Goeniko.sff",
+        "air": "Final Goeniko.air",
+        "cns": "common1.cns",
+        "cmd": "Final Goeniko.cmd",
+        "snd": "Final Goeniko.snd"
+      },
+      "stats": {
+        "animations": 479,
+        "states": 1040
+      }
+    },
+    "Final Sachiel WF": {
+      "name": "Final Sachiel WF",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Final Sachiel WF.def",
+        "sff": "Sachiel.sff",
+        "air": "Sachiel.air",
+        "cns": "common1.cns",
+        "cmd": "Sachiel.cmd",
+        "snd": "sachiel.snd"
+      },
+      "stats": {
+        "animations": 368,
+        "states": 1037
+      }
+    },
+    "Final Zeroko B": {
+      "name": "Final Zeroko B",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Final Zeroko B.def",
+        "sff": "Zeroko.sff",
+        "air": "Zeroko.air",
+        "cns": "common1.cns",
+        "cmd": "Zeroko.cmd",
+        "snd": "Zeroko.snd"
+      },
+      "stats": {
+        "animations": 293,
+        "states": 1035
+      }
+    },
+    "final-goenitz": {
+      "name": "final-goenitz",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Final-goenitz.def",
+        "sff": "Goenitz.sff",
+        "air": "goenitz.air",
+        "cns": "common1.cns",
+        "cmd": "Goenitz-a.cmd",
+        "snd": "Goenitz.snd"
+      },
+      "stats": {
+        "animations": 383,
+        "states": 334
+      }
+    },
+    "Final-IGNIZ": {
+      "name": "Final-IGNIZ",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Final-IGNIZ.def",
+        "sff": "igniz.sff",
+        "air": "igniz.air",
+        "cns": "common1.cns",
+        "cmd": "igniz.cmd",
+        "snd": "igniz.snd"
+      },
+      "stats": {
+        "animations": 284,
+        "states": 334
+      }
+    },
+    "Final-OriginalZero": {
+      "name": "Final-OriginalZero",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Final-OriginalZero.def",
+        "sff": "OriginalZero.sff",
+        "air": "OriginalZero.air",
+        "cns": "common1.cns",
+        "cmd": "OriginalZero-AnotherStriker.cmd",
+        "snd": "OriginalZero.snd"
+      },
+      "stats": {
+        "animations": 173,
+        "states": 334
+      }
+    },
+    "Garnet 1.1": {
+      "name": "Garnet 1.1",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Garnet 1.1.def",
+        "sff": "Garnet.sff",
+        "air": "Garnet.air",
+        "cns": "common1.cns",
+        "cmd": "Garnet.cmd",
+        "snd": "Garnet.snd"
+      },
+      "stats": {
+        "animations": 642,
+        "states": 1109
+      }
+    },
+    "GARS": {
+      "name": "GARS",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "CLSN mal formatees detectees",
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "GARS.def",
+        "sff": "Kyo 17 Toxic.sff",
+        "air": "Kyo 17 Toxic.air",
+        "cns": "common1.cns",
+        "cmd": "Kyo 17 Toxic.cmd",
+        "snd": "Kyo 17 Toxic.snd"
+      },
+      "stats": {
+        "animations": 258,
+        "states": 1023
+      }
+    },
+    "Geese-KOFM": {
+      "name": "Geese-KOFM",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Geese-KOFM.def",
+        "sff": "Geese-KOFM.sff",
+        "air": "Geese-KOFM.air",
+        "cns": "common1.cns",
+        "cmd": "Geese-KOFM.cmd",
+        "snd": "Geese-KOFM.snd"
+      },
+      "stats": {
+        "animations": 281,
+        "states": 1325
+      }
+    },
+    "GOD_ADEL(2012-01-28 Trial)": {
+      "name": "GOD_ADEL(2012-01-28 Trial)",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "GOD_ADEL(2012-01-28 Trial).def",
+        "sff": "GOD_ADEL.sff",
+        "air": "GOD_ADEL.air",
+        "cns": "common1.cns",
+        "cmd": "GOD_ADEL.cmd",
+        "snd": "GOD_ADEL.snd"
+      },
+      "stats": {
+        "animations": 358,
+        "states": 334
+      }
+    },
+    "god_orochi": {
+      "name": "god_orochi",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "god_orochi.def",
+        "sff": "Mizuchi.sff",
+        "air": "Mizuchi.air",
+        "cns": "common1.cns",
+        "cmd": "Mizuchi.cmd",
+        "snd": "Mizuchi.snd"
+      },
+      "stats": {
+        "animations": 348,
+        "states": 334
+      }
+    },
+    "God_Wind": {
+      "name": "God_Wind",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "God_Wind.def",
+        "sff": "God_Wind.sff",
+        "air": "God_Wind.air",
+        "cns": "common1.cns",
+        "cmd": "God_Wind.cmd",
+        "snd": "God_Wind.snd"
+      },
+      "stats": {
+        "animations": 803,
+        "states": 334
+      }
+    },
+    "Goktore-CKOFM": {
+      "name": "Goktore-CKOFM",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Goktore-CKOFM.def",
+        "sff": "K-NEO.sff",
+        "air": "K-NEO.air",
+        "cns": "common1.cns",
+        "cmd": "K-NEO.cmd",
+        "snd": "K-NEO.snd"
+      },
+      "stats": {
+        "animations": 556,
+        "states": 334
+      }
+    },
+    "Graves": {
+      "name": "Graves",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Graves.def",
+        "sff": "Graves.sff",
+        "air": "Graves.air",
+        "cns": "-2-3.cns",
+        "cmd": "Graves.cmd",
+        "snd": "Graves.snd"
+      },
+      "stats": {
+        "animations": 377,
+        "states": 143
+      }
+    },
+    "heraclius": {
+      "name": "heraclius",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "heraclius.def",
+        "sff": "Heraclius.sff",
+        "air": "Heraclius.air",
+        "cns": "common1.cns",
+        "cmd": "Heraclius.cmd",
+        "snd": "Heraclius.snd"
+      },
+      "stats": {
+        "animations": 293,
+        "states": 340
+      }
+    },
+    "Hiel_SP": {
+      "name": "Hiel_SP",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Hiel_SP.def",
+        "sff": "Hiel_MK.sff",
+        "air": "Hiel_MK.air",
+        "cns": "common1.cns",
+        "cmd": "Hiel_MK.cmd",
+        "snd": "Hiel_MK.snd"
+      },
+      "stats": {
+        "animations": 327,
+        "states": 334
+      }
+    },
+    "Hunter_U6746": {
+      "name": "Hunter_U6746",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Hunter_U6746.def",
+        "sff": "Hunter_U6746.sff",
+        "air": "Hunter_U6746.air",
+        "cns": "common1.cns",
+        "cmd": "Hunter_U6746.cmd",
+        "snd": "Hunter_U6746.snd"
+      },
+      "stats": {
+        "animations": 302,
+        "states": 1020
+      }
+    },
+    "Infernal_Wind": {
+      "name": "Infernal_Wind",
+      "status": "broken",
+      "issues": [
+        "Fichier .cns/.cns.zss manquant"
+      ],
+      "warnings": [],
+      "files": {
+        "def": "Infernal_Wind.def",
+        "sff": "Goenitz.sff",
+        "air": "Goenitz.air",
+        "cmd": "OGoenitz.cmd",
+        "snd": "Wind.snd"
+      },
+      "stats": {
+        "animations": 366
+      }
+    },
+    "K9999_KOF": {
+      "name": "K9999_KOF",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "K9999_KOF.def",
+        "sff": "k9999.sff",
+        "air": "k9999.air",
+        "cns": "AI.cns",
+        "cmd": "k9999.cmd",
+        "snd": "k49.snd"
+      },
+      "stats": {
+        "animations": 239,
+        "states": 147
+      }
+    },
+    "Kaneda-KOFM": {
+      "name": "Kaneda-KOFM",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Kaneda-KOFM.def",
+        "sff": "KUSANAGI.sff",
+        "air": "KUSANAGI.air",
+        "cns": "common1.cns",
+        "cmd": "KUSANAGI.cmd",
+        "snd": "KUSANAGI.snd"
+      },
+      "stats": {
+        "animations": 283,
+        "states": 1020
+      }
+    },
+    "Kaori Yumiko": {
+      "name": "Kaori Yumiko",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Kaori Yumiko.def",
+        "sff": "Kaori Yumiko.sff",
+        "air": "Kaori Yumiko.air",
+        "cns": "common1.cns",
+        "cmd": "Kaori Yumiko.cmd",
+        "snd": "Kaori Yumiko.snd"
+      },
+      "stats": {
+        "animations": 376,
+        "states": 1035
+      }
+    },
+    "Kasumi-KOFM": {
+      "name": "Kasumi-KOFM",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Kasumi-KOFM.def",
+        "sff": "kasumi.sff",
+        "air": "kasumi.air",
+        "cns": "common1.cns",
+        "cmd": "todo.cmd",
+        "snd": "kasumi.snd"
+      },
+      "stats": {
+        "animations": 209,
+        "states": 1023
+      }
+    },
+    "Kei": {
+      "name": "Kei",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Kei.def",
+        "sff": "Rock.sff",
+        "air": "Rock.air",
+        "cns": "Combo.cns",
+        "cmd": "Rock.cmd",
+        "snd": "Rock.snd"
+      },
+      "stats": {
+        "animations": 298,
+        "states": 698
+      }
+    },
+    "kfm": {
+      "name": "kfm",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "kfm.def",
+        "sff": "ending.sff",
+        "air": "kfm.air",
+        "cns": "kfm.cns",
+        "cmd": "kfm.cmd",
+        "snd": "kfm.snd"
+      },
+      "stats": {
+        "animations": 120,
+        "states": 382
+      }
+    },
+    "Kychiel": {
+      "name": "Kychiel",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Kychiel.def",
+        "sff": "Kychiel.sff",
+        "air": "Kychiel.air",
+        "cns": "common1.cns",
+        "cmd": "Kychiel.cmd",
+        "snd": "Kychiel.snd"
+      },
+      "stats": {
+        "animations": 432,
+        "states": 1024
+      }
+    },
+    "Lord-Goenitz": {
+      "name": "Lord-Goenitz",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Lord-Goenitz.def",
+        "sff": "Goenitz.sff",
+        "air": "Goenitz.air",
+        "cns": "common1.cns",
+        "cmd": "goenitz-h.cmd",
+        "snd": "Goenitz.snd"
+      },
+      "stats": {
+        "animations": 421,
+        "states": 1078
+      }
+    },
+    "Magnus": {
+      "name": "Magnus",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Magnus.def",
+        "sff": "Magnus.sff",
+        "air": "Magnus.air",
+        "cns": "common1.cns",
+        "cmd": "Magnus.cmd",
+        "snd": "Magnus.snd"
+      },
+      "stats": {
+        "animations": 349,
+        "states": 1108
+      }
+    },
+    "Mai Phoenix XI": {
+      "name": "Mai Phoenix XI",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Mai Phoenix XI.def",
+        "sff": "Mai-phoenix.sff",
+        "air": "Mai-phoenix.air",
+        "cns": "common1.cns",
+        "cmd": "Mai-phoenix.cmd",
+        "snd": "Mai-phoenix.snd"
+      },
+      "stats": {
+        "animations": 320,
+        "states": 334
+      }
+    },
+    "Maltet": {
+      "name": "Maltet",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Maltet.def",
+        "sff": "Maltet.sff",
+        "air": "Maltet.air",
+        "cns": "Maltet.cns",
+        "cmd": "Maltet.cmd",
+        "snd": "Maltet.snd"
+      },
+      "stats": {
+        "animations": 415,
+        "states": 590
+      }
+    },
+    "Maryl": {
+      "name": "Maryl",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "CLSN mal formatees detectees",
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Maryl.def",
+        "sff": "Maryl.sff",
+        "air": "Maryl.air",
+        "cns": "common1.cns",
+        "cmd": "Maryl.cmd",
+        "snd": "Maryl.snd"
+      },
+      "stats": {
+        "animations": 462,
+        "states": 881
+      }
+    },
+    "Matam": {
+      "name": "Matam",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Matam.def",
+        "sff": "Matam.sff",
+        "air": "Matam.air",
+        "cns": "common1.cns",
+        "cmd": "Matam.cmd",
+        "snd": "Matam.snd"
+      },
+      "stats": {
+        "animations": 320,
+        "states": 334
+      }
+    },
+    "Meld_Boss": {
+      "name": "Meld_Boss",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Meld_Boss.def",
+        "sff": "MeldBoss.sff",
+        "air": "MeldBoss.air",
+        "cns": "common1.cns",
+        "cmd": "MeldBoss.cmd",
+        "snd": "MeldBoss.snd"
+      },
+      "stats": {
+        "animations": 271,
+        "states": 334
+      }
+    },
+    "meteoricmarisa": {
+      "name": "meteoricmarisa",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "meteoricmarisa.def",
+        "sff": "meteoricmarisa.sff",
+        "air": "meteoricmarisa.air",
+        "cns": "common1.cns",
+        "cmd": "meteoricmarisa.cmd",
+        "snd": "meteoricmarisa.snd"
+      },
+      "stats": {
+        "animations": 349,
+        "states": 334
+      }
+    },
+    "mizore-kofmLV2": {
+      "name": "mizore-kofmLV2",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Mizore-KOFMlv2.def",
+        "sff": "Mizore-KOFM.sff",
+        "air": "Mizore-KOFM.air",
+        "cns": "Mizore-KOFM-2-3.cns",
+        "cmd": "Mizore-KOFM.cmd",
+        "snd": "Mizore-KOFM.snd"
+      },
+      "stats": {
+        "animations": 344,
+        "states": 114
+      }
+    },
+    "N-Zeroko": {
+      "name": "N-Zeroko",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "N-Zeroko.def",
+        "sff": "N-Zeroko.sff",
+        "air": "N-Zeroko.air",
+        "cns": "common1.cns",
+        "cmd": "N-Zeroko.cmd",
+        "snd": "N-Zeroko.snd"
+      },
+      "stats": {
+        "animations": 260,
+        "states": 334
+      }
+    },
+    "Nao-MX 1.0": {
+      "name": "Nao-MX 1.0",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Nao-MX 1.0.def",
+        "sff": "nao-mx.sff",
+        "air": "nao-mx.air",
+        "cns": "-2-3.cns",
+        "cmd": "nao-mx.cmd",
+        "snd": "nao-mx.snd"
+      },
+      "stats": {
+        "animations": 370,
+        "states": 136
+      }
+    },
+    "NeoDio KOFM": {
+      "name": "NeoDio KOFM",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "NeoDio KOFM.def",
+        "sff": "NEODIO.sff",
+        "air": "NEODIO.air",
+        "cns": "common1.cns",
+        "cmd": "NEODIO.cmd",
+        "snd": "NEODIO01.snd"
+      },
+      "stats": {
+        "animations": 183,
+        "states": 334
+      }
+    },
+    "NeoGeegus KOFM": {
+      "name": "NeoGeegus KOFM",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "NeoGeegus KOFM.def",
+        "sff": "NeoGeegus.sff",
+        "air": "NeoGeegus.air",
+        "cns": "common1.cns",
+        "cmd": "NeoGeegus.cmd",
+        "snd": "NeoGeegus.snd"
+      },
+      "stats": {
+        "animations": 390,
+        "states": 334
+      }
+    },
+    "Nero": {
+      "name": "Nero",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Nero.def",
+        "sff": "Nero_N.sff",
+        "air": "Nero_N.air",
+        "cns": "common1.cns",
+        "cmd": "Nero_N(OFFLINE).cmd",
+        "snd": "Nero_N.snd"
+      },
+      "stats": {
+        "animations": 301,
+        "states": 1035
+      }
+    },
+    "Nox Bernstein": {
+      "name": "Nox Bernstein",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Nox Bernstein.def",
+        "sff": "S-Adel.sff",
+        "air": "S-Adel.air",
+        "cns": "common1.cns",
+        "cmd": "S-Adel.cmd",
+        "snd": "S-Adel.snd"
+      },
+      "stats": {
+        "animations": 331,
+        "states": 334
+      }
+    },
+    "O.Zero-Prominence": {
+      "name": "O.Zero-Prominence",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide",
+        "Fichier .cmd manquant (peut utiliser celui par defaut)"
+      ],
+      "files": {
+        "def": "O.Zero-Prominence.def",
+        "sff": "Original-Zero.sff",
+        "air": "Original-Zero.air",
+        "cns": "common1.cns",
+        "snd": "Original-Zero.snd"
+      },
+      "stats": {
+        "animations": 409,
+        "states": 334
+      }
+    },
+    "Original Psyqhical": {
+      "name": "Original Psyqhical",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Original Psyqhical.def",
+        "sff": "Psyqhical.sff",
+        "air": "Psyqhical.air",
+        "cns": "common1.cns",
+        "cmd": "Psyqhical.cmd",
+        "snd": "Psyqhical.snd"
+      },
+      "stats": {
+        "animations": 235,
+        "states": 1005
+      }
+    },
+    "Orochi Kyo WF": {
+      "name": "Orochi Kyo WF",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Orochi Kyo WF.def",
+        "sff": "Orochi Kyo.sff",
+        "air": "Orochi Kyo.air",
+        "cns": "common1.cns",
+        "cmd": "Orochi Kyo.cmd",
+        "snd": "Orochi Kyo.snd"
+      },
+      "stats": {
+        "animations": 575,
+        "states": 1035
+      }
+    },
+    "Orochi Leona-KOFM": {
+      "name": "Orochi Leona-KOFM",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Orochi Leona-KOFM.def",
+        "sff": "Orochi_Leona.sff",
+        "air": "Orochi_Leona.air",
+        "cns": "common1.cns",
+        "cmd": "Orochi-Leona.cmd",
+        "snd": "Orochi_Leona.snd"
+      },
+      "stats": {
+        "animations": 349,
+        "states": 1023
+      }
+    },
+    "Orochi-EV1.55": {
+      "name": "Orochi-EV1.55",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Orochi-EV1.55.def",
+        "sff": "Orochi-EV.sff",
+        "air": "Orochi-EV.air",
+        "cns": "common1.cns",
+        "cmd": "Orochi-EV(半圆优化).cmd",
+        "snd": "Orochi-EV.snd"
+      },
+      "stats": {
+        "animations": 510,
+        "states": 1035
+      }
+    },
+    "orochi-iori": {
+      "name": "orochi-iori",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "orochi-iori.def",
+        "sff": "Iori-Orochi.sff",
+        "air": "Iori-Orochi.air",
+        "cns": "common1.cns",
+        "cmd": "Iori-Orochi.cmd",
+        "snd": "Iori-Orochi.snd"
+      },
+      "stats": {
+        "animations": 264,
+        "states": 334
+      }
+    },
+    "orochi-kyoko": {
+      "name": "orochi-kyoko",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "orochi-kyoko.def",
+        "sff": "kyoko_typeY.sff",
+        "air": "kyoko_typeY.air",
+        "cns": "common-typeY.cns",
+        "cmd": "kyoko_typeY.cmd",
+        "snd": "kyoko_typeY.snd"
+      },
+      "stats": {
+        "animations": 368,
+        "states": 395
+      }
+    },
+    "P-LEONA_ELEMENT": {
+      "name": "P-LEONA_ELEMENT",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "P-LEONA_ELEMENT.def",
+        "sff": "Element.sff",
+        "air": "Element.air",
+        "cns": "common1.cns",
+        "cmd": "Element.cmd",
+        "snd": "Element.snd"
+      },
+      "stats": {
+        "animations": 442,
+        "states": 1035
+      }
+    },
+    "Psyche_42-1.1": {
+      "name": "Psyche_42-1.1",
+      "status": "broken",
+      "issues": [
+        "Fichier .cns/.cns.zss manquant"
+      ],
+      "warnings": [
+        "Fichier .cmd manquant (peut utiliser celui par defaut)"
+      ],
+      "files": {
+        "def": "Psyche_42-1.1.def",
+        "sff": "Psyche_42.sff",
+        "air": "Psyche_42.air",
+        "snd": "Psyche_42.snd"
+      },
+      "stats": {
+        "animations": 410
+      }
+    },
+    "Psyche_57-1.1": {
+      "name": "Psyche_57-1.1",
+      "status": "broken",
+      "issues": [
+        "Fichier .cns/.cns.zss manquant"
+      ],
+      "warnings": [
+        "Fichier .cmd manquant (peut utiliser celui par defaut)"
+      ],
+      "files": {
+        "def": "Psyche_57-1.1.def",
+        "sff": "Psyche_57.sff",
+        "air": "Psyche_57.air",
+        "snd": "Psyche_57.snd"
+      },
+      "stats": {
+        "animations": 477
+      }
+    },
+    "Raisen.blood-KOFM": {
+      "name": "Raisen.blood-KOFM",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "CLSN mal formatees detectees",
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Raisen.blood-KOFM.def",
+        "sff": "Raisen-KOFM.sff",
+        "air": "Raisen-KOFM.air",
+        "cns": "12p.cns",
+        "cmd": "Raisen-KOFM.cmd",
+        "snd": "Raisen.snd"
+      },
+      "stats": {
+        "animations": 425,
+        "states": 13
+      }
+    },
+    "Rayno": {
+      "name": "Rayno",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Rayno.def",
+        "sff": "Rayno.sff",
+        "air": "Rayno.air",
+        "cns": "common1.cns",
+        "cmd": "Rayno.cmd",
+        "snd": "Rayno.snd"
+      },
+      "stats": {
+        "animations": 588,
+        "states": 341
+      }
+    },
+    "Reas-KOFM": {
+      "name": "Reas-KOFM",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Reas-KOFM.def",
+        "sff": "Reas-KOFM.sff",
+        "air": "Reas-KOFM.air",
+        "cns": "common1.cns",
+        "cmd": "Reas-KOFM.cmd",
+        "snd": "Reas-KOFM.snd"
+      },
+      "stats": {
+        "animations": 415,
+        "states": 1038
+      }
+    },
+    "Reyna": {
+      "name": "Reyna",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "CLSN mal formatees detectees",
+        "Anim invalide",
+        "Fichier .cmd manquant (peut utiliser celui par defaut)"
+      ],
+      "files": {
+        "def": "Reyna.def",
+        "sff": "Reyna.sff",
+        "air": "Reyna.air",
+        "cns": "common1.cns",
+        "snd": "Reyna.snd"
+      },
+      "stats": {
+        "animations": 575,
+        "states": 1072
+      }
+    },
+    "robo-kyo-kofa": {
+      "name": "robo-kyo-kofa",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "robo-kyo-kofa.def",
+        "sff": "Robo-Kyo2.sff",
+        "air": "Robo-Kyo2.air",
+        "cns": "common1.cns",
+        "cmd": "Robo-Kyo2.cmd",
+        "snd": "Robo-Kyo2.snd"
+      },
+      "stats": {
+        "animations": 259,
+        "states": 1029
+      }
+    },
+    "Rose": {
+      "name": "Rose",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "CLSN mal formatees detectees",
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Rose.def",
+        "sff": "Rose.sff",
+        "air": "Rose.air",
+        "cns": "common1.cns",
+        "cmd": "Rose.cmd",
+        "snd": "Rose.snd"
+      },
+      "stats": {
+        "animations": 452,
+        "states": 1144
+      }
+    },
+    "Rozwel S.K (LEGIT)": {
+      "name": "Rozwel S.K (LEGIT)",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Rozwel S.K (LEGIT).def",
+        "sff": "Rozwel.sff",
+        "air": "Oswald_XI.air",
+        "cns": "-3.cns",
+        "cmd": "Oswald_XI.cmd",
+        "snd": "Jakigan.snd"
+      },
+      "stats": {
+        "animations": 625,
+        "states": 81
+      }
+    },
+    "Rugal7th": {
+      "name": "Rugal7th",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Rugal7th.def",
+        "sff": "Rugal-KOFM.sff",
+        "air": "Rugal-KOFM.air",
+        "cns": "common1.cns",
+        "cmd": "kfm.cmd",
+        "snd": "Rugal-KOFM.snd"
+      },
+      "stats": {
+        "animations": 781,
+        "states": 334
+      }
+    },
+    "Ryuji": {
+      "name": "Ryuji",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Ryuji.def",
+        "sff": "Ryuji.sff",
+        "air": "Ryuji.air",
+        "cns": "common1.cns",
+        "cmd": "Ryuji.cmd",
+        "snd": "!差替前.snd"
+      },
+      "stats": {
+        "animations": 306,
+        "states": 445
+      }
+    },
+    "S_Infezione": {
+      "name": "S_Infezione",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "CLSN mal formatees detectees",
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "S_Infezione.def",
+        "sff": "Infezione.sff",
+        "air": "Infezione.air",
+        "cns": "common1.cns",
+        "cmd": "Infezione.cmd",
+        "snd": "Infezione.snd"
+      },
+      "stats": {
+        "animations": 220,
+        "states": 334
+      }
+    },
+    "Shadow-Dancer": {
+      "name": "Shadow-Dancer",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Shadow-Dancer.def",
+        "sff": "Shadow-Dancer.sff",
+        "air": "Shadow-Dancer.Air",
+        "cns": "common1.cns",
+        "cmd": "Shadow-Dancer.cmd",
+        "snd": "Shadow-Dancer.snd"
+      },
+      "stats": {
+        "animations": 973,
+        "states": 334
+      }
+    },
+    "Spiritland Lords": {
+      "name": "Spiritland Lords",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Spiritland Lords.def",
+        "sff": "SpiritlandLord.sff",
+        "air": "SpiritlandLord.air",
+        "cns": "common1.cns",
+        "cmd": "SpiritlandLord.cmd",
+        "snd": "SpiritlandLord.snd"
+      },
+      "stats": {
+        "animations": 744,
+        "states": 334
+      }
+    },
+    "Titan_KOF": {
+      "name": "Titan_KOF",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Titan_KOF.def",
+        "sff": "sprites.sff",
+        "air": "animaciones.air",
+        "cns": "-2.cns",
+        "cmd": "comandos.cmd",
+        "snd": "sonidos.snd"
+      },
+      "stats": {
+        "animations": 254,
+        "states": 1
+      }
+    },
+    "True Iori X_KOF": {
+      "name": "True Iori X_KOF",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "CLSN mal formatees detectees",
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "True Iori X_KOF.def",
+        "sff": "Iori_Yagami5.sff",
+        "air": "Iori_Yagami.air",
+        "cns": "common1.cns",
+        "cmd": "Iori_Yagami.cmd",
+        "snd": "Iori_Yagami.snd"
+      },
+      "stats": {
+        "animations": 490,
+        "states": 1047
+      }
+    },
+    "Unfailed Gustab": {
+      "name": "Unfailed Gustab",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "CLSN mal formatees detectees",
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Unfailed Gustab.def",
+        "sff": "Gustab-Munchausen.sff",
+        "air": "Gustab-Munchausen.air",
+        "cns": "common1.cns",
+        "cmd": "Gustab-Munchausen.cmd",
+        "snd": "Gustab-Munchausen.snd"
+      },
+      "stats": {
+        "animations": 405,
+        "states": 334
+      }
+    },
+    "Unleashesd God Kula": {
+      "name": "Unleashesd God Kula",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Unleashesd God Kula.def",
+        "sff": "GOD KULA.sff",
+        "air": "GOD KULA.air",
+        "cns": "cirno SP.cns",
+        "cmd": "GOD KULA.cmd",
+        "snd": "GOD KULA.snd"
+      },
+      "stats": {
+        "animations": 479,
+        "states": 109
+      }
+    },
+    "Valmar Rugal": {
+      "name": "Valmar Rugal",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide",
+        "Fichier .cmd manquant (peut utiliser celui par defaut)"
+      ],
+      "files": {
+        "def": "Valmar Rugal.def",
+        "sff": "Valmar-Rugal.sff",
+        "air": "Valmar-Rugal.air",
+        "cns": "common1.cns",
+        "snd": "Valmar-Rugal.snd"
+      },
+      "stats": {
+        "animations": 653,
+        "states": 334
+      }
+    },
+    "vandals": {
+      "name": "vandals",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Value vide",
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "vandals.def",
+        "sff": "vandals win.sff",
+        "air": "vandals.air",
+        "cns": "vandals-2-3.cns",
+        "cmd": "vandals.cmd",
+        "snd": "vandals.snd"
+      },
+      "stats": {
+        "animations": 705,
+        "states": 399
+      }
+    },
+    "Viper": {
+      "name": "Viper",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Viper.def",
+        "sff": "Viper.sff",
+        "air": "Viper.air",
+        "cns": "common1.cns",
+        "cmd": "Viper.cmd",
+        "snd": "Viper.snd"
+      },
+      "stats": {
+        "animations": 474,
+        "states": 1054
+      }
+    },
+    "WatchTV": {
+      "name": "WatchTV",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "WatchTV.def",
+        "sff": "WatchTV.sff",
+        "air": "WatchTV.air",
+        "cns": "common1.cns",
+        "cmd": "WatchTV.cmd",
+        "snd": "WatchTV.snd"
+      },
+      "stats": {
+        "animations": 467,
+        "states": 334
+      }
+    },
+    "WhirlWind-Goenitz": {
+      "name": "WhirlWind-Goenitz",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "CLSN mal formatees detectees",
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "WhirlWind-Goenitz.def",
+        "sff": "WhirlWind-Goenitz.sff",
+        "air": "WhirlWind-Goenitz.air",
+        "cns": "common1.cns",
+        "cmd": "WhirlWind-Goenitz.cmd",
+        "snd": "WhirlWind-Goenitz.snd"
+      },
+      "stats": {
+        "animations": 320,
+        "states": 334
+      }
+    },
+    "White DeathRaGeroous Version": {
+      "name": "White DeathRaGeroous Version",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "CLSN mal formatees detectees",
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "White DeathRaGeroous Version.def",
+        "sff": "White-DRG.sff",
+        "air": "White-DRG.air",
+        "cns": "-2.cns",
+        "cmd": "White-DRG.cmd",
+        "snd": "White-DRG.snd"
+      },
+      "stats": {
+        "animations": 212,
+        "states": 10
+      }
+    },
+    "Wild.O.Yashiro": {
+      "name": "Wild.O.Yashiro",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Wild.O.Yashiro.def",
+        "sff": "Wild.O.Yashiro.sff",
+        "air": "Wild.O.Yashiro.air",
+        "cns": "helper.cns",
+        "cmd": "Wild.O.Yashiro.cmd",
+        "snd": "Wild.O.Yashiro.snd"
+      },
+      "stats": {
+        "animations": 532,
+        "states": 114
+      }
+    },
+    "Wind_MMXIX": {
+      "name": "Wind_MMXIX",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Wind_MMXIX.def",
+        "sff": "Wind_MMXIX.sff",
+        "air": "Wind_MMXIX.air",
+        "cns": "common1.cns",
+        "cmd": "Wind_MMXIX.cmd",
+        "snd": "Wind_MMXIX.snd"
+      },
+      "stats": {
+        "animations": 261,
+        "states": 334
+      }
+    },
+    "Xion-V": {
+      "name": "Xion-V",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Xion-V.def",
+        "sff": "Xion-V.sff",
+        "air": "Xion-V.air",
+        "cns": "common1.cns",
+        "cmd": "Xion-V.cmd",
+        "snd": "Xion-V.snd"
+      },
+      "stats": {
+        "animations": 316,
+        "states": 334
+      }
+    },
+    "Yukida": {
+      "name": "Yukida",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Yukida.def",
+        "sff": "Yukida.sff",
+        "air": "Yukida.air",
+        "cns": "common1.cns",
+        "cmd": "Yukida.cmd",
+        "snd": "Yukida.snd"
+      },
+      "stats": {
+        "animations": 270,
+        "states": 334
+      }
+    },
+    "Yuno-KOFM": {
+      "name": "Yuno-KOFM",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide",
+        "Fichier .cmd manquant (peut utiliser celui par defaut)"
+      ],
+      "files": {
+        "def": "Yuno-KOFM.def",
+        "sff": "Yuno-KOFM.sff",
+        "air": "Yuno-KOFM.air",
+        "cns": "Yuno-KOFM-H.cns",
+        "snd": "Yuno-KOFM.snd"
+      },
+      "stats": {
+        "animations": 260,
+        "states": 584
+      }
+    },
+    "Zerozuchi_Boss": {
+      "name": "Zerozuchi_Boss",
+      "status": "warning",
+      "issues": [],
+      "warnings": [
+        "Anim invalide"
+      ],
+      "files": {
+        "def": "Zerozuchi_Boss.def",
+        "sff": "Zerozuchi_B.sff",
+        "air": "Zerozuchi_B.air",
+        "cns": "common1.cns",
+        "cmd": "Zerozuchi_B.cmd",
+        "snd": "Zerozuchi_B.snd"
+      },
+      "stats": {
+        "animations": 393,
+        "states": 334
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "match_id": "1766979823_1604",
+  "player1": "GG_EZ_Player",
+  "player2": "Clutch_King",
+  "player1_char": "Ash",
+  "player2_char": "Yuri",
+  "winner": "GG_EZ_Player",
+  "rounds": [
+    {
+      "winner": "GG_EZ_Player",
+      "perfect": false
+    },
+    {
+      "winner": "GG_EZ_Player",
+      "perfect": false
+    }
+  ],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T04:43:43.365052",
+  "duration_seconds": 0,
+  "elo_change_p1": 17,
+  "elo_change_p2": -17
+}

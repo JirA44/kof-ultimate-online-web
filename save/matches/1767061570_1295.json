@@ -1,0 +1,15 @@
+{
+  "match_id": "1767061570_1295",
+  "player1": "Rage_Quitter_0",
+  "player2": "Ranked_Slayer",
+  "player1_char": "Chris",
+  "player2_char": "Goro",
+  "winner": "Ranked_Slayer",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T03:26:10.222542",
+  "duration_seconds": 0,
+  "elo_change_p1": -9,
+  "elo_change_p2": 9
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767107314_5867",
+  "player1": "Money_Match",
+  "player2": "Rage_Quitter_0",
+  "player1_char": "Benimaru",
+  "player2_char": "Rugal",
+  "winner": "Rage_Quitter_0",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T16:08:34.312521",
+  "duration_seconds": 0,
+  "elo_change_p1": -8,
+  "elo_change_p2": 8
+}

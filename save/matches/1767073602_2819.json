@@ -1,0 +1,15 @@
+{
+  "match_id": "1767073602_2819",
+  "player1": "Perfect_KO",
+  "player2": "Combo_Breaker",
+  "player1_char": "King",
+  "player2_char": "Mature",
+  "winner": "Combo_Breaker",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T06:46:42.710584",
+  "duration_seconds": 0,
+  "elo_change_p1": -6,
+  "elo_change_p2": 6
+}

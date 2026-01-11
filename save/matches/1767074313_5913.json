@@ -1,0 +1,15 @@
+{
+  "match_id": "1767074313_5913",
+  "player1": "Training_Mode",
+  "player2": "NeoGeo_Master",
+  "player1_char": "Ryo",
+  "player2_char": "Orochi",
+  "winner": "NeoGeo_Master",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T06:58:33.147321",
+  "duration_seconds": 0,
+  "elo_change_p1": -1,
+  "elo_change_p2": 1
+}

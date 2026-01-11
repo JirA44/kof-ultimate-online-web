@@ -1,0 +1,15 @@
+{
+  "match_id": "1767027787_7246",
+  "player1": "Money_Match",
+  "player2": "Combo_Breaker",
+  "player1_char": "Robert",
+  "player2_char": "Geese",
+  "winner": "Money_Match",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T18:03:07.498474",
+  "duration_seconds": 0,
+  "elo_change_p1": 17,
+  "elo_change_p2": -17
+}

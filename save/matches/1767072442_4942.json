@@ -1,0 +1,15 @@
+{
+  "match_id": "1767072442_4942",
+  "player1": "Training_Mode",
+  "player2": "Casual_Fighter",
+  "player1_char": "Terry",
+  "player2_char": "Benimaru",
+  "winner": "Casual_Fighter",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T06:27:22.800999",
+  "duration_seconds": 0,
+  "elo_change_p1": -4,
+  "elo_change_p2": 4
+}

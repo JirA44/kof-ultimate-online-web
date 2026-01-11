@@ -1,0 +1,15 @@
+{
+  "match_id": "1767124734_6647",
+  "player1": "SNK_Champion",
+  "player2": "Combo_Breaker",
+  "player1_char": "Iori",
+  "player2_char": "Yamazaki",
+  "winner": "SNK_Champion",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T20:58:54.269924",
+  "duration_seconds": 0,
+  "elo_change_p1": 21,
+  "elo_change_p2": -21
+}

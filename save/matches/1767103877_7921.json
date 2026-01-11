@@ -1,0 +1,15 @@
+{
+  "match_id": "1767103877_7921",
+  "player1": "Pro_Player_One",
+  "player2": "First_To_10",
+  "player1_char": "Blue Mary",
+  "player2_char": "Rugal",
+  "winner": "Pro_Player_One",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T15:11:17.856348",
+  "duration_seconds": 0,
+  "elo_change_p1": 17,
+  "elo_change_p2": -17
+}

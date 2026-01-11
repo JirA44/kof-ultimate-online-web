@@ -1,0 +1,15 @@
+{
+  "match_id": "1767109271_6928",
+  "player1": "GG_EZ_Player",
+  "player2": "Tournament_Ace",
+  "player1_char": "Duo Lon",
+  "player2_char": "Clark",
+  "winner": "Tournament_Ace",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T16:41:11.694717",
+  "duration_seconds": 0,
+  "elo_change_p1": -10,
+  "elo_change_p2": 10
+}

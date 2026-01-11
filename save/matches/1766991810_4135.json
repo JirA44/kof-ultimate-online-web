@@ -1,0 +1,15 @@
+{
+  "match_id": "1766991810_4135",
+  "player1": "First_To_10",
+  "player2": "Ranked_Slayer",
+  "player1_char": "Iori",
+  "player2_char": "Ralf",
+  "winner": "Ranked_Slayer",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T08:03:30.655280",
+  "duration_seconds": 0,
+  "elo_change_p1": -14,
+  "elo_change_p2": 14
+}

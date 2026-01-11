@@ -1,0 +1,15 @@
+{
+  "match_id": "1766996317_4790",
+  "player1": "Arcade_Warrior",
+  "player2": "EVO_Ready",
+  "player1_char": "Kensou",
+  "player2_char": "Blue Mary",
+  "winner": "EVO_Ready",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T09:18:37.684842",
+  "duration_seconds": 0,
+  "elo_change_p1": -14,
+  "elo_change_p2": 14
+}

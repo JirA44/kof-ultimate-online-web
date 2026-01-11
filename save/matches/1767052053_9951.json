@@ -1,0 +1,15 @@
+{
+  "match_id": "1767052053_9951",
+  "player1": "DragonFist_99",
+  "player2": "NeoGeo_Master",
+  "player1_char": "Orochi",
+  "player2_char": "Blue Mary",
+  "winner": "NeoGeo_Master",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T00:47:33.363873",
+  "duration_seconds": 0,
+  "elo_change_p1": -15,
+  "elo_change_p2": 15
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767104357_2775",
+  "player1": "Perfect_KO",
+  "player2": "Combo_Breaker",
+  "player1_char": "Orochi",
+  "player2_char": "Shingo",
+  "winner": "Combo_Breaker",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T15:19:17.040688",
+  "duration_seconds": 0,
+  "elo_change_p1": -8,
+  "elo_change_p2": 8
+}

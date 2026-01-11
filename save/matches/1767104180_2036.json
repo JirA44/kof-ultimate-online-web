@@ -1,0 +1,15 @@
+{
+  "match_id": "1767104180_2036",
+  "player1": "Combo_Breaker",
+  "player2": "DragonFist_99",
+  "player1_char": "Mature",
+  "player2_char": "Geese",
+  "winner": "DragonFist_99",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T15:16:20.887011",
+  "duration_seconds": 0,
+  "elo_change_p1": -5,
+  "elo_change_p2": 5
+}

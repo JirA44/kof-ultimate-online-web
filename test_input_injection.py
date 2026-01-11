@@ -24,7 +24,7 @@ except ImportError:
     import win32con
     import win32api
 
-GAME_EXE = "KOF_Ultimate_Online.exe"
+GAME_EXE = "Ikemen_GO.exe"
 GAME_PATH = Path(__file__).parent
 
 # Mapping des touches vers virtual key codes

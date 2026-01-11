@@ -1,0 +1,15 @@
+{
+  "match_id": "1766994303_8602",
+  "player1": "ShadowKing_X",
+  "player2": "Comeback_Kid",
+  "player1_char": "Shen",
+  "player2_char": "Ash",
+  "winner": "ShadowKing_X",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T08:45:03.283007",
+  "duration_seconds": 0,
+  "elo_change_p1": 17,
+  "elo_change_p2": -17
+}

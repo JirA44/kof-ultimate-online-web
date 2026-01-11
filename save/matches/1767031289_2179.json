@@ -1,0 +1,15 @@
+{
+  "match_id": "1767031289_2179",
+  "player1": "Money_Match",
+  "player2": "Stream_Monster",
+  "player1_char": "Benimaru",
+  "player2_char": "Chris",
+  "winner": "Money_Match",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T19:01:29.473225",
+  "duration_seconds": 0,
+  "elo_change_p1": 18,
+  "elo_change_p2": -18
+}

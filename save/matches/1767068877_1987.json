@@ -1,0 +1,15 @@
+{
+  "match_id": "1767068877_1987",
+  "player1": "Training_Mode",
+  "player2": "FGC_Veteran",
+  "player1_char": "Ramon",
+  "player2_char": "Clark",
+  "winner": "FGC_Veteran",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T05:27:57.151949",
+  "duration_seconds": 0,
+  "elo_change_p1": -3,
+  "elo_change_p2": 3
+}

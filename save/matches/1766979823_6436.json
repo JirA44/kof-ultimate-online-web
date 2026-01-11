@@ -1,0 +1,28 @@
+{
+  "match_id": "1766979823_6436",
+  "player1": "Comeback_Kid",
+  "player2": "FatalFury_Pro",
+  "player1_char": "Whip",
+  "player2_char": "Angel",
+  "winner": "Comeback_Kid",
+  "rounds": [
+    {
+      "winner": "FatalFury_Pro",
+      "perfect": false
+    },
+    {
+      "winner": "Comeback_Kid",
+      "perfect": false
+    },
+    {
+      "winner": "Comeback_Kid",
+      "perfect": false
+    }
+  ],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T04:43:43.471778",
+  "duration_seconds": 0,
+  "elo_change_p1": 15,
+  "elo_change_p2": -15
+}

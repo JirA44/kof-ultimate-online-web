@@ -1,0 +1,15 @@
+{
+  "match_id": "1767085964_3269",
+  "player1": "Tournament_Ace",
+  "player2": "Hype_Beast_99",
+  "player1_char": "Yuri",
+  "player2_char": "Maxima",
+  "winner": "Tournament_Ace",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T10:12:44.006250",
+  "duration_seconds": 0,
+  "elo_change_p1": 20,
+  "elo_change_p2": -20
+}

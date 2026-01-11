@@ -1,0 +1,15 @@
+{
+  "match_id": "1767091067_8359",
+  "player1": "Casual_Fighter",
+  "player2": "DragonFist_99",
+  "player1_char": "Orochi",
+  "player2_char": "Ash",
+  "winner": "DragonFist_99",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T11:37:47.227972",
+  "duration_seconds": 0,
+  "elo_change_p1": -7,
+  "elo_change_p2": 7
+}

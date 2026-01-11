@@ -1,0 +1,15 @@
+{
+  "match_id": "1766998475_4776",
+  "player1": "Online_Warrior",
+  "player2": "Perfect_KO",
+  "player1_char": "Maxima",
+  "player2_char": "Goro",
+  "winner": "Perfect_KO",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T09:54:35.063785",
+  "duration_seconds": 0,
+  "elo_change_p1": -12,
+  "elo_change_p2": 12
+}

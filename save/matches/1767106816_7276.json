@@ -1,0 +1,15 @@
+{
+  "match_id": "1767106816_7276",
+  "player1": "Salt_Shaker",
+  "player2": "Hype_Beast_99",
+  "player1_char": "Billy",
+  "player2_char": "King",
+  "winner": "Salt_Shaker",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T16:00:16.122224",
+  "duration_seconds": 0,
+  "elo_change_p1": 23,
+  "elo_change_p2": -23
+}

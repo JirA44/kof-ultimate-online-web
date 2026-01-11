@@ -1,0 +1,15 @@
+{
+  "match_id": "1767002653_4267",
+  "player1": "Perfect_KO",
+  "player2": "NeoGeo_Master",
+  "player1_char": "Mature",
+  "player2_char": "Benimaru",
+  "winner": "NeoGeo_Master",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T11:04:13.442560",
+  "duration_seconds": 0,
+  "elo_change_p1": -10,
+  "elo_change_p2": 10
+}

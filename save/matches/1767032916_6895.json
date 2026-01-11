@@ -1,0 +1,15 @@
+{
+  "match_id": "1767032916_6895",
+  "player1": "Comeback_Kid",
+  "player2": "Grappler_God",
+  "player1_char": "Chris",
+  "player2_char": "Kensou",
+  "winner": "Grappler_God",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T19:28:36.332416",
+  "duration_seconds": 0,
+  "elo_change_p1": -9,
+  "elo_change_p2": 9
+}

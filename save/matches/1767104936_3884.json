@@ -1,0 +1,15 @@
+{
+  "match_id": "1767104936_3884",
+  "player1": "ShadowKing_X",
+  "player2": "SNK_Champion",
+  "player1_char": "Goro",
+  "player2_char": "Geese",
+  "winner": "SNK_Champion",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T15:28:56.726791",
+  "duration_seconds": 0,
+  "elo_change_p1": -12,
+  "elo_change_p2": 12
+}

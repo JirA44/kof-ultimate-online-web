@@ -1,0 +1,15 @@
+{
+  "match_id": "1767089941_9833",
+  "player1": "Salt_Shaker",
+  "player2": "Money_Match",
+  "player1_char": "Athena",
+  "player2_char": "Maxima",
+  "winner": "Money_Match",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T11:19:01.660669",
+  "duration_seconds": 0,
+  "elo_change_p1": -7,
+  "elo_change_p2": 7
+}

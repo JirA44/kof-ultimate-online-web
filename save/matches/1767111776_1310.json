@@ -1,0 +1,15 @@
+{
+  "match_id": "1767111776_1310",
+  "player1": "Frame_Perfect",
+  "player2": "Zoner_Elite",
+  "player1_char": "Kula",
+  "player2_char": "Mai",
+  "winner": "Zoner_Elite",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T17:22:56.971747",
+  "duration_seconds": 0,
+  "elo_change_p1": -5,
+  "elo_change_p2": 5
+}

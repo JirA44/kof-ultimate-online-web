@@ -1,0 +1,15 @@
+{
+  "match_id": "1767029806_4308",
+  "player1": "Training_Mode",
+  "player2": "Pro_Player_One",
+  "player1_char": "Chris",
+  "player2_char": "Ramon",
+  "winner": "Pro_Player_One",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T18:36:46.866884",
+  "duration_seconds": 0,
+  "elo_change_p1": -5,
+  "elo_change_p2": 5
+}

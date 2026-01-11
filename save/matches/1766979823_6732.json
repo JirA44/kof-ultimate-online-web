@@ -1,0 +1,24 @@
+{
+  "match_id": "1766979823_6732",
+  "player1": "Rush_Down_King",
+  "player2": "GG_EZ_Player",
+  "player1_char": "Chris",
+  "player2_char": "Ralf",
+  "winner": "Rush_Down_King",
+  "rounds": [
+    {
+      "winner": "Rush_Down_King",
+      "perfect": false
+    },
+    {
+      "winner": "Rush_Down_King",
+      "perfect": false
+    }
+  ],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T04:43:43.262080",
+  "duration_seconds": 0,
+  "elo_change_p1": 14,
+  "elo_change_p2": -14
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767052609_3960",
+  "player1": "Clutch_King",
+  "player2": "SNK_Champion",
+  "player1_char": "Clark",
+  "player2_char": "Clark",
+  "winner": "SNK_Champion",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T00:56:49.108628",
+  "duration_seconds": 0,
+  "elo_change_p1": -14,
+  "elo_change_p2": 14
+}

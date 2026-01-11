@@ -1,0 +1,15 @@
+{
+  "match_id": "1767070367_6283",
+  "player1": "Zoner_Elite",
+  "player2": "DragonFist_99",
+  "player1_char": "Mai",
+  "player2_char": "Vanessa",
+  "winner": "DragonFist_99",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T05:52:47.951661",
+  "duration_seconds": 0,
+  "elo_change_p1": -10,
+  "elo_change_p2": 10
+}

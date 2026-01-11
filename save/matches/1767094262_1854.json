@@ -1,0 +1,15 @@
+{
+  "match_id": "1767094262_1854",
+  "player1": "Comeback_Kid",
+  "player2": "GG_EZ_Player",
+  "player1_char": "Ryo",
+  "player2_char": "Chris",
+  "winner": "GG_EZ_Player",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T12:31:02.643746",
+  "duration_seconds": 0,
+  "elo_change_p1": -5,
+  "elo_change_p2": 5
+}

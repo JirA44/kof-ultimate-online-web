@@ -1,0 +1,15 @@
+{
+  "match_id": "1767092902_5505",
+  "player1": "KOF_Legend",
+  "player2": "Mix_Up_Master",
+  "player1_char": "Kyo",
+  "player2_char": "Vice",
+  "winner": "Mix_Up_Master",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T12:08:22.493927",
+  "duration_seconds": 0,
+  "elo_change_p1": -5,
+  "elo_change_p2": 5
+}

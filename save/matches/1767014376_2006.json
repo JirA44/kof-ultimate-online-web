@@ -1,0 +1,15 @@
+{
+  "match_id": "1767014376_2006",
+  "player1": "GG_EZ_Player",
+  "player2": "Frame_Perfect",
+  "player1_char": "Shingo",
+  "player2_char": "Vanessa",
+  "winner": "GG_EZ_Player",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T14:19:36.441954",
+  "duration_seconds": 0,
+  "elo_change_p1": 17,
+  "elo_change_p2": -17
+}

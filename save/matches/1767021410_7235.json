@@ -1,0 +1,15 @@
+{
+  "match_id": "1767021410_7235",
+  "player1": "EVO_Ready",
+  "player2": "Frame_Perfect",
+  "player1_char": "Mai",
+  "player2_char": "Whip",
+  "winner": "Frame_Perfect",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T16:16:50.473929",
+  "duration_seconds": 0,
+  "elo_change_p1": -5,
+  "elo_change_p2": 5
+}

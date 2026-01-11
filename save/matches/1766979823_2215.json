@@ -1,0 +1,28 @@
+{
+  "match_id": "1766979823_2215",
+  "player1": "Zoner_Elite",
+  "player2": "Online_Warrior",
+  "player1_char": "Geese",
+  "player2_char": "King",
+  "winner": "Online_Warrior",
+  "rounds": [
+    {
+      "winner": "Online_Warrior",
+      "perfect": false
+    },
+    {
+      "winner": "Zoner_Elite",
+      "perfect": false
+    },
+    {
+      "winner": "Online_Warrior",
+      "perfect": false
+    }
+  ],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T04:43:43.158215",
+  "duration_seconds": 0,
+  "elo_change_p1": -17,
+  "elo_change_p2": 17
+}

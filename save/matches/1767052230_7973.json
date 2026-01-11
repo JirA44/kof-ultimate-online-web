@@ -1,0 +1,15 @@
+{
+  "match_id": "1767052230_7973",
+  "player1": "Stream_Monster",
+  "player2": "DragonFist_99",
+  "player1_char": "Maxima",
+  "player2_char": "Chizuru",
+  "winner": "DragonFist_99",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T00:50:30.982583",
+  "duration_seconds": 0,
+  "elo_change_p1": -15,
+  "elo_change_p2": 15
+}

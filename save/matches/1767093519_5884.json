@@ -1,0 +1,15 @@
+{
+  "match_id": "1767093519_5884",
+  "player1": "Salt_Shaker",
+  "player2": "Stream_Monster",
+  "player1_char": "Athena",
+  "player2_char": "Benimaru",
+  "winner": "Salt_Shaker",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T12:18:39.036243",
+  "duration_seconds": 0,
+  "elo_change_p1": 28,
+  "elo_change_p2": -28
+}

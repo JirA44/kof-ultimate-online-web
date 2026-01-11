@@ -1,0 +1,15 @@
+{
+  "match_id": "1767059799_5841",
+  "player1": "FatalFury_Pro",
+  "player2": "Salt_Shaker",
+  "player1_char": "Mai",
+  "player2_char": "Terry",
+  "winner": "FatalFury_Pro",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T02:56:39.042239",
+  "duration_seconds": 0,
+  "elo_change_p1": 22,
+  "elo_change_p2": -22
+}

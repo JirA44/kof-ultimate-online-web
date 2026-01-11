@@ -1,0 +1,15 @@
+{
+  "match_id": "1767081445_3582",
+  "player1": "ShadowKing_X",
+  "player2": "Ranked_Slayer",
+  "player1_char": "Maxima",
+  "player2_char": "Mai",
+  "winner": "Ranked_Slayer",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T08:57:25.337469",
+  "duration_seconds": 0,
+  "elo_change_p1": -8,
+  "elo_change_p2": 8
+}

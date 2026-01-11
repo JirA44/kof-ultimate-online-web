@@ -1,0 +1,15 @@
+{
+  "match_id": "1767024108_3714",
+  "player1": "First_To_10",
+  "player2": "Salt_Shaker",
+  "player1_char": "Rugal",
+  "player2_char": "Chizuru",
+  "winner": "Salt_Shaker",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T17:01:48.517913",
+  "duration_seconds": 0,
+  "elo_change_p1": -15,
+  "elo_change_p2": 15
+}

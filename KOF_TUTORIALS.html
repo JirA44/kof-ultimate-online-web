@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOF Ultimate Online - Tutoriels & Training</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 50%, #0a2040 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+
+        .header {
+            background: rgba(0,0,0,0.7);
+            border-bottom: 3px solid #ffd700;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: #ffd700;
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-btn {
+            background: rgba(255,215,0,0.1);
+            border: 2px solid #ffd700;
+            color: #ffd700;
+            padding: 10px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        .nav-btn:hover, .nav-btn.active {
+            background: #ffd700;
+            color: #000;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+
+        /* Tutorial Sections */
+        .section {
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Level Selection */
+        .levels-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .level-card {
+            background: linear-gradient(180deg, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0.5) 100%);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .level-card:hover {
+            transform: translateY(-10px);
+            border-color: #ffd700;
+            box-shadow: 0 20px 50px rgba(255, 215, 0, 0.2);
+        }
+
+        .level-card.beginner { border-top: 4px solid #4ade80; }
+        .level-card.intermediate { border-top: 4px solid #fbbf24; }
+        .level-card.advanced { border-top: 4px solid #ef4444; }
+
+        .level-icon {
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+
+        .level-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .level-desc {
+            opacity: 0.7;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        /* Topics List */
+        .topics-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .back-btn {
+            background: none;
+            border: 2px solid rgba(255,255,255,0.3);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .back-btn:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .topics-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .topic-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+            padding: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .topic-card:hover {
+            background: rgba(255, 215, 0, 0.1);
+            transform: translateX(10px);
+        }
+
+        .topic-icon {
+            font-size: 40px;
+            width: 60px;
+            text-align: center;
+        }
+
+        .topic-info h3 {
+            margin-bottom: 5px;
+        }
+
+        .topic-info p {
+            opacity: 0.6;
+            font-size: 13px;
+        }
+
+        .topic-progress {
+            margin-left: auto;
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            padding: 5px 15px;
+            font-size: 12px;
+        }
+
+        .topic-progress.complete {
+            background: rgba(74, 222, 128, 0.3);
+            color: #4ade80;
+        }
+
+        /* Character Select */
+        .search-bar {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .search-input {
+            flex: 1;
+            background: rgba(255,255,255,0.1);
+            border: 2px solid rgba(255,255,255,0.2);
+            border-radius: 10px;
+            padding: 15px 20px;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .search-input::placeholder {
+            color: rgba(255,255,255,0.5);
+        }
+
+        .filter-btn {
+            background: rgba(255,255,255,0.1);
+            border: 2px solid rgba(255,255,255,0.2);
+            color: #fff;
+            padding: 15px 25px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background: #ffd700;
+            color: #000;
+            border-color: #ffd700;
+        }
+
+        .characters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+            max-height: 500px;
+            overflow-y: auto;
+            padding: 10px;
+        }
+
+        .char-card {
+            background: linear-gradient(180deg, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0.3) 100%);
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .char-card:hover {
+            border-color: #ffd700;
+            transform: scale(1.05);
+        }
+
+        .char-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #e94560, #ffd700);
+            margin: 0 auto 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .char-name {
+            font-size: 12px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* Tutorial Content */
+        .tutorial-content {
+            background: rgba(0,0,0,0.5);
+            border-radius: 15px;
+            padding: 40px;
+        }
+
+        .tutorial-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid rgba(255,255,255,0.1);
+        }
+
+        .tutorial-title {
+            font-size: 28px;
+            color: #ffd700;
+        }
+
+        .tutorial-progress-bar {
+            width: 200px;
+            height: 10px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .tutorial-progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #4ade80, #22c55e);
+            border-radius: 5px;
+            transition: width 0.3s;
+        }
+
+        .lesson-content {
+            line-height: 1.8;
+        }
+
+        .lesson-content h3 {
+            color: #ffd700;
+            margin: 30px 0 15px;
+            font-size: 20px;
+        }
+
+        .lesson-content p {
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+
+        /* Move Box */
+        .move-box {
+            background: rgba(255,255,255,0.05);
+            border-left: 4px solid #ffd700;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .move-name {
+            font-size: 18px;
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+
+        .move-input {
+            display: inline-flex;
+            gap: 5px;
+            margin: 10px 0;
+        }
+
+        .input-key {
+            background: linear-gradient(180deg, #444 0%, #222 100%);
+            border: 2px solid #666;
+            border-radius: 6px;
+            padding: 8px 12px;
+            font-family: monospace;
+            font-size: 14px;
+            color: #fff;
+            box-shadow: 0 3px 0 #111;
+        }
+
+        .input-key.arrow {
+            font-size: 18px;
+        }
+
+        .move-desc {
+            opacity: 0.8;
+            font-size: 14px;
+        }
+
+        /* Combo Box */
+        .combo-box {
+            background: linear-gradient(180deg, rgba(233, 69, 96, 0.2) 0%, rgba(0,0,0,0.3) 100%);
+            border: 2px solid #e94560;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .combo-title {
+            color: #e94560;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .combo-notation {
+            font-family: monospace;
+            background: rgba(0,0,0,0.5);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+
+        .combo-damage {
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        .combo-damage span {
+            color: #ffd700;
+        }
+
+        /* Tips */
+        .tip-box {
+            background: rgba(74, 222, 128, 0.1);
+            border-left: 4px solid #4ade80;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .tip-box::before {
+            content: "CONSEIL";
+            display: block;
+            color: #4ade80;
+            font-weight: bold;
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+
+        .warning-box {
+            background: rgba(251, 191, 36, 0.1);
+            border-left: 4px solid #fbbf24;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .warning-box::before {
+            content: "ATTENTION";
+            display: block;
+            color: #fbbf24;
+            font-weight: bold;
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+
+        /* Navigation Buttons */
+        .lesson-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px solid rgba(255,255,255,0.1);
+        }
+
+        .lesson-btn {
+            background: linear-gradient(180deg, rgba(255, 215, 0, 0.2) 0%, rgba(255, 215, 0, 0.1) 100%);
+            border: 2px solid #ffd700;
+            color: #ffd700;
+            padding: 15px 40px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+
+        .lesson-btn:hover {
+            background: #ffd700;
+            color: #000;
+        }
+
+        .lesson-btn.complete {
+            background: linear-gradient(180deg, #4ade80, #22c55e);
+            border-color: #4ade80;
+            color: #fff;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 30px;
+            opacity: 0.5;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">KOF TUTORIALS</div>
+        <div class="nav-buttons">
+            <button class="nav-btn active" onclick="showSection('home')">Accueil</button>
+            <button class="nav-btn" onclick="showSection('characters')">Personnages</button>
+            <button class="nav-btn" onclick="window.close()">Retour au jeu</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- HOME SECTION -->
+        <section class="section active" id="home">
+            <h1 style="text-align:center; margin-bottom:20px; color:#ffd700;">Choisissez votre niveau</h1>
+            <p style="text-align:center; opacity:0.7; margin-bottom:40px;">Progressez du debutant au maitre avec nos tutoriels interactifs</p>
+
+            <div class="levels-grid">
+                <div class="level-card beginner" onclick="showLevel('beginner')">
+                    <div class="level-icon">🌱</div>
+                    <h2 class="level-title">DEBUTANT</h2>
+                    <p class="level-desc">Les bases du jeu de combat. Mouvements, attaques de base, systeme de garde et premieres strategies.</p>
+                </div>
+
+                <div class="level-card intermediate" onclick="showLevel('intermediate')">
+                    <div class="level-icon">⚔️</div>
+                    <h2 class="level-title">INTERMEDIAIRE</h2>
+                    <p class="level-desc">Combos, cancel, mind games et lecture de l'adversaire. Perfectionnez votre technique.</p>
+                </div>
+
+                <div class="level-card advanced" onclick="showLevel('advanced')">
+                    <div class="level-icon">👑</div>
+                    <h2 class="level-title">AVANCE</h2>
+                    <p class="level-desc">Frame data, okizeme, mix-ups et strategies de haut niveau. Devenez un maitre.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- BEGINNER SECTION -->
+        <section class="section" id="beginner">
+            <div class="topics-header">
+                <button class="back-btn" onclick="showSection('home')">← Retour</button>
+                <h2 style="color:#4ade80;">🌱 Tutoriels Debutant</h2>
+            </div>
+
+            <div class="topics-grid">
+                <div class="topic-card" onclick="showTutorial('controls')">
+                    <div class="topic-icon">🎮</div>
+                    <div class="topic-info">
+                        <h3>Les Controles de Base</h3>
+                        <p>Apprenez les mouvements et les touches</p>
+                    </div>
+                    <div class="topic-progress">5 min</div>
+                </div>
+
+                <div class="topic-card" onclick="showTutorial('attacks')">
+                    <div class="topic-icon">👊</div>
+                    <div class="topic-info">
+                        <h3>Attaques de Base</h3>
+                        <p>Coups faibles, forts, speciaux</p>
+                    </div>
+                    <div class="topic-progress">8 min</div>
+                </div>
+
+                <div class="topic-card" onclick="showTutorial('defense')">
+                    <div class="topic-icon">🛡️</div>
+                    <div class="topic-info">
+                        <h3>Defense et Garde</h3>
+                        <p>Bloquer, esquiver, contre-attaquer</p>
+                    </div>
+                    <div class="topic-progress">7 min</div>
+                </div>
+
+                <div class="topic-card" onclick="showTutorial('specials')">
+                    <div class="topic-icon">✨</div>
+                    <div class="topic-info">
+                        <h3>Coups Speciaux</h3>
+                        <p>Executer les mouvements speciaux</p>
+                    </div>
+                    <div class="topic-progress">10 min</div>
+                </div>
+
+                <div class="topic-card" onclick="showTutorial('meters')">
+                    <div class="topic-icon">⚡</div>
+                    <div class="topic-info">
+                        <h3>Barres et Jauges</h3>
+                        <p>Power bar, Guard bar, etc.</p>
+                    </div>
+                    <div class="topic-progress">6 min</div>
+                </div>
+
+                <div class="topic-card" onclick="showTutorial('firstcombo')">
+                    <div class="topic-icon">🔗</div>
+                    <div class="topic-info">
+                        <h3>Premier Combo</h3>
+                        <p>Enchainez vos premiers coups</p>
+                    </div>
+                    <div class="topic-progress">12 min</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERMEDIATE SECTION -->
+        <section class="section" id="intermediate">
+            <div class="topics-header">
+                <button class="back-btn" onclick="showSection('home')">← Retour</button>
+                <h2 style="color:#fbbf24;">⚔️ Tutoriels Intermediaire</h2>
+            </div>
+
+            <div class="topics-grid">
+                <div class="topic-card" onclick="showTutorial('combos')">
+                    <div class="topic-icon">🔗</div>
+                    <div class="topic-info">
+                        <h3>Combos Avances</h3>
+                        <p>Links, cancels, juggles</p>
+                    </div>
+                    <div class="topic-progress">15 min</div>
+                </div>
+
+                <div class="topic-card" onclick="showTutorial('cancel')">
+                    <div class="topic-icon">⏱️</div>
+                    <div class="topic-info">
+                        <h3>Cancel et Links</h3>
+                        <p>Timing et execution</p>
+                    </div>
+                    <div class="topic-progress">12 min</div>
+                </div>
+
+                <div class="topic-card" onclick="showTutorial('pressure')">
+                    <div class="topic-icon">💪</div>
+                    <div class="topic-info">
+                        <h3>Pressure et Mixups</h3>
+                        <p>Garder l'avantage offensif</p>
+                    </div>
+                    <div class="topic-progress">10 min</div>
+                </div>
+
+                <div class="topic-card" onclick="showTutorial('punish')">
+                    <div class="topic-icon">⚡</div>
+                    <div class="topic-info">
+                        <h3>Punitions</h3>
+                        <p>Punir les erreurs adverses</p>
+                    </div>
+                    <div class="topic-progress">8 min</div>
+                </div>
+
+                <div class="topic-card" onclick="showTutorial('neutral')">
+                    <div class="topic-icon">⚖️</div>
+                    <div class="topic-info">
+                        <h3>Le Neutral Game</h3>
+                        <p>Controle de l'espace et footsies</p>
+                    </div>
+                    <div class="topic-progress">15 min</div>
+                </div>
+
+                <div class="topic-card" onclick="showTutorial('antiair')">
+                    <div class="topic-icon">🦅</div>
+                    <div class="topic-info">
+                        <h3>Anti-Air</h3>
+                        <p>Contrer les sauts</p>
+                    </div>
+                    <div class="topic-progress">8 min</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ADVANCED SECTION -->
+        <section class="section" id="advanced">
+            <div class="topics-header">
+                <button class="back-btn" onclick="showSection('home')">← Retour</button>
+                <h2 style="color:#ef4444;">👑 Tutoriels Avances</h2>
+            </div>
+
+            <div class="topics-grid">
+                <div class="topic-card" onclick="showTutorial('framedata')">
+                    <div class="topic-icon">📊</div>
+                    <div class="topic-info">
+                        <h3>Frame Data</h3>
+                        <p>Comprendre les frames</p>
+                    </div>
+                    <div class="topic-progress">20 min</div>
+                </div>
+
+                <div class="topic-card" onclick="showTutorial('okizeme')">
+                    <div class="topic-icon">💀</div>
+                    <div class="topic-info">
+                        <h3>Okizeme</h3>
+                        <p>Pression au releve</p>
+                    </div>
+                    <div class="topic-progress">15 min</div>
+                </div>
+
+                <div class="topic-card" onclick="showTutorial('mindgames')">
+                    <div class="topic-icon">🧠</div>
+                    <div class="topic-info">
+                        <h3>Mind Games</h3>
+                        <p>Psychologie et adaptation</p>
+                    </div>
+                    <div class="topic-progress">18 min</div>
+                </div>
+
+                <div class="topic-card" onclick="showTutorial('matchup')">
+                    <div class="topic-icon">🎯</div>
+                    <div class="topic-info">
+                        <h3>Match-ups</h3>
+                        <p>Connaitre les adversaires</p>
+                    </div>
+                    <div class="topic-progress">25 min</div>
+                </div>
+
+                <div class="topic-card" onclick="showTutorial('tournament')">
+                    <div class="topic-icon">🏆</div>
+                    <div class="topic-info">
+                        <h3>Preparation Tournoi</h3>
+                        <p>Mental et preparation</p>
+                    </div>
+                    <div class="topic-progress">12 min</div>
+                </div>
+
+                <div class="topic-card" onclick="showTutorial('optimize')">
+                    <div class="topic-icon">💎</div>
+                    <div class="topic-info">
+                        <h3>Optimisation</h3>
+                        <p>Maximiser les degats</p>
+                    </div>
+                    <div class="topic-progress">20 min</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHARACTERS SECTION -->
+        <section class="section" id="characters">
+            <h2 style="margin-bottom:20px;">📖 Guide des Personnages</h2>
+
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Rechercher un personnage..." oninput="filterCharacters(this.value)">
+                <button class="filter-btn active" onclick="filterByType('all')">Tous</button>
+                <button class="filter-btn" onclick="filterByType('rushdown')">Rushdown</button>
+                <button class="filter-btn" onclick="filterByType('zoner')">Zoner</button>
+                <button class="filter-btn" onclick="filterByType('grappler')">Grappler</button>
+            </div>
+
+            <div class="characters-grid" id="charGrid"></div>
+        </section>
+
+        <!-- TUTORIAL CONTENT SECTION -->
+        <section class="section" id="tutorial">
+            <div class="tutorial-content">
+                <div class="tutorial-header">
+                    <div>
+                        <button class="back-btn" onclick="goBackFromTutorial()">← Retour</button>
+                        <h1 class="tutorial-title" id="tutorialTitle">Titre du Tutoriel</h1>
+                    </div>
+                    <div>
+                        <div class="tutorial-progress-bar">
+                            <div class="tutorial-progress-fill" id="tutorialProgress" style="width: 0%"></div>
+                        </div>
+                        <span style="font-size:12px;opacity:0.7;" id="progressText">0% complete</span>
+                    </div>
+                </div>
+
+                <div class="lesson-content" id="lessonContent">
+                    <!-- Tutorial content loads here -->
+                </div>
+
+                <div class="lesson-nav">
+                    <button class="lesson-btn" id="prevBtn" onclick="prevLesson()">← Precedent</button>
+                    <button class="lesson-btn complete" id="nextBtn" onclick="nextLesson()">Suivant →</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHARACTER GUIDE SECTION -->
+        <section class="section" id="charGuide">
+            <div class="tutorial-content">
+                <div class="tutorial-header">
+                    <div>
+                        <button class="back-btn" onclick="showSection('characters')">← Retour</button>
+                        <h1 class="tutorial-title" id="charTitle">Guide du Personnage</h1>
+                    </div>
+                </div>
+
+                <div class="lesson-content" id="charContent">
+                    <!-- Character guide loads here -->
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="footer">
+        KOF Ultimate Online - Training Mode | Version 1.0
+    </div>
+
+    <script>
+        // Characters database
+        const characters = [
+            { name: "Kyo", type: "rushdown", difficulty: 2 },
+            { name: "Iori", type: "rushdown", difficulty: 3 },
+            { name: "Terry", type: "rushdown", difficulty: 1 },
+            { name: "Ryo", type: "rushdown", difficulty: 2 },
+            { name: "Robert", type: "rushdown", difficulty: 2 },
+            { name: "Athena", type: "zoner", difficulty: 2 },
+            { name: "Kula", type: "zoner", difficulty: 3 },
+            { name: "K'", type: "rushdown", difficulty: 3 },
+            { name: "Maxima", type: "grappler", difficulty: 2 },
+            { name: "Goenitz", type: "zoner", difficulty: 4 },
+            { name: "Rugal", type: "rushdown", difficulty: 4 },
+            { name: "Orochi", type: "boss", difficulty: 5 },
+            { name: "Leona", type: "rushdown", difficulty: 2 },
+            { name: "Clark", type: "grappler", difficulty: 2 },
+            { name: "Ralf", type: "rushdown", difficulty: 1 },
+            { name: "Mai", type: "rushdown", difficulty: 2 },
+            { name: "King", type: "zoner", difficulty: 2 },
+            { name: "Yuri", type: "rushdown", difficulty: 1 },
+            { name: "Benimaru", type: "rushdown", difficulty: 2 },
+            { name: "Shermie", type: "grappler", difficulty: 3 },
+            { name: "Chris", type: "rushdown", difficulty: 2 },
+            { name: "Yashiro", type: "grappler", difficulty: 2 },
+            { name: "Ash", type: "zoner", difficulty: 4 },
+            { name: "Elisabeth", type: "rushdown", difficulty: 3 },
+            { name: "Duo Lon", type: "rushdown", difficulty: 4 },
+            { name: "Shen Woo", type: "rushdown", difficulty: 2 },
+            { name: "Vanessa", type: "rushdown", difficulty: 3 },
+            { name: "Angel", type: "rushdown", difficulty: 4 },
+            { name: "Billy", type: "zoner", difficulty: 2 },
+            { name: "Geese", type: "zoner", difficulty: 4 },
+            { name: "Igniz", type: "boss", difficulty: 5 },
+            { name: "Zero", type: "boss", difficulty: 5 },
+            { name: "Magaki", type: "boss", difficulty: 5 }
+        ];
+
+        // Tutorial content
+        const tutorials = {
+            controls: {
+                title: "Les Controles de Base",
+                lessons: [
+                    {
+                        title: "Mouvements",
+                        content: `
+                            <h3>Les 8 directions</h3>
+                            <p>Dans KOF, vous pouvez vous deplacer dans 8 directions differentes:</p>
+
+                            <div class="move-box">
+                                <div class="move-input">
+                                    <span class="input-key arrow">↖</span>
+                                    <span class="input-key arrow">↑</span>
+                                    <span class="input-key arrow">↗</span>
+                                </div>
+                                <div class="move-input">
+                                    <span class="input-key arrow">←</span>
+                                    <span class="input-key">N</span>
+                                    <span class="input-key arrow">→</span>
+                                </div>
+                                <div class="move-input">
+                                    <span class="input-key arrow">↙</span>
+                                    <span class="input-key arrow">↓</span>
+                                    <span class="input-key arrow">↘</span>
+                                </div>
+                            </div>
+
+                            <p><strong>Marcher:</strong> Maintenez ← ou → pour avancer ou reculer</p>
+                            <p><strong>Sauter:</strong> Appuyez sur ↑, ↗ ou ↖</p>
+                            <p><strong>S'accroupir:</strong> Maintenez ↓, ↙ ou ↘</p>
+
+                            <div class="tip-box">
+                                En maintenant ↙ vous vous accroupissez ET vous bloquez les attaques basses!
+                            </div>
+                        `
+                    },
+                    {
+                        title: "Courir et Roulade",
+                        content: `
+                            <h3>Course (Run)</h3>
+                            <p>Double-tapez → → pour courir vers l'avant. Tres utile pour approcher rapidement!</p>
+
+                            <div class="move-box">
+                                <div class="move-name">Course avant</div>
+                                <div class="move-input">
+                                    <span class="input-key arrow">→</span>
+                                    <span class="input-key arrow">→</span>
+                                </div>
+                                <div class="move-desc">Maintenir pour continuer a courir</div>
+                            </div>
+
+                            <h3>Roulade (Roll)</h3>
+                            <p>La roulade vous permet de traverser l'adversaire en etant invincible!</p>
+
+                            <div class="move-box">
+                                <div class="move-name">Roulade avant</div>
+                                <div class="move-input">
+                                    <span class="input-key">A</span>
+                                    <span class="input-key">+</span>
+                                    <span class="input-key">B</span>
+                                </div>
+                                <div class="move-desc">Roulade arriere: ← + A+B</div>
+                            </div>
+
+                            <div class="warning-box">
+                                Attention: La roulade peut etre punie a la fin! Ne l'utilisez pas au hasard.
+                            </div>
+                        `
+                    }
+                ]
+            },
+            attacks: {
+                title: "Attaques de Base",
+                lessons: [
+                    {
+                        title: "Les 4 boutons",
+                        content: `
+                            <h3>Configuration des boutons</h3>
+                            <p>KOF utilise 4 boutons d'attaque:</p>
+
+                            <div class="move-box">
+                                <div class="move-input">
+                                    <span class="input-key">A</span>
+                                    <span style="margin:0 10px;">Poing leger</span>
+                                </div>
+                                <div class="move-input">
+                                    <span class="input-key">B</span>
+                                    <span style="margin:0 10px;">Pied leger</span>
+                                </div>
+                                <div class="move-input">
+                                    <span class="input-key">C</span>
+                                    <span style="margin:0 10px;">Poing fort</span>
+                                </div>
+                                <div class="move-input">
+                                    <span class="input-key">D</span>
+                                    <span style="margin:0 10px;">Pied fort</span>
+                                </div>
+                            </div>
+
+                            <p><strong>Coups legers (A/B):</strong> Rapides, peu de degats, faciles a enchainer</p>
+                            <p><strong>Coups forts (C/D):</strong> Plus lents, plus de degats, plus de portee</p>
+
+                            <div class="tip-box">
+                                Commencez vos combos avec des coups legers car ils sont plus rapides!
+                            </div>
+                        `
+                    },
+                    {
+                        title: "Attaques speciales",
+                        content: `
+                            <h3>Coups en l'air et accroupi</h3>
+                            <p>Chaque attaque change selon votre position:</p>
+
+                            <p><strong>Debout:</strong> Attaques normales, bonne portee horizontale</p>
+                            <p><strong>Accroupi:</strong> Attaques basses, touchent les adversaires qui bloquent haut</p>
+                            <p><strong>En l'air:</strong> Attaques aeriennes pour les jump-in</p>
+
+                            <div class="move-box">
+                                <div class="move-name">Close vs Far</div>
+                                <div class="move-desc">
+                                    Pres de l'adversaire, C et D font des "close attacks" differentes!
+                                    Ces attaques sont souvent utilisees pour debuter les combos.
+                                </div>
+                            </div>
+
+                            <h3>Command Normals</h3>
+                            <p>Certaines directions + bouton donnent des coups speciaux:</p>
+
+                            <div class="move-box">
+                                <div class="move-name">Overhead (exemple)</div>
+                                <div class="move-input">
+                                    <span class="input-key arrow">→</span>
+                                    <span class="input-key">+</span>
+                                    <span class="input-key">A</span>
+                                </div>
+                                <div class="move-desc">Touche les adversaires qui bloquent bas!</div>
+                            </div>
+                        `
+                    }
+                ]
+            },
+            specials: {
+                title: "Coups Speciaux",
+                lessons: [
+                    {
+                        title: "Mouvements de base",
+                        content: `
+                            <h3>Les mouvements classiques</h3>
+                            <p>La plupart des coups speciaux utilisent ces mouvements:</p>
+
+                            <div class="move-box">
+                                <div class="move-name">Quart de cercle avant (QCF)</div>
+                                <div class="move-input">
+                                    <span class="input-key arrow">↓</span>
+                                    <span class="input-key arrow">↘</span>
+                                    <span class="input-key arrow">→</span>
+                                    <span class="input-key">+</span>
+                                    <span class="input-key">P/K</span>
+                                </div>
+                                <div class="move-desc">Le mouvement le plus commun (Hadoken, etc.)</div>
+                            </div>
+
+                            <div class="move-box">
+                                <div class="move-name">Quart de cercle arriere (QCB)</div>
+                                <div class="move-input">
+                                    <span class="input-key arrow">↓</span>
+                                    <span class="input-key arrow">↙</span>
+                                    <span class="input-key arrow">←</span>
+                                    <span class="input-key">+</span>
+                                    <span class="input-key">P/K</span>
+                                </div>
+                            </div>
+
+                            <div class="move-box">
+                                <div class="move-name">Dragon Punch (DP)</div>
+                                <div class="move-input">
+                                    <span class="input-key arrow">→</span>
+                                    <span class="input-key arrow">↓</span>
+                                    <span class="input-key arrow">↘</span>
+                                    <span class="input-key">+</span>
+                                    <span class="input-key">P</span>
+                                </div>
+                                <div class="move-desc">Excellent anti-air, invincible au demarrage</div>
+                            </div>
+
+                            <div class="tip-box">
+                                Pratiquez ces mouvements lentement d'abord, puis accelerez progressivement!
+                            </div>
+                        `
+                    },
+                    {
+                        title: "Supers et DM",
+                        content: `
+                            <h3>Desperation Moves (DM)</h3>
+                            <p>Les DM sont des coups ultra puissants qui consomment de la barre de Power:</p>
+
+                            <div class="move-box">
+                                <div class="move-name">DM typique</div>
+                                <div class="move-input">
+                                    <span class="input-key arrow">↓</span>
+                                    <span class="input-key arrow">↘</span>
+                                    <span class="input-key arrow">→</span>
+                                    <span class="input-key arrow">↓</span>
+                                    <span class="input-key arrow">↘</span>
+                                    <span class="input-key arrow">→</span>
+                                    <span class="input-key">+</span>
+                                    <span class="input-key">P</span>
+                                </div>
+                                <div class="move-desc">Double QCF + Bouton = DM</div>
+                            </div>
+
+                            <div class="move-box">
+                                <div class="move-name">Super DM (SDM)</div>
+                                <div class="move-desc">Meme input que le DM mais avec C+D ou plus de barres. Beaucoup plus de degats!</div>
+                            </div>
+
+                            <div class="warning-box">
+                                Les DM sont punissables s'ils sont bloques! Utilisez-les dans les combos ou en punition.
+                            </div>
+                        `
+                    }
+                ]
+            },
+            defense: {
+                title: "Defense et Garde",
+                lessons: [
+                    {
+                        title: "Bloquer",
+                        content: `
+                            <h3>Les types de garde</h3>
+
+                            <div class="move-box">
+                                <div class="move-name">Garde haute (Standing Block)</div>
+                                <div class="move-input">
+                                    <span class="input-key arrow">←</span>
+                                </div>
+                                <div class="move-desc">Bloque les attaques mid et high, mais PAS les low!</div>
+                            </div>
+
+                            <div class="move-box">
+                                <div class="move-name">Garde basse (Crouching Block)</div>
+                                <div class="move-input">
+                                    <span class="input-key arrow">↙</span>
+                                </div>
+                                <div class="move-desc">Bloque les attaques mid et low, mais PAS les overhead!</div>
+                            </div>
+
+                            <div class="move-box">
+                                <div class="move-name">Garde aerienne</div>
+                                <div class="move-input">
+                                    <span class="input-key arrow">←</span>
+                                    <span style="margin:0 10px;">(en l'air)</span>
+                                </div>
+                                <div class="move-desc">Bloque les attaques aeriennes</div>
+                            </div>
+
+                            <div class="tip-box">
+                                Restez en garde basse par defaut, et passez en garde haute pour bloquer les overhead et les sauts!
+                            </div>
+                        `
+                    }
+                ]
+            },
+            firstcombo: {
+                title: "Premier Combo",
+                lessons: [
+                    {
+                        title: "Structure d'un combo",
+                        content: `
+                            <h3>Les composants d'un combo</h3>
+                            <p>Un combo typique suit cette structure:</p>
+
+                            <p><strong>1. Starter:</strong> Le premier coup (souvent un saut ou close C)</p>
+                            <p><strong>2. Filler:</strong> Les coups intermediaires</p>
+                            <p><strong>3. Ender:</strong> Le coup special ou DM de fin</p>
+
+                            <div class="combo-box">
+                                <div class="combo-title">Combo Universel Debutant</div>
+                                <div class="combo-notation">Jump C → Close C → QCF + A</div>
+                                <div class="combo-damage">
+                                    Degats: <span>~25%</span> | Difficulte: <span>Facile</span>
+                                </div>
+                            </div>
+
+                            <h3>Timing et Links</h3>
+                            <p>Le timing entre chaque coup est crucial. Pratiquez lentement puis accelerez.</p>
+
+                            <div class="tip-box">
+                                Activez le mode Training et regardez si "COMBO" s'affiche pour verifier que vos coups s'enchainent!
+                            </div>
+                        `
+                    },
+                    {
+                        title: "Combos avec DM",
+                        content: `
+                            <h3>Terminer avec un DM</h3>
+                            <p>Les DM font beaucoup plus de degats en fin de combo:</p>
+
+                            <div class="combo-box">
+                                <div class="combo-title">Combo avec Super</div>
+                                <div class="combo-notation">Jump C → Close C → QCF QCF + C</div>
+                                <div class="combo-damage">
+                                    Degats: <span>~45%</span> | Barres: <span>1</span>
+                                </div>
+                            </div>
+
+                            <div class="combo-box">
+                                <div class="combo-title">Combo BnB (Bread and Butter)</div>
+                                <div class="combo-notation">Close C → →+A → QCB + C → DM</div>
+                                <div class="combo-damage">
+                                    Degats: <span>~50%</span> | Difficulte: <span>Moyenne</span>
+                                </div>
+                            </div>
+
+                            <div class="warning-box">
+                                Chaque personnage a des combos differents! Consultez le guide de votre personnage pour les combos specifiques.
+                            </div>
+                        `
+                    }
+                ]
+            },
+            meters: {
+                title: "Barres et Jauges",
+                lessons: [
+                    {
+                        title: "Power Gauge",
+                        content: `
+                            <h3>La barre de Power</h3>
+                            <p>La Power Gauge se remplit en:</p>
+                            <ul style="margin-left:20px; line-height:2;">
+                                <li>Touchant l'adversaire</li>
+                                <li>Bloquant des attaques</li>
+                                <li>Executant des coups speciaux</li>
+                            </ul>
+
+                            <p><strong>Utilisations:</strong></p>
+                            <p>• 1 barre = DM (Desperation Move)</p>
+                            <p>• 2+ barres = SDM (Super DM)</p>
+                            <p>• MAX Mode (certains jeux)</p>
+
+                            <div class="tip-box">
+                                Gardez au moins 1 barre en reserve pour les situations d'urgence!
+                            </div>
+                        `
+                    }
+                ]
+            }
+        };
+
+        let currentSection = 'home';
+        let currentLevel = null;
+        let currentTutorial = null;
+        let currentLesson = 0;
+
+        // Show section
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+
+            document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+            if (sectionId === 'home' || sectionId === 'beginner' || sectionId === 'intermediate' || sectionId === 'advanced') {
+                document.querySelectorAll('.nav-btn')[0].classList.add('active');
+            } else if (sectionId === 'characters') {
+                document.querySelectorAll('.nav-btn')[1].classList.add('active');
+                renderCharacters();
+            }
+
+            currentSection = sectionId;
+        }
+
+        function showLevel(level) {
+            currentLevel = level;
+            showSection(level);
+        }
+
+        function showTutorial(tutorialId) {
+            if (tutorials[tutorialId]) {
+                currentTutorial = tutorials[tutorialId];
+                currentLesson = 0;
+                renderTutorial();
+                showSection('tutorial');
+            }
+        }
+
+        function renderTutorial() {
+            document.getElementById('tutorialTitle').textContent = currentTutorial.title;
+            const lesson = currentTutorial.lessons[currentLesson];
+            document.getElementById('lessonContent').innerHTML = lesson.content;
+
+            const progress = ((currentLesson + 1) / currentTutorial.lessons.length) * 100;
+            document.getElementById('tutorialProgress').style.width = progress + '%';
+            document.getElementById('progressText').textContent = Math.round(progress) + '% complete';
+
+            document.getElementById('prevBtn').style.visibility = currentLesson === 0 ? 'hidden' : 'visible';
+            document.getElementById('nextBtn').textContent = currentLesson === currentTutorial.lessons.length - 1 ? 'Terminer ✓' : 'Suivant →';
+        }
+
+        function nextLesson() {
+            if (currentLesson < currentTutorial.lessons.length - 1) {
+                currentLesson++;
+                renderTutorial();
+            } else {
+                // Tutorial complete
+                goBackFromTutorial();
+            }
+        }
+
+        function prevLesson() {
+            if (currentLesson > 0) {
+                currentLesson--;
+                renderTutorial();
+            }
+        }
+
+        function goBackFromTutorial() {
+            if (currentLevel) {
+                showSection(currentLevel);
+            } else {
+                showSection('home');
+            }
+        }
+
+        // Characters
+        function renderCharacters(filter = 'all', search = '') {
+            const grid = document.getElementById('charGrid');
+            let filtered = characters;
+
+            if (filter !== 'all') {
+                filtered = filtered.filter(c => c.type === filter);
+            }
+
+            if (search) {
+                filtered = filtered.filter(c => c.name.toLowerCase().includes(search.toLowerCase()));
+            }
+
+            grid.innerHTML = filtered.map(char => `
+                <div class="char-card" onclick="showCharGuide('${char.name}')">
+                    <div class="char-avatar">${char.name.charAt(0)}</div>
+                    <div class="char-name">${char.name}</div>
+                </div>
+            `).join('');
+        }
+
+        function filterCharacters(search) {
+            renderCharacters('all', search);
+        }
+
+        function filterByType(type) {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            event.target.classList.add('active');
+            renderCharacters(type);
+        }
+
+        function showCharGuide(charName) {
+            document.getElementById('charTitle').textContent = 'Guide: ' + charName;
+            document.getElementById('charContent').innerHTML = `
+                <h3>Vue d'ensemble</h3>
+                <p><strong>${charName}</strong> est un personnage polyvalent avec un bon equilibre entre attaque et defense.</p>
+
+                <h3>Coups Speciaux</h3>
+                <div class="move-box">
+                    <div class="move-name">Coup Special 1</div>
+                    <div class="move-input">
+                        <span class="input-key arrow">↓</span>
+                        <span class="input-key arrow">↘</span>
+                        <span class="input-key arrow">→</span>
+                        <span class="input-key">+</span>
+                        <span class="input-key">A/C</span>
+                    </div>
+                    <div class="move-desc">Projectile rapide, utile pour le zoning</div>
+                </div>
+
+                <div class="move-box">
+                    <div class="move-name">Coup Special 2</div>
+                    <div class="move-input">
+                        <span class="input-key arrow">→</span>
+                        <span class="input-key arrow">↓</span>
+                        <span class="input-key arrow">↘</span>
+                        <span class="input-key">+</span>
+                        <span class="input-key">A/C</span>
+                    </div>
+                    <div class="move-desc">Anti-air invincible, excellent en defense</div>
+                </div>
+
+                <h3>Combos Recommandes</h3>
+                <div class="combo-box">
+                    <div class="combo-title">Combo Facile</div>
+                    <div class="combo-notation">Close C → →+A → QCF+A</div>
+                    <div class="combo-damage">
+                        Degats: <span>~25%</span> | Difficulte: <span>Facile</span>
+                    </div>
+                </div>
+
+                <div class="combo-box">
+                    <div class="combo-title">Combo Optimal</div>
+                    <div class="combo-notation">j.C → Close C → →+A → QCB+C → DM</div>
+                    <div class="combo-damage">
+                        Degats: <span>~50%</span> | Difficulte: <span>Moyenne</span>
+                    </div>
+                </div>
+
+                <h3>Conseils de Gameplay</h3>
+                <div class="tip-box">
+                    Utilisez vos projectiles pour controler l'espace et forcez l'adversaire a sauter, puis punissez avec votre anti-air!
+                </div>
+
+                <div class="warning-box">
+                    Evitez d'abuser des coups speciaux risques, ils sont tres punissables s'ils sont bloques.
+                </div>
+            `;
+            showSection('charGuide');
+        }
+
+        // Init
+        renderCharacters();
+    </script>
+</body>
+</html>

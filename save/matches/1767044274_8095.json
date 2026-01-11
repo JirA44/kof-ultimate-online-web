@@ -1,0 +1,15 @@
+{
+  "match_id": "1767044274_8095",
+  "player1": "Money_Match",
+  "player2": "Combo_Breaker",
+  "player1_char": "Leona",
+  "player2_char": "Duo Lon",
+  "winner": "Combo_Breaker",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T22:37:54.280557",
+  "duration_seconds": 0,
+  "elo_change_p1": -8,
+  "elo_change_p2": 8
+}

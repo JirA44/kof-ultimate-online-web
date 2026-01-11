@@ -1,0 +1,15 @@
+{
+  "match_id": "1767041981_3133",
+  "player1": "Casual_Fighter",
+  "player2": "Mix_Up_Master",
+  "player1_char": "Kensou",
+  "player2_char": "Ramon",
+  "winner": "Mix_Up_Master",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T21:59:41.675122",
+  "duration_seconds": 0,
+  "elo_change_p1": -13,
+  "elo_change_p2": 13
+}

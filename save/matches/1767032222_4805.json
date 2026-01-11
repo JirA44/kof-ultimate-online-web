@@ -1,0 +1,15 @@
+{
+  "match_id": "1767032222_4805",
+  "player1": "Stream_Monster",
+  "player2": "DragonFist_99",
+  "player1_char": "Athena",
+  "player2_char": "Mai",
+  "winner": "DragonFist_99",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T19:17:02.940055",
+  "duration_seconds": 0,
+  "elo_change_p1": -14,
+  "elo_change_p2": 14
+}

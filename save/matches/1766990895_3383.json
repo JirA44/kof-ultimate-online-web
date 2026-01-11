@@ -1,0 +1,15 @@
+{
+  "match_id": "1766990895_3383",
+  "player1": "Grappler_God",
+  "player2": "Tournament_Ace",
+  "player1_char": "Vice",
+  "player2_char": "Maxima",
+  "winner": "Tournament_Ace",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T07:48:15.409845",
+  "duration_seconds": 0,
+  "elo_change_p1": -15,
+  "elo_change_p2": 15
+}

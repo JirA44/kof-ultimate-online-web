@@ -1,0 +1,15 @@
+{
+  "match_id": "1767087073_6488",
+  "player1": "KOF_Legend",
+  "player2": "Button_Masher_X",
+  "player1_char": "Angel",
+  "player2_char": "Robert",
+  "winner": "Button_Masher_X",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T10:31:13.931872",
+  "duration_seconds": 0,
+  "elo_change_p1": -1,
+  "elo_change_p2": 1
+}

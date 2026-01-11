@@ -1,0 +1,15 @@
+{
+  "match_id": "1767000684_8978",
+  "player1": "GG_EZ_Player",
+  "player2": "SNK_Champion",
+  "player1_char": "Ramon",
+  "player2_char": "K'",
+  "winner": "GG_EZ_Player",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T10:31:24.929121",
+  "duration_seconds": 0,
+  "elo_change_p1": 17,
+  "elo_change_p2": -17
+}

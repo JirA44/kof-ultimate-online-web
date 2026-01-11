@@ -1,0 +1,15 @@
+{
+  "match_id": "1767080953_6306",
+  "player1": "Online_Warrior",
+  "player2": "Tournament_Ace",
+  "player1_char": "Whip",
+  "player2_char": "Rugal",
+  "winner": "Online_Warrior",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T08:49:13.064486",
+  "duration_seconds": 0,
+  "elo_change_p1": 27,
+  "elo_change_p2": -27
+}

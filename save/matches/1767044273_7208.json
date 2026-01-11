@@ -1,0 +1,15 @@
+{
+  "match_id": "1767044273_7208",
+  "player1": "Comeback_Kid",
+  "player2": "Pro_Player_One",
+  "player1_char": "Ash",
+  "player2_char": "Duo Lon",
+  "winner": "Pro_Player_One",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T22:37:53.267629",
+  "duration_seconds": 0,
+  "elo_change_p1": -7,
+  "elo_change_p2": 7
+}

@@ -100,7 +100,7 @@ class MatchmakingTester:
     """Testeur de matchmaking avec joueurs virtuels"""
 
     def __init__(self):
-        self.base_path = Path(r"D:\KOF Ultimate Online")
+        self.base_path = Path(r"D:\KOF Ultimate Online kofuo")
         self.players = []
         self.matchmaking_queue = []
         self.matches_completed = 0

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767033180_8287",
+  "player1": "Comeback_Kid",
+  "player2": "Combo_Breaker",
+  "player1_char": "Goro",
+  "player2_char": "Kensou",
+  "winner": "Comeback_Kid",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T19:33:00.746166",
+  "duration_seconds": 0,
+  "elo_change_p1": 26,
+  "elo_change_p2": -26
+}

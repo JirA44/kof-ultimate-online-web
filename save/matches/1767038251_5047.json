@@ -1,0 +1,15 @@
+{
+  "match_id": "1767038251_5047",
+  "player1": "Money_Match",
+  "player2": "Pro_Player_One",
+  "player1_char": "Billy",
+  "player2_char": "Goro",
+  "winner": "Pro_Player_One",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T20:57:31.305380",
+  "duration_seconds": 0,
+  "elo_change_p1": -11,
+  "elo_change_p2": 11
+}

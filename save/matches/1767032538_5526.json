@@ -1,0 +1,15 @@
+{
+  "match_id": "1767032538_5526",
+  "player1": "FatalFury_Pro",
+  "player2": "Ranked_Slayer",
+  "player1_char": "Elisabeth",
+  "player2_char": "Shermie",
+  "winner": "Ranked_Slayer",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T19:22:18.840157",
+  "duration_seconds": 0,
+  "elo_change_p1": -10,
+  "elo_change_p2": 10
+}

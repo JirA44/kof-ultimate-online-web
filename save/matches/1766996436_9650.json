@@ -1,0 +1,15 @@
+{
+  "match_id": "1766996436_9650",
+  "player1": "Online_Warrior",
+  "player2": "Zoner_Elite",
+  "player1_char": "Kyo",
+  "player2_char": "Shen",
+  "winner": "Zoner_Elite",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T09:20:36.699155",
+  "duration_seconds": 0,
+  "elo_change_p1": -12,
+  "elo_change_p2": 12
+}

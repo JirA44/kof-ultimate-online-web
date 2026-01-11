@@ -1,0 +1,24 @@
+{
+  "match_id": "1766979823_3670",
+  "player1": "Grappler_God",
+  "player2": "Rush_Down_King",
+  "player1_char": "Ramon",
+  "player2_char": "Kensou",
+  "winner": "Rush_Down_King",
+  "rounds": [
+    {
+      "winner": "Rush_Down_King",
+      "perfect": false
+    },
+    {
+      "winner": "Rush_Down_King",
+      "perfect": false
+    }
+  ],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T04:43:43.256569",
+  "duration_seconds": 0,
+  "elo_change_p1": -15,
+  "elo_change_p2": 15
+}

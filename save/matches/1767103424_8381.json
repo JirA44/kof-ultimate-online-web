@@ -1,0 +1,15 @@
+{
+  "match_id": "1767103424_8381",
+  "player1": "Comeback_Kid",
+  "player2": "Mix_Up_Master",
+  "player1_char": "Athena",
+  "player2_char": "Chris",
+  "winner": "Mix_Up_Master",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T15:03:44.929955",
+  "duration_seconds": 0,
+  "elo_change_p1": -8,
+  "elo_change_p2": 8
+}

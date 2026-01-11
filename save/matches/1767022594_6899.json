@@ -1,0 +1,15 @@
+{
+  "match_id": "1767022594_6899",
+  "player1": "Grappler_God",
+  "player2": "DragonFist_99",
+  "player1_char": "Leona",
+  "player2_char": "Maxima",
+  "winner": "Grappler_God",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T16:36:34.721818",
+  "duration_seconds": 0,
+  "elo_change_p1": 23,
+  "elo_change_p2": -23
+}

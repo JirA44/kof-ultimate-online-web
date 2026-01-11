@@ -1,0 +1,15 @@
+{
+  "match_id": "1766992881_1722",
+  "player1": "Casual_Fighter",
+  "player2": "KOF_Legend",
+  "player1_char": "Vice",
+  "player2_char": "Billy",
+  "winner": "KOF_Legend",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T08:21:21.226925",
+  "duration_seconds": 0,
+  "elo_change_p1": -15,
+  "elo_change_p2": 15
+}

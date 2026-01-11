@@ -1,0 +1,15 @@
+{
+  "match_id": "1767010521_6040",
+  "player1": "DragonFist_99",
+  "player2": "Ranked_Slayer",
+  "player1_char": "Yuri",
+  "player2_char": "Whip",
+  "winner": "DragonFist_99",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T13:15:21.027616",
+  "duration_seconds": 0,
+  "elo_change_p1": 20,
+  "elo_change_p2": -20
+}

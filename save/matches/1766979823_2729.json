@@ -1,0 +1,24 @@
+{
+  "match_id": "1766979823_2729",
+  "player1": "Rage_Quitter_0",
+  "player2": "Stream_Monster",
+  "player1_char": "Kula",
+  "player2_char": "Vice",
+  "winner": "Stream_Monster",
+  "rounds": [
+    {
+      "winner": "Stream_Monster",
+      "perfect": false
+    },
+    {
+      "winner": "Stream_Monster",
+      "perfect": false
+    }
+  ],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T04:43:43.420227",
+  "duration_seconds": 0,
+  "elo_change_p1": -14,
+  "elo_change_p2": 14
+}

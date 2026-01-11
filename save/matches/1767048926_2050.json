@@ -1,0 +1,15 @@
+{
+  "match_id": "1767048926_2050",
+  "player1": "Clutch_King",
+  "player2": "Rush_Down_King",
+  "player1_char": "Vice",
+  "player2_char": "Kyo",
+  "winner": "Rush_Down_King",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T23:55:26.594192",
+  "duration_seconds": 0,
+  "elo_change_p1": -6,
+  "elo_change_p2": 6
+}

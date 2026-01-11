@@ -1,0 +1,15 @@
+{
+  "match_id": "1767072756_9933",
+  "player1": "Grappler_God",
+  "player2": "Money_Match",
+  "player1_char": "Maxima",
+  "player2_char": "Shingo",
+  "winner": "Money_Match",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T06:32:36.836279",
+  "duration_seconds": 0,
+  "elo_change_p1": -15,
+  "elo_change_p2": 15
+}

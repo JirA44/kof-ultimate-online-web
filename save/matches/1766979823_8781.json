@@ -1,0 +1,28 @@
+{
+  "match_id": "1766979823_8781",
+  "player1": "FGC_Veteran",
+  "player2": "Arcade_Warrior",
+  "player1_char": "Elisabeth",
+  "player2_char": "K'",
+  "winner": "FGC_Veteran",
+  "rounds": [
+    {
+      "winner": "FGC_Veteran",
+      "perfect": false
+    },
+    {
+      "winner": "Arcade_Warrior",
+      "perfect": false
+    },
+    {
+      "winner": "FGC_Veteran",
+      "perfect": false
+    }
+  ],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T04:43:43.270213",
+  "duration_seconds": 0,
+  "elo_change_p1": 17,
+  "elo_change_p2": -17
+}

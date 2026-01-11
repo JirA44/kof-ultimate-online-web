@@ -1,0 +1,15 @@
+{
+  "match_id": "1766994141_2135",
+  "player1": "Arcade_Warrior",
+  "player2": "KOF_Legend",
+  "player1_char": "Vice",
+  "player2_char": "Mature",
+  "winner": "Arcade_Warrior",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T08:42:21.929831",
+  "duration_seconds": 0,
+  "elo_change_p1": 19,
+  "elo_change_p2": -19
+}

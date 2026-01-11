@@ -1,0 +1,15 @@
+{
+  "match_id": "1767052293_9262",
+  "player1": "Frame_Perfect",
+  "player2": "Grappler_God",
+  "player1_char": "Athena",
+  "player2_char": "Angel",
+  "winner": "Grappler_God",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T00:51:33.467691",
+  "duration_seconds": 0,
+  "elo_change_p1": -13,
+  "elo_change_p2": 13
+}

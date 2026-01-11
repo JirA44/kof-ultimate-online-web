@@ -1,0 +1,24 @@
+{
+  "match_id": "1766979823_4422",
+  "player1": "Pro_Player_One",
+  "player2": "Training_Mode",
+  "player1_char": "Vanessa",
+  "player2_char": "Mature",
+  "winner": "Pro_Player_One",
+  "rounds": [
+    {
+      "winner": "Pro_Player_One",
+      "perfect": false
+    },
+    {
+      "winner": "Pro_Player_One",
+      "perfect": false
+    }
+  ],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T04:43:43.373954",
+  "duration_seconds": 0,
+  "elo_change_p1": 17,
+  "elo_change_p2": -17
+}

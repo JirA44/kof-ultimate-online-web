@@ -1,0 +1,15 @@
+{
+  "match_id": "1767081016_3179",
+  "player1": "Online_Warrior",
+  "player2": "Combo_Breaker",
+  "player1_char": "Yamazaki",
+  "player2_char": "Leona",
+  "winner": "Combo_Breaker",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T08:50:16.603381",
+  "duration_seconds": 0,
+  "elo_change_p1": -3,
+  "elo_change_p2": 3
+}

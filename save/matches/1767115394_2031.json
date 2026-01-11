@@ -1,0 +1,15 @@
+{
+  "match_id": "1767115394_2031",
+  "player1": "KOF_Legend",
+  "player2": "EVO_Ready",
+  "player1_char": "Vice",
+  "player2_char": "Yashiro",
+  "winner": "KOF_Legend",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T18:23:14.557686",
+  "duration_seconds": 0,
+  "elo_change_p1": 26,
+  "elo_change_p2": -26
+}

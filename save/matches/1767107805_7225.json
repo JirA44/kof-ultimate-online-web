@@ -1,0 +1,15 @@
+{
+  "match_id": "1767107805_7225",
+  "player1": "Pro_Player_One",
+  "player2": "Combo_Breaker",
+  "player1_char": "Blue Mary",
+  "player2_char": "Orochi",
+  "winner": "Combo_Breaker",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T16:16:45.628742",
+  "duration_seconds": 0,
+  "elo_change_p1": -10,
+  "elo_change_p2": 10
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767050635_5668",
+  "player1": "Frame_Perfect",
+  "player2": "Button_Masher_X",
+  "player1_char": "Robert",
+  "player2_char": "Ash",
+  "winner": "Frame_Perfect",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-30T00:23:55.606750",
+  "duration_seconds": 0,
+  "elo_change_p1": 25,
+  "elo_change_p2": -25
+}

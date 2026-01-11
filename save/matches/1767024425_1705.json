@@ -1,0 +1,15 @@
+{
+  "match_id": "1767024425_1705",
+  "player1": "FGC_Veteran",
+  "player2": "Frame_Perfect",
+  "player1_char": "Ash",
+  "player2_char": "Shermie",
+  "winner": "Frame_Perfect",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T17:07:05.288940",
+  "duration_seconds": 0,
+  "elo_change_p1": -11,
+  "elo_change_p2": 11
+}

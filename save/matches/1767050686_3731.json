@@ -1,0 +1,15 @@
+{
+  "match_id": "1767050686_3731",
+  "player1": "Mix_Up_Master",
+  "player2": "Ranked_Slayer",
+  "player1_char": "Chris",
+  "player2_char": "Iori",
+  "winner": "Ranked_Slayer",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T00:24:46.013057",
+  "duration_seconds": 0,
+  "elo_change_p1": -9,
+  "elo_change_p2": 9
+}

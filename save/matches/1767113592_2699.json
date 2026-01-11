@@ -1,0 +1,15 @@
+{
+  "match_id": "1767113592_2699",
+  "player1": "Frame_Perfect",
+  "player2": "FGC_Veteran",
+  "player1_char": "Yuri",
+  "player2_char": "Rugal",
+  "winner": "FGC_Veteran",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T17:53:12.136597",
+  "duration_seconds": 0,
+  "elo_change_p1": -13,
+  "elo_change_p2": 13
+}

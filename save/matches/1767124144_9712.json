@@ -1,0 +1,15 @@
+{
+  "match_id": "1767124144_9712",
+  "player1": "DragonFist_99",
+  "player2": "NeoGeo_Master",
+  "player1_char": "King",
+  "player2_char": "Benimaru",
+  "winner": "DragonFist_99",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T20:49:04.374199",
+  "duration_seconds": 0,
+  "elo_change_p1": 17,
+  "elo_change_p2": -17
+}

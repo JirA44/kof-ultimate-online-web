@@ -1,0 +1,15 @@
+{
+  "match_id": "1766997084_8937",
+  "player1": "Rage_Quitter_0",
+  "player2": "Comeback_Kid",
+  "player1_char": "Ryo",
+  "player2_char": "Clark",
+  "winner": "Comeback_Kid",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T09:31:24.297562",
+  "duration_seconds": 0,
+  "elo_change_p1": -15,
+  "elo_change_p2": 15
+}

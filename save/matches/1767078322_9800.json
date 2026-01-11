@@ -1,0 +1,15 @@
+{
+  "match_id": "1767078322_9800",
+  "player1": "GG_EZ_Player",
+  "player2": "NeoGeo_Master",
+  "player1_char": "Clark",
+  "player2_char": "Vanessa",
+  "winner": "GG_EZ_Player",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T08:05:22.656120",
+  "duration_seconds": 0,
+  "elo_change_p1": 27,
+  "elo_change_p2": -27
+}

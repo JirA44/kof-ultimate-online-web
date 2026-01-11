@@ -1,0 +1,15 @@
+{
+  "match_id": "1767021829_5234",
+  "player1": "Mix_Up_Master",
+  "player2": "Pro_Player_One",
+  "player1_char": "Kensou",
+  "player2_char": "Mature",
+  "winner": "Mix_Up_Master",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T16:23:49.175338",
+  "duration_seconds": 0,
+  "elo_change_p1": 19,
+  "elo_change_p2": -19
+}

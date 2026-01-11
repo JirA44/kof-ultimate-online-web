@@ -1,0 +1,15 @@
+{
+  "match_id": "1767055208_6719",
+  "player1": "Clutch_King",
+  "player2": "Combo_Breaker",
+  "player1_char": "Maxima",
+  "player2_char": "Shermie",
+  "winner": "Combo_Breaker",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T01:40:08.256942",
+  "duration_seconds": 0,
+  "elo_change_p1": -6,
+  "elo_change_p2": 6
+}

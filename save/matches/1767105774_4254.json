@@ -1,0 +1,15 @@
+{
+  "match_id": "1767105774_4254",
+  "player1": "Casual_Fighter",
+  "player2": "FGC_Veteran",
+  "player1_char": "Yamazaki",
+  "player2_char": "Kensou",
+  "winner": "FGC_Veteran",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T15:42:54.232451",
+  "duration_seconds": 0,
+  "elo_change_p1": -15,
+  "elo_change_p2": 15
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767053745_1736",
+  "player1": "Salt_Shaker",
+  "player2": "Ranked_Slayer",
+  "player1_char": "Elisabeth",
+  "player2_char": "Kula",
+  "winner": "Ranked_Slayer",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T01:15:45.940500",
+  "duration_seconds": 0,
+  "elo_change_p1": -8,
+  "elo_change_p2": 8
+}

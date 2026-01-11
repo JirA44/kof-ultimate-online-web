@@ -1,0 +1,24 @@
+{
+  "match_id": "1766979823_2220",
+  "player1": "Grappler_God",
+  "player2": "SNK_Champion",
+  "player1_char": "Vice",
+  "player2_char": "Chizuru",
+  "winner": "Grappler_God",
+  "rounds": [
+    {
+      "winner": "Grappler_God",
+      "perfect": false
+    },
+    {
+      "winner": "Grappler_God",
+      "perfect": false
+    }
+  ],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T04:43:43.424230",
+  "duration_seconds": 0,
+  "elo_change_p1": 17,
+  "elo_change_p2": -17
+}

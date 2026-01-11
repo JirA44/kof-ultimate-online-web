@@ -1,0 +1,15 @@
+{
+  "match_id": "1767003417_9875",
+  "player1": "DragonFist_99",
+  "player2": "Rage_Quitter_0",
+  "player1_char": "Kula",
+  "player2_char": "Rugal",
+  "winner": "DragonFist_99",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T11:16:57.207304",
+  "duration_seconds": 0,
+  "elo_change_p1": 17,
+  "elo_change_p2": -17
+}

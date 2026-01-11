@@ -1,0 +1,15 @@
+{
+  "match_id": "1767071785_2686",
+  "player1": "Arcade_Warrior",
+  "player2": "FatalFury_Pro",
+  "player1_char": "Ryo",
+  "player2_char": "Kensou",
+  "winner": "Arcade_Warrior",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-30T06:16:25.586835",
+  "duration_seconds": 0,
+  "elo_change_p1": 17,
+  "elo_change_p2": -17
+}

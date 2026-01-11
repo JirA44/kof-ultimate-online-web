@@ -1,0 +1,15 @@
+{
+  "match_id": "1767109705_9253",
+  "player1": "KOF_Legend",
+  "player2": "Money_Match",
+  "player1_char": "Chris",
+  "player2_char": "Mai",
+  "winner": "KOF_Legend",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T16:48:25.549978",
+  "duration_seconds": 0,
+  "elo_change_p1": 30,
+  "elo_change_p2": -30
+}

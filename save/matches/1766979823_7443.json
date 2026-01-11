@@ -1,0 +1,24 @@
+{
+  "match_id": "1766979823_7443",
+  "player1": "Money_Match",
+  "player2": "Rush_Down_King",
+  "player1_char": "Elisabeth",
+  "player2_char": "Mai",
+  "winner": "Money_Match",
+  "rounds": [
+    {
+      "winner": "Money_Match",
+      "perfect": false
+    },
+    {
+      "winner": "Money_Match",
+      "perfect": false
+    }
+  ],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T04:43:43.301194",
+  "duration_seconds": 0,
+  "elo_change_p1": 18,
+  "elo_change_p2": -18
+}

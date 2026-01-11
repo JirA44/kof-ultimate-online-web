@@ -1,0 +1,15 @@
+{
+  "match_id": "1767052686_2395",
+  "player1": "Online_Warrior",
+  "player2": "Rush_Down_King",
+  "player1_char": "Yashiro",
+  "player2_char": "Kula",
+  "winner": "Online_Warrior",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-30T00:58:06.718451",
+  "duration_seconds": 0,
+  "elo_change_p1": 30,
+  "elo_change_p2": -30
+}

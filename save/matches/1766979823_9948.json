@@ -1,0 +1,24 @@
+{
+  "match_id": "1766979823_9948",
+  "player1": "Arcade_Warrior",
+  "player2": "Clutch_King",
+  "player1_char": "Mai",
+  "player2_char": "Terry",
+  "winner": "Clutch_King",
+  "rounds": [
+    {
+      "winner": "Clutch_King",
+      "perfect": false
+    },
+    {
+      "winner": "Clutch_King",
+      "perfect": false
+    }
+  ],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T04:43:43.492268",
+  "duration_seconds": 0,
+  "elo_change_p1": -15,
+  "elo_change_p2": 15
+}

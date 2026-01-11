@@ -1,0 +1,15 @@
+{
+  "match_id": "1767019868_5565",
+  "player1": "Casual_Fighter",
+  "player2": "ShadowKing_X",
+  "player1_char": "Ramon",
+  "player2_char": "Clark",
+  "winner": "ShadowKing_X",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T15:51:08.954558",
+  "duration_seconds": 0,
+  "elo_change_p1": -12,
+  "elo_change_p2": 12
+}

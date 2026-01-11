@@ -1,0 +1,15 @@
+{
+  "match_id": "1767088270_4640",
+  "player1": "Pro_Player_One",
+  "player2": "Stream_Monster",
+  "player1_char": "Orochi",
+  "player2_char": "K'",
+  "winner": "Stream_Monster",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T10:51:10.699698",
+  "duration_seconds": 0,
+  "elo_change_p1": -12,
+  "elo_change_p2": 12
+}

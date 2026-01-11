@@ -1,0 +1,15 @@
+{
+  "match_id": "1767019929_5976",
+  "player1": "Ranked_Slayer",
+  "player2": "Stream_Monster",
+  "player1_char": "Angel",
+  "player2_char": "Leona",
+  "winner": "Ranked_Slayer",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T15:52:09.520347",
+  "duration_seconds": 0,
+  "elo_change_p1": 19,
+  "elo_change_p2": -19
+}

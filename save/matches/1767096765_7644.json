@@ -1,0 +1,15 @@
+{
+  "match_id": "1767096765_7644",
+  "player1": "Grappler_God",
+  "player2": "NeoGeo_Master",
+  "player1_char": "Shermie",
+  "player2_char": "Yamazaki",
+  "winner": "NeoGeo_Master",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T13:12:45.398559",
+  "duration_seconds": 0,
+  "elo_change_p1": -6,
+  "elo_change_p2": 6
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1766987637_3233",
+  "player1": "Rage_Quitter_0",
+  "player2": "Frame_Perfect",
+  "player1_char": "Shingo",
+  "player2_char": "Vanessa",
+  "winner": "Frame_Perfect",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T06:53:57.293749",
+  "duration_seconds": 0,
+  "elo_change_p1": -12,
+  "elo_change_p2": 12
+}

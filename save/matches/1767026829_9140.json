@@ -1,0 +1,15 @@
+{
+  "match_id": "1767026829_9140",
+  "player1": "Casual_Fighter",
+  "player2": "NeoGeo_Master",
+  "player1_char": "Angel",
+  "player2_char": "Benimaru",
+  "winner": "Casual_Fighter",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T17:47:09.007946",
+  "duration_seconds": 0,
+  "elo_change_p1": 19,
+  "elo_change_p2": -19
+}

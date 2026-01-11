@@ -1,0 +1,15 @@
+{
+  "match_id": "1767060679_9405",
+  "player1": "Training_Mode",
+  "player2": "EVO_Ready",
+  "player1_char": "Yuri",
+  "player2_char": "Blue Mary",
+  "winner": "Training_Mode",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-30T03:11:19.635371",
+  "duration_seconds": 0,
+  "elo_change_p1": 23,
+  "elo_change_p2": -23
+}

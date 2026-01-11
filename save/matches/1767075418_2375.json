@@ -1,0 +1,15 @@
+{
+  "match_id": "1767075418_2375",
+  "player1": "Online_Warrior",
+  "player2": "GG_EZ_Player",
+  "player1_char": "Geese",
+  "player2_char": "Billy",
+  "winner": "Online_Warrior",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-30T07:16:58.100954",
+  "duration_seconds": 0,
+  "elo_change_p1": 26,
+  "elo_change_p2": -26
+}

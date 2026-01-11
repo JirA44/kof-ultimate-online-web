@@ -1,0 +1,15 @@
+{
+  "match_id": "1767106322_2383",
+  "player1": "Frame_Perfect",
+  "player2": "SNK_Champion",
+  "player1_char": "K'",
+  "player2_char": "Mature",
+  "winner": "SNK_Champion",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T15:52:02.853533",
+  "duration_seconds": 0,
+  "elo_change_p1": -14,
+  "elo_change_p2": 14
+}

@@ -51,21 +51,37 @@ class Player:
     current_lobby: Optional[str] = None
     friends: Set[str] = None
     last_ping: datetime = None
+    is_real: bool = True  # True = real player, False = bot/simulated
 
     def __post_init__(self):
         if self.friends is None:
             self.friends = set()
         if self.last_ping is None:
             self.last_ping = datetime.now()
+        # Auto-detect bots by player_id prefix
+        if self.player_id.startswith(('bot_', 'sim_', 'ai_')):
+            self.is_real = False
 
     def to_dict(self):
         """Convertit en dict pour JSON"""
+        # Map internal status to UI-friendly status
+        ui_status = 'ready'
+        if self.status in ('in_match', 'in_game', 'fighting'):
+            ui_status = 'fighting'
+        elif self.status in ('in_queue', 'searching'):
+            ui_status = 'ready'
+        elif self.status in ('away', 'idle', 'afk'):
+            ui_status = 'away'
+
         return {
             "player_id": self.player_id,
+            "playerId": self.player_id,
             "username": self.username,
             "mmr": self.mmr,
+            "elo": self.mmr,
             "rank": self.rank,
-            "status": self.status,
+            "status": ui_status,
+            "isReal": self.is_real,
             "current_lobby": self.current_lobby
         }
 
@@ -124,6 +140,10 @@ class MatchmakingServer:
 
         # Matchs en cours
         self.active_matches: Dict[str, Dict] = {}
+
+        # Challenges/Demandes de duel (challenger_id -> {target_id, timestamp, expires})
+        self.pending_challenges: Dict[str, Dict] = {}
+        self.CHALLENGE_TIMEOUT = 15  # 15 secondes pour accepter
 
         # Chat
         self.chat_history: List[Dict] = []
@@ -276,6 +296,18 @@ class MatchmakingServer:
 
                 elif action == "get_leaderboard":
                     await self.handle_get_leaderboard(websocket, data)
+
+                elif action == "get_players":
+                    await self.handle_get_players(websocket)
+
+                elif action == "send_challenge":
+                    await self.handle_send_challenge(player_id, data)
+
+                elif action == "accept_challenge":
+                    await self.handle_accept_challenge(player_id, data)
+
+                elif action == "decline_challenge":
+                    await self.handle_decline_challenge(player_id, data)
 
                 elif action == "ping":
                     if player_id and player_id in self.players:
@@ -615,6 +647,245 @@ class MatchmakingServer:
 
         except sqlite3.IntegrityError:
             pass  # Déjà ami
+
+    async def handle_send_challenge(self, player_id, data):
+        """Envoie une demande de duel à un autre joueur"""
+        if not player_id or player_id not in self.players:
+            return
+
+        challenger = self.players[player_id]
+        target_id = data.get("target_id")
+        target_username = data.get("target_username")
+
+        # Trouver la cible par ID ou username
+        target = None
+        if target_id and target_id in self.players:
+            target = self.players[target_id]
+        elif target_username:
+            target = next((p for p in self.players.values() if p.username == target_username), None)
+
+        if not target:
+            await challenger.websocket.send(json.dumps({
+                "type": "challenge_error",
+                "message": "Joueur non trouvé ou hors ligne"
+            }))
+            return
+
+        # Vérifier que la cible est disponible (online, pas en match, pas en queue)
+        if target.status not in ["online", "in_lobby"]:
+            await challenger.websocket.send(json.dumps({
+                "type": "challenge_error",
+                "message": f"{target.username} n'est pas disponible ({target.status})"
+            }))
+            return
+
+        # Vérifier qu'il n'y a pas déjà un défi en cours
+        if player_id in self.pending_challenges:
+            await challenger.websocket.send(json.dumps({
+                "type": "challenge_error",
+                "message": "Vous avez déjà un défi en attente"
+            }))
+            return
+
+        # Créer le défi
+        challenge_id = secrets.token_hex(8)
+        expires_at = datetime.now() + timedelta(seconds=self.CHALLENGE_TIMEOUT)
+
+        self.pending_challenges[challenge_id] = {
+            "challenge_id": challenge_id,
+            "challenger_id": player_id,
+            "challenger_username": challenger.username,
+            "target_id": target.player_id,
+            "target_username": target.username,
+            "timestamp": datetime.now(),
+            "expires_at": expires_at
+        }
+
+        # Notifier le challenger
+        await challenger.websocket.send(json.dumps({
+            "type": "challenge_sent",
+            "challenge_id": challenge_id,
+            "target": target.username,
+            "timeout": self.CHALLENGE_TIMEOUT
+        }))
+
+        # Notifier la cible
+        await target.websocket.send(json.dumps({
+            "type": "challenge_received",
+            "challenge_id": challenge_id,
+            "from": challenger.username,
+            "from_id": player_id,
+            "mmr": challenger.mmr,
+            "rank": challenger.rank,
+            "timeout": self.CHALLENGE_TIMEOUT
+        }))
+
+        logger.info(f"Challenge: {challenger.username} -> {target.username} (15s)")
+
+        # Programmer l'expiration
+        asyncio.create_task(self.expire_challenge(challenge_id))
+
+    async def expire_challenge(self, challenge_id):
+        """Expire un défi après le timeout"""
+        await asyncio.sleep(self.CHALLENGE_TIMEOUT)
+
+        if challenge_id not in self.pending_challenges:
+            return  # Déjà accepté ou refusé
+
+        challenge = self.pending_challenges.pop(challenge_id)
+
+        # Notifier les deux joueurs
+        if challenge["challenger_id"] in self.players:
+            challenger = self.players[challenge["challenger_id"]]
+            try:
+                await challenger.websocket.send(json.dumps({
+                    "type": "challenge_expired",
+                    "challenge_id": challenge_id,
+                    "target": challenge["target_username"]
+                }))
+            except:
+                pass
+
+        if challenge["target_id"] in self.players:
+            target = self.players[challenge["target_id"]]
+            try:
+                await target.websocket.send(json.dumps({
+                    "type": "challenge_expired",
+                    "challenge_id": challenge_id,
+                    "from": challenge["challenger_username"]
+                }))
+            except:
+                pass
+
+        logger.info(f"Challenge expired: {challenge['challenger_username']} -> {challenge['target_username']}")
+
+    async def handle_accept_challenge(self, player_id, data):
+        """Accepte une demande de duel"""
+        if not player_id or player_id not in self.players:
+            return
+
+        challenge_id = data.get("challenge_id")
+
+        if challenge_id not in self.pending_challenges:
+            await self.players[player_id].websocket.send(json.dumps({
+                "type": "challenge_error",
+                "message": "Défi expiré ou annulé"
+            }))
+            return
+
+        challenge = self.pending_challenges[challenge_id]
+
+        # Vérifier que c'est bien la cible qui accepte
+        if challenge["target_id"] != player_id:
+            return
+
+        # Supprimer le défi
+        del self.pending_challenges[challenge_id]
+
+        challenger_id = challenge["challenger_id"]
+
+        if challenger_id not in self.players:
+            await self.players[player_id].websocket.send(json.dumps({
+                "type": "challenge_error",
+                "message": "Le challenger s'est déconnecté"
+            }))
+            return
+
+        challenger = self.players[challenger_id]
+        target = self.players[player_id]
+
+        # Créer le match
+        match_id = secrets.token_hex(16)
+        self.active_matches[match_id] = {
+            "match_id": match_id,
+            "player1": challenger,
+            "player2": target,
+            "mode": "duel",
+            "started_at": datetime.now()
+        }
+
+        # Notifier les deux joueurs
+        match_data_challenger = {
+            "type": "challenge_accepted",
+            "challenge_id": challenge_id,
+            "match_id": match_id,
+            "opponent": target.to_dict(),
+            "mode": "duel"
+        }
+
+        match_data_target = {
+            "type": "challenge_accepted",
+            "challenge_id": challenge_id,
+            "match_id": match_id,
+            "opponent": challenger.to_dict(),
+            "mode": "duel"
+        }
+
+        await challenger.websocket.send(json.dumps(match_data_challenger))
+        await target.websocket.send(json.dumps(match_data_target))
+
+        # Mettre à jour les statuts
+        challenger.status = "in_match"
+        target.status = "in_match"
+
+        logger.info(f"Duel accepted: {challenger.username} vs {target.username}")
+
+    async def handle_decline_challenge(self, player_id, data):
+        """Refuse une demande de duel"""
+        if not player_id or player_id not in self.players:
+            return
+
+        challenge_id = data.get("challenge_id")
+
+        if challenge_id not in self.pending_challenges:
+            return  # Déjà expiré ou traité
+
+        challenge = self.pending_challenges[challenge_id]
+
+        # Vérifier que c'est bien la cible qui refuse
+        if challenge["target_id"] != player_id:
+            return
+
+        # Supprimer le défi
+        del self.pending_challenges[challenge_id]
+
+        # Notifier le challenger
+        if challenge["challenger_id"] in self.players:
+            challenger = self.players[challenge["challenger_id"]]
+            try:
+                await challenger.websocket.send(json.dumps({
+                    "type": "challenge_declined",
+                    "challenge_id": challenge_id,
+                    "by": self.players[player_id].username
+                }))
+            except:
+                pass
+
+        # Notifier la cible (confirmation)
+        await self.players[player_id].websocket.send(json.dumps({
+            "type": "challenge_declined_confirm",
+            "challenge_id": challenge_id
+        }))
+
+        logger.info(f"Challenge declined: {challenge['target_username']} refused {challenge['challenger_username']}")
+
+    async def handle_get_players(self, websocket):
+        """Renvoie la liste des joueurs en ligne"""
+        players = []
+        for player in self.players.values():
+            players.append({
+                "player_id": player.player_id,
+                "username": player.username,
+                "mmr": player.mmr,
+                "rank": player.rank,
+                "status": player.status
+            })
+
+        await websocket.send(json.dumps({
+            "type": "player_list",
+            "players": players,
+            "count": len(players)
+        }))
 
     async def handle_get_stats(self, websocket, data):
         """Renvoie les stats d'un joueur"""

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767003797_8222",
+  "player1": "First_To_10",
+  "player2": "Rage_Quitter_0",
+  "player1_char": "Billy",
+  "player2_char": "King",
+  "winner": "First_To_10",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T11:23:17.529473",
+  "duration_seconds": 0,
+  "elo_change_p1": 22,
+  "elo_change_p2": -22
+}

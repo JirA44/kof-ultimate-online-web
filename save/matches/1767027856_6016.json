@@ -1,0 +1,15 @@
+{
+  "match_id": "1767027856_6016",
+  "player1": "DragonFist_99",
+  "player2": "Tournament_Ace",
+  "player1_char": "Mature",
+  "player2_char": "Elisabeth",
+  "winner": "DragonFist_99",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T18:04:16.109224",
+  "duration_seconds": 0,
+  "elo_change_p1": 17,
+  "elo_change_p2": -17
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767036994_4645",
+  "player1": "KOF_Legend",
+  "player2": "Perfect_KO",
+  "player1_char": "Ramon",
+  "player2_char": "Athena",
+  "winner": "KOF_Legend",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T20:36:34.416427",
+  "duration_seconds": 0,
+  "elo_change_p1": 25,
+  "elo_change_p2": -25
+}

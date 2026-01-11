@@ -1,0 +1,15 @@
+{
+  "match_id": "1767092122_9365",
+  "player1": "Money_Match",
+  "player2": "First_To_10",
+  "player1_char": "Ramon",
+  "player2_char": "Duo Lon",
+  "winner": "First_To_10",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T11:55:22.528821",
+  "duration_seconds": 0,
+  "elo_change_p1": -15,
+  "elo_change_p2": 15
+}

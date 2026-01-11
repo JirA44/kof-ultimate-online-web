@@ -1,0 +1,15 @@
+{
+  "match_id": "1767085865_8741",
+  "player1": "Training_Mode",
+  "player2": "Clutch_King",
+  "player1_char": "K'",
+  "player2_char": "Kensou",
+  "winner": "Clutch_King",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T10:11:05.938538",
+  "duration_seconds": 0,
+  "elo_change_p1": -7,
+  "elo_change_p2": 7
+}

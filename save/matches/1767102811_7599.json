@@ -1,0 +1,15 @@
+{
+  "match_id": "1767102811_7599",
+  "player1": "GG_EZ_Player",
+  "player2": "Zoner_Elite",
+  "player1_char": "Chizuru",
+  "player2_char": "Terry",
+  "winner": "GG_EZ_Player",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-30T14:53:31.944100",
+  "duration_seconds": 0,
+  "elo_change_p1": 19,
+  "elo_change_p2": -19
+}

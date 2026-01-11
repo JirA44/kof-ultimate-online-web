@@ -1,0 +1,15 @@
+{
+  "match_id": "1767116577_6701",
+  "player1": "FatalFury_Pro",
+  "player2": "Combo_Breaker",
+  "player1_char": "Kula",
+  "player2_char": "Ralf",
+  "winner": "Combo_Breaker",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T18:42:57.660727",
+  "duration_seconds": 0,
+  "elo_change_p1": -8,
+  "elo_change_p2": 8
+}

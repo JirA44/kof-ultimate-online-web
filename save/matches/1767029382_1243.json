@@ -1,0 +1,15 @@
+{
+  "match_id": "1767029382_1243",
+  "player1": "Online_Warrior",
+  "player2": "DragonFist_99",
+  "player1_char": "Kensou",
+  "player2_char": "Ramon",
+  "winner": "DragonFist_99",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T18:29:42.991860",
+  "duration_seconds": 0,
+  "elo_change_p1": -6,
+  "elo_change_p2": 6
+}

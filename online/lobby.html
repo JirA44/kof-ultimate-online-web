@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOF Ultimate Online - Battle Lobby</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #fff;
+            min-height: 100vh;
+        }
+
+        .header {
+            background: linear-gradient(90deg, #e94560, #ff6b6b);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(233, 69, 96, 0.4);
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            letter-spacing: 3px;
+        }
+
+        .header .subtitle {
+            font-size: 1.1em;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 300px 1fr 350px;
+            gap: 20px;
+        }
+
+        .panel {
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .panel h2 {
+            color: #e94560;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e94560;
+            font-size: 1.3em;
+        }
+
+        /* Online Players Panel */
+        .player-list {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        .player-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            margin: 5px 0;
+            background: rgba(255,255,255,0.05);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .player-item:hover {
+            background: rgba(233, 69, 96, 0.2);
+            transform: translateX(5px);
+        }
+
+        .player-status {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .status-online { background: #4ade80; box-shadow: 0 0 10px #4ade80; }
+        .status-ingame { background: #fbbf24; box-shadow: 0 0 10px #fbbf24; }
+        .status-away { background: #94a3b8; }
+
+        .player-info {
+            flex: 1;
+        }
+
+        .player-name {
+            font-weight: bold;
+        }
+
+        .player-elo {
+            font-size: 0.85em;
+            color: #94a3b8;
+        }
+
+        .player-title {
+            font-size: 0.75em;
+            padding: 2px 8px;
+            border-radius: 10px;
+            background: linear-gradient(90deg, #e94560, #ff6b6b);
+        }
+
+        /* Main Lobby Area */
+        .lobby-main {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .quick-actions {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .action-btn {
+            padding: 20px;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-ranked {
+            background: linear-gradient(135deg, #e94560, #ff6b6b);
+            color: white;
+        }
+
+        .btn-casual {
+            background: linear-gradient(135deg, #4ade80, #22c55e);
+            color: white;
+        }
+
+        .btn-training {
+            background: linear-gradient(135deg, #60a5fa, #3b82f6);
+            color: white;
+        }
+
+        .action-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        /* Match List */
+        .match-list {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .match-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            margin: 8px 0;
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+            border-left: 4px solid #e94560;
+        }
+
+        .match-players {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .vs-text {
+            color: #e94560;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        .match-info {
+            text-align: right;
+        }
+
+        .match-mode {
+            font-size: 0.8em;
+            color: #94a3b8;
+        }
+
+        .watch-btn {
+            padding: 8px 15px;
+            background: #e94560;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 0.85em;
+        }
+
+        /* Leaderboard Panel */
+        .leaderboard {
+            max-height: 600px;
+            overflow-y: auto;
+        }
+
+        .rank-item {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            margin: 5px 0;
+            background: rgba(255,255,255,0.03);
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        .rank-item:hover {
+            background: rgba(255,255,255,0.08);
+        }
+
+        .rank-item.top-1 { border-left: 3px solid #ffd700; }
+        .rank-item.top-2 { border-left: 3px solid #c0c0c0; }
+        .rank-item.top-3 { border-left: 3px solid #cd7f32; }
+
+        .rank-pos {
+            width: 35px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .rank-pos.gold { color: #ffd700; }
+        .rank-pos.silver { color: #c0c0c0; }
+        .rank-pos.bronze { color: #cd7f32; }
+
+        .rank-info {
+            flex: 1;
+        }
+
+        .rank-name {
+            font-weight: bold;
+        }
+
+        .rank-stats {
+            font-size: 0.8em;
+            color: #94a3b8;
+        }
+
+        .rank-elo {
+            font-weight: bold;
+            color: #e94560;
+            font-size: 1.1em;
+        }
+
+        /* Chat Panel */
+        .chat-container {
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 10px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .chat-msg {
+            margin: 5px 0;
+            font-size: 0.9em;
+        }
+
+        .chat-msg .username {
+            color: #e94560;
+            font-weight: bold;
+        }
+
+        .chat-input-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .chat-input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.1);
+            color: white;
+        }
+
+        .chat-send {
+            padding: 10px 20px;
+            background: #e94560;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Profile Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: #1a1a2e;
+            padding: 30px;
+            border-radius: 20px;
+            max-width: 500px;
+            width: 90%;
+            border: 2px solid #e94560;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+
+        .profile-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .stat-box {
+            text-align: center;
+            padding: 15px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+        }
+
+        .stat-value {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #e94560;
+        }
+
+        .stat-label {
+            font-size: 0.8em;
+            color: #94a3b8;
+        }
+
+        .challenge-btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(90deg, #e94560, #ff6b6b);
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        /* Footer Stats */
+        .footer-stats {
+            text-align: center;
+            padding: 15px;
+            background: rgba(0,0,0,0.3);
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .footer-stats span {
+            margin: 0 20px;
+            color: #94a3b8;
+        }
+
+        .footer-stats strong {
+            color: #e94560;
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(255,255,255,0.05);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #e94560;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 1200px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>KOF ULTIMATE ONLINE</h1>
+        <div class="subtitle">Battle Lobby - 32 Players Online</div>
+    </div>
+
+    <div class="container">
+        <!-- Left Panel: Online Players -->
+        <div class="panel">
+            <h2>ONLINE PLAYERS (32)</h2>
+            <div class="player-list" id="playerList">
+                <!-- Players will be loaded here -->
+            </div>
+        </div>
+
+        <!-- Center: Main Lobby -->
+        <div class="lobby-main">
+            <div class="panel">
+                <h2>QUICK MATCH</h2>
+                <div class="quick-actions">
+                    <button class="action-btn btn-ranked" onclick="findMatch('ranked')">
+                        RANKED<br><small>Find Opponent</small>
+                    </button>
+                    <button class="action-btn btn-casual" onclick="findMatch('casual')">
+                        CASUAL<br><small>Quick Play</small>
+                    </button>
+                    <button class="action-btn btn-training" onclick="findMatch('training')">
+                        TRAINING<br><small>Practice Mode</small>
+                    </button>
+                </div>
+            </div>
+
+            <div class="panel">
+                <h2>LIVE MATCHES</h2>
+                <div class="match-list" id="matchList">
+                    <!-- Matches will be loaded here -->
+                </div>
+            </div>
+
+            <div class="panel">
+                <h2>GLOBAL CHAT</h2>
+                <div class="chat-container">
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="chat-msg"><span class="username">DragonFist_99:</span> Anyone up for a ft10?</div>
+                        <div class="chat-msg"><span class="username">SNK_Champion:</span> GGs everyone!</div>
+                        <div class="chat-msg"><span class="username">Money_Match:</span> Looking for Kyo mains</div>
+                        <div class="chat-msg"><span class="username">System:</span> Hype_Beast_99 is on a 7 win streak!</div>
+                    </div>
+                    <div class="chat-input-container">
+                        <input type="text" class="chat-input" placeholder="Type a message..." id="chatInput">
+                        <button class="chat-send" onclick="sendChat()">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Panel: Leaderboard -->
+        <div class="panel">
+            <h2>TOP 20 LEADERBOARD</h2>
+            <div class="leaderboard" id="leaderboard">
+                <!-- Leaderboard will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-stats">
+        <span>Total Matches Today: <strong id="matchesToday">247</strong></span>
+        <span>Active Games: <strong id="activeGames">12</strong></span>
+        <span>Peak Players: <strong id="peakPlayers">89</strong></span>
+    </div>
+
+    <!-- Player Profile Modal -->
+    <div class="modal" id="profileModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalPlayerName">Player Profile</h2>
+                <button class="close-btn" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="profile-stats">
+                <div class="stat-box">
+                    <div class="stat-value" id="modalElo">1500</div>
+                    <div class="stat-label">ELO Rating</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value" id="modalWins">0</div>
+                    <div class="stat-label">Wins</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value" id="modalWinrate">0%</div>
+                    <div class="stat-label">Winrate</div>
+                </div>
+            </div>
+            <div id="modalMainChars" style="text-align: center; margin: 15px 0; color: #94a3b8;">
+                Main Characters: Kyo, Iori, Terry
+            </div>
+            <button class="challenge-btn" onclick="challengePlayer()">CHALLENGE TO MATCH</button>
+        </div>
+    </div>
+
+    <script>
+        // Load leaderboard data
+        const leaderboardData = [
+            { rank: 1, name: "Money_Match", elo: 1298, wins: 8, losses: 1, title: "Bronze" },
+            { rank: 2, name: "Hype_Beast_99", elo: 1294, wins: 7, losses: 0, title: "Bronze" },
+            { rank: 3, name: "Rush_Down_King", elo: 1275, wins: 9, losses: 3, title: "Bronze" },
+            { rank: 4, name: "Comeback_Kid", elo: 1254, wins: 6, losses: 2, title: "Bronze" },
+            { rank: 5, name: "Stream_Monster", elo: 1243, wins: 4, losses: 1, title: "Bronze" },
+            { rank: 6, name: "Combo_Breaker", elo: 1235, wins: 6, losses: 3, title: "Bronze" },
+            { rank: 7, name: "KOF_Legend", elo: 1231, wins: 2, losses: 0, title: "Bronze" },
+            { rank: 8, name: "Pro_Player_One", elo: 1216, wins: 2, losses: 1, title: "Bronze" },
+            { rank: 9, name: "Tournament_Ace", elo: 1216, wins: 1, losses: 0, title: "Bronze" },
+            { rank: 10, name: "SNK_Champion", elo: 1213, wins: 5, losses: 5, title: "Bronze" },
+            { rank: 11, name: "Clutch_King", elo: 1213, wins: 3, losses: 2, title: "Bronze" },
+            { rank: 12, name: "Frame_Perfect", elo: 1212, wins: 2, losses: 1, title: "Bronze" },
+            { rank: 13, name: "FatalFury_Pro", elo: 1211, wins: 4, losses: 3, title: "Bronze" },
+            { rank: 14, name: "ShadowKing_X", elo: 1210, wins: 3, losses: 3, title: "Bronze" },
+            { rank: 15, name: "FGC_Veteran", elo: 1206, wins: 3, losses: 3, title: "Bronze" },
+            { rank: 16, name: "Training_Mode", elo: 1201, wins: 3, losses: 3, title: "Bronze" },
+            { rank: 17, name: "First_To_10", elo: 1198, wins: 4, losses: 4, title: "Rookie" },
+            { rank: 18, name: "Perfect_KO", elo: 1187, wins: 2, losses: 3, title: "Rookie" },
+            { rank: 19, name: "GG_EZ_Player", elo: 1187, wins: 3, losses: 4, title: "Rookie" },
+            { rank: 20, name: "DragonFist_99", elo: 1184, wins: 2, losses: 3, title: "Rookie" }
+        ];
+
+        // Render leaderboard
+        function renderLeaderboard() {
+            const container = document.getElementById('leaderboard');
+            container.innerHTML = leaderboardData.map(p => {
+                let rankClass = '';
+                let posClass = '';
+                if (p.rank === 1) { rankClass = 'top-1'; posClass = 'gold'; }
+                else if (p.rank === 2) { rankClass = 'top-2'; posClass = 'silver'; }
+                else if (p.rank === 3) { rankClass = 'top-3'; posClass = 'bronze'; }
+
+                const winrate = ((p.wins / (p.wins + p.losses)) * 100).toFixed(1);
+                return `
+                    <div class="rank-item ${rankClass}" onclick="showProfile('${p.name}', ${p.elo}, ${p.wins}, ${winrate})">
+                        <div class="rank-pos ${posClass}">#${p.rank}</div>
+                        <div class="rank-info">
+                            <div class="rank-name">${p.name}</div>
+                            <div class="rank-stats">${p.wins}W/${p.losses}L (${winrate}%)</div>
+                        </div>
+                        <div class="rank-elo">${p.elo}</div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Render online players
+        function renderPlayers() {
+            const container = document.getElementById('playerList');
+            const statuses = ['online', 'online', 'online', 'ingame', 'online', 'away'];
+            container.innerHTML = leaderboardData.slice(0, 15).map(p => {
+                const status = statuses[Math.floor(Math.random() * statuses.length)];
+                return `
+                    <div class="player-item" onclick="showProfile('${p.name}', ${p.elo}, ${p.wins}, ${((p.wins / (p.wins + p.losses)) * 100).toFixed(1)})">
+                        <div class="player-status status-${status}"></div>
+                        <div class="player-info">
+                            <div class="player-name">${p.name}</div>
+                            <div class="player-elo">ELO: ${p.elo}</div>
+                        </div>
+                        <span class="player-title">${p.title}</span>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Render live matches
+        function renderMatches() {
+            const matches = [
+                { p1: "DragonFist_99", p2: "SNK_Champion", mode: "Ranked" },
+                { p1: "Money_Match", p2: "Rush_Down_King", mode: "FT10" },
+                { p1: "Hype_Beast_99", p2: "Combo_Breaker", mode: "Casual" },
+                { p1: "FGC_Veteran", p2: "Training_Mode", mode: "Ranked" }
+            ];
+
+            const container = document.getElementById('matchList');
+            container.innerHTML = matches.map(m => `
+                <div class="match-item">
+                    <div class="match-players">
+                        <span>${m.p1}</span>
+                        <span class="vs-text">VS</span>
+                        <span>${m.p2}</span>
+                    </div>
+                    <div class="match-info">
+                        <div class="match-mode">${m.mode}</div>
+                        <button class="watch-btn">WATCH</button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Show profile modal
+        function showProfile(name, elo, wins, winrate) {
+            document.getElementById('modalPlayerName').textContent = name;
+            document.getElementById('modalElo').textContent = elo;
+            document.getElementById('modalWins').textContent = wins;
+            document.getElementById('modalWinrate').textContent = winrate + '%';
+            document.getElementById('profileModal').classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('profileModal').classList.remove('active');
+        }
+
+        function findMatch(type) {
+            alert('Searching for ' + type + ' match...\nConnecting to matchmaking server...');
+        }
+
+        function challengePlayer() {
+            alert('Challenge sent! Waiting for opponent to accept...');
+            closeModal();
+        }
+
+        function sendChat() {
+            const input = document.getElementById('chatInput');
+            if (input.value.trim()) {
+                const messages = document.getElementById('chatMessages');
+                messages.innerHTML += `<div class="chat-msg"><span class="username">You:</span> ${input.value}</div>`;
+                messages.scrollTop = messages.scrollHeight;
+                input.value = '';
+            }
+        }
+
+        // Initialize
+        renderLeaderboard();
+        renderPlayers();
+        renderMatches();
+
+        // Simulate activity
+        setInterval(() => {
+            document.getElementById('matchesToday').textContent = 247 + Math.floor(Math.random() * 10);
+            document.getElementById('activeGames').textContent = 10 + Math.floor(Math.random() * 5);
+        }, 5000);
+    </script>
+</body>
+</html>

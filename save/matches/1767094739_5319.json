@@ -1,0 +1,15 @@
+{
+  "match_id": "1767094739_5319",
+  "player1": "Training_Mode",
+  "player2": "Arcade_Warrior",
+  "player1_char": "Maxima",
+  "player2_char": "Mature",
+  "winner": "Training_Mode",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-30T12:38:59.938815",
+  "duration_seconds": 0,
+  "elo_change_p1": 23,
+  "elo_change_p2": -23
+}

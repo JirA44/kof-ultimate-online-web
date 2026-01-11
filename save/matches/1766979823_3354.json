@@ -1,0 +1,24 @@
+{
+  "match_id": "1766979823_3354",
+  "player1": "Stream_Monster",
+  "player2": "Salt_Shaker",
+  "player1_char": "K'",
+  "player2_char": "Mai",
+  "winner": "Stream_Monster",
+  "rounds": [
+    {
+      "winner": "Stream_Monster",
+      "perfect": false
+    },
+    {
+      "winner": "Stream_Monster",
+      "perfect": false
+    }
+  ],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T04:43:43.327695",
+  "duration_seconds": 0,
+  "elo_change_p1": 15,
+  "elo_change_p2": -15
+}

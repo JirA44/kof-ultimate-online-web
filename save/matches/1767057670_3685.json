@@ -1,0 +1,15 @@
+{
+  "match_id": "1767057670_3685",
+  "player1": "SNK_Champion",
+  "player2": "Hype_Beast_99",
+  "player1_char": "King",
+  "player2_char": "Yashiro",
+  "winner": "Hype_Beast_99",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T02:21:10.704563",
+  "duration_seconds": 0,
+  "elo_change_p1": -8,
+  "elo_change_p2": 8
+}

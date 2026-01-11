@@ -1,0 +1,15 @@
+{
+  "match_id": "1767001400_6386",
+  "player1": "Frame_Perfect",
+  "player2": "Stream_Monster",
+  "player1_char": "Terry",
+  "player2_char": "Terry",
+  "winner": "Stream_Monster",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T10:43:20.454926",
+  "duration_seconds": 0,
+  "elo_change_p1": -10,
+  "elo_change_p2": 10
+}

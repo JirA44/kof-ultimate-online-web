@@ -1,0 +1,15 @@
+{
+  "match_id": "1767045553_3183",
+  "player1": "FGC_Veteran",
+  "player2": "NeoGeo_Master",
+  "player1_char": "Shermie",
+  "player2_char": "Kensou",
+  "winner": "NeoGeo_Master",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T22:59:13.483832",
+  "duration_seconds": 0,
+  "elo_change_p1": -13,
+  "elo_change_p2": 13
+}

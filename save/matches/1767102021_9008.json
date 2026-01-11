@@ -1,0 +1,15 @@
+{
+  "match_id": "1767102021_9008",
+  "player1": "Comeback_Kid",
+  "player2": "Zoner_Elite",
+  "player1_char": "Iori",
+  "player2_char": "Chris",
+  "winner": "Zoner_Elite",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T14:40:21.659043",
+  "duration_seconds": 0,
+  "elo_change_p1": -4,
+  "elo_change_p2": 4
+}

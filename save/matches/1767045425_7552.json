@@ -1,0 +1,15 @@
+{
+  "match_id": "1767045425_7552",
+  "player1": "Clutch_King",
+  "player2": "NeoGeo_Master",
+  "player1_char": "Whip",
+  "player2_char": "Robert",
+  "winner": "NeoGeo_Master",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T22:57:05.407185",
+  "duration_seconds": 0,
+  "elo_change_p1": -11,
+  "elo_change_p2": 11
+}

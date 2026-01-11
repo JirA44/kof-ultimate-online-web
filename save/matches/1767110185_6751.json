@@ -1,0 +1,15 @@
+{
+  "match_id": "1767110185_6751",
+  "player1": "EVO_Ready",
+  "player2": "Grappler_God",
+  "player1_char": "Clark",
+  "player2_char": "Yashiro",
+  "winner": "EVO_Ready",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T16:56:25.852724",
+  "duration_seconds": 0,
+  "elo_change_p1": 25,
+  "elo_change_p2": -25
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767081008_4444",
+  "player1": "SNK_Champion",
+  "player2": "NeoGeo_Master",
+  "player1_char": "King",
+  "player2_char": "Leona",
+  "winner": "NeoGeo_Master",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T08:50:08.530084",
+  "duration_seconds": 0,
+  "elo_change_p1": -5,
+  "elo_change_p2": 5
+}

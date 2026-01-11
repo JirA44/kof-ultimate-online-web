@@ -1,0 +1,15 @@
+{
+  "match_id": "1767091747_8525",
+  "player1": "SNK_Champion",
+  "player2": "Mix_Up_Master",
+  "player1_char": "Billy",
+  "player2_char": "Shen",
+  "winner": "SNK_Champion",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-30T11:49:07.136705",
+  "duration_seconds": 0,
+  "elo_change_p1": 17,
+  "elo_change_p2": -17
+}

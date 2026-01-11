@@ -1,0 +1,28 @@
+{
+  "match_id": "1766979823_6302",
+  "player1": "GG_EZ_Player",
+  "player2": "FGC_Veteran",
+  "player1_char": "Kensou",
+  "player2_char": "Athena",
+  "winner": "FGC_Veteran",
+  "rounds": [
+    {
+      "winner": "FGC_Veteran",
+      "perfect": false
+    },
+    {
+      "winner": "GG_EZ_Player",
+      "perfect": false
+    },
+    {
+      "winner": "FGC_Veteran",
+      "perfect": false
+    }
+  ],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T04:43:43.468780",
+  "duration_seconds": 0,
+  "elo_change_p1": -16,
+  "elo_change_p2": 16
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1766991331_1965",
+  "player1": "Combo_Breaker",
+  "player2": "Stream_Monster",
+  "player1_char": "Yamazaki",
+  "player2_char": "Vanessa",
+  "winner": "Combo_Breaker",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T07:55:31.651554",
+  "duration_seconds": 0,
+  "elo_change_p1": 20,
+  "elo_change_p2": -20
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767075720_5325",
+  "player1": "FatalFury_Pro",
+  "player2": "First_To_10",
+  "player1_char": "Mature",
+  "player2_char": "Yamazaki",
+  "winner": "FatalFury_Pro",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T07:22:00.355193",
+  "duration_seconds": 0,
+  "elo_change_p1": 24,
+  "elo_change_p2": -24
+}

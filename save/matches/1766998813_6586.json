@@ -1,0 +1,15 @@
+{
+  "match_id": "1766998813_6586",
+  "player1": "Online_Warrior",
+  "player2": "Clutch_King",
+  "player1_char": "Yashiro",
+  "player2_char": "Iori",
+  "winner": "Clutch_King",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T10:00:13.005104",
+  "duration_seconds": 0,
+  "elo_change_p1": -9,
+  "elo_change_p2": 9
+}

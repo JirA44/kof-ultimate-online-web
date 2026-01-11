@@ -1,0 +1,24 @@
+{
+  "match_id": "1766979823_7999",
+  "player1": "ShadowKing_X",
+  "player2": "Combo_Breaker",
+  "player1_char": "Kensou",
+  "player2_char": "Whip",
+  "winner": "Combo_Breaker",
+  "rounds": [
+    {
+      "winner": "Combo_Breaker",
+      "perfect": false
+    },
+    {
+      "winner": "Combo_Breaker",
+      "perfect": false
+    }
+  ],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T04:43:43.452682",
+  "duration_seconds": 0,
+  "elo_change_p1": -16,
+  "elo_change_p2": 16
+}

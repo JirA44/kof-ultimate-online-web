@@ -1,0 +1,15 @@
+{
+  "match_id": "1766990559_3532",
+  "player1": "Arcade_Warrior",
+  "player2": "SNK_Champion",
+  "player1_char": "K'",
+  "player2_char": "Angel",
+  "winner": "SNK_Champion",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T07:42:39.077276",
+  "duration_seconds": 0,
+  "elo_change_p1": -15,
+  "elo_change_p2": 15
+}

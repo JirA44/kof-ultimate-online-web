@@ -1,0 +1,30 @@
+{
+  "connected": true,
+  "players_online": 6,
+  "active_matches": 2,
+  "queue_ranked": 3,
+  "queue_casual": 1,
+  "timestamp": "2026-01-01T18:50:40.234976",
+  "recent_activity": [
+    {
+      "timestamp": "18:00",
+      "message": "Hugo_Pro a rejoint le lobby"
+    },
+    {
+      "timestamp": "18:01",
+      "message": "JirA44 cherche un match classe"
+    },
+    {
+      "timestamp": "18:02",
+      "message": "Match: KOF_Master vs FighterX"
+    },
+    {
+      "timestamp": "18:03",
+      "message": "Bot_Easy est pret a jouer"
+    },
+    {
+      "timestamp": "18:04",
+      "message": "TrainingBot disponible"
+    }
+  ]
+}

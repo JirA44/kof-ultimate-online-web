@@ -1,0 +1,15 @@
+{
+  "match_id": "1767074032_2388",
+  "player1": "KOF_Legend",
+  "player2": "Ranked_Slayer",
+  "player1_char": "Rugal",
+  "player2_char": "Shen",
+  "winner": "KOF_Legend",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-30T06:53:52.692378",
+  "duration_seconds": 0,
+  "elo_change_p1": 30,
+  "elo_change_p2": -30
+}

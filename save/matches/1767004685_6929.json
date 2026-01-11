@@ -1,0 +1,15 @@
+{
+  "match_id": "1767004685_6929",
+  "player1": "Casual_Fighter",
+  "player2": "Salt_Shaker",
+  "player1_char": "Whip",
+  "player2_char": "Terry",
+  "winner": "Casual_Fighter",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T11:38:05.790210",
+  "duration_seconds": 0,
+  "elo_change_p1": 19,
+  "elo_change_p2": -19
+}

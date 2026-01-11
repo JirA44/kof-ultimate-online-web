@@ -1,0 +1,15 @@
+{
+  "match_id": "1767088586_5903",
+  "player1": "SNK_Champion",
+  "player2": "First_To_10",
+  "player1_char": "Duo Lon",
+  "player2_char": "Shermie",
+  "winner": "First_To_10",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T10:56:26.082024",
+  "duration_seconds": 0,
+  "elo_change_p1": -13,
+  "elo_change_p2": 13
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767056974_3557",
+  "player1": "Zoner_Elite",
+  "player2": "Combo_Breaker",
+  "player1_char": "Shermie",
+  "player2_char": "Athena",
+  "winner": "Combo_Breaker",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T02:09:34.462033",
+  "duration_seconds": 0,
+  "elo_change_p1": -14,
+  "elo_change_p2": 14
+}

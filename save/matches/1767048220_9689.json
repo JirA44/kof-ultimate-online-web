@@ -1,0 +1,15 @@
+{
+  "match_id": "1767048220_9689",
+  "player1": "FatalFury_Pro",
+  "player2": "Button_Masher_X",
+  "player1_char": "Benimaru",
+  "player2_char": "Benimaru",
+  "winner": "Button_Masher_X",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T23:43:40.697971",
+  "duration_seconds": 0,
+  "elo_change_p1": -8,
+  "elo_change_p2": 8
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767083941_2676",
+  "player1": "Salt_Shaker",
+  "player2": "First_To_10",
+  "player1_char": "Yashiro",
+  "player2_char": "Mature",
+  "winner": "First_To_10",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T09:39:01.245036",
+  "duration_seconds": 0,
+  "elo_change_p1": -10,
+  "elo_change_p2": 10
+}

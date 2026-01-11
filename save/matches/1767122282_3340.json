@@ -1,0 +1,15 @@
+{
+  "match_id": "1767122282_3340",
+  "player1": "Training_Mode",
+  "player2": "Frame_Perfect",
+  "player1_char": "Angel",
+  "player2_char": "Geese",
+  "winner": "Frame_Perfect",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T20:18:02.903398",
+  "duration_seconds": 0,
+  "elo_change_p1": -5,
+  "elo_change_p2": 5
+}

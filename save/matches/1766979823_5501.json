@@ -1,0 +1,28 @@
+{
+  "match_id": "1766979823_5501",
+  "player1": "First_To_10",
+  "player2": "Casual_Fighter",
+  "player1_char": "King",
+  "player2_char": "Mature",
+  "winner": "First_To_10",
+  "rounds": [
+    {
+      "winner": "Casual_Fighter",
+      "perfect": false
+    },
+    {
+      "winner": "First_To_10",
+      "perfect": false
+    },
+    {
+      "winner": "First_To_10",
+      "perfect": false
+    }
+  ],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T04:43:43.404501",
+  "duration_seconds": 0,
+  "elo_change_p1": 16,
+  "elo_change_p2": -16
+}

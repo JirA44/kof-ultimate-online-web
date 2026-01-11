@@ -1,0 +1,15 @@
+{
+  "match_id": "1767111526_4879",
+  "player1": "Stream_Monster",
+  "player2": "Button_Masher_X",
+  "player1_char": "Shermie",
+  "player2_char": "Mai",
+  "winner": "Stream_Monster",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-30T17:18:46.260545",
+  "duration_seconds": 0,
+  "elo_change_p1": 23,
+  "elo_change_p2": -23
+}

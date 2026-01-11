@@ -1,0 +1,28 @@
+{
+  "match_id": "1766979823_5557",
+  "player1": "Perfect_KO",
+  "player2": "Button_Masher_X",
+  "player1_char": "Iori",
+  "player2_char": "Geese",
+  "winner": "Perfect_KO",
+  "rounds": [
+    {
+      "winner": "Button_Masher_X",
+      "perfect": false
+    },
+    {
+      "winner": "Perfect_KO",
+      "perfect": false
+    },
+    {
+      "winner": "Perfect_KO",
+      "perfect": false
+    }
+  ],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T04:43:43.104180",
+  "duration_seconds": 0,
+  "elo_change_p1": 16,
+  "elo_change_p2": -16
+}

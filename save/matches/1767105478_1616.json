@@ -1,0 +1,15 @@
+{
+  "match_id": "1767105478_1616",
+  "player1": "Online_Warrior",
+  "player2": "Frame_Perfect",
+  "player1_char": "Shermie",
+  "player2_char": "Chris",
+  "winner": "Online_Warrior",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-30T15:37:58.255210",
+  "duration_seconds": 0,
+  "elo_change_p1": 21,
+  "elo_change_p2": -21
+}

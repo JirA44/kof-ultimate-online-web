@@ -1,0 +1,15 @@
+{
+  "match_id": "1767093601_4169",
+  "player1": "Training_Mode",
+  "player2": "Perfect_KO",
+  "player1_char": "Shermie",
+  "player2_char": "Ramon",
+  "winner": "Perfect_KO",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T12:20:01.663569",
+  "duration_seconds": 0,
+  "elo_change_p1": -6,
+  "elo_change_p2": 6
+}

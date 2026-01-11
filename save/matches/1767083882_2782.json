@@ -1,0 +1,15 @@
+{
+  "match_id": "1767083882_2782",
+  "player1": "Casual_Fighter",
+  "player2": "SNK_Champion",
+  "player1_char": "Clark",
+  "player2_char": "Ralf",
+  "winner": "Casual_Fighter",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-30T09:38:02.604637",
+  "duration_seconds": 0,
+  "elo_change_p1": 18,
+  "elo_change_p2": -18
+}

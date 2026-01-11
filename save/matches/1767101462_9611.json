@@ -1,0 +1,15 @@
+{
+  "match_id": "1767101462_9611",
+  "player1": "KOF_Legend",
+  "player2": "Rush_Down_King",
+  "player1_char": "Terry",
+  "player2_char": "King",
+  "winner": "Rush_Down_King",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T14:31:02.196127",
+  "duration_seconds": 0,
+  "elo_change_p1": -2,
+  "elo_change_p2": 2
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767040034_5362",
+  "player1": "Training_Mode",
+  "player2": "Button_Masher_X",
+  "player1_char": "Clark",
+  "player2_char": "Clark",
+  "winner": "Button_Masher_X",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T21:27:14.325897",
+  "duration_seconds": 0,
+  "elo_change_p1": -3,
+  "elo_change_p2": 3
+}

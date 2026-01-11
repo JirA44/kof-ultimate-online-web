@@ -11,14 +11,13 @@ spr = system.sff
 snd = system.snd
 logo.storyboard = Loading.def
 intro.storyboard =                    
-select = select_final.def
+select = select_optimized.def
 fight  = fight.def
-font1  = font/f-6x9.def
-font2  = font/f-6x9.def
-font3  = font/f-6x9.def
-font4 = font/f-4x6.def
-font7  = font/f-6x9.def
-font8  = font/f-6x9.def
+font1  = font/FONT MENU.fnt
+font3  = font/f-6x9.fnt
+font4 = data/fonts/Combo.fnt
+font7  = data/fonts/Names.fnt
+font8  = data/fonts/Menu Black .fnt
 ;----------------------------
 [Music]
 title.bgm = data/musica/MENU SCREEN.mp3
@@ -27,11 +26,11 @@ title.bgm.loop = 1
 title.bgm.loopstart = 
 title.bgm.loopend = 
   ;Music to play at char select screen.
-select = select_final.def
-select = select_final.def
-select = select_final.def
-select = select_final.def
-select = select_final.def
+select.bgm = data/musica/SELECT SCREEN.mp3
+select.bgm.volume = 100
+select.bgm.loop = 1
+select.bgm.loopstart =
+select.bgm.loopend = 
   ;Music to play at versus screen.
 vs.bgm = data/musica/VS SCREEN.mp3
 vs.bgm.volume = 100
@@ -49,28 +48,33 @@ victory.bgm.loopend =
 [Title Info]
 fadein.time=20
 fadeout.time=20
-menu.pos = 321,240
-menu.item.font = 
-menu.item.active.font = 8
-menu.item.spacing =0, 0
+menu.pos = 320,50
+menu.item.font = 3,0,0, 180,180,180, 5,5
+menu.item.active.font = 3,0,0, 255,220,0, 5,5
+menu.item.spacing = 0, 32
 ; Names for each of the items in the menu. Names must be in quotes.
-menu.itemname.arcade ="A";"ARCADE"
-menu.itemname.versus ="B";"VS MODE"
-menu.itemname.teamarcade = "C"
-menu.itemname.teamversus = "D"
-menu.itemname.teamcoop = "E"
-menu.itemname.survival= "F"        ;"Survival"
-menu.itemname.survivalcoop="G" ;"survival co-op"
-menu.itemname.training ="H";;"TRAINING"
-menu.itemname.netplay ="L";"MULTIJOUEUR EN LIGNE"
-; === BATTLE.NET ONLINE SUBMENU ===
-menu.itemname.netplay_serverhost = "QUICK MATCH"
-menu.itemname.netplay_serverjoin = "LOBBIES"
-menu.itemname.netplay_netplayversus = "RANKED 1v1"
-menu.itemname.netplay_back = "RETOUR"
-menu.itemname.options ="J";"OPTIONS"
-menu.itemname.exit ="K";"EXIT"
-menu.itemname.watch ="I"
+menu.itemname.arcade = "ARCADE"
+menu.itemname.versus = "VS MODE"
+menu.itemname.teamarcade = "TEAM ARCADE"
+menu.itemname.teamversus = "TEAM VS"
+menu.itemname.teamcoop = "TEAM CO-OP"
+menu.itemname.survival = "SURVIVAL"
+menu.itemname.survivalcoop = "SURVIVAL CO-OP"
+menu.itemname.training = "TRAINING"
+menu.itemname.netplay = "ONLINE"
+menu.itemname.netplay_serverhost = "HOST GAME"
+menu.itemname.netplay_serverjoin = "JOIN GAME"
+menu.itemname.netplay_joinadd = "NEW ADDRESS"
+menu.itemname.netplay_netplayversus = "VERSUS 2P"
+menu.itemname.netplay_netplayteamcoop = "ARCADE CO-OP"
+menu.itemname.netplay_netplaysurvivalcoop = "SURVIVAL CO-OP"
+menu.itemname.netplay_lobby = "LIVE LOBBY"
+menu.itemname.netplay_rankings = "LEADERBOARD"
+menu.itemname.netplay_profile = "MY PROFILE"
+menu.itemname.netplay_back = "BACK"
+menu.itemname.options = "OPTIONS"
+menu.itemname.exit = "EXIT"
+menu.itemname.watch = "WATCH"
 ; These parameters define the window in which the items are visible
 ; in.
 menu.window.margins.y = 320,240
@@ -85,6 +89,7 @@ cancel.snd =100,2
 ;Title background definition
 [TitleBGdef]
 bgclearcolor = 0,0,0
+
 [TitleBG 0]
 type = anim
 actionno = 2
@@ -130,15 +135,15 @@ alpha = 150,256
 [Select Info]
 fadeout.time = 15
 
-rows = 13
-columns = 20
+rows = 10
+columns = 19
 wrapping = 1
-pos = 12,77
+pos = 70,160
 showemptyboxes = 0
 moveoveremptyboxes = 0
 
-cell.size = 31,31
-cell.spacing = 0
+cell.size = 32,32
+cell.spacing = 2
 cell.bg.spr =
 cell.random.anim = 173
 cell.random.switchtime = 5
@@ -165,18 +170,18 @@ cancel.snd = 100,2
 
 portrait.spr = 9000,0
 portrait.offset = 0,0
-portrait.scale = 0.5,0.5
+portrait.scale = 0.32,0.32
 
 p1.face.offset = 18,13
-p1.face.scale = 1.5,1.5
+p1.face.scale = 1,1
 p1.face.facing = 1
-p1.face.spr = 9000,0
+p1.face.spr = 9000,1
 p1.face.layerno = 2
 
 p2.face.offset = 500,13
-p2.face.scale = 1.5,1.5
+p2.face.scale = 1,1
 p2.face.facing = -1
-p2.face.spr = 9000,0
+p2.face.spr = 9000,1
 p2.face.layerno = 2
 
 title.offset = 320,10
@@ -223,6 +228,7 @@ p2.teammenu.done.snd = 100,1
 ;-----------------------
 [SelectBGdef]
 bgclearcolor = 0,0,0
+
 [SelectBG 0]
 type = anim
 actionno = 2
@@ -381,7 +387,7 @@ mask = 1
 ;Demo mode definition
 [Demo Mode]
 enabled = 1
-select = select_final.def
+select.enabled = 1
 vsscreen.enabled = 1
 title.waittime = 2600
 fight.endtime = 2500
@@ -443,7 +449,8 @@ winquote.textwrap = w
 ;-----------------------
 ;Victory screen background
 [VictoryBGdef]
-bgclearcolor = 0,0,0
+bgclearcolor = 10,20,75
+
 [VictoryBG 0]
 type = anim
 actionno = 4

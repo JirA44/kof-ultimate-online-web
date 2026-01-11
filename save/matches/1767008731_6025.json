@@ -1,0 +1,15 @@
+{
+  "match_id": "1767008731_6025",
+  "player1": "Grappler_God",
+  "player2": "Rage_Quitter_0",
+  "player1_char": "Elisabeth",
+  "player2_char": "Kyo",
+  "winner": "Rage_Quitter_0",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T12:45:31.491892",
+  "duration_seconds": 0,
+  "elo_change_p1": -16,
+  "elo_change_p2": 16
+}

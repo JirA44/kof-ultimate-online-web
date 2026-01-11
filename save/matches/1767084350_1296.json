@@ -1,0 +1,15 @@
+{
+  "match_id": "1767084350_1296",
+  "player1": "GG_EZ_Player",
+  "player2": "Ranked_Slayer",
+  "player1_char": "Kyo",
+  "player2_char": "Ryo",
+  "winner": "GG_EZ_Player",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T09:45:50.584542",
+  "duration_seconds": 0,
+  "elo_change_p1": 23,
+  "elo_change_p2": -23
+}

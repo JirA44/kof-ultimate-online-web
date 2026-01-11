@@ -1,0 +1,4 @@
+Fixed 179 damage errors in 24 files
+
+Errors:
+  D:\KOF Ultimate Online\chars\Eputh Blood-KOFM\blood.cns: [Errno 13] Permission denied: 'D:\\KOF Ultimate Online\\chars\\Eputh Blood-KOFM\\blood.cns'

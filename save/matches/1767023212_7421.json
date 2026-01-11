@@ -1,0 +1,15 @@
+{
+  "match_id": "1767023212_7421",
+  "player1": "First_To_10",
+  "player2": "Money_Match",
+  "player1_char": "Benimaru",
+  "player2_char": "Yamazaki",
+  "winner": "First_To_10",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T16:46:52.459914",
+  "duration_seconds": 0,
+  "elo_change_p1": 24,
+  "elo_change_p2": -24
+}

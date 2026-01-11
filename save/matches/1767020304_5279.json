@@ -1,0 +1,15 @@
+{
+  "match_id": "1767020304_5279",
+  "player1": "Combo_Breaker",
+  "player2": "Ranked_Slayer",
+  "player1_char": "Kyo",
+  "player2_char": "Yashiro",
+  "winner": "Ranked_Slayer",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T15:58:24.654439",
+  "duration_seconds": 0,
+  "elo_change_p1": -15,
+  "elo_change_p2": 15
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767099132_2421",
+  "player1": "Pro_Player_One",
+  "player2": "Casual_Fighter",
+  "player1_char": "Elisabeth",
+  "player2_char": "Yashiro",
+  "winner": "Casual_Fighter",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T13:52:12.711923",
+  "duration_seconds": 0,
+  "elo_change_p1": -15,
+  "elo_change_p2": 15
+}

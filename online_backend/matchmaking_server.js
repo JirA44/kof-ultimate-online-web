@@ -34,6 +34,9 @@ const connectedPlayers = new Map(); // playerId -> { ws, info }
 const matchmakingQueue = [];        // [{playerId, elo, mode, timestamp}]
 const activeMatches = new Map();    // matchId -> {player1, player2, status}
 const customRooms = new Map();      // roomId -> {host, players, settings}
+const pendingChallenges = new Map(); // challengeId -> {from, to, expiresAt, timeout}
+
+const CHALLENGE_TIMEOUT = 15000; // 15 seconds to accept
 
 // ==================== UTILITY FUNCTIONS ====================
 
@@ -171,6 +174,22 @@ wss.on('connection', (ws, req) => {
 
                 case 'accept_match':
                     handleAcceptMatch(ws, data);
+                    break;
+
+                case 'send_challenge':
+                    handleSendChallenge(ws, data);
+                    break;
+
+                case 'accept_challenge':
+                    handleAcceptChallenge(ws, data);
+                    break;
+
+                case 'decline_challenge':
+                    handleDeclineChallenge(ws, data);
+                    break;
+
+                case 'get_online_players':
+                    handleGetOnlinePlayers(ws, data);
                     break;
 
                 case 'ping':
@@ -505,6 +524,199 @@ wss.on('connection', (ws, req) => {
                 timestamp: Date.now()
             });
         });
+    }
+
+    // ==================== CHALLENGE SYSTEM ====================
+
+    function handleSendChallenge(ws, data) {
+        const { fromPlayerId, toPlayerId } = data;
+
+        const fromPlayer = connectedPlayers.get(fromPlayerId);
+        const toPlayer = connectedPlayers.get(toPlayerId);
+
+        if (!fromPlayer || !toPlayer) {
+            return ws.send(JSON.stringify({
+                type: 'error',
+                message: 'Joueur non trouvé ou hors ligne'
+            }));
+        }
+
+        // Check if target is already in queue or match
+        const inQueue = matchmakingQueue.some(p => p.playerId === toPlayerId);
+        if (inQueue) {
+            return ws.send(JSON.stringify({
+                type: 'error',
+                message: 'Ce joueur est déjà en recherche de match'
+            }));
+        }
+
+        const challengeId = uuid.v4();
+        const expiresAt = Date.now() + CHALLENGE_TIMEOUT;
+
+        // Set timeout to auto-decline
+        const timeout = setTimeout(() => {
+            const challenge = pendingChallenges.get(challengeId);
+            if (challenge) {
+                pendingChallenges.delete(challengeId);
+
+                // Notify both players
+                sendToPlayer(fromPlayerId, {
+                    type: 'challenge_expired',
+                    challengeId,
+                    message: 'Le défi a expiré'
+                });
+
+                sendToPlayer(toPlayerId, {
+                    type: 'challenge_expired',
+                    challengeId,
+                    message: 'Le défi a expiré'
+                });
+
+                console.log(`⏰ Défi expiré: ${fromPlayer.info.username} → ${toPlayer.info.username}`);
+            }
+        }, CHALLENGE_TIMEOUT);
+
+        pendingChallenges.set(challengeId, {
+            id: challengeId,
+            from: {
+                playerId: fromPlayerId,
+                username: fromPlayer.info.username,
+                elo: fromPlayer.info.elo
+            },
+            to: {
+                playerId: toPlayerId,
+                username: toPlayer.info.username,
+                elo: toPlayer.info.elo
+            },
+            expiresAt,
+            timeout
+        });
+
+        // Confirm to sender
+        ws.send(JSON.stringify({
+            type: 'challenge_sent',
+            challengeId,
+            to: {
+                playerId: toPlayerId,
+                username: toPlayer.info.username,
+                elo: toPlayer.info.elo
+            },
+            expiresIn: CHALLENGE_TIMEOUT
+        }));
+
+        // Notify target player with 15s timer
+        sendToPlayer(toPlayerId, {
+            type: 'challenge_received',
+            challengeId,
+            from: {
+                playerId: fromPlayerId,
+                username: fromPlayer.info.username,
+                elo: fromPlayer.info.elo
+            },
+            expiresIn: CHALLENGE_TIMEOUT
+        });
+
+        console.log(`⚔️ Défi envoyé: ${fromPlayer.info.username} → ${toPlayer.info.username} (15s)`);
+    }
+
+    function handleAcceptChallenge(ws, data) {
+        const { challengeId, playerId } = data;
+        const challenge = pendingChallenges.get(challengeId);
+
+        if (!challenge) {
+            return ws.send(JSON.stringify({
+                type: 'error',
+                message: 'Défi expiré ou non trouvé'
+            }));
+        }
+
+        if (challenge.to.playerId !== playerId) {
+            return ws.send(JSON.stringify({
+                type: 'error',
+                message: 'Ce défi ne vous est pas destiné'
+            }));
+        }
+
+        // Clear the timeout
+        clearTimeout(challenge.timeout);
+        pendingChallenges.delete(challengeId);
+
+        // Create the match
+        const player1 = {
+            playerId: challenge.from.playerId,
+            username: challenge.from.username,
+            elo: challenge.from.elo,
+            mode: 'challenge'
+        };
+
+        const player2 = {
+            playerId: challenge.to.playerId,
+            username: challenge.to.username,
+            elo: challenge.to.elo,
+            mode: 'challenge'
+        };
+
+        createMatch(player1, player2);
+
+        console.log(`✅ Défi accepté: ${player1.username} vs ${player2.username}`);
+    }
+
+    function handleDeclineChallenge(ws, data) {
+        const { challengeId, playerId } = data;
+        const challenge = pendingChallenges.get(challengeId);
+
+        if (!challenge) {
+            return ws.send(JSON.stringify({
+                type: 'error',
+                message: 'Défi non trouvé'
+            }));
+        }
+
+        // Clear the timeout
+        clearTimeout(challenge.timeout);
+        pendingChallenges.delete(challengeId);
+
+        // Notify the challenger
+        sendToPlayer(challenge.from.playerId, {
+            type: 'challenge_declined',
+            challengeId,
+            by: {
+                playerId: challenge.to.playerId,
+                username: challenge.to.username
+            },
+            message: `${challenge.to.username} a refusé votre défi`
+        });
+
+        // Confirm to decliner
+        ws.send(JSON.stringify({
+            type: 'challenge_declined_confirm',
+            challengeId,
+            message: 'Défi refusé'
+        }));
+
+        console.log(`❌ Défi refusé: ${challenge.to.username} a refusé ${challenge.from.username}`);
+    }
+
+    function handleGetOnlinePlayers(ws, data) {
+        const { playerId } = data;
+
+        const players = [];
+        connectedPlayers.forEach((playerData, id) => {
+            if (id !== playerId) {
+                players.push({
+                    playerId: id,
+                    username: playerData.info.username,
+                    elo: playerData.info.elo,
+                    status: playerData.info.status
+                });
+            }
+        });
+
+        ws.send(JSON.stringify({
+            type: 'online_players',
+            players,
+            count: players.length
+        }));
     }
 
     function handleDisconnect(playerId) {

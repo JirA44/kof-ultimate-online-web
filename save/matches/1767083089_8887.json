@@ -1,0 +1,15 @@
+{
+  "match_id": "1767083089_8887",
+  "player1": "GG_EZ_Player",
+  "player2": "Frame_Perfect",
+  "player1_char": "Shingo",
+  "player2_char": "Ralf",
+  "winner": "GG_EZ_Player",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-30T09:24:49.250044",
+  "duration_seconds": 0,
+  "elo_change_p1": 21,
+  "elo_change_p2": -21
+}

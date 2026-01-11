@@ -1,0 +1,15 @@
+{
+  "match_id": "1767036797_7954",
+  "player1": "KOF_Legend",
+  "player2": "NeoGeo_Master",
+  "player1_char": "Kyo",
+  "player2_char": "Ralf",
+  "winner": "NeoGeo_Master",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T20:33:17.742166",
+  "duration_seconds": 0,
+  "elo_change_p1": -9,
+  "elo_change_p2": 9
+}

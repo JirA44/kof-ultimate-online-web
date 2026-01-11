@@ -1,0 +1,15 @@
+{
+  "match_id": "1767085819_6043",
+  "player1": "Comeback_Kid",
+  "player2": "Money_Match",
+  "player1_char": "Vice",
+  "player2_char": "Angel",
+  "winner": "Money_Match",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T10:10:19.439938",
+  "duration_seconds": 0,
+  "elo_change_p1": -4,
+  "elo_change_p2": 4
+}

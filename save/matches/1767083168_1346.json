@@ -1,0 +1,15 @@
+{
+  "match_id": "1767083168_1346",
+  "player1": "Button_Masher_X",
+  "player2": "DragonFist_99",
+  "player1_char": "Rugal",
+  "player2_char": "Geese",
+  "winner": "Button_Masher_X",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T09:26:08.074590",
+  "duration_seconds": 0,
+  "elo_change_p1": 20,
+  "elo_change_p2": -20
+}

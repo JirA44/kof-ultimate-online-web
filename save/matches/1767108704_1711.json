@@ -1,0 +1,15 @@
+{
+  "match_id": "1767108704_1711",
+  "player1": "Mix_Up_Master",
+  "player2": "GG_EZ_Player",
+  "player1_char": "Clark",
+  "player2_char": "Leona",
+  "winner": "GG_EZ_Player",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T16:31:44.709326",
+  "duration_seconds": 0,
+  "elo_change_p1": -8,
+  "elo_change_p2": 8
+}

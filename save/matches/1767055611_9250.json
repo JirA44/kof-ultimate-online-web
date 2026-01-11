@@ -1,0 +1,15 @@
+{
+  "match_id": "1767055611_9250",
+  "player1": "Online_Warrior",
+  "player2": "Tournament_Ace",
+  "player1_char": "King",
+  "player2_char": "Yashiro",
+  "winner": "Tournament_Ace",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T01:46:51.608526",
+  "duration_seconds": 0,
+  "elo_change_p1": -6,
+  "elo_change_p2": 6
+}

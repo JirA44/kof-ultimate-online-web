@@ -1,0 +1,15 @@
+{
+  "match_id": "1767092681_2261",
+  "player1": "Perfect_KO",
+  "player2": "SNK_Champion",
+  "player1_char": "Ryo",
+  "player2_char": "Clark",
+  "winner": "SNK_Champion",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T12:04:41.133265",
+  "duration_seconds": 0,
+  "elo_change_p1": -13,
+  "elo_change_p2": 13
+}

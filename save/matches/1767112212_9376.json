@@ -1,0 +1,15 @@
+{
+  "match_id": "1767112212_9376",
+  "player1": "Perfect_KO",
+  "player2": "First_To_10",
+  "player1_char": "Athena",
+  "player2_char": "Mai",
+  "winner": "First_To_10",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T17:30:12.983949",
+  "duration_seconds": 0,
+  "elo_change_p1": -10,
+  "elo_change_p2": 10
+}

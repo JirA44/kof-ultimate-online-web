@@ -1,0 +1,15 @@
+{
+  "match_id": "1766997993_5767",
+  "player1": "First_To_10",
+  "player2": "Rage_Quitter_0",
+  "player1_char": "Vice",
+  "player2_char": "Benimaru",
+  "winner": "Rage_Quitter_0",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T09:46:33.998857",
+  "duration_seconds": 0,
+  "elo_change_p1": -13,
+  "elo_change_p2": 13
+}

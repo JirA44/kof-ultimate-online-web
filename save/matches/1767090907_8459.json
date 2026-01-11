@@ -1,0 +1,15 @@
+{
+  "match_id": "1767090907_8459",
+  "player1": "KOF_Legend",
+  "player2": "FGC_Veteran",
+  "player1_char": "Shingo",
+  "player2_char": "Benimaru",
+  "winner": "FGC_Veteran",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T11:35:07.519798",
+  "duration_seconds": 0,
+  "elo_change_p1": -4,
+  "elo_change_p2": 4
+}

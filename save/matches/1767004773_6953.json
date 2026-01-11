@@ -1,0 +1,15 @@
+{
+  "match_id": "1767004773_6953",
+  "player1": "Training_Mode",
+  "player2": "GG_EZ_Player",
+  "player1_char": "Yamazaki",
+  "player2_char": "Rugal",
+  "winner": "Training_Mode",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T11:39:33.555345",
+  "duration_seconds": 0,
+  "elo_change_p1": 22,
+  "elo_change_p2": -22
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767100273_6449",
+  "player1": "FGC_Veteran",
+  "player2": "GG_EZ_Player",
+  "player1_char": "Elisabeth",
+  "player2_char": "Shen",
+  "winner": "GG_EZ_Player",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T14:11:13.325087",
+  "duration_seconds": 0,
+  "elo_change_p1": -11,
+  "elo_change_p2": 11
+}

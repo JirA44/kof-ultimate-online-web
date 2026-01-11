@@ -1,0 +1,15 @@
+{
+  "match_id": "1767079182_1034",
+  "player1": "KOF_Legend",
+  "player2": "SNK_Champion",
+  "player1_char": "Terry",
+  "player2_char": "Terry",
+  "winner": "SNK_Champion",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T08:19:42.581972",
+  "duration_seconds": 0,
+  "elo_change_p1": -4,
+  "elo_change_p2": 4
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767083033_3041",
+  "player1": "Casual_Fighter",
+  "player2": "GG_EZ_Player",
+  "player1_char": "Shen",
+  "player2_char": "Robert",
+  "winner": "Casual_Fighter",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T09:23:53.646291",
+  "duration_seconds": 0,
+  "elo_change_p1": 19,
+  "elo_change_p2": -19
+}

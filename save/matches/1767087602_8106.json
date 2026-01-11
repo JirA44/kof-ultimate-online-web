@@ -1,0 +1,15 @@
+{
+  "match_id": "1767087602_8106",
+  "player1": "KOF_Legend",
+  "player2": "Pro_Player_One",
+  "player1_char": "Leona",
+  "player2_char": "Geese",
+  "winner": "KOF_Legend",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-30T10:40:02.571145",
+  "duration_seconds": 0,
+  "elo_change_p1": 30,
+  "elo_change_p2": -30
+}

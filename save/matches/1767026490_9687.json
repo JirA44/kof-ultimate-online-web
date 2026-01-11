@@ -1,0 +1,15 @@
+{
+  "match_id": "1767026490_9687",
+  "player1": "NeoGeo_Master",
+  "player2": "Combo_Breaker",
+  "player1_char": "Ramon",
+  "player2_char": "Ryo",
+  "winner": "Combo_Breaker",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T17:41:30.991410",
+  "duration_seconds": 0,
+  "elo_change_p1": -12,
+  "elo_change_p2": 12
+}

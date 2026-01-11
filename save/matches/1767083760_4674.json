@@ -1,0 +1,15 @@
+{
+  "match_id": "1767083760_4674",
+  "player1": "First_To_10",
+  "player2": "Combo_Breaker",
+  "player1_char": "Yuri",
+  "player2_char": "Goro",
+  "winner": "Combo_Breaker",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T09:36:00.285408",
+  "duration_seconds": 0,
+  "elo_change_p1": -7,
+  "elo_change_p2": 7
+}

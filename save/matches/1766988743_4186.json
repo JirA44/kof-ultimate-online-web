@@ -1,0 +1,15 @@
+{
+  "match_id": "1766988743_4186",
+  "player1": "Grappler_God",
+  "player2": "Combo_Breaker",
+  "player1_char": "Athena",
+  "player2_char": "Maxima",
+  "winner": "Combo_Breaker",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T07:12:23.259797",
+  "duration_seconds": 0,
+  "elo_change_p1": -15,
+  "elo_change_p2": 15
+}

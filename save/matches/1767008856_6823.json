@@ -1,0 +1,15 @@
+{
+  "match_id": "1767008856_6823",
+  "player1": "KOF_Legend",
+  "player2": "Pro_Player_One",
+  "player1_char": "Blue Mary",
+  "player2_char": "Chris",
+  "winner": "Pro_Player_One",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T12:47:36.801197",
+  "duration_seconds": 0,
+  "elo_change_p1": -7,
+  "elo_change_p2": 7
+}

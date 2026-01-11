@@ -1,0 +1,15 @@
+{
+  "match_id": "1767055547_7692",
+  "player1": "Online_Warrior",
+  "player2": "Money_Match",
+  "player1_char": "Terry",
+  "player2_char": "Benimaru",
+  "winner": "Money_Match",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T01:45:47.010769",
+  "duration_seconds": 0,
+  "elo_change_p1": -8,
+  "elo_change_p2": 8
+}

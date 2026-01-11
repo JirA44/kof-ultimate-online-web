@@ -1,0 +1,15 @@
+{
+  "match_id": "1767038411_9715",
+  "player1": "Online_Warrior",
+  "player2": "NeoGeo_Master",
+  "player1_char": "Ralf",
+  "player2_char": "Chizuru",
+  "winner": "NeoGeo_Master",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T21:00:11.993091",
+  "duration_seconds": 0,
+  "elo_change_p1": -11,
+  "elo_change_p2": 11
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767107167_1608",
+  "player1": "Clutch_King",
+  "player2": "FGC_Veteran",
+  "player1_char": "Vice",
+  "player2_char": "Billy",
+  "winner": "FGC_Veteran",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T16:06:07.442226",
+  "duration_seconds": 0,
+  "elo_change_p1": -5,
+  "elo_change_p2": 5
+}

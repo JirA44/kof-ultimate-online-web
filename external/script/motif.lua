@@ -1920,6 +1920,9 @@ function motif.setBaseTitleInfo()
 	motif.title_info.menu_itemname_training = "TRAINING"
 	motif.title_info.menu_itemname_watch = "WATCH"
 	motif.title_info.menu_itemname_options = "OPTIONS"
+	motif.title_info.menu_itemname_netplay = "ONLINE"
+	motif.title_info.menu_itemname_netplay_serverhost = "HOST GAME"
+	motif.title_info.menu_itemname_netplay_serverjoin = "JOIN GAME"
 	motif.title_info.menu_itemname_exit = "EXIT"
 	if main.t_sort.title_info == nil then
 		main.t_sort.title_info = {}
@@ -1935,6 +1938,9 @@ function motif.setBaseTitleInfo()
 		"training",
 		"watch",
 		"options",
+		"netplay",
+		"netplay_serverhost",
+		"netplay_serverjoin",
 		"exit",
 	}
 	hook.run("motif.setBaseTitleInfo")
@@ -2430,6 +2436,19 @@ end
 
 if main.debugLog then main.f_printTable(main.t_sort, 'debug/t_sort.txt') end
 
+-- Ensure netplay is in title_info menu
+if main.t_sort.title_info ~= nil and main.t_sort.title_info.menu ~= nil then
+	local hasNetplay = false
+	local exitIndex = nil
+	for i, v in ipairs(main.t_sort.title_info.menu) do
+		if v == "netplay" then hasNetplay = true end
+		if v == "exit" then exitIndex = i end
+	end
+	if not hasNetplay and exitIndex then
+		table.insert(main.t_sort.title_info.menu, exitIndex, "netplay")
+	end
+end
+
 --;===========================================================
 --; FIX REFERENCES, LOAD DATA
 --;===========================================================
@@ -2450,6 +2469,11 @@ end
 
 --merge tables
 motif = main.f_tableMerge(motif, t)
+
+-- Ensure netplay displayname is set
+if motif.title_info.menu_itemname_netplay == nil or motif.title_info.menu_itemname_netplay == '' then
+	motif.title_info.menu_itemname_netplay = "ONLINE"
+end
 
 --default hiscore glyphs
 if #motif.hiscore_info.glyphs == 0 then

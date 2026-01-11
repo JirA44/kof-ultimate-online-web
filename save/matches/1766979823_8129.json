@@ -1,0 +1,28 @@
+{
+  "match_id": "1766979823_8129",
+  "player1": "KOF_Legend",
+  "player2": "Button_Masher_X",
+  "player1_char": "Angel",
+  "player2_char": "Geese",
+  "winner": "KOF_Legend",
+  "rounds": [
+    {
+      "winner": "Button_Masher_X",
+      "perfect": false
+    },
+    {
+      "winner": "KOF_Legend",
+      "perfect": false
+    },
+    {
+      "winner": "KOF_Legend",
+      "perfect": false
+    }
+  ],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T04:43:43.205457",
+  "duration_seconds": 0,
+  "elo_change_p1": 15,
+  "elo_change_p2": -15
+}

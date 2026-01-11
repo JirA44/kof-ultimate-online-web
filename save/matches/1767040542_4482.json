@@ -1,0 +1,15 @@
+{
+  "match_id": "1767040542_4482",
+  "player1": "Online_Warrior",
+  "player2": "Rage_Quitter_0",
+  "player1_char": "Ryo",
+  "player2_char": "Rugal",
+  "winner": "Rage_Quitter_0",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T21:35:42.756894",
+  "duration_seconds": 0,
+  "elo_change_p1": -7,
+  "elo_change_p2": 7
+}

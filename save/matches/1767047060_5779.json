@@ -1,0 +1,15 @@
+{
+  "match_id": "1767047060_5779",
+  "player1": "FGC_Veteran",
+  "player2": "Button_Masher_X",
+  "player1_char": "Yuri",
+  "player2_char": "Benimaru",
+  "winner": "FGC_Veteran",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T23:24:20.678065",
+  "duration_seconds": 0,
+  "elo_change_p1": 25,
+  "elo_change_p2": -25
+}

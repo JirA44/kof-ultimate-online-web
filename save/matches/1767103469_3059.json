@@ -1,0 +1,15 @@
+{
+  "match_id": "1767103469_3059",
+  "player1": "EVO_Ready",
+  "player2": "Money_Match",
+  "player1_char": "Yuri",
+  "player2_char": "Elisabeth",
+  "winner": "Money_Match",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T15:04:29.271128",
+  "duration_seconds": 0,
+  "elo_change_p1": -8,
+  "elo_change_p2": 8
+}

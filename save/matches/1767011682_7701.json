@@ -1,0 +1,15 @@
+{
+  "match_id": "1767011682_7701",
+  "player1": "Tournament_Ace",
+  "player2": "ShadowKing_X",
+  "player1_char": "Angel",
+  "player2_char": "Elisabeth",
+  "winner": "Tournament_Ace",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T13:34:42.660105",
+  "duration_seconds": 0,
+  "elo_change_p1": 23,
+  "elo_change_p2": -23
+}

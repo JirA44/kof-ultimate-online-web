@@ -1,0 +1,15 @@
+{
+  "match_id": "1766993113_1218",
+  "player1": "GG_EZ_Player",
+  "player2": "Button_Masher_X",
+  "player1_char": "Geese",
+  "player2_char": "Elisabeth",
+  "winner": "Button_Masher_X",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T08:25:13.671858",
+  "duration_seconds": 0,
+  "elo_change_p1": -14,
+  "elo_change_p2": 14
+}

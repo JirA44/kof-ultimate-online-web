@@ -1,0 +1,15 @@
+{
+  "match_id": "1767068969_5738",
+  "player1": "Online_Warrior",
+  "player2": "Pro_Player_One",
+  "player1_char": "Blue Mary",
+  "player2_char": "Yamazaki",
+  "winner": "Pro_Player_One",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T05:29:29.924788",
+  "duration_seconds": 0,
+  "elo_change_p1": -4,
+  "elo_change_p2": 4
+}

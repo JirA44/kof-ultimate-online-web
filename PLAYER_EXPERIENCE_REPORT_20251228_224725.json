@@ -1,0 +1,73 @@
+{
+  "installation": {
+    "files_ok": true,
+    "launchers_count": 12,
+    "docs_count": 45
+  },
+  "menus": {
+    "characters_available": 29
+  },
+  "progression": {
+    "stat_files_found": 1
+  },
+  "matchmaking": {
+    "files_found": 8,
+    "active_ports": []
+  },
+  "competitive": {},
+  "characters": {
+    "total": 190,
+    "working": 50,
+    "broken": []
+  },
+  "stages": {
+    "total": 31,
+    "working": 30,
+    "broken": []
+  },
+  "combat_sessions": [
+    {
+      "session_num": 1,
+      "duration": 46.00099229812622,
+      "timestamp": "2025-12-28T22:48:31.951530",
+      "status": "completed"
+    },
+    {
+      "session_num": 2,
+      "duration": 46.001784801483154,
+      "timestamp": "2025-12-28T22:49:32.960152",
+      "status": "completed"
+    },
+    {
+      "session_num": 3,
+      "duration": 46.00162959098816,
+      "timestamp": "2025-12-28T22:50:33.969965",
+      "status": "completed"
+    },
+    {
+      "session_num": 4,
+      "duration": 46.001673460006714,
+      "timestamp": "2025-12-28T22:51:34.978065",
+      "status": "completed"
+    },
+    {
+      "session_num": 5,
+      "duration": 46.00149989128113,
+      "timestamp": "2025-12-28T22:52:35.987074",
+      "status": "completed"
+    }
+  ],
+  "issues_found": [],
+  "improvements_needed": [
+    {
+      "area": "installation",
+      "suggestion": "Trop de launchers (12) - créer UN launcher principal clair",
+      "timestamp": "2025-12-28T22:47:25.534697"
+    },
+    {
+      "area": "matchmaking",
+      "suggestion": "Serveur matchmaking pas actif - démarrer automatiquement",
+      "timestamp": "2025-12-28T22:47:39.743619"
+    }
+  ]
+}

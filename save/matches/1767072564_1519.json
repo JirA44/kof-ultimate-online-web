@@ -1,0 +1,15 @@
+{
+  "match_id": "1767072564_1519",
+  "player1": "EVO_Ready",
+  "player2": "GG_EZ_Player",
+  "player1_char": "Mai",
+  "player2_char": "Yamazaki",
+  "winner": "EVO_Ready",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T06:29:24.954353",
+  "duration_seconds": 0,
+  "elo_change_p1": 23,
+  "elo_change_p2": -23
+}

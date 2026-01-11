@@ -1,0 +1,15 @@
+{
+  "match_id": "1767109694_7963",
+  "player1": "Clutch_King",
+  "player2": "Ranked_Slayer",
+  "player1_char": "Ash",
+  "player2_char": "K'",
+  "winner": "Ranked_Slayer",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T16:48:14.470008",
+  "duration_seconds": 0,
+  "elo_change_p1": -4,
+  "elo_change_p2": 4
+}

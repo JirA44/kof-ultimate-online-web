@@ -1,0 +1,15 @@
+{
+  "match_id": "1766990614_7224",
+  "player1": "DragonFist_99",
+  "player2": "Money_Match",
+  "player1_char": "Vanessa",
+  "player2_char": "Blue Mary",
+  "winner": "Money_Match",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T07:43:34.650825",
+  "duration_seconds": 0,
+  "elo_change_p1": -12,
+  "elo_change_p2": 12
+}

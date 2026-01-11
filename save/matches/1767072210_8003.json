@@ -1,0 +1,15 @@
+{
+  "match_id": "1767072210_8003",
+  "player1": "Tournament_Ace",
+  "player2": "Ranked_Slayer",
+  "player1_char": "Robert",
+  "player2_char": "Chris",
+  "winner": "Tournament_Ace",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T06:23:30.625353",
+  "duration_seconds": 0,
+  "elo_change_p1": 21,
+  "elo_change_p2": -21
+}

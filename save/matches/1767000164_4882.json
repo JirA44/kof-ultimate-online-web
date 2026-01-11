@@ -1,0 +1,15 @@
+{
+  "match_id": "1767000164_4882",
+  "player1": "Training_Mode",
+  "player2": "GG_EZ_Player",
+  "player1_char": "Terry",
+  "player2_char": "Kula",
+  "winner": "GG_EZ_Player",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T10:22:44.610764",
+  "duration_seconds": 0,
+  "elo_change_p1": -13,
+  "elo_change_p2": 13
+}

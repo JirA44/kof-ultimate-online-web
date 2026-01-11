@@ -1,0 +1,15 @@
+{
+  "match_id": "1767101881_3150",
+  "player1": "Rush_Down_King",
+  "player2": "Rage_Quitter_0",
+  "player1_char": "Athena",
+  "player2_char": "Ash",
+  "winner": "Rage_Quitter_0",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T14:38:01.702682",
+  "duration_seconds": 0,
+  "elo_change_p1": -10,
+  "elo_change_p2": 10
+}

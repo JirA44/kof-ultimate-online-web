@@ -1,0 +1,15 @@
+{
+  "match_id": "1767004660_5726",
+  "player1": "Tournament_Ace",
+  "player2": "Comeback_Kid",
+  "player1_char": "Maxima",
+  "player2_char": "Robert",
+  "winner": "Tournament_Ace",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T11:37:40.545076",
+  "duration_seconds": 0,
+  "elo_change_p1": 19,
+  "elo_change_p2": -19
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767032588_9842",
+  "player1": "KOF_Legend",
+  "player2": "NeoGeo_Master",
+  "player1_char": "Billy",
+  "player2_char": "Vanessa",
+  "winner": "NeoGeo_Master",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T19:23:08.313042",
+  "duration_seconds": 0,
+  "elo_change_p1": -8,
+  "elo_change_p2": 8
+}

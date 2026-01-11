@@ -1,0 +1,15 @@
+{
+  "match_id": "1766988238_6871",
+  "player1": "Arcade_Warrior",
+  "player2": "Stream_Monster",
+  "player1_char": "Kyo",
+  "player2_char": "Rugal",
+  "winner": "Stream_Monster",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T07:03:58.184454",
+  "duration_seconds": 0,
+  "elo_change_p1": -10,
+  "elo_change_p2": 10
+}

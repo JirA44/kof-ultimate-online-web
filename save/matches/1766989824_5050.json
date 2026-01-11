@@ -1,0 +1,15 @@
+{
+  "match_id": "1766989824_5050",
+  "player1": "First_To_10",
+  "player2": "Zoner_Elite",
+  "player1_char": "Ash",
+  "player2_char": "Orochi",
+  "winner": "Zoner_Elite",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T07:30:24.834176",
+  "duration_seconds": 0,
+  "elo_change_p1": -15,
+  "elo_change_p2": 15
+}

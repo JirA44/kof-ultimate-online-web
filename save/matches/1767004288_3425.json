@@ -1,0 +1,15 @@
+{
+  "match_id": "1767004288_3425",
+  "player1": "EVO_Ready",
+  "player2": "Mix_Up_Master",
+  "player1_char": "Robert",
+  "player2_char": "Yuri",
+  "winner": "Mix_Up_Master",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T11:31:28.454154",
+  "duration_seconds": 0,
+  "elo_change_p1": -12,
+  "elo_change_p2": 12
+}

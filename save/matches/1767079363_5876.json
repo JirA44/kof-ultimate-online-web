@@ -1,0 +1,15 @@
+{
+  "match_id": "1767079363_5876",
+  "player1": "Grappler_God",
+  "player2": "Rage_Quitter_0",
+  "player1_char": "Ramon",
+  "player2_char": "Shermie",
+  "winner": "Rage_Quitter_0",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T08:22:43.413280",
+  "duration_seconds": 0,
+  "elo_change_p1": -13,
+  "elo_change_p2": 13
+}

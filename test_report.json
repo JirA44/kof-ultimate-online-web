@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-12-27T13:30:21.509709",
+  "timestamp": "2026-01-01T02:12:30.877976",
   "passed": 25,
   "failed": 0,
   "success_rate": 100.0,
@@ -37,17 +37,17 @@
     {
       "status": "PASS",
       "name": "Roster has characters",
-      "details": "75 characters"
+      "details": "22 characters"
     },
     {
       "status": "PASS",
       "name": "system.def points to valid roster",
-      "details": "select_final.def"
+      "details": "select_optimized.def"
     },
     {
       "status": "PASS",
       "name": "Character folders exist",
-      "details": "190 folders"
+      "details": "150 folders"
     },
     {
       "status": "PASS",

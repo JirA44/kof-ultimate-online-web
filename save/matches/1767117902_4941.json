@@ -1,0 +1,15 @@
+{
+  "match_id": "1767117902_4941",
+  "player1": "ShadowKing_X",
+  "player2": "Mix_Up_Master",
+  "player1_char": "Maxima",
+  "player2_char": "Ryo",
+  "winner": "Mix_Up_Master",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T19:05:02.438358",
+  "duration_seconds": 0,
+  "elo_change_p1": -10,
+  "elo_change_p2": 10
+}

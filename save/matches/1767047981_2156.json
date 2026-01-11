@@ -1,0 +1,15 @@
+{
+  "match_id": "1767047981_2156",
+  "player1": "Arcade_Warrior",
+  "player2": "Pro_Player_One",
+  "player1_char": "Angel",
+  "player2_char": "Geese",
+  "winner": "Pro_Player_One",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T23:39:41.687011",
+  "duration_seconds": 0,
+  "elo_change_p1": -7,
+  "elo_change_p2": 7
+}

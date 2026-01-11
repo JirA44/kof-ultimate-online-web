@@ -1,0 +1,15 @@
+{
+  "match_id": "1767023150_8326",
+  "player1": "Training_Mode",
+  "player2": "Comeback_Kid",
+  "player1_char": "Whip",
+  "player2_char": "Blue Mary",
+  "winner": "Comeback_Kid",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T16:45:50.877300",
+  "duration_seconds": 0,
+  "elo_change_p1": -14,
+  "elo_change_p2": 14
+}

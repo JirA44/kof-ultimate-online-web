@@ -1,0 +1,15 @@
+{
+  "match_id": "1767069639_9518",
+  "player1": "Rage_Quitter_0",
+  "player2": "Stream_Monster",
+  "player1_char": "Iori",
+  "player2_char": "Elisabeth",
+  "winner": "Stream_Monster",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T05:40:39.831760",
+  "duration_seconds": 0,
+  "elo_change_p1": -10,
+  "elo_change_p2": 10
+}

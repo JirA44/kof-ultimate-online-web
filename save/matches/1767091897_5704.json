@@ -1,0 +1,15 @@
+{
+  "match_id": "1767091897_5704",
+  "player1": "GG_EZ_Player",
+  "player2": "Combo_Breaker",
+  "player1_char": "King",
+  "player2_char": "Orochi",
+  "winner": "GG_EZ_Player",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T11:51:37.513292",
+  "duration_seconds": 0,
+  "elo_change_p1": 20,
+  "elo_change_p2": -20
+}

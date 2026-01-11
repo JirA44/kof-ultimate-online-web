@@ -1,0 +1,15 @@
+{
+  "match_id": "1767091642_5343",
+  "player1": "Combo_Breaker",
+  "player2": "DragonFist_99",
+  "player1_char": "Whip",
+  "player2_char": "Benimaru",
+  "winner": "DragonFist_99",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T11:47:22.281093",
+  "duration_seconds": 0,
+  "elo_change_p1": -9,
+  "elo_change_p2": 9
+}

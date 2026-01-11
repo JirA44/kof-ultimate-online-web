@@ -1,0 +1,15 @@
+{
+  "match_id": "1767109786_4187",
+  "player1": "Comeback_Kid",
+  "player2": "Stream_Monster",
+  "player1_char": "K'",
+  "player2_char": "Billy",
+  "winner": "Stream_Monster",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T16:49:46.106606",
+  "duration_seconds": 0,
+  "elo_change_p1": -3,
+  "elo_change_p2": 3
+}

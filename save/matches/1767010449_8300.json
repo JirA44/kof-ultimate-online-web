@@ -1,0 +1,15 @@
+{
+  "match_id": "1767010449_8300",
+  "player1": "Online_Warrior",
+  "player2": "ShadowKing_X",
+  "player1_char": "Geese",
+  "player2_char": "Orochi",
+  "winner": "ShadowKing_X",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T13:14:09.198659",
+  "duration_seconds": 0,
+  "elo_change_p1": -4,
+  "elo_change_p2": 4
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767089636_2131",
+  "player1": "Casual_Fighter",
+  "player2": "Hype_Beast_99",
+  "player1_char": "Robert",
+  "player2_char": "Mai",
+  "winner": "Casual_Fighter",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-30T11:13:56.404466",
+  "duration_seconds": 0,
+  "elo_change_p1": 20,
+  "elo_change_p2": -20
+}

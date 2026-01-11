@@ -1,0 +1,15 @@
+{
+  "match_id": "1767085413_3064",
+  "player1": "SNK_Champion",
+  "player2": "Money_Match",
+  "player1_char": "Kula",
+  "player2_char": "Elisabeth",
+  "winner": "SNK_Champion",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T10:03:33.931884",
+  "duration_seconds": 0,
+  "elo_change_p1": 22,
+  "elo_change_p2": -22
+}

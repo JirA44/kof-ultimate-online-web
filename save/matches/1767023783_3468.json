@@ -1,0 +1,15 @@
+{
+  "match_id": "1767023783_3468",
+  "player1": "Casual_Fighter",
+  "player2": "Clutch_King",
+  "player1_char": "Chris",
+  "player2_char": "Whip",
+  "winner": "Clutch_King",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T16:56:23.629191",
+  "duration_seconds": 0,
+  "elo_change_p1": -16,
+  "elo_change_p2": 16
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767033611_5663",
+  "player1": "Button_Masher_X",
+  "player2": "Ranked_Slayer",
+  "player1_char": "Elisabeth",
+  "player2_char": "Ramon",
+  "winner": "Ranked_Slayer",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T19:40:11.678570",
+  "duration_seconds": 0,
+  "elo_change_p1": -12,
+  "elo_change_p2": 12
+}

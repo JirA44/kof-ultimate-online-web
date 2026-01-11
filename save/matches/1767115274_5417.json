@@ -1,0 +1,15 @@
+{
+  "match_id": "1767115274_5417",
+  "player1": "KOF_Legend",
+  "player2": "Casual_Fighter",
+  "player1_char": "Clark",
+  "player2_char": "Orochi",
+  "winner": "Casual_Fighter",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T18:21:14.764868",
+  "duration_seconds": 0,
+  "elo_change_p1": -2,
+  "elo_change_p2": 2
+}

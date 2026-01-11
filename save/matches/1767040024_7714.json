@@ -1,0 +1,15 @@
+{
+  "match_id": "1767040024_7714",
+  "player1": "Online_Warrior",
+  "player2": "Rage_Quitter_0",
+  "player1_char": "Blue Mary",
+  "player2_char": "Athena",
+  "winner": "Rage_Quitter_0",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T21:27:04.237938",
+  "duration_seconds": 0,
+  "elo_change_p1": -7,
+  "elo_change_p2": 7
+}

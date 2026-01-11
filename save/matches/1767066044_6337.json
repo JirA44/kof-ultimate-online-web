@@ -1,0 +1,15 @@
+{
+  "match_id": "1767066044_6337",
+  "player1": "Online_Warrior",
+  "player2": "Rage_Quitter_0",
+  "player1_char": "Orochi",
+  "player2_char": "Duo Lon",
+  "winner": "Rage_Quitter_0",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T04:40:44.741448",
+  "duration_seconds": 0,
+  "elo_change_p1": -6,
+  "elo_change_p2": 6
+}

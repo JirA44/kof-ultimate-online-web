@@ -1,0 +1,15 @@
+{
+  "match_id": "1767122934_4998",
+  "player1": "Casual_Fighter",
+  "player2": "Rush_Down_King",
+  "player1_char": "King",
+  "player2_char": "Ralf",
+  "winner": "Casual_Fighter",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-30T20:28:54.445242",
+  "duration_seconds": 0,
+  "elo_change_p1": 23,
+  "elo_change_p2": -23
+}

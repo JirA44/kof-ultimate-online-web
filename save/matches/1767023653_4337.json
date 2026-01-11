@@ -1,0 +1,15 @@
+{
+  "match_id": "1767023653_4337",
+  "player1": "Rage_Quitter_0",
+  "player2": "Tournament_Ace",
+  "player1_char": "Leona",
+  "player2_char": "Whip",
+  "winner": "Tournament_Ace",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T16:54:13.439208",
+  "duration_seconds": 0,
+  "elo_change_p1": -11,
+  "elo_change_p2": 11
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767031603_1544",
+  "player1": "Stream_Monster",
+  "player2": "Rush_Down_King",
+  "player1_char": "Robert",
+  "player2_char": "Rugal",
+  "winner": "Rush_Down_King",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T19:06:43.407239",
+  "duration_seconds": 0,
+  "elo_change_p1": -15,
+  "elo_change_p2": 15
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1766992905_5672",
+  "player1": "Rage_Quitter_0",
+  "player2": "Tournament_Ace",
+  "player1_char": "Orochi",
+  "player2_char": "K'",
+  "winner": "Tournament_Ace",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T08:21:45.466945",
+  "duration_seconds": 0,
+  "elo_change_p1": -15,
+  "elo_change_p2": 15
+}

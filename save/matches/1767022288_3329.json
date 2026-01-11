@@ -1,0 +1,15 @@
+{
+  "match_id": "1767022288_3329",
+  "player1": "FGC_Veteran",
+  "player2": "Rage_Quitter_0",
+  "player1_char": "Ash",
+  "player2_char": "Kula",
+  "winner": "Rage_Quitter_0",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T16:31:28.089399",
+  "duration_seconds": 0,
+  "elo_change_p1": -16,
+  "elo_change_p2": 16
+}

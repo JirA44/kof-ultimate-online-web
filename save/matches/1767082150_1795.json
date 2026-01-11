@@ -1,0 +1,15 @@
+{
+  "match_id": "1767082150_1795",
+  "player1": "FatalFury_Pro",
+  "player2": "Grappler_God",
+  "player1_char": "Shermie",
+  "player2_char": "Yamazaki",
+  "winner": "Grappler_God",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T09:09:10.025315",
+  "duration_seconds": 0,
+  "elo_change_p1": -11,
+  "elo_change_p2": 11
+}

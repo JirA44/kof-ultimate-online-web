@@ -1,0 +1,15 @@
+{
+  "match_id": "1766999372_9107",
+  "player1": "Perfect_KO",
+  "player2": "NeoGeo_Master",
+  "player1_char": "Vanessa",
+  "player2_char": "Orochi",
+  "winner": "NeoGeo_Master",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T10:09:32.014252",
+  "duration_seconds": 0,
+  "elo_change_p1": -13,
+  "elo_change_p2": 13
+}

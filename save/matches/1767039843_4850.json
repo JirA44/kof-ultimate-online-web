@@ -1,0 +1,15 @@
+{
+  "match_id": "1767039843_4850",
+  "player1": "Salt_Shaker",
+  "player2": "Frame_Perfect",
+  "player1_char": "Maxima",
+  "player2_char": "Yashiro",
+  "winner": "Frame_Perfect",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T21:24:03.414711",
+  "duration_seconds": 0,
+  "elo_change_p1": -10,
+  "elo_change_p2": 10
+}

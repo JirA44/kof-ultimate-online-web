@@ -1,0 +1,15 @@
+{
+  "match_id": "1767014687_9108",
+  "player1": "Mix_Up_Master",
+  "player2": "Button_Masher_X",
+  "player1_char": "Ramon",
+  "player2_char": "Yashiro",
+  "winner": "Mix_Up_Master",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T14:24:47.172734",
+  "duration_seconds": 0,
+  "elo_change_p1": 19,
+  "elo_change_p2": -19
+}

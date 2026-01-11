@@ -1,0 +1,15 @@
+{
+  "match_id": "1767053049_4403",
+  "player1": "ShadowKing_X",
+  "player2": "Button_Masher_X",
+  "player1_char": "Athena",
+  "player2_char": "Shingo",
+  "winner": "Button_Masher_X",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T01:04:09.755999",
+  "duration_seconds": 0,
+  "elo_change_p1": -6,
+  "elo_change_p2": 6
+}

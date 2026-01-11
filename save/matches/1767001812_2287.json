@@ -1,0 +1,15 @@
+{
+  "match_id": "1767001812_2287",
+  "player1": "Pro_Player_One",
+  "player2": "Ranked_Slayer",
+  "player1_char": "Duo Lon",
+  "player2_char": "Benimaru",
+  "winner": "Ranked_Slayer",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T10:50:12.937531",
+  "duration_seconds": 0,
+  "elo_change_p1": -16,
+  "elo_change_p2": 16
+}

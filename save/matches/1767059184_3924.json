@@ -1,0 +1,15 @@
+{
+  "match_id": "1767059184_3924",
+  "player1": "FatalFury_Pro",
+  "player2": "SNK_Champion",
+  "player1_char": "Yamazaki",
+  "player2_char": "Vice",
+  "winner": "SNK_Champion",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T02:46:24.731568",
+  "duration_seconds": 0,
+  "elo_change_p1": -11,
+  "elo_change_p2": 11
+}

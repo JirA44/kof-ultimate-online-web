@@ -1,0 +1,15 @@
+{
+  "match_id": "1767035546_1908",
+  "player1": "EVO_Ready",
+  "player2": "Casual_Fighter",
+  "player1_char": "Kula",
+  "player2_char": "Chris",
+  "winner": "Casual_Fighter",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T20:12:26.362241",
+  "duration_seconds": 0,
+  "elo_change_p1": -12,
+  "elo_change_p2": 12
+}

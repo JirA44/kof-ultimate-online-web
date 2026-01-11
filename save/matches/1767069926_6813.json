@@ -1,0 +1,15 @@
+{
+  "match_id": "1767069926_6813",
+  "player1": "Rage_Quitter_0",
+  "player2": "GG_EZ_Player",
+  "player1_char": "Vanessa",
+  "player2_char": "Shermie",
+  "winner": "GG_EZ_Player",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T05:45:26.268447",
+  "duration_seconds": 0,
+  "elo_change_p1": -15,
+  "elo_change_p2": 15
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767033385_6322",
+  "player1": "Grappler_God",
+  "player2": "Tournament_Ace",
+  "player1_char": "Ramon",
+  "player2_char": "Duo Lon",
+  "winner": "Tournament_Ace",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T19:36:25.478603",
+  "duration_seconds": 0,
+  "elo_change_p1": -16,
+  "elo_change_p2": 16
+}

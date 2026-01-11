@@ -1,0 +1,15 @@
+{
+  "match_id": "1767088522_4668",
+  "player1": "Frame_Perfect",
+  "player2": "Tournament_Ace",
+  "player1_char": "Iori",
+  "player2_char": "Iori",
+  "winner": "Tournament_Ace",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T10:55:22.387361",
+  "duration_seconds": 0,
+  "elo_change_p1": -12,
+  "elo_change_p2": 12
+}

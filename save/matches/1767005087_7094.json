@@ -1,0 +1,15 @@
+{
+  "match_id": "1767005087_7094",
+  "player1": "Combo_Breaker",
+  "player2": "Pro_Player_One",
+  "player1_char": "Robert",
+  "player2_char": "Athena",
+  "winner": "Pro_Player_One",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T11:44:47.316263",
+  "duration_seconds": 0,
+  "elo_change_p1": -12,
+  "elo_change_p2": 12
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767099824_1285",
+  "player1": "KOF_Legend",
+  "player2": "FGC_Veteran",
+  "player1_char": "Angel",
+  "player2_char": "Blue Mary",
+  "winner": "FGC_Veteran",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T14:03:44.071382",
+  "duration_seconds": 0,
+  "elo_change_p1": -4,
+  "elo_change_p2": 4
+}

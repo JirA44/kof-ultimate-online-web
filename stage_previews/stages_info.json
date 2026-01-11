@@ -1,0 +1,269 @@
+[
+  {
+    "name": "abyss rugal palace",
+    "def_file": "Abyss-Rugal-Palace.def",
+    "sff_file": "abyss-rugal-palace.sff",
+    "bgm": null,
+    "author": "myjs",
+    "size_mb": 9.297788619995117,
+    "format": "SFFv1"
+  },
+  {
+    "name": "stage: anime blu",
+    "def_file": "Anime Blu.def",
+    "sff_file": "anime blu.sff",
+    "bgm": null,
+    "author": "drolldiamond",
+    "size_mb": 0.5963249206542969,
+    "format": "SFFv1"
+  },
+  {
+    "name": "anubis chamber",
+    "def_file": "Anubis.def",
+    "sff_file": "anubis.sff",
+    "bgm": null,
+    "author": "animugenz",
+    "size_mb": 2.368968963623047,
+    "format": "SFFv1"
+  },
+  {
+    "name": "basque palace stage",
+    "def_file": "Basque Palace.def",
+    "sff_file": "basque palace.sff",
+    "bgm": "sound/  ;wav,ogg,mp3 etc.",
+    "author": "drolldiamond",
+    "size_mb": 2.57694149017334,
+    "format": "SFFv1"
+  },
+  {
+    "name": "br son drotime",
+    "def_file": "BLACK SON DROTIME.def",
+    "sff_file": "black son drotime.sff",
+    "bgm": null,
+    "author": "drolldiamond",
+    "size_mb": 0.6827888488769531,
+    "format": "SFFv1"
+  },
+  {
+    "name": "black wall s.",
+    "def_file": "Black wall.def",
+    "sff_file": "black wall.sff",
+    "bgm": null,
+    "author": "drolldiamond",
+    "size_mb": 1.7852163314819336,
+    "format": "SFFv1"
+  },
+  {
+    "name": "clones lab destroyed",
+    "def_file": "clones lab destroyed.def",
+    "sff_file": "clones lab destroyed.sff",
+    "bgm": "sound/clones lab destroyed.mp3",
+    "author": null,
+    "size_mb": 1.058760643005371,
+    "format": "SFFv1"
+  },
+  {
+    "name": "dark said rugal stage",
+    "def_file": "DARK SAID RUGAL S .def",
+    "sff_file": "dark said rugal s .sff",
+    "bgm": "sound/dark side rugal .mp3     ;wav,ogg,mp3 etc. :v",
+    "author": "drolldiamond",
+    "size_mb": 0.6216592788696289,
+    "format": "SFFv1"
+  },
+  {
+    "name": "darkness",
+    "def_file": "Darkness.def",
+    "sff_file": "darkness.sff",
+    "bgm": "sound/darkness.ogg",
+    "author": "nightmare kurumi",
+    "size_mb": 3.4931421279907227,
+    "format": "SFFv1"
+  },
+  {
+    "name": "droblood r 2.0",
+    "def_file": "DROBLOOD R 2.0.def",
+    "sff_file": "droblood r 2.0.sff",
+    "bgm": "sound/droblood update.mp3",
+    "author": "drolldiamond",
+    "size_mb": 2.125185966491699,
+    "format": "SFFv1"
+  },
+  {
+    "name": "exagon force",
+    "def_file": "Exagon Force.def",
+    "sff_file": "exagon force.sff",
+    "bgm": "sound/exagon force.mp3 ;wav,ogg,mp3 etc. :v",
+    "author": "drolldiamond",
+    "size_mb": 0.028596878051757812,
+    "format": "SFFv1"
+  },
+  {
+    "name": "far from here",
+    "def_file": "Far from here.def",
+    "sff_file": "far from here.sff",
+    "bgm": null,
+    "author": "overflow, lexie",
+    "size_mb": 5.201448440551758,
+    "format": "SFFv1"
+  },
+  {
+    "name": "[stage] forest infernal fire",
+    "def_file": "forest infernal fire.def",
+    "sff_file": "forest infernal fire.sff",
+    "bgm": null,
+    "author": "drolldiamond",
+    "size_mb": 0.8959379196166992,
+    "format": "SFFv1"
+  },
+  {
+    "name": "[stage] galaxy bg",
+    "def_file": "Galaxy BG.def",
+    "sff_file": "galaxy bg.sff",
+    "bgm": null,
+    "author": "drolldiamond",
+    "size_mb": 0.3906869888305664,
+    "format": "SFFv1"
+  },
+  {
+    "name": "kyouki stage",
+    "def_file": "light kyouki.def",
+    "sff_file": "light kyouki.sff",
+    "bgm": "sound/201801220912072.mp3",
+    "author": "arturo de leon",
+    "size_mb": 11.46838665008545,
+    "format": "SFFv1"
+  },
+  {
+    "name": "moon of dark wall s.",
+    "def_file": "Moon of dark wall.def",
+    "sff_file": "moon of dark wall.sff",
+    "bgm": null,
+    "author": "drolldiamond",
+    "size_mb": 1.0007495880126953,
+    "format": "SFFv1"
+  },
+  {
+    "name": "[stage] moon recidence",
+    "def_file": "Moon recidence.def",
+    "sff_file": "moon recidence.sff",
+    "bgm": null,
+    "author": "drolldiamond",
+    "size_mb": 0.8697834014892578,
+    "format": "SFFv1"
+  },
+  {
+    "name": "o.db drorange black",
+    "def_file": "O.DB DRORANGE BLACK.def",
+    "sff_file": "o.db drorange black.sff",
+    "bgm": "sound/new stage orange.mp3",
+    "author": "drolldiamond",
+    "size_mb": 1.380885124206543,
+    "format": "SFFv1"
+  },
+  {
+    "name": "palece mistery r stage",
+    "def_file": "Palece Mistery R.def",
+    "sff_file": "palece mistery r.sff",
+    "bgm": null,
+    "author": "drolldiamond",
+    "size_mb": 0.1942901611328125,
+    "format": "SFFv1"
+  },
+  {
+    "name": "red",
+    "def_file": "RED.def",
+    "sff_file": "red.sff",
+    "bgm": "sound/vonikk - kobra.mp3",
+    "author": "nightmare kurumi tokisaki",
+    "size_mb": 4.136554718017578,
+    "format": "SFFv1"
+  },
+  {
+    "name": "red_cliff",
+    "def_file": "Red_Cliff.def",
+    "sff_file": "red_cliff.sff",
+    "bgm": "sound/tate no yuusha no nariagari op2.mp3",
+    "author": "alice",
+    "size_mb": 9.622272491455078,
+    "format": "SFFv1"
+  },
+  {
+    "name": "space_binary",
+    "def_file": "space_binary.def",
+    "sff_file": "abyss-rugal-palace.sff",
+    "bgm": "sound/space_ambient.ogg",
+    "author": "kof ultimate - space pack"
+  },
+  {
+    "name": "space_deep",
+    "def_file": "space_deep.def",
+    "sff_file": "abyss-rugal-palace.sff",
+    "bgm": "sound/space_ambient.ogg",
+    "author": "kof ultimate - space pack"
+  },
+  {
+    "name": "space_galaxy",
+    "def_file": "space_galaxy.def",
+    "sff_file": "abyss-rugal-palace.sff",
+    "bgm": "sound/space_ambient.ogg",
+    "author": "kof ultimate - space pack"
+  },
+  {
+    "name": "space_nebula_purple",
+    "def_file": "space_nebula_purple.def",
+    "sff_file": "abyss-rugal-palace.sff",
+    "bgm": "sound/space_ambient.ogg",
+    "author": "kof ultimate - space pack"
+  },
+  {
+    "name": "space_planet",
+    "def_file": "space_planet.def",
+    "sff_file": "abyss-rugal-palace.sff",
+    "bgm": "sound/space_ambient.ogg",
+    "author": "kof ultimate - space pack"
+  },
+  {
+    "name": "space_void",
+    "def_file": "space_void.def",
+    "sff_file": "abyss-rugal-palace.sff",
+    "bgm": "",
+    "author": "kof ultimate - space pack"
+  },
+  {
+    "name": "the will of hades stage",
+    "def_file": "The Will Of Hades S .def",
+    "sff_file": "the will of hades s .sff",
+    "bgm": "sound/the will of heades .mp3     ;wav,ogg,mp3 etc. :v",
+    "author": "drolldiamond",
+    "size_mb": 2.4123449325561523,
+    "format": "SFFv1"
+  },
+  {
+    "name": "time incognita",
+    "def_file": "TIME INGCODNITA.def",
+    "sff_file": "time ingcodnita.sff",
+    "bgm": "sound/drotime.mp3",
+    "author": "drolldiamond",
+    "size_mb": 2.326104164123535,
+    "format": "SFFv1"
+  },
+  {
+    "name": "wall of paintings s.",
+    "def_file": "Wall of paintings.def",
+    "sff_file": "wall of paintings.sff",
+    "bgm": null,
+    "author": "drolldiamond",
+    "size_mb": 1.1304559707641602,
+    "format": "SFFv1"
+  },
+  {
+    "name": "xx-hell-dark-xx",
+    "def_file": "xX-Hell-Dark-Xx.def",
+    "sff_file": "xx-hell-dark-xx.sff",
+    "bgm": null,
+    "author": "gellinator7u7",
+    "size_mb": 1.8559894561767578,
+    "format": "SFFv1"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767036585_2187",
+  "player1": "KOF_Legend",
+  "player2": "Salt_Shaker",
+  "player1_char": "Ralf",
+  "player2_char": "K'",
+  "winner": "Salt_Shaker",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T20:29:45.959855",
+  "duration_seconds": 0,
+  "elo_change_p1": -6,
+  "elo_change_p2": 6
+}

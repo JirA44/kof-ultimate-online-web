@@ -1,0 +1,8 @@
+[
+    {"player_id": "user_hugo123", "playerId": "user_hugo123", "username": "Hugo_Pro", "mmr": 1850, "elo": 1850, "rank": "Platine", "status": "ready", "isReal": true},
+    {"player_id": "user_jira44", "playerId": "user_jira44", "username": "JirA44", "mmr": 1720, "elo": 1720, "rank": "Or", "status": "fighting", "isReal": true},
+    {"player_id": "bot_easy01", "playerId": "bot_easy01", "username": "Bot_Easy", "mmr": 1000, "elo": 1000, "rank": "Fer", "status": "ready", "isReal": false},
+    {"player_id": "sim_training", "playerId": "sim_training", "username": "TrainingBot", "mmr": 1200, "elo": 1200, "rank": "Bronze", "status": "ready", "isReal": false},
+    {"player_id": "user_master", "playerId": "user_master", "username": "KOF_Master", "mmr": 2100, "elo": 2100, "rank": "Diamant", "status": "away", "isReal": true},
+    {"player_id": "ai_boss", "playerId": "ai_boss", "username": "Boss_AI", "mmr": 1500, "elo": 1500, "rank": "Argent", "status": "ready", "isReal": false}
+]

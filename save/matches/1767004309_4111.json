@@ -1,0 +1,15 @@
+{
+  "match_id": "1767004309_4111",
+  "player1": "Perfect_KO",
+  "player2": "Ranked_Slayer",
+  "player1_char": "Kula",
+  "player2_char": "Terry",
+  "winner": "Ranked_Slayer",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T11:31:49.618665",
+  "duration_seconds": 0,
+  "elo_change_p1": -6,
+  "elo_change_p2": 6
+}

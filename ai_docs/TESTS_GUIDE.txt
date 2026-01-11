@@ -1,0 +1,213 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║              AI DOCUMENTATION - GUIDE DES TESTS                              ║
+║                     KOF Ultimate Online                                      ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                      TESTS PRINCIPAUX                                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════
+1. AUTO_TEST_SYSTEM.PY - Test principal du système
+═══════════════════════════════════════════════════════════════════════════════
+
+COMMANDE: python auto_test_system.py
+DURÉE: ~5 secondes
+RÉSULTAT ATTENDU: 90.5% EXCELLENT
+
+CE QU'IL TESTE:
+  ✓ Syntaxe system.def (73 sections)
+  ✓ Configuration mugen.cfg (résolution, affichage)
+  ✓ Intégrité assets (system.sff 16MB, system.snd, fight.sff/snd, fightfx.sff)
+  ✓ Polices (9 fichiers .def)
+  ✓ Sons (5 fichiers audio)
+  ✓ Personnages (21 dans select.def)
+  ✓ Stages (31 fichiers .def, 10 vérifiés)
+  ✓ Configuration multijoueur
+  ✓ Syntaxe scripts Python
+
+SORTIE:
+  [CYAN]▶ Test de configuration système[/CYAN]
+  [GREEN]✓ Fichier lisible: 1331 lignes[/GREEN]
+  [GREEN]✓ Trouvé 73 sections[/GREEN]
+  ...
+  [CYAN]RAPPORT FINAL[/CYAN]
+  ✓ Tests réussis: 19
+  ⚠ Avertissements: 2
+  Score: 90.5%
+
+═══════════════════════════════════════════════════════════════════════════════
+2. TEST_CHARS_STABILITY.PY - Stabilité des personnages
+═══════════════════════════════════════════════════════════════════════════════
+
+COMMANDE: python test_chars_stability.py
+DURÉE: ~30 secondes
+RÉSULTAT ATTENDU: 172/190 personnages stables
+
+CE QU'IL TESTE:
+  - Vérifie que chaque personnage a un fichier .def
+  - Vérifie la taille des sprites (.sff) - MAX 100MB recommandé
+  - Génère select_tested.def avec les 50 meilleurs personnages
+
+SORTIE:
+  [1/190] ✅ 03-A-Kyo LV2
+  [2/190] ✅ _ArchiMurderer
+  ...
+  [12/190] ❌ Akiha Yagami DK (Sprite trop gros: 104.3MB)
+  ...
+  RÉSULTATS: 172/190 personnages stables
+  ✅ Créé: data/select_tested.def (50 personnages)
+
+PERSONNAGES PROBLÉMATIQUES (>100MB):
+  - Akiha Yagami DK: 104.3MB
+  - Arctic Emperor: 125.2MB
+  - baiyi: 131.5MB
+  - BW-Meiling: 101.0MB
+  - Dragondomainlords: 133.1MB
+  (et 12 autres)
+
+═══════════════════════════════════════════════════════════════════════════════
+3. TESTS SERVEUR MULTIJOUEUR (online_backend/)
+═══════════════════════════════════════════════════════════════════════════════
+
+PRÉREQUIS: Serveur doit tourner
+  cd online_backend && node matchmaking_server.js
+
+───────────────────────────────────────────────────────────────────────────────
+3.1 TEST_CONNECTION.JS - Connexion basique
+───────────────────────────────────────────────────────────────────────────────
+
+COMMANDE: node test_connection.js
+DURÉE: ~5 secondes
+
+TESTE:
+  ✓ Connexion WebSocket établie
+  ✓ Enregistrement du joueur
+  ✓ Rejoindre file matchmaking
+  ✓ Quitter file
+  ✓ Créer salle
+
+───────────────────────────────────────────────────────────────────────────────
+3.2 TEST_MATCH.JS - Matchmaking 2 joueurs
+───────────────────────────────────────────────────────────────────────────────
+
+COMMANDE: node test_match.js
+DURÉE: ~10 secondes
+
+TESTE:
+  ✓ 2 joueurs se connectent
+  ✓ Les 2 cherchent un match
+  ✓ Match trouvé
+  ✓ Infos adversaire reçues
+
+───────────────────────────────────────────────────────────────────────────────
+3.3 FULL_TEST.JS - Simulation 8 joueurs
+───────────────────────────────────────────────────────────────────────────────
+
+COMMANDE: node full_test.js
+DURÉE: ~60 secondes
+
+TESTE:
+  ✓ 8 connexions simultanées
+  ✓ 8 enregistrements
+  ✓ Matchmaking pour tous
+  ✓ 4 matchs créés (8/2)
+
+───────────────────────────────────────────────────────────────────────────────
+3.4 STRESS_TEST.JS - Charge 20 joueurs
+───────────────────────────────────────────────────────────────────────────────
+
+COMMANDE: node stress_test.js
+DURÉE: ~90 secondes
+
+TESTE:
+  ✓ 20 connexions
+  ✓ Matchmaking sous charge
+  ✓ 18+ matchs créés
+  ✓ ELO mis à jour
+  ✓ Pas de crash
+
+───────────────────────────────────────────────────────────────────────────────
+3.5 AUTO_TEST.JS - Test automatique
+───────────────────────────────────────────────────────────────────────────────
+
+COMMANDE: node auto_test.js
+DURÉE: ~30 secondes
+
+TESTE:
+  ✓ API Server en ligne
+  ✓ 6 joueurs simulés
+  ✓ Matchmaking fonctionnel
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                      TESTS VISUELS/INTERACTIFS                                │
+│                  (Nécessitent pyautogui/pywin32)                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Ces tests nécessitent une interface graphique et des dépendances:
+  pip install pyautogui pywin32
+
+═══════════════════════════════════════════════════════════════════════════════
+simple_game_tester.py
+═══════════════════════════════════════════════════════════════════════════════
+FONCTION: Lance le jeu 30 secondes, vérifie visuellement le menu
+NÉCESSITE: Interaction utilisateur (appuyer Entrée)
+
+═══════════════════════════════════════════════════════════════════════════════
+multiplayer_test_system.py
+═══════════════════════════════════════════════════════════════════════════════
+FONCTION: Menu interactif pour tester différents scénarios multi
+OPTIONS:
+  1. Test Séquentiel (3 instances)
+  2. Test de Stress
+  3. Test de Compatibilité
+  4. Test Complet
+
+═══════════════════════════════════════════════════════════════════════════════
+ia_test_all_chars.py
+═══════════════════════════════════════════════════════════════════════════════
+FONCTION: Lance des matchs IA vs IA avec chaque personnage
+NÉCESSITE: pyautogui
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                      COMMANDES RAPIDES                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+# Test complet système (sans serveur)
+python auto_test_system.py
+
+# Test personnages
+python test_chars_stability.py
+
+# Démarrer serveur + tests online
+cd online_backend
+node matchmaking_server.js &
+node test_connection.js
+node test_match.js
+node stress_test.js
+
+# Tout tester
+python auto_test_system.py && python test_chars_stability.py && \
+cd online_backend && node matchmaking_server.js &
+sleep 3 && node test_connection.js && node test_match.js
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                      DÉPANNAGE                                                │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+ERREUR: "No module named 'win32gui'"
+→ pip install pywin32
+
+ERREUR: "No module named 'pyautogui'"
+→ pip install pyautogui
+
+ERREUR: "API Server offline"
+→ cd online_backend && node matchmaking_server.js
+
+ERREUR: Tests échouent sans raison
+→ Vérifier que le jeu n'est pas en cours d'exécution
+→ Fermer toutes les instances Ikemen
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                         FIN DU GUIDE                                         ║
+╚══════════════════════════════════════════════════════════════════════════════╝

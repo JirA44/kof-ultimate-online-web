@@ -1,0 +1,222 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║              AI DOCUMENTATION - KOF ULTIMATE ONLINE BACKEND                  ║
+║                         Serveur Multijoueur                                  ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                      DÉMARRAGE RAPIDE                                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+# Démarrer le serveur matchmaking
+cd "D:\KOF Ultimate Online\online_backend"
+node matchmaking_server.js
+
+# Le serveur tourne sur:
+- WebSocket: ws://localhost:3101
+- Health Check: http://localhost:3101/health
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                      FICHIERS DU BACKEND                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+matchmaking_server.js (24KB) ★ FICHIER PRINCIPAL
+─────────────────────────────
+FONCTION: Serveur WebSocket pour matchmaking temps réel
+PORT: 3101
+
+STRUCTURES DE DONNÉES:
+- connectedPlayers: Map<playerId, {ws, info}>     // Joueurs connectés
+- matchmakingQueue: [{playerId, elo, mode, ts}]   // File d'attente
+- activeMatches: Map<matchId, {p1, p2, status}>   // Matchs en cours
+- customRooms: Map<roomId, {host, players, cfg}>  // Salles custom
+
+COMMANDES CLIENT → SERVEUR:
+┌────────────────────┬─────────────────────────────────────────────────────┐
+│ COMMANDE           │ PAYLOAD                                             │
+├────────────────────┼─────────────────────────────────────────────────────┤
+│ register           │ { playerId, username }                              │
+│ find_match         │ { mode: "quick" | "ranked" }                        │
+│ leave_queue        │ { }                                                 │
+│ create_room        │ { name, password?, maxPlayers?, mode? }             │
+│ join_room          │ { roomId, password? }                               │
+│ leave_room         │ { roomId }                                          │
+│ chat               │ { roomId, message }                                 │
+│ game_result        │ { matchId, winner, loser }                          │
+│ challenge          │ { targetPlayerId }                                  │
+│ accept_challenge   │ { challengeId }                                     │
+│ decline_challenge  │ { challengeId }                                     │
+└────────────────────┴─────────────────────────────────────────────────────┘
+
+RÉPONSES SERVEUR → CLIENT:
+┌────────────────────┬─────────────────────────────────────────────────────┐
+│ ÉVÉNEMENT          │ PAYLOAD                                             │
+├────────────────────┼─────────────────────────────────────────────────────┤
+│ registered         │ { playerId, message }                               │
+│ searching          │ { message, queuePosition }                          │
+│ match_found        │ { opponent, elo, matchId }                          │
+│ left_queue         │ { message }                                         │
+│ room_created       │ { roomId, room }                                    │
+│ room_joined        │ { room }                                            │
+│ player_joined      │ { playerId, room }                                  │
+│ game_start         │ { matchId, opponent }                               │
+│ elo_update         │ { newElo, change }                                  │
+│ challenge_received │ { challengeId, from, elo }                          │
+│ player_online      │ { playerId }                                        │
+│ player_offline     │ { playerId }                                        │
+│ error              │ { message }                                         │
+└────────────────────┴─────────────────────────────────────────────────────┘
+
+SYSTÈME ELO:
+- ELO par défaut: 1500
+- K-factor: 32
+- Range matchmaking: ±200 ELO
+- Formule: K * (1 - expectedWin)
+  où expectedWin = 1 / (1 + 10^((loserElo - winnerElo) / 400))
+
+───────────────────────────────────────────────────────────────────────────────
+
+api_server.js (10KB)
+────────────────────
+FONCTION: API REST pour login, stats, leaderboard
+PORT: 3100 (par défaut)
+
+ENDPOINTS:
+- POST /login      → Authentification joueur
+- GET  /stats/:id  → Stats d'un joueur
+- GET  /leaderboard → Top joueurs
+- POST /register   → Créer compte
+
+───────────────────────────────────────────────────────────────────────────────
+
+battlenet_client.js (10KB)
+──────────────────────────
+FONCTION: Client WebSocket côté jeu
+UTILISÉ PAR: Le jeu Ikemen quand on sélectionne "MULTIJOUEUR EN LIGNE"
+
+MÉTHODES:
+- connect()        → Se connecter au serveur
+- findMatch(mode)  → Chercher un match
+- createRoom(cfg)  → Créer une salle
+- joinRoom(id)     → Rejoindre une salle
+- sendChat(msg)    → Envoyer message
+- reportResult()   → Signaler fin de match
+
+───────────────────────────────────────────────────────────────────────────────
+
+database.js (10KB)
+──────────────────
+FONCTION: Gestion des données joueurs (SQLite ou JSON)
+
+TABLES/COLLECTIONS:
+- players: { id, username, elo, wins, losses, created }
+- matches: { id, player1, player2, winner, eloChange, date }
+- rooms: { id, name, host, created }
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                      TESTS DISPONIBLES                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+test_connection.js
+──────────────────
+TESTE: Connexion WebSocket basique
+DURÉE: ~5 secondes
+VÉRIFIE:
+  ✓ Connexion établie
+  ✓ Enregistrement joueur
+  ✓ Rejoindre file d'attente
+  ✓ Quitter file d'attente
+  ✓ Créer salle
+
+test_match.js
+─────────────
+TESTE: Matchmaking avec 2 joueurs
+DURÉE: ~10 secondes
+VÉRIFIE:
+  ✓ 2 joueurs se connectent
+  ✓ Les 2 cherchent un match
+  ✓ Match trouvé pour les 2
+  ✓ Infos adversaire correctes
+
+full_test.js
+────────────
+TESTE: Simulation 8 joueurs simultanés
+DURÉE: ~60 secondes
+VÉRIFIE:
+  ✓ 8 connexions simultanées
+  ✓ 8 enregistrements
+  ✓ Matchmaking fonctionne
+  ✓ 4 matchs créés
+
+stress_test.js
+──────────────
+TESTE: Charge avec 20 joueurs
+DURÉE: ~90 secondes
+VÉRIFIE:
+  ✓ 20 connexions
+  ✓ Matchmaking sous charge
+  ✓ Pas de crashes
+  ✓ ELO mis à jour
+
+auto_test.js
+────────────
+TESTE: Test automatique complet
+DURÉE: ~30 secondes
+VÉRIFIE:
+  ✓ Serveur API en ligne
+  ✓ 6 joueurs simulés
+  ✓ Matchmaking fonctionnel
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                      COMMANDES DE TEST                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+# Test rapide connexion
+node test_connection.js
+
+# Test matchmaking 2 joueurs
+node test_match.js
+
+# Test complet 8 joueurs
+node full_test.js
+
+# Stress test 20 joueurs
+node stress_test.js
+
+# Tous les tests
+node test_connection.js && node test_match.js && node auto_test.js
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                      INTÉGRATION AVEC LE JEU                                  │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Dans le jeu (data/system.def), le menu "MULTIJOUEUR EN LIGNE" (option L)
+ouvre un sous-menu avec:
+
+- QUICK MATCH   → Appelle findMatch("quick")
+- LOBBIES       → Affiche liste des salles, permet create/join
+- RANKED 1v1    → Appelle findMatch("ranked")
+- RETOUR        → Retour menu principal
+
+Le client battlenet_client.js gère la communication entre le jeu
+et le serveur matchmaking_server.js.
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                      DÉPANNAGE                                                │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+ERREUR: "API Server offline"
+→ Démarrer: node matchmaking_server.js
+
+ERREUR: "Cannot find module 'ws'"
+→ Installer: npm install ws uuid
+
+ERREUR: Port 3101 déjà utilisé
+→ Tuer process: npx kill-port 3101
+
+ERREUR: "ECONNREFUSED"
+→ Vérifier que le serveur tourne
+→ Vérifier firewall
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                         FIN DE LA DOCUMENTATION                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝

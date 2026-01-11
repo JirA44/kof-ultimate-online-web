@@ -1,0 +1,15 @@
+{
+  "match_id": "1767037229_8985",
+  "player1": "Casual_Fighter",
+  "player2": "Clutch_King",
+  "player1_char": "Maxima",
+  "player2_char": "Yuri",
+  "winner": "Casual_Fighter",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T20:40:29.229453",
+  "duration_seconds": 0,
+  "elo_change_p1": 15,
+  "elo_change_p2": -15
+}

@@ -1,0 +1,24 @@
+{
+  "match_id": "1766979823_5723",
+  "player1": "FatalFury_Pro",
+  "player2": "SNK_Champion",
+  "player1_char": "Kensou",
+  "player2_char": "Rugal",
+  "winner": "SNK_Champion",
+  "rounds": [
+    {
+      "winner": "SNK_Champion",
+      "perfect": true
+    },
+    {
+      "winner": "SNK_Champion",
+      "perfect": false
+    }
+  ],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T04:43:43.341699",
+  "duration_seconds": 0,
+  "elo_change_p1": -18,
+  "elo_change_p2": 18
+}

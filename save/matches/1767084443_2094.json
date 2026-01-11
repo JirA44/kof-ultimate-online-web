@@ -1,0 +1,15 @@
+{
+  "match_id": "1767084443_2094",
+  "player1": "Clutch_King",
+  "player2": "Salt_Shaker",
+  "player1_char": "Blue Mary",
+  "player2_char": "Vanessa",
+  "winner": "Salt_Shaker",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T09:47:23.568415",
+  "duration_seconds": 0,
+  "elo_change_p1": -13,
+  "elo_change_p2": 13
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767098366_9769",
+  "player1": "Zoner_Elite",
+  "player2": "Button_Masher_X",
+  "player1_char": "Ralf",
+  "player2_char": "Shen",
+  "winner": "Zoner_Elite",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T13:39:26.676167",
+  "duration_seconds": 0,
+  "elo_change_p1": 24,
+  "elo_change_p2": -24
+}

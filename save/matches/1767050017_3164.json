@@ -1,0 +1,15 @@
+{
+  "match_id": "1767050017_3164",
+  "player1": "Comeback_Kid",
+  "player2": "Ranked_Slayer",
+  "player1_char": "Robert",
+  "player2_char": "Chris",
+  "winner": "Ranked_Slayer",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T00:13:37.335690",
+  "duration_seconds": 0,
+  "elo_change_p1": -4,
+  "elo_change_p2": 4
+}

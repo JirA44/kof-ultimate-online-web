@@ -1,0 +1,15 @@
+{
+  "match_id": "1767109871_5294",
+  "player1": "Comeback_Kid",
+  "player2": "FatalFury_Pro",
+  "player1_char": "Chris",
+  "player2_char": "Chizuru",
+  "winner": "FatalFury_Pro",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T16:51:11.693935",
+  "duration_seconds": 0,
+  "elo_change_p1": -9,
+  "elo_change_p2": 9
+}

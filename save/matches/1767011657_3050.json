@@ -1,0 +1,15 @@
+{
+  "match_id": "1767011657_3050",
+  "player1": "First_To_10",
+  "player2": "Frame_Perfect",
+  "player1_char": "Elisabeth",
+  "player2_char": "Orochi",
+  "winner": "First_To_10",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T13:34:17.393770",
+  "duration_seconds": 0,
+  "elo_change_p1": 22,
+  "elo_change_p2": -22
+}

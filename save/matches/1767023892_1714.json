@@ -1,0 +1,15 @@
+{
+  "match_id": "1767023892_1714",
+  "player1": "KOF_Legend",
+  "player2": "Clutch_King",
+  "player1_char": "Orochi",
+  "player2_char": "Yamazaki",
+  "winner": "Clutch_King",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T16:58:12.565002",
+  "duration_seconds": 0,
+  "elo_change_p1": -9,
+  "elo_change_p2": 9
+}

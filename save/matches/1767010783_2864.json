@@ -1,0 +1,15 @@
+{
+  "match_id": "1767010783_2864",
+  "player1": "Casual_Fighter",
+  "player2": "Button_Masher_X",
+  "player1_char": "Geese",
+  "player2_char": "Terry",
+  "winner": "Casual_Fighter",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T13:19:43.901358",
+  "duration_seconds": 0,
+  "elo_change_p1": 21,
+  "elo_change_p2": -21
+}

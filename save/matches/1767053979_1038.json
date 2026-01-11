@@ -1,0 +1,15 @@
+{
+  "match_id": "1767053979_1038",
+  "player1": "FatalFury_Pro",
+  "player2": "Frame_Perfect",
+  "player1_char": "Shingo",
+  "player2_char": "Yashiro",
+  "winner": "FatalFury_Pro",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-30T01:19:39.905994",
+  "duration_seconds": 0,
+  "elo_change_p1": 21,
+  "elo_change_p2": -21
+}

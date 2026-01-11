@@ -1,0 +1,15 @@
+{
+  "match_id": "1767118947_5054",
+  "player1": "Stream_Monster",
+  "player2": "GG_EZ_Player",
+  "player1_char": "Vice",
+  "player2_char": "Chris",
+  "winner": "Stream_Monster",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T19:22:27.999958",
+  "duration_seconds": 0,
+  "elo_change_p1": 18,
+  "elo_change_p2": -18
+}

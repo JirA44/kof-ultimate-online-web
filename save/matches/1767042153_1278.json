@@ -1,0 +1,15 @@
+{
+  "match_id": "1767042153_1278",
+  "player1": "Zoner_Elite",
+  "player2": "Pro_Player_One",
+  "player1_char": "K'",
+  "player2_char": "Athena",
+  "winner": "Zoner_Elite",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T22:02:33.099516",
+  "duration_seconds": 0,
+  "elo_change_p1": 23,
+  "elo_change_p2": -23
+}

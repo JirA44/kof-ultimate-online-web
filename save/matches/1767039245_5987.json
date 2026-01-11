@@ -1,0 +1,15 @@
+{
+  "match_id": "1767039245_5987",
+  "player1": "SNK_Champion",
+  "player2": "Perfect_KO",
+  "player1_char": "Angel",
+  "player2_char": "Whip",
+  "winner": "SNK_Champion",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T21:14:05.393450",
+  "duration_seconds": 0,
+  "elo_change_p1": 20,
+  "elo_change_p2": -20
+}

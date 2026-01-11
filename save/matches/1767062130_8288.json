@@ -1,0 +1,15 @@
+{
+  "match_id": "1767062130_8288",
+  "player1": "Comeback_Kid",
+  "player2": "Frame_Perfect",
+  "player1_char": "Athena",
+  "player2_char": "Chris",
+  "winner": "Frame_Perfect",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T03:35:30.373684",
+  "duration_seconds": 0,
+  "elo_change_p1": -8,
+  "elo_change_p2": 8
+}

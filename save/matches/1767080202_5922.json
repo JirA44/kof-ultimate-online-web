@@ -1,0 +1,15 @@
+{
+  "match_id": "1767080202_5922",
+  "player1": "Training_Mode",
+  "player2": "Perfect_KO",
+  "player1_char": "Mai",
+  "player2_char": "Orochi",
+  "winner": "Perfect_KO",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T08:36:42.911120",
+  "duration_seconds": 0,
+  "elo_change_p1": -5,
+  "elo_change_p2": 5
+}

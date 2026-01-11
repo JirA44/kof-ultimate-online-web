@@ -1,0 +1,15 @@
+{
+  "match_id": "1767019657_6548",
+  "player1": "EVO_Ready",
+  "player2": "FGC_Veteran",
+  "player1_char": "King",
+  "player2_char": "Kyo",
+  "winner": "FGC_Veteran",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T15:47:37.026563",
+  "duration_seconds": 0,
+  "elo_change_p1": -10,
+  "elo_change_p2": 10
+}

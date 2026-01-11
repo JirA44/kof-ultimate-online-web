@@ -1,0 +1,28 @@
+{
+  "match_id": "1766979823_5010",
+  "player1": "Stream_Monster",
+  "player2": "Casual_Fighter",
+  "player1_char": "Vice",
+  "player2_char": "Duo Lon",
+  "winner": "Stream_Monster",
+  "rounds": [
+    {
+      "winner": "Casual_Fighter",
+      "perfect": false
+    },
+    {
+      "winner": "Stream_Monster",
+      "perfect": false
+    },
+    {
+      "winner": "Stream_Monster",
+      "perfect": false
+    }
+  ],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T04:43:43.354137",
+  "duration_seconds": 0,
+  "elo_change_p1": 14,
+  "elo_change_p2": -14
+}

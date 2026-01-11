@@ -1,0 +1,15 @@
+{
+  "match_id": "1767026434_9859",
+  "player1": "Casual_Fighter",
+  "player2": "Money_Match",
+  "player1_char": "Shermie",
+  "player2_char": "Whip",
+  "winner": "Money_Match",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T17:40:34.449068",
+  "duration_seconds": 0,
+  "elo_change_p1": -10,
+  "elo_change_p2": 10
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767041758_3493",
+  "player1": "Training_Mode",
+  "player2": "FatalFury_Pro",
+  "player1_char": "Athena",
+  "player2_char": "Mature",
+  "winner": "FatalFury_Pro",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T21:55:58.714161",
+  "duration_seconds": 0,
+  "elo_change_p1": -7,
+  "elo_change_p2": 7
+}

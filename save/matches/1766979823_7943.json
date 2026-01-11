@@ -1,0 +1,28 @@
+{
+  "match_id": "1766979823_7943",
+  "player1": "Comeback_Kid",
+  "player2": "SNK_Champion",
+  "player1_char": "Goro",
+  "player2_char": "Goro",
+  "winner": "Comeback_Kid",
+  "rounds": [
+    {
+      "winner": "SNK_Champion",
+      "perfect": false
+    },
+    {
+      "winner": "Comeback_Kid",
+      "perfect": false
+    },
+    {
+      "winner": "Comeback_Kid",
+      "perfect": false
+    }
+  ],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T04:43:43.217162",
+  "duration_seconds": 0,
+  "elo_change_p1": 14,
+  "elo_change_p2": -14
+}

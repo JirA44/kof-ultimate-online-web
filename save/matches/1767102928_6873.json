@@ -1,0 +1,15 @@
+{
+  "match_id": "1767102928_6873",
+  "player1": "ShadowKing_X",
+  "player2": "SNK_Champion",
+  "player1_char": "Duo Lon",
+  "player2_char": "Maxima",
+  "winner": "SNK_Champion",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T14:55:28.741078",
+  "duration_seconds": 0,
+  "elo_change_p1": -15,
+  "elo_change_p2": 15
+}

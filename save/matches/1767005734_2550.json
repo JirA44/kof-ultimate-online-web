@@ -1,0 +1,15 @@
+{
+  "match_id": "1767005734_2550",
+  "player1": "FatalFury_Pro",
+  "player2": "FGC_Veteran",
+  "player1_char": "Athena",
+  "player2_char": "Chizuru",
+  "winner": "FGC_Veteran",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T11:55:34.314891",
+  "duration_seconds": 0,
+  "elo_change_p1": -15,
+  "elo_change_p2": 15
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767109900_6229",
+  "player1": "KOF_Legend",
+  "player2": "Zoner_Elite",
+  "player1_char": "K'",
+  "player2_char": "Athena",
+  "winner": "Zoner_Elite",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T16:51:40.844498",
+  "duration_seconds": 0,
+  "elo_change_p1": -1,
+  "elo_change_p2": 1
+}

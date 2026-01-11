@@ -1,0 +1,15 @@
+{
+  "match_id": "1767066666_4669",
+  "player1": "Online_Warrior",
+  "player2": "Tournament_Ace",
+  "player1_char": "Mature",
+  "player2_char": "Chizuru",
+  "winner": "Tournament_Ace",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T04:51:06.376951",
+  "duration_seconds": 0,
+  "elo_change_p1": -6,
+  "elo_change_p2": 6
+}

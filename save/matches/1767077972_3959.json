@@ -1,0 +1,15 @@
+{
+  "match_id": "1767077972_3959",
+  "player1": "Zoner_Elite",
+  "player2": "Button_Masher_X",
+  "player1_char": "Vanessa",
+  "player2_char": "Angel",
+  "winner": "Zoner_Elite",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-30T07:59:32.195614",
+  "duration_seconds": 0,
+  "elo_change_p1": 24,
+  "elo_change_p2": -24
+}

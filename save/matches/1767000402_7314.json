@@ -1,0 +1,15 @@
+{
+  "match_id": "1767000402_7314",
+  "player1": "Perfect_KO",
+  "player2": "Grappler_God",
+  "player1_char": "Angel",
+  "player2_char": "Yashiro",
+  "winner": "Grappler_God",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T10:26:42.486016",
+  "duration_seconds": 0,
+  "elo_change_p1": -14,
+  "elo_change_p2": 14
+}

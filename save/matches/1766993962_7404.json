@@ -1,0 +1,15 @@
+{
+  "match_id": "1766993962_7404",
+  "player1": "GG_EZ_Player",
+  "player2": "ShadowKing_X",
+  "player1_char": "Clark",
+  "player2_char": "Orochi",
+  "winner": "ShadowKing_X",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T08:39:22.661377",
+  "duration_seconds": 0,
+  "elo_change_p1": -13,
+  "elo_change_p2": 13
+}

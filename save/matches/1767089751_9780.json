@@ -1,0 +1,15 @@
+{
+  "match_id": "1767089751_9780",
+  "player1": "Training_Mode",
+  "player2": "KOF_Legend",
+  "player1_char": "Maxima",
+  "player2_char": "Athena",
+  "winner": "KOF_Legend",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T11:15:51.677519",
+  "duration_seconds": 0,
+  "elo_change_p1": -12,
+  "elo_change_p2": 12
+}

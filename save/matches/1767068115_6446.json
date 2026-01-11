@@ -1,0 +1,15 @@
+{
+  "match_id": "1767068115_6446",
+  "player1": "Casual_Fighter",
+  "player2": "DragonFist_99",
+  "player1_char": "Ash",
+  "player2_char": "Shingo",
+  "winner": "DragonFist_99",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T05:15:15.684329",
+  "duration_seconds": 0,
+  "elo_change_p1": -10,
+  "elo_change_p2": 10
+}

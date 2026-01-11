@@ -1,0 +1,15 @@
+{
+  "match_id": "1767072848_9928",
+  "player1": "Training_Mode",
+  "player2": "Ranked_Slayer",
+  "player1_char": "Leona",
+  "player2_char": "Iori",
+  "winner": "Ranked_Slayer",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T06:34:08.746742",
+  "duration_seconds": 0,
+  "elo_change_p1": -2,
+  "elo_change_p2": 2
+}

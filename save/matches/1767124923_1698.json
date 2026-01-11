@@ -1,0 +1,15 @@
+{
+  "match_id": "1767124923_1698",
+  "player1": "Salt_Shaker",
+  "player2": "FGC_Veteran",
+  "player1_char": "Shen",
+  "player2_char": "Kula",
+  "winner": "FGC_Veteran",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T21:02:03.854545",
+  "duration_seconds": 0,
+  "elo_change_p1": -8,
+  "elo_change_p2": 8
+}

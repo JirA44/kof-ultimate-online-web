@@ -1,0 +1,15 @@
+{
+  "match_id": "1767048069_8853",
+  "player1": "ShadowKing_X",
+  "player2": "Salt_Shaker",
+  "player1_char": "Clark",
+  "player2_char": "Whip",
+  "winner": "ShadowKing_X",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T23:41:09.445880",
+  "duration_seconds": 0,
+  "elo_change_p1": 18,
+  "elo_change_p2": -18
+}

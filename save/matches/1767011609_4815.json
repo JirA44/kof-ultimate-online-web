@@ -1,0 +1,15 @@
+{
+  "match_id": "1767011609_4815",
+  "player1": "NeoGeo_Master",
+  "player2": "Frame_Perfect",
+  "player1_char": "Billy",
+  "player2_char": "Leona",
+  "winner": "NeoGeo_Master",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T13:33:29.826863",
+  "duration_seconds": 0,
+  "elo_change_p1": 17,
+  "elo_change_p2": -17
+}

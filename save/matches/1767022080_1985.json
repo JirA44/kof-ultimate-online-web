@@ -1,0 +1,15 @@
+{
+  "match_id": "1767022080_1985",
+  "player1": "SNK_Champion",
+  "player2": "GG_EZ_Player",
+  "player1_char": "Mai",
+  "player2_char": "Maxima",
+  "winner": "GG_EZ_Player",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T16:28:00.233834",
+  "duration_seconds": 0,
+  "elo_change_p1": -15,
+  "elo_change_p2": 15
+}

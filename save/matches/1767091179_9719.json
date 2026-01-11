@@ -1,0 +1,15 @@
+{
+  "match_id": "1767091179_9719",
+  "player1": "Arcade_Warrior",
+  "player2": "Hype_Beast_99",
+  "player1_char": "Chris",
+  "player2_char": "Yashiro",
+  "winner": "Hype_Beast_99",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T11:39:39.126440",
+  "duration_seconds": 0,
+  "elo_change_p1": -5,
+  "elo_change_p2": 5
+}

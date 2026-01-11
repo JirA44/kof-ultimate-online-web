@@ -1,0 +1,15 @@
+{
+  "match_id": "1766990696_8846",
+  "player1": "Ranked_Slayer",
+  "player2": "Perfect_KO",
+  "player1_char": "Duo Lon",
+  "player2_char": "Shermie",
+  "winner": "Ranked_Slayer",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T07:44:56.525992",
+  "duration_seconds": 0,
+  "elo_change_p1": 22,
+  "elo_change_p2": -22
+}

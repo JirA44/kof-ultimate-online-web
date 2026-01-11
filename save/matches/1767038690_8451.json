@@ -1,0 +1,15 @@
+{
+  "match_id": "1767038690_8451",
+  "player1": "Casual_Fighter",
+  "player2": "Ranked_Slayer",
+  "player1_char": "Yamazaki",
+  "player2_char": "Clark",
+  "winner": "Ranked_Slayer",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T21:04:50.883331",
+  "duration_seconds": 0,
+  "elo_change_p1": -6,
+  "elo_change_p2": 6
+}

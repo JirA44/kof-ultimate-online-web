@@ -1,0 +1,15 @@
+{
+  "match_id": "1766999605_7180",
+  "player1": "DragonFist_99",
+  "player2": "ShadowKing_X",
+  "player1_char": "Kula",
+  "player2_char": "Billy",
+  "winner": "ShadowKing_X",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T10:13:25.038102",
+  "duration_seconds": 0,
+  "elo_change_p1": -11,
+  "elo_change_p2": 11
+}

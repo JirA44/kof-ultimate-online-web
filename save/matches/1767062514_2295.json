@@ -1,0 +1,15 @@
+{
+  "match_id": "1767062514_2295",
+  "player1": "Clutch_King",
+  "player2": "Frame_Perfect",
+  "player1_char": "Shen",
+  "player2_char": "Chris",
+  "winner": "Frame_Perfect",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T03:41:54.677459",
+  "duration_seconds": 0,
+  "elo_change_p1": -8,
+  "elo_change_p2": 8
+}

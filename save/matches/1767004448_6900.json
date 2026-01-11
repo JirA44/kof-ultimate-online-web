@@ -1,0 +1,15 @@
+{
+  "match_id": "1767004448_6900",
+  "player1": "Perfect_KO",
+  "player2": "Zoner_Elite",
+  "player1_char": "Goro",
+  "player2_char": "Vice",
+  "winner": "Zoner_Elite",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T11:34:08.762541",
+  "duration_seconds": 0,
+  "elo_change_p1": -9,
+  "elo_change_p2": 9
+}

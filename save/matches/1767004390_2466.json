@@ -1,0 +1,15 @@
+{
+  "match_id": "1767004390_2466",
+  "player1": "Combo_Breaker",
+  "player2": "ShadowKing_X",
+  "player1_char": "Angel",
+  "player2_char": "Geese",
+  "winner": "ShadowKing_X",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T11:33:10.292607",
+  "duration_seconds": 0,
+  "elo_change_p1": -12,
+  "elo_change_p2": 12
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767003798_4290",
+  "player1": "FatalFury_Pro",
+  "player2": "Rage_Quitter_0",
+  "player1_char": "Kensou",
+  "player2_char": "Blue Mary",
+  "winner": "Rage_Quitter_0",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T11:23:18.544795",
+  "duration_seconds": 0,
+  "elo_change_p1": -17,
+  "elo_change_p2": 17
+}

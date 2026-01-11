@@ -1,0 +1,15 @@
+{
+  "match_id": "1767100460_9430",
+  "player1": "FGC_Veteran",
+  "player2": "Combo_Breaker",
+  "player1_char": "Kensou",
+  "player2_char": "Shen",
+  "winner": "FGC_Veteran",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T14:14:20.119865",
+  "duration_seconds": 0,
+  "elo_change_p1": 19,
+  "elo_change_p2": -19
+}

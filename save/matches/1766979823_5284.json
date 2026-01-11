@@ -1,0 +1,24 @@
+{
+  "match_id": "1766979823_5284",
+  "player1": "Casual_Fighter",
+  "player2": "Zoner_Elite",
+  "player1_char": "Chris",
+  "player2_char": "Yuri",
+  "winner": "Casual_Fighter",
+  "rounds": [
+    {
+      "winner": "Casual_Fighter",
+      "perfect": false
+    },
+    {
+      "winner": "Casual_Fighter",
+      "perfect": false
+    }
+  ],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T04:43:43.508744",
+  "duration_seconds": 0,
+  "elo_change_p1": 18,
+  "elo_change_p2": -18
+}

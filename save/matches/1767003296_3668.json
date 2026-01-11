@@ -1,0 +1,15 @@
+{
+  "match_id": "1767003296_3668",
+  "player1": "SNK_Champion",
+  "player2": "Zoner_Elite",
+  "player1_char": "Leona",
+  "player2_char": "Iori",
+  "winner": "Zoner_Elite",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T11:14:56.188946",
+  "duration_seconds": 0,
+  "elo_change_p1": -15,
+  "elo_change_p2": 15
+}

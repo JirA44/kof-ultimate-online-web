@@ -1,0 +1,15 @@
+{
+  "match_id": "1767108011_8436",
+  "player1": "Perfect_KO",
+  "player2": "FatalFury_Pro",
+  "player1_char": "Goro",
+  "player2_char": "Kula",
+  "winner": "FatalFury_Pro",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T16:20:11.120081",
+  "duration_seconds": 0,
+  "elo_change_p1": -15,
+  "elo_change_p2": 15
+}

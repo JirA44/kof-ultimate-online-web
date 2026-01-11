@@ -1,0 +1,15 @@
+{
+  "match_id": "1767028554_8684",
+  "player1": "FatalFury_Pro",
+  "player2": "Frame_Perfect",
+  "player1_char": "Chizuru",
+  "player2_char": "Iori",
+  "winner": "Frame_Perfect",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T18:15:54.494941",
+  "duration_seconds": 0,
+  "elo_change_p1": -12,
+  "elo_change_p2": 12
+}

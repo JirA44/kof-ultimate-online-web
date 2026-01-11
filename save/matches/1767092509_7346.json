@@ -1,0 +1,15 @@
+{
+  "match_id": "1767092509_7346",
+  "player1": "Frame_Perfect",
+  "player2": "Combo_Breaker",
+  "player1_char": "Orochi",
+  "player2_char": "Goro",
+  "winner": "Frame_Perfect",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T12:01:49.018400",
+  "duration_seconds": 0,
+  "elo_change_p1": 20,
+  "elo_change_p2": -20
+}

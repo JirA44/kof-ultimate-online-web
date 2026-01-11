@@ -1,0 +1,15 @@
+{
+  "match_id": "1767107281_9350",
+  "player1": "Clutch_King",
+  "player2": "Tournament_Ace",
+  "player1_char": "Iori",
+  "player2_char": "Leona",
+  "winner": "Tournament_Ace",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T16:08:01.108575",
+  "duration_seconds": 0,
+  "elo_change_p1": -2,
+  "elo_change_p2": 2
+}

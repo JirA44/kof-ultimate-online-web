@@ -1,0 +1,15 @@
+{
+  "match_id": "1767114898_8415",
+  "player1": "Pro_Player_One",
+  "player2": "Grappler_God",
+  "player1_char": "Billy",
+  "player2_char": "Yamazaki",
+  "winner": "Pro_Player_One",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T18:14:58.133906",
+  "duration_seconds": 0,
+  "elo_change_p1": 23,
+  "elo_change_p2": -23
+}

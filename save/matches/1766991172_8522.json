@@ -1,0 +1,15 @@
+{
+  "match_id": "1766991172_8522",
+  "player1": "ShadowKing_X",
+  "player2": "Rush_Down_King",
+  "player1_char": "Vice",
+  "player2_char": "Shermie",
+  "winner": "ShadowKing_X",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T07:52:52.958542",
+  "duration_seconds": 0,
+  "elo_change_p1": 21,
+  "elo_change_p2": -21
+}

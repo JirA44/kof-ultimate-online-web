@@ -1,0 +1,15 @@
+{
+  "match_id": "1767120199_3998",
+  "player1": "KOF_Legend",
+  "player2": "ShadowKing_X",
+  "player1_char": "Ryo",
+  "player2_char": "Clark",
+  "winner": "ShadowKing_X",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T19:43:19.611543",
+  "duration_seconds": 0,
+  "elo_change_p1": -5,
+  "elo_change_p2": 5
+}

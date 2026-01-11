@@ -1,0 +1,15 @@
+{
+  "match_id": "1766989825_5514",
+  "player1": "Clutch_King",
+  "player2": "Comeback_Kid",
+  "player1_char": "Benimaru",
+  "player2_char": "Shingo",
+  "winner": "Comeback_Kid",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T07:30:25.849688",
+  "duration_seconds": 0,
+  "elo_change_p1": -14,
+  "elo_change_p2": 14
+}

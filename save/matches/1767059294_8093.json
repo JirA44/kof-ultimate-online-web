@@ -1,0 +1,15 @@
+{
+  "match_id": "1767059294_8093",
+  "player1": "Money_Match",
+  "player2": "Ranked_Slayer",
+  "player1_char": "Kyo",
+  "player2_char": "Mai",
+  "winner": "Money_Match",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-30T02:48:14.686642",
+  "duration_seconds": 0,
+  "elo_change_p1": 26,
+  "elo_change_p2": -26
+}

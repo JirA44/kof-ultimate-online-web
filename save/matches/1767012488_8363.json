@@ -1,0 +1,15 @@
+{
+  "match_id": "1767012488_8363",
+  "player1": "First_To_10",
+  "player2": "Comeback_Kid",
+  "player1_char": "Kula",
+  "player2_char": "Yuri",
+  "winner": "First_To_10",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T13:48:08.724937",
+  "duration_seconds": 0,
+  "elo_change_p1": 18,
+  "elo_change_p2": -18
+}

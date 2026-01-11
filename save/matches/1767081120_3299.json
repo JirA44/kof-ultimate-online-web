@@ -1,0 +1,15 @@
+{
+  "match_id": "1767081120_3299",
+  "player1": "Clutch_King",
+  "player2": "Money_Match",
+  "player1_char": "Vice",
+  "player2_char": "Vice",
+  "winner": "Money_Match",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T08:52:00.524966",
+  "duration_seconds": 0,
+  "elo_change_p1": -4,
+  "elo_change_p2": 4
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767093135_7317",
+  "player1": "Arcade_Warrior",
+  "player2": "Combo_Breaker",
+  "player1_char": "Chizuru",
+  "player2_char": "Billy",
+  "winner": "Combo_Breaker",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T12:12:15.732716",
+  "duration_seconds": 0,
+  "elo_change_p1": -5,
+  "elo_change_p2": 5
+}

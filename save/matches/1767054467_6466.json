@@ -1,0 +1,15 @@
+{
+  "match_id": "1767054467_6466",
+  "player1": "KOF_Legend",
+  "player2": "GG_EZ_Player",
+  "player1_char": "Ralf",
+  "player2_char": "Angel",
+  "winner": "GG_EZ_Player",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T01:27:47.078017",
+  "duration_seconds": 0,
+  "elo_change_p1": -4,
+  "elo_change_p2": 4
+}

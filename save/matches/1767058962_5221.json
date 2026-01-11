@@ -1,0 +1,15 @@
+{
+  "match_id": "1767058962_5221",
+  "player1": "KOF_Legend",
+  "player2": "Combo_Breaker",
+  "player1_char": "Blue Mary",
+  "player2_char": "Athena",
+  "winner": "Combo_Breaker",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T02:42:42.812158",
+  "duration_seconds": 0,
+  "elo_change_p1": -1,
+  "elo_change_p2": 1
+}

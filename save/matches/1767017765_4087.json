@@ -1,0 +1,15 @@
+{
+  "match_id": "1767017765_4087",
+  "player1": "Hype_Beast_99",
+  "player2": "Button_Masher_X",
+  "player1_char": "Yuri",
+  "player2_char": "Maxima",
+  "winner": "Button_Masher_X",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T15:16:05.637307",
+  "duration_seconds": 0,
+  "elo_change_p1": -15,
+  "elo_change_p2": 15
+}

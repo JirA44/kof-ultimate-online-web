@@ -1,0 +1,15 @@
+{
+  "match_id": "1767115517_7077",
+  "player1": "KOF_Legend",
+  "player2": "Perfect_KO",
+  "player1_char": "Kyo",
+  "player2_char": "Ash",
+  "winner": "Perfect_KO",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T18:25:17.332461",
+  "duration_seconds": 0,
+  "elo_change_p1": -9,
+  "elo_change_p2": 9
+}

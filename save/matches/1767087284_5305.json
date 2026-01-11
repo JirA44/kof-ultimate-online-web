@@ -1,0 +1,15 @@
+{
+  "match_id": "1767087284_5305",
+  "player1": "Perfect_KO",
+  "player2": "SNK_Champion",
+  "player1_char": "Shen",
+  "player2_char": "Orochi",
+  "winner": "SNK_Champion",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T10:34:44.208211",
+  "duration_seconds": 0,
+  "elo_change_p1": -14,
+  "elo_change_p2": 14
+}

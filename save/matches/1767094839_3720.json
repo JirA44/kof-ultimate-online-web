@@ -1,0 +1,15 @@
+{
+  "match_id": "1767094839_3720",
+  "player1": "Training_Mode",
+  "player2": "Stream_Monster",
+  "player1_char": "King",
+  "player2_char": "Orochi",
+  "winner": "Stream_Monster",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T12:40:39.566771",
+  "duration_seconds": 0,
+  "elo_change_p1": -2,
+  "elo_change_p2": 2
+}

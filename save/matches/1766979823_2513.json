@@ -1,0 +1,28 @@
+{
+  "match_id": "1766979823_2513",
+  "player1": "Arcade_Warrior",
+  "player2": "Hype_Beast_99",
+  "player1_char": "Shingo",
+  "player2_char": "Vice",
+  "winner": "Hype_Beast_99",
+  "rounds": [
+    {
+      "winner": "Hype_Beast_99",
+      "perfect": false
+    },
+    {
+      "winner": "Arcade_Warrior",
+      "perfect": false
+    },
+    {
+      "winner": "Hype_Beast_99",
+      "perfect": false
+    }
+  ],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T04:43:43.273208",
+  "duration_seconds": 0,
+  "elo_change_p1": -13,
+  "elo_change_p2": 13
+}

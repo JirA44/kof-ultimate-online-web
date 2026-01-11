@@ -1,0 +1,15 @@
+{
+  "match_id": "1767009648_9003",
+  "player1": "First_To_10",
+  "player2": "Casual_Fighter",
+  "player1_char": "Ash",
+  "player2_char": "Vice",
+  "winner": "First_To_10",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T13:00:48.419309",
+  "duration_seconds": 0,
+  "elo_change_p1": 21,
+  "elo_change_p2": -21
+}

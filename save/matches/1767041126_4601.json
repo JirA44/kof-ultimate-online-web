@@ -1,0 +1,15 @@
+{
+  "match_id": "1767041126_4601",
+  "player1": "Mix_Up_Master",
+  "player2": "GG_EZ_Player",
+  "player1_char": "Rugal",
+  "player2_char": "Rugal",
+  "winner": "Mix_Up_Master",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T21:45:26.551908",
+  "duration_seconds": 0,
+  "elo_change_p1": 18,
+  "elo_change_p2": -18
+}

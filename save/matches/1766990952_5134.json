@@ -1,0 +1,15 @@
+{
+  "match_id": "1766990952_5134",
+  "player1": "FGC_Veteran",
+  "player2": "Grappler_God",
+  "player1_char": "Chizuru",
+  "player2_char": "Vanessa",
+  "winner": "FGC_Veteran",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T07:49:12.006456",
+  "duration_seconds": 0,
+  "elo_change_p1": 18,
+  "elo_change_p2": -18
+}

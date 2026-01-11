@@ -1,0 +1,15 @@
+{
+  "match_id": "1766997505_6586",
+  "player1": "GG_EZ_Player",
+  "player2": "Frame_Perfect",
+  "player1_char": "Goro",
+  "player2_char": "K'",
+  "winner": "GG_EZ_Player",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T09:38:25.821209",
+  "duration_seconds": 0,
+  "elo_change_p1": 18,
+  "elo_change_p2": -18
+}

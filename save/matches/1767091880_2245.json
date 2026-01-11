@@ -1,0 +1,15 @@
+{
+  "match_id": "1767091880_2245",
+  "player1": "FatalFury_Pro",
+  "player2": "ShadowKing_X",
+  "player1_char": "Duo Lon",
+  "player2_char": "K'",
+  "winner": "ShadowKing_X",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T11:51:20.322023",
+  "duration_seconds": 0,
+  "elo_change_p1": -11,
+  "elo_change_p2": 11
+}

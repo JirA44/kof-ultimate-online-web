@@ -1,0 +1,15 @@
+{
+  "match_id": "1767051899_4142",
+  "player1": "First_To_10",
+  "player2": "Stream_Monster",
+  "player1_char": "Whip",
+  "player2_char": "Benimaru",
+  "winner": "Stream_Monster",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T00:44:59.045435",
+  "duration_seconds": 0,
+  "elo_change_p1": -12,
+  "elo_change_p2": 12
+}

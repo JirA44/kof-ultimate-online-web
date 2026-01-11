@@ -1,0 +1,15 @@
+{
+  "match_id": "1767001650_5955",
+  "player1": "FatalFury_Pro",
+  "player2": "Zoner_Elite",
+  "player1_char": "Clark",
+  "player2_char": "Vanessa",
+  "winner": "Zoner_Elite",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T10:47:30.485047",
+  "duration_seconds": 0,
+  "elo_change_p1": -15,
+  "elo_change_p2": 15
+}

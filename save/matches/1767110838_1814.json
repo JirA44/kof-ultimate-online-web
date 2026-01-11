@@ -1,0 +1,15 @@
+{
+  "match_id": "1767110838_1814",
+  "player1": "Comeback_Kid",
+  "player2": "First_To_10",
+  "player1_char": "Elisabeth",
+  "player2_char": "Rugal",
+  "winner": "First_To_10",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T17:07:18.439235",
+  "duration_seconds": 0,
+  "elo_change_p1": -8,
+  "elo_change_p2": 8
+}

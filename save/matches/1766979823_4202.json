@@ -1,0 +1,28 @@
+{
+  "match_id": "1766979823_4202",
+  "player1": "NeoGeo_Master",
+  "player2": "ShadowKing_X",
+  "player1_char": "Kensou",
+  "player2_char": "Vice",
+  "winner": "ShadowKing_X",
+  "rounds": [
+    {
+      "winner": "ShadowKing_X",
+      "perfect": false
+    },
+    {
+      "winner": "NeoGeo_Master",
+      "perfect": false
+    },
+    {
+      "winner": "ShadowKing_X",
+      "perfect": false
+    }
+  ],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T04:43:43.388252",
+  "duration_seconds": 0,
+  "elo_change_p1": -17,
+  "elo_change_p2": 17
+}

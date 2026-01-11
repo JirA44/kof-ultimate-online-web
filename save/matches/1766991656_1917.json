@@ -1,0 +1,15 @@
+{
+  "match_id": "1766991656_1917",
+  "player1": "Tournament_Ace",
+  "player2": "Money_Match",
+  "player1_char": "Yashiro",
+  "player2_char": "Kensou",
+  "winner": "Tournament_Ace",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T08:00:56.077414",
+  "duration_seconds": 0,
+  "elo_change_p1": 18,
+  "elo_change_p2": -18
+}

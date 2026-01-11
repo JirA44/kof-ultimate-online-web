@@ -1,0 +1,15 @@
+{
+  "match_id": "1767072199_1724",
+  "player1": "FatalFury_Pro",
+  "player2": "NeoGeo_Master",
+  "player1_char": "Ryo",
+  "player2_char": "Vice",
+  "winner": "NeoGeo_Master",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T06:23:19.542598",
+  "duration_seconds": 0,
+  "elo_change_p1": -2,
+  "elo_change_p2": 2
+}

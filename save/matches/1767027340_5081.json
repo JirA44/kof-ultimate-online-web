@@ -1,0 +1,15 @@
+{
+  "match_id": "1767027340_5081",
+  "player1": "SNK_Champion",
+  "player2": "Pro_Player_One",
+  "player1_char": "Goro",
+  "player2_char": "Maxima",
+  "winner": "Pro_Player_One",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T17:55:40.599597",
+  "duration_seconds": 0,
+  "elo_change_p1": -9,
+  "elo_change_p2": 9
+}

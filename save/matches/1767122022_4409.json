@@ -1,0 +1,15 @@
+{
+  "match_id": "1767122022_4409",
+  "player1": "First_To_10",
+  "player2": "Rush_Down_King",
+  "player1_char": "Chris",
+  "player2_char": "Kula",
+  "winner": "Rush_Down_King",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T20:13:42.941680",
+  "duration_seconds": 0,
+  "elo_change_p1": -8,
+  "elo_change_p2": 8
+}

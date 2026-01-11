@@ -1,0 +1,15 @@
+{
+  "match_id": "1767024849_6005",
+  "player1": "Arcade_Warrior",
+  "player2": "Perfect_KO",
+  "player1_char": "Maxima",
+  "player2_char": "Clark",
+  "winner": "Arcade_Warrior",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T17:14:09.009146",
+  "duration_seconds": 0,
+  "elo_change_p1": 16,
+  "elo_change_p2": -16
+}

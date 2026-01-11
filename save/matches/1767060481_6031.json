@@ -1,0 +1,15 @@
+{
+  "match_id": "1767060481_6031",
+  "player1": "Clutch_King",
+  "player2": "Zoner_Elite",
+  "player1_char": "Mai",
+  "player2_char": "Vice",
+  "winner": "Zoner_Elite",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T03:08:01.937689",
+  "duration_seconds": 0,
+  "elo_change_p1": -6,
+  "elo_change_p2": 6
+}

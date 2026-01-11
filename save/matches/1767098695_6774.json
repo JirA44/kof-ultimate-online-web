@@ -1,0 +1,15 @@
+{
+  "match_id": "1767098695_6774",
+  "player1": "Mix_Up_Master",
+  "player2": "Zoner_Elite",
+  "player1_char": "Duo Lon",
+  "player2_char": "King",
+  "winner": "Zoner_Elite",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T13:44:55.590678",
+  "duration_seconds": 0,
+  "elo_change_p1": -9,
+  "elo_change_p2": 9
+}

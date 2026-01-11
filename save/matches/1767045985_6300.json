@@ -1,0 +1,15 @@
+{
+  "match_id": "1767045985_6300",
+  "player1": "SNK_Champion",
+  "player2": "Zoner_Elite",
+  "player1_char": "Yuri",
+  "player2_char": "Goro",
+  "winner": "Zoner_Elite",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T23:06:25.301566",
+  "duration_seconds": 0,
+  "elo_change_p1": -7,
+  "elo_change_p2": 7
+}

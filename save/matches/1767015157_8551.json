@@ -1,0 +1,15 @@
+{
+  "match_id": "1767015157_8551",
+  "player1": "Perfect_KO",
+  "player2": "Stream_Monster",
+  "player1_char": "Yashiro",
+  "player2_char": "Vanessa",
+  "winner": "Stream_Monster",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T14:32:37.764716",
+  "duration_seconds": 0,
+  "elo_change_p1": -6,
+  "elo_change_p2": 6
+}

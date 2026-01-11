@@ -1,0 +1,15 @@
+{
+  "match_id": "1767102908_8851",
+  "player1": "Perfect_KO",
+  "player2": "Mix_Up_Master",
+  "player1_char": "Angel",
+  "player2_char": "Shermie",
+  "winner": "Perfect_KO",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-30T14:55:08.612551",
+  "duration_seconds": 0,
+  "elo_change_p1": 20,
+  "elo_change_p2": -20
+}

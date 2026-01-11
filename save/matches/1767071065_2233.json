@@ -1,0 +1,15 @@
+{
+  "match_id": "1767071065_2233",
+  "player1": "Training_Mode",
+  "player2": "EVO_Ready",
+  "player1_char": "King",
+  "player2_char": "Mature",
+  "winner": "EVO_Ready",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T06:04:25.904063",
+  "duration_seconds": 0,
+  "elo_change_p1": -8,
+  "elo_change_p2": 8
+}

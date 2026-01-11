@@ -1,0 +1,15 @@
+{
+  "match_id": "1767044342_4307",
+  "player1": "SNK_Champion",
+  "player2": "First_To_10",
+  "player1_char": "Orochi",
+  "player2_char": "Ash",
+  "winner": "SNK_Champion",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T22:39:02.933552",
+  "duration_seconds": 0,
+  "elo_change_p1": 22,
+  "elo_change_p2": -22
+}

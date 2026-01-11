@@ -1,0 +1,15 @@
+{
+  "match_id": "1767061200_6878",
+  "player1": "Training_Mode",
+  "player2": "Arcade_Warrior",
+  "player1_char": "Iori",
+  "player2_char": "Shingo",
+  "winner": "Training_Mode",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-30T03:20:00.967841",
+  "duration_seconds": 0,
+  "elo_change_p1": 27,
+  "elo_change_p2": -27
+}

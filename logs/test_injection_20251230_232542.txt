@@ -1,0 +1,9 @@
+TEST AVEC INJECTION D'INPUTS - KOF ULTIMATE ONLINE
+============================================================
+
+Date: 2025-12-30 23:25:42
+Durée: 33.1s
+Problèmes: 1
+
+PROBLÈMES DÉTECTÉS:
+1. Fenêtre jamais apparue (timeout 30s)

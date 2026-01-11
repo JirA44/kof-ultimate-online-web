@@ -1,0 +1,15 @@
+{
+  "match_id": "1767086519_1162",
+  "player1": "SNK_Champion",
+  "player2": "Stream_Monster",
+  "player1_char": "Ralf",
+  "player2_char": "Geese",
+  "winner": "Stream_Monster",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T10:21:59.986723",
+  "duration_seconds": 0,
+  "elo_change_p1": -9,
+  "elo_change_p2": 9
+}

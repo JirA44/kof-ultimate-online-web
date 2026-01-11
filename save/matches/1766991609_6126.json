@@ -1,0 +1,15 @@
+{
+  "match_id": "1766991609_6126",
+  "player1": "Ranked_Slayer",
+  "player2": "Zoner_Elite",
+  "player1_char": "Geese",
+  "player2_char": "Blue Mary",
+  "winner": "Zoner_Elite",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T08:00:09.470666",
+  "duration_seconds": 0,
+  "elo_change_p1": -14,
+  "elo_change_p2": 14
+}

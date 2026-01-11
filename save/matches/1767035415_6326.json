@@ -1,0 +1,15 @@
+{
+  "match_id": "1767035415_6326",
+  "player1": "SNK_Champion",
+  "player2": "EVO_Ready",
+  "player1_char": "Shermie",
+  "player2_char": "Terry",
+  "winner": "SNK_Champion",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-29T20:10:15.311892",
+  "duration_seconds": 0,
+  "elo_change_p1": 17,
+  "elo_change_p2": -17
+}

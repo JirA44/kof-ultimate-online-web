@@ -1,0 +1,15 @@
+{
+  "match_id": "1767063164_2685",
+  "player1": "GG_EZ_Player",
+  "player2": "Grappler_God",
+  "player1_char": "Ralf",
+  "player2_char": "Shingo",
+  "winner": "Grappler_God",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T03:52:44.096923",
+  "duration_seconds": 0,
+  "elo_change_p1": -13,
+  "elo_change_p2": 13
+}

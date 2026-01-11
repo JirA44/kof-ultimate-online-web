@@ -1,0 +1,15 @@
+{
+  "match_id": "1767111247_9156",
+  "player1": "Stream_Monster",
+  "player2": "Zoner_Elite",
+  "player1_char": "King",
+  "player2_char": "Whip",
+  "winner": "Zoner_Elite",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T17:14:07.255672",
+  "duration_seconds": 0,
+  "elo_change_p1": -14,
+  "elo_change_p2": 14
+}

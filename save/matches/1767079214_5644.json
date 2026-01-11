@@ -1,0 +1,15 @@
+{
+  "match_id": "1767079214_5644",
+  "player1": "KOF_Legend",
+  "player2": "Online_Warrior",
+  "player1_char": "Ralf",
+  "player2_char": "Ryo",
+  "winner": "Online_Warrior",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T08:20:14.898901",
+  "duration_seconds": 0,
+  "elo_change_p1": -10,
+  "elo_change_p2": 10
+}

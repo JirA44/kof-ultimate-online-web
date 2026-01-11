@@ -1,0 +1,113 @@
+{
+  "test_date": "2026-01-01T18:50:40.233873",
+  "tests": [
+    {
+      "test": "file_server_status.json",
+      "status": "pass",
+      "description": "Statut serveur pour le lobby"
+    },
+    {
+      "test": "file_online_players.json",
+      "status": "pass",
+      "description": "Liste des joueurs en ligne"
+    },
+    {
+      "test": "file_leaderboard.json",
+      "status": "pass",
+      "description": "Classement des joueurs"
+    },
+    {
+      "test": "update_server_status",
+      "status": "pass"
+    },
+    {
+      "test": "online_players_valid",
+      "status": "pass",
+      "player_count": 6
+    },
+    {
+      "test": "leaderboard_valid",
+      "status": "pass",
+      "ranking_count": 33
+    },
+    {
+      "test": "lua_live_lobby_screen.lua",
+      "status": "pass"
+    },
+    {
+      "test": "lua_leaderboard_screen.lua",
+      "status": "pass"
+    },
+    {
+      "test": "lua_profile_screen.lua",
+      "status": "pass"
+    },
+    {
+      "test": "lua_online_system.lua",
+      "status": "pass"
+    },
+    {
+      "test": "lua_menu.lua",
+      "status": "pass"
+    },
+    {
+      "test": "integration_live_lobby.draw",
+      "status": "pass"
+    },
+    {
+      "test": "integration_leaderboard_screen =",
+      "status": "pass"
+    },
+    {
+      "test": "integration_profile_screen = (lo",
+      "status": "pass"
+    },
+    {
+      "test": "integration_main.t_itemname['lob",
+      "status": "pass"
+    },
+    {
+      "test": "integration_action == \"training\"",
+      "status": "pass"
+    },
+    {
+      "test": "integration_action == \"versus\"",
+      "status": "pass"
+    },
+    {
+      "test": "menu_ranked",
+      "status": "pass",
+      "missing": []
+    },
+    {
+      "test": "menu_casual",
+      "status": "pass",
+      "missing": []
+    },
+    {
+      "test": "menu_players",
+      "status": "pass",
+      "missing": []
+    },
+    {
+      "test": "menu_ai_training",
+      "status": "pass",
+      "missing": []
+    },
+    {
+      "test": "menu_create",
+      "status": "pass",
+      "missing": []
+    },
+    {
+      "test": "menu_leaderboard",
+      "status": "pass",
+      "missing": []
+    },
+    {
+      "test": "menu_back",
+      "status": "pass",
+      "missing": []
+    }
+  ]
+}

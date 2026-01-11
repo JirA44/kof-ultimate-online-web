@@ -1,0 +1,15 @@
+{
+  "match_id": "1767042372_3055",
+  "player1": "Perfect_KO",
+  "player2": "Pro_Player_One",
+  "player1_char": "Geese",
+  "player2_char": "Kyo",
+  "winner": "Pro_Player_One",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T22:06:12.302829",
+  "duration_seconds": 0,
+  "elo_change_p1": -8,
+  "elo_change_p2": 8
+}

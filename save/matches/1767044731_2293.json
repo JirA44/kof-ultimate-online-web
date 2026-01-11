@@ -1,0 +1,15 @@
+{
+  "match_id": "1767044731_2293",
+  "player1": "Mix_Up_Master",
+  "player2": "Button_Masher_X",
+  "player1_char": "Leona",
+  "player2_char": "Mature",
+  "winner": "Button_Masher_X",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T22:45:31.280818",
+  "duration_seconds": 0,
+  "elo_change_p1": -12,
+  "elo_change_p2": 12
+}

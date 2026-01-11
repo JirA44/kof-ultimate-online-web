@@ -1,0 +1,15 @@
+{
+  "match_id": "1767087558_1765",
+  "player1": "Mix_Up_Master",
+  "player2": "NeoGeo_Master",
+  "player1_char": "Rugal",
+  "player2_char": "Billy",
+  "winner": "NeoGeo_Master",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T10:39:18.085541",
+  "duration_seconds": 0,
+  "elo_change_p1": -5,
+  "elo_change_p2": 5
+}

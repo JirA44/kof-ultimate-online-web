@@ -1,0 +1,15 @@
+{
+  "match_id": "1767100062_5712",
+  "player1": "ShadowKing_X",
+  "player2": "Frame_Perfect",
+  "player1_char": "Geese",
+  "player2_char": "Geese",
+  "winner": "Frame_Perfect",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T14:07:42.314409",
+  "duration_seconds": 0,
+  "elo_change_p1": -15,
+  "elo_change_p2": 15
+}

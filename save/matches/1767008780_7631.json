@@ -1,0 +1,15 @@
+{
+  "match_id": "1767008780_7631",
+  "player1": "Casual_Fighter",
+  "player2": "Hype_Beast_99",
+  "player1_char": "Orochi",
+  "player2_char": "Yuri",
+  "winner": "Casual_Fighter",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T12:46:20.012043",
+  "duration_seconds": 0,
+  "elo_change_p1": 24,
+  "elo_change_p2": -24
+}

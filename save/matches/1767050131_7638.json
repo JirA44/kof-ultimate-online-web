@@ -1,0 +1,15 @@
+{
+  "match_id": "1767050131_7638",
+  "player1": "Tournament_Ace",
+  "player2": "Pro_Player_One",
+  "player1_char": "K'",
+  "player2_char": "Shingo",
+  "winner": "Pro_Player_One",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T00:15:31.360583",
+  "duration_seconds": 0,
+  "elo_change_p1": -10,
+  "elo_change_p2": 10
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767075180_5437",
+  "player1": "Training_Mode",
+  "player2": "FatalFury_Pro",
+  "player1_char": "Robert",
+  "player2_char": "Terry",
+  "winner": "FatalFury_Pro",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T07:13:00.991494",
+  "duration_seconds": 0,
+  "elo_change_p1": -6,
+  "elo_change_p2": 6
+}

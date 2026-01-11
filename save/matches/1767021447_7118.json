@@ -1,0 +1,15 @@
+{
+  "match_id": "1767021447_7118",
+  "player1": "Training_Mode",
+  "player2": "Frame_Perfect",
+  "player1_char": "Shermie",
+  "player2_char": "Yamazaki",
+  "winner": "Frame_Perfect",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T16:17:27.777529",
+  "duration_seconds": 0,
+  "elo_change_p1": -7,
+  "elo_change_p2": 7
+}

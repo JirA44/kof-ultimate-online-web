@@ -1,0 +1,15 @@
+{
+  "match_id": "1767027723_8867",
+  "player1": "Zoner_Elite",
+  "player2": "Rush_Down_King",
+  "player1_char": "Terry",
+  "player2_char": "Blue Mary",
+  "winner": "Rush_Down_King",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T18:02:03.917987",
+  "duration_seconds": 0,
+  "elo_change_p1": -13,
+  "elo_change_p2": 13
+}

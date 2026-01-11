@@ -1,0 +1,15 @@
+{
+  "match_id": "1767048667_2581",
+  "player1": "Comeback_Kid",
+  "player2": "Pro_Player_One",
+  "player1_char": "Robert",
+  "player2_char": "Orochi",
+  "winner": "Pro_Player_One",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T23:51:07.738235",
+  "duration_seconds": 0,
+  "elo_change_p1": -5,
+  "elo_change_p2": 5
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767118267_4885",
+  "player1": "FGC_Veteran",
+  "player2": "SNK_Champion",
+  "player1_char": "Ash",
+  "player2_char": "Geese",
+  "winner": "FGC_Veteran",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-30T19:11:07.991868",
+  "duration_seconds": 0,
+  "elo_change_p1": 16,
+  "elo_change_p2": -16
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767045407_9212",
+  "player1": "Training_Mode",
+  "player2": "Money_Match",
+  "player1_char": "Maxima",
+  "player2_char": "Vanessa",
+  "winner": "Training_Mode",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 1,
+  "timestamp": "2025-12-29T22:56:47.242304",
+  "duration_seconds": 0,
+  "elo_change_p1": 23,
+  "elo_change_p2": -23
+}

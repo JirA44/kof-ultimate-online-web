@@ -1,0 +1,15 @@
+{
+  "match_id": "1767015055_9408",
+  "player1": "Clutch_King",
+  "player2": "ShadowKing_X",
+  "player1_char": "Kensou",
+  "player2_char": "Shen",
+  "winner": "ShadowKing_X",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T14:30:55.910730",
+  "duration_seconds": 0,
+  "elo_change_p1": -12,
+  "elo_change_p2": 12
+}

@@ -1,0 +1,15 @@
+{
+  "match_id": "1767124801_3903",
+  "player1": "Clutch_King",
+  "player2": "Mix_Up_Master",
+  "player1_char": "Leona",
+  "player2_char": "Maxima",
+  "winner": "Mix_Up_Master",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T21:00:01.925792",
+  "duration_seconds": 0,
+  "elo_change_p1": -9,
+  "elo_change_p2": 9
+}

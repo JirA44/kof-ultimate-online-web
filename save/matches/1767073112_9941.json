@@ -1,0 +1,15 @@
+{
+  "match_id": "1767073112_9941",
+  "player1": "FatalFury_Pro",
+  "player2": "DragonFist_99",
+  "player1_char": "Vanessa",
+  "player2_char": "Mature",
+  "winner": "DragonFist_99",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T06:38:32.073998",
+  "duration_seconds": 0,
+  "elo_change_p1": -3,
+  "elo_change_p2": 3
+}

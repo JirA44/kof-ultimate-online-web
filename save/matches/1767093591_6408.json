@@ -1,0 +1,15 @@
+{
+  "match_id": "1767093591_6408",
+  "player1": "Comeback_Kid",
+  "player2": "Online_Warrior",
+  "player1_char": "Shermie",
+  "player2_char": "Ralf",
+  "winner": "Comeback_Kid",
+  "rounds": [],
+  "player1_rounds": 2,
+  "player2_rounds": 0,
+  "timestamp": "2025-12-30T12:19:51.584499",
+  "duration_seconds": 0,
+  "elo_change_p1": 23,
+  "elo_change_p2": -23
+}

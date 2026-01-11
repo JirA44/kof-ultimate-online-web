@@ -1,0 +1,15 @@
+{
+  "match_id": "1766989734_8637",
+  "player1": "Pro_Player_One",
+  "player2": "Rush_Down_King",
+  "player1_char": "Robert",
+  "player2_char": "Kyo",
+  "winner": "Rush_Down_King",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T07:28:54.887471",
+  "duration_seconds": 0,
+  "elo_change_p1": -12,
+  "elo_change_p2": 12
+}

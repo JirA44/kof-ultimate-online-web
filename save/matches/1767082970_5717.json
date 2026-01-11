@@ -1,0 +1,15 @@
+{
+  "match_id": "1767082970_5717",
+  "player1": "Mix_Up_Master",
+  "player2": "Stream_Monster",
+  "player1_char": "Geese",
+  "player2_char": "Yamazaki",
+  "winner": "Stream_Monster",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T09:22:50.960483",
+  "duration_seconds": 0,
+  "elo_change_p1": -11,
+  "elo_change_p2": 11
+}

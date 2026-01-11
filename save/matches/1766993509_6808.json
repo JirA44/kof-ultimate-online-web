@@ -1,0 +1,15 @@
+{
+  "match_id": "1766993509_6808",
+  "player1": "Mix_Up_Master",
+  "player2": "Pro_Player_One",
+  "player1_char": "Duo Lon",
+  "player2_char": "Ramon",
+  "winner": "Pro_Player_One",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T08:31:49.165313",
+  "duration_seconds": 0,
+  "elo_change_p1": -14,
+  "elo_change_p2": 14
+}

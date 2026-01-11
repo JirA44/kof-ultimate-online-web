@@ -1,0 +1,15 @@
+{
+  "match_id": "1767065021_9549",
+  "player1": "Rage_Quitter_0",
+  "player2": "Zoner_Elite",
+  "player1_char": "King",
+  "player2_char": "Robert",
+  "winner": "Zoner_Elite",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T04:23:41.159128",
+  "duration_seconds": 0,
+  "elo_change_p1": -11,
+  "elo_change_p2": 11
+}

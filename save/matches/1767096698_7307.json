@@ -1,0 +1,15 @@
+{
+  "match_id": "1767096698_7307",
+  "player1": "KOF_Legend",
+  "player2": "Comeback_Kid",
+  "player1_char": "Terry",
+  "player2_char": "Elisabeth",
+  "winner": "Comeback_Kid",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T13:11:38.792872",
+  "duration_seconds": 0,
+  "elo_change_p1": -14,
+  "elo_change_p2": 14
+}

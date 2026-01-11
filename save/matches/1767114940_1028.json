@@ -1,0 +1,15 @@
+{
+  "match_id": "1767114940_1028",
+  "player1": "ShadowKing_X",
+  "player2": "Combo_Breaker",
+  "player1_char": "Kensou",
+  "player2_char": "Yuri",
+  "winner": "Combo_Breaker",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-30T18:15:40.493153",
+  "duration_seconds": 0,
+  "elo_change_p1": -7,
+  "elo_change_p2": 7
+}

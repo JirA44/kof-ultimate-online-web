@@ -1,0 +1,15 @@
+{
+  "match_id": "1767028372_8302",
+  "player1": "SNK_Champion",
+  "player2": "Grappler_God",
+  "player1_char": "Yamazaki",
+  "player2_char": "Orochi",
+  "winner": "Grappler_God",
+  "rounds": [],
+  "player1_rounds": 1,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T18:12:52.831185",
+  "duration_seconds": 0,
+  "elo_change_p1": -12,
+  "elo_change_p2": 12
+}

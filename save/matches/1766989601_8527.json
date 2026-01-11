@@ -1,0 +1,15 @@
+{
+  "match_id": "1766989601_8527",
+  "player1": "Rage_Quitter_0",
+  "player2": "Mix_Up_Master",
+  "player1_char": "Chris",
+  "player2_char": "Shingo",
+  "winner": "Mix_Up_Master",
+  "rounds": [],
+  "player1_rounds": 0,
+  "player2_rounds": 2,
+  "timestamp": "2025-12-29T07:26:41.787385",
+  "duration_seconds": 0,
+  "elo_change_p1": -14,
+  "elo_change_p2": 14
+}

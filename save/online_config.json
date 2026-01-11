@@ -1,0 +1,23 @@
+{
+  "server": {
+    "host": "localhost",
+    "port": 7500,
+    "region": "EU-West"
+  },
+  "matchmaking": {
+    "ranked_elo_range": 200,
+    "casual_elo_range": 500,
+    "timeout_seconds": 60,
+    "auto_rematch": true
+  },
+  "player": {
+    "username": "LocalPlayer",
+    "display_country": true,
+    "accept_challenges": true
+  },
+  "ai_training": {
+    "default_difficulty": "same_elo",
+    "ai_response_delay_ms": 100,
+    "enable_learning": true
+  }
+}
