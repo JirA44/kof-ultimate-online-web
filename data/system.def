@@ -14,6 +14,7 @@ intro.storyboard =
 select = select_optimized.def
 fight  = fight.def
 font1  = font/FONT MENU.fnt
+font2  = font/f-6x9.fnt
 font3  = font/f-6x9.fnt
 font4 = data/fonts/Combo.fnt
 font7  = data/fonts/Names.fnt
