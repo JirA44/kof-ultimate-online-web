@@ -1,0 +1,30 @@
+[2026-01-23 11:11:54] Silent Auto Test module loaded
+[2026-01-23 11:19:24] Silent Auto Test module loaded
+[2026-01-23 11:23:56] Silent Auto Test module loaded
+[2026-01-23 11:24:48] Silent Auto Test module initialized
+[2026-01-23 11:35:30] Silent Auto Test module loaded
+[2026-01-23 11:36:25] Silent Auto Test module initialized
+[2026-01-23 11:38:26] Silent Auto Test module loaded
+[2026-01-23 11:42:38] Silent Auto Test module loaded
+[2026-01-23 11:43:36] Silent Auto Test module initialized
+[2026-01-23 14:43:19] Silent Auto Test module loaded
+[2026-01-23 14:44:12] Silent Auto Test module initialized
+[2026-02-01 06:08:17] Silent Auto Test module loaded
+[2026-02-01 06:09:38] Silent Auto Test module initialized
+[2026-02-01 06:47:43] Silent Auto Test module loaded
+[2026-02-01 06:48:33] Silent Auto Test module initialized
+[2026-02-01 06:48:35] === AUTO TEST STARTED ===
+[2026-02-01 06:48:35] Testing menu handlers...
+[2026-02-01 06:48:35] Menu handlers test complete: 16 tested
+[2026-02-01 06:48:35] Testing modules...
+[2026-02-01 06:48:35] Modules test complete
+[2026-02-01 06:48:35] Testing data files...
+[2026-02-01 06:48:35] Data files test complete
+[2026-02-01 06:48:35] Testing character loading...
+[2026-02-01 06:48:35] Characters test complete: 120 characters loaded
+[2026-02-01 06:48:35] Testing stage loading...
+[2026-02-01 06:48:35] Stages test complete: 5 stages loaded
+[2026-02-01 06:48:35] Generating final report...
+[2026-02-01 06:48:35] Report generated: menu_test_reports/AUTO_TEST_REPORT.md
+[2026-02-01 06:48:35] === AUTO TEST COMPLETED ===
+[2026-02-01 06:48:35] Errors: 5, Warnings: 4

@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-01-23T09:06:03.973913",
+  "files_analyzed": [
+    "D:\\KOF Ultimate Online kofuo\\data\\system.def",
+    "D:\\KOF Ultimate Online kofuo\\external\\script\\live_lobby_screen.lua"
+  ],
+  "menus_found": {
+    "MAIN_MENU": 22,
+    "ONLINE_MENU": 8
+  },
+  "issues": [
+    {
+      "severity": "MEDIUM",
+      "description": "Action 'arcade' dupliquee",
+      "location": "system.def:57 et live_lobby_screen.lua:51",
+      "fix": null,
+      "timestamp": "2026-01-23T09:06:03.983733"
+    },
+    {
+      "severity": "MEDIUM",
+      "description": "Action 'versus' dupliquee",
+      "location": "system.def:58 et live_lobby_screen.lua:52",
+      "fix": null,
+      "timestamp": "2026-01-23T09:06:03.984734"
+    },
+    {
+      "severity": "MEDIUM",
+      "description": "Action 'training' dupliquee",
+      "location": "system.def:64 et live_lobby_screen.lua:57",
+      "fix": null,
+      "timestamp": "2026-01-23T09:06:03.984734"
+    }
+  ],
+  "fixes": [],
+  "recommendations": [
+    {
+      "type": "INFO",
+      "message": "Bouton CONFIRMER = z (index 4)"
+    },
+    {
+      "type": "INFO",
+      "message": "Bouton ANNULER = x (index 5)"
+    }
+  ]
+}

@@ -1,0 +1,338 @@
+{
+  "timestamp": "2026-01-23T09:11:49.537682",
+  "menus_tested": [
+    {
+      "menu": "MAIN/ARCADE",
+      "status": "OK",
+      "notes": "Position 0",
+      "depth": 0,
+      "timestamp": "2026-01-23T09:12:07.906078"
+    },
+    {
+      "menu": "MAIN/VS MODE",
+      "status": "OK",
+      "notes": "Position 1",
+      "depth": 0,
+      "timestamp": "2026-01-23T09:12:08.358635"
+    },
+    {
+      "menu": "MAIN/TEAM ARCADE",
+      "status": "OK",
+      "notes": "Position 2",
+      "depth": 0,
+      "timestamp": "2026-01-23T09:12:08.810358"
+    },
+    {
+      "menu": "MAIN/TEAM VS",
+      "status": "OK",
+      "notes": "Position 3",
+      "depth": 0,
+      "timestamp": "2026-01-23T09:12:09.273349"
+    },
+    {
+      "menu": "MAIN/TEAM CO-OP",
+      "status": "OK",
+      "notes": "Position 4",
+      "depth": 0,
+      "timestamp": "2026-01-23T09:12:09.745798"
+    },
+    {
+      "menu": "MAIN/SURVIVAL",
+      "status": "OK",
+      "notes": "Position 5",
+      "depth": 0,
+      "timestamp": "2026-01-23T09:12:10.208800"
+    },
+    {
+      "menu": "MAIN/SURVIVAL CO-OP",
+      "status": "OK",
+      "notes": "Position 6",
+      "depth": 0,
+      "timestamp": "2026-01-23T09:12:10.671707"
+    },
+    {
+      "menu": "MAIN/TRAINING",
+      "status": "OK",
+      "notes": "Position 7",
+      "depth": 0,
+      "timestamp": "2026-01-23T09:12:11.125911"
+    },
+    {
+      "menu": "MAIN/ONLINE",
+      "status": "OK",
+      "notes": "Position 8",
+      "depth": 0,
+      "timestamp": "2026-01-23T09:12:11.580272"
+    },
+    {
+      "menu": "MAIN/OPTIONS",
+      "status": "OK",
+      "notes": "Position 9",
+      "depth": 0,
+      "timestamp": "2026-01-23T09:12:12.032558"
+    },
+    {
+      "menu": "MAIN/EXIT",
+      "status": "OK",
+      "notes": "Position 10",
+      "depth": 0,
+      "timestamp": "2026-01-23T09:12:12.485271"
+    },
+    {
+      "menu": "ONLINE/JOUER SOLO",
+      "status": "OK",
+      "notes": "Position 0",
+      "depth": 1,
+      "timestamp": "2026-01-23T09:12:27.875132"
+    },
+    {
+      "menu": "ONLINE/VS LOCAL",
+      "status": "OK",
+      "notes": "Position 1",
+      "depth": 1,
+      "timestamp": "2026-01-23T09:12:28.327521"
+    },
+    {
+      "menu": "ONLINE/ONLINE RANKED",
+      "status": "OK",
+      "notes": "Position 2",
+      "depth": 1,
+      "timestamp": "2026-01-23T09:12:28.787091"
+    },
+    {
+      "menu": "ONLINE/ONLINE CASUAL",
+      "status": "OK",
+      "notes": "Position 3",
+      "depth": 1,
+      "timestamp": "2026-01-23T09:12:29.241915"
+    },
+    {
+      "menu": "ONLINE/LOBBY JOUEURS",
+      "status": "OK",
+      "notes": "Position 4",
+      "depth": 1,
+      "timestamp": "2026-01-23T09:12:29.695749"
+    },
+    {
+      "menu": "ONLINE/CLASSEMENT",
+      "status": "OK",
+      "notes": "Position 5",
+      "depth": 1,
+      "timestamp": "2026-01-23T09:12:30.149160"
+    },
+    {
+      "menu": "ONLINE/ENTRAINEMENT",
+      "status": "OK",
+      "notes": "Position 6",
+      "depth": 1,
+      "timestamp": "2026-01-23T09:12:30.606735"
+    },
+    {
+      "menu": "ONLINE/RETOUR",
+      "status": "OK",
+      "notes": "Position 7",
+      "depth": 1,
+      "timestamp": "2026-01-23T09:12:31.064929"
+    },
+    {
+      "menu": "ONLINE/CLASSEMENT/VIEW",
+      "status": "OK",
+      "notes": "Leaderboard affiche",
+      "depth": 1,
+      "timestamp": "2026-01-23T09:12:37.121351"
+    },
+    {
+      "menu": "ONLINE/LOBBY_JOUEURS/VIEW",
+      "status": "OK",
+      "notes": "Liste joueurs affichee",
+      "depth": 1,
+      "timestamp": "2026-01-23T09:12:43.104260"
+    },
+    {
+      "menu": "VS/CHARACTER_SELECT",
+      "status": "OK",
+      "notes": "Ecran selection personnage",
+      "depth": 1,
+      "timestamp": "2026-01-23T09:12:50.369259"
+    },
+    {
+      "menu": "VS/CHARACTER_GRID_NAV",
+      "status": "OK",
+      "notes": "Navigation grille OK",
+      "depth": 1,
+      "timestamp": "2026-01-23T09:12:52.804295"
+    },
+    {
+      "menu": "VS/P1_SELECT",
+      "status": "OK",
+      "notes": "P1 selectionne",
+      "depth": 1,
+      "timestamp": "2026-01-23T09:12:53.609914"
+    },
+    {
+      "menu": "VS/P2_SELECT",
+      "status": "OK",
+      "notes": "P2 selectionne",
+      "depth": 1,
+      "timestamp": "2026-01-23T09:12:55.316590"
+    },
+    {
+      "menu": "VS/STAGE_SELECT",
+      "status": "OK",
+      "notes": "Ecran selection stage",
+      "depth": 1,
+      "timestamp": "2026-01-23T09:12:55.816781"
+    },
+    {
+      "menu": "TRAINING/CHARACTER_SELECT",
+      "status": "OK",
+      "notes": "Selection personnage training",
+      "depth": 1,
+      "timestamp": "2026-01-23T09:13:07.296540"
+    },
+    {
+      "menu": "TRAINING/START",
+      "status": "OK",
+      "notes": "Training lance",
+      "depth": 1,
+      "timestamp": "2026-01-23T09:13:10.611570"
+    },
+    {
+      "menu": "OPTIONS/ENTER",
+      "status": "OK",
+      "notes": "Menu options ouvert",
+      "depth": 1,
+      "timestamp": "2026-01-23T09:13:20.295425"
+    },
+    {
+      "menu": "OPTIONS/ITEM_0",
+      "status": "OK",
+      "notes": "",
+      "depth": 1,
+      "timestamp": "2026-01-23T09:13:20.748204"
+    },
+    {
+      "menu": "OPTIONS/ITEM_1",
+      "status": "OK",
+      "notes": "",
+      "depth": 1,
+      "timestamp": "2026-01-23T09:13:21.202062"
+    },
+    {
+      "menu": "OPTIONS/ITEM_2",
+      "status": "OK",
+      "notes": "",
+      "depth": 1,
+      "timestamp": "2026-01-23T09:13:21.658412"
+    },
+    {
+      "menu": "OPTIONS/ITEM_3",
+      "status": "OK",
+      "notes": "",
+      "depth": 1,
+      "timestamp": "2026-01-23T09:13:22.111688"
+    },
+    {
+      "menu": "OPTIONS/ITEM_4",
+      "status": "OK",
+      "notes": "",
+      "depth": 1,
+      "timestamp": "2026-01-23T09:13:22.563693"
+    },
+    {
+      "menu": "OPTIONS/ITEM_5",
+      "status": "OK",
+      "notes": "",
+      "depth": 1,
+      "timestamp": "2026-01-23T09:13:23.015353"
+    },
+    {
+      "menu": "OPTIONS/ITEM_6",
+      "status": "OK",
+      "notes": "",
+      "depth": 1,
+      "timestamp": "2026-01-23T09:13:23.467070"
+    },
+    {
+      "menu": "OPTIONS/ITEM_7",
+      "status": "OK",
+      "notes": "",
+      "depth": 1,
+      "timestamp": "2026-01-23T09:13:23.919418"
+    }
+  ],
+  "bugs_found": [],
+  "navigation_path": [
+    "upx15",
+    "downx1",
+    "downx1",
+    "downx1",
+    "downx1",
+    "downx1",
+    "downx1",
+    "downx1",
+    "downx1",
+    "downx1",
+    "downx1",
+    "downx1",
+    "upx11",
+    "upx15",
+    "downx8",
+    "CONFIRM",
+    "upx10",
+    "downx1",
+    "downx1",
+    "downx1",
+    "downx1",
+    "downx1",
+    "downx1",
+    "downx1",
+    "downx1",
+    "upx10",
+    "downx5",
+    "CONFIRM",
+    "CANCEL",
+    "upx10",
+    "downx4",
+    "CONFIRM",
+    "CANCEL",
+    "CANCEL",
+    "upx15",
+    "downx1",
+    "CONFIRM",
+    "rightx1",
+    "rightx1",
+    "downx1",
+    "downx1",
+    "leftx1",
+    "upx1",
+    "CONFIRM",
+    "rightx3",
+    "CONFIRM",
+    "CONFIRM",
+    "CANCEL",
+    "CANCEL",
+    "upx15",
+    "downx7",
+    "CONFIRM",
+    "CONFIRM",
+    "CONFIRM",
+    "CONFIRM",
+    "CANCEL",
+    "upx15",
+    "downx9",
+    "CONFIRM",
+    "downx1",
+    "downx1",
+    "downx1",
+    "downx1",
+    "downx1",
+    "downx1",
+    "downx1",
+    "downx1",
+    "CANCEL"
+  ],
+  "total_actions": 209,
+  "success_count": 37,
+  "error_count": 0
+}

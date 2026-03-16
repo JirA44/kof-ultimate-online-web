@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOF Ultimate Online - 190 Personnages</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* ====== KOF ARCADE SELECT SCREEN ====== */
+        .select-screen { min-height: 100vh; padding: 20px; }
+        .select-header { text-align: center; margin-bottom: 30px; }
+
+        .select-title {
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            background: linear-gradient(180deg, #ffd700 0%, #ff6600 50%, #ff0000 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: titlePulse 2s ease-in-out infinite;
+        }
+
+        @keyframes titlePulse {
+            0%, 100% { filter: drop-shadow(0 0 10px rgba(255, 100, 0, 0.5)); }
+            50% { filter: drop-shadow(0 0 30px rgba(255, 200, 0, 0.8)); }
+        }
+
+        .roster-stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .roster-stat {
+            background: linear-gradient(135deg, rgba(255, 100, 0, 0.2), rgba(255, 0, 0, 0.2));
+            border: 2px solid #ff6600;
+            border-radius: 10px;
+            padding: 12px 25px;
+            text-align: center;
+        }
+
+        .roster-stat-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #ffd700;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+
+        .roster-stat-label {
+            color: #ffaa00;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            letter-spacing: 2px;
+        }
+
+        /* View Tabs */
+        .view-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .view-tab {
+            padding: 12px 30px;
+            background: rgba(0, 0, 0, 0.6);
+            border: 2px solid #444;
+            border-radius: 25px;
+            color: #aaa;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .view-tab:hover { border-color: #ff6600; color: #ff6600; }
+        .view-tab.active {
+            background: linear-gradient(135deg, #ff6600, #ff0000);
+            border-color: #ffd700;
+            color: #fff;
+            box-shadow: 0 0 20px rgba(255, 100, 0, 0.5);
+        }
+
+        /* Search and Filters */
+        .select-controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .search-box { position: relative; }
+        .search-box input {
+            width: 280px;
+            padding: 10px 18px 10px 40px;
+            background: rgba(0, 0, 0, 0.6);
+            border: 2px solid #ff6600;
+            border-radius: 25px;
+            color: #fff;
+            font-size: 1em;
+            outline: none;
+        }
+        .search-box input:focus { border-color: #ffd700; box-shadow: 0 0 20px rgba(255, 215, 0, 0.3); }
+        .search-box::before { content: "O"; position: absolute; left: 15px; top: 50%; transform: translateY(-50%); }
+
+        .filter-buttons { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+        .filter-btn {
+            padding: 8px 16px;
+            background: rgba(0, 0, 0, 0.6);
+            border: 2px solid #444;
+            border-radius: 20px;
+            color: #aaa;
+            cursor: pointer;
+            font-size: 0.85em;
+            text-transform: uppercase;
+            transition: all 0.3s;
+        }
+        .filter-btn:hover { border-color: #ff6600; color: #ff6600; }
+        .filter-btn.active {
+            background: linear-gradient(135deg, #ff6600, #ff0000);
+            border-color: #ffd700;
+            color: #fff;
+        }
+
+        /* Main Layout */
+        .select-main {
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: 25px;
+            max-width: 1700px;
+            margin: 0 auto;
+        }
+        @media (max-width: 1200px) { .select-main { grid-template-columns: 1fr; } }
+
+        /* Character Grid */
+        .char-grid-container {
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(20, 0, 40, 0.9) 100%);
+            border: 4px solid #ff6600;
+            border-radius: 15px;
+            padding: 15px;
+            box-shadow: 0 0 30px rgba(255, 100, 0, 0.3), inset 0 0 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .char-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(55px, 1fr));
+            gap: 5px;
+            max-height: 600px;
+            overflow-y: auto;
+            padding: 8px;
+        }
+        .char-grid::-webkit-scrollbar { width: 8px; }
+        .char-grid::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0.5); border-radius: 4px; }
+        .char-grid::-webkit-scrollbar-thumb { background: #ff6600; border-radius: 4px; }
+
+        /* Character Cell */
+        .char-cell {
+            width: 55px;
+            height: 55px;
+            background: linear-gradient(180deg, #1a1a2e 0%, #0a0a15 100%);
+            border: 2px solid #333;
+            border-radius: 6px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .char-cell .char-portrait {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+        }
+        .char-cell .char-portrait.hidden { display: none; }
+        .char-cell:hover {
+            border-color: #ffd700;
+            transform: scale(1.15);
+            z-index: 10;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+        }
+        .char-cell.selected {
+            border-color: #00ff00;
+            box-shadow: 0 0 25px rgba(0, 255, 0, 0.7);
+            animation: selectedPulse 0.5s ease-in-out infinite alternate;
+        }
+        @keyframes selectedPulse {
+            from { box-shadow: 0 0 15px rgba(0, 255, 0, 0.5); }
+            to { box-shadow: 0 0 30px rgba(0, 255, 0, 0.9); }
+        }
+        .char-cell .char-initial {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #666;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Tier Colors on cells */
+        .char-cell[data-tier="S"] { border-color: #ff0000; background: linear-gradient(180deg, #3a0a0a 0%, #1a0505 100%); }
+        .char-cell[data-tier="S"] .char-initial { color: #ff4444; }
+        .char-cell[data-tier="A"] { border-color: #ff6600; background: linear-gradient(180deg, #2a1a0a 0%, #150d05 100%); }
+        .char-cell[data-tier="A"] .char-initial { color: #ff8844; }
+        .char-cell[data-tier="B"] { border-color: #ffcc00; background: linear-gradient(180deg, #2a2a0a 0%, #151505 100%); }
+        .char-cell[data-tier="B"] .char-initial { color: #ffdd44; }
+        .char-cell[data-tier="C"] { border-color: #00cc00; background: linear-gradient(180deg, #0a2a0a 0%, #051505 100%); }
+        .char-cell[data-tier="C"] .char-initial { color: #44dd44; }
+        .char-cell[data-tier="D"] { border-color: #0088ff; background: linear-gradient(180deg, #0a1a2a 0%, #050d15 100%); }
+        .char-cell[data-tier="D"] .char-initial { color: #44aaff; }
+
+        /* Tier badge */
+        .char-cell .tier-badge {
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            font-size: 0.6em;
+            font-weight: bold;
+            padding: 1px 4px;
+            border-radius: 3px;
+        }
+        .char-cell[data-tier="S"] .tier-badge { background: #ff0000; color: #fff; }
+        .char-cell[data-tier="A"] .tier-badge { background: #ff6600; color: #fff; }
+        .char-cell[data-tier="B"] .tier-badge { background: #ffcc00; color: #000; }
+        .char-cell[data-tier="C"] .tier-badge { background: #00cc00; color: #fff; }
+        .char-cell[data-tier="D"] .tier-badge { background: #0088ff; color: #fff; }
+
+        /* Preview Panel */
+        .char-preview {
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(30, 0, 60, 0.9) 100%);
+            border: 4px solid #ff6600;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 100px;
+        }
+
+        .preview-portrait {
+            width: 180px;
+            height: 200px;
+            background: linear-gradient(180deg, #1a1a2e 0%, #0a0a15 100%);
+            border: 3px solid #444;
+            border-radius: 10px;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .preview-portrait .no-portrait { color: #555; font-size: 3.5em; }
+        .preview-portrait img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+        }
+        .preview-portrait img.hidden { display: none; }
+
+        .preview-name {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #ffd700;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            word-break: break-word;
+        }
+
+        /* Tier Display */
+        .preview-tier {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .tier-label {
+            font-size: 2em;
+            font-weight: bold;
+            padding: 5px 20px;
+            border-radius: 10px;
+        }
+        .tier-label.S { background: linear-gradient(135deg, #ff0000, #aa0000); color: #fff; text-shadow: 0 0 10px #ff0000; }
+        .tier-label.A { background: linear-gradient(135deg, #ff6600, #aa4400); color: #fff; }
+        .tier-label.B { background: linear-gradient(135deg, #ffcc00, #aa8800); color: #000; }
+        .tier-label.C { background: linear-gradient(135deg, #00cc00, #008800); color: #fff; }
+        .tier-label.D { background: linear-gradient(135deg, #0088ff, #0055aa); color: #fff; }
+
+        .power-score {
+            font-size: 1.1em;
+            color: #fff;
+        }
+        .power-score span { color: #ffd700; font-weight: bold; font-size: 1.3em; }
+
+        /* Radar Chart */
+        .radar-container {
+            width: 250px;
+            height: 250px;
+            margin: 15px auto;
+            position: relative;
+        }
+        .radar-chart {
+            width: 100%;
+            height: 100%;
+        }
+        .radar-labels {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        .radar-label {
+            position: absolute;
+            font-size: 0.75em;
+            color: #ffd700;
+            font-weight: bold;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Stats Bars */
+        .stats-bars {
+            margin-top: 15px;
+            text-align: left;
+        }
+        .stat-bar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            gap: 10px;
+        }
+        .stat-bar-label {
+            width: 70px;
+            font-size: 0.75em;
+            color: #aaa;
+            text-transform: uppercase;
+        }
+        .stat-bar-track {
+            flex: 1;
+            height: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .stat-bar-fill {
+            height: 100%;
+            border-radius: 5px;
+            transition: width 0.5s ease-out;
+        }
+        .stat-bar-value {
+            width: 30px;
+            font-size: 0.8em;
+            color: #fff;
+            text-align: right;
+        }
+
+        /* Tier List View */
+        .tier-list-view { display: none; }
+        .tier-list-view.active { display: block; }
+        .grid-view { display: block; }
+        .grid-view.hidden { display: none; }
+
+        .tier-section {
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .tier-header {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            gap: 15px;
+        }
+        .tier-header.S { background: linear-gradient(90deg, rgba(255, 0, 0, 0.3), transparent); border-left: 5px solid #ff0000; }
+        .tier-header.A { background: linear-gradient(90deg, rgba(255, 102, 0, 0.3), transparent); border-left: 5px solid #ff6600; }
+        .tier-header.B { background: linear-gradient(90deg, rgba(255, 204, 0, 0.3), transparent); border-left: 5px solid #ffcc00; }
+        .tier-header.C { background: linear-gradient(90deg, rgba(0, 204, 0, 0.3), transparent); border-left: 5px solid #00cc00; }
+        .tier-header.D { background: linear-gradient(90deg, rgba(0, 136, 255, 0.3), transparent); border-left: 5px solid #0088ff; }
+
+        .tier-header-label {
+            font-size: 2.5em;
+            font-weight: bold;
+            width: 60px;
+            text-align: center;
+        }
+        .tier-header.S .tier-header-label { color: #ff0000; text-shadow: 0 0 20px #ff0000; }
+        .tier-header.A .tier-header-label { color: #ff6600; }
+        .tier-header.B .tier-header-label { color: #ffcc00; }
+        .tier-header.C .tier-header-label { color: #00cc00; }
+        .tier-header.D .tier-header-label { color: #0088ff; }
+
+        .tier-header-info {
+            flex: 1;
+        }
+        .tier-header-title {
+            font-size: 1.2em;
+            color: #fff;
+            margin-bottom: 3px;
+        }
+        .tier-header-count {
+            font-size: 0.9em;
+            color: #888;
+        }
+
+        .tier-chars {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 15px 20px;
+        }
+        .tier-char {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: 1px solid transparent;
+        }
+        .tier-char:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.05);
+        }
+        .tier-char.S:hover { border-color: #ff0000; box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); }
+        .tier-char.A:hover { border-color: #ff6600; }
+        .tier-char.B:hover { border-color: #ffcc00; }
+        .tier-char.C:hover { border-color: #00cc00; }
+        .tier-char.D:hover { border-color: #0088ff; }
+
+        .tier-char .power-badge {
+            font-size: 0.75em;
+            margin-left: 5px;
+            opacity: 0.7;
+        }
+
+        /* Random Button */
+        .random-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            background: linear-gradient(135deg, #8000ff, #ff00ff);
+            border: 2px solid #ff00ff;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .random-btn:hover { transform: scale(1.05); box-shadow: 0 0 25px rgba(255, 0, 255, 0.5); }
+
+        /* Comparison Section */
+        .comparison-section {
+            margin-top: 40px;
+            background: linear-gradient(135deg, rgba(0, 50, 100, 0.3), rgba(100, 0, 50, 0.3));
+            border: 2px solid #00d4ff;
+            border-radius: 15px;
+            padding: 25px;
+        }
+        .comparison-title { text-align: center; font-size: 1.5em; color: #00d4ff; margin-bottom: 20px; }
+        .comparison-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+        .comparison-card {
+            background: rgba(0, 0, 0, 0.5);
+            border: 2px solid #444;
+            border-radius: 10px;
+            padding: 12px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        .comparison-card:hover { border-color: #00d4ff; transform: translateY(-3px); }
+        .comparison-card.current { border-color: #ffd700; background: linear-gradient(135deg, rgba(255, 100, 0, 0.2), rgba(255, 200, 0, 0.2)); }
+        .comparison-game { font-size: 0.9em; color: #fff; margin-bottom: 5px; }
+        .comparison-count { font-size: 1.8em; font-weight: bold; margin-bottom: 3px; }
+        .comparison-card.current .comparison-count { color: #ffd700; text-shadow: 0 0 15px rgba(255, 215, 0, 0.5); }
+        .comparison-label { color: #888; font-size: 0.75em; }
+
+        .sync-badge {
+            display: inline-block;
+            background: linear-gradient(90deg, #00ff00, #00aa00);
+            color: #000;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 0.8em;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-animation"></div>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1>KOF ULTIMATE ONLINE</h1>
+                <p class="tagline">Roster & Tier List <span class="sync-badge">190 CHARS</span></p>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html">Accueil</a>
+                <a href="characters.html" class="active">Personnages</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="leaderboard.html">Classement</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container select-screen">
+        <div class="select-header">
+            <h1 class="select-title">Power Rankings</h1>
+            <div class="roster-stats">
+                <div class="roster-stat">
+                    <div class="roster-stat-value">190</div>
+                    <div class="roster-stat-label">Personnages</div>
+                </div>
+                <div class="roster-stat">
+                    <div class="roster-stat-value" id="tier-s-count">0</div>
+                    <div class="roster-stat-label" style="color:#ff4444;">Tier S</div>
+                </div>
+                <div class="roster-stat">
+                    <div class="roster-stat-value" id="tier-a-count">0</div>
+                    <div class="roster-stat-label" style="color:#ff8844;">Tier A</div>
+                </div>
+                <div class="roster-stat">
+                    <div class="roster-stat-value" id="tier-b-count">0</div>
+                    <div class="roster-stat-label" style="color:#ffdd44;">Tier B</div>
+                </div>
+                <div class="roster-stat">
+                    <div class="roster-stat-value" id="tier-c-count">0</div>
+                    <div class="roster-stat-label" style="color:#44dd44;">Tier C</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- View Tabs -->
+        <div class="view-tabs">
+            <button class="view-tab active" data-view="grid">Grille</button>
+            <button class="view-tab" data-view="tierlist">Tier List</button>
+        </div>
+
+        <div class="select-controls">
+            <div class="search-box">
+                <input type="text" id="char-search" placeholder="Rechercher...">
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="S" style="color:#ff4444;">S</button>
+                <button class="filter-btn" data-filter="A" style="color:#ff8844;">A</button>
+                <button class="filter-btn" data-filter="B" style="color:#ffdd44;">B</button>
+                <button class="filter-btn" data-filter="C" style="color:#44dd44;">C</button>
+                <button class="filter-btn" data-filter="D" style="color:#44aaff;">D</button>
+            </div>
+        </div>
+
+        <!-- Grid View -->
+        <div class="grid-view">
+            <div class="select-main">
+                <div class="char-grid-container">
+                    <div class="char-grid" id="char-grid"></div>
+                </div>
+
+                <div class="char-preview">
+                    <div class="preview-portrait" id="preview-portrait">
+                        <img id="preview-portrait-img" class="hidden" src="" alt="Portrait">
+                        <span class="no-portrait" id="preview-no-portrait">?</span>
+                    </div>
+                    <div class="preview-name">Selectionnez un personnage</div>
+
+                    <div class="preview-tier">
+                        <div class="tier-label" id="preview-tier">-</div>
+                        <div class="power-score">Power: <span id="preview-power">--</span></div>
+                    </div>
+
+                    <!-- Radar Chart -->
+                    <div class="radar-container">
+                        <canvas class="radar-chart" id="radar-chart" width="250" height="250"></canvas>
+                        <div class="radar-labels">
+                            <span class="radar-label" style="top: 5px; left: 50%; transform: translateX(-50%);">ATK</span>
+                            <span class="radar-label" style="top: 25%; right: 5px;">SPD</span>
+                            <span class="radar-label" style="bottom: 25%; right: 5px;">TEC</span>
+                            <span class="radar-label" style="bottom: 5px; left: 50%; transform: translateX(-50%);">SPC</span>
+                            <span class="radar-label" style="bottom: 25%; left: 5px;">DEF</span>
+                            <span class="radar-label" style="top: 25%; left: 5px;">RNG</span>
+                        </div>
+                    </div>
+
+                    <!-- Stats Bars -->
+                    <div class="stats-bars" id="stats-bars">
+                        <div class="stat-bar">
+                            <span class="stat-bar-label">Attaque</span>
+                            <div class="stat-bar-track"><div class="stat-bar-fill" id="bar-atk" style="background: linear-gradient(90deg, #ff0000, #ff6600);"></div></div>
+                            <span class="stat-bar-value" id="val-atk">--</span>
+                        </div>
+                        <div class="stat-bar">
+                            <span class="stat-bar-label">Defense</span>
+                            <div class="stat-bar-track"><div class="stat-bar-fill" id="bar-def" style="background: linear-gradient(90deg, #0088ff, #00ccff);"></div></div>
+                            <span class="stat-bar-value" id="val-def">--</span>
+                        </div>
+                        <div class="stat-bar">
+                            <span class="stat-bar-label">Vitesse</span>
+                            <div class="stat-bar-track"><div class="stat-bar-fill" id="bar-spd" style="background: linear-gradient(90deg, #00ff00, #88ff00);"></div></div>
+                            <span class="stat-bar-value" id="val-spd">--</span>
+                        </div>
+                        <div class="stat-bar">
+                            <span class="stat-bar-label">Technique</span>
+                            <div class="stat-bar-track"><div class="stat-bar-fill" id="bar-tec" style="background: linear-gradient(90deg, #ffcc00, #ffff00);"></div></div>
+                            <span class="stat-bar-value" id="val-tec">--</span>
+                        </div>
+                        <div class="stat-bar">
+                            <span class="stat-bar-label">Special</span>
+                            <div class="stat-bar-track"><div class="stat-bar-fill" id="bar-spc" style="background: linear-gradient(90deg, #ff00ff, #ff88ff);"></div></div>
+                            <span class="stat-bar-value" id="val-spc">--</span>
+                        </div>
+                        <div class="stat-bar">
+                            <span class="stat-bar-label">Range</span>
+                            <div class="stat-bar-track"><div class="stat-bar-fill" id="bar-rng" style="background: linear-gradient(90deg, #8800ff, #cc88ff);"></div></div>
+                            <span class="stat-bar-value" id="val-rng">--</span>
+                        </div>
+                    </div>
+
+                    <button class="random-btn" id="random-select">Random Select</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tier List View -->
+        <div class="tier-list-view" id="tier-list-view"></div>
+
+        <!-- Comparison -->
+        <section class="comparison-section">
+            <h2 class="comparison-title">Comparaison des Rosters</h2>
+            <div class="comparison-grid">
+                <div class="comparison-card">
+                    <div class="comparison-game">KOF '98</div>
+                    <div class="comparison-count" style="color: #888;">38</div>
+                    <div class="comparison-label">personnages</div>
+                </div>
+                <div class="comparison-card">
+                    <div class="comparison-game">KOF 2002 UM</div>
+                    <div class="comparison-count" style="color: #00ff88;">66</div>
+                    <div class="comparison-label">personnages</div>
+                </div>
+                <div class="comparison-card">
+                    <div class="comparison-game">KOF XV</div>
+                    <div class="comparison-count" style="color: #ff00ff;">59</div>
+                    <div class="comparison-label">personnages</div>
+                </div>
+                <div class="comparison-card">
+                    <div class="comparison-game">BLACK R</div>
+                    <div class="comparison-count" style="color: #00ff00;">190</div>
+                    <div class="comparison-label">synced</div>
+                </div>
+                <div class="comparison-card current">
+                    <div class="comparison-game">ULTIMATE</div>
+                    <div class="comparison-count">190</div>
+                    <div class="comparison-label">complet</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 KOF Ultimate Online | 190 Personnages | Power Rankings</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // ====== CHARACTER DATA WITH STATS ======
+        // Stats: atk, def, spd, tec, spc, rng (0-100)
+        // Power = weighted average, Tier based on power
+
+        function generateStats(name, category) {
+            // Seed based on name for consistency
+            let seed = 0;
+            for (let i = 0; i < name.length; i++) seed += name.charCodeAt(i);
+            const rand = (min, max) => {
+                seed = (seed * 9301 + 49297) % 233280;
+                return Math.floor(min + (seed / 233280) * (max - min + 1));
+            };
+
+            // Base stats by category
+            const bases = {
+                god: { atk: 85, def: 80, spd: 85, tec: 80, spc: 95, rng: 85 },
+                boss: { atk: 90, def: 85, spd: 70, tec: 75, spc: 90, rng: 80 },
+                final: { atk: 88, def: 78, spd: 80, tec: 85, spc: 92, rng: 82 },
+                orochi: { atk: 82, def: 75, spd: 78, tec: 80, spc: 88, rng: 75 },
+                element: { atk: 78, def: 70, spd: 82, tec: 85, spc: 85, rng: 78 },
+                clone: { atk: 75, def: 72, spd: 75, tec: 70, spc: 78, rng: 70 },
+                hero: { atk: 70, def: 68, spd: 72, tec: 72, spc: 70, rng: 68 },
+                custom: { atk: 65, def: 62, spd: 68, tec: 65, spc: 65, rng: 65 },
+                new: { atk: 68, def: 65, spd: 70, tec: 68, spc: 68, rng: 66 }
+            };
+
+            const base = bases[category] || bases.hero;
+            const variance = 15;
+
+            return {
+                atk: Math.min(100, Math.max(30, base.atk + rand(-variance, variance))),
+                def: Math.min(100, Math.max(30, base.def + rand(-variance, variance))),
+                spd: Math.min(100, Math.max(30, base.spd + rand(-variance, variance))),
+                tec: Math.min(100, Math.max(30, base.tec + rand(-variance, variance))),
+                spc: Math.min(100, Math.max(30, base.spc + rand(-variance, variance))),
+                rng: Math.min(100, Math.max(30, base.rng + rand(-variance, variance)))
+            };
+        }
+
+        function calculatePower(stats) {
+            return Math.round((stats.atk * 1.2 + stats.def * 0.9 + stats.spd * 1.1 + stats.tec * 1.0 + stats.spc * 1.3 + stats.rng * 0.8) / 6.3);
+        }
+
+        function getTier(power) {
+            if (power >= 85) return 'S';
+            if (power >= 75) return 'A';
+            if (power >= 65) return 'B';
+            if (power >= 55) return 'C';
+            return 'D';
+        }
+
+        // Character data
+        const characterNames = [
+            { name: "03-A-Kyo LV2", folder: "03-A-Kyo LV2", category: "hero" },
+            { name: "A-Angel", folder: "A-Angel", category: "hero" },
+            { name: "ABYSS Mega's", folder: "ABYSS'Mega's", category: "boss" },
+            { name: "AI", folder: "ai", category: "custom" },
+            { name: "Aika", folder: "Aika", category: "custom" },
+            { name: "Aika MK", folder: "Aika_MK", category: "custom" },
+            { name: "Aileen", folder: "Aileen", category: "custom" },
+            { name: "Akari", folder: "Akari", category: "hero" },
+            { name: "Akiha Orochi", folder: "Akiha Orochi", category: "orochi" },
+            { name: "Akiha Yagami", folder: "Akiha Yagami", category: "hero" },
+            { name: "Akiha Yagami DK", folder: "Akiha Yagami DK", category: "hero" },
+            { name: "Akiha Yagami 1", folder: "Akiha Yagami1", category: "hero" },
+            { name: "Akira Kazakami", folder: "Akira_Kazakami", category: "custom" },
+            { name: "Akuma", folder: "akuma", category: "boss" },
+            { name: "ALBA MEIRA", folder: "ALBA MEIRA KOF XI -MI2", category: "hero" },
+            { name: "Alfred WLS", folder: "Alfred_WLS", category: "hero" },
+            { name: "Alou AKOF", folder: "Alou_AKOF", category: "custom" },
+            { name: "Alter Kyo", folder: "Alter Kyo", category: "hero" },
+            { name: "Amoumi KOFM", folder: "Amoumi-KOFM", category: "hero" },
+            { name: "Andy ROTD", folder: "Andy-ROTD", category: "hero" },
+            { name: "Aner Rolange", folder: "Aner Rolange KOFM", category: "hero" },
+            { name: "Anette KOFM", folder: "Anette-KOFM", category: "hero" },
+            { name: "AngusPurple", folder: "AngusPurple-KOFM", category: "new" },
+            { name: "Another Scarlet", folder: "Another Scarlet", category: "new" },
+            { name: "Arctic Emperor", folder: "Arctic Emperor", category: "boss" },
+            { name: "ArchiMurderer", folder: "_ArchiMurderer", category: "custom" },
+            { name: "Ash", folder: "Ash", category: "hero" },
+            { name: "Asura KOFA", folder: "asura-kofa", category: "god" },
+            { name: "Athena", folder: "Athena", category: "hero" },
+            { name: "Athena Asamiya MI", folder: "Athena Asamiya MI KOFM", category: "hero" },
+            { name: "Athena XI", folder: "Athena_XI", category: "hero" },
+            { name: "Athena-Heidern", folder: "Athena-Heidern", category: "custom" },
+            { name: "Baiyi", folder: "baiyi", category: "custom" },
+            { name: "Balto KOFM", folder: "Balto-KOFM", category: "hero" },
+            { name: "Beast Yeorin QS", folder: "Beast Yeorin QS", category: "custom" },
+            { name: "Benimaru STAR", folder: "Benimaru-Nikaido-STAR", category: "hero" },
+            { name: "Billy", folder: "billy", category: "hero" },
+            { name: "BlackPrincess Tohka", folder: "BlackPrincess_Tohka", category: "custom" },
+            { name: "BLAKE V3", folder: "BLAKE V3-1.1", category: "new" },
+            { name: "Bob", folder: "bob", category: "hero" },
+            { name: "Boss Gustab M", folder: "Boss Gustab M", category: "boss" },
+            { name: "Boss Orochi", folder: "boss-orochi", category: "god" },
+            { name: "Business Vanessa", folder: "Business_Vanessa-KOFM", category: "hero" },
+            { name: "BW-Meiling", folder: "BW-Meiling", category: "new" },
+            { name: "C.Kyo Blood", folder: "C.Kyo.Blood-KOFM", category: "new" },
+            { name: "Carlin Blood", folder: "Carlin.Blood-CKOFM", category: "new" },
+            { name: "Caser Yashiro", folder: "Caser.Yashiro", category: "new" },
+            { name: "CCI Hinako", folder: "ccihinako", category: "hero" },
+            { name: "CCI Jhun", folder: "ccijhun", category: "hero" },
+            { name: "CCI King", folder: "cciking", category: "hero" },
+            { name: "CCI Shermie", folder: "ccishermie", category: "hero" },
+            { name: "Chalice", folder: "Chalice", category: "custom" },
+            { name: "Chaos CKOFM", folder: "Chaos-CKOFM", category: "hero" },
+            { name: "Chobi-Hige", folder: "Chobi-Hige", category: "custom" },
+            { name: "Choi XI", folder: "Choi_XI", category: "hero" },
+            { name: "Clone Benimaru", folder: "clone benimaru", category: "clone" },
+            { name: "Clone Blood Rugal", folder: "Clone Blood Rugal", category: "clone" },
+            { name: "Clone Zero", folder: "Clone Zero", category: "clone" },
+            { name: "Cronus", folder: "Cronus", category: "god" },
+            { name: "Cruelty Sula UM", folder: "Cruelty Sula UM", category: "custom" },
+            { name: "D.Yashiro Rhythm", folder: "D.Yashiro.Rhythm(Dusk)1.x", category: "hero" },
+            { name: "D Discipline Girl", folder: "D_DisciplineGirl", category: "custom" },
+            { name: "D=Rockula", folder: "D=Rockula", category: "new" },
+            { name: "Daiki Final", folder: "Daiki_Final(Prototype)", category: "final" },
+            { name: "Daisu", folder: "Daisu", category: "custom" },
+            { name: "Delirus", folder: "Delirus", category: "custom" },
+            { name: "DF-Sula", folder: "DF-Sula", category: "custom" },
+            { name: "DG.Rugal KOFM", folder: "DG.Rugal-KOFM", category: "boss" },
+            { name: "Dr Yang KOFA", folder: "dr-yang-kofa", category: "custom" },
+            { name: "Dragondomainlords", folder: "Dragondomainlords", category: "god" },
+            { name: "Drakyola", folder: "Drakyola", category: "custom" },
+            { name: "Dual-flame Magaki", folder: "Dual-flame_Magaki", category: "boss" },
+            { name: "Duester", folder: "Duester", category: "custom" },
+            { name: "Element Ash", folder: "Element Ash", category: "element" },
+            { name: "Element Scarlet", folder: "Element Scarlet", category: "element" },
+            { name: "Element-Adel", folder: "Element-Adel", category: "element" },
+            { name: "Eputh Blood", folder: "Eputh Blood-KOFM", category: "hero" },
+            { name: "Error Zero", folder: "Error Zero", category: "boss" },
+            { name: "Essence of Darkness", folder: "Essence of Darkness", category: "god" },
+            { name: "Eve", folder: "Eve", category: "custom" },
+            { name: "Fang", folder: "Fang", category: "custom" },
+            { name: "Felix Third", folder: "Felix_THird", category: "custom" },
+            { name: "Final Adel", folder: "Final Adel", category: "final" },
+            { name: "Final Goeniko", folder: "Final Goeniko", category: "final" },
+            { name: "Final Goenitz", folder: "final-goenitz", category: "final" },
+            { name: "Final IGNIZ", folder: "Final-IGNIZ", category: "final" },
+            { name: "Final Original Zero", folder: "Final-OriginalZero", category: "final" },
+            { name: "Final Sachiel WF", folder: "Final Sachiel WF", category: "final" },
+            { name: "Final Zeroko B", folder: "Final Zeroko B", category: "final" },
+            { name: "Flamme(S)", folder: "Flamme(S)", category: "new" },
+            { name: "Garnet", folder: "Garnet 1.1", category: "custom" },
+            { name: "GARS", folder: "GARS", category: "custom" },
+            { name: "Geese KOFM", folder: "Geese-KOFM", category: "boss" },
+            { name: "GOD ADEL", folder: "GOD_ADEL(2012-01-28 Trial)", category: "god" },
+            { name: "God Orochi", folder: "god_orochi", category: "god" },
+            { name: "God Wind", folder: "God_Wind", category: "god" },
+            { name: "Goktore CKOFM", folder: "Goktore-CKOFM", category: "hero" },
+            { name: "Graves", folder: "Graves", category: "custom" },
+            { name: "Heraclius", folder: "heraclius", category: "god" },
+            { name: "Hiel SP", folder: "Hiel_SP", category: "custom" },
+            { name: "HIEL-KOFM", folder: "HIEL-KOFM", category: "new" },
+            { name: "Hiyoi", folder: "Hiyoi", category: "new" },
+            { name: "Hunter U6746", folder: "Hunter_U6746", category: "custom" },
+            { name: "Infernal Wind", folder: "Infernal_Wind", category: "god" },
+            { name: "K9999 KOF", folder: "K9999_KOF", category: "hero" },
+            { name: "Kaneda KOFM", folder: "Kaneda-KOFM", category: "hero" },
+            { name: "Kaori Yumiko", folder: "Kaori Yumiko", category: "custom" },
+            { name: "Kartis", folder: "Kartis", category: "new" },
+            { name: "Kasim LV2", folder: "Kasim_LV2-CKOFM[v0.40]", category: "new" },
+            { name: "Kasumi KOFM", folder: "Kasumi-KOFM", category: "hero" },
+            { name: "Kei", folder: "Kei", category: "custom" },
+            { name: "Kevenoce", folder: "Kevenoce", category: "new" },
+            { name: "Keyser-Aunthmer", folder: "Keyser-Aunthmer", category: "boss" },
+            { name: "KFM", folder: "kfm", category: "hero" },
+            { name: "Kotone", folder: "Kotone", category: "new" },
+            { name: "Kyaga KOFM", folder: "Kyaga-KOFM", category: "new" },
+            { name: "Kychiel", folder: "Kychiel", category: "custom" },
+            { name: "Lane Blood", folder: "Lane.Blood-CKOFM", category: "new" },
+            { name: "Littledevil-Phoenix", folder: "Littledevil-Phoenix", category: "new" },
+            { name: "Lord Goenitz", folder: "Lord-Goenitz", category: "boss" },
+            { name: "LUMIEL", folder: "LUMIEL", category: "god" },
+            { name: "Magnus", folder: "Magnus", category: "custom" },
+            { name: "Mai Phoenix XI", folder: "Mai Phoenix XI", category: "hero" },
+            { name: "Maltet", folder: "Maltet", category: "custom" },
+            { name: "Maryl", folder: "Maryl", category: "custom" },
+            { name: "Matam", folder: "Matam", category: "custom" },
+            { name: "Meld Boss", folder: "Meld_Boss", category: "boss" },
+            { name: "Meteoric Marisa", folder: "meteoricmarisa", category: "custom" },
+            { name: "Mizore KOFM LV2", folder: "mizore-kofmLV2", category: "hero" },
+            { name: "Nao-MX", folder: "Nao-MX 1.0", category: "custom" },
+            { name: "NeoDio KOFM", folder: "NeoDio KOFM", category: "hero" },
+            { name: "NeoGeegus KOFM", folder: "NeoGeegus KOFM", category: "boss" },
+            { name: "Nero", folder: "Nero", category: "custom" },
+            { name: "New Kyouki", folder: "New_Kyouki", category: "new" },
+            { name: "N-Zeroko", folder: "N-Zeroko", category: "custom" },
+            { name: "Noa MK", folder: "Noa_MK", category: "new" },
+            { name: "Nox Bernstein", folder: "Nox Bernstein", category: "hero" },
+            { name: "O.Zero Prominence", folder: "O.Zero-Prominence", category: "boss" },
+            { name: "Olivia", folder: "Olivia", category: "new" },
+            { name: "Original Psyqhical", folder: "Original Psyqhical", category: "custom" },
+            { name: "Orochi Kyo WF", folder: "Orochi Kyo WF", category: "orochi" },
+            { name: "Orochi Leona", folder: "Orochi Leona-KOFM", category: "orochi" },
+            { name: "Orochi Yamazaki", folder: "Orochi.Yamazaki-CKOFM", category: "orochi" },
+            { name: "Orochi EV1.55", folder: "Orochi-EV1.55", category: "orochi" },
+            { name: "Orochi Iori", folder: "orochi-iori", category: "orochi" },
+            { name: "Orochi Kyoko", folder: "orochi-kyoko", category: "orochi" },
+            { name: "P-LEONA ELEMENT", folder: "P-LEONA_ELEMENT", category: "element" },
+            { name: "Psyche 42", folder: "Psyche_42-1.1", category: "custom" },
+            { name: "Psyche 57", folder: "Psyche_57-1.1", category: "custom" },
+            { name: "R.S.P", folder: "R.S.P", category: "new" },
+            { name: "Raika", folder: "Raika", category: "new" },
+            { name: "Raisen Blood", folder: "Raisen.blood-KOFM", category: "hero" },
+            { name: "Rayno", folder: "Rayno", category: "custom" },
+            { name: "Reas KOFM", folder: "Reas-KOFM", category: "hero" },
+            { name: "Reyna", folder: "Reyna", category: "custom" },
+            { name: "Rinne-RH", folder: "Rinne-RH", category: "new" },
+            { name: "Robo-Kyo KOFA", folder: "robo-kyo-kofa", category: "custom" },
+            { name: "Rocken", folder: "Rocken", category: "new" },
+            { name: "Rose", folder: "Rose", category: "hero" },
+            { name: "Rozwel SK", folder: "Rozwel S.K (LEGIT)", category: "custom" },
+            { name: "Rugal 7th", folder: "Rugal7th", category: "boss" },
+            { name: "Ryuji", folder: "Ryuji", category: "hero" },
+            { name: "S Infezione", folder: "S_Infezione", category: "custom" },
+            { name: "Samael", folder: "Samael", category: "god" },
+            { name: "Sasin", folder: "Sasin", category: "new" },
+            { name: "Shadow Dancer", folder: "Shadow-Dancer", category: "custom" },
+            { name: "Sonic Vanesa", folder: "Sonic Vanesa", category: "new" },
+            { name: "Spiritland Lords", folder: "Spiritland Lords", category: "god" },
+            { name: "Tenrou Kunagi", folder: "Tenrou_Kunagi", category: "new" },
+            { name: "ThunderMiss Shermie", folder: "ThunderMiss.Shermie", category: "hero" },
+            { name: "Titan KOF", folder: "Titan_KOF", category: "boss" },
+            { name: "True Iori X", folder: "True Iori X_KOF", category: "hero" },
+            { name: "Unfailed Gustab", folder: "Unfailed Gustab", category: "boss" },
+            { name: "Unleashed God Kula", folder: "Unleashesd God Kula", category: "god" },
+            { name: "Valmar Rugal", folder: "Valmar Rugal", category: "boss" },
+            { name: "Vandals", folder: "vandals", category: "custom" },
+            { name: "Viper", folder: "Viper", category: "custom" },
+            { name: "VladRose", folder: "VladRose", category: "new" },
+            { name: "Voltage Zeroko-Pre", folder: "Voltage Zeroko-Pre", category: "final" },
+            { name: "WatchTV", folder: "WatchTV", category: "custom" },
+            { name: "WhirlWind Goenitz", folder: "WhirlWind-Goenitz", category: "god" },
+            { name: "White DeathRa", folder: "White DeathRaGeroous Version", category: "custom" },
+            { name: "Wild O.Yashiro", folder: "Wild.O.Yashiro", category: "orochi" },
+            { name: "Wind MMXIX", folder: "Wind_MMXIX", category: "custom" },
+            { name: "Xion-V", folder: "Xion-V", category: "hero" },
+            { name: "Yamazaki Blood", folder: "Yamazaki.Blood", category: "new" },
+            { name: "Yukida", folder: "Yukida", category: "custom" },
+            { name: "Yuno KOFM", folder: "Yuno-KOFM", category: "hero" },
+            { name: "Yuri SV", folder: "Yuri_SV", category: "new" },
+            { name: "Zerozuchi Boss", folder: "Zerozuchi_Boss", category: "boss" }
+        ];
+
+        // Generate full character data with stats
+        const characters = characterNames.map(c => {
+            const stats = generateStats(c.name, c.category);
+            const power = calculatePower(stats);
+            const tier = getTier(power);
+            return { ...c, stats, power, tier };
+        }).sort((a, b) => b.power - a.power);
+
+        // DOM Elements
+        const charGrid = document.getElementById('char-grid');
+        const searchInput = document.getElementById('char-search');
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const viewTabs = document.querySelectorAll('.view-tab');
+        const tierListView = document.getElementById('tier-list-view');
+        const gridView = document.querySelector('.grid-view');
+        const radarCanvas = document.getElementById('radar-chart');
+        const radarCtx = radarCanvas.getContext('2d');
+
+        let selectedChar = null;
+        let currentFilter = 'all';
+        let currentView = 'grid';
+
+        // Update tier counts
+        function updateTierCounts() {
+            const counts = { S: 0, A: 0, B: 0, C: 0, D: 0 };
+            characters.forEach(c => counts[c.tier]++);
+            document.getElementById('tier-s-count').textContent = counts.S;
+            document.getElementById('tier-a-count').textContent = counts.A;
+            document.getElementById('tier-b-count').textContent = counts.B;
+            document.getElementById('tier-c-count').textContent = counts.C;
+        }
+
+        // Draw radar chart
+        function drawRadar(stats) {
+            const ctx = radarCtx;
+            const w = 250, h = 250;
+            const cx = w / 2, cy = h / 2;
+            const r = 90;
+
+            ctx.clearRect(0, 0, w, h);
+
+            // Draw grid
+            ctx.strokeStyle = 'rgba(255, 102, 0, 0.3)';
+            ctx.lineWidth = 1;
+            for (let level = 1; level <= 5; level++) {
+                ctx.beginPath();
+                for (let i = 0; i <= 6; i++) {
+                    const angle = (Math.PI * 2 * i / 6) - Math.PI / 2;
+                    const x = cx + Math.cos(angle) * r * level / 5;
+                    const y = cy + Math.sin(angle) * r * level / 5;
+                    if (i === 0) ctx.moveTo(x, y);
+                    else ctx.lineTo(x, y);
+                }
+                ctx.closePath();
+                ctx.stroke();
+            }
+
+            // Draw axes
+            ctx.strokeStyle = 'rgba(255, 102, 0, 0.5)';
+            for (let i = 0; i < 6; i++) {
+                const angle = (Math.PI * 2 * i / 6) - Math.PI / 2;
+                ctx.beginPath();
+                ctx.moveTo(cx, cy);
+                ctx.lineTo(cx + Math.cos(angle) * r, cy + Math.sin(angle) * r);
+                ctx.stroke();
+            }
+
+            // Draw data
+            const values = [stats.atk, stats.spd, stats.tec, stats.spc, stats.def, stats.rng];
+            ctx.beginPath();
+            ctx.fillStyle = 'rgba(255, 215, 0, 0.3)';
+            ctx.strokeStyle = '#ffd700';
+            ctx.lineWidth = 2;
+
+            for (let i = 0; i <= 6; i++) {
+                const angle = (Math.PI * 2 * i / 6) - Math.PI / 2;
+                const val = values[i % 6] / 100;
+                const x = cx + Math.cos(angle) * r * val;
+                const y = cy + Math.sin(angle) * r * val;
+                if (i === 0) ctx.moveTo(x, y);
+                else ctx.lineTo(x, y);
+            }
+            ctx.closePath();
+            ctx.fill();
+            ctx.stroke();
+
+            // Draw points
+            ctx.fillStyle = '#ffd700';
+            for (let i = 0; i < 6; i++) {
+                const angle = (Math.PI * 2 * i / 6) - Math.PI / 2;
+                const val = values[i] / 100;
+                const x = cx + Math.cos(angle) * r * val;
+                const y = cy + Math.sin(angle) * r * val;
+                ctx.beginPath();
+                ctx.arc(x, y, 4, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        // Update preview
+        function updatePreview(char) {
+            document.querySelector('.preview-name').textContent = char.name;
+
+            const tierLabel = document.getElementById('preview-tier');
+            tierLabel.textContent = char.tier;
+            tierLabel.className = 'tier-label ' + char.tier;
+
+            document.getElementById('preview-power').textContent = char.power;
+
+            // Update portrait
+            const portraitImg = document.getElementById('preview-portrait-img');
+            const noPortrait = document.getElementById('preview-no-portrait');
+            portraitImg.src = `portraits/${char.folder}.png`;
+            portraitImg.onerror = function() {
+                this.classList.add('hidden');
+                noPortrait.classList.remove('hidden');
+                noPortrait.textContent = char.name.charAt(0);
+            };
+            portraitImg.onload = function() {
+                this.classList.remove('hidden');
+                noPortrait.classList.add('hidden');
+            };
+
+            // Update bars
+            const stats = ['atk', 'def', 'spd', 'tec', 'spc', 'rng'];
+            stats.forEach(stat => {
+                document.getElementById('bar-' + stat).style.width = char.stats[stat] + '%';
+                document.getElementById('val-' + stat).textContent = char.stats[stat];
+            });
+
+            drawRadar(char.stats);
+        }
+
+        // Render grid
+        function renderGrid(filter = 'all', search = '') {
+            charGrid.innerHTML = '';
+
+            let filtered = characters;
+            if (filter !== 'all') {
+                filtered = filtered.filter(c => c.tier === filter);
+            }
+            if (search) {
+                const s = search.toLowerCase();
+                filtered = filtered.filter(c => c.name.toLowerCase().includes(s));
+            }
+
+            filtered.forEach(char => {
+                const cell = document.createElement('div');
+                cell.className = 'char-cell';
+                cell.dataset.tier = char.tier;
+                cell.dataset.folder = char.folder;
+
+                // Create portrait image
+                const img = document.createElement('img');
+                img.className = 'char-portrait';
+                img.src = `portraits/${char.folder}.png`;
+                img.alt = char.name;
+                img.onerror = function() {
+                    this.classList.add('hidden');
+                    cell.querySelector('.char-initial').classList.remove('hidden');
+                };
+                img.onload = function() {
+                    cell.querySelector('.char-initial').classList.add('hidden');
+                };
+
+                cell.innerHTML = `
+                    <span class="char-initial hidden">${char.name.charAt(0)}</span>
+                    <span class="tier-badge">${char.tier}</span>
+                `;
+                cell.insertBefore(img, cell.firstChild);
+
+                cell.addEventListener('click', () => selectChar(char, cell));
+                cell.addEventListener('mouseenter', () => { if (!selectedChar) updatePreview(char); });
+                charGrid.appendChild(cell);
+            });
+        }
+
+        // Render tier list
+        function renderTierList() {
+            const tiers = ['S', 'A', 'B', 'C', 'D'];
+            const tierNames = {
+                S: 'Legendary',
+                A: 'Excellent',
+                B: 'Good',
+                C: 'Average',
+                D: 'Beginner'
+            };
+
+            tierListView.innerHTML = '';
+
+            tiers.forEach(tier => {
+                const tierChars = characters.filter(c => c.tier === tier);
+                if (tierChars.length === 0) return;
+
+                const section = document.createElement('div');
+                section.className = 'tier-section';
+                section.innerHTML = `
+                    <div class="tier-header ${tier}">
+                        <div class="tier-header-label">${tier}</div>
+                        <div class="tier-header-info">
+                            <div class="tier-header-title">${tierNames[tier]}</div>
+                            <div class="tier-header-count">${tierChars.length} personnages</div>
+                        </div>
+                    </div>
+                    <div class="tier-chars">
+                        ${tierChars.map(c => `
+                            <span class="tier-char ${tier}" data-folder="${c.folder}">
+                                ${c.name}
+                                <span class="power-badge">${c.power}</span>
+                            </span>
+                        `).join('')}
+                    </div>
+                `;
+                tierListView.appendChild(section);
+            });
+
+            // Add click handlers
+            tierListView.querySelectorAll('.tier-char').forEach(el => {
+                el.addEventListener('click', () => {
+                    const char = characters.find(c => c.folder === el.dataset.folder);
+                    if (char) {
+                        updatePreview(char);
+                        selectedChar = char;
+                    }
+                });
+            });
+        }
+
+        // Select character
+        function selectChar(char, cell) {
+            document.querySelectorAll('.char-cell.selected').forEach(c => c.classList.remove('selected'));
+            if (cell) cell.classList.add('selected');
+            selectedChar = char;
+            updatePreview(char);
+        }
+
+        // Event listeners
+        searchInput.addEventListener('input', e => renderGrid(currentFilter, e.target.value));
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentFilter = btn.dataset.filter;
+                renderGrid(currentFilter, searchInput.value);
+            });
+        });
+
+        viewTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                viewTabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                currentView = tab.dataset.view;
+
+                if (currentView === 'tierlist') {
+                    gridView.classList.add('hidden');
+                    tierListView.classList.add('active');
+                    renderTierList();
+                } else {
+                    gridView.classList.remove('hidden');
+                    tierListView.classList.remove('active');
+                }
+            });
+        });
+
+        document.getElementById('random-select').addEventListener('click', () => {
+            const cells = document.querySelectorAll('.char-cell');
+            if (cells.length === 0) return;
+
+            let i = 0;
+            const interval = setInterval(() => {
+                const idx = Math.floor(Math.random() * cells.length);
+                cells.forEach(c => c.style.transform = '');
+                cells[idx].style.transform = 'scale(1.2)';
+                if (++i >= 15) {
+                    clearInterval(interval);
+                    const char = characters.find(c => c.folder === cells[idx].dataset.folder);
+                    if (char) selectChar(char, cells[idx]);
+                }
+            }, 100);
+        });
+
+        // Init
+        renderGrid();
+        updateTierCounts();
+        drawRadar({ atk: 50, def: 50, spd: 50, tec: 50, spc: 50, rng: 50 });
+    </script>
+</body>
+</html>

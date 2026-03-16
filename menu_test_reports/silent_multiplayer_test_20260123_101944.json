@@ -1,0 +1,782 @@
+{
+  "test_date": "2026-01-23T10:19:44.875670",
+  "test_type": "Silent Multiplayer Test",
+  "summary": {
+    "total_players_created": 15,
+    "total_matches_played": 18,
+    "players_online_at_end": 12,
+    "errors_count": 0
+  },
+  "handler_tests": [
+    {
+      "test": "Leaderboard readable",
+      "status": "OK",
+      "detail": ""
+    },
+    {
+      "test": "Online players readable",
+      "status": "OK",
+      "detail": "15 joueurs"
+    },
+    {
+      "test": "Match history readable",
+      "status": "OK",
+      "detail": "18 matchs"
+    }
+  ],
+  "matches": [
+    {
+      "match_id": "match_1",
+      "player1": {
+        "id": "player_6",
+        "username": "NeonZ704",
+        "elo": 1342,
+        "character": "Mai"
+      },
+      "player2": {
+        "id": "player_4",
+        "username": "CyberWarrior222",
+        "elo": 1380,
+        "character": "Mai"
+      },
+      "score": [
+        0,
+        2
+      ],
+      "winner": "CyberWarrior222",
+      "duration_seconds": 202,
+      "started_at": "2026-01-23T10:19:43.958975",
+      "status": "completed"
+    },
+    {
+      "match_id": "match_2",
+      "player1": {
+        "id": "player_11",
+        "username": "PhoenixNinja659",
+        "elo": 1538,
+        "character": "Leona"
+      },
+      "player2": {
+        "id": "player_8",
+        "username": "ShadowPro378",
+        "elo": 1848,
+        "character": "K'"
+      },
+      "score": [
+        2,
+        0
+      ],
+      "winner": "PhoenixNinja659",
+      "duration_seconds": 71,
+      "started_at": "2026-01-23T10:19:43.958975",
+      "status": "completed"
+    },
+    {
+      "match_id": "match_3",
+      "player1": {
+        "id": "player_9",
+        "username": "ThunderSlayer905",
+        "elo": 1056,
+        "character": "Kyo"
+      },
+      "player2": {
+        "id": "player_7",
+        "username": "DragonX354",
+        "elo": 1155,
+        "character": "Athena"
+      },
+      "score": [
+        2,
+        0
+      ],
+      "winner": "ThunderSlayer905",
+      "duration_seconds": 156,
+      "started_at": "2026-01-23T10:19:44.059997",
+      "status": "completed"
+    },
+    {
+      "match_id": "match_4",
+      "player1": {
+        "id": "player_1",
+        "username": "NeonHunter319",
+        "elo": 1227,
+        "character": "Leona"
+      },
+      "player2": {
+        "id": "player_6",
+        "username": "NeonZ704",
+        "elo": 1315,
+        "character": "Mai"
+      },
+      "score": [
+        2,
+        1
+      ],
+      "winner": "NeonHunter319",
+      "duration_seconds": 103,
+      "started_at": "2026-01-23T10:19:44.059997",
+      "status": "completed"
+    },
+    {
+      "match_id": "match_5",
+      "player1": {
+        "id": "player_2",
+        "username": "DragonWarrior97",
+        "elo": 1746,
+        "character": "Kyo"
+      },
+      "player2": {
+        "id": "player_8",
+        "username": "ShadowPro378",
+        "elo": 1819,
+        "character": "K'"
+      },
+      "score": [
+        2,
+        0
+      ],
+      "winner": "DragonWarrior97",
+      "duration_seconds": 198,
+      "started_at": "2026-01-23T10:19:44.059997",
+      "status": "completed"
+    },
+    {
+      "match_id": "match_6",
+      "player1": {
+        "id": "player_5",
+        "username": "SilentAce932",
+        "elo": 1001,
+        "character": "Athena"
+      },
+      "player2": {
+        "id": "player_7",
+        "username": "DragonX354",
+        "elo": 1128,
+        "character": "Athena"
+      },
+      "score": [
+        2,
+        0
+      ],
+      "winner": "SilentAce932",
+      "duration_seconds": 105,
+      "started_at": "2026-01-23T10:19:44.160509",
+      "status": "completed"
+    },
+    {
+      "match_id": "match_7",
+      "player1": {
+        "id": "player_15",
+        "username": "TigerZ30",
+        "elo": 1210,
+        "character": "Kyo"
+      },
+      "player2": {
+        "id": "player_6",
+        "username": "NeonZ704",
+        "elo": 1300,
+        "character": "Mai"
+      },
+      "score": [
+        2,
+        0
+      ],
+      "winner": "TigerZ30",
+      "duration_seconds": 86,
+      "started_at": "2026-01-23T10:19:44.160509",
+      "status": "completed"
+    },
+    {
+      "match_id": "match_8",
+      "player1": {
+        "id": "player_13",
+        "username": "ShadowKing931",
+        "elo": 1304,
+        "character": "Kyo"
+      },
+      "player2": {
+        "id": "player_8",
+        "username": "ShadowPro378",
+        "elo": 1807,
+        "character": "K'"
+      },
+      "score": [
+        1,
+        2
+      ],
+      "winner": "ShadowPro378",
+      "duration_seconds": 287,
+      "started_at": "2026-01-23T10:19:44.160509",
+      "status": "completed"
+    },
+    {
+      "match_id": "match_9",
+      "player1": {
+        "id": "player_7",
+        "username": "DragonX354",
+        "elo": 1102,
+        "character": "Athena"
+      },
+      "player2": {
+        "id": "player_15",
+        "username": "TigerZ30",
+        "elo": 1227,
+        "character": "Kyo"
+      },
+      "score": [
+        0,
+        2
+      ],
+      "winner": "TigerZ30",
+      "duration_seconds": 255,
+      "started_at": "2026-01-23T10:19:44.262946",
+      "status": "completed"
+    },
+    {
+      "match_id": "match_10",
+      "player1": {
+        "id": "player_10",
+        "username": "NeonWarrior623",
+        "elo": 1442,
+        "character": "Terry"
+      },
+      "player2": {
+        "id": "player_8",
+        "username": "ShadowPro378",
+        "elo": 1819,
+        "character": "K'"
+      },
+      "score": [
+        2,
+        1
+      ],
+      "winner": "NeonWarrior623",
+      "duration_seconds": 189,
+      "started_at": "2026-01-23T10:19:44.262946",
+      "status": "completed"
+    }
+  ],
+  "errors": [],
+  "log": [
+    {
+      "time": "10:19:43",
+      "level": "INFO",
+      "message": "=== DEBUT TEST MULTIJOUEUR SILENCIEUX ==="
+    },
+    {
+      "time": "10:19:43",
+      "level": "INFO",
+      "message": "Creation de 15 joueurs virtuels..."
+    },
+    {
+      "time": "10:19:43",
+      "level": "INFO",
+      "message": "15 joueurs crees"
+    },
+    {
+      "time": "10:19:43",
+      "level": "INFO",
+      "message": "Connexion des joueurs..."
+    },
+    {
+      "time": "10:19:43",
+      "level": "INFO",
+      "message": "Joueur connecte: NeonHunter319 (ELO: 1227)"
+    },
+    {
+      "time": "10:19:43",
+      "level": "INFO",
+      "message": "Joueur connecte: DragonWarrior97 (ELO: 1746)"
+    },
+    {
+      "time": "10:19:43",
+      "level": "INFO",
+      "message": "Joueur connecte: NeonMaster575 (ELO: 879)"
+    },
+    {
+      "time": "10:19:43",
+      "level": "INFO",
+      "message": "Joueur connecte: CyberWarrior222 (ELO: 1380)"
+    },
+    {
+      "time": "10:19:43",
+      "level": "INFO",
+      "message": "Joueur connecte: SilentAce932 (ELO: 1001)"
+    },
+    {
+      "time": "10:19:43",
+      "level": "INFO",
+      "message": "Joueur connecte: NeonZ704 (ELO: 1342)"
+    },
+    {
+      "time": "10:19:43",
+      "level": "INFO",
+      "message": "Joueur connecte: DragonX354 (ELO: 1155)"
+    },
+    {
+      "time": "10:19:43",
+      "level": "INFO",
+      "message": "Joueur connecte: ShadowPro378 (ELO: 1848)"
+    },
+    {
+      "time": "10:19:43",
+      "level": "INFO",
+      "message": "Joueur connecte: ThunderSlayer905 (ELO: 1056)"
+    },
+    {
+      "time": "10:19:43",
+      "level": "INFO",
+      "message": "Joueur connecte: NeonWarrior623 (ELO: 1442)"
+    },
+    {
+      "time": "10:19:43",
+      "level": "INFO",
+      "message": "Joueur connecte: PhoenixNinja659 (ELO: 1538)"
+    },
+    {
+      "time": "10:19:43",
+      "level": "INFO",
+      "message": "Joueur connecte: FireNinja378 (ELO: 1407)"
+    },
+    {
+      "time": "10:19:43",
+      "level": "INFO",
+      "message": "Joueur connecte: ShadowKing931 (ELO: 1304)"
+    },
+    {
+      "time": "10:19:43",
+      "level": "INFO",
+      "message": "Joueur connecte: SilentAce327 (ELO: 1330)"
+    },
+    {
+      "time": "10:19:43",
+      "level": "INFO",
+      "message": "Joueur connecte: TigerZ30 (ELO: 1210)"
+    },
+    {
+      "time": "10:19:43",
+      "level": "INFO",
+      "message": "15 joueurs en ligne"
+    },
+    {
+      "time": "10:19:43",
+      "level": "INFO",
+      "message": "Simulation de 8 rounds de matchmaking..."
+    },
+    {
+      "time": "10:19:43",
+      "level": "INFO",
+      "message": "--- Round 1 ---"
+    },
+    {
+      "time": "10:19:43",
+      "level": "INFO",
+      "message": "CyberWarrior222 rejoint la queue casual"
+    },
+    {
+      "time": "10:19:43",
+      "level": "INFO",
+      "message": "NeonZ704 rejoint la queue casual"
+    },
+    {
+      "time": "10:19:43",
+      "level": "INFO",
+      "message": "PhoenixNinja659 rejoint la queue ranked"
+    },
+    {
+      "time": "10:19:43",
+      "level": "INFO",
+      "message": "ShadowPro378 rejoint la queue ranked"
+    },
+    {
+      "time": "10:19:43",
+      "level": "INFO",
+      "message": "Match: NeonZ704 vs CyberWarrior222 -> Gagnant: CyberWarrior222 (0-2)"
+    },
+    {
+      "time": "10:19:43",
+      "level": "INFO",
+      "message": "Match: PhoenixNinja659 vs ShadowPro378 -> Gagnant: PhoenixNinja659 (2-0)"
+    },
+    {
+      "time": "10:19:43",
+      "level": "INFO",
+      "message": "Round 1: 2 matchs crees"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "--- Round 2 ---"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "NeonZ704 rejoint la queue casual"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "DragonWarrior97 rejoint la queue ranked"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "ThunderSlayer905 rejoint la queue ranked"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "NeonHunter319 rejoint la queue ranked"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "ShadowPro378 rejoint la queue casual"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "DragonX354 rejoint la queue ranked"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "Match: ThunderSlayer905 vs DragonX354 -> Gagnant: ThunderSlayer905 (2-0)"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "Match: NeonHunter319 vs NeonZ704 -> Gagnant: NeonHunter319 (2-1)"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "Match: DragonWarrior97 vs ShadowPro378 -> Gagnant: DragonWarrior97 (2-0)"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "Round 2: 3 matchs crees"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "--- Round 3 ---"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "SilentAce932 rejoint la queue ranked"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "ShadowKing931 rejoint la queue casual"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "ShadowPro378 rejoint la queue ranked"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "TigerZ30 rejoint la queue ranked"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "NeonZ704 rejoint la queue ranked"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "DragonX354 rejoint la queue ranked"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "Match: SilentAce932 vs DragonX354 -> Gagnant: SilentAce932 (2-0)"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "Match: TigerZ30 vs NeonZ704 -> Gagnant: TigerZ30 (2-0)"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "Match: ShadowKing931 vs ShadowPro378 -> Gagnant: ShadowPro378 (1-2)"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "Round 3: 3 matchs crees"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "--- Round 4 ---"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "NeonWarrior623 rejoint la queue casual"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "TigerZ30 rejoint la queue casual"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "ShadowPro378 rejoint la queue ranked"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "DragonX354 rejoint la queue casual"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "Match: DragonX354 vs TigerZ30 -> Gagnant: TigerZ30 (0-2)"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "Match: NeonWarrior623 vs ShadowPro378 -> Gagnant: NeonWarrior623 (2-1)"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "Round 4: 2 matchs crees"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "--- Round 5 ---"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "NeonZ704 rejoint la queue ranked"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "NeonHunter319 rejoint la queue casual"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "ShadowKing931 rejoint la queue casual"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "TigerZ30 rejoint la queue casual"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "Match: TigerZ30 vs NeonHunter319 -> Gagnant: TigerZ30 (2-0)"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "Match: ShadowKing931 vs NeonZ704 -> Gagnant: ShadowKing931 (2-1)"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "Round 5: 2 matchs crees"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "--- Round 6 ---"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "TigerZ30 rejoint la queue ranked"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "NeonZ704 rejoint la queue ranked"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "SilentAce327 rejoint la queue casual"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "SilentAce932 rejoint la queue casual"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "NeonWarrior623 rejoint la queue ranked"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "DragonX354 rejoint la queue casual"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "Match: SilentAce932 vs DragonX354 -> Gagnant: DragonX354 (1-2)"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "Match: TigerZ30 vs NeonZ704 -> Gagnant: NeonZ704 (0-2)"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "Match: SilentAce327 vs NeonWarrior623 -> Gagnant: NeonWarrior623 (0-2)"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "Round 6: 3 matchs crees"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "--- Round 7 ---"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "SilentAce932 rejoint la queue ranked"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "NeonWarrior623 rejoint la queue ranked"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "TigerZ30 rejoint la queue casual"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "Match: SilentAce932 vs TigerZ30 -> Gagnant: TigerZ30 (0-2)"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "Round 7: 1 matchs crees"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "--- Round 8 ---"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "ShadowKing931 rejoint la queue casual"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "SilentAce932 rejoint la queue casual"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "SilentAce327 rejoint la queue ranked"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "Match: SilentAce932 vs ShadowKing931 -> Gagnant: ShadowKing931 (0-2)"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "Match: SilentAce327 vs NeonWarrior623 -> Gagnant: SilentAce327 (2-1)"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "Round 8: 2 matchs crees"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "Generation des fichiers de donnees..."
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "Leaderboard genere avec 15 joueurs"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "Fichier online_players.json genere avec 15 joueurs"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "Historique des matchs genere avec 18 parties"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "Verification des handlers de menu..."
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "  Leaderboard readable: OK "
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "  Online players readable: OK 15 joueurs"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "  Match history readable: OK 18 matchs"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "Deconnexion de quelques joueurs..."
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "Joueur deconnecte: TigerZ30"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "Joueur deconnecte: SilentAce932"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "Joueur deconnecte: ShadowPro378"
+    },
+    {
+      "time": "10:19:44",
+      "level": "INFO",
+      "message": "=== FIN DU TEST ==="
+    }
+  ]
+}

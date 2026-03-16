@@ -1,0 +1,420 @@
+{
+  "matches": [
+    {
+      "match_id": "match_1",
+      "player1": {
+        "id": "player_6",
+        "username": "NeonZ704",
+        "elo": 1342,
+        "character": "Mai"
+      },
+      "player2": {
+        "id": "player_4",
+        "username": "CyberWarrior222",
+        "elo": 1380,
+        "character": "Mai"
+      },
+      "score": [
+        0,
+        2
+      ],
+      "winner": "CyberWarrior222",
+      "duration_seconds": 202,
+      "started_at": "2026-01-23T10:19:43.958975",
+      "status": "completed"
+    },
+    {
+      "match_id": "match_2",
+      "player1": {
+        "id": "player_11",
+        "username": "PhoenixNinja659",
+        "elo": 1538,
+        "character": "Leona"
+      },
+      "player2": {
+        "id": "player_8",
+        "username": "ShadowPro378",
+        "elo": 1848,
+        "character": "K'"
+      },
+      "score": [
+        2,
+        0
+      ],
+      "winner": "PhoenixNinja659",
+      "duration_seconds": 71,
+      "started_at": "2026-01-23T10:19:43.958975",
+      "status": "completed"
+    },
+    {
+      "match_id": "match_3",
+      "player1": {
+        "id": "player_9",
+        "username": "ThunderSlayer905",
+        "elo": 1056,
+        "character": "Kyo"
+      },
+      "player2": {
+        "id": "player_7",
+        "username": "DragonX354",
+        "elo": 1155,
+        "character": "Athena"
+      },
+      "score": [
+        2,
+        0
+      ],
+      "winner": "ThunderSlayer905",
+      "duration_seconds": 156,
+      "started_at": "2026-01-23T10:19:44.059997",
+      "status": "completed"
+    },
+    {
+      "match_id": "match_4",
+      "player1": {
+        "id": "player_1",
+        "username": "NeonHunter319",
+        "elo": 1227,
+        "character": "Leona"
+      },
+      "player2": {
+        "id": "player_6",
+        "username": "NeonZ704",
+        "elo": 1315,
+        "character": "Mai"
+      },
+      "score": [
+        2,
+        1
+      ],
+      "winner": "NeonHunter319",
+      "duration_seconds": 103,
+      "started_at": "2026-01-23T10:19:44.059997",
+      "status": "completed"
+    },
+    {
+      "match_id": "match_5",
+      "player1": {
+        "id": "player_2",
+        "username": "DragonWarrior97",
+        "elo": 1746,
+        "character": "Kyo"
+      },
+      "player2": {
+        "id": "player_8",
+        "username": "ShadowPro378",
+        "elo": 1819,
+        "character": "K'"
+      },
+      "score": [
+        2,
+        0
+      ],
+      "winner": "DragonWarrior97",
+      "duration_seconds": 198,
+      "started_at": "2026-01-23T10:19:44.059997",
+      "status": "completed"
+    },
+    {
+      "match_id": "match_6",
+      "player1": {
+        "id": "player_5",
+        "username": "SilentAce932",
+        "elo": 1001,
+        "character": "Athena"
+      },
+      "player2": {
+        "id": "player_7",
+        "username": "DragonX354",
+        "elo": 1128,
+        "character": "Athena"
+      },
+      "score": [
+        2,
+        0
+      ],
+      "winner": "SilentAce932",
+      "duration_seconds": 105,
+      "started_at": "2026-01-23T10:19:44.160509",
+      "status": "completed"
+    },
+    {
+      "match_id": "match_7",
+      "player1": {
+        "id": "player_15",
+        "username": "TigerZ30",
+        "elo": 1210,
+        "character": "Kyo"
+      },
+      "player2": {
+        "id": "player_6",
+        "username": "NeonZ704",
+        "elo": 1300,
+        "character": "Mai"
+      },
+      "score": [
+        2,
+        0
+      ],
+      "winner": "TigerZ30",
+      "duration_seconds": 86,
+      "started_at": "2026-01-23T10:19:44.160509",
+      "status": "completed"
+    },
+    {
+      "match_id": "match_8",
+      "player1": {
+        "id": "player_13",
+        "username": "ShadowKing931",
+        "elo": 1304,
+        "character": "Kyo"
+      },
+      "player2": {
+        "id": "player_8",
+        "username": "ShadowPro378",
+        "elo": 1807,
+        "character": "K'"
+      },
+      "score": [
+        1,
+        2
+      ],
+      "winner": "ShadowPro378",
+      "duration_seconds": 287,
+      "started_at": "2026-01-23T10:19:44.160509",
+      "status": "completed"
+    },
+    {
+      "match_id": "match_9",
+      "player1": {
+        "id": "player_7",
+        "username": "DragonX354",
+        "elo": 1102,
+        "character": "Athena"
+      },
+      "player2": {
+        "id": "player_15",
+        "username": "TigerZ30",
+        "elo": 1227,
+        "character": "Kyo"
+      },
+      "score": [
+        0,
+        2
+      ],
+      "winner": "TigerZ30",
+      "duration_seconds": 255,
+      "started_at": "2026-01-23T10:19:44.262946",
+      "status": "completed"
+    },
+    {
+      "match_id": "match_10",
+      "player1": {
+        "id": "player_10",
+        "username": "NeonWarrior623",
+        "elo": 1442,
+        "character": "Terry"
+      },
+      "player2": {
+        "id": "player_8",
+        "username": "ShadowPro378",
+        "elo": 1819,
+        "character": "K'"
+      },
+      "score": [
+        2,
+        1
+      ],
+      "winner": "NeonWarrior623",
+      "duration_seconds": 189,
+      "started_at": "2026-01-23T10:19:44.262946",
+      "status": "completed"
+    },
+    {
+      "match_id": "match_11",
+      "player1": {
+        "id": "player_15",
+        "username": "TigerZ30",
+        "elo": 1243,
+        "character": "Kyo"
+      },
+      "player2": {
+        "id": "player_1",
+        "username": "NeonHunter319",
+        "elo": 1252,
+        "character": "Leona"
+      },
+      "score": [
+        2,
+        0
+      ],
+      "winner": "TigerZ30",
+      "duration_seconds": 64,
+      "started_at": "2026-01-23T10:19:44.363515",
+      "status": "completed"
+    },
+    {
+      "match_id": "match_12",
+      "player1": {
+        "id": "player_13",
+        "username": "ShadowKing931",
+        "elo": 1283,
+        "character": "Kyo"
+      },
+      "player2": {
+        "id": "player_6",
+        "username": "NeonZ704",
+        "elo": 1284,
+        "character": "Mai"
+      },
+      "score": [
+        2,
+        1
+      ],
+      "winner": "ShadowKing931",
+      "duration_seconds": 216,
+      "started_at": "2026-01-23T10:19:44.363515",
+      "status": "completed"
+    },
+    {
+      "match_id": "match_13",
+      "player1": {
+        "id": "player_5",
+        "username": "SilentAce932",
+        "elo": 1030,
+        "character": "Athena"
+      },
+      "player2": {
+        "id": "player_7",
+        "username": "DragonX354",
+        "elo": 1072,
+        "character": "Athena"
+      },
+      "score": [
+        1,
+        2
+      ],
+      "winner": "DragonX354",
+      "duration_seconds": 168,
+      "started_at": "2026-01-23T10:19:44.463879",
+      "status": "completed"
+    },
+    {
+      "match_id": "match_14",
+      "player1": {
+        "id": "player_15",
+        "username": "TigerZ30",
+        "elo": 1267,
+        "character": "Kyo"
+      },
+      "player2": {
+        "id": "player_6",
+        "username": "NeonZ704",
+        "elo": 1271,
+        "character": "Mai"
+      },
+      "score": [
+        0,
+        2
+      ],
+      "winner": "NeonZ704",
+      "duration_seconds": 131,
+      "started_at": "2026-01-23T10:19:44.463879",
+      "status": "completed"
+    },
+    {
+      "match_id": "match_15",
+      "player1": {
+        "id": "player_14",
+        "username": "SilentAce327",
+        "elo": 1330,
+        "character": "Athena"
+      },
+      "player2": {
+        "id": "player_10",
+        "username": "NeonWarrior623",
+        "elo": 1464,
+        "character": "Terry"
+      },
+      "score": [
+        0,
+        2
+      ],
+      "winner": "NeonWarrior623",
+      "duration_seconds": 257,
+      "started_at": "2026-01-23T10:19:44.463879",
+      "status": "completed"
+    },
+    {
+      "match_id": "match_16",
+      "player1": {
+        "id": "player_5",
+        "username": "SilentAce932",
+        "elo": 1015,
+        "character": "Athena"
+      },
+      "player2": {
+        "id": "player_15",
+        "username": "TigerZ30",
+        "elo": 1254,
+        "character": "Kyo"
+      },
+      "score": [
+        0,
+        2
+      ],
+      "winner": "TigerZ30",
+      "duration_seconds": 127,
+      "started_at": "2026-01-23T10:19:44.564661",
+      "status": "completed"
+    },
+    {
+      "match_id": "match_17",
+      "player1": {
+        "id": "player_5",
+        "username": "SilentAce932",
+        "elo": 1000,
+        "character": "Athena"
+      },
+      "player2": {
+        "id": "player_13",
+        "username": "ShadowKing931",
+        "elo": 1305,
+        "character": "Kyo"
+      },
+      "score": [
+        0,
+        2
+      ],
+      "winner": "ShadowKing931",
+      "duration_seconds": 194,
+      "started_at": "2026-01-23T10:19:44.665321",
+      "status": "completed"
+    },
+    {
+      "match_id": "match_18",
+      "player1": {
+        "id": "player_14",
+        "username": "SilentAce327",
+        "elo": 1307,
+        "character": "Athena"
+      },
+      "player2": {
+        "id": "player_10",
+        "username": "NeonWarrior623",
+        "elo": 1474,
+        "character": "Terry"
+      },
+      "score": [
+        2,
+        1
+      ],
+      "winner": "SilentAce327",
+      "duration_seconds": 195,
+      "started_at": "2026-01-23T10:19:44.665321",
+      "status": "completed"
+    }
+  ],
+  "total": 18,
+  "updated_at": "2026-01-23T10:19:44.778906"
+}

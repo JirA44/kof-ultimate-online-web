@@ -1,0 +1,319 @@
+{
+  "date": "2026-01-23T10:30:20.555143",
+  "menu_items_count": 24,
+  "handlers_count": 11,
+  "bugs": [
+    {
+      "type": "MISSING_HANDLER",
+      "item": "arcade",
+      "display": "ARCADE",
+      "expected_handler": "arcade",
+      "msg": "Menu item 'ARCADE' (arcade) has no handler 'arcade'"
+    },
+    {
+      "type": "MISSING_HANDLER",
+      "item": "versus",
+      "display": "VS MODE",
+      "expected_handler": "versus",
+      "msg": "Menu item 'VS MODE' (versus) has no handler 'versus'"
+    },
+    {
+      "type": "MISSING_HANDLER",
+      "item": "teamarcade",
+      "display": "TEAM ARCADE",
+      "expected_handler": "teamarcade",
+      "msg": "Menu item 'TEAM ARCADE' (teamarcade) has no handler 'teamarcade'"
+    },
+    {
+      "type": "MISSING_HANDLER",
+      "item": "teamversus",
+      "display": "TEAM VS",
+      "expected_handler": "teamversus",
+      "msg": "Menu item 'TEAM VS' (teamversus) has no handler 'teamversus'"
+    },
+    {
+      "type": "MISSING_HANDLER",
+      "item": "teamcoop",
+      "display": "TEAM CO-OP",
+      "expected_handler": "teamcoop",
+      "msg": "Menu item 'TEAM CO-OP' (teamcoop) has no handler 'teamcoop'"
+    },
+    {
+      "type": "MISSING_HANDLER",
+      "item": "survival",
+      "display": "SURVIVAL",
+      "expected_handler": "survival",
+      "msg": "Menu item 'SURVIVAL' (survival) has no handler 'survival'"
+    },
+    {
+      "type": "MISSING_HANDLER",
+      "item": "survivalcoop",
+      "display": "SURVIVAL CO-OP",
+      "expected_handler": "survivalcoop",
+      "msg": "Menu item 'SURVIVAL CO-OP' (survivalcoop) has no handler 'survivalcoop'"
+    },
+    {
+      "type": "MISSING_HANDLER",
+      "item": "training",
+      "display": "TRAINING",
+      "expected_handler": "training",
+      "msg": "Menu item 'TRAINING' (training) has no handler 'training'"
+    },
+    {
+      "type": "MISSING_HANDLER",
+      "item": "netplay",
+      "display": "ONLINE",
+      "expected_handler": "netplay",
+      "msg": "Menu item 'ONLINE' (netplay) has no handler 'netplay'"
+    },
+    {
+      "type": "MISSING_HANDLER",
+      "item": "netplay_serverhost",
+      "display": "HOST GAME",
+      "expected_handler": "serverhost",
+      "msg": "Menu item 'HOST GAME' (netplay_serverhost) has no handler 'serverhost'"
+    },
+    {
+      "type": "MISSING_HANDLER",
+      "item": "netplay_serverjoin",
+      "display": "JOIN GAME",
+      "expected_handler": "serverjoin",
+      "msg": "Menu item 'JOIN GAME' (netplay_serverjoin) has no handler 'serverjoin'"
+    },
+    {
+      "type": "MISSING_HANDLER",
+      "item": "netplay_netplayversus",
+      "display": "VERSUS 2P",
+      "expected_handler": "netplayversus",
+      "msg": "Menu item 'VERSUS 2P' (netplay_netplayversus) has no handler 'netplayversus'"
+    },
+    {
+      "type": "MISSING_HANDLER",
+      "item": "netplay_netplayteamcoop",
+      "display": "ARCADE CO-OP",
+      "expected_handler": "netplayteamcoop",
+      "msg": "Menu item 'ARCADE CO-OP' (netplay_netplayteamcoop) has no handler 'netplayteamcoop'"
+    },
+    {
+      "type": "MISSING_HANDLER",
+      "item": "netplay_netplaysurvivalcoop",
+      "display": "SURVIVAL CO-OP",
+      "expected_handler": "netplaysurvivalcoop",
+      "msg": "Menu item 'SURVIVAL CO-OP' (netplay_netplaysurvivalcoop) has no handler 'netplaysurvivalcoop'"
+    },
+    {
+      "type": "MISSING_HANDLER",
+      "item": "options",
+      "display": "OPTIONS",
+      "expected_handler": "options",
+      "msg": "Menu item 'OPTIONS' (options) has no handler 'options'"
+    },
+    {
+      "type": "MISSING_HANDLER",
+      "item": "exit",
+      "display": "EXIT",
+      "expected_handler": "exit",
+      "msg": "Menu item 'EXIT' (exit) has no handler 'exit'"
+    },
+    {
+      "type": "MISSING_HANDLER",
+      "item": "watch",
+      "display": "WATCH",
+      "expected_handler": "watch",
+      "msg": "Menu item 'WATCH' (watch) has no handler 'watch'"
+    }
+  ],
+  "warnings": [],
+  "menu_items": {
+    "arcade": {
+      "display": "ARCADE",
+      "handler_needed": "arcade",
+      "found_handler": false
+    },
+    "versus": {
+      "display": "VS MODE",
+      "handler_needed": "versus",
+      "found_handler": false
+    },
+    "teamarcade": {
+      "display": "TEAM ARCADE",
+      "handler_needed": "teamarcade",
+      "found_handler": false
+    },
+    "teamversus": {
+      "display": "TEAM VS",
+      "handler_needed": "teamversus",
+      "found_handler": false
+    },
+    "teamcoop": {
+      "display": "TEAM CO-OP",
+      "handler_needed": "teamcoop",
+      "found_handler": false
+    },
+    "survival": {
+      "display": "SURVIVAL",
+      "handler_needed": "survival",
+      "found_handler": false
+    },
+    "survivalcoop": {
+      "display": "SURVIVAL CO-OP",
+      "handler_needed": "survivalcoop",
+      "found_handler": false
+    },
+    "training": {
+      "display": "TRAINING",
+      "handler_needed": "training",
+      "found_handler": false
+    },
+    "netplay": {
+      "display": "ONLINE",
+      "handler_needed": "netplay",
+      "found_handler": false
+    },
+    "netplay_serverhost": {
+      "display": "HOST GAME",
+      "handler_needed": "serverhost",
+      "found_handler": false
+    },
+    "netplay_serverjoin": {
+      "display": "JOIN GAME",
+      "handler_needed": "serverjoin",
+      "found_handler": false
+    },
+    "netplay_joinadd": {
+      "display": "NEW ADDRESS",
+      "handler_needed": "joinadd",
+      "found_handler": false
+    },
+    "netplay_netplayversus": {
+      "display": "VERSUS 2P",
+      "handler_needed": "netplayversus",
+      "found_handler": false
+    },
+    "netplay_netplayteamcoop": {
+      "display": "ARCADE CO-OP",
+      "handler_needed": "netplayteamcoop",
+      "found_handler": false
+    },
+    "netplay_netplaysurvivalcoop": {
+      "display": "SURVIVAL CO-OP",
+      "handler_needed": "netplaysurvivalcoop",
+      "found_handler": false
+    },
+    "netplay_lobby": {
+      "display": "LIVE LOBBY",
+      "handler_needed": "lobby",
+      "found_handler": true,
+      "handler_info": {
+        "file": "external\\script\\main.lua",
+        "type": "function"
+      }
+    },
+    "netplay_firebase": {
+      "display": "WEB LOBBY",
+      "handler_needed": "firebase",
+      "found_handler": true,
+      "handler_info": {
+        "file": "external\\mods\\kof_online.lua",
+        "type": "function"
+      }
+    },
+    "netplay_battlenet": {
+      "display": "BATTLENET",
+      "handler_needed": "battlenet",
+      "found_handler": true,
+      "handler_info": {
+        "file": "external\\mods\\kof_battlenet.lua",
+        "type": "function"
+      }
+    },
+    "netplay_rankings": {
+      "display": "LEADERBOARD",
+      "handler_needed": "rankings",
+      "found_handler": true,
+      "handler_info": {
+        "file": "external\\script\\main.lua",
+        "type": "function"
+      }
+    },
+    "netplay_profile": {
+      "display": "MY PROFILE",
+      "handler_needed": "profile",
+      "found_handler": true,
+      "handler_info": {
+        "file": "external\\script\\main.lua",
+        "type": "function"
+      }
+    },
+    "netplay_back": {
+      "display": "BACK",
+      "handler_needed": "back",
+      "found_handler": false
+    },
+    "options": {
+      "display": "OPTIONS",
+      "handler_needed": "options",
+      "found_handler": false
+    },
+    "exit": {
+      "display": "EXIT",
+      "handler_needed": "exit",
+      "found_handler": false
+    },
+    "watch": {
+      "display": "WATCH",
+      "handler_needed": "watch",
+      "found_handler": false
+    }
+  },
+  "handlers": {
+    "rankings": {
+      "file": "external\\script\\main.lua",
+      "type": "function"
+    },
+    "profile": {
+      "file": "external\\script\\main.lua",
+      "type": "function"
+    },
+    "lobby": {
+      "file": "external\\script\\main.lua",
+      "type": "function"
+    },
+    "netplay_lobby": {
+      "file": "external\\script\\main.lua",
+      "type": "alias",
+      "alias_to": "lobby"
+    },
+    "netplay_rankings": {
+      "file": "external\\script\\main.lua",
+      "type": "alias",
+      "alias_to": "rankings"
+    },
+    "netplay_profile": {
+      "file": "external\\script\\main.lua",
+      "type": "alias",
+      "alias_to": "profile"
+    },
+    "battlenet": {
+      "file": "external\\mods\\kof_battlenet.lua",
+      "type": "function"
+    },
+    "firebase": {
+      "file": "external\\mods\\kof_online.lua",
+      "type": "function"
+    },
+    "kofprofile": {
+      "file": "external\\mods\\kof_online.lua",
+      "type": "function"
+    },
+    "kofrankings": {
+      "file": "external\\mods\\kof_online.lua",
+      "type": "function"
+    },
+    "koflobby": {
+      "file": "external\\mods\\kof_online.lua",
+      "type": "alias",
+      "alias_to": "firebase"
+    }
+  }
+}
