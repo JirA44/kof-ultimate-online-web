@@ -1,0 +1,130 @@
+================================================
+DIAGNOSTIC KOF ULTIMATE ONLINE — 2026-04-27
+================================================
+
+== TÂCHE 1 : DIAGNOSTIC GRILLE DE SÉLECTION ==
+
+[PROBLÈME PRINCIPAL IDENTIFIÉ]
+Le fichier system.def (data/system.def) référence :
+  select = select_optimized.def
+
+select_optimized.def utilise stages/Abyss-Rugal-Palace.def pour TOUS
+les personnages (120 persos × 1 seul stage) — c'est fonctionnel mais
+ne correspond pas au select.def complet (150 persos avec stages variés).
+
+[PROBLÈME CHEMIN STAGES]
+Les stages sont dans :
+  D:\KOF Ultimate Online kofuo\stages\   ← CORRECT (31 .def trouvés)
+  D:\KOF Ultimate Online kofuo\data\stages\  ← VIDE (0 fichiers)
+
+Ikemen GO résout les chemins dans select.def relativement à la RACINE
+du jeu (pas depuis data/). Donc "stages/Nom.def" pointe correctement
+vers le dossier racine /stages/. Les chemins sont OK dans select.def.
+
+[GRILLE — CONFIG system.def]
+  rows    = 10
+  columns = 19  →  190 cellules max
+  select_optimized.def : 120 persos  → OK (rentre dans 190)
+  select.def complet   : 150 persos  → OK (rentre dans 190)
+  cell.size = 32x32 px, spacing 2 px
+
+[CAUSE PROBABLE NON-AFFICHAGE GRILLE]
+Si la grille ne s'affiche pas, les causes possibles sont :
+  1. Portraits manquants dans les .sff des personnages (spr 9000,0 et 9000,1)
+     → Le moteur affiche des cellules vides/noires
+  2. Dossier data/chars/NomPerso/ introuvable (nom ne correspond pas)
+  3. Fichier system.sff corrompu (contient les animations de curseur)
+  4. Font manquante : data/fonts/Combo.fnt ou data/fonts/Names.fnt
+     → system.def référence "data/fonts/..." mais ces fonts sont dans data/font/
+
+[FONTS — ERREUR DÉTECTÉE]
+system.def ligne 19 : font4 = data/fonts/Combo.fnt
+system.def ligne 20 : font7 = data/fonts/Names.fnt
+system.def ligne 21 : font8 = data/fonts/Menu Black .fnt
+→ Le dossier est data/font/ (sans 's') — vérifier si data/fonts/ existe.
+
+[CORRECTIONS RECOMMANDÉES]
+1. Activer select_fixed.def (ce fichier) dans system.def :
+   Remplacer : select = select_optimized.def
+   Par        : select = select_fixed.def
+
+2. Vérifier que data/fonts/ existe (ou corriger en data/font/)
+
+3. Si les portraits sont noirs → les .sff des persos n'ont pas de sprite 9000,0
+   → Solution : utiliser showemptyboxes = 1 pour voir quelles cases sont vides
+
+================================================
+TÂCHE 2 : STAGES CREEPY REMPLACÉS
+================================================
+
+Stages retirés (remplacés dans select_fixed.def) :
+  Abyss-Rugal-Palace.def   → remplacé (ABYSS = abîme/enfers)
+  BLACK SON DROTIME.def    → remplacé (DRO = pattern DROLLDiamond sombre)
+  Black wall.def           → remplacé (BLACK sombre)
+  DARK SAID RUGAL S .def   → remplacé (DARK)
+  Darkness.def             → remplacé (DARKNESS)
+  DROBLOOD R 2.0.def       → remplacé (DRO + BLOOD)
+  Moon of dark wall.def    → remplacé (DARK)
+  O.DB DRORANGE BLACK.def  → remplacé (DRO + BLACK)
+  xX-Hell-Dark-Xx.def      → remplacé (HELL + DARK)
+  The Will Of Hades S .def → remplacé (HADES = dieu des enfers)
+  forest infernal fire.def → remplacé (INFERNAL)
+  clones lab destroyed.def → remplacé (DESTROYED)
+
+Total : 12 stages creepy retirés sur 31 disponibles.
+
+Stages neutres/positifs utilisés en remplacement :
+  Anime Blu.def, Anubis.def, Basque Palace.def, Exagon Force.def,
+  Far from here.def, Galaxy BG.def, light kyouki.def, Moon recidence.def,
+  Palece Mistery R.def, RED.def, Red_Cliff.def, space_binary.def,
+  space_deep.def, space_galaxy.def, space_nebula_purple.def,
+  space_planet.def, space_void.def, TIME INGCODNITA.def, Wall of paintings.def
+
+Fichier corrigé : data/select_fixed.def
+
+================================================
+TÂCHE 3 : UPSCALE GRAPHISMES
+================================================
+
+Outils IA vérifiés :
+  realesrgan-ncnn-vulkan : NON INSTALLÉ
+  waifu2x-caffe          : NON INSTALLÉ
+
+Note importante : Les stages utilisent le format .sff (Mugen Sprite File),
+pas des PNG bruts. L'upscale direct PIL ne s'applique qu'aux PNG.
+Les chars peuvent avoir des .sff ET des sous-dossiers avec PNG.
+
+Script généré : upscale_graphics.py (à la racine du jeu)
+  - Upscale 2x bicubic (PIL/Pillow)
+  - Cherche les PNG dans /stages/ et /data/chars/
+  - Sortie dans /upscaled/ (structure préservée)
+  - Log dans upscale_log.txt
+
+Pour l'upscale IA réel des .sff :
+  1. Extraire les sprites avec Fighter Factory Studio ou mugen-tools
+  2. Upscale avec realesrgan-ncnn-vulkan (model: realesr-animevideov3)
+  3. Repackager en .sff avec Fighter Factory
+
+Commande realesrgan (une fois installé) :
+  realesrgan-ncnn-vulkan.exe -i extracted_sprites/ -o upscaled_ai/ -n realesr-animevideov3
+
+================================================
+COMMENT APPLIQUER LES CORRECTIONS
+================================================
+
+ÉTAPE 1 — Activer le nouveau select dans system.def :
+  Éditer data/system.def ligne 14 :
+  Changer : select = select_optimized.def
+  En       : select = select_fixed.def
+
+ÉTAPE 2 — Vérifier les fonts :
+  Si data/fonts/ n'existe pas, créer un lien ou copier depuis data/font/
+
+ÉTAPE 3 — Tester :
+  Lancer Ikemen_GO.exe et vérifier la grille de sélection.
+
+ÉTAPE 4 — Upscale (optionnel) :
+  pip install Pillow
+  python upscale_graphics.py
+
+================================================

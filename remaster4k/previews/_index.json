@@ -1,0 +1,297 @@
+[
+ {
+  "name": "Abyss-Rugal-Palace",
+  "ok": true,
+  "sprites": 216,
+  "big": [
+   "Abyss-Rugal-Palace__0_60-0_1408x836.png",
+   "Abyss-Rugal-Palace__1_60-2_1408x836.png",
+   "Abyss-Rugal-Palace__2_60-5_1408x836.png",
+   "Abyss-Rugal-Palace__3_60-9_1408x836.png"
+  ]
+ },
+ {
+  "name": "Anime Blu",
+  "ok": true,
+  "sprites": 4,
+  "big": [
+   "Anime Blu__0_0-0_1508x480.png",
+   "Anime Blu__1_0-3_1508x480.png"
+  ]
+ },
+ {
+  "name": "Anubis",
+  "ok": true,
+  "sprites": 194,
+  "big": [
+   "Anubis__0_5-2_2374x350.png",
+   "Anubis__1_0-0_1500x500.png",
+   "Anubis__2_5-0_1899x280.png",
+   "Anubis__3_4-0_156x188.png"
+  ]
+ },
+ {
+  "name": "Basque Palace",
+  "ok": true,
+  "sprites": 4,
+  "big": [
+   "Basque Palace__0_0-24_1713x980.png",
+   "Basque Palace__1_0-0_1280x700.png",
+   "Basque Palace__2_0-1_1280x700.png",
+   "Basque Palace__3_0-2_1280x700.png"
+  ]
+ },
+ {
+  "name": "BLACK SON DROTIME",
+  "ok": true,
+  "sprites": 18,
+  "big": [
+   "BLACK SON DROTIME__0_670-0_1408x836.png",
+   "BLACK SON DROTIME__1_670-7_1408x836.png",
+   "BLACK SON DROTIME__2_670-10_1408x836.png",
+   "BLACK SON DROTIME__3_670-14_1408x836.png"
+  ]
+ },
+ {
+  "name": "Black wall",
+  "ok": true,
+  "sprites": 6,
+  "big": [
+   "Black wall__0_0-4_1771x1772.png",
+   "Black wall__1_0-0_2000x960.png",
+   "Black wall__2_0-5_2000x960.png",
+   "Black wall__3_0-3_1269x1269.png"
+  ]
+ },
+ {
+  "name": "clones lab destroyed",
+  "ok": true,
+  "sprites": 18,
+  "big": [
+   "clones lab destroyed__0_5-26_1500x900.png",
+   "clones lab destroyed__1_4-0_800x460.png",
+   "clones lab destroyed__2_5-0_800x384.png",
+   "clones lab destroyed__3_5-1_960x320.png"
+  ]
+ },
+ {
+  "name": "DARK SAID RUGAL S ",
+  "ok": true,
+  "sprites": 27,
+  "big": [
+   "DARK SAID RUGAL S __0_0-26_1350x960.png",
+   "DARK SAID RUGAL S __1_0-24_800x600.png",
+   "DARK SAID RUGAL S __2_0-25_640x480.png",
+   "DARK SAID RUGAL S __3_0-0_320x240.png"
+  ]
+ },
+ {
+  "name": "Darkness",
+  "ok": true,
+  "sprites": 210,
+  "big": [
+   "Darkness__0_9-0_1200x730.png",
+   "Darkness__1_2-0_1280x560.png",
+   "Darkness__2_2-1_1280x560.png",
+   "Darkness__3_2-2_1280x560.png"
+  ]
+ },
+ {
+  "name": "DROBLOOD R 2.0",
+  "ok": true,
+  "sprites": 108,
+  "big": [
+   "DROBLOOD R 2.0__0_0-1_1504x360.png",
+   "DROBLOOD R 2.0__1_1-0_1504x360.png",
+   "DROBLOOD R 2.0__2_14-1_1272x333.png",
+   "DROBLOOD R 2.0__3_14-4_333x1272.png"
+  ]
+ },
+ {
+  "name": "Exagon Force",
+  "ok": true,
+  "sprites": 1,
+  "big": [
+   "Exagon Force__0_0-0_1555x480.png"
+  ]
+ },
+ {
+  "name": "Far from here",
+  "ok": true,
+  "sprites": 39,
+  "big": [
+   "Far from here__0_6-1_8414x342.png",
+   "Far from here__1_0-0_1600x900.png",
+   "Far from here__2_3-1_1600x900.png",
+   "Far from here__3_5-0_2451x217.png"
+  ]
+ },
+ {
+  "name": "forest infernal fire",
+  "ok": true,
+  "sprites": 4,
+  "big": [
+   "forest infernal fire__0_0-0_2000x960.png",
+   "forest infernal fire__1_0-1_2000x960.png",
+   "forest infernal fire__2_0-2_2000x960.png"
+  ]
+ },
+ {
+  "name": "Galaxy BG",
+  "ok": true,
+  "sprites": 3,
+  "big": [
+   "Galaxy BG__0_0-0_1500x480.png",
+   "Galaxy BG__1_0-2_1500x480.png",
+   "Galaxy BG__2_0-1_1500x480.png"
+  ]
+ },
+ {
+  "name": "light kyouki",
+  "ok": true,
+  "sprites": 328,
+  "big": [
+   "light kyouki__0_60-0_1408x836.png",
+   "light kyouki__1_60-2_1408x836.png",
+   "light kyouki__2_60-5_1408x836.png",
+   "light kyouki__3_60-9_1408x836.png"
+  ]
+ },
+ {
+  "name": "Moon of dark wall",
+  "ok": true,
+  "sprites": 1,
+  "big": [
+   "Moon of dark wall__0_0-0_2600x960.png"
+  ]
+ },
+ {
+  "name": "Moon recidence",
+  "ok": true,
+  "sprites": 5,
+  "big": [
+   "Moon recidence__0_0-1_1090x480.png",
+   "Moon recidence__1_0-2_1090x480.png",
+   "Moon recidence__2_0-4_1090x480.png",
+   "Moon recidence__3_0-5_1090x480.png"
+  ]
+ },
+ {
+  "name": "O.DB DRORANGE BLACK",
+  "ok": true,
+  "sprites": 35,
+  "big": [
+   "O.DB DRORANGE BLACK__0_10-1_1504x358.png",
+   "O.DB DRORANGE BLACK__1_30-0_1504x358.png",
+   "O.DB DRORANGE BLACK__2_30-1_200x1980.png",
+   "O.DB DRORANGE BLACK__3_20-0_1504x224.png"
+  ]
+ },
+ {
+  "name": "Palece Mistery R",
+  "ok": true,
+  "sprites": 1,
+  "big": [
+   "Palece Mistery R__0_0-0_1090x480.png"
+  ]
+ },
+ {
+  "name": "RED",
+  "ok": true,
+  "sprites": 26,
+  "big": [
+   "RED__0_2-0_2652x580.png",
+   "RED__1_0-0_1200x730.png",
+   "RED__2_1-0_1200x700.png",
+   "RED__3_1-1_1200x700.png"
+  ]
+ },
+ {
+  "name": "Red_Cliff",
+  "ok": true,
+  "sprites": 65,
+  "big": [
+   "Red_Cliff__0_1-2_3200x1600.png",
+   "Red_Cliff__1_1-3_3200x1600.png",
+   "Red_Cliff__2_1-4_3200x1600.png",
+   "Red_Cliff__3_1-0_3200x1588.png"
+  ]
+ },
+ {
+  "name": "space_binary",
+  "ok": false,
+  "sprites": 0,
+  "big": []
+ },
+ {
+  "name": "space_deep",
+  "ok": false,
+  "sprites": 0,
+  "big": []
+ },
+ {
+  "name": "space_galaxy",
+  "ok": false,
+  "sprites": 0,
+  "big": []
+ },
+ {
+  "name": "space_nebula_purple",
+  "ok": false,
+  "sprites": 0,
+  "big": []
+ },
+ {
+  "name": "space_planet",
+  "ok": false,
+  "sprites": 0,
+  "big": []
+ },
+ {
+  "name": "space_void",
+  "ok": false,
+  "sprites": 0,
+  "big": []
+ },
+ {
+  "name": "The Will Of Hades S ",
+  "ok": true,
+  "sprites": 108,
+  "big": [
+   "The Will Of Hades S __0_0-26_1350x960.png",
+   "The Will Of Hades S __1_0-24_800x600.png",
+   "The Will Of Hades S __2_0-25_640x480.png",
+   "The Will Of Hades S __3_1-0_320x240.png"
+  ]
+ },
+ {
+  "name": "TIME INGCODNITA",
+  "ok": true,
+  "sprites": 109,
+  "big": [
+   "TIME INGCODNITA__0_45-0_200x1980.png",
+   "TIME INGCODNITA__1_100-0_1504x224.png",
+   "TIME INGCODNITA__2_100-1_665x358.png",
+   "TIME INGCODNITA__3_46-10_287x296.png"
+  ]
+ },
+ {
+  "name": "Wall of paintings",
+  "ok": true,
+  "sprites": 3,
+  "big": [
+   "Wall of paintings__0_0-0_1543x480.png"
+  ]
+ },
+ {
+  "name": "xX-Hell-Dark-Xx",
+  "ok": true,
+  "sprites": 10,
+  "big": [
+   "xX-Hell-Dark-Xx__0_0-1_1996x1036.png",
+   "xX-Hell-Dark-Xx__1_0-0_2000x1000.png",
+   "xX-Hell-Dark-Xx__2_0-2_1680x820.png",
+   "xX-Hell-Dark-Xx__3_3-1_693x751.png"
+  ]
+ }
+]

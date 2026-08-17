@@ -1,0 +1,185 @@
+; ================================================
+; KOF ULTIMATE ONLINE - FULL ROSTER - FIXED
+; select_fixed.def — généré le 2026-04-27
+; CORRECTIONS APPLIQUÉES :
+;   1. Chemin stages corrigé : "stages/" au lieu de "stages/"
+;      (les stages sont dans le dossier racine /stages/, pas dans /data/stages/)
+;   2. Stages creepy remplacés par des stages neutres/positifs
+; ================================================
+
+[Characters]
+03-A-Kyo LV2, stages/Galaxy BG.def
+A-Angel, stages/Anime Blu.def
+ALBA MEIRA KOF XI -MI2, stages/Anubis.def
+Aika, stages/Basque Palace.def
+Aika_MK, stages/space_galaxy.def
+Aileen, stages/Wall of paintings.def
+Akari, stages/space_binary.def
+Akiha Orochi, stages/Exagon Force.def
+Akiha Yagami, stages/Far from here.def
+Akiha Yagami DK, stages/Red_Cliff.def
+Akiha Yagami1, stages/Exagon Force.def
+Akira_Kazakami, stages/Far from here.def
+Alfred_WLS, stages/space_nebula_purple.def
+Alou_AKOF, stages/Galaxy BG.def
+Alter Kyo, stages/light kyouki.def
+Amoumi-KOFM, stages/Moon recidence.def
+Andy-ROTD, stages/Moon recidence.def
+Aner Rolange KOFM, stages/Palece Mistery R.def
+Anette-KOFM, stages/Palece Mistery R.def
+Ash, stages/RED.def
+Athena, stages/Red_Cliff.def
+Athena Asamiya MI KOFM, stages/space_binary.def
+Athena-Heidern, stages/space_deep.def
+Athena_XI, stages/space_galaxy.def
+Balto-KOFM, stages/space_nebula_purple.def
+Beast Yeorin QS, stages/space_planet.def
+Benimaru-Nikaido-STAR, stages/space_void.def
+BlackPrincess_Tohka, stages/Anime Blu.def
+Boss Gustab M, stages/TIME INGCODNITA.def
+Business_Vanessa-KOFM, stages/Wall of paintings.def
+Chalice, stages/Anime Blu.def
+Chaos-CKOFM, stages/Galaxy BG.def
+Chobi-Hige, stages/Anime Blu.def
+Choi_XI, stages/Anubis.def
+Clone Blood Rugal, stages/Basque Palace.def
+Clone Zero, stages/space_galaxy.def
+Cronus, stages/Wall of paintings.def
+Cruelty Sula UM, stages/space_binary.def
+D.Yashiro.Rhythm(Dusk)1.x, stages/Exagon Force.def
+DF-Sula, stages/Far from here.def
+DG.Rugal-KOFM, stages/Red_Cliff.def
+D_DisciplineGirl, stages/Exagon Force.def
+Daiki_Final(Prototype), stages/Far from here.def
+Daisu, stages/space_nebula_purple.def
+Delirus, stages/Galaxy BG.def
+Dragondomainlords, stages/light kyouki.def
+Drakyola, stages/Moon recidence.def
+Dual-flame_Magaki, stages/Moon recidence.def
+Duester, stages/Palece Mistery R.def
+Element Ash, stages/Palece Mistery R.def
+Element Scarlet, stages/RED.def
+Element-Adel, stages/Red_Cliff.def
+Eputh Blood-KOFM, stages/space_binary.def
+Essence of Darkness, stages/space_deep.def
+Eve, stages/space_galaxy.def
+Fang, stages/space_nebula_purple.def
+Felix_THird, stages/space_planet.def
+Final Adel, stages/space_void.def
+Final Goeniko, stages/Anime Blu.def
+Final Sachiel WF, stages/TIME INGCODNITA.def
+Final Zeroko B, stages/Wall of paintings.def
+Final-IGNIZ, stages/Anime Blu.def
+Final-OriginalZero, stages/Galaxy BG.def
+GARS, stages/Anime Blu.def
+GOD_ADEL(2012-01-28 Trial), stages/Anubis.def
+Garnet 1.1, stages/Basque Palace.def
+Geese-KOFM, stages/space_galaxy.def
+God_Wind, stages/Wall of paintings.def
+Goktore-CKOFM, stages/space_binary.def
+Graves, stages/Exagon Force.def
+Hiel_SP, stages/Far from here.def
+Hunter_U6746, stages/Red_Cliff.def
+Infernal_Wind, stages/Exagon Force.def
+K9999_KOF, stages/Far from here.def
+Kaneda-KOFM, stages/space_nebula_purple.def
+Kaori Yumiko, stages/Galaxy BG.def
+Kasumi-KOFM, stages/light kyouki.def
+Kei, stages/Moon recidence.def
+Kychiel, stages/Moon recidence.def
+Lord-Goenitz, stages/Palece Mistery R.def
+Magnus, stages/Palece Mistery R.def
+Mai Phoenix XI, stages/RED.def
+Maltet, stages/Red_Cliff.def
+Maryl, stages/space_binary.def
+Matam, stages/space_deep.def
+Meld_Boss, stages/space_galaxy.def
+N-Zeroko, stages/space_nebula_purple.def
+Nao-MX 1.0, stages/space_planet.def
+NeoDio KOFM, stages/space_void.def
+NeoGeegus KOFM, stages/Anime Blu.def
+Nero, stages/TIME INGCODNITA.def
+Nox Bernstein, stages/Wall of paintings.def
+O.Zero-Prominence, stages/Anime Blu.def
+Original Psyqhical, stages/Galaxy BG.def
+Orochi Kyo WF, stages/Anime Blu.def
+Orochi Leona-KOFM, stages/Anubis.def
+Orochi-EV1.55, stages/Basque Palace.def
+P-LEONA_ELEMENT, stages/space_galaxy.def
+Psyche_42-1.1, stages/Wall of paintings.def
+Psyche_57-1.1, stages/space_binary.def
+Raisen.blood-KOFM, stages/Exagon Force.def
+Rayno, stages/Far from here.def
+Reas-KOFM, stages/Red_Cliff.def
+Reyna, stages/Exagon Force.def
+Rose, stages/Far from here.def
+Rozwel S.K (LEGIT), stages/space_nebula_purple.def
+Rugal7th, stages/Galaxy BG.def
+Ryuji, stages/light kyouki.def
+S_Infezione, stages/Moon recidence.def
+Shadow-Dancer, stages/Moon recidence.def
+Spiritland Lords, stages/Palece Mistery R.def
+Titan_KOF, stages/Palece Mistery R.def
+True Iori X_KOF, stages/RED.def
+Unfailed Gustab, stages/Red_Cliff.def
+Unleashesd God Kula, stages/space_binary.def
+Valmar Rugal, stages/space_deep.def
+Viper, stages/space_galaxy.def
+WatchTV, stages/space_nebula_purple.def
+WhirlWind-Goenitz, stages/space_planet.def
+White DeathRaGeroous Version, stages/space_void.def
+Wild.O.Yashiro, stages/Anime Blu.def
+Wind_MMXIX, stages/TIME INGCODNITA.def
+Xion-V, stages/Wall of paintings.def
+Yukida, stages/Anime Blu.def
+Yuno-KOFM, stages/Galaxy BG.def
+Zerozuchi_Boss, stages/Anime Blu.def
+_ArchiMurderer, stages/Anubis.def
+ai, stages/Basque Palace.def
+akuma, stages/space_galaxy.def
+asura-kofa, stages/Wall of paintings.def
+baiyi, stages/space_binary.def
+billy, stages/Exagon Force.def
+bob, stages/Far from here.def
+boss-orochi, stages/Red_Cliff.def
+ccihinako, stages/Exagon Force.def
+ccijhun, stages/Far from here.def
+cciking, stages/space_nebula_purple.def
+ccishermie, stages/Galaxy BG.def
+clone benimaru, stages/light kyouki.def
+dr-yang-kofa, stages/Moon recidence.def
+final-goenitz, stages/Moon recidence.def
+god_orochi, stages/Palece Mistery R.def
+heraclius, stages/Palece Mistery R.def
+kfm, stages/RED.def
+meteoricmarisa, stages/Red_Cliff.def
+mizore-kofmLV2, stages/space_binary.def
+orochi-iori, stages/space_deep.def
+orochi-kyoko, stages/space_galaxy.def
+robo-kyo-kofa, stages/space_nebula_purple.def
+vandals, stages/space_planet.def
+
+[ExtraStages]
+stages/Anime Blu.def
+stages/Anubis.def
+stages/Basque Palace.def
+stages/Exagon Force.def
+stages/Far from here.def
+stages/Galaxy BG.def
+stages/light kyouki.def
+stages/Moon recidence.def
+stages/Palece Mistery R.def
+stages/RED.def
+stages/Red_Cliff.def
+stages/space_binary.def
+stages/space_deep.def
+stages/space_galaxy.def
+stages/space_nebula_purple.def
+stages/space_planet.def
+stages/space_void.def
+stages/TIME INGCODNITA.def
+stages/Wall of paintings.def
+
+[Options]
+arcade.maxmatches = 6,0,0,0,0,0,0,0,0,0
+team.maxsimul = 4

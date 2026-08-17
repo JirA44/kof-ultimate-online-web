@@ -1,0 +1,791 @@
+{
+  "total_characters": 10,
+  "total_matches": 56,
+  "engine_seed": 1583262272,
+  "results": [
+    {
+      "character_a": "Kyo Kusanagi",
+      "character_b": "Iori Yagami",
+      "winner": "Kyo Kusanagi",
+      "duration_frames": 734,
+      "winner_margin": 0.6,
+      "conditions": {
+        "rounds": 5,
+        "a_wins": 4,
+        "b_wins": 1,
+        "tier_diff": 0.030000000000000027,
+        "playstyle_factor": -0.1
+      }
+    },
+    {
+      "character_a": "Terry Bogard",
+      "character_b": "Bailey",
+      "winner": "Terry Bogard",
+      "duration_frames": 719,
+      "winner_margin": 0.6,
+      "conditions": {
+        "rounds": 5,
+        "a_wins": 4,
+        "b_wins": 1,
+        "tier_diff": 0.16000000000000003,
+        "playstyle_factor": 0.1
+      }
+    },
+    {
+      "character_a": "Kasumi",
+      "character_b": "Bailey",
+      "winner": "Kasumi",
+      "duration_frames": 714,
+      "winner_margin": 0.6,
+      "conditions": {
+        "rounds": 5,
+        "a_wins": 4,
+        "b_wins": 1,
+        "tier_diff": 0.06000000000000005,
+        "playstyle_factor": 0.1
+      }
+    },
+    {
+      "character_a": "Kyo Kusanagi",
+      "character_b": "Iori Yagami",
+      "winner": "Kyo Kusanagi",
+      "duration_frames": 508,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": 0.030000000000000027,
+        "playstyle_factor": -0.1
+      }
+    },
+    {
+      "character_a": "Kyo Kusanagi",
+      "character_b": "Terry Bogard",
+      "winner": "Kyo Kusanagi",
+      "duration_frames": 461,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": -0.030000000000000027,
+        "playstyle_factor": 0.0
+      }
+    },
+    {
+      "character_a": "Kyo Kusanagi",
+      "character_b": "Mai Shiranui",
+      "winner": "Kyo Kusanagi",
+      "duration_frames": 439,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": 0.04999999999999993,
+        "playstyle_factor": 0.0
+      }
+    },
+    {
+      "character_a": "Kyo Kusanagi",
+      "character_b": "Kasumi",
+      "winner": "Kyo Kusanagi",
+      "duration_frames": 448,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": 0.06999999999999995,
+        "playstyle_factor": 0.0
+      }
+    },
+    {
+      "character_a": "Kyo Kusanagi",
+      "character_b": "Andy Bogard",
+      "winner": "Kyo Kusanagi",
+      "duration_frames": 494,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": 0.09999999999999998,
+        "playstyle_factor": -0.1
+      }
+    },
+    {
+      "character_a": "Kyo Kusanagi",
+      "character_b": "Bailey",
+      "winner": "Kyo Kusanagi",
+      "duration_frames": 473,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": 0.13,
+        "playstyle_factor": 0.1
+      }
+    },
+    {
+      "character_a": "Kyo Kusanagi",
+      "character_b": "Luong",
+      "winner": "Kyo Kusanagi",
+      "duration_frames": 417,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": 0.08999999999999997,
+        "playstyle_factor": 0.05
+      }
+    },
+    {
+      "character_a": "Kyo Kusanagi",
+      "character_b": "Mian",
+      "winner": "Kyo Kusanagi",
+      "duration_frames": 463,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": 0.10999999999999999,
+        "playstyle_factor": 0.0
+      }
+    },
+    {
+      "character_a": "Kyo Kusanagi",
+      "character_b": "K",
+      "winner": "Kyo Kusanagi",
+      "duration_frames": 471,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": -0.020000000000000018,
+        "playstyle_factor": 0.0
+      }
+    },
+    {
+      "character_a": "Iori Yagami",
+      "character_b": "Terry Bogard",
+      "winner": "Iori Yagami",
+      "duration_frames": 417,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": -0.06000000000000005,
+        "playstyle_factor": 0.1
+      }
+    },
+    {
+      "character_a": "Iori Yagami",
+      "character_b": "Mai Shiranui",
+      "winner": "Iori Yagami",
+      "duration_frames": 450,
+      "winner_margin": 0.3333333333333333,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 2,
+        "b_wins": 1,
+        "tier_diff": 0.019999999999999907,
+        "playstyle_factor": 0.1
+      }
+    },
+    {
+      "character_a": "Iori Yagami",
+      "character_b": "Kasumi",
+      "winner": "Iori Yagami",
+      "duration_frames": 423,
+      "winner_margin": 0.3333333333333333,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 2,
+        "b_wins": 1,
+        "tier_diff": 0.039999999999999925,
+        "playstyle_factor": 0.1
+      }
+    },
+    {
+      "character_a": "Iori Yagami",
+      "character_b": "Andy Bogard",
+      "winner": "Iori Yagami",
+      "duration_frames": 437,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": 0.06999999999999995,
+        "playstyle_factor": 0.0
+      }
+    },
+    {
+      "character_a": "Iori Yagami",
+      "character_b": "Bailey",
+      "winner": "Iori Yagami",
+      "duration_frames": 414,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": 0.09999999999999998,
+        "playstyle_factor": -0.15
+      }
+    },
+    {
+      "character_a": "Iori Yagami",
+      "character_b": "Luong",
+      "winner": "Iori Yagami",
+      "duration_frames": 455,
+      "winner_margin": 0.3333333333333333,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 2,
+        "b_wins": 1,
+        "tier_diff": 0.05999999999999994,
+        "playstyle_factor": 0.05
+      }
+    },
+    {
+      "character_a": "Iori Yagami",
+      "character_b": "Mian",
+      "winner": "Iori Yagami",
+      "duration_frames": 386,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": 0.07999999999999996,
+        "playstyle_factor": 0.0
+      }
+    },
+    {
+      "character_a": "Iori Yagami",
+      "character_b": "K",
+      "winner": "Iori Yagami",
+      "duration_frames": 398,
+      "winner_margin": 0.3333333333333333,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 2,
+        "b_wins": 1,
+        "tier_diff": -0.050000000000000044,
+        "playstyle_factor": 0.1
+      }
+    },
+    {
+      "character_a": "Terry Bogard",
+      "character_b": "Mai Shiranui",
+      "winner": "Terry Bogard",
+      "duration_frames": 418,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": 0.07999999999999996,
+        "playstyle_factor": 0.0
+      }
+    },
+    {
+      "character_a": "Terry Bogard",
+      "character_b": "Kasumi",
+      "winner": "Terry Bogard",
+      "duration_frames": 448,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": 0.09999999999999998,
+        "playstyle_factor": 0.0
+      }
+    },
+    {
+      "character_a": "Terry Bogard",
+      "character_b": "Andy Bogard",
+      "winner": "Terry Bogard",
+      "duration_frames": 486,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": 0.13,
+        "playstyle_factor": -0.1
+      }
+    },
+    {
+      "character_a": "Terry Bogard",
+      "character_b": "Bailey",
+      "winner": "Terry Bogard",
+      "duration_frames": 447,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": 0.16000000000000003,
+        "playstyle_factor": 0.1
+      }
+    },
+    {
+      "character_a": "Terry Bogard",
+      "character_b": "Luong",
+      "winner": "Terry Bogard",
+      "duration_frames": 464,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": 0.12,
+        "playstyle_factor": 0.05
+      }
+    },
+    {
+      "character_a": "Terry Bogard",
+      "character_b": "Mian",
+      "winner": "Terry Bogard",
+      "duration_frames": 404,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": 0.14,
+        "playstyle_factor": 0.0
+      }
+    },
+    {
+      "character_a": "Terry Bogard",
+      "character_b": "K",
+      "winner": "Terry Bogard",
+      "duration_frames": 460,
+      "winner_margin": 0.3333333333333333,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 2,
+        "b_wins": 1,
+        "tier_diff": 0.010000000000000009,
+        "playstyle_factor": 0.0
+      }
+    },
+    {
+      "character_a": "Mai Shiranui",
+      "character_b": "Kasumi",
+      "winner": "Mai Shiranui",
+      "duration_frames": 440,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": 0.020000000000000018,
+        "playstyle_factor": 0.0
+      }
+    },
+    {
+      "character_a": "Mai Shiranui",
+      "character_b": "Andy Bogard",
+      "winner": "Mai Shiranui",
+      "duration_frames": 462,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": 0.050000000000000044,
+        "playstyle_factor": -0.1
+      }
+    },
+    {
+      "character_a": "Mai Shiranui",
+      "character_b": "Bailey",
+      "winner": "Mai Shiranui",
+      "duration_frames": 429,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": 0.08000000000000007,
+        "playstyle_factor": 0.1
+      }
+    },
+    {
+      "character_a": "Mai Shiranui",
+      "character_b": "Luong",
+      "winner": "Mai Shiranui",
+      "duration_frames": 448,
+      "winner_margin": 0.3333333333333333,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 2,
+        "b_wins": 1,
+        "tier_diff": 0.040000000000000036,
+        "playstyle_factor": 0.05
+      }
+    },
+    {
+      "character_a": "Mai Shiranui",
+      "character_b": "Mian",
+      "winner": "Mai Shiranui",
+      "duration_frames": 412,
+      "winner_margin": 0.3333333333333333,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 2,
+        "b_wins": 1,
+        "tier_diff": 0.06000000000000005,
+        "playstyle_factor": 0.0
+      }
+    },
+    {
+      "character_a": "Mai Shiranui",
+      "character_b": "K",
+      "winner": "Mai Shiranui",
+      "duration_frames": 438,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": -0.06999999999999995,
+        "playstyle_factor": 0.0
+      }
+    },
+    {
+      "character_a": "Kasumi",
+      "character_b": "Andy Bogard",
+      "winner": "Kasumi",
+      "duration_frames": 434,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": 0.030000000000000027,
+        "playstyle_factor": -0.1
+      }
+    },
+    {
+      "character_a": "Kasumi",
+      "character_b": "Bailey",
+      "winner": "Kasumi",
+      "duration_frames": 440,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": 0.06000000000000005,
+        "playstyle_factor": 0.1
+      }
+    },
+    {
+      "character_a": "Kasumi",
+      "character_b": "Luong",
+      "winner": "Kasumi",
+      "duration_frames": 498,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": 0.020000000000000018,
+        "playstyle_factor": 0.05
+      }
+    },
+    {
+      "character_a": "Kasumi",
+      "character_b": "Mian",
+      "winner": "Kasumi",
+      "duration_frames": 465,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": 0.040000000000000036,
+        "playstyle_factor": 0.0
+      }
+    },
+    {
+      "character_a": "Kasumi",
+      "character_b": "K",
+      "winner": "Kasumi",
+      "duration_frames": 419,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": -0.08999999999999997,
+        "playstyle_factor": 0.0
+      }
+    },
+    {
+      "character_a": "Andy Bogard",
+      "character_b": "Bailey",
+      "winner": "Andy Bogard",
+      "duration_frames": 501,
+      "winner_margin": 0.3333333333333333,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 2,
+        "b_wins": 1,
+        "tier_diff": 0.030000000000000027,
+        "playstyle_factor": -0.15
+      }
+    },
+    {
+      "character_a": "Andy Bogard",
+      "character_b": "Luong",
+      "winner": "Andy Bogard",
+      "duration_frames": 480,
+      "winner_margin": 0.3333333333333333,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 2,
+        "b_wins": 1,
+        "tier_diff": -0.010000000000000009,
+        "playstyle_factor": 0.05
+      }
+    },
+    {
+      "character_a": "Andy Bogard",
+      "character_b": "Mian",
+      "winner": "Andy Bogard",
+      "duration_frames": 453,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": 0.010000000000000009,
+        "playstyle_factor": 0.0
+      }
+    },
+    {
+      "character_a": "Andy Bogard",
+      "character_b": "K",
+      "winner": "Andy Bogard",
+      "duration_frames": 420,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": -0.12,
+        "playstyle_factor": 0.1
+      }
+    },
+    {
+      "character_a": "Bailey",
+      "character_b": "Luong",
+      "winner": "Bailey",
+      "duration_frames": 402,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": -0.040000000000000036,
+        "playstyle_factor": -0.08
+      }
+    },
+    {
+      "character_a": "Bailey",
+      "character_b": "Mian",
+      "winner": "Bailey",
+      "duration_frames": 442,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": -0.020000000000000018,
+        "playstyle_factor": 0.0
+      }
+    },
+    {
+      "character_a": "Bailey",
+      "character_b": "K",
+      "winner": "Bailey",
+      "duration_frames": 460,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": -0.15000000000000002,
+        "playstyle_factor": -0.1
+      }
+    },
+    {
+      "character_a": "Luong",
+      "character_b": "Mian",
+      "winner": "Luong",
+      "duration_frames": 445,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": 0.020000000000000018,
+        "playstyle_factor": 0.0
+      }
+    },
+    {
+      "character_a": "Luong",
+      "character_b": "K",
+      "winner": "Luong",
+      "duration_frames": 409,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 3,
+        "b_wins": 0,
+        "tier_diff": -0.10999999999999999,
+        "playstyle_factor": -0.05
+      }
+    },
+    {
+      "character_a": "Mian",
+      "character_b": "K",
+      "winner": "K",
+      "duration_frames": 410,
+      "winner_margin": -0.3333333333333333,
+      "conditions": {
+        "rounds": 3,
+        "a_wins": 1,
+        "b_wins": 2,
+        "tier_diff": -0.13,
+        "playstyle_factor": 0.0
+      }
+    },
+    {
+      "character_a": "Iori Yagami",
+      "character_b": "K",
+      "winner": "Iori Yagami",
+      "duration_frames": 776,
+      "winner_margin": 0.6,
+      "conditions": {
+        "rounds": 5,
+        "a_wins": 4,
+        "b_wins": 1,
+        "tier_diff": -0.050000000000000044,
+        "playstyle_factor": 0.1
+      }
+    },
+    {
+      "character_a": "Terry Bogard",
+      "character_b": "Kyo Kusanagi",
+      "winner": "Terry Bogard",
+      "duration_frames": 714,
+      "winner_margin": 0.2,
+      "conditions": {
+        "rounds": 5,
+        "a_wins": 3,
+        "b_wins": 2,
+        "tier_diff": 0.030000000000000027,
+        "playstyle_factor": 0.0
+      }
+    },
+    {
+      "character_a": "Mai Shiranui",
+      "character_b": "Bailey",
+      "winner": "Mai Shiranui",
+      "duration_frames": 715,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 5,
+        "a_wins": 5,
+        "b_wins": 0,
+        "tier_diff": 0.08000000000000007,
+        "playstyle_factor": 0.1
+      }
+    },
+    {
+      "character_a": "Luong",
+      "character_b": "Mian",
+      "winner": "Luong",
+      "duration_frames": 808,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 5,
+        "a_wins": 5,
+        "b_wins": 0,
+        "tier_diff": 0.020000000000000018,
+        "playstyle_factor": 0.0
+      }
+    },
+    {
+      "character_a": "Kasumi",
+      "character_b": "Andy Bogard",
+      "winner": "Kasumi",
+      "duration_frames": 739,
+      "winner_margin": 0.6,
+      "conditions": {
+        "rounds": 5,
+        "a_wins": 4,
+        "b_wins": 1,
+        "tier_diff": 0.030000000000000027,
+        "playstyle_factor": -0.1
+      }
+    },
+    {
+      "character_a": "Kasumi",
+      "character_b": "Iori Yagami",
+      "winner": "Kasumi",
+      "duration_frames": 753,
+      "winner_margin": 1.0,
+      "conditions": {
+        "rounds": 5,
+        "a_wins": 5,
+        "b_wins": 0,
+        "tier_diff": -0.039999999999999925,
+        "playstyle_factor": -0.1
+      }
+    },
+    {
+      "character_a": "Mai Shiranui",
+      "character_b": "Terry Bogard",
+      "winner": "Mai Shiranui",
+      "duration_frames": 721,
+      "winner_margin": 0.6,
+      "conditions": {
+        "rounds": 5,
+        "a_wins": 4,
+        "b_wins": 1,
+        "tier_diff": -0.07999999999999996,
+        "playstyle_factor": 0.0
+      }
+    },
+    {
+      "character_a": "Mai Shiranui",
+      "character_b": "Kasumi",
+      "winner": "Mai Shiranui",
+      "duration_frames": 718,
+      "winner_margin": 0.6,
+      "conditions": {
+        "rounds": 5,
+        "a_wins": 4,
+        "b_wins": 1,
+        "tier_diff": 0.020000000000000018,
+        "playstyle_factor": 0.0
+      }
+    }
+  ]
+}

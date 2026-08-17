@@ -7,7 +7,7 @@ const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
 
 class Database {
-    constructor(dbPath = './kof_online.db') {
+    constructor(dbPath = path.join(__dirname, 'kof_online.db')) {
         this.db = new sqlite3.Database(dbPath, (err) => {
             if (err) {
                 console.error('❌ Erreur connexion DB:', err);
@@ -144,7 +144,11 @@ class Database {
                 // Créer les stats par défaut
                 const playerId = this.lastID;
                 const statsSQL = `INSERT INTO player_stats (player_id) VALUES (?)`;
-                db.run(statsSQL, [playerId], () => {
+                db.run(statsSQL, [playerId], (statsErr) => {
+                    if (statsErr) {
+                        callback(statsErr, null);
+                        return;
+                    }
                     callback(null, { id: playerId, username });
                 });
             }

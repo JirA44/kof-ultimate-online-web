@@ -1,0 +1,57 @@
+Character A,Character B,Winner,DurationFrames,WinnerMargin
+Kyo Kusanagi,Iori Yagami,Kyo Kusanagi,734,0.6
+Terry Bogard,Bailey,Terry Bogard,719,0.6
+Kasumi,Bailey,Kasumi,714,0.6
+Kyo Kusanagi,Iori Yagami,Kyo Kusanagi,508,1.0
+Kyo Kusanagi,Terry Bogard,Kyo Kusanagi,461,1.0
+Kyo Kusanagi,Mai Shiranui,Kyo Kusanagi,439,1.0
+Kyo Kusanagi,Kasumi,Kyo Kusanagi,448,1.0
+Kyo Kusanagi,Andy Bogard,Kyo Kusanagi,494,1.0
+Kyo Kusanagi,Bailey,Kyo Kusanagi,473,1.0
+Kyo Kusanagi,Luong,Kyo Kusanagi,417,1.0
+Kyo Kusanagi,Mian,Kyo Kusanagi,463,1.0
+Kyo Kusanagi,K,Kyo Kusanagi,471,1.0
+Iori Yagami,Terry Bogard,Iori Yagami,417,1.0
+Iori Yagami,Mai Shiranui,Iori Yagami,450,0.3333333333333333
+Iori Yagami,Kasumi,Iori Yagami,423,0.3333333333333333
+Iori Yagami,Andy Bogard,Iori Yagami,437,1.0
+Iori Yagami,Bailey,Iori Yagami,414,1.0
+Iori Yagami,Luong,Iori Yagami,455,0.3333333333333333
+Iori Yagami,Mian,Iori Yagami,386,1.0
+Iori Yagami,K,Iori Yagami,398,0.3333333333333333
+Terry Bogard,Mai Shiranui,Terry Bogard,418,1.0
+Terry Bogard,Kasumi,Terry Bogard,448,1.0
+Terry Bogard,Andy Bogard,Terry Bogard,486,1.0
+Terry Bogard,Bailey,Terry Bogard,447,1.0
+Terry Bogard,Luong,Terry Bogard,464,1.0
+Terry Bogard,Mian,Terry Bogard,404,1.0
+Terry Bogard,K,Terry Bogard,460,0.3333333333333333
+Mai Shiranui,Kasumi,Mai Shiranui,440,1.0
+Mai Shiranui,Andy Bogard,Mai Shiranui,462,1.0
+Mai Shiranui,Bailey,Mai Shiranui,429,1.0
+Mai Shiranui,Luong,Mai Shiranui,448,0.3333333333333333
+Mai Shiranui,Mian,Mai Shiranui,412,0.3333333333333333
+Mai Shiranui,K,Mai Shiranui,438,1.0
+Kasumi,Andy Bogard,Kasumi,434,1.0
+Kasumi,Bailey,Kasumi,440,1.0
+Kasumi,Luong,Kasumi,498,1.0
+Kasumi,Mian,Kasumi,465,1.0
+Kasumi,K,Kasumi,419,1.0
+Andy Bogard,Bailey,Andy Bogard,501,0.3333333333333333
+Andy Bogard,Luong,Andy Bogard,480,0.3333333333333333
+Andy Bogard,Mian,Andy Bogard,453,1.0
+Andy Bogard,K,Andy Bogard,420,1.0
+Bailey,Luong,Bailey,402,1.0
+Bailey,Mian,Bailey,442,1.0
+Bailey,K,Bailey,460,1.0
+Luong,Mian,Luong,445,1.0
+Luong,K,Luong,409,1.0
+Mian,K,K,410,-0.3333333333333333
+Iori Yagami,K,Iori Yagami,776,0.6
+Terry Bogard,Kyo Kusanagi,Terry Bogard,714,0.2
+Mai Shiranui,Bailey,Mai Shiranui,715,1.0
+Luong,Mian,Luong,808,1.0
+Kasumi,Andy Bogard,Kasumi,739,0.6
+Kasumi,Iori Yagami,Kasumi,753,1.0
+Mai Shiranui,Terry Bogard,Mai Shiranui,721,0.6
+Mai Shiranui,Kasumi,Mai Shiranui,718,0.6
