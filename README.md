@@ -34,6 +34,25 @@ Le dépôt indique que certains gros fichiers de personnages ne sont pas inclus.
 
 ---
 
+## English
+
+### What is this repository for?
+
+This repository contains a customized KOF game based on M.U.G.E.N, plus launchers and tools for checking and troubleshooting the installation.
+
+### Why use it?
+
+It brings common tasks together: starting a game, checking files, reviewing logs, configuring controls, and maintaining the character selection.
+
+### Examples
+
+- Start with the smart launcher described below, or use the game executable when all required files are present.
+- If startup fails, run the verifier, inspect its report, and use repair tools only when appropriate.
+- To add a character, place its files in the expected folder, update the selection configuration, and run the project’s checks.
+
+Some large character files are not included in the repository, so a complete installation requires those assets.
+
+
 ## 📋 Table des Matières
 
 - [À Propos](#à-propos)
