@@ -102,27 +102,30 @@
             <h2 class="section-title">Commencer à Jouer</h2>
             <div class="download-card">
                 <h3>Installation Rapide</h3>
-                <ol class="install-steps">
+                                <ol class="install-steps">
                     <li>
-                        <strong>Télécharger l’installation Windows</strong>
-                        <p>Le paquet KOF Ultimate Online est disponible directement ici. Il comprend un installateur Windows existant dans le dépôt.</p>
+                        <strong>Télécharger le paquet Windows</strong>
+                        <p>Un seul fichier de téléchargement pour démarrer : l’installateur KOFUO disponible actuellement.</p>
                     </li>
                     <li>
-                        <strong>Installer le jeu</strong>
-                        <p>Ouvrez le fichier téléchargé et suivez les étapes affichées par l’installateur. Windows 10/11 64 bits est la plateforme documentée.</p>
+                        <strong>Installer et lancer</strong>
+                        <p>Ouvrez le fichier téléchargé et suivez les instructions affichées. Le projet cible Windows 10/11 64 bits.</p>
                     </li>
                     <li>
-                        <strong>Lancer le jeu</strong>
-                        <p>Utilisez le launcher fourni pour démarrer le jeu et ses outils. Le client multijoueur Python est proposé séparément aux utilisateurs avancés.</p>
+                        <strong>Jouer</strong>
+                        <p>Le launcher regroupe l’accès au jeu et aux fonctions disponibles dans votre installation.</p>
                     </li>
                 </ol>
                 <div class="download-buttons">
-                    <a href="https://github.com/JirA44/kof-ultimate-online-web/raw/refs/heads/main/Installer.exe" class="btn btn-primary" download>⬇ Télécharger l’installateur Windows (EXE, 39,3 Mio)</a>
-                    <a href="https://github.com/JirA44/kof-ultimate-online-web/raw/refs/heads/main/KOF%20Ultimate%20Launcher.exe" class="btn btn-secondary" download>⬇ Télécharger le launcher Windows</a>
-                    <a href="https://github.com/JirA44/kof-ultimate-online-web/raw/refs/heads/main/BATTLENET_CLIENT.py" class="btn btn-secondary" download>⬇ Télécharger le client multijoueur Python</a>
-                    <a href="https://github.com/JirA44/kof-ultimate-online-web/blob/main/README_SYST%C3%88ME_COMPLET.md" class="btn btn-secondary" target="_blank" rel="noopener">📖 Guide d’installation et d’utilisation</a>
+                    <a href="https://github.com/JirA44/kof-ultimate-online-web/raw/refs/heads/main/Installer.exe" class="btn btn-primary" download>⬇ Télécharger KOFUO pour Windows (EXE, 39,3 Mio)</a>
                 </div>
-                <p class="download-note"><strong>Connexion en ligne :</strong> le client multijoueur fourni utilise actuellement <code>ws://localhost:8765</code> par défaut. Pour jouer avec d’autres personnes sur Internet, il faut que l’adresse soit celle d’un serveur de matchmaking public déployé.</p>
+                <details class="download-fallback">
+                    <summary>Options avancées et dépannage</summary>
+                    <p>Si l’installateur ne convient pas à votre installation, téléchargez séparément le <a href="https://github.com/JirA44/kof-ultimate-online-web/raw/refs/heads/main/KOF%20Ultimate%20Launcher.exe" download>launcher Windows</a> ou le <a href="https://github.com/JirA44/kof-ultimate-online-web/raw/refs/heads/main/BATTLENET_CLIENT.py" download>client multijoueur Python</a>. Le client Python nécessite Python et ses dépendances.</p>
+                    <p><a href="https://github.com/JirA44/kof-ultimate-online-web/blob/main/README_SYST%C3%88ME_COMPLET.md" target="_blank" rel="noopener">Consulter le guide complet d’installation et d’utilisation</a>.</p>
+                </details>
+                <p class="download-note"><strong>Limite actuelle :</strong> les personnages (environ 9,7 Go selon la documentation du projet) ne sont pas inclus dans le dépôt et aucun lien de téléchargement de ces fichiers n’y est indiqué. Le fichier unique disponible ne peut donc pas être présenté comme une installation complète de tout le roster.</p>
+                <p class="download-note"><strong>Jeu en ligne :</strong> le client multijoueur fourni utilise encore <code>ws://localhost:8765</code> par défaut. Il faut déployer un serveur de matchmaking public avant que les joueurs puissent se rejoindre sur Internet.</p>
             </div>
         </section>
 
