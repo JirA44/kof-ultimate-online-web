@@ -382,6 +382,28 @@ body {
     }
 }
 
+.download-fallback {
+    margin-top: 22px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.download-fallback summary {
+    display: inline-block;
+    cursor: pointer;
+    color: var(--primary);
+    font-weight: 700;
+    padding: 8px 0;
+}
+
+.download-fallback p {
+    margin-top: 12px;
+}
+
+.download-fallback a {
+    color: var(--primary);
+}
+
 /* Leaderboard Preview */
 .top-players {
     padding: 60px 0;
