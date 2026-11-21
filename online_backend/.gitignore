@@ -1,0 +1,6 @@
+# Keep local credentials and generated backend data out of Git
+.env
+*.db
+*.db-shm
+*.db-wal
+node_modules/
