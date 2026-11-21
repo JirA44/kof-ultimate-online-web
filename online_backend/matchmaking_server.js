@@ -12,7 +12,9 @@ const jwt = require('jsonwebtoken');
 const PORT = process.env.MATCHMAKING_PORT || 3101;
 const JWT_SECRET = process.env.JWT_SECRET || (process.env.NODE_ENV === 'production' ? null : 'kof-ultimate-secret-key-change-in-production');
 const REQUIRE_WS_AUTH = process.env.REQUIRE_WS_AUTH !== 'false';
-const GAME_SERVER_URL = process.env.GAME_SERVER_URL || 'ws://localhost:3102';
+const GAME_SERVER_URL = process.env.GAME_SERVER_URL || (process.env.NODE_ENV === 'production' ? null : 'ws://localhost:3102');
+if (!GAME_SERVER_URL) throw new Error('GAME_SERVER_URL must point to the deployed game server in production');
+if (process.env.NODE_ENV === 'production' && !/^wss:\/\//i.test(GAME_SERVER_URL)) throw new Error('GAME_SERVER_URL must use wss:// in production');
 let previousCpuUsage = process.cpuUsage();
 let previousCpuSampleAt = Date.now();
 if (REQUIRE_WS_AUTH && !JWT_SECRET) throw new Error('JWT_SECRET is required when WebSocket authentication is enabled');
@@ -47,7 +49,7 @@ const server = http.createServer((req, res) => {
 });
 
 // WebSocket Server
-const wss = new WebSocket.Server({ server });
+const wss = new WebSocket.Server({ server, maxPayload: 64 * 1024, perMessageDeflate: false });
 
 // State management
 const connectedPlayers = new Map(); // playerId -> { ws, info }
@@ -726,6 +728,7 @@ wss.on('connection', (ws, req) => {
             }));
         }
 
+        if (challenge.to.playerId !== playerId) return ws.send(JSON.stringify({ type: 'error', message: 'Ce défi ne vous est pas destiné' }));
         // Clear the timeout
         clearTimeout(challenge.timeout);
         pendingChallenges.delete(challengeId);
@@ -782,6 +785,32 @@ wss.on('connection', (ws, req) => {
             matchmakingQueue.splice(queueIndex, 1);
         }
 
+        // Abort active matches and release their state on disconnect.
+        for (const [matchId, match] of activeMatches) {
+            if (match.player1.playerId === playerId || match.player2.playerId === playerId) {
+                const opponentId = match.player1.playerId === playerId ? match.player2.playerId : match.player1.playerId;
+                sendToPlayer(opponentId, { type: 'opponent_disconnected', matchId });
+                activeMatches.delete(matchId);
+            }
+        }
+        // Remove the player from rooms and close empty rooms.
+        for (const [roomId, room] of customRooms) {
+            if (!room.players.includes(playerId)) continue;
+            room.players = room.players.filter(id => id !== playerId);
+            if (!room.players.length) { customRooms.delete(roomId); broadcast({ type: 'room_closed', roomId }); }
+            else {
+                if (room.host === playerId) room.host = room.players[0];
+                room.players.forEach(id => sendToPlayer(id, { type: 'player_left_room', playerId, roomId }));
+            }
+        }
+        // Cancel pending challenges involving the disconnected player.
+        for (const [challengeId, challenge] of pendingChallenges) {
+            if (challenge.from.playerId !== playerId && challenge.to.playerId !== playerId) continue;
+            clearTimeout(challenge.timeout);
+            pendingChallenges.delete(challengeId);
+            const otherId = challenge.from.playerId === playerId ? challenge.to.playerId : challenge.from.playerId;
+            sendToPlayer(otherId, { type: 'challenge_expired', challengeId, message: 'Le joueur s’est déconnecté' });
+        }
         // Remove from connected players
         connectedPlayers.delete(playerId);
 
