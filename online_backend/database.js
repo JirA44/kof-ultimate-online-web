@@ -7,7 +7,7 @@ const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
 
 class Database {
-    constructor(dbPath = path.join(__dirname, 'kof_online.db')) {
+    constructor(dbPath = process.env.DB_PATH || path.join(__dirname, 'kof_online.db')) {
         this.db = new sqlite3.Database(dbPath, (err) => {
             if (err) {
                 console.error('❌ Erreur connexion DB:', err);
