@@ -10,7 +10,7 @@ const uuid = require('uuid');
 const jwt = require('jsonwebtoken');
 
 const PORT = process.env.MATCHMAKING_PORT || 3101;
-const JWT_SECRET = process.env.JWT_SECRET;
+const JWT_SECRET = process.env.JWT_SECRET || (process.env.NODE_ENV === 'production' ? null : 'kof-ultimate-secret-key-change-in-production');
 const REQUIRE_WS_AUTH = process.env.REQUIRE_WS_AUTH !== 'false';
 const GAME_SERVER_URL = process.env.GAME_SERVER_URL || 'ws://localhost:3102';
 let previousCpuUsage = process.cpuUsage();
