@@ -6,8 +6,13 @@
 const WebSocket = require('ws');
 const http = require('http');
 const uuid = require('uuid');
+const jwt = require('jsonwebtoken');
 
 const PORT = process.env.MATCHMAKING_PORT || 3101;
+const JWT_SECRET = process.env.JWT_SECRET;
+const REQUIRE_WS_AUTH = process.env.REQUIRE_WS_AUTH !== 'false';
+const GAME_SERVER_URL = process.env.GAME_SERVER_URL || 'ws://localhost:3102';
+if (REQUIRE_WS_AUTH && !JWT_SECRET) throw new Error('JWT_SECRET is required when WebSocket authentication is enabled');
 
 // Server HTTP pour health check
 const server = http.createServer((req, res) => {
@@ -138,7 +143,12 @@ wss.on('connection', (ws, req) => {
     ws.on('message', (message) => {
         try {
             const data = JSON.parse(message);
-
+            if (!data || typeof data !== 'object' || Array.isArray(data)) return ws.send(JSON.stringify({ type: 'error', message: 'Message invalide' }));
+            if (data.type !== 'register' && data.type !== 'ping') {
+                const registered = currentPlayerId && connectedPlayers.get(currentPlayerId);
+                if (!registered || registered.ws !== ws) return ws.send(JSON.stringify({ type: 'error', message: 'Authentification requise' }));
+                if (data.playerId !== undefined && String(data.playerId) !== currentPlayerId) return ws.send(JSON.stringify({ type: 'error', message: 'Identité joueur invalide' }));
+            }
             switch (data.type) {
                 case 'register':
                     handleRegister(ws, data);
@@ -206,7 +216,7 @@ wss.on('connection', (ws, req) => {
 
     ws.on('close', () => {
         if (currentPlayerId) {
-            handleDisconnect(currentPlayerId);
+            handleDisconnect(currentPlayerId, ws);
         }
         console.log(`🔌 Connexion fermée (${clientIp})`);
     });
@@ -217,15 +227,28 @@ wss.on('connection', (ws, req) => {
 
     // Handler functions
     function handleRegister(ws, data) {
-        const { playerId, username, elo } = data;
+        if (currentPlayerId) return ws.send(JSON.stringify({ type: 'error', message: 'Déjà enregistré' }));
+        let identity;
+        if (REQUIRE_WS_AUTH) {
+            try { identity = jwt.verify(data.token, JWT_SECRET); }
+            catch (_) { return ws.send(JSON.stringify({ type: 'error', message: 'Jeton invalide ou manquant' })); }
+            if (!identity || identity.id === undefined || !identity.username) return ws.send(JSON.stringify({ type: 'error', message: 'Identité du jeton invalide' }));
+            if (data.playerId !== undefined && String(data.playerId) !== String(identity.id)) return ws.send(JSON.stringify({ type: 'error', message: 'Identité joueur invalide' }));
+        } else {
+            if (!data.playerId || typeof data.username !== 'string' || !data.username.trim()) return ws.send(JSON.stringify({ type: 'error', message: 'Identité joueur requise' }));
+            identity = { id: data.playerId, username: data.username.trim() };
+        }
+        const playerId = String(identity.id);
+        const username = String(identity.username).slice(0, 32);
+        const existing = connectedPlayers.get(playerId);
+        if (existing && existing.ws !== ws && existing.ws.readyState === WebSocket.OPEN) return ws.send(JSON.stringify({ type: 'error', message: 'Ce compte est déjà connecté' }));
         currentPlayerId = playerId;
-
         connectedPlayers.set(playerId, {
             ws,
             info: {
                 playerId,
                 username,
-                elo: elo || 1000,
+                elo: 1000,
                 status: 'online',
                 connectedAt: Date.now()
             }
@@ -247,7 +270,7 @@ wss.on('connection', (ws, req) => {
     }
 
     function handleJoinMatchmaking(ws, data) {
-        const { playerId, mode, elo } = data;
+        const playerId = currentPlayerId;
         const playerData = connectedPlayers.get(playerId);
 
         if (!playerData) {
@@ -257,11 +280,13 @@ wss.on('connection', (ws, req) => {
         const playerInfo = {
             playerId,
             username: playerData.info.username,
-            elo: elo || playerData.info.elo,
-            mode: mode || 'quick',
+            elo: playerData.info.elo,
+            mode: typeof data.mode === 'string' ? data.mode.slice(0, 24) : 'quick',
             timestamp: Date.now()
         };
 
+        const queueIndex = matchmakingQueue.findIndex(p => p.playerId === playerId);
+        if (queueIndex !== -1) return ws.send(JSON.stringify({ type: 'searching', message: 'Déjà en recherche', queuePosition: queueIndex + 1 }));
         // Search for match
         const opponent = findMatch(playerInfo);
 
@@ -283,7 +308,7 @@ wss.on('connection', (ws, req) => {
     }
 
     function handleLeaveMatchmaking(ws, data) {
-        const { playerId } = data;
+        const playerId = currentPlayerId;
 
         const index = matchmakingQueue.findIndex(p => p.playerId === playerId);
         if (index !== -1) {
@@ -296,13 +321,15 @@ wss.on('connection', (ws, req) => {
     }
 
     function handleAcceptMatch(ws, data) {
-        const { playerId, matchId } = data;
+        const playerId = currentPlayerId;
+        const { matchId } = data;
         const match = activeMatches.get(matchId);
 
         if (!match) {
             return ws.send(JSON.stringify({ type: 'error', message: 'Match non trouvé' }));
         }
 
+        if (![match.player1.playerId, match.player2.playerId].includes(playerId) || match.status !== 'ready') return ws.send(JSON.stringify({ type: 'error', message: 'Match non autorisé ou déjà démarré' }));
         // Track acceptation
         if (!match.accepted) {
             match.accepted = {};
@@ -319,7 +346,7 @@ wss.on('connection', (ws, req) => {
             match.status = 'starting';
 
             // Get game server info
-            const gameServerPort = 3102;
+            const gameServer = GAME_SERVER_URL;
 
             // Notify both players to start the game
             sendToPlayer(match.player1.playerId, {
@@ -331,7 +358,7 @@ wss.on('connection', (ws, req) => {
                     elo: match.player2.elo
                 },
                 isPlayer1: true,
-                gameServer: `ws://localhost:${gameServerPort}`
+                gameServer
             });
 
             sendToPlayer(match.player2.playerId, {
@@ -343,7 +370,7 @@ wss.on('connection', (ws, req) => {
                     elo: match.player1.elo
                 },
                 isPlayer1: false,
-                gameServer: `ws://localhost:${gameServerPort}`
+                gameServer
             });
 
             console.log(`🎮 Match ${matchId} démarré: ${match.player1.username} vs ${match.player2.username}`);
@@ -368,8 +395,11 @@ wss.on('connection', (ws, req) => {
             return ws.send(JSON.stringify({ type: 'error', message: 'Match non trouvé' }));
         }
 
-        const winner = match.player1.playerId === winnerId ? match.player1 : match.player2;
-        const loser = match.player1.playerId === loserId ? match.player1 : match.player2;
+        const participantIds = [match.player1.playerId, match.player2.playerId];
+        if (!participantIds.includes(currentPlayerId) || !participantIds.includes(String(winnerId)) || !participantIds.includes(String(loserId)) || String(winnerId) === String(loserId) || match.status !== 'starting') return ws.send(JSON.stringify({ type: 'error', message: 'Résultat de match invalide' }));
+        match.status = 'completed';
+        const winner = match.player1.playerId === String(winnerId) ? match.player1 : match.player2;
+        const loser = match.player1.playerId === String(loserId) ? match.player1 : match.player2;
 
         const eloChange = calculateEloChange(winner.elo, loser.elo);
 
@@ -399,7 +429,9 @@ wss.on('connection', (ws, req) => {
     }
 
     function handleCreateRoom(ws, data) {
-        const { playerId, roomName, password, maxPlayers, mode } = data;
+        const playerId = currentPlayerId;
+        const { roomName, password, maxPlayers, mode } = data;
+        if (typeof roomName !== 'string' || !roomName.trim() || roomName.length > 48) return ws.send(JSON.stringify({ type: 'error', message: 'Nom de salle invalide' }));
         const roomId = uuid.v4();
 
         const room = {
@@ -407,7 +439,7 @@ wss.on('connection', (ws, req) => {
             name: roomName,
             host: playerId,
             password: password || null,
-            maxPlayers: maxPlayers || 8,
+            maxPlayers: Number.isInteger(maxPlayers) && maxPlayers >= 2 && maxPlayers <= 8 ? maxPlayers : 8,
             mode: mode || '1v1',
             players: [playerId],
             status: 'waiting',
@@ -440,7 +472,8 @@ wss.on('connection', (ws, req) => {
     }
 
     function handleJoinRoom(ws, data) {
-        const { playerId, roomId, password } = data;
+        const playerId = currentPlayerId;
+        const { roomId, password } = data;
         const room = customRooms.get(roomId);
 
         if (!room) {
@@ -451,6 +484,7 @@ wss.on('connection', (ws, req) => {
             return ws.send(JSON.stringify({ type: 'error', message: 'Mot de passe incorrect' }));
         }
 
+        if (room.players.includes(playerId)) return ws.send(JSON.stringify({ type: 'error', message: 'Déjà dans cette salle' }));
         if (room.players.length >= room.maxPlayers) {
             return ws.send(JSON.stringify({ type: 'error', message: 'Salle pleine' }));
         }
@@ -478,7 +512,8 @@ wss.on('connection', (ws, req) => {
     }
 
     function handleLeaveRoom(ws, data) {
-        const { playerId, roomId } = data;
+        const playerId = currentPlayerId;
+        const { roomId } = data;
         const room = customRooms.get(roomId);
 
         if (!room) return;
@@ -510,10 +545,11 @@ wss.on('connection', (ws, req) => {
     }
 
     function handleChatMessage(ws, data) {
-        const { playerId, roomId, message } = data;
+        const playerId = currentPlayerId;
+        const { roomId } = data;
+        const message = typeof data.message === 'string' ? data.message.trim().slice(0, 500) : '';
         const room = customRooms.get(roomId);
-
-        if (!room) return;
+        if (!room || !room.players.includes(playerId) || !message) return;
 
         // Broadcast to room
         room.players.forEach(pid => {
@@ -529,7 +565,8 @@ wss.on('connection', (ws, req) => {
     // ==================== CHALLENGE SYSTEM ====================
 
     function handleSendChallenge(ws, data) {
-        const { fromPlayerId, toPlayerId } = data;
+        const fromPlayerId = currentPlayerId;
+        const { toPlayerId } = data;
 
         const fromPlayer = connectedPlayers.get(fromPlayerId);
         const toPlayer = connectedPlayers.get(toPlayerId);
@@ -620,7 +657,8 @@ wss.on('connection', (ws, req) => {
     }
 
     function handleAcceptChallenge(ws, data) {
-        const { challengeId, playerId } = data;
+        const { challengeId } = data;
+        const playerId = currentPlayerId;
         const challenge = pendingChallenges.get(challengeId);
 
         if (!challenge) {
@@ -662,7 +700,8 @@ wss.on('connection', (ws, req) => {
     }
 
     function handleDeclineChallenge(ws, data) {
-        const { challengeId, playerId } = data;
+        const { challengeId } = data;
+        const playerId = currentPlayerId;
         const challenge = pendingChallenges.get(challengeId);
 
         if (!challenge) {
@@ -719,7 +758,9 @@ wss.on('connection', (ws, req) => {
         }));
     }
 
-    function handleDisconnect(playerId) {
+    function handleDisconnect(playerId, ws) {
+        const current = connectedPlayers.get(playerId);
+        if (!current || current.ws !== ws) return;
         // Remove from queue
         const queueIndex = matchmakingQueue.findIndex(p => p.playerId === playerId);
         if (queueIndex !== -1) {
