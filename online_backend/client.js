@@ -93,10 +93,15 @@ class KOFOnlineClient {
                 console.log('✅ Connecté au serveur matchmaking');
 
                 // Register
+                if (!this.token || this.playerId === null) {
+                    this.ws.close();
+                    return reject(new Error('Authentifiez-vous avant la connexion au matchmaking'));
+                }
                 this.ws.send(JSON.stringify({
                     type: 'register',
                     playerId: this.playerId,
                     username: username,
+                    token: this.token,
                     elo: elo
                 }));
 

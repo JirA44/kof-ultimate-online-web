@@ -9,7 +9,8 @@
     "matchmaking": "node matchmaking_server.js",
     "api": "node api_server.js",
     "all": "concurrently \"npm run matchmaking\" \"npm run api\"",
-    "test": "node test_connection.js"
+    "test": "node test_connection.js",
+    "test:multiplayer": "node stress_test.js"
   },
   "keywords": [
     "kof",

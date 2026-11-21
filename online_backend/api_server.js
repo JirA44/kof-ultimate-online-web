@@ -3,6 +3,7 @@
  * Serveur API REST pour gestion profils, stats, matchmaking
  */
 
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const bcrypt = require('bcrypt');
@@ -11,7 +12,8 @@ const Database = require('./database');
 
 const app = express();
 const PORT = process.env.PORT || 3100;
-const JWT_SECRET = process.env.JWT_SECRET || 'kof-ultimate-secret-key-change-in-production';
+const JWT_SECRET = process.env.JWT_SECRET || (process.env.NODE_ENV === 'production' ? null : 'kof-ultimate-secret-key-change-in-production');
+if (!JWT_SECRET) throw new Error('JWT_SECRET must be set in production');
 
 // Middleware
 app.use(cors());
