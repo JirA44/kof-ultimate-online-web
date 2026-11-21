@@ -60,6 +60,13 @@ const pendingChallenges = new Map(); // challengeId -> {from, to, expiresAt, tim
 
 const CHALLENGE_TIMEOUT = 15000; // 15 seconds to accept
 
+function playerHasActiveMatch(playerId) {
+    for (const match of activeMatches.values()) {
+        if (match.player1.playerId === playerId || match.player2.playerId === playerId) return true;
+    }
+    return false;
+}
+
 // ==================== UTILITY FUNCTIONS ====================
 
 function broadcast(message, excludeWs = null) {
@@ -156,8 +163,18 @@ wss.on('connection', (ws, req) => {
     console.log(`🔌 Nouvelle connexion depuis ${clientIp}`);
 
     let currentPlayerId = null;
+    let messageWindowStartedAt = Date.now();
+    let messagesInWindow = 0;
 
     ws.on('message', (message) => {
+        if (Date.now() - messageWindowStartedAt >= 1000) {
+            messageWindowStartedAt = Date.now();
+            messagesInWindow = 0;
+        }
+        if (++messagesInWindow > 60) {
+            ws.close(1008, 'Rate limit exceeded');
+            return;
+        }
         try {
             const data = JSON.parse(message);
             if (!data || typeof data !== 'object' || Array.isArray(data)) return ws.send(JSON.stringify({ type: 'error', message: 'Message invalide' }));
@@ -293,6 +310,8 @@ wss.on('connection', (ws, req) => {
         if (!playerData) {
             return ws.send(JSON.stringify({ type: 'error', message: 'Non enregistré' }));
         }
+
+        if (playerHasActiveMatch(playerId)) return ws.send(JSON.stringify({ type: 'error', message: 'Vous avez déjà un match en cours' }));
 
         const playerInfo = {
             playerId,
@@ -587,6 +606,9 @@ wss.on('connection', (ws, req) => {
 
         const fromPlayer = connectedPlayers.get(fromPlayerId);
         const toPlayer = connectedPlayers.get(toPlayerId);
+        if (fromPlayerId === toPlayerId || playerHasActiveMatch(fromPlayerId) || playerHasActiveMatch(toPlayerId)) {
+            return ws.send(JSON.stringify({ type: 'error', message: 'Un joueur n’est pas disponible pour un défi' }));
+        }
 
         if (!fromPlayer || !toPlayer) {
             return ws.send(JSON.stringify({
