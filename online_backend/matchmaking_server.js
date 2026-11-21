@@ -5,6 +5,7 @@
 
 const WebSocket = require('ws');
 const http = require('http');
+require('dotenv').config();
 const uuid = require('uuid');
 const jwt = require('jsonwebtoken');
 
@@ -12,6 +13,8 @@ const PORT = process.env.MATCHMAKING_PORT || 3101;
 const JWT_SECRET = process.env.JWT_SECRET;
 const REQUIRE_WS_AUTH = process.env.REQUIRE_WS_AUTH !== 'false';
 const GAME_SERVER_URL = process.env.GAME_SERVER_URL || 'ws://localhost:3102';
+let previousCpuUsage = process.cpuUsage();
+let previousCpuSampleAt = Date.now();
 if (REQUIRE_WS_AUTH && !JWT_SECRET) throw new Error('JWT_SECRET is required when WebSocket authentication is enabled');
 
 // Server HTTP pour health check
@@ -23,7 +26,19 @@ const server = http.createServer((req, res) => {
             service: 'KOF Matchmaking Server',
             players_online: connectedPlayers.size,
             matchmaking_queue: matchmakingQueue.length,
-            active_matches: activeMatches.size
+            active_matches: activeMatches.size,
+            uptime_seconds: Math.floor(process.uptime()),
+            memory_rss_mb: Math.round(process.memoryUsage().rss / 1024 / 1024 * 10) / 10,
+            memory_heap_used_mb: Math.round(process.memoryUsage().heapUsed / 1024 / 1024 * 10) / 10,
+            cpu_percent_since_last_sample: (() => {
+                const now = Date.now();
+                const delta = process.cpuUsage(previousCpuUsage);
+                const elapsedMs = Math.max(1, now - previousCpuSampleAt);
+                previousCpuUsage = process.cpuUsage();
+                previousCpuSampleAt = now;
+                const cores = require('os').cpus().length || 1;
+                return Math.round(((delta.user + delta.system) / 1000) / (elapsedMs * cores) * 1000) / 10;
+            })()
         }));
     } else {
         res.writeHead(200);
