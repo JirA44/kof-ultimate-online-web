@@ -374,11 +374,13 @@ Both services load `.env` with dotenv and must share the same `JWT_SECRET`. A de
 
 Set `GAME_SERVER_URL` to the actual reachable game transport endpoint. `localhost` works only when the client and game server run on the same machine; remote clients require a deployed endpoint, normally `wss://...`.
 
-Run the load test only against a local or isolated test deployment:
+Run the load test only against a local test deployment backed by a disposable database. Set `DB_PATH=./kof_stress_test.db` before starting the API and matchmaking processes (the database path is now configurable). Do not point the test at production or your live player database.
 
 ```bash
+# In the online_backend directory, using a dedicated test .env:
 npm run all
-node stress_test.js
+# In another terminal:
+npm run test:multiplayer
 ```
 
 The test uses 20 temporary accounts, verifies authenticated WebSocket registration and complete match-result cycles, and exits nonzero when the expected flow fails. Its ping percentiles describe client-to-matchmaking round trips. Server RSS and CPU values are sampled from `/health`; these measurements describe this test environment and do not establish production capacity. Increase player counts in controlled stages and record deployment, hardware, duration and errors before claiming capacity.
