@@ -366,6 +366,24 @@ Récupère le classement global.
 
 ---
 
+## 🔐 MULTIPLAYER AUTHENTICATION AND LOAD TESTS
+
+The matchmaking WebSocket verifies the API JWT when `REQUIRE_WS_AUTH=true` (the default). The WebSocket client must send the same bearer token returned by `/api/auth/register` or `/api/auth/login`; the server derives the player ID and username from that token. Client-supplied identity, ELO and match-result fields are not trusted. For isolated legacy local testing only, `REQUIRE_WS_AUTH=false` allows unauthenticated profiles; never use that mode on a public deployment.
+
+Both services load `.env` with dotenv and must share the same `JWT_SECRET`. A development fallback is retained only when `NODE_ENV` is not `production`. Production startup fails if `JWT_SECRET` is missing. A committed `.env` file must never contain credentials; use `.env.example` as a template and rotate any values that may have been exposed.
+
+Set `GAME_SERVER_URL` to the actual reachable game transport endpoint. `localhost` works only when the client and game server run on the same machine; remote clients require a deployed endpoint, normally `wss://...`.
+
+Run the load test only against a local or isolated test deployment:
+
+```bash
+npm run all
+node stress_test.js
+```
+
+The test uses 20 temporary accounts, verifies authenticated WebSocket registration and complete match-result cycles, and exits nonzero when the expected flow fails. Its ping percentiles describe client-to-matchmaking round trips. Server RSS and CPU values are sampled from `/health`; these measurements describe this test environment and do not establish production capacity. Increase player counts in controlled stages and record deployment, hardware, duration and errors before claiming capacity.
+
+---
 ## 🔌 WEBSOCKET PROTOCOL
 
 ### Connexion
